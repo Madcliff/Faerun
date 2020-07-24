@@ -42,6 +42,8 @@ on_startup = {
 		z_character_trait.3
 		tbxp.1
 		spellplaguemods.1
+		wizinit.1
+		wizinit.3
 	}
 }
 
@@ -1672,7 +1674,8 @@ on_birth = {
 		# HF.23019 # Zodiac signs assigned on Hellenic babies.
 		HFP.20068 # Cleanup for children born after father's death.
 		HF.23750 # Stable Doctrine gives chance to shield newborn heir from harm.
-		evilcat.400
+		evilcat.400 #divorce parents of mismatched children
+		FaerunSorcerer.1
 	}
 	random_events = {
 		200 = 0
@@ -3322,6 +3325,10 @@ on_society_bi_yearly_pulse = {
 # From = Society
 on_character_switch_society_interest = {
 	events = {
+		FaerunSocieties.1 # Harpers
+		FaerunSocieties.2 # Cult of the Dragon
+		FaerunSocieties.3 # Arcane Brotherhood
+		FaerunSocieties.4 # Shadow Thieves
 		MNM.10010
 		MNM.10024 # Backup for refounding societies
 	}

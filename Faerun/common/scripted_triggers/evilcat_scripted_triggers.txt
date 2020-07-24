@@ -44,6 +44,53 @@ fancies_women_trigger = {
 		}
 	}
 }
+evilcat_is_human_cultured = {
+	OR = {
+		culture_group = katashakan_group
+		culture_group = damaran_group
+		culture_group = illuskan_group
+		culture_group = imaskari_group
+		culture_group = chondathan_group
+		culture_group = kara_turan_group
+		culture_group = lapal_group
+		culture_group = maztican_group
+		culture_group = mulan_group
+		culture_group = netherese_group
+		culture_group = raum_group
+		culture_group = shaaran_group
+		culture_group = tethyrian_group
+		culture_group = taan_group
+		culture_group = turami_group
+		culture_group = uluik_group
+		culture_group = zakharan_group
+		culture_group = calishite_group
+	}
+}
+evilcat_is_sympathetic = {
+	OR = {	
+		trait = sympathy_many
+		trait = sympathy_good_human_pantheon_group
+		trait = sympathy_evil_human_pantheon_group
+		trait = sympathy_drow_pantheon
+		trait = sympathy_elven_pantheon_group
+		trait = sympathy_dwarven_pantheon_group
+		trait = sympathy_zakharan_group
+		trait = sympathy_karaturan_group
+		trait = sympathy_draconic_group
+		trait = sympathy_giant_pantheon_group
+		trait = sympathy_pagans
+	}
+}
+evilcat_has_sorc_origin = {
+	OR = {
+		trait = origin_aberrant_mind
+		trait = origin_draconic
+		trait = origin_divine_soul
+		trait = origin_shadow
+		trait = origin_storm
+		trait = origin_wild_magic
+	}
+}
 evilcat_is_humanoid = {
 	OR = {
 		trait = creature_human
@@ -245,10 +292,14 @@ evilcat_is_undead = {
 }
 evilcat_is_chosen = {
 	OR = {
-		trait = chosen_of_auril
-		trait = chosen_of_lolth
-		trait = chosen_of_mystra
-		trait = chosen_of_ubtao
+		trait = chosen_auril
+		trait = chosen_lolth
+		trait = chosen_mystra
+		trait = chosen_ubtao
+		trait = chosen_seldarine
+		trait = chosen_sune
+		trait = chosen_umberlee
+		trait = chosen_malar
 	}
 }
 evilcat_is_true_immortal = { #doesn't include immortal racial traits, add more as they come
@@ -261,14 +312,15 @@ evilcat_is_true_immortal = { #doesn't include immortal racial traits, add more a
 		trait = creature_daemon
 		trait = creature_demon
 		trait = creature_devil
+		trait = creature_genie
 	}
 }
 evilcat_is_disease_immune = {
 	OR = {
 		evilcat_is_undead = yes
 		trait = creature_naga
-		trait = chosen_of_ubtao
-		trait = chosen_of_mystra
+		trait = chosen_ubtao
+		trait = chosen_mystra
 		trait = creature_daemon
 		trait = creature_demon
 		trait = creature_devil
@@ -814,10 +866,10 @@ evilcat_is_mismatched_father = {
 			ROOT = { NOT = { trait = creature_ogre } }
 			ROOT = { NOT = { trait = creature_ogrillon } }
 			ROOT = { NOT = { trait = creature_half_ogre } }
-			ROOT = { NOt = { trait = creature_daemon } }
-			ROOT = { NOt = { trait = creature_demon } }
-			ROOT = { NOt = { trait = creature_devil } }
-			ROOT = { NOt = { trait = creature_dragon } }
+			ROOT = { NOT = { trait = creature_daemon } }
+			ROOT = { NOT = { trait = creature_demon } }
+			ROOT = { NOT = { trait = creature_devil } }
+			ROOT = { NOT = { trait = creature_dragon } }
 			
 		}
 		AND = {
@@ -1573,10 +1625,10 @@ evilcat_is_mismatched_spouse = {
 			ROOT = { NOT = { trait = creature_ogre } }
 			ROOT = { NOT = { trait = creature_ogrillon } }
 			ROOT = { NOT = { trait = creature_half_ogre } }
-			ROOT = { NOt = { trait = creature_daemon } }
-			ROOT = { NOt = { trait = creature_demon } }
-			ROOT = { NOt = { trait = creature_devil } }
-			ROOT = { NOt = { trait = creature_dragon } }
+			ROOT = { NOT = { trait = creature_daemon } }
+			ROOT = { NOT = { trait = creature_demon } }
+			ROOT = { NOT = { trait = creature_devil } }
+			ROOT = { NOT = { trait = creature_dragon } }
 			
 		}
 		AND = {

@@ -147,6 +147,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_creature_half_dwarf"
+		texturefile = "gfx/traits/creature_half_dwarf.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_creature_gnome"
 		texturefile = "gfx/traits/creature_gnome.dds"
 		noOfFrames = 1
@@ -2290,29 +2297,64 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_chosen_of_auril"
-		texturefile = "gfx/traits/chosen_of_auril.dds"
+		name = "GFX_trait_chosen_auril"
+		texturefile = "gfx/traits/chosen_auril.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_chosen_of_mystra"
-		texturefile = "gfx/traits/chosen_of_mystra.dds"
+		name = "GFX_trait_chosen_mystra"
+		texturefile = "gfx/traits/chosen_mystra.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_chosen_of_lolth"
-		texturefile = "gfx/traits/chosen_of_lolth.dds"
+		name = "GFX_trait_chosen_lolth"
+		texturefile = "gfx/traits/chosen_lolth.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_chosen_of_ubtao"
-		texturefile = "gfx/traits/chosen_of_ubtao.dds"
+		name = "GFX_trait_chosen_ubtao"
+		texturefile = "gfx/traits/chosen_ubtao.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_chosen_seldarine"
+		texturefile = "gfx/traits/chosen_seldarine.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_chosen_sune"
+		texturefile = "gfx/traits/chosen_sune.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_chosen_umberlee"
+		texturefile = "gfx/traits/chosen_umberlee.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_chosen_malar"
+		texturefile = "gfx/traits/chosen_malar.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_chosen_gruumsh"
+		texturefile = "gfx/traits/chosen_gruumsh.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -2390,6 +2432,48 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_former_adventurer"
 		texturefile = "gfx/traits/retired_adventurer.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_origin_aberrant_mind"
+		texturefile = "gfx/traits/origin_aberrant_mind.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_origin_draconic"
+		texturefile = "gfx/traits/origin_draconic.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_origin_divine_soul"
+		texturefile = "gfx/traits/origin_divine_soul.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_origin_shadow"
+		texturefile = "gfx/traits/origin_shadow.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_origin_storm"
+		texturefile = "gfx/traits/origin_storm.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_origin_wild_magic"
+		texturefile = "gfx/traits/origin_wild_magic.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

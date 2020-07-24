@@ -95,7 +95,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 1000
-				trait = chosen_of_mystra
+				trait = chosen_mystra
 			}
 		}
 		set_character_flag = patron_chosen
@@ -950,7 +950,6 @@ character_event = {
 				factor = 20
 				OR = {
 					z_rogue = yes
-					z_assassin = yes
 					z_shadow = yes
 				}
 			}
@@ -1059,7 +1058,6 @@ character_event = {
 				factor = 20
 				OR = {
 					z_rogue = yes
-					z_assassin = yes
 					z_shadow = yes
 				}
 			}
@@ -1116,7 +1114,6 @@ character_event = {
 				factor = 20
 				OR = {
 					z_rogue = yes
-					z_assassin = yes
 					z_shadow = yes
 				}
 			}

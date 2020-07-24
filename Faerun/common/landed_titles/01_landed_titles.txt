@@ -3136,6 +3136,21 @@ e_chult = {
 				b_azux = {}
 				b_aspine = {}
 			}
+			c_aldani_basin = { # 456
+				color={ 27 91 0 }
+				color2={ 255 255 255 }
+				
+				holy_site = ubtao_worship
+				holy_site = ubtao_reformed
+	
+				b_mbala = {}
+				b_onsux = {}
+				b_afiang = {}
+				b_cheth = {}
+				b_oblim = {}
+				b_biole = {}
+				b_quosath = {}
+			}
 		}
 		d_tabaxiland = {
 			color={ 43 151 60 }
@@ -3204,18 +3219,6 @@ e_chult = {
 				b_amim = {}
 				b_ouagas = {}
 			}
-			c_land_of_ash_and_smoke = { # 457
-				color={ 64 112 97 }
-				color2={ 255 255 255 }
-				
-				b_pyraxia = {}
-				b_angelburn = {}
-				b_st_bery = {}
-				b_gbusia = {}
-				b_asran = {}
-				b_quest = {}
-				b_gundabarth = {}
-			}
 			c_pterafolk_eyries = { # 1420
 				color={ 115 197 109 }
 				color2={ 255 255 255 }
@@ -3240,53 +3243,63 @@ e_chult = {
 				b_leranga = {}
 				b_labath = {}
 			}
-		}
-		d_the_deepgreen = {
-			color={ 74 142 108 }
+		}	
+	}
+
+	k_omu = {
+		color={ 97 186 159 }
+		color2={ 255 255 255 }
+		capital = 1566 # Omu
+		title = "KING"
+		title_female = "QUEEN"
+		d_omu = {
+			color={ 85 132 118 }
 			color2={ 255 255 255 }
 			
-			capital = 451 # c_couatl_wilds
+			capital = 1566 # Omu
 			
-			c_couatl_wilds = { # 451
-				color={ 43 155 43 }
+			title = "NEGUS"
+			title_female = "NEGIST"
+			
+			c_batiriland = { # 1421
+				color={ 79 106 58 }
 				color2={ 255 255 255 }
 				
-				b_kalax = {}
-				b_kigbe = {}
-				b_owun = {}
-				b_chagat = {}
-				b_arooh = {}
-				b_deme = {}
-				b_golbath = {}
+				b_batiri = {}
+				b_sinda = {}
+				b_sariusi = {}
+				b_harga = {}
+				b_bouks = {}
+				b_taringing = {}
+				b_nannaith = {}
 			}
-			c_valley_of_lost_honor = { # 450
-				color={ 85 121 9 }
+			
+			c_valley_of_embers = { # 1565
+				color={ 100 170 31 }
 				color2={ 255 255 255 }
 				
-				wild_dwarf = "Hrakhmar"
-				
-				b_ataaz_yklwazi = {}
-				b_babue = {}
-				b_gbiole = {}
-				b_ersidsetr = {}
-				b_namzuuma = {}
-				b_jidiaye = {}
-				b_poa = {}
+				b_nangalore = {}
+				b_heart_of_ubtao = {}
+				b_aataz_kahakla = {}
+				b_the_star_goddess = {}
+				b_mad_monkey_path = {}
+				b_shivering_thicket = {}
+				b_unliving_jungle = {}
 			}
-			c_aldani_basin = { # 456
-				color={ 27 91 0 }
+			
+			c_omu = { # 1566
+				color={ 129 214 18 }
 				color2={ 255 255 255 }
 				
-				holy_site = ubtao_worship
-				holy_site = ubtao_reformed
-	
-				b_mbala = {}
-				b_onsux = {}
-				b_afiang = {}
-				b_cheth = {}
-				b_oblim = {}
-				b_biole = {}
-				b_quosath = {}
+				monster = "Forbidden Basin"
+				
+				b_omu = {}
+				b_tomb_of_the_nine_gods = {}
+				b_fane_of_the_night_serpent = {}
+				b_aataz_yklawzi = {}
+				b_shrines_of_the_tricksters = {}
+				b_gears_of_hate = {}
+				b_cradle_of_the_death_god = {}
 			}
 		}
 		d_wild_coast = {
@@ -3343,55 +3356,50 @@ e_chult = {
 				b_daleland = {}
 				b_kellamazar = {}
 			}
+			c_land_of_ash_and_smoke = { # 457
+				color={ 64 112 97 }
+				color2={ 255 255 255 }
+				
+				b_pyraxia = {}
+				b_angelburn = {}
+				b_st_bery = {}
+				b_gbusia = {}
+				b_asran = {}
+				b_quest = {}
+				b_gundabarth = {}
+			}
 		}
-		d_omu = {
-			color={ 85 132 118 }
+		d_the_deepgreen = {
+			color={ 74 142 108 }
 			color2={ 255 255 255 }
 			
-			capital = 1566 # Omu
+			capital = 451 # c_couatl_wilds
 			
-			title = "NEGUS"
-			title_female = "NEGIST"
-			
-			c_batiriland = { # 1421
-				color={ 79 106 58 }
+			c_couatl_wilds = { # 451
+				color={ 43 155 43 }
 				color2={ 255 255 255 }
 				
-				b_batiri = {}
-				b_sinda = {}
-				b_sariusi = {}
-				b_harga = {}
-				b_bouks = {}
-				b_taringing = {}
-				b_nannaith = {}
+				b_kalax = {}
+				b_kigbe = {}
+				b_owun = {}
+				b_chagat = {}
+				b_arooh = {}
+				b_deme = {}
+				b_golbath = {}
 			}
-			
-			c_valley_of_embers = { # 1565
-				color={ 100 170 31 }
+			c_valley_of_lost_honor = { # 450
+				color={ 85 121 9 }
 				color2={ 255 255 255 }
 				
-				b_nangalore = {}
-				b_heart_of_ubtao = {}
-				b_aataz_kahakla = {}
-				b_the_star_goddess = {}
-				b_mad_monkey_path = {}
-				b_shivering_thicket = {}
-				b_unliving_jungle = {}
-			}
-			
-			c_omu = { # 1566
-				color={ 129 214 18 }
-				color2={ 255 255 255 }
+				wild_dwarf = "Hrakhmar"
 				
-				monster = "Forbidden Basin"
-				
-				b_omu = {}
-				b_tomb_of_the_nine_gods = {}
-				b_fane_of_the_night_serpent = {}
-				b_aataz_yklawzi = {}
-				b_shrines_of_the_tricksters = {}
-				b_gears_of_hate = {}
-				b_cradle_of_the_death_god = {}
+				b_ataaz_yklwazi = {}
+				b_babue = {}
+				b_gbiole = {}
+				b_ersidsetr = {}
+				b_namzuuma = {}
+				b_jidiaye = {}
+				b_poa = {}
 			}
 		}
 	}
@@ -4460,8 +4468,22 @@ e_cold_lands = {
 			c_ahtitlak = { # 1267
 				color={ 39 106 94 }
 				color2={ 255 255 255 }
+
+				mountain_giant = "Kultaakarr"
+				hill_giant = "Kultaakarr"
+				fire_giant = "Kultaakarr"
+				stone_giant = "Kultaakarr"
+				storm_giant = "Kultaakarr"
+				cloud_giant = "Kultaakarr"
 				
-				b_ahtitlak = {}
+				b_ahtitlak = {
+					mountain_giant = "Baunilorotha"
+					hill_giant = "Baunilorotha"
+					fire_giant = "Baunilorotha"
+					stone_giant = "Baunilorotha"
+					storm_giant = "Baunilorotha"
+					cloud_giant = "Baunilorotha"				
+				}
 				b_takari = {}
 				b_toseyaq = {}
 				b_powa = {}
@@ -4926,6 +4948,8 @@ e_cold_lands = {
 				color={ 240 191 206 }
 				color2={ 255 255 255 }
 				
+				monster = "Sunderland"
+				
 				b_darmshall = {}
 				b_greengate_forest = {}
 				b_winged_wood = {}
@@ -4937,6 +4961,10 @@ e_cold_lands = {
 			c_haatar_baen = { # 1575
 				color={ 200 135 167 }
 				color2={ 255 255 255 }
+				
+				minotaur = "Kond"
+				nar = "Telos"
+				
 				
 				b_hillsafar_hall = {}
 				b_surinak = {}
@@ -4962,6 +4990,9 @@ e_cold_lands = {
 				color={ 225 167 155 }
 				color2={ 255 255 255 }
 				
+				nar = "Moortown"
+				goblin = "Modurt"
+				
 				b_moortown = {}
 				b_vashine = {}
 				b_wistone = {}
@@ -4973,6 +5004,8 @@ e_cold_lands = {
 			c_palischuk = { # 359
 				color={ 209 112 15 }
 				color2={ 255 255 255 }
+				
+				monster = "Cinnabar Wastes"
 				
 				b_palischuk = {}
 				b_khanis = {}
@@ -5486,15 +5519,27 @@ e_easting_reach = {
 				
 				chondathan = "Impil's Tor"
 				
-				b_lyrabar = {}
+				b_lyrabar = { chondathan = "Impil's Tor" }
 				b_moranay = {}
-				b_hlammach = {
-					nar = "Arnafel"
-				}
 				b_bertiholm = {}
 				b_bellhorn = {}
 				b_fod = {}
 				b_hallewell = {}
+				b_raflando_crossing = {}
+			}
+			c_hlammach = { # 1585
+				color={ 133 101 35 }
+				color2={ 255 255 255 }
+				
+				nar = "Arnafel"
+				
+				b_hlammach = { nar = "Arnafel" }
+				b_amgoth = {}
+				b_moonstone = {}
+				b_pick_and_axe = {}
+				b_st_raaf = {}
+				b_dengesoon = {}
+				b_lostwood = {}
 			}
 			c_dilpur = { # 391
 				color={ 191 55 30 }
@@ -5502,9 +5547,7 @@ e_easting_reach = {
 				
 				nar = "Elnar"
 				
-				b_dilpur = {
-					nar = "Elnar"
-				}
+				b_dilpur = { nar = "Elnar" }
 				b_red_bluffs = {}
 				b_gunthima = {}
 				b_cadun = {}
@@ -5522,7 +5565,7 @@ e_easting_reach = {
 				b_catun = {}
 				b_mordeng = {}
 				b_thanto = {}
-				b_dengesoon = {}
+				b_taho = {}
 			}
 		}
 		d_farwater = {

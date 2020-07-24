@@ -534,7 +534,7 @@
 	#Ruler of Mirabar
 	name = Elastul
 	dynasty = 6214 #Raurym
-	religion = good_human_pantheon
+	religion = dwarven_pantheon
 	culture = illuskan
 	trait = journeyman_fighter
 	trait = creature_human
@@ -689,7 +689,7 @@
 	martial = 8
 	1337.1.1 = { birth = yes }
 	1358.6.1 = { trait = scarred_high }
-	1420.1.1 = { death = yes }
+	1410.1.1 = { death = yes }
 }
 41046 = {
 	name = Niklaus # This character was designed by forum user NTE1: https://forum.paradoxplaza.com/forum/index.php?threads/mod-d-d-forgotten-realms.1042010/page-33#post-25527076
@@ -724,7 +724,7 @@
 	name = "Elyth"
 	dynasty = 6229 # Talboskh
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = dwarven_pantheon
 	martial = 6
 	trait = creature_human
 	trait = trained_fighter
@@ -771,7 +771,7 @@
 	name = "Agdin"
 	dynasty = 1533 # Hailrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = dwarven_pantheon
 	trait = creature_human
 	620.1.1 = { birth = yes }
 	700.1.1 = { death = yes }
@@ -780,7 +780,7 @@
 	name = "Jurmaer"
 	dynasty = 1533 # Hailrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = dwarven_pantheon
 	trait = creature_human
 	father = 41052
 	680.1.1 = { birth = yes }
@@ -790,7 +790,7 @@
 	name = "Goti"
 	dynasty = 1533 # Hailrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = dwarven_pantheon
 	trait = creature_human
 	father = 41053
 	740.1.1 = { birth = yes }
@@ -801,7 +801,7 @@
 	female = yes
 	dynasty = 1533 # Hailrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = dwarven_pantheon
 	trait = creature_human
 	father = 41054
 	820.1.1 = { birth = yes }
@@ -811,7 +811,7 @@
 	name = "Arumn"
 	dynasty = 1533 # Hailrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = dwarven_pantheon
 	trait = creature_human
 	mother = 41055
 	860.1.1 = { birth = yes }
@@ -821,7 +821,7 @@
 	name = "Tim"
 	dynasty = 1533 # Hailrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = dwarven_pantheon
 	trait = creature_human
 	father = 41056
 	940.1.1 = { birth = yes }
@@ -831,7 +831,7 @@
 	name = "Tarmock"
 	dynasty = 1533 # Hailrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = dwarven_pantheon
 	trait = creature_human
 	father = 41057
 	1000.1.1 = { birth = yes }
@@ -841,7 +841,7 @@
 	name = "Johcris"
 	dynasty = 1533 # Hailrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = dwarven_pantheon
 	trait = creature_human
 	father = 41058
 	1060.1.1 = { birth = yes }
@@ -852,7 +852,7 @@
 	female = yes
 	dynasty = 1533 # Hailrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = dwarven_pantheon
 	trait = creature_human
 	father = 41059
 	1140.1.1 = { birth = yes }
@@ -862,7 +862,7 @@
 	name = "Praven"
 	dynasty = 1533 # Hailrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = dwarven_pantheon
 	trait = creature_human
 	mother = 41060
 	1220.1.1 = { birth = yes }
@@ -872,7 +872,7 @@
 	name = "Valrik"
 	dynasty = 1533 # Hailrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = dwarven_pantheon
 	trait = creature_human
 	father = 41061
 	1290.1.1 = { birth = yes }
@@ -2656,7 +2656,7 @@
 		immortal_age = 30
 	}
 	1366.9.1 = {
-		add_spouse_matrilineal = 41017
+		add_matrilineal_spouse = 41017
 	}
 	1450.1.1 = {
 		death = yes
@@ -3006,14 +3006,21 @@
 }
 41253 = {
 	name = "Arveiaturace"
+	female = yes
 	dynasty = 140
 	culture = draconic
 	religion = draconic_pantheon
 	trait = creature_dragon
 	trait = creature_white_dragon
 	father = 41252
-	500.1.1 = {
+	300.1.1 = {
 		birth = yes
+	}
+	330.1.1 = {
+		immortal_age = 30
+	}
+	870.1.1 = {
+		give_nickname = nick_iceclaws
 	}
 	1000.1.1 = {
 		add_trait = lunatic
@@ -3189,7 +3196,7 @@
 	trait = creature_human
 	trait = cruel
 	trait = patron_malar
-	#trait = chosen_of_malar
+	#trait = chosen_malar
 	1445.1.1 = {
 		birth = yes
 	}
@@ -3340,7 +3347,7 @@
 	1484.1.1 = {
 		effect = { banish = yes }
 		add_trait = patron_auril
-		add_trait = chosen_of_auril
+		add_trait = chosen_auril
 		add_trait = expert_cleric
 		give_nickname = nick_the_ice_witch
 	}
@@ -3810,6 +3817,288 @@
 		birth = yes
 	}
 	192.1.1 = {
+		death = yes
+	}
+}
+41307 = {
+	name = "Sneighfanglen"
+	female = yes
+	dynasty = 158
+	culture = draconic
+	religion = draconic_pantheon
+	trait = creature_dragon
+	trait = creature_white_dragon
+	1.1.1 = {
+		birth = yes
+	}
+	30.1.1 = {
+		immortal_age = 30
+	}
+	500.1.1 = {
+		give_nickname = nick_spawn_of_auril
+	}
+	940.1.1 = {
+		death = { death_reason = death_duel killer = 23050 }
+	}
+}
+41308 = {
+	name = "Arauthator"
+	dynasty = 158
+	culture = draconic
+	religion = draconic_pantheon
+	trait = creature_dragon
+	trait = creature_white_dragon
+	trait = trained_sorcerer
+	mother = 41307
+	935.1.1 = {
+		birth = yes
+	}
+	965.1.1 = {
+		immortal_age = 30
+	}
+	1231.1.1 = {
+		add_spouse = 41309
+	}
+	1300.1.1 = {
+		give_nickname = nick_old_white_death
+	}
+	1355.1.1 = {
+		remove_spouse = 41309
+	}
+	1390.1.1 = {
+		add_spouse = 41253
+	}
+	1600.1.1 = {
+		death = yes
+	}
+}
+41309 = {
+	name = "Ghaulantatra"
+	female = yes
+	dynasty = 159
+	culture = draconic
+	religion = draconic_pantheon
+	trait = creature_dragon
+	trait = creature_white_dragon
+	1.1.1 = {
+		birth = yes
+	}
+	30.1.1 = {
+		immortal_age = 30
+	}
+	1100.1.1 = {
+		give_nickname = nick_old_mother_wyrm
+	}
+	1355.1.1 = {
+		add_trait = undead
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+41310 = {
+	name = "Tostyn"
+	dynasty = 197 # Alaerthmaugh
+	culture = draconic
+	religion = draconic_pantheon
+	trait = creature_dragon
+	trait = proud
+	trait = gregarious
+	trait = brave
+	trait = creature_silver_dragon # Mercury, actually
+	1290.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+41311 = {
+	name = "Aurbangras"
+	dynasty = 158
+	culture = draconic
+	religion = draconic_pantheon
+	trait = creature_dragon
+	trait = creature_white_dragon
+	father = 41308
+	mother = 41253
+	1460.1.1 = {
+		birth = yes
+	}
+	1485.1.1 = {
+		death = { death_reason = death_battle }
+	}
+}
+41312 = {
+	name = "Jarro"
+	dynasty = 192 # Iceaxe
+	culture = orc
+	religion = orc_pantheon
+	trait = creature_orc
+	180.1.1 = {
+		birth = yes
+	}
+	216.1.1 = {
+		death = yes
+	}
+}
+41313 = {
+	name = "Nieekir"
+	female = yes
+	dynasty = 193 # Grivpok
+	culture = goblin
+	religion = goblin_pantheon
+	trait = creature_goblin
+	190.1.1 = {
+		birth = yes
+	}
+	290.1.1 = {
+		death = yes
+	}
+}
+41314 = {
+	name = "Shiv"
+	female = yes
+	dynasty = 193 # Grivpok
+	culture = goblin
+	religion = goblin_pantheon
+	trait = creature_goblin
+	mother = 41313
+	270.1.1 = {
+		birth = yes
+	}
+	370.1.1 = {
+		death = yes
+	}
+}
+41315 = {
+	name = "Trikk"
+	female = yes
+	dynasty = 193 # Grivpok
+	culture = goblin
+	religion = goblin_pantheon
+	trait = creature_goblin
+	mother = 41314
+	350.1.1 = {
+		birth = yes
+	}
+	450.1.1 = {
+		death = yes
+	}
+}
+41316 = {
+	name = "Pickler"
+	female = yes
+	dynasty = 193 # Grivpok
+	culture = goblin
+	religion = goblin_pantheon
+	trait = creature_goblin
+	mother = 41315
+	430.1.1 = {
+		birth = yes
+	}
+	530.1.1 = {
+		death = yes
+	}
+}
+41317 = {
+	name = "Olik"
+	female = yes
+	dynasty = 193 # Grivpok
+	culture = goblin
+	religion = goblin_pantheon
+	trait = creature_goblin
+	mother = 41316
+	514.1.1 = {
+		birth = yes
+	}
+	611.3.1 = {
+		death = yes
+	}
+}
+41318 = {
+	name = "Lormon"
+	dynasty = 194 # Spinecrusher
+	culture = orc
+	religion = orc_pantheon
+	trait = creature_orc
+	590.1.1 = {
+		birth = yes
+	}
+	626.1.1 = {
+		death = yes
+	}
+}
+41319 = {
+	name = "Nethaug"
+	female = yes
+	dynasty = 195 # Northkiller
+	culture = goblin
+	religion = goblin_pantheon
+	martial = 8
+	trait = creature_goblin
+	trait = trained_barbarian
+	730.1.1 = {
+		birth = yes
+	}
+	754.1.1 = {
+		death = yes
+	}
+}
+41320 = {
+	name = "Jensa"
+	female = yes
+	dynasty = 6229 # Talboskh
+	culture = illuskan
+	religion = dwarven_pantheon
+	trait = creature_human
+	father = 41048
+	1380.1.1 = {
+		birth = yes
+	}
+	1460.1.1 = {
+		death = yes
+	}
+}
+41321 = {
+	name = "Selin"
+	dynasty = 196 # Ramur
+	culture = illuskan
+	religion = dwarven_pantheon
+	trait = creature_human
+	1440.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+41322 = {
+	name = "Grizz"
+	female = yes
+	dynasty = 201 # Gazkit
+	culture = goblin
+	religion = goblin_pantheon
+	trait = creature_goblin
+	1.1.1 = {
+		birth = yes
+	}
+	100.1.1 = {
+		death = yes
+	}
+}
+41323 = {
+	name = "Kriv"
+	female = yes
+	dynasty = 201 # Gazkit
+	culture = goblin
+	religion = goblin_pantheon
+	trait = creature_goblin
+	mother = 41322
+	80.1.1 = {
+		birth = yes
+	}
+	123.1.1 = {
 		death = yes
 	}
 }

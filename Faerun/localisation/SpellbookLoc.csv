@@ -1,0 +1,16 @@
+cantrip_friends;Cast Friends spell;;;;;;;;;;;;;x
+cantrip_friends_desc;The Friends cantrip temporarily increases the target's opinion of you, but afterwards they'll realise what you've done and their opinion will go down.;;;;;;;;;;;;;x
+CANTRIP_ON_COOLDOWN;Cantrip on cooldown;;;;;;;;;;;;;x
+friends_spell;Charmed;;;;;;;;;;;;;x
+friends_spell_after;Charmed me;;;;;;;;;;;;;x
+SPELLFAILED;Your spell against [From.GetBestName] has failed.;;;;;;;;;;;;;x
+cast_spell_on_me;Tried to cast spell on me;;;;;;;;;;;;;x
+comprehend_languages_mod;Comprehend Languages;;;;;;;;;;;;;x
+comprehend_languages;Cast Comprehend Languages spell;;;;;;;;;;;;;x
+comprehend_languages_desc;The Comprehend Languages minor spell temporarily increases your diplomatic ability.;;;;;;;;;;;;;x
+HASSPELLSLOTS;Must have spell slots available.;;;;;;;;;;;;;x
+open_wiz_spellbook;Open Wizard Spellbook;;;;;;;;;;;;;x
+open_wiz_spellbook_desc;Open your spellbook to see available spells.;;;;;;;;;;;;;x
+close_wiz_spellbook;Close Wizard Spellbook;;;;;;;;;;;;;x
+close_wiz_spellbook_desc;Close your spellbook and access other decisions.;;;;;;;;;;;;;x
+WIZTUTORIAL;Spells can be cast in two different ways: either through the intrigue screen or via targeted decisions.\n\nWhile Cantrips can be cast as long as they are not in cooldown, other spells are split into Minor, Moderate and Major categories. Each has a maximum number that can be cast per year based on your class level.\n\nAll wizards know a basic set of universal spells and can learn more through research.;;;;;;;;;;;;;x

@@ -42,6 +42,11 @@ tb_graph_culture_racial = {
 				set_graphical_culture = wild_dwarf
 			}
 		}
+		dtariggfx = {
+			PREV = {
+				set_graphical_culture = dtarig
+			}
+		}
 		#elves
 		drowgfx = {
 			PREV = {
@@ -76,6 +81,11 @@ tb_graph_culture_racial = {
 		eladringfx = {
 			PREV = {
 				set_graphical_culture = eladrin
+			}
+		}
+		maviddigfx = {
+			PREV = {
+				set_graphical_culture = maviddi
 			}
 		}
 		#halflings

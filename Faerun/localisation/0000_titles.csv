@@ -27679,6 +27679,8 @@ k_old_netheril_adj;Old Netherilian;Old Netherilian;Old Netherilian;;Old Netheril
 k_old_netheril;Old Netheril;Old Néthéril;Old Netheril;;Old Netheril;;;;;;;;;x
 k_old_shanatar_adj;Old Shanatarian;Old Shanatarian;Old Shanatarian;;Old Shanatarian;;;;;;;;;x
 k_old_shanatar;Old Shanatar;Old Shanatar;Old Shanatar;;Old Shanatar;;;;;;;;;x
+k_omu_adj;Omuan;Omuan;Omuan;;Omuan;;;;;;;;;x
+k_omu;Omu;Omu;Omu;;Omu;;;;;;;;;x
 k_pasar_adj;Pasarian;Pasarian;Pasarian;;Pasarian;;;;;;;;;x
 k_pasar;Pasar;Pasar;Pasar;;Pasar;;;;;;;;;x
 k_pelvuria_adj;Pelvurian;Pelvurian;Pelvurian;;Pelvurian;;;;;;;;;x
@@ -29081,3 +29083,21 @@ k_storting;The Storting;;;;;;;;;;;;;x
 k_storting_adj;Jotunbrud;;;;;;;;;;;;;x
 k_ice_horde;Ice Horde;;;;;;;;;;;;;x
 k_ice_horde_adj;Aurilian;;;;;;;;;;;;;x
+d_coldgrave;Coldgrave;;;;;;;;;;;;;x
+d_coldgrave_adj;Coldgraver;;;;;;;;;;;;;x
+k_everhorde;Everhorde;;;;;;;;;;;;;x
+k_everhorde_adj;Everhorde;;;;;;;;;;;;;x
+d_northreaver;Northreaver;;;;;;;;;;;;;x
+d_northreaver_adj;Northreaver;;;;;;;;;;;;;x
+d_iceaxe;Iceaxe;;;;;;;;;;;;;x
+d_iceaxe_adj;Iceaxe;;;;;;;;;;;;;x
+d_spinecrusher;Spinecrusher;;;;;;;;;;;;;x
+d_spinecrusher_adj;Spinecrusher;;;;;;;;;;;;;x
+d_kheldruni;Khedruni;;;;;;;;;;;;;x
+d_kheldruni_adj;Khedruni;;;;;;;;;;;;;x
+b_amgoth;Amgoth;;;;;;;;;;;;;x
+b_moonstone;Moonstone;;;;;;;;;;;;;x
+b_pick_and_axe;Pick & Axe;;;;;;;;;;;;;x
+b_taho;Taho;;;;;;;;;;;;;x
+c_hlammmach;Hlammach;;;;;;;;;;;;;x
+c_hlammmach_adj;Hlammish;;;;;;;;;;;;;x

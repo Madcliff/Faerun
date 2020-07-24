@@ -432,7 +432,6 @@
 	religion = elven_pantheon
 	culture = green_elf
 	trait = creature_elf
-	trait = master_ranger
 	father = 47603
 	1012.1.1 = { birth = yes}
 	1028.1.1 = {
@@ -695,7 +694,7 @@
 	culture = moon_elf
 	trait = creature_elf
 	trait = master_wizard
-	trait = chosen_of_mystra
+	trait = chosen_mystra
 	trait = lunatic
 	3.6.2 = { birth = yes}
 	33.6.2 = { immortal_age = 30 }
