@@ -1068,6 +1068,8 @@ e_anauroch = {
 				color={ 152 176 164 }
 				color2={ 255 255 255 }
 				
+				netherese = "Saharelgard"
+				
 				b_spellgard = {}
 				b_uuhu = {}
 				b_dup = {}
@@ -2261,7 +2263,6 @@ e_calim_empire = {
 	
 				holy_site = drow_polytheism
 				holy_site = lolth_cult
-				holy_site = vhaeraun
 	
 				b_sarenestar_glade = {}
 				b_myth_unnohyr = {}
@@ -5148,7 +5149,6 @@ e_cormanthor = {
 				
 				holy_site = drow_polytheism
 				holy_site = lolth_cult
-				holy_site = vhaeraun
 				
 				b_elven_court = {}
 				b_golden_oak = {}
@@ -6094,6 +6094,8 @@ e_easting_reach = {
 			color2={ 255 255 255 }
 			
 			capital = 262 # c_tantras
+			
+			impilturan = "Vesperin"
 			
 			c_tantras = { # 262
 				color={ 112 134 143 }
@@ -14697,7 +14699,6 @@ e_northern_realms = {
 				
 				holy_site = drow_polytheism
 				holy_site = lolth_cult
-				holy_site = vhaeraun
 	
 				b_ironmaster = {}
 				b_firestone = {}
@@ -14940,7 +14941,6 @@ e_northern_realms = {
 				holy_site = drow_polytheism
 				holy_site = dwarven_pantheon
 				holy_site = lolth_cult
-				holy_site = vhaeraun
 	
 				b_mithral_hall = {}
 				b_fourthpeak = {}
@@ -18017,7 +18017,6 @@ e_shining_south = {
 				
 				holy_site = drow_polytheism
 				holy_site = lolth_cult
-				holy_site = vhaeraun
 	
 				b_luenath = {}
 				b_alamplon = {}
@@ -19324,6 +19323,7 @@ e_sword_coast = {
 			sun_elf = "Llewyrrwood"
 			green_elf = "Llewyrrwood"
 			wood_elf = "Llewyrrwood"
+			eladrin = "New Sharandar"
 			
 			c_neverwinter_wood = { # 11
 				color={ 125 191 134 }

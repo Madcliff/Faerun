@@ -6805,6 +6805,7 @@ character_event = { # Generate 'Fake Family' for characters without any
 				female = yes
 				religion = ROOT
 				culture = ROOT
+				race = ROOT				flag = faerun_generated
 				dynasty = actually_culture
 				random_traits = yes
 			}
@@ -6832,6 +6833,7 @@ character_event = { # Generate 'Fake Family' for characters without any
 				female = yes
 				religion = ROOT
 				culture = ROOT
+				race = ROOT				flag = faerun_generated
 				dynasty = actually_culture
 				random_traits = yes
 			}
@@ -6859,6 +6861,7 @@ character_event = { # Generate 'Fake Family' for characters without any
 				female = yes
 				religion = ROOT
 				culture = ROOT
+				race = ROOT				flag = faerun_generated
 				dynasty = actually_culture
 				random_traits = yes
 			}
@@ -6886,6 +6889,7 @@ character_event = { # Generate 'Fake Family' for characters without any
 				female = yes
 				religion = ROOT
 				culture = ROOT
+				race = ROOT				flag = faerun_generated
 				dynasty = actually_culture
 				random_traits = yes
 			}
@@ -6913,6 +6917,7 @@ character_event = { # Generate 'Fake Family' for characters without any
 				female = yes
 				religion = ROOT
 				culture = ROOT
+				race = ROOT				flag = faerun_generated
 				dynasty = actually_culture
 				random_traits = yes
 			}
@@ -6940,6 +6945,7 @@ character_event = { # Generate 'Fake Family' for characters without any
 				female = yes
 				religion = ROOT
 				culture = ROOT
+				race = ROOT				flag = faerun_generated
 				dynasty = actually_culture
 				random_traits = yes
 			}
@@ -6967,6 +6973,7 @@ character_event = { # Generate 'Fake Family' for characters without any
 				female = yes
 				religion = ROOT
 				culture = ROOT
+				race = ROOT				flag = faerun_generated
 				dynasty = actually_culture
 				random_traits = yes
 			}
@@ -6994,6 +7001,7 @@ character_event = { # Generate 'Fake Family' for characters without any
 				female = yes
 				religion = ROOT
 				culture = ROOT
+				race = ROOT				flag = faerun_generated
 				dynasty = actually_culture
 				random_traits = yes
 			}
@@ -7020,6 +7028,7 @@ character_event = { # Generate 'Fake Family' for characters without any
 				female = yes
 				religion = ROOT
 				culture = ROOT
+				race = ROOT				flag = faerun_generated
 				dynasty = actually_culture
 				random_traits = yes
 			}
@@ -7035,41 +7044,11 @@ character_event = { # Generate 'Fake Family' for characters without any
     			COUNT = { prestige = 100 }
     		}
 		}
-		if = {
-			limit = {
-				culture = hobgoblin
-			}
-			event_target:mother_target = {
-				add_trait = creature_hobgoblin
-			}
-		}
-		if = {
-			limit = {
-				culture = bugbear
-			}
-			event_target:mother_target = {
-				add_trait = creature_bugbear
-			}
-		}
-		if = {
-			limit = {
-				culture = gnoll
-			}
-			event_target:mother_target = {
-				add_trait = creature_gnoll
-			}
-		}
-		if = {
-			limit = {
-				NOR = {
-					culture = gnoll
-					culture = bugbear
-				}
-			}
-			event_target:mother_target = {
-				character_event = { id = z_character_trait.1 }
-			}
-		}
+
+
+		faerun_assign_mother_traits = yes
+
+
 		# Then, generate a sort of random amount of children
 		if = {
 			limit = {
@@ -7083,13 +7062,14 @@ character_event = { # Generate 'Fake Family' for characters without any
 						age = 24
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				2 = {
@@ -7097,13 +7077,14 @@ character_event = { # Generate 'Fake Family' for characters without any
 						age = 24
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				10 = {
@@ -7111,25 +7092,27 @@ character_event = { # Generate 'Fake Family' for characters without any
 						age = 24
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 23
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				10 = {
@@ -7137,25 +7120,27 @@ character_event = { # Generate 'Fake Family' for characters without any
 						age = 24
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 23
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				10 = {
@@ -7163,37 +7148,40 @@ character_event = { # Generate 'Fake Family' for characters without any
 						age = 24
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 23
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 22
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				10 = {
@@ -7201,37 +7189,40 @@ character_event = { # Generate 'Fake Family' for characters without any
 						age = 24
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 23
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 22
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				10 = {
@@ -7239,49 +7230,53 @@ character_event = { # Generate 'Fake Family' for characters without any
 						age = 24
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 23
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 22
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 21
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				10 = {
@@ -7289,49 +7284,53 @@ character_event = { # Generate 'Fake Family' for characters without any
 						age = 24
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 23
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 22
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 21
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 			}
@@ -7347,13 +7346,14 @@ character_event = { # Generate 'Fake Family' for characters without any
 						age = 13
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				2 = {
@@ -7361,13 +7361,14 @@ character_event = { # Generate 'Fake Family' for characters without any
 						age = 13
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				10 = {
@@ -7375,127 +7376,128 @@ character_event = { # Generate 'Fake Family' for characters without any
 						age = 13
 						religion = ROOT
 						culture = ROOT
+						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 12
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				10 = {
 					create_character = {
 						age = 13
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 12
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				5 = {
 					create_character = {
 						age = 13
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 12
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 11
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				5 = {
 					create_character = {
 						age = 13
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 12
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 11
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 			}
@@ -7510,156 +7512,156 @@ character_event = { # Generate 'Fake Family' for characters without any
 					create_character = {
 						age = 8
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				2 = {
 					create_character = {
 						age = 8
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				10 = {
 					create_character = {
 						age = 8
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 7
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				10 = {
 					create_character = {
 						age = 8
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 7
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				5 = {
 					create_character = {
 						age = 8
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 7
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 6
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				5 = {
 					create_character = {
 						age = 8
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 7
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 6
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 			}
@@ -7674,80 +7676,80 @@ character_event = { # Generate 'Fake Family' for characters without any
 					create_character = {
 						age = 1
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				5 = {
 					create_character = {
 						age = 1
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				2 = {
 					create_character = {
 						age = 1
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 0
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				2 = {
 					create_character = {
 						age = 1
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 0
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 			}
@@ -7762,80 +7764,80 @@ character_event = { # Generate 'Fake Family' for characters without any
 					create_character = {
 						age = 0
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				5 = {
 					create_character = {
 						age = 0
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				2 = {
 					create_character = {
 						age = 1
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 0
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				2 = {
 					create_character = {
 						age = 1
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 					create_character = {
 						age = 0
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 			}
@@ -7849,28 +7851,28 @@ character_event = { # Generate 'Fake Family' for characters without any
 					create_character = {
 						age = 0
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = no
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 				2 = {
 					create_character = {
 						age = 0
 						religion = ROOT
-						culture = ROOT
+						culture = ROOT						race = ROOT						flag = faerun_generated
 						female = yes
 					}
 					new_character = {
 						dynasty = ROOT
 						set_father = ROOT
 						set_mother = event_target:mother_target
-						character_event = { id = racialbirth.0 } 
+						faerun_assign_child_traits = yes
 					}
 				}
 			}
@@ -7899,8 +7901,11 @@ character_event = { # Generate 'Fake Family' for characters without any
 		}
 		
 		any_child = {
-				character_event = { id = racialbirth.0 }
-				character_event = { id = z_character_trait.1 }
+			limit = {
+				NOT = { has_character_flag = faerun_generated }
+			}
+			faerun_assign_child_traits = yes
+			# character_event = { id = z_character_trait.1 }
 		}
 		any_child = { # Fix for children not getting any traits
 			limit = {
@@ -7989,9 +7994,6 @@ character_event = { # Generate 'Fake Family' for characters without any
 					copy_random_personality_trait = PREV
 				}
 			}
-		}
-		any_child = { # assign species trait
-			character_event = { id = racialbirth.0 }
 		}
 		recalc_succession = yes
 	}
