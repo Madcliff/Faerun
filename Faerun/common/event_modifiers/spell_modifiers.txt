@@ -3,7 +3,37 @@ comprehend_languages_mod = {
 	diplomacy = 2
 }
 
+nezrams_amethyst_aura_mod = {
+	icon = 3
+	health = 2
+}
+
+spell_mantle_mod = {
+	icon = 79
+	#Effect is handled elsewhere
+}
+
+spell_fabricate_mod = {
+	icon = 79
+	local_build_cost_modifier = 1.1
+}
+
+tensers_transformation_mod = {
+	icon = 79
+	combat_rating = 15
+}
+
 disrupt_undead_mod = {
 	icon = 42
 	combat_rating = -10
+}
+
+glowing_purple_skin = {
+	icon = 80
+	diplomacy = -2 # hard to be taken serious
+}
+
+burn_path_mod = {
+	icon = 80
+	#Effect is elsewhere
 }

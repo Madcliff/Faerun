@@ -106,7 +106,7 @@
 	name = Jerek
 	dynasty = 3707
 	culture = uthgardt
-	religion = uthgardt_faith
+	religion = deities_of_fury
 	trait = creature_human
 	trait = paranoid
 	trait = master_barbarian
@@ -119,7 +119,7 @@
 	dynasty = 3707
 	father = 23008
 	culture = uthgardt
-	religion = uthgardt_faith
+	religion = deities_of_fury
 	trait = creature_human
 	trait = zealous
 	trait = expert_barbarian
@@ -2955,6 +2955,50 @@
 	trait = trained_barbarian
 	trait = strong
 	1440.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+23238 = {
+	name = "Vaar"
+	dynasty = 238 # Vaarson
+	culture = uthgardt
+	religion = uthgardt_faith
+	trait = creature_human
+	1370.1.1 = {
+		birth = yes
+	}
+	1450.1.1 = {
+		death = yes
+	}
+}
+23239 = {
+	name = "Rond"
+	dynasty = 238 # Vaarson
+	culture = uthgardt
+	religion = uthgardt_faith
+	trait = creature_human
+	trait = trained_fighter
+	father = 23238
+	1430.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+23240 = {
+	name = "Kriga"
+	female = yes
+	dynasty = 270 # Moonmusk
+	culture = uthgardt
+	religion = uthgardt_faith
+	intrigue = 8
+	trait = intricate_webweaver
+	trait = creature_human
+	1420.1.1 = {
 		birth = yes
 	}
 	1500.1.1 = {

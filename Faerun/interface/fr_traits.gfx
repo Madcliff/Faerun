@@ -1,5 +1,12 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_trait_faerun_immortal_race"
+		texturefile = "gfx/traits/chosen_base.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_avatar"
 		texturefile = "gfx/traits/avatar.dds"
 		noOfFrames = 1
@@ -112,6 +119,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_creature_angel"
+		texturefile = "gfx/traits/creature_angel.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_creature_human"
 		texturefile = "gfx/traits/creature_human.dds"
 		noOfFrames = 1
@@ -128,6 +142,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_creature_drow"
 		texturefile = "gfx/traits/creature_drow.tga"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_creature_sea_elf"
+		texturefile = "gfx/traits/creature_sea_elf.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -2474,6 +2495,27 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_origin_wild_magic"
 		texturefile = "gfx/traits/origin_wild_magic.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_alustriels_mantle_trait"
+		texturefile = "gfx/traits/alustriels_mantle_trait.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_spell_slow_trait"
+		texturefile = "gfx/traits/spell_slow_trait.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_spell_longstrider_trait"
+		texturefile = "gfx/traits/spell_longstrider_trait.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

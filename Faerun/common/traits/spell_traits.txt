@@ -1,0 +1,18 @@
+alustriels_mantle_trait = {
+	leader = yes
+	command_modifier = {
+		defence = 0.20
+	}
+}
+spell_slow_trait = {
+	leader = yes
+	command_modifier = {
+		speed = -0.7
+	}
+}
+spell_longstrider_trait = {
+	leader = yes
+	command_modifier = {
+		speed = 1.3
+	}
+}

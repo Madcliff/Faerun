@@ -6,8 +6,11 @@
 }
 462.1.1 = {
 	law = true_cognatic_succession
-	liege = 0
+	holder = 0
 }
 1348.1.1 = {
 	liege = d_the_black_road
+}
+1360.1.1 = {
+	holder = 61014 # Temporary solution to random character weirdness
 }

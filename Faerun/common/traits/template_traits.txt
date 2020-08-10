@@ -221,6 +221,19 @@ half_dragon = {
 ##outsiders
 #celestial
 #half-celestial
+half_celestial = {
+	customizer = no
+	random = no
+	diplomacy = 2
+	martial = 2
+	intrigue = 1
+	learning = 2
+	health = 2
+	combat_rating = 2
+	
+	ai_greed = -10
+	ai_ambition = -10
+}
 #fiend
 #half-fiend
 half_fiend = {	# generic version
@@ -267,7 +280,7 @@ half_troll = {
 }
 
 #sorcerer origins
-origin_aberrant_mind = {
+origin_aberrant_mind = { #idk, events?
 	customizer = yes
 	is_visible = {
 		FROM = { has_character_flag = sorc_originrevealed }
@@ -283,7 +296,7 @@ origin_aberrant_mind = {
 		origin_wild_magic
 	}
 }
-origin_draconic = {
+origin_draconic = { #dragon
 	customizer = yes
 	is_visible = {
 		FROM = { has_character_flag = sorc_originrevealed }
@@ -299,7 +312,7 @@ origin_draconic = {
 		origin_wild_magic
 	}
 }
-origin_divine_soul = {
+origin_divine_soul = { #aasimar
 	customizer = yes
 	is_visible = {
 		FROM = { has_character_flag = sorc_originrevealed }
@@ -331,7 +344,7 @@ origin_shadow = {
 		origin_wild_magic
 	}
 }
-origin_storm = {
+origin_storm = { #djinn
 	customizer = yes
 	is_visible = {
 		FROM = { has_character_flag = sorc_originrevealed }
@@ -347,7 +360,7 @@ origin_storm = {
 		origin_wild_magic
 	}
 }
-origin_wild_magic = {
+origin_wild_magic = { #fae
 	customizer = yes
 	is_visible = {
 		FROM = { has_character_flag = sorc_originrevealed }

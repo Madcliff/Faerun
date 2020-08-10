@@ -3,8 +3,35 @@
 	law = succ_patrician_elective
 	law = succ_gavelkind
 }
-1177.1.1 = {
+926.1.1 = {
+	holder = 30222 # Windyn Balindre
+}
+950.1.1 = {
+	holder = 30223 # Dendren Balindre
+}
+1003.1.1 = {
+	holder = 30224 # Wandryn Balindre
+}
+1043.1.1 = {
+	holder = 30225 # Andro Balindre
+}
+1063.1.1 = {
+	liege = k_impiltur
+}
+1078.1.1 = {
+	holder = 30226 # Dellan Balindre
+}
+1132.1.1 = {
+	holder = 30227 # Mandrun Balindre
+}
+1165.1.1 = {
+	holder = 30228 # Dendren Balindre
+}
+1175.1.1 = {
 	holder = 30229 # Delile Balindre
+}
+1177.1.1 = {
+	liege = 0
 }
 1212.1.1 = {
 	holder = 30230 # Balon Balindre

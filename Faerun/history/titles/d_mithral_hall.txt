@@ -1,8 +1,7 @@
 # e_sword_coast
 1.1.1={
-	law = agnatic_succession
+	law = true_cognatic_succession
 	law = succ_primogeniture
-	liege=e_northern_realms
 }
 120.1.1 = {
 	holder = 17007
@@ -23,7 +22,7 @@
 	holder = 17002
 }
 1190.1.1 = {
-	holder = 0
+	holder = 5253
 }
 1356.1.1 = {
 	law = cognatic_succession
@@ -37,4 +36,16 @@
 }
 1370.3.3 = {
 	holder = 17001
+}
+1409.1.1 = {
+	holder = 17010
+}
+1445.1.1 = {
+	holder = 17011
+}
+1485.1.1 = {
+	liege = 0
+}
+1486.1.1 = {
+	holder = 17012
 }

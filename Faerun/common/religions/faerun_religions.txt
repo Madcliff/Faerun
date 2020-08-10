@@ -34,6 +34,7 @@
 	# drow_polytheism
 # dwarven_pantheon_group
 	# dwarven_pantheon
+	# laduguer
 	# gnome_pantheon
 # giant_pantheon_group
 	# giant_pantheon
@@ -228,13 +229,13 @@ good_human_pantheon_group = {
 		crusade_name = GREAT_HOLY_WAR
 		piety_name = MAAT
 
-		high_god_name = GOD_PTAH
+		high_god_name = GOD_HORUS_RE
 		
 		god_names = {
-			GOD_AMAUNET GOD_AMON GOD_HAUHET GOD_HEH GOD_KAUKET GOD_KEK GOD_NAUNET GOD_NUN GOD_RE GOD_ISIS GOD_OSIRIS GOD_ANUBIS
+			GOD_ANHUR GOD_BAST GOD_BES GOD_GEB GOD_HATHOR GOD_HORUS_RE GOD_ISIS GOD_NEPHTHYS GOD_OSIRIS GOD_RE GOD_THOTH
 		}
 		evil_god_names = {
-			GOD_SET GOD_APEP
+			GOD_SET GOD_SEBEK
 		}
 
 		can_grant_claim = yes
@@ -1394,6 +1395,32 @@ dwarven_pantheon_group = {
 		}
 		evil_god_names = {
 			gods_of_evil abbathor
+		}
+		
+		has_heir_designation = yes
+		can_grant_claim = yes
+		can_call_crusade = no
+		matrilineal_marriages = yes
+		can_grant_divorce = yes
+		defensive_attrition = yes
+	}
+	
+	laduguer = {
+		graphical_culture = westerngfx
+
+		icon = 56
+		heresy_icon = 56
+		color = { 0.10 0.35 0.50 }
+		
+		crusade_name = CRUSADE
+		scripture_name = edicts_of_laduguer
+		priest_title = PRIEST
+		high_god_name = LADUGUER
+		god_names = {
+			LADUGUER DEEP_DUERRA
+		}
+		evil_god_names = {
+			LOLTH MORADIN
 		}
 		
 		has_heir_designation = yes

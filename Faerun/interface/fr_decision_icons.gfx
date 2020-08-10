@@ -1,5 +1,7 @@
 spriteTypes = {
 	
+###Government conversion icons###	
+	
 	spriteType = {
 		name = "GFX_convert_to_magocracy_indep"
 		texturefile = "gfx\\interface\\decision_icon_adopt_magocracy.dds"
@@ -30,4 +32,59 @@ spriteTypes = {
 		texturefile = "gfx\\interface\\decision_icon_adopt_divine.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_patrons_fae_mul"
+		texturefile = "gfx\\interface\\patrons_fae_mul.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_patrons_fae_dof"
+		texturefile = "gfx\\interface\\patrons_fae_dof.dds"
+	}
+	
+###Spell book icons###
+
+	spriteType = {
+		name = "GFX_open_wiz_spellbook"
+		texturefile = "gfx\\interface\\decision_open_wiz_spellbook.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_close_wiz_spellbook"
+		texturefile = "gfx\\interface\\decision_close_wiz_spellbook.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_comprehend_languages"
+		texturefile = "gfx\\interface\\decision_comprehend_languages.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_dispel"
+		texturefile = "gfx\\interface\\decision_dispel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_disrupt_undead"
+		texturefile = "gfx\\interface\\decision_disrupt_undead.dds"
+	}
+	spriteType = {
+		name = "GFX_spell_longevity"
+		texturefile = "gfx\\interface\\decision_spell_longevity.dds"
+	}
+	spriteType = {
+		name = "GFX_spell_banish_fake"
+		texturefile = "gfx\\interface\\decision_spell_banish_fake.dds"
+	}
+### Temporary Generic Placeholder Icon ###
+
+	spriteType = {
+		name = "GFX_patrons_fae_drow"
+		texturefile = "gfx\\interface\\fr_decisions.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_find_runecaster"
+		texturefile = "gfx\\interface\\find_runecaster.dds"
+	}
 }

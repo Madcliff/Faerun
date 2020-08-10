@@ -1,85 +1,10 @@
-###Hill Giant###
+###Group wide, any giant could build if conditions meet###
 tribal = {
-	tb_steading_1 = {
-		desc = tb_steading_1_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		replaces = tb_hillfort_1
-		potential = {
-			FROM = {
-				OR = {
-					culture = hill_giant
-				}
-				NOR = {
-					culture = monster
-				}
-			}
-		}
-		gold_cost = 25
-		build_time = 365
-		
-		fort_level = 0.25
-		levy_size = 0.02
-		retinuesize = 100
-		
-		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
-		add_number_to_name = no
-		extra_tech_building_start = 0.3
-	}
-	tb_steading_2 = {
-		desc = tb_steading_2_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
-		upgrades_from = tb_steading_1
-		gold_cost = 50
-		build_time = 365
-		fort_level = 0.50
-		levy_size = 0.03
-		retinuesize = 100
-		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
-		add_number_to_name = no
-		extra_tech_building_start = 2.5
-	}
-	tb_steading_3 = {
-		desc = tb_steading_3_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
-		upgrades_from = tb_steading_2
-		gold_cost = 75
-		build_time = 365
-		fort_level = 0.75
-		levy_size = 0.04
-		retinuesize = 100
-		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
-		add_number_to_name = no
-		extra_tech_building_start = 5.5
-	}
-	tb_steading_4 = {
-		desc = tb_steading_4_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
-		upgrades_from = tb_steading_3
-		gold_cost = 100
-		build_time = 365
-		fort_level = 1
-		levy_size = 0.05
-		retinuesize = 100
-		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
-		add_number_to_name = no
-		convert_to_castle = ca_giant_steading
-		extra_tech_building_start = 15.5
-	}
 	tb_rockthrow_1 = {
 		desc = tb_rockthrow_1_desc
 		potential = {
 			FROM = {
-				OR = {
-					culture_group = giant_group
-				}
+				culture_group = giant_group
 				NOR = {
 					culture = monster
 				}
@@ -90,8 +15,6 @@ tribal = {
 		build_time = 250
 		archers = 5
 		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
 		add_number_to_name = no
 	}
 	tb_rockthrow_2 = {
@@ -103,8 +26,6 @@ tribal = {
 		archers = 10
 		archers_morale = 0.1
 		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
 		add_number_to_name = no
 		extra_tech_building_start = 5.5
 	}
@@ -118,138 +39,8 @@ tribal = {
 		archers_morale = 0.2
 		convert_to_castle = ca_giant_fields
 		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
 		add_number_to_name = no
 		extra_tech_building_start = 5.5
-	}
-	tb_monstertrash_1 = {
-		desc = tb_monstertrash_1_desc
-		potential = {
-			FROMFROM = {
-				location = {
-					has_building = tb_steading_2
-				}
-			}
-			FROM = {
-				OR = {
-					culture = hill_giant
-				}
-				NOR = {
-					culture = monster
-				}
-			}
-		}
-		prestige_cost = 25
-		build_time = 365
-		heavy_infantry = 5
-		heavy_infantry_morale = 0.05
-		fort_level = 0.1
-		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
-		add_number_to_name = no
-	}
-	tb_monstertrash_2 = {
-		desc = tb_monstertrash_2_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
-		upgrades_from = tb_monstertrash_1
-		prestige_cost = 50
-		build_time = 365
-		heavy_infantry = 5
-		heavy_infantry_morale = 0.1
-		fort_level = 0.1
-		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
-		add_number_to_name = no
-		extra_tech_building_start = 5.5
-	}
-	tb_monstertrash_3 = {
-		desc = tb_monstertrash_3_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
-		upgrades_from = tb_monstertrash_2
-		prestige_cost = 200
-		build_time = 365
-		heavy_infantry = 5
-		heavy_infantry_morale = 0.1
-		fort_level = 0.1
-		convert_to_castle = ca_monster_pit
-		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
-		add_number_to_name = no
-		extra_tech_building_start = 5.5
-	}
-	tb_chiefshut_1 = {
-		desc = tb_chiefshut_1_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
-		replaces = tb_war_camp_1
-		potential = {
-			FROM = {
-				OR = {
-					culture = hill_giant
-				}
-				NOR = {
-					culture = monster
-				}
-			}
-		}
-		prestige_cost = 25
-		build_time = 365
-		heavy_infantry = 5
-		light_infantry = 15
-		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
-		add_number_to_name = no
-	}
-	tb_chiefshut_2 = {
-		desc = tb_chiefshut_2_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
-		upgrades_from = tb_chiefshut_1
-		gold_cost = 50
-		build_time = 365
-		heavy_infantry = 10
-		heavy_infantry_morale = 0.15
-		light_infantry = 15
-		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
-		add_number_to_name = no
-		extra_tech_building_start = 5.5
-	}
-	tb_chiefshut_3 = {
-		desc = tb_chiefshut_3_desc
-		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
-		upgrades_from = tb_chiefshut_2
-		potential = {
-			FROMFROM = {
-				location = {
-					has_building = tb_steading_3
-				}
-			}
-			FROM = {
-				OR = {
-					culture = hill_giant
-				}
-				NOR = {
-					culture = monster
-				}
-			}
-		}
-		gold_cost = 75
-		build_time = 365
-		heavy_infantry = 15
-		heavy_infantry_morale = 0.2
-		liege_piety = 0.05
-		liege_prestige = 0.05
-		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
-		add_number_to_name = no
-		extra_tech_building_start = 5.5
-		convert_to_castle = ca_giants_keep
 	}
 	tb_desert_town_1 = {
 		desc = tb_desert_town_1_desc
@@ -258,9 +49,7 @@ tribal = {
 		potential = {
 			terrain = desert
 			FROM = {
-				OR = {
-					culture_group = giant_group
-				}
+				culture_group = giant_group
 				NOR = {
 					culture = monster
 				}
@@ -319,6 +108,410 @@ tribal = {
 		court_size_modifier = 1
 		extra_tech_building_start = 2.5
 		convert_to_castle = ca_nomadcity
+	}
+	tb_giant_totem_1 = {
+		desc = tb_giant_totem_1_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		replaces = tb_arsenal_1
+		potential = {
+			FROM = {
+				culture_group = giant_group
+				religion = giant_pantheon
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		gold_cost = 25
+		build_time = 365
+		liege_piety = 0.025
+		archers = 10
+		ai_creation_factor = 97
+		ai_feudal_modifier = 10
+		ai_republic_modifier = -10
+		add_number_to_name = no
+		extra_tech_building_start = 10.3
+		convert_to_castle = ca_giantshrine_1
+	}
+	tb_woodgiant_1 = {
+		desc = tb_woodgiant_1_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		potential = {
+			OR = {
+				terrain = forest
+			}
+			FROM = {
+				culture_group = giant_group
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		prestige_cost = 25
+		build_time = 365
+		fort_level = 0.05
+		tax_income = 0.25
+		light_infantry = 10
+		ai_creation_factor = 97
+		ai_feudal_modifier = -10
+		ai_republic_modifier = 10
+		add_number_to_name = no	
+		extra_tech_building_start = 10.3
+	}
+	tb_woodgiant_2 = {
+		desc = tb_woodgiant_2_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		upgrades_from = tb_woodgiant_1
+		prestige_cost = 50
+		build_time = 365
+		fort_level = 0.05
+		tax_income = 0.25
+		light_infantry = 10
+		ai_creation_factor = 98
+		ai_feudal_modifier = -10
+		ai_republic_modifier = 10
+		add_number_to_name = no	
+		extra_tech_building_start = 11.5
+		convert_to_castle = ca_voadkyn
+	}
+	tb_woodgiant_3 = {
+		desc = tb_woodgiant_3_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		upgrades_from = tb_woodgiant_2
+		prestige_cost = 75
+		build_time = 365
+		fort_level = 0.05
+		tax_income = 0.5
+		light_infantry = 15
+		ai_creation_factor = 99
+		ai_feudal_modifier = -10
+		ai_republic_modifier = 10
+		add_number_to_name = no	
+		court_size_modifier = 1
+		extra_tech_building_start = 12
+	}
+	tb_woodgiant_4 = {
+		desc = tb_woodgiant_4_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 3 }
+		upgrades_from = tb_woodgiant_3
+		prestige_cost = 100
+		build_time = 365
+		fort_level = 0.05
+		tax_income = 0.75
+		light_infantry = 20
+		ai_creation_factor = 100
+		ai_feudal_modifier = -10
+		ai_republic_modifier = 10
+		add_number_to_name = no	
+		court_size_modifier = 1
+		extra_tech_building_start = 12.5
+		convert_to_castle = ca_voadkyn_2
+	}
+	tb_trollmarsh_1 = {
+		desc = tb_trollmarsh_1_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 0 }
+		potential = {
+			terrain = marsh
+			FROM = {
+				culture_group = giant_group
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		prestige_cost = 75
+		build_time = 365
+		heavy_infantry = 25
+		heavy_infantry_morale = 0.025
+		ai_creation_factor = 97
+		ai_feudal_modifier = -10
+		ai_republic_modifier = 10
+		add_number_to_name = no	
+		extra_tech_building_start = 10.3
+	}
+	tb_trollmarsh_2 = {
+		desc = tb_trollmarsh_2_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		upgrades_from = tb_trollmarsh_1
+		prestige_cost = 100
+		build_time = 365
+		heavy_infantry = 30
+		heavy_infantry_morale = 0.03
+		ai_creation_factor = 98
+		ai_feudal_modifier = -10
+		ai_republic_modifier = 10
+		add_number_to_name = no	
+		extra_tech_building_start = 11.5
+		convert_to_castle = ca_troll_den_1
+	}
+	tb_ogreslaves = {
+		desc = tb_ogreslaves_desc
+		trigger = { TECH_INFANTRY = 1 }
+		potential = {
+			FROMFROM = {
+				location = {
+					culture = ogre
+				}
+			}
+			FROM = {
+				culture_group = giant_group
+				NOR = {
+					culture = monster
+					culture = ogre
+					culture = hill_giant
+				}
+			}
+		}
+		prestige_cost = 75
+		build_time = 365
+		light_infantry = 50
+		ai_creation_factor = 95
+		add_number_to_name = no
+		extra_tech_building_start = 10.3
+	}
+	tb_ogreslaves_2 = {
+		desc = tb_ogreslaves_2_desc
+		trigger = { TECH_INFANTRY = 0 }
+		upgrades_from = tb_ogreslaves
+		prestige_cost = 125
+		build_time = 547
+		light_infantry = 100
+		ai_creation_factor = 94
+		add_number_to_name = no
+		extra_tech_building_start = 11.5
+	}
+	tb_ordninghill = {
+		desc = tb_ordninghill_desc
+		trigger = { TECH_RECRUITMENT = 1 }
+		potential = {
+			FROMFROM = {
+					location = {
+						culture = hill_giant
+					}
+				}
+			FROM = {
+				culture_group = giant_group
+				NOR = {
+					culture = monster
+					culture = hill_giant
+					culture = ogre
+					culture = ogre_magi
+				}
+			}
+		}
+		piety_cost = 100
+		build_time = 365
+		heavy_infantry = 50
+		light_infantry = 75
+		archers = 100
+		ai_creation_factor = 97
+		ai_feudal_modifier = 10
+		ai_republic_modifier = -10
+		add_number_to_name = no
+		extra_tech_building_start = 10.3
+	}
+	tb_ordningstone = {
+		desc = tb_ordningstone_desc
+		trigger = { TECH_RECRUITMENT = 1 }
+		potential = {
+			FROMFROM = {
+					location = {
+						culture = stone_giant
+					}
+				}
+			FROM = {
+				culture_group = giant_group
+				NOR = {
+					culture = monster
+					culture = stone_giant
+					culture = hill_giant
+					culture = ogre
+					culture = ogre_magi
+				}
+			}
+		}
+		piety_cost = 100
+		build_time = 365
+		liege_piety = 0.05
+		heavy_infantry = 25
+		fort_level = 0.25
+		ai_creation_factor = 97
+		add_number_to_name = no
+		extra_tech_building_start = 10.3
+	}
+###Hill Giant###
+	tb_steading_1 = {
+		desc = tb_steading_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		replaces = tb_hillfort_1
+		potential = {
+			FROM = {
+				culture = hill_giant
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		gold_cost = 25
+		build_time = 365
+		fort_level = 0.25
+		levy_size = 0.02
+		retinuesize = 100
+		ai_creation_factor = 97
+		add_number_to_name = no
+		extra_tech_building_start = 0.3
+	}
+	tb_steading_2 = {
+		desc = tb_steading_2_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = tb_steading_1
+		gold_cost = 50
+		build_time = 365
+		fort_level = 0.50
+		levy_size = 0.03
+		retinuesize = 100
+		ai_creation_factor = 97
+		add_number_to_name = no
+		extra_tech_building_start = 2.5
+	}
+	tb_steading_3 = {
+		desc = tb_steading_3_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = tb_steading_2
+		gold_cost = 75
+		build_time = 365
+		fort_level = 0.75
+		levy_size = 0.04
+		retinuesize = 100
+		ai_creation_factor = 97
+		add_number_to_name = no
+		extra_tech_building_start = 5.5
+	}
+	tb_steading_4 = {
+		desc = tb_steading_4_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = tb_steading_3
+		gold_cost = 100
+		build_time = 365
+		fort_level = 1
+		levy_size = 0.05
+		retinuesize = 100
+		ai_creation_factor = 97
+		add_number_to_name = no
+		convert_to_castle = ca_giant_steading
+		extra_tech_building_start = 15.5
+	}
+	tb_monstertrash_1 = {
+		desc = tb_monstertrash_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		replaces = tb_defensive_fortifications_1
+		potential = {
+			FROM = {
+				culture = hill_giant
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		prestige_cost = 25
+		build_time = 365
+		heavy_infantry = 5
+		heavy_infantry_morale = 0.05
+		fort_level = 0.1
+		ai_creation_factor = 97
+		ai_feudal_modifier = 10
+		ai_republic_modifier = -10
+		add_number_to_name = no
+	}
+	tb_monstertrash_2 = {
+		desc = tb_monstertrash_2_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = tb_monstertrash_1
+		prestige_cost = 50
+		build_time = 365
+		heavy_infantry = 5
+		heavy_infantry_morale = 0.1
+		fort_level = 0.1
+		ai_creation_factor = 97
+		add_number_to_name = no
+		extra_tech_building_start = 5.5
+	}
+	tb_monstertrash_3 = {
+		desc = tb_monstertrash_3_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = tb_monstertrash_2
+		prestige_cost = 200
+		build_time = 365
+		heavy_infantry = 5
+		heavy_infantry_morale = 0.1
+		fort_level = 0.1
+		convert_to_castle = ca_monster_pit
+		ai_creation_factor = 97
+		add_number_to_name = no
+		extra_tech_building_start = 5.5
+	}
+	tb_chiefshut_1 = {
+		desc = tb_chiefshut_1_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 0 }
+		replaces = tb_war_camp_1
+		potential = {
+			FROM = {
+				culture = hill_giant
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		prestige_cost = 25
+		build_time = 365
+		heavy_infantry = 5
+		light_infantry = 15
+		ai_creation_factor = 97
+		add_number_to_name = no
+		extra_tech_building_start = 0.5
+	}
+	tb_chiefshut_2 = {
+		desc = tb_chiefshut_2_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 1 }
+		upgrades_from = tb_chiefshut_1
+		gold_cost = 50
+		build_time = 365
+		heavy_infantry = 10
+		heavy_infantry_morale = 0.15
+		light_infantry = 15
+		ai_creation_factor = 97
+		ai_feudal_modifier = 10
+		ai_republic_modifier = -10
+		add_number_to_name = no
+		extra_tech_building_start = 5.5
+	}
+	tb_chiefshut_3 = {
+		desc = tb_chiefshut_3_desc
+		trigger = { TECH_CASTLE_CONSTRUCTION = 2 }
+		upgrades_from = tb_chiefshut_2
+		potential = {
+			FROMFROM = {
+				location = {
+					has_building = tb_steading_3
+				}
+			}
+			FROM = {
+				culture = hill_giant
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		gold_cost = 75
+		build_time = 365
+		heavy_infantry = 15
+		heavy_infantry_morale = 0.2
+		liege_piety = 0.05
+		liege_prestige = 0.05
+		ai_creation_factor = 97
+		add_number_to_name = no
+		extra_tech_building_start = 5.5
+		convert_to_castle = ca_giants_keep
 	}
 	tb_slave_pens_1 = {
 		desc = tb_slave_pens_1_desc
@@ -390,9 +583,7 @@ tribal = {
 				}
 			}
 			FROM = {
-				OR = {
-					culture_group = giant_group
-				}
+				culture = hill_giant
 				NOR = {
 					culture = monster
 					culture = ogre
@@ -439,9 +630,7 @@ tribal = {
 				}
 			}
 			FROM = {
-				OR = {
-					culture_group = giant_group
-				}
+				culture = hill_giant
 				NOR = {
 					culture = monster
 					culture = ogre
@@ -463,11 +652,6 @@ tribal = {
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 0 }
 		gold_cost = 50
 		potential = {
-			FROMFROM = {
-				location = {
-					has_building = tb_steading_3
-				}
-			}
 			FROM = {
 				OR = {
 					culture = hill_giant
@@ -535,9 +719,7 @@ tribal = {
 				}
 			}
 			FROM = {
-				OR = {
-					culture = hill_giant
-				}
+				culture = hill_giant
 				NOR = {
 					culture = monster
 				}
@@ -545,10 +727,8 @@ tribal = {
 		}
 		prestige_cost = 50
 		build_time = 547
-		
 		levy_reinforce_rate = 0.1
 		retinuesize = 25
-		
 		ai_creation_factor = 98
 		add_number_to_name = no
 		extra_tech_building_start = 10.3
@@ -589,9 +769,7 @@ tribal = {
 					}
 				}	
 			FROM = {
-				OR = {
-					culture = hill_giant
-				}
+				culture = hill_giant
 				NOR = {
 					culture = monster
 				}
@@ -619,9 +797,7 @@ tribal = {
 					}
 				}	
 			FROM = {
-				OR = {
-					culture = hill_giant
-				}
+				culture = hill_giant
 				NOR = {
 					culture = monster
 				}
@@ -639,42 +815,14 @@ tribal = {
 		extra_tech_building_start = 12.5
 		convert_to_castle = ca_slavelabor_3
 	}
-	tb_giant_totem_1 = {
-		desc = tb_giant_totem_1_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 2 }
-		replaces = tb_arsenal_1
-		potential = {
-			FROM = {
-				AND = {
-					culture_group = giant_group
-					religion = giant_pantheon
-				}
-				NOR = {
-					culture = monster
-				}
-			}
-		}
-		gold_cost = 25
-		build_time = 365
-		liege_piety = 0.025
-		archers = 10
-		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
-		add_number_to_name = no
-		extra_tech_building_start = 10.3
-		convert_to_castle = ca_giantshrine_1
-	}
 	tb_giant_totem_2 = {
 		desc = tb_giant_totem_2_desc
 		trigger = { TECH_CASTLE_CONSTRUCTION = 3 }
 		upgrades_from = tb_giant_totem_1
 		potential = {
 			FROM = {
-				AND = {
-					culture = hill_giant
-					religion = giant_pantheon
-				}
+				culture = hill_giant
+				religion = giant_pantheon
 				NOR = {
 					culture = monster
 				}
@@ -699,9 +847,7 @@ tribal = {
 				terrain = hills
 			}
 			FROM = {
-				OR = {
-					culture = hill_giant
-				}
+				culture = hill_giant
 				NOR = {
 					culture = monster
 				}
@@ -770,9 +916,7 @@ tribal = {
 					}
 				}	
 			FROM = {
-				OR = {
-					culture = hill_giant
-				}
+				culture = hill_giant
 				NOR = {
 					culture = monster
 				}
@@ -866,9 +1010,7 @@ tribal = {
 					}
 				}	
 			FROM = {
-				OR = {
-					culture = hill_giant
-				}
+				culture = hill_giant
 				NOR = {
 					culture = monster
 				}
@@ -882,122 +1024,6 @@ tribal = {
 		add_number_to_name = no	
 		extra_tech_building_start = 10.3
 		convert_to_castle = ca_stuffstuff_1
-	}
-	tb_woodgiant_1 = {
-		desc = tb_woodgiant_1_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 0 }
-		potential = {
-			OR = {
-				terrain = forest
-			}
-			FROM = {
-				OR = {
-					culture_group = giant_group
-				}
-				NOR = {
-					culture = monster
-				}
-			}
-		}
-		prestige_cost = 25
-		build_time = 365
-		fort_level = 0.05
-		tax_income = 0.25
-		light_infantry = 10
-		ai_creation_factor = 97
-		ai_feudal_modifier = -10
-		ai_republic_modifier = 10
-		add_number_to_name = no	
-		extra_tech_building_start = 10.3
-	}
-	tb_woodgiant_2 = {
-		desc = tb_woodgiant_2_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 1 }
-		upgrades_from = tb_woodgiant_1
-		prestige_cost = 50
-		build_time = 365
-		fort_level = 0.05
-		tax_income = 0.25
-		light_infantry = 10
-		
-		ai_creation_factor = 98
-		ai_feudal_modifier = -10
-		ai_republic_modifier = 10
-		add_number_to_name = no	
-		extra_tech_building_start = 11.5
-		convert_to_castle = ca_voadkyn
-	}
-	tb_woodgiant_3 = {
-		desc = tb_woodgiant_3_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 2 }
-		upgrades_from = tb_woodgiant_2
-		prestige_cost = 75
-		build_time = 365
-		fort_level = 0.05
-		tax_income = 0.5
-		light_infantry = 15
-		ai_creation_factor = 99
-		ai_feudal_modifier = -10
-		ai_republic_modifier = 10
-		add_number_to_name = no	
-		court_size_modifier = 1
-		extra_tech_building_start = 12
-	}
-	tb_woodgiant_4 = {
-		desc = tb_woodgiant_4_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 3 }
-		upgrades_from = tb_woodgiant_3
-		prestige_cost = 100
-		build_time = 365
-		fort_level = 0.05
-		tax_income = 0.75
-		light_infantry = 20
-		ai_creation_factor = 100
-		ai_feudal_modifier = -10
-		ai_republic_modifier = 10
-		add_number_to_name = no	
-		court_size_modifier = 1
-		extra_tech_building_start = 12.5
-		convert_to_castle = ca_voadkyn_2
-	}
-	tb_trollmarsh_1 = {
-		desc = tb_trollmarsh_1_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 0 }
-		potential = {
-			terrain = marsh
-			FROM = {
-				OR = {
-					culture_group = giant_group
-				}
-				NOR = {
-					culture = monster
-				}
-			}
-		}
-		prestige_cost = 75
-		build_time = 365
-		heavy_infantry = 25
-		heavy_infantry_morale = 0.025
-		ai_creation_factor = 97
-		ai_feudal_modifier = -10
-		ai_republic_modifier = 10
-		add_number_to_name = no	
-		extra_tech_building_start = 10.3
-	}
-	tb_trollmarsh_2 = {
-		desc = tb_trollmarsh_2_desc
-		trigger = { TECH_CITY_CONSTRUCTION = 1 }
-		upgrades_from = tb_trollmarsh_1
-		prestige_cost = 100
-		build_time = 365
-		heavy_infantry = 30
-		heavy_infantry_morale = 0.03
-		ai_creation_factor = 98
-		ai_feudal_modifier = -10
-		ai_republic_modifier = 10
-		add_number_to_name = no	
-		extra_tech_building_start = 11.5
-		convert_to_castle = ca_troll_den_1
 	}
 	tb_orcslaves_1 = {
 		desc = tb_orcslaves_1_desc
@@ -1083,9 +1109,7 @@ tribal = {
 		replaces = tb_hillfort_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = stone_giant
-				}
+				culture = stone_giant
 				NOR = {
 					culture = monster
 				}
@@ -1139,9 +1163,7 @@ tribal = {
 				terrain = mountain
 			}
 			FROM = {
-				OR = {
-					culture = stone_giant
-				}
+				culture = stone_giant
 				NOR = {
 					culture = monster
 				}
@@ -1200,9 +1222,7 @@ tribal = {
 		replaces =  tb_market_town_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = stone_giant
-				}
+				culture = stone_giant
 				NOR = {
 					culture = monster
 				}
@@ -1249,9 +1269,7 @@ tribal = {
 		replaces = tb_defensive_fortifications_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = stone_giant
-				}
+				culture = stone_giant
 				NOR = {
 					culture = monster
 				}
@@ -1316,9 +1334,7 @@ tribal = {
 		replaces = tb_shipyard_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = stone_giant
-				}
+				culture = stone_giant
 				NOR = {
 					culture = monster
 				}
@@ -1339,9 +1355,7 @@ tribal = {
 		replaces = tb_training_grounds_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = stone_giant
-				}
+				culture = stone_giant
 				NOR = {
 					culture = monster
 				}
@@ -1541,38 +1555,6 @@ tribal = {
 		add_number_to_name = no
 		extra_tech_building_start = 10.3
 	}
-	tb_ordninghill = {
-		desc = tb_ordninghill_desc
-		trigger = { TECH_RECRUITMENT = 1 }
-		potential = {
-			FROMFROM = {
-					location = {
-						culture = hill_giant
-					}
-				}
-			FROM = {
-				OR = {
-					culture_group = giant_group
-				}
-				NOR = {
-					culture = monster
-					culture = hill_giant
-					culture = ogre
-					culture = ogre_magi
-				}
-			}
-		}
-		piety_cost = 100
-		build_time = 365
-		heavy_infantry = 50
-		light_infantry = 75
-		archers = 100
-		ai_creation_factor = 97
-		ai_feudal_modifier = 10
-		ai_republic_modifier = -10
-		add_number_to_name = no
-		extra_tech_building_start = 10.3
-	}
 	tb_mountainfort = {
 		desc = tb_mountainfort_desc
 		trigger = { TECH_FORTIFICATIONS_CONSTRUCTION = 2 }
@@ -1698,9 +1680,7 @@ tribal = {
 		replaces = tb_hillfort_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = frost_giant
-				}
+				culture = frost_giant
 				NOR = {
 					culture = monster
 				}
@@ -1730,9 +1710,7 @@ tribal = {
 				}
 			}
 			FROM = {
-				OR = {
-					culture = frost_giant
-				}
+				culture = frost_giant
 				NOR = {
 					culture = monster
 				}
@@ -1819,9 +1797,7 @@ tribal = {
 		potential = {
 			terrain = arctic
 			FROM = {
-				OR = {
-					culture_group = giant_group
-				}
+				culture_group = giant_group
 				NOR = {
 					culture = monster
 				}
@@ -1848,14 +1824,12 @@ tribal = {
 		extra_tech_building_start = 10.3
 	}
 	tb_krotter_3 = {
-		desc = krotter_3_desc
+		desc = tb_krotter_3_desc
 		trigger = { TECH_CITY_CONSTRUCTION = 2 }
 		upgrades_from = tb_krotter_2
 		potential = {
 			FROM = {
-				OR = {
-					culture = frost_giant
-				}
+				culture = frost_giant
 				NOR = {
 					culture = monster
 				}
@@ -1875,9 +1849,7 @@ tribal = {
 		potential = {
 			terrain = glacier
 			FROM = {
-				OR = {
-					culture = frost_giant
-				}
+				culture = frost_giant
 				NOR = {
 					culture = monster
 				}
@@ -1921,9 +1893,7 @@ tribal = {
 		replaces = tb_defensive_fortifications_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = frost_giant
-				}
+				culture = frost_giant
 				NOR = {
 					culture = monster
 				}
@@ -1958,9 +1928,7 @@ tribal = {
 				terrain = arctic
 			}
 			FROM = {
-				OR = {
-					culture = frost_giant
-				}
+				culture = frost_giant
 				NOR = {
 					culture = monster
 				}
@@ -1981,9 +1949,7 @@ tribal = {
 		replaces = tb_shipyard_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = frost_giant
-				}
+				culture = frost_giant
 				NOR = {
 					culture = monster
 				}
@@ -2032,9 +1998,7 @@ tribal = {
 				terrain = arctic
 			}
 			FROM = {
-				OR = {
-					culture = frost_giant
-				}
+				culture = frost_giant
 				NOR = {
 					culture = monster
 				}
@@ -2055,9 +2019,7 @@ tribal = {
 		replaces = tb_training_grounds_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = frost_giant
-				}
+				culture = frost_giant
 				NOR = {
 					culture = monster
 				}
@@ -2088,9 +2050,7 @@ tribal = {
 		potential = {
 			terrain = arctic
 			FROM = {
-				OR = {
-					culture = frost_giant
-				}
+				culture = frost_giant
 				NOR = {
 					culture = monster
 				}
@@ -2113,9 +2073,7 @@ tribal = {
 				terrain = arctic
 			}
 			FROM = {
-				OR = {
-					culture = frost_giant
-				}
+				culture = frost_giant
 				NOR = {
 					culture = monster
 				}
@@ -2134,10 +2092,8 @@ tribal = {
 		replaces = tb_war_camp_1
 		potential = {
 			FROM = {
-				AND = {
-					culture = frost_giant
-					religion = giant_pantheon
-				}
+				culture = frost_giant
+				religion = giant_pantheon
 				NOR = {
 					culture = monster
 				}
@@ -2169,9 +2125,7 @@ tribal = {
 		replaces = tb_arsenal_1
 		potential = {
 			FROM = {
-				OR = {
-					culture = frost_giant
-				}
+				culture = frost_giant
 				NOR = {
 					culture = monster
 				}
@@ -2220,9 +2174,7 @@ tribal = {
 				terrain = arctic
 			}
 			FROM = {
-				OR = {
-					culture = frost_giant
-				}
+				culture = frost_giant
 				NOR = {
 					culture = monster
 				}
@@ -2243,14 +2195,10 @@ tribal = {
 		potential = {
 			FROMFROM = {
 					location = {
-							culture_group = illuskan_group
-					}
-				}	
-			FROM = {
-				AND = {
-					culture = frost_giant
-					religion = giant_pantheon
-				}
+						culture_group = illuskan_group
+					}	
+				culture = frost_giant
+				religion = giant_pantheon
 				NOR = {
 					culture = monster
 				}
@@ -2276,73 +2224,5 @@ tribal = {
 		ai_creation_factor = 97
 		add_number_to_name = no
 		extra_tech_building_start = 10.0
-	}
-	tb_ogreslaves = {
-		desc = tb_ogreslaves_desc
-		trigger = { TECH_INFANTRY = 1 }
-		potential = {
-			FROMFROM = {
-				location = {
-					culture = ogre
-				}
-			}
-			FROM = {
-				OR = {
-					culture_group = giant_group
-				}
-				NOR = {
-					culture = monster
-					culture = ogre
-					culture = hill_giant
-				}
-			}
-		}
-		prestige_cost = 75
-		build_time = 365
-		light_infantry = 50
-		ai_creation_factor = 95
-		add_number_to_name = no
-		extra_tech_building_start = 10.3
-	}
-	tb_ogreslaves_2 = {
-		desc = tb_ogreslaves_2_desc
-		trigger = { TECH_INFANTRY = 0 }
-		upgrades_from = tb_ogreslaves
-		prestige_cost = 125
-		build_time = 547
-		light_infantry = 100
-		ai_creation_factor = 94
-		add_number_to_name = no
-		extra_tech_building_start = 11.5
-	}
-	tb_ordningstone = {
-		desc = tb_ordningstone_desc
-		trigger = { TECH_RECRUITMENT = 1 }
-		potential = {
-			FROMFROM = {
-					location = {
-						culture = stone_giant
-					}
-				}
-			FROM = {
-				OR = {
-					culture_group = giant_group
-				}
-				NOR = {
-					culture = monster
-					culture = hill_giant
-					culture = ogre
-					culture = ogre_magi
-				}
-			}
-		}
-		piety_cost = 100
-		build_time = 365
-		liege_piety = 0.05
-		heavy_infantry = 25
-		fort_level = 0.25
-		ai_creation_factor = 97
-		add_number_to_name = no
-		extra_tech_building_start = 10.3
 	}
 }

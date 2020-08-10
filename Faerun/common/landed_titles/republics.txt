@@ -23,9 +23,10 @@ b_melcador = { culture = highcoaster } # Filler
 b_reddan = { culture = highcoaster } # Filler
 
 #Thesk (Telflamm)
-#
-#b_dignantos_r = { culture = nar }
-#b_snakeshade_r = { culture = nar }
+
+b_balindre_r = { culture = nar }
+b_dignantos_r = { culture = nar }
+b_snakeshade_r = { culture = nar }
 #b_eldarharbor_r = { culture = nar }
 #b_vasai_r = { culture = nar }
 #b_brisirest_r = { culture = nar }

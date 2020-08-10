@@ -1,7 +1,7 @@
 # e_northern_realms
 7.1.1={
 	law = true_cognatic_succession
-	law = succ_gavelkind
+	law = succ_primogeniture
 	liege = d_mithral_hall
 	holder = 17007
 }
@@ -21,7 +21,17 @@
 	holder = 17002
 }
 1190.1.1 = {
-	holder = 0
+	holder = 5253
+}
+1234.10.1 = {
+	law = agnatic_succession
+	law = succ_turkish_succession
+	holder = 41383 # Morloch Skullflayer
+	liege = e_black_horde
+}
+1236.1.1 = {
+	holder = 5253
+	liege = d_mithral_hall
 }
 1356.1.1 = {
 	holder = 17001
@@ -34,4 +44,13 @@
 }
 1370.3.3 = {
 	holder = 17001
+}
+1409.1.1 = {
+	holder = 17010
+}
+1445.1.1 = {
+	holder = 17011
+}
+1486.1.1 = {
+	holder = 17012
 }

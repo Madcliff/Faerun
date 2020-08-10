@@ -20,21 +20,28 @@ religion = dwarven_pantheon
 terrain = mountain
 #History
 1190.1.1 = {
-	culture = monster
-	religion = monster_pantheon
-	b_settlestone = tribal
-	remove_settlement = b_keepers_dale
-	remove_settlement = b_black_raven
+	culture = duergar
+	religion = laduguer
+}
+1234.10.1 = {
+	culture = orc
+	religion = orc_pantheon
+}
+1236.1.1 = {
+	culture = duergar
+	religion = laduguer
 }
 1356.1.1 = {
 	culture = shield_dwarf
 	religion = dwarven_pantheon
-	b_settlestone = castle
 	b_keepers_dale = city
 	b_black_raven = temple
 }
 1358.1.1 = {
 	culture = reghedman
 	religion = good_human_pantheon
-	b_settlestone = tribal
+}
+1364.7.1 = {
+	culture = shield_dwarf
+	religion = dwarven_pantheon
 }
