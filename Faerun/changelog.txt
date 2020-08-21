@@ -1,4 +1,54 @@
 =========
+ V 0.3.6
+=========
+Wizard spellcasting finished
+Druid buildings
+Rogue buildings
+New minor titles
+Giant cultural modifier to troops nerfed
+Three titular duchies added to Cormyr
+A few siege flavour events added
+New society: Lord's Alliance
+New society: The Black Network
+Hags now have non-static portraits to prevent some bugs
+A few new custom retinues
+History enhancements for Cormyr, Thesk, Old Reach and part of Sword Coast North
+Crusader trait acquisition bug fixed
+Recoloured portraits for Fomorians, Wood Elves, Green Elves, all four Genasi, as well as undead versions of elves and ogres
+Congenital traits should not be as common
+New special troop types
+New race: Sea Elf - not present on the map yet
+Slight changes to how tutorials work
+Misc fixes
+
+=========
+ V 0.3.5
+=========
+Volo can now be found.
+Some history updates for the Silver Marches region.
+Improved history for Vaasa.
+Monster provinces should be less prone to spawning non-monster mob characters.
+Better submod compatibility.
+Toteteohuan religion has some Sunset Invasion features.
+Monster provinces shouldn't have humongous garrisons anymore.
+Governments for scalies.
+File size should be reduced.
+Dark Seldarine courtiers will follow their employer's patron god most of the time.
+Theodosian Walls renamed to Great Walls, can only be built on capitals.
+Greatly improved racial assignment system.
+Ladugueran religion added.
+Tutorials for Mind Flayers, updated tutorials for wizards.
+Small flavour events for giants.
+Long-lived races should not die like humans.
+"Recruit a Character" style decisions spawn more diverse characters.
+*Partial* wizard mechanics.
+Angel and Half-Celestial traits.
+Endless depopulation bug is fixed.
+New icons for Shadow and Monk classes.
+Lizardfolk no longer crash Ruler Designer.
+Misc bugfixes.
+
+=========
  V 0.3.4
 =========
 -Species assignment should be working properly now
