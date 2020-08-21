@@ -60,7 +60,7 @@ tb_graph_culture_racial = {
 		}
 		asraigfx = {
 			PREV = {
-				set_graphical_culture = green_elf
+				set_graphical_culture = wood_elf
 			}
 		}
 		moonelfgfx = {
@@ -86,6 +86,21 @@ tb_graph_culture_racial = {
 		maviddigfx = {
 			PREV = {
 				set_graphical_culture = maviddi
+			}
+		}
+		undeadelfgfx = {
+			PREV = {
+				set_graphical_culture = undeadelf
+			}
+		}
+		greenelfgfx = {
+			PREV = {
+				set_graphical_culture = green_elf
+			}
+		}
+		seaelfgfx = {
+			PREV = {
+				set_graphical_culture = green_elf
 			}
 		}
 		#halflings
@@ -208,6 +223,11 @@ tb_graph_culture_racial = {
 			}
 		}
 		lizardfolkgfx = {
+			PREV = {
+				set_graphical_culture = lizardfolk
+			}
+		}
+		lizardmangfx = {
 			PREV = {
 				set_graphical_culture = lizardfolk
 			}
@@ -468,6 +488,16 @@ tb_graph_culture_racial = {
 		orcgfx = {
 			PREV = {
 				set_graphical_culture = troll
+			}
+		}
+		fomoriangfx = {
+			PREV = {
+				set_graphical_culture = fomorian
+			}
+		}
+		undeadogregfx = {
+			PREV = {
+				set_graphical_culture = undeadogre
 			}
 		}
 		#outsiders file

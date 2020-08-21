@@ -3638,6 +3638,9 @@
 		remove_trait = absent 
 		employer = 20081 # Azoun IV of Cormyr - she flees to Suzail
 	}
+	1359.1.1 = {
+	   employer = 56277 #Yulash	
+	}
 	1360.5.1 = {
 		employer = 26055 # Grypht of Tarkhaldale
 	}

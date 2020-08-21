@@ -202,7 +202,7 @@ FRTUT1.a;Learn about Ceremorphosis?;;;;;;;;;;;;;x
 FRTUT1.b;Learn about Mind Control;;;;;;;;;;;;;x
 FRTUT1.c;Close tutorial;;;;;;;;;;;;;x
 FRTUT2;Ceremorphosis is a targeted decision that allows you to create a new heir from a prisoner. The prisoner must be a human, half-human, elf, orc or goblinoid of less than 70 years of age (unless they are an elf or gith). This has a chance of failure and costs piety (scaling with how many heirs you have).;;;;;;;;;;;;;x
-FRTUT.2;Mind control is a decision that can target any of your vassals or courtiers as long as they are not illithids or yikarians. It costs both piety and prestige, but makes the target utterly loyal to you for 10 years.;;;;;;;;;;;;;x
+FRTUT3;Mind control is a decision that can target any of your vassals or courtiers as long as they are not illithids or yikarians. It costs both piety and prestige, but makes the target utterly loyal to you for 10 years.;;;;;;;;;;;;;x
 WIZTUTORIAL;Wizards have unique mechanics that you may want to know about. These mechanics control how they cast and acquire their spells. What would you like to learn about?;;;;;;;;;;;;;x
 WIZTUTORIAL.a;Schools of Magic.;;;;;;;;;;;;;x
 WIZTUTORIAL.2;In order to access spells other than the universal ones you must choose a school of magic to specialize in. Each, except Wild Magic, has opposed schools whose spells you can't learn and will give you a set of spells of that school. Wild Magic will instead grant you a single unique spell plus a few spells from other schools.;;;;;;;;;;;;;x
@@ -235,3 +235,41 @@ WIZSPEC9;The school of Wild Magic;;;;;;;;;;;;;x
 DEATH_BANISHED;was banished back to the Planes;;;;;;;;;;;;;x
 DEATH_WILD_MAGIC;died in a wild magic surge;;;;;;;;;;;;;x
 DEATH_DISINTEGRATED;Was disintegrated by a spell;;;;;;;;;;;;;x
+elemental_troops;Elementals;;;;;;;;;;;;;x
+elemental_troops_offensive;Elementals Offensive;;;;;;;;;;;;;x
+elemental_troops_defensive;Elementals Defensive;;;;;;;;;;;;;x
+elemental_troops_morale;Elementals Morale;;;;;;;;;;;;;x
+elemental_troops_modifier;Combat Modifier boost to Elementals: $PERC$;;;;;;;;;;;;;x
+DEATH_ELECTROCUTED;Was electrocuted;;;;;;;;;;;;;x
+illusory_troops;Illusions;;;;;;;;;;;;;x
+illusory_troops_offensive;Illusions Offensive;;;;;;;;;;;;;x
+illusory_troops_defensive;Illusions Defensive;;;;;;;;;;;;;x
+illusory_troops_morale;Illusions Morale;;;;;;;;;;;;;x
+illusory_troops_modifier;Combat Modifier boost to Illusions: $PERC$;;;;;;;;;;;;;x
+undead_troops;Undead;;;;;;;;;;;;;x
+undead_troops_offensive;Undead Offensive;;;;;;;;;;;;;x
+undead_troops_defensive;Undead Defensive;;;;;;;;;;;;;x
+undead_troops_morale;Undead Morale;;;;;;;;;;;;;x
+undead_troops_modifier;Combat Modifier boost to Undead: $PERC$;;;;;;;;;;;;;x
+undead_province;Undead Province;;;;;;;;;;;;;x
+RULE_MINORS_STORY_EVENTS;Minor Story Events;;;;;;;;;;;;;x
+RULE_MINOR_STORY_ON_DESC;Minor story events will fire if their conditions are met;;;;;;;;;;;;;x
+RULE_MINOR_STORY_OFF_DESC;Minor story events will never happen;;;;;;;;;;;;;x
+warpriests;Warpriests;;;;;;;;;;;;;x
+warpriests_offensive;Warpriests Offensive;;;;;;;;;;;;;x
+warpriests_defensive;Warpriests Defensive;;;;;;;;;;;;;x
+warpriests_morale;Warpriests Morale;;;;;;;;;;;;;x
+warpriests_modifier;Combat Modifier boost to Warpriests: $PERC$;;;;;;;;;;;;;x
+mages_troops;Mages;;;;;;;;;;;;;x
+mages_troops_offensive;Mages Offensive;;;;;;;;;;;;;x
+mages_troops_defensive;Mages Defensive;;;;;;;;;;;;;x
+mages_troops_morale;Mages Morale;;;;;;;;;;;;;x
+mages_troops_modifier;Combat Modifier boost to Mages: $PERC$;;;;;;;;;;;;;x
+FRTUT.11;Because this mod has a growing number of custom mechanics, there is a tutorial decision that lets you see explanations of them.;;;;;;;;;;;;;x
+see_tutorials;See Tutorials;;;;;;;;;;;;;x
+see_tutorials_desc;This will open an event listing all tutorials for you to peruse.;;;;;;;;;;;;;x
+FRTUT.12;Please select what tutorial you want to see.;;;;;;;;;;;;;x
+FRTUT.12.a;Wizard Tutorial;;;;;;;;;;;;;x
+FRTUT.12.b;Illithid Tutorial;;;;;;;;;;;;;x
+FRTUT.12.c;Holy War Tutorial;;;;;;;;;;;;;x
+FRTUT.13;Holy Wars in Faerun work differently than in the base game. A character can declare a holy war on others based on their religion and/or patron trait. This means that sometimes you can even declare a holy war on someone of your own religion.\n\nWho you can war against is detailed in either the patron trait or religion description.;;;;;;;;;;;;;x

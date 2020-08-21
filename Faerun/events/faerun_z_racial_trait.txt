@@ -13,6 +13,7 @@ character_event = {
 			trait = creature_human
 			trait = creature_drow
 			trait = creature_elf
+			trait = creature_sea_elf
 			trait = creature_dwarf
 			trait = creature_goblin
 			trait = creature_orc
@@ -75,6 +76,7 @@ character_event = {
 					trait = creature_human
 					trait = creature_drow
 					trait = creature_elf
+					trait = creature_sea_elf
 					trait = creature_dwarf
 					trait = creature_goblin
 					trait = creature_orc
@@ -363,15 +365,15 @@ character_event = {
 				on_trigger = graphical_culture
 				westerngfx 		= { 
 					add_trait = creature_human 
-					break = yes
+					#break = yes
 				}
 				easterngfx 		= { 
 					add_trait = creature_human 
-					break = yes					
+					#break = yes					
 				} 
 				muslimgfx 		= { 
 					add_trait = creature_human 
-					break = yes					
+					#break = yes					
 				} 
 				frankishgfx		= {
 					if = {
@@ -642,7 +644,7 @@ character_event = {
 						}
 					}
 					else = { add_trait = creature_human }
-					break = yes
+					#break = yes
 				} 
 				englishgfx 		= {
 					if = {
@@ -831,7 +833,7 @@ character_event = {
 						}
 					}
 					else = { add_trait = creature_human }
-					break = yes				
+					#break = yes				
 				} 
 				germangfx 		= {
 					if = {
@@ -1085,11 +1087,11 @@ character_event = {
 						}
 					}
 					else = { add_trait = creature_human }
-					break = yes
+					#break = yes
 				} 
 				occitangfx 		= { 
 					add_trait = creature_human 
-					break = yes
+					#break = yes
 				} 
 				southerngfx		= {
 					if = {
@@ -1119,7 +1121,7 @@ character_event = {
 						}
 						add_trait = creature_human
 					} 
-					break = yes
+					#break = yes
 				}
 				celticgfx 		= {
 					if = {
@@ -1216,11 +1218,11 @@ character_event = {
 						}
 					}
 					else = { add_trait = creature_human }
-					break = yes
+					#break = yes
 				} 
 				saxongfx 		= { 
 					add_trait = creature_human 
-					break = yes
+					#break = yes
 				} 
 				norsegfx 		= {
 					if = {
@@ -1377,15 +1379,15 @@ character_event = {
 					else = {
 						add_trait = creature_human
 					}
-					break = yes					
+					#break = yes					
 				} 
 				sudenburgergfx	= { 
 					add_trait = creature_wemic 
-					break = yes					
+					#break = yes					
 				}
 				easternslavicgfx = { 
 					add_trait = creature_centaur 
-					break = yes					
+					#break = yes					
 				} 
 				indiangfx 		= {
 					if = {
@@ -1556,11 +1558,11 @@ character_event = {
 					else = {
 						add_trait = creature_human
 					}
-					break = yes
+					#break = yes
 				}
 				southindiangfx	= { 
 					add_trait = creature_human 
-					break = yes					
+					#break = yes					
 				}
 				westernslavicgfx = { 
 					if = {
@@ -1632,7 +1634,7 @@ character_event = {
 					else = {
 						add_trait = creature_human
 					}
-					break = yes
+					#break = yes
 				} 
 				byzantinegfx 	= {
 					if = {
@@ -1768,7 +1770,7 @@ character_event = {
 					else = {
 						add_trait = creature_human
 					}
-					break = yes
+					#break = yes
 				} 
 				ugricgfx 		= {
 					if = {
@@ -1972,7 +1974,7 @@ character_event = {
 					else = {
 						add_trait = creature_human
 					}
-					break = yes
+					#break = yes
 				} 
 				arabicgfx 		= {
 					if = {
@@ -2120,11 +2122,11 @@ character_event = {
 						}
 					}
 					else = { add_trait = creature_human }
-					break = yes					
+					#break = yes					
 				}
 				dtariggfx		= {
 					add_trait = creature_half_dwarf
-					break = yes
+					#break = yes
 				}
 				turkishgfx 		= {
 					if = {
@@ -2149,7 +2151,7 @@ character_event = {
 						}
 					}
 					else = { add_trait = creature_human } 
-					break = yes
+					#break = yes
 				}
 				mongolgfx 		= {
 					if = {
@@ -2160,7 +2162,7 @@ character_event = {
 						add_trait = spirit_folk
 					}
 					else = { add_trait = creature_human }
-					break = yes
+					#break = yes
 				} 
 				africangfx 		= {
 					if = {
@@ -2291,7 +2293,7 @@ character_event = {
 						}
 					}
 					else = { add_trait = creature_human }
-					break = yes					
+					#break = yes					
 				} 
 				westafricangfx	= {
 					if = {
@@ -2394,11 +2396,11 @@ character_event = {
 						}
 					}
 					else = { add_trait = creature_human }
-					break = yes					
+					#break = yes					
 				}
 				mesoamericangfx	= { 
 					add_trait = creature_human 
-					break = yes					
+					#break = yes					
 				}
 				andalusiangfx	= {
 					if = {
@@ -2519,7 +2521,7 @@ character_event = {
 						}
 					}
 					else = { add_trait = creature_human }
-					break = yes
+					#break = yes
 				} 
 				persiangfx 		= {
 					if = {
@@ -2680,19 +2682,19 @@ character_event = {
 						}
 					}
 					else = { add_trait = creature_human }
-					break = yes
+					#break = yes
 				}
 				kurgangfx 		= { 
 					add_trait = creature_gith 
-					break = yes					
+					#break = yes					
 				} 
 				nehekkagfx 		= { 
 					add_trait = creature_human  # fixme
-					break = yes					
+					#break = yes					
 				} 
 				cumangfx 		= { 
 					add_trait = creature_human 
-					break = yes
+					#break = yes
 				} 
 				italiangfx 		= {
 					if = {
@@ -2948,7 +2950,7 @@ character_event = {
 						}
 					}
 					else = { add_trait = creature_human }
-					break = yes
+					#break = yes
 				} 
 				chinesegfx = {
 					random_list = {
@@ -2993,7 +2995,7 @@ character_event = {
 							culture = tengu
 						}
 					}
-					break = yes
+					#break = yes
 				}
 				bodpagfx = {
 					random_list = {
@@ -3038,15 +3040,15 @@ character_event = {
 							culture = tengu
 						}
 					}
-					break = yes
+					#break = yes
 				}
 				blooddragonsgfx = { 
 					add_trait = creature_human # fixme
-					break = yes					
+					#break = yes					
 				} 
 				livingjadegfx 	= { 
 					add_trait = creature_human # fixme
-					break = yes
+					#break = yes
 				} 
 				normangfx		= {
 					if = {
@@ -3193,7 +3195,7 @@ character_event = {
 					else = {
 						add_trait = creature_human
 					}
-					break = yes
+					#break = yes
 				}
 				outremergfx     = {
 					if = {
@@ -3227,7 +3229,7 @@ character_event = {
 						}
 					}
 					else = { add_trait = creature_human }
-					break = yes
+					#break = yes
 				}
 				egyptiangfx     = {
 					if = {
@@ -3386,63 +3388,71 @@ character_event = {
 						}
 					}
 					else = { add_trait = creature_human }
-					break = yes
+					#break = yes
 				}
 				asurgfx 		= {
 					add_trait = creature_elf 
-					break = yes
+					#break = yes
 				}
 				feyrigfx	    = {
 					add_trait = creature_feyri 
-					break = yes
+					#break = yes
 				}
 				nagarythiangfx 	= { 
 					add_trait = creature_elf 
-					break = yes
+					#break = yes
 				} 
 				caledoriangfx 	= { 
 					add_trait = creature_genasi 
-					break = yes				
+					#break = yes				
 				} 
 				asraigfx 		= { 
 					add_trait = creature_elf 
-					break = yes
-				} 
+					#break = yes
+				}
+				greenelfgfx		= {
+					add_trait = creature_elf
+					#break = yes
+				}
 				drowgfx 		= { 
 					add_trait = creature_drow 
-					break = yes				
+					#break = yes				
 				} 
 				moonelfgfx 		= { 
 					add_trait = creature_elf 
-					break = yes					
-				}				
+					#break = yes					
+				}
+				seaelfgfx		= {
+					add_trait = creature_sea_elf
+					#break = yes
+				}
 				dwarfgfx 		= { 
 					add_trait = creature_dwarf 
-					break = yes				
+					#break = yes				
 				}
 				duergargfx		= { 
 					add_trait = creature_dwarf 
-					break = yes
+					#break = yes
 				}
 				norse_dwarfgfx  = { 
 					add_trait = creature_dwarf 
-					break = yes					
+					#break = yes					
 				}
 				golddwarfgfx	= { 
 					add_trait = creature_dwarf 
-					break = yes
+					#break = yes
 				}
 				wilddwarfgfx	= { 
 					add_trait = creature_dwarf 
-					break = yes
+					#break = yes
 				}			
 				goblingfx 		= {
 					add_trait = creature_goblin 
-					break = yes
+					#break = yes
 				}
 				forestgoblingfx 		= {
 					add_trait = creature_goblin 
-					break = yes
+					#break = yes
 				} 				
 				humanoidgfx 	= { 
 					if = {
@@ -3463,51 +3473,55 @@ character_event = {
 					else = {
 						add_trait = creature_bugbear
 					}
-					break = yes
+					#break = yes
 				}
 				highorcgfx 		= { 
 					add_trait = creature_orc 
-					break = yes
+					#break = yes
 				} 
 				grayorcgfx 		= { 
 					add_trait = creature_orc 
-					break = yes
+					#break = yes
 				} 
 				ondontigfx 		= { 
 					add_trait = creature_orc 
-					break = yes
+					#break = yes
 				} 
 				hobbitsgfx 		= { 
 					add_trait = creature_halfling 
-					break = yes
+					#break = yes
 				} 
 				trollgfx 		= { 
 					add_trait = creature_giant
-					break = yes
+					#break = yes
 				} 
 				firegiantgfx	= { 
 					add_trait = creature_giant
-					break = yes
+					#break = yes
 				}
 				frostgiantgfx	= { 
 					add_trait = creature_giant
-					break = yes
+					#break = yes
 				}
 				stonegiantgfx	= { 
 					add_trait = creature_giant
-					break = yes
+					#break = yes
 				}
 				stormgiantgfx	= { 
 					add_trait = creature_giant
-					break = yes
+					#break = yes
 				}
 				cloudgiantgfx	= { 
 					add_trait = creature_giant
-					break = yes
+					#break = yes
+				}
+				fomoriangfx		= {
+					add_trait = creature_giant
+					#break = yes
 				}
 				treemangfx 		= { 
 					add_trait = creature_treant 
-					break = yes					
+					#break = yes					
 				} 
 				ogresgfx 		= {
 					add_trait = creature_ogre
@@ -3515,7 +3529,7 @@ character_event = {
 						chance = 2
 						set_graphical_culture = onigfx
 					}
-					break = yes
+					#break = yes
 				}
 				onigfx			= {
 					add_trait = creature_ogre
@@ -3552,19 +3566,36 @@ character_event = {
 						}
 						culture = ogre
 					}
-					break = yes
+					#break = yes
 				}
 				yikariangfx		= { 
 					add_trait = creature_yikarian 
-					break = yes					
+					#break = yes					
 				}
 				beastmangfx 	= {	
 					add_trait = creature_minotaur 
-					break = yes
+					#break = yes
 				}
-				lahmiangfx		= { 
-					add_trait = creature_tiefling 
-					break = yes					
+				lahmiangfx		= {
+					if = {
+						limit = {
+							liege = {
+								trait = creature_hag
+							}
+						}
+						random_list = {
+							60 = {
+								add_trait = creature_tiefling
+							}
+							40 = {
+								add_trait = creature_hag
+							}
+						}
+					}
+					else = {
+						add_trait = creature_tiefling 
+						#break = yes
+					}
 				}
 				yuantigfx = { 
 					random_list = {
@@ -3594,39 +3625,43 @@ character_event = {
 							set_graphical_culture = abomination
 						}
 					}
-					break = yes
+					#break = yes
 				}
 				malisongfx		= { 
 					add_trait = creature_malison # fixme
-					break = yes					
+					#break = yes					
 				}
 				hybridgfx 		= { 
 					add_trait = creature_malison 
-					break = yes					
+					#break = yes					
 				}
 				abominationgfx	= { 
 					add_trait = creature_abomination 
-					break = yes					
+					#break = yes					
 				}
 				lizardfolkgfx 	= {	
 					add_trait = creature_lizardfolk 
-					break = yes
+					#break = yes
+				}
+				lizardmangfx	= {
+					add_trait = creature_lizardfolk
+					#break = yes
 				}
 				pterafolkgfx 	= { 
 					add_trait = creature_pterafolk 
-					break = yes					
+					#break = yes					
 				}
 				saurialgfx		= {
 					add_trait = creature_saurial 
-					break = yes
+					#break = yes
 				}
 				druchiigfx		= { 
 					add_trait = creature_half_elf
-					break = yes
+					#break = yes
 				}
 				maviddigfx		= { 
 					add_trait = creature_half_elf
-					break = yes
+					#break = yes
 				}
 				nagagfx 		= {
 					if = {
@@ -3641,39 +3676,39 @@ character_event = {
 						}
 						add_trait = creature_sarrukh
 					}
-					break = yes
+					#break = yes
 				}
 				githyankigfx	= { 
 					add_trait = creature_gith 
-					break = yes
+					#break = yes
 				}
 				tengugfx		= { 
 					add_trait = creature_tengu 
-					break = yes
+					#break = yes
 				}
 				kenkugfx		= { 
 					add_trait = creature_tengu 
-					break = yes
+					#break = yes
 				}
 				aasimargfx = {
 					add_trait = creature_aasimar
-					break = yes
+					#break = yes
 				}
 				angelgfx = {
 					add_trait = creature_angel
-					break = yes
+					#break = yes
 				}
 				demongfx		= { 
 					add_trait = creature_tiefling 
-					break = yes					
+					#break = yes					
 				}
 				tieflinggfx		= { 
 					add_trait = creature_tiefling 
-					break = yes					
+					#break = yes					
 				}
 				bloodlettergfx ={
 					add_trait = creature_devil
-					break = yes
+					#break = yes
 				}
 				gelugongfx = {
 					add_trait = creature_devil
@@ -3696,39 +3731,39 @@ character_event = {
 							set_graphical_culture = tiefling # a few look like humans # Changed it to avoid confusion amongst users -T
 						}
 					}
-					break = yes					
+					#break = yes					
 				}
 				firegenasigfx 	= {
 					add_trait = creature_genasi 
-					break = yes					
+					#break = yes					
 				}
 				watergenasigfx 	= { 
 					add_trait = creature_genasi 
-					break = yes
+					#break = yes
 				}
 				earthgenasigfx 	= { 
 					add_trait = creature_genasi 
-					break = yes					
+					#break = yes					
 				}
 				nomadgfx 		= {
 					add_trait = creature_genie 
-					break = yes
+					#break = yes
 				}
 				dragonborngfx 	= { 
 					add_trait = creature_dragonborn 
-					break = yes
+					#break = yes
 				}
 				gnomesgfx 		= { 
 					add_trait = creature_gnome 
-					break = yes
+					#break = yes
 				}
 				nycalothgfx		= { 
 					add_trait = creature_daemon 
-					break = yes					
+					#break = yes					
 				}
 				daemonettegfx = {
 					add_trait = creature_demon
-					break = yes 
+					#break = yes 
 				}
 				nurgleprincegfx = {
 					add_trait = creature_demon
@@ -3765,28 +3800,28 @@ character_event = {
 						#	set_graphical_culture = nar # a few look like humans
 						#}
 					}
-					break = yes
+					#break = yes
 				}
 				tanarukkgfx 	= { 
 					add_trait = creature_tanarukk 
-					break = yes					
+					#break = yes					
 				}
 				beholdergfx 	= { 
 					add_trait = creature_beholder 
-					break = yes					
+					#break = yes					
 				}
 				koboldgfx		= { #
 					add_trait = creature_kobold 
-					break = yes					
+					#break = yes					
 				}
 				orcgfx			= { #
 					add_trait = creature_troll 
-					break = yes					
+					#break = yes					
 				}
 				dracolichgfx		= {
 					add_trait = creature_dragon
 					add_trait = lich
-					break = yes					
+					#break = yes					
 				}
 				dragongfx		= {
 					add_trait = creature_dragon
@@ -3837,11 +3872,11 @@ character_event = {
 							add_trait = creature_silver_dragon
 						}
 					}
-					break = yes
+					#break = yes
 				}
 				eladringfx			= { #
 					add_trait = creature_eladrin
-					break = yes					
+					#break = yes					
 				}
 				necrarchgfx			= { #
 					add_trait = creature_human
@@ -3849,7 +3884,7 @@ character_event = {
 						70 = { add_trait = undead }
 						30 = { add_trait = lich }
 					}
-					break = yes					
+					#break = yes					
 				}				
 				undeadshougfx		= { #
 					add_trait = creature_human
@@ -3857,7 +3892,7 @@ character_event = {
 						70 = { add_trait = undead }
 						30 = { add_trait = lich }
 					}
-					break = yes					
+					#break = yes					
 				}
 				nehekharangfx		= { #
 					add_trait = creature_human
@@ -3865,7 +3900,7 @@ character_event = {
 						70 = { add_trait = undead }
 						30 = { add_trait = lich }
 					}
-					break = yes					
+					#break = yes					
 				}
 				dracolichgfx		= { #
 					add_trait = creature_dragon
@@ -3873,7 +3908,7 @@ character_event = {
 						70 = { add_trait = undead }
 						30 = { add_trait = lich }
 					}
-					break = yes					
+					#break = yes					
 				}
 				jadegfx 		= {
 					if = {
@@ -3892,7 +3927,7 @@ character_event = {
 						70 = { add_trait = undead }
 						30 = { add_trait = lich }
 					}
-					break = yes
+					#break = yes
 				}				
 				carsteingfx 		= { #
 					add_trait = creature_human
@@ -3900,7 +3935,17 @@ character_event = {
 						70 = { add_trait = vampire_spawn }
 						30 = { add_trait = vampire }
 					}
-					break = yes					
+					#break = yes					
+				}
+				undeadelfgfx		= {
+					add_trait = creature_elf
+					add_trait = undead
+					#break = yes
+				}
+				undeadogregfx		= {
+					add_trait = creature_ogre
+					add_trait = undead
+					#break = yes
 				}
 				chaosdwarfgfx 		= { #
 					add_trait = creature_dwarf
@@ -3908,30 +3953,39 @@ character_event = {
 						70 = { add_trait = vampire_spawn }
 						30 = { add_trait = vampire }
 					}
-					break = yes					
+					#break = yes					
 				}
 				wraithgfx			= { #
 					add_trait = creature_human
 					add_trait = undead
-					break = yes					
+					#break = yes					
 				}				
 				mindflayergfx		= { #
 					add_trait = creature_illithid
-					break = yes					
+					#break = yes					
 				}				
 				blackorcgfx			= { #
 					add_trait = creature_monster
-					break = yes					
+					#break = yes					
 				}
 				flamergfx			= { #
 					add_trait = creature_monster
-					break = yes					
+					#break = yes					
 				}				
 			}
 			if = {
 				limit = {
 					liege = {
 						has_character_flag = vampire_court
+					}
+					NOR = {
+						trait = creature_hag
+						trait = creature_treant
+						trait = creature_devil
+						trait = creature_genie
+						trait = creature_daemon
+						trait = creature_demon
+						trait = creature_angel
 					}
 				}
 				random_list = {
@@ -3944,20 +3998,52 @@ character_event = {
 							if = {
 								limit = {
 									OR = {
-										trait = creature_aasimar
-										trait = creature_half_elf
 										trait = creature_human
+										trait = creature_aasimar
+										trait = creature_tiefling
+										trait = creature_half_giant
+										trait = creature_genasi
+										trait = creature_gith
+										trait = creature_gnome
+										trait = creature_halfling
+										trait = creature_centaur
+										trait = creature_wemic
 									}
 								}
 								set_graphical_culture = vampire
 							}
-							if = {
+							else_if = {
 								limit = {
-									trait = creature_dwarf
+									OR = {
+										trait = creature_malison
+										trait = creature_pureblood
+									}
+								}
+								set_graphical_culture = cambion
+							}
+							else_if = {
+								limit = {
+									OR = {
+										trait = creature_dwarf
+										trait = creature_half_dwarf
+									}
 								}
 								set_graphical_culture = dwarfvampire
 							}
-							if = {
+							else_if = {
+								limit = {
+									OR = {
+										trait = creature_elf
+										trait = creature_sea_elf
+										trait = creature_eladrin
+										trait = creature_feyri
+										trait = creature_drow
+										trait = creature_half_elf
+									}
+								}
+								set_graphical_culture = undeadelf
+							}
+							else_if = {
 								limit = {
 									OR = {
 										trait = creature_naga
@@ -3966,6 +4052,16 @@ character_event = {
 									}
 								}
 								set_graphical_culture = bone_naga
+							}
+							else_if = {
+								limit = {
+									OR = {
+										trait = creature_ogre
+										trait = creature_half_ogre
+										trait = creature_ogrillon
+									}
+								}
+								set_graphical_culture = undeadogre
 							}
 						}
 						else = {
@@ -3973,20 +4069,52 @@ character_event = {
 							if = {
 								limit = {
 									OR = {
-										trait = creature_aasimar
-										trait = creature_half_elf
 										trait = creature_human
+										trait = creature_aasimar
+										trait = creature_tiefling
+										trait = creature_half_giant
+										trait = creature_genasi
+										trait = creature_gith
+										trait = creature_gnome
+										trait = creature_halfling
+										trait = creature_centaur
+										trait = creature_wemic
 									}
 								}
 								set_graphical_culture = vampire
 							}
-							if = {
+							else_if = {
 								limit = {
-									trait = creature_dwarf
+									OR = {
+										trait = creature_malison
+										trait = creature_pureblood
+									}
+								}
+								set_graphical_culture = cambion
+							}
+							else_if = {
+								limit = {
+									OR = {
+										trait = creature_dwarf
+										trait = creature_half_dwarf
+									}
 								}
 								set_graphical_culture = dwarfvampire
 							}
-							if = {
+							else_if = {
+								limit = {
+									OR = {
+										trait = creature_elf
+										trait = creature_sea_elf
+										trait = creature_eladrin
+										trait = creature_feyri
+										trait = creature_drow
+										trait = creature_half_elf
+									}
+								}
+								set_graphical_culture = undeadelf
+							}
+							else_if = {
 								limit = {
 									OR = {
 										trait = creature_naga
@@ -3995,6 +4123,16 @@ character_event = {
 									}
 								}
 								set_graphical_culture = bone_naga
+							}
+							else_if = {
+								limit = {
+									OR = {
+										trait = creature_ogre
+										trait = creature_half_ogre
+										trait = creature_ogrillon
+									}
+								}
+								set_graphical_culture = undeadogre
 							}
 						}
 					}
@@ -4003,20 +4141,52 @@ character_event = {
 						if = {
 							limit = {
 								OR = {
-									trait = creature_aasimar
-									trait = creature_half_elf
 									trait = creature_human
+									trait = creature_aasimar
+									trait = creature_tiefling
+									trait = creature_half_giant
+									trait = creature_genasi
+									trait = creature_gith
+									trait = creature_gnome
+									trait = creature_halfling
+									trait = creature_centaur
+									trait = creature_wemic
 								}
 							}
 							set_graphical_culture = vampire
 						}
-						if = {
+						else_if = {
 							limit = {
-								trait = creature_dwarf
+								OR = {
+									trait = creature_malison
+									trait = creature_pureblood
+								}
+							}
+							set_graphical_culture = cambion
+						}
+						else_if = {
+							limit = {
+								OR = {
+									trait = creature_dwarf
+									trait = creature_half_dwarf
+								}
 							}
 							set_graphical_culture = dwarfvampire
 						}
-						if = {
+						else_if = {
+							limit = {
+								OR = {
+									trait = creature_elf
+									trait = creature_sea_elf
+									trait = creature_eladrin
+									trait = creature_feyri
+									trait = creature_drow
+									trait = creature_half_elf
+								}
+							}
+							set_graphical_culture = undeadelf
+						}
+						else_if = {
 							limit = {
 								OR = {
 									trait = creature_naga
@@ -4025,6 +4195,16 @@ character_event = {
 								}
 							}
 							set_graphical_culture = bone_naga
+						}
+						else_if = {
+							limit = {
+								OR = {
+									trait = creature_ogre
+									trait = creature_half_ogre
+									trait = creature_ogrillon
+								}
+							}
+							set_graphical_culture = undeadogre
 						}
 					}
 					10 = {
@@ -4036,6 +4216,15 @@ character_event = {
 				limit = {
 					liege = {
 						has_character_flag = undead_court
+					}
+					NOR = {
+						trait = creature_hag
+						trait = creature_treant
+						trait = creature_devil
+						trait = creature_genie
+						trait = creature_daemon
+						trait = creature_demon
+						trait = creature_angel
 					}
 				}
 				if = {
@@ -4050,52 +4239,154 @@ character_event = {
 						}
 					}
 					add_trait = lich
-					random_list = {
-						18 = {
-							set_graphical_culture = lich
+					if = {
+						limit = {
+							OR = {
+								trait = creature_human
+								trait = creature_aasimar
+								trait = creature_tiefling
+								trait = creature_half_giant
+								trait = creature_genasi
+								trait = creature_gith
+								trait = creature_gnome
+								trait = creature_halfling
+								trait = creature_centaur
+								trait = creature_wemic
+							}
 						}
-						1 = {
-							set_graphical_culture = undead_mulhorandi
+						random_list = {
+							18 = {
+								set_graphical_culture = lich
+							}
+							1 = {
+								set_graphical_culture = undead_mulhorandi
+							}
+							1 = {
+								set_graphical_culture = undead_shou
+							}
 						}
-						1 = {
-							set_graphical_culture = undead_shou
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trait = creature_malison
+								trait = creature_pureblood
+							}
 						}
+						set_graphical_culture = cambion
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trait = creature_elf
+								trait = creature_sea_elf
+								trait = creature_eladrin
+								trait = creature_feyri
+								trait = creature_drow
+								trait = creature_half_elf
+							}
+						}
+						set_graphical_culture = undeadelf
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trait = creature_dwarf
+								trait = creature_half_dwarf
+							}
+						}
+						set_graphical_culture = dwarfvampire
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trait = creature_naga
+								trait = creature_abomination
+								trait = creature_sarrukh
+							}
+						}
+						set_graphical_culture = bone_naga
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trait = creature_ogre
+								trait = creature_half_ogre
+								trait = creature_ogrillon
+							}
+						}
+						set_graphical_culture = undeadogre
 					}
 				}
 				else = {
 					add_trait = undead
-					random_list = {
-						5 = {
-							if = {
-								limit = {
-									OR = {
-										trait = creature_aasimar
-										trait = creature_half_elf
-										trait = creature_human
-									}
-								}
-								set_graphical_culture = vampire
-							}
-							if = {
-								limit = {
-									trait = creature_dwarf
-								}
-								set_graphical_culture = dwarfvampire
-							}
-							if = {
-								limit = {
-									OR = {
-										trait = creature_naga
-										trait = creature_abomination
-										trait = creature_sarrukh
-									}
-								}
-								set_graphical_culture = bone_naga
+					if = {
+						limit = {
+							OR = {
+								trait = creature_human
+								trait = creature_aasimar
+								trait = creature_tiefling
+								trait = creature_half_giant
+								trait = creature_genasi
+								trait = creature_gith
+								trait = creature_gnome
+								trait = creature_halfling
+								trait = creature_centaur
+								trait = creature_wemic
 							}
 						}
-						1 = {
-							set_graphical_culture = wraith
+						set_graphical_culture = vampire
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trait = creature_malison
+								trait = creature_pureblood
+							}
 						}
+						set_graphical_culture = cambion
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trait = creature_dwarf
+								trait = creature_half_dwarf
+							}
+						}
+						set_graphical_culture = dwarfvampire
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trait = creature_elf
+								trait = creature_sea_elf
+								trait = creature_eladrin
+								trait = creature_feyri
+								trait = creature_drow
+								trait = creature_half_elf
+							}
+						}
+						set_graphical_culture = undeadelf
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trait = creature_naga
+								trait = creature_abomination
+								trait = creature_sarrukh
+							}
+						}
+						set_graphical_culture = bone_naga
+					}
+					else_if = {
+						limit = {
+							OR = {
+								trait = creature_ogre
+								trait = creature_half_ogre
+								trait = creature_ogrillon
+							}
+						}
+						set_graphical_culture = undeadogre
 					}
 				}
 			}
@@ -4167,9 +4458,61 @@ character_event = {
 				OR = {
 					trait = undead
 					trait = lich
+					trait = vampire
+					trait = vampire_spawn
 				}
 			}
 			set_graphical_culture = bone_naga
+		}
+		if = {
+			limit = {
+				OR = {
+					trait = creature_elf
+					trait = creature_sea_elf
+					trait = creature_eladrin
+					trait = creature_drow
+					trait = creature_feyri
+					trait = creature_half_elf
+				}
+				OR = {
+					trait = undead
+					trait = lich
+					trait = vampire
+					trait = vampire_spawn
+				}
+			}
+			set_graphical_culture = undeadelf
+		}
+		if = {
+			limit = {
+				OR = {
+					trait = creature_dwarf
+					trait = creature_half_dwarf
+				}
+				OR = {
+					trait = undead
+					trait = lich
+					trait = vampire
+					trait = vampire_spawn
+				}
+			}
+			set_graphical_culture = dwarfvampire
+		}
+		if = {
+			limit = {
+				OR = {
+					trait = creature_ogre
+					trait = creature_half_ogre
+					trait = creature_ogrillon
+				}
+				OR = {
+					trait = undead
+					trait = lich
+					trait = vampire
+					trait = vampire_spawn
+				}
+			}
+			set_graphical_culture = undeadogre
 		}
 		if = {
 			limit = {
@@ -4180,6 +4523,8 @@ character_event = {
 				OR = {
 					trait = undead
 					trait = lich
+					trait = vampire
+					trait = vampire_spawn
 				}
 			}
 			set_graphical_culture = cambion
@@ -4188,13 +4533,17 @@ character_event = {
 			limit = {
 				OR = {
 					trait = creature_human
-					trait = creature_half_elf
 					trait = creature_aasimar
+					trait = creature_tiefling
+					trait = creature_half_giant
+					trait = creature_genasi
+					trait = creature_gith
+					trait = creature_gnome
+					trait = creature_halfling
+					trait = creature_centaur
+					trait = creature_wemic
 				}
-				OR = {
-					trait = undead
-					trait = lich
-				}
+				trait = lich
 				OR = {
 					culture = shou
 					culture = khatin
@@ -4208,19 +4557,71 @@ character_event = {
 			limit = {
 				OR = {
 					trait = creature_human
-					trait = creature_half_elf
 					trait = creature_aasimar
+					trait = creature_tiefling
+					trait = creature_half_giant
+					trait = creature_genasi
+					trait = creature_gith
+					trait = creature_gnome
+					trait = creature_halfling
+					trait = creature_centaur
+					trait = creature_wemic
 				}
-				OR = {
-					trait = undead
-					trait = lich
-				}
+				trait = lich
 				OR = {
 					culture = mulhorandi
 					culture = murghomi
 				}
 			}
 			set_graphical_culture = undead_mulhorandi
+		}
+		if = {
+			limit = {
+				OR = {
+					trait = creature_human
+					trait = creature_aasimar
+					trait = creature_tiefling
+					trait = creature_half_giant
+					trait = creature_genasi
+					trait = creature_gith
+					trait = creature_gnome
+					trait = creature_halfling
+					trait = creature_centaur
+					trait = creature_wemic
+				}
+				OR = {
+					trait = undead
+					trait = vampire
+					trait = vampire_spawn
+				}
+			}
+			set_graphical_culture = vampire
+		}
+		if = {
+			limit = {
+				OR = {
+					trait = creature_human
+					trait = creature_aasimar
+					trait = creature_tiefling
+					trait = creature_half_giant
+					trait = creature_genasi
+					trait = creature_gith
+					trait = creature_gnome
+					trait = creature_halfling
+					trait = creature_centaur
+					trait = creature_wemic
+				}
+				trait = lich
+				NOR = {
+					culture = mulhorandi
+					culture = murghomi
+					culture = shou
+					culture = khatin
+					culture = gugari
+					culture = kozakuran
+				}
+			}
+			set_graphical_culture = lich
 		}
 		if = {
 			limit = {
@@ -4270,6 +4671,12 @@ character_event = {
 				limit = {
 					graphical_culture = trollgfx
 					NOT = { culture = mountain_giant }
+				}
+				add_trait = lifespan_giant_hill
+			}
+			if = {
+				limit = {
+					graphical_culture = fomoriangfx
 				}
 				add_trait = lifespan_giant_hill
 			}
@@ -4392,6 +4799,7 @@ character_event = {
 			graphical_culture = firegiantgfx
 			graphical_culture = frostgiantgfx
 			graphical_culture = trollgfx
+			graphical_culture = fomoriangfx
 		}
 	}
 	
@@ -4436,12 +4844,18 @@ character_event = {
 				}
 				add_trait = lifespan_giant_hill
 			}
+			if = {
+				limit = {
+					graphical_culture = fomoriangfx
+				}
+				add_trait = lifespan_giant_hill
+			}
 		}
 		else_if = {
 			limit = {
 				NOT = { age = 16 }
 			}
-			repeat_event = { id = z_character_trait.3 years = 10 }
+			repeat_event = { id = z_character_trait.3 months = 120 }
 		}
 	}
 }

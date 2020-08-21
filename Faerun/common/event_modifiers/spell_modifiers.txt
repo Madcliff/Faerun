@@ -15,12 +15,44 @@ spell_mantle_mod = {
 
 spell_fabricate_mod = {
 	icon = 79
-	local_build_cost_modifier = 1.1
+	local_build_cost_modifier = 0.1
 }
 
 tensers_transformation_mod = {
 	icon = 79
 	combat_rating = 15
+}
+
+mordekainens_faithful_hound_mod = {
+	icon = 79
+	defensive_plot_power_modifier = 0.1
+}
+
+detect_thoughts_mod = {
+	icon = 79
+	plot_discovery_chance = 0.1
+}
+
+legend_lore_mod = {
+	icon = 2
+	diplomacy = 2
+	stewardship = 2
+	learning = 3
+}
+
+spell_wall_of_stone_mod = {
+	icon = 79
+	fort_level = 2
+}
+
+phantom_steed_mod = {
+	icon = 79
+	combat_rating = 5
+}
+
+spell_false_life_mod = {
+	icon = 3
+	health = 2
 }
 
 disrupt_undead_mod = {
@@ -36,4 +68,32 @@ glowing_purple_skin = {
 burn_path_mod = {
 	icon = 80
 	#Effect is elsewhere
+}
+
+phantasmal_killer_mod = {
+	icon = 80
+	combat_rating = -5
+	plot_discovery_chance = -0.05
+	martial = -1
+	diplomacy = -1
+	intrigue = -1
+	fertility = -0.05
+}
+
+empty_graves_mod = {
+	icon = 42
+	#No effects, just a marker
+}
+
+raised_dead_in_prov = {
+	icon = 80
+	local_revolt_risk = 0.1
+	land_morale = -0.05
+}
+bestow_curse_mod = {
+	icon = 80
+	stewardship = -1
+	diplomacy = -1
+	intrigue = -1
+	combat_rating = -5
 }

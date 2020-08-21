@@ -65,6 +65,11 @@ feudal_governments = {
 								title = c_dekanter
 								culture = goblin
 							}
+							AND = {
+								title = k_turmish
+								date = 670.1.1
+								NOT = { date = 717.7.1 }
+							}
 							OR = {
 								de_facto_liege_title = k_halruaa
 							}
@@ -98,9 +103,9 @@ feudal_governments = {
 	}
 
 	democratic_feudal_government = {
-		preferred_holdings = { CASTLE CITY }
+		preferred_holdings = { CITY }
 		allowed_holdings = { 
-			CASTLE 
+			CASTLE
 			CITY
 			FORT
 			HOSPITAL
@@ -121,6 +126,7 @@ feudal_governments = {
 		frame_suffix = "_commonwealth"
 		potential = {
 			NOT = { culture = monster }
+			higher_tier_than = BARON
 			OR = { 
 				AND = { 
 					is_save_game = no
@@ -222,6 +228,10 @@ feudal_governments = {
 							title = c_yeshpek
 							title = c_theymarsh
 							title = c_dapplegate
+							AND = {
+								title = c_cony_gap
+								date = 1475.1.1
+							}
 						}
 					}
 				}
@@ -253,7 +263,7 @@ feudal_governments = {
 	}
 	
 	divine_feudal_government = {
-		preferred_holdings = { CASTLE TEMPLE }
+		preferred_holdings = { TEMPLE }
 		allowed_holdings = { 
 			CASTLE 
 			TEMPLE
@@ -288,6 +298,7 @@ feudal_governments = {
 							trait = bhaalspawn
 							trait = avatar
 							religion = laduguer
+							religion = lolth_cult
 						}
 					}
 					primary_title = {
@@ -334,6 +345,19 @@ feudal_governments = {
 							title = c_saelmur
 							title = d_black_blood_tribe
 							title = k_storting
+							AND = {
+								title = c_mere_of_dead_men
+								OR = {
+									AND = {
+										date = 922.1.1
+										NOT = { date = 952.1.1 }
+									}
+									AND = {
+										date = 964.1.1
+										NOT = { date = 1358.10.15 }
+									}
+								}
+							}
 						}
 					}
 				}

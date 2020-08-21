@@ -575,8 +575,8 @@
 	191.1.1 = { birth = yes }
 	240.1.1 = {
 		death = {
-			death_reason = death_battle
-			killer = 9040 # Elthaun
+			death_reason = death_duel
+			killer = 42162 # on orders of Elthaun
 		}
 	}
 }
@@ -3491,6 +3491,14 @@
 		birth = yes
 		give_nickname = nick_dodkong
 	}
+	16.1.1 = {
+		effect = {
+			add_character_modifier = {
+				name = wiz_necromancy
+				duration = -1
+			}
+		}
+	}
 	31.1.1 = { immortal_age = 30 }
 	1500.1.1 = { death = yes }
 }
@@ -4036,6 +4044,14 @@
 		culture = heartlander
 		effect = {
 			set_character_flag = undead_court
+		}
+	}
+	736.1.1 = {
+		effect = {
+			add_character_modifier = {
+				name = wiz_necromancy
+				duration = -1
+			}
 		}
 	}
 	1020.1.1 = {

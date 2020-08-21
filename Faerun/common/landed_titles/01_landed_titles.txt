@@ -14627,6 +14627,7 @@ e_northern_realms = {
 				color2={ 255 255 255 }
 				
 				holy_site = dwarven_pantheon
+				holy_site = laduguer
 				
 				title = "ELDERMAN"
 				title_female = "ELDERWOMAN"
@@ -14947,6 +14948,7 @@ e_northern_realms = {
 				
 				holy_site = drow_polytheism
 				holy_site = dwarven_pantheon
+				holy_site = laduguer
 				holy_site = lolth_cult
 	
 				b_mithral_hall = {}
@@ -15159,6 +15161,15 @@ e_northern_realms = {
 				
 				holy_site = uthgardt_faith
 				holy_site = giant_pantheon
+				
+				cloud_giant = "Ironslag"
+				fire_giant = "Ironslag"
+				frost_giant = "Ironslag"
+				hill_giant = "Ironslag"
+				mountain_giant = "Ironslag"
+				fomorian = "Ironslag"
+				stone_giant = "Ironslag"
+				storm_giant = "Ironslag"
 	
 				b_twilight_hold = {}
 				b_truespir = {}
@@ -15992,6 +16003,7 @@ e_shaar = {
 				color2={ 255 255 255 }
 				
 				holy_site = dwarven_pantheon
+				holy_site = laduguer
 				
 				b_eartheart = {}
 				b_hammer_and_anvil = {}
@@ -18924,6 +18936,7 @@ e_sword_coast = {
 				color2={ 255 255 255 }
 				
 				holy_site = dwarven_pantheon
+				holy_site = laduguer
 				
 				tethyrian = "Delimbiyran"
 				calishite = "Steeping Falls"
@@ -19904,6 +19917,7 @@ e_tethyr = {
 				color2={ 255 255 255 }
 				
 				holy_site = dwarven_pantheon
+				holy_site = laduguer
 				
 				b_five_spears_hold = {}
 				b_praskallest = {}

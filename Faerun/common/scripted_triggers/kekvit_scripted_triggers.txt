@@ -1,7 +1,8 @@
-faerun_immortal_race = {
+faerun_immortal_race_trigger = {
 	OR = {
 		trait = creature_drow
 		trait = creature_elf
+		trait = creature_sea_elf
 		trait = creature_half_elf
 		trait = creature_feyri
 		trait = creature_eladrin
@@ -25,5 +26,29 @@ faerun_immortal_race = {
 		trait = creature_angel
 		trait = creature_genie
 		trait = creature_giant
+		trait = longevity
+	}
+}
+
+faerun_immortal_culture = {
+	OR = {
+		graphical_culture = drowgfx
+		graphical_culture = moonelfgfx
+		graphical_culture = asraigfx
+		graphical_culture = greenelfgfx
+		graphical_culture = seaelfgfx
+		graphical_culture = undeadelfgfx
+		graphical_culture = dwarfgfx
+		graphical_culture = nagarythiangfx
+		graphical_culture = feyrigfx
+		graphical_culture = asurgfx
+		graphical_culture = duergargfx
+		graphical_culture = norse_dwarfgfx
+		graphical_culture = golddwarfgfx
+		graphical_culture = wilddwarfgfx
+		graphical_culture = treemangfx
+		graphical_culture = druchiigfx
+		graphical_culture = maviddigfx
+		graphical_culture = nagagfx
 	}
 }

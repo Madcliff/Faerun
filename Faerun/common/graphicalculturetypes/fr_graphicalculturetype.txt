@@ -75,7 +75,7 @@ moonelfgfx = {
 	skin_tone = 0
 }
 asraigfx = {
-	skin_tone = 0
+	skin_tone = 2
 }
 druchiigfx = {
 	skin_tone = 0
@@ -415,4 +415,19 @@ onigfx = {
 }
 eladringfx = {
 	skin_tone = 3
+}
+undeadelfgfx = {
+	skin_tone = 0
+}
+undeadogregfx = {
+	skin_tone = 0
+}
+fomoriangfx = {
+	skin_tone = 0
+}
+greenelfgfx = {
+	skin_tone = 3
+}
+seaelfgfx = {
+	skin_tone = 2
 }

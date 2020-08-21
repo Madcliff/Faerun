@@ -1,0 +1,1324 @@
+namespace = ZHE
+
+########################JOINING############################
+
+#From on_character_ask_to_join_society
+character_event = {
+    id = ZHE.100
+	hide_window = yes
+    is_triggered_only = yes
+    trigger = {
+    	FROM = { leader = { society_member_of = black_network } }
+    }
+    immediate = {
+    	if = { #Find a non-prisoner member
+    		limit = { FROM = { leader = { prisoner = yes } } }
+    		FROM = {
+    			any_society_member = {
+    				limit = {
+    					society_member_of = black_network
+    					society_rank == 4
+    					prisoner = no
+    				}
+    				character_event = { id = ZHE.101 }
+    				break = yes
+    			}
+    			any_society_member = {
+    				limit = {
+    					society_member_of = black_network
+    					society_rank == 3
+    					prisoner = no
+    				}
+    				character_event = { id = ZHE.101 }
+    				break = yes
+    			}
+    			any_society_member = {
+    				limit = {
+    					society_member_of = black_network
+    					society_rank == 2
+    					prisoner = no
+    				}
+    				character_event = { id = ZHE.101 }
+    				break = yes
+    			}
+    			any_society_member = {
+    				limit = {
+    					society_member_of = black_network
+    					society_rank == 1
+    					prisoner = no
+    				}
+    				character_event = { id = ZHE.101 }
+    				break = yes
+    			}
+    		}
+			#Everyone is somehow in prison so just use teh leader anyway
+    	}
+    	FROM = { leader = { character_event = { id = ZHE.101 } } }
+    }
+}
+
+#Ping event
+character_event = {
+    id = ZHE.101
+	hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+    	FROM = { letter_event = { id = ZHE.102 } }
+    }
+}
+
+#Welcome letter
+letter_event = {
+    id = ZHE.102
+    desc = EVTDESC_ZHE_102
+    border = GFX_event_letter_frame_religion
+
+    is_triggered_only = yes
+
+	immediate = { set_character_flag = society_join_block }
+
+    option = {
+        name = EVTOPTA_ZHE_102
+
+		join_society = black_network
+
+		clr_character_flag = society_join_block
+    }
+}
+
+########################AI JOIN AND AI RANK UP###########################
+
+character_event = { #force the AI to join a society
+	id = ZHE.110
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { #if he's already a member, will force a rank up 25% of the time
+				ai = yes
+				prisoner = no
+				NOT = { trait = incapable }
+				society_member_of = black_network
+				society_rank <= 3
+				society_can_rank_up = yes
+			}
+			random_list = {
+				75 = {}
+				25 = {
+					society_rank_up = 1
+				}
+			}
+		}
+		if = { #force the joining event on AI
+			limit = {
+				ai = yes
+				prisoner = no
+				NOT = { trait = incapable }
+				is_adult = yes
+				is_in_society = no
+        independent = yes
+        is_nomadic = no
+        is_tribal = no
+				controls_religion = no
+				block_general_event_trigger = no
+			}
+			character_event = { id = ZHE.111 }
+		}
+	}
+}
+
+character_event = { #AI join event
+	id = ZHE.111
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			60 = { # do nothing
+			}
+			40 = { # try to join a society 40% of the time
+				trigger = { #meet the requirement
+					can_join_society = black_network
+				}
+				modifier = { #things that will make that 40% of the time bigger, can be anything
+					factor = 2
+					prestige = 200
+				}
+				join_society = black_network #join the society
+				random_list = { # Artificially increase society influence for balance purposes, not really useful in my opinion.
+					75 = {
+						modifier = {
+							factor = 0
+							society_influence >= 30
+						}
+					}
+					25 = {
+					}
+				}
+				if = { # Make grandmaster is there is none
+					limit = {
+						NOT = {
+							society = {
+								any_society_member = {
+									is_society_grandmaster = yes
+								}
+							}
+						}
+					}
+					set_society_grandmaster = yes
+				}
+			}
+		}
+	}
+}
+
+#######################Rank UP#############################
+
+#Hidden start: Send the rank-up request to the current Grandmaster (delayed event on self, from decision to rank up)
+character_event = {
+	id = ZHE.120
+
+	hide_window = yes
+
+	trigger = { #has pressed the button
+		has_character_flag = has_sent_request_to_rank_up
+	}
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = { #if he's still a member
+			limit = { is_in_society = yes }
+			random_society_member = { #will send the request to a random top rank member of the same society
+				limit = {
+					is_society_grandmaster = yes
+					same_society_as = ROOT
+				}
+				character_event = { id = ZHE.121 } # send request to Grand Master.
+			}
+		}
+		if = { #if he's not a member
+			limit = { is_in_society = no }
+			clr_character_flag = has_sent_request_to_rank_up
+		}
+	}
+}
+
+#Grandmaster gets the rank-up request
+character_event = {
+	id = ZHE.121
+
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:rank_up_target = { letter_event = { id = ZHE.122 } } #send it back
+	}
+}
+
+#Grand master approves my request
+letter_event = {
+	id = ZHE.122
+	desc = EVTDESC_ZHE_122
+	border = GFX_event_letter_frame_war
+
+	trigger = {
+		society_rank < 4 #cannot rank up past 4
+		has_character_flag = has_sent_request_to_rank_up
+	}
+
+	is_triggered_only = yes
+
+	#Rank up approved
+	option = {
+		name = EVTOPTA_ZHE_122
+		if = { limit = { society_rank < 4 } #if not max rank, rank up
+			society_rank_up = 1
+		}
+		clr_character_flag = has_sent_request_to_rank_up
+	}
+}
+
+#################################DECISIONS######################################
+
+# ruthless taxation
+character_event = {
+	id = ZHE.21000
+	desc = EVTDESC_ZHE_21000
+	picture = GFX_evt_noble_in_castle
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_demesne_province = {
+			limit = {
+				NOR = {
+					has_province_modifier = extra_tax
+					has_province_modifier = extra_tax_kind
+          has_province_modifier = ruthless_tax
+					has_province_modifier = ruthless_tax_sneaky
+          has_province_modifier = ruthless_tax_heist
+			  }
+				any_province_holding = {
+					OR = {
+						holding_type = city
+						holding_type = temple
+						holding_type = castle
+						holding_type = tribal
+					}
+				}
+      }
+      save_event_target_as = extra_tax_target
+		}
+  }
+	# Extra Tax on peasants of a random Demesne Province
+	option = {
+		name = EVTOPTA_ZHE_21000
+
+		ai_chance = {
+			factor = 100
+		}
+
+		trigger = {
+			event_target:extra_tax_target = { always = yes }
+		}
+
+    custom_tooltip = {
+      text = extort_zhent_custom_tooltip
+      hidden_tooltip = {
+        any_realm_character = {
+          limit = {
+            OR = {
+              religion_group = good_human_pantheon_group
+              religion_group = elven_pantheon_group
+              religion_group = dwarven_pantheon_group
+              trait = kind
+            }
+          }
+          opinion = {
+            who = ROOT
+            modifier = opinion_tyrant
+            months = 60
+          }
+        }
+      }
+    }
+
+		character_event = {	id = ZHE.21100 tooltip = EVTTOOLTIP_ZHE_21100 }
+
+		if = {
+			limit = {
+				event_target:extra_tax_target = {
+						num_of_settlements = 7
+					}
+				}
+			wealth = 150
+			break = yes
+		}
+
+		if = {
+			limit = {
+				event_target:extra_tax_target = {
+						num_of_settlements = 6
+					}
+				}
+			wealth = 130
+			break = yes
+		}
+
+		if = {
+			limit = {
+				event_target:extra_tax_target = {
+						num_of_settlements = 5
+					}
+				}
+			wealth = 110
+			break = yes
+		}
+
+		if = {
+			limit = {
+				event_target:extra_tax_target = {
+						num_of_settlements = 4
+					}
+				}
+			wealth = 90
+			break = yes
+		}
+
+		if = {
+			limit = {
+				event_target:extra_tax_target = {
+						num_of_settlements = 3
+					}
+				}
+			wealth = 70
+			break = yes
+		}
+
+		if = {
+			limit = {
+				event_target:extra_tax_target = {
+						num_of_settlements = 2
+					}
+				}
+			wealth = 50
+			break = yes
+		}
+
+		wealth = 30
+  }
+}
+
+# Extra Tax on Demesne Province
+character_event = {
+	id = ZHE.21100
+	desc = EVTDESC_ZHE_21100
+	picture = GFX_evt_noble_haughty_talking_to_peasants
+
+	is_triggered_only = yes
+
+	# first option High stewardship can trade revolt risk for less tax
+	option = {
+		name = EVTOPTA_ZHE_21100
+		tooltip_info = stewardship
+
+		trigger = {
+			stewardship = 15
+		}
+
+		event_target:extra_tax_target = {
+			add_province_modifier = {
+				modifier = ruthless_tax_sneaky
+				duration = 1825
+			}
+		}
+
+		if = {
+			limit = {
+				OR = {
+					trait = kind
+          trait = honest
+			  }
+      }
+			effect = {
+					remove_trait = kind
+          remove_trait = honest
+			}
+		}
+	}
+
+	# second option Peasants upset
+	option = {
+		name = EVTOPTB_ZHE_21100
+
+    if = {
+			limit = {
+				OR = {
+					trait = kind
+					trait = charitable
+			  }
+      }
+			effect = {
+					remove_trait = kind
+          remove_trait = charitable
+			}
+		}
+
+		event_target:extra_tax_target = {
+			add_province_modifier = {
+				modifier = ruthless_tax
+				duration = 1825
+			}
+		}
+	}
+
+  # third option High intrigue steal
+  option = {
+    name = EVTOPTC_ZHE_21100
+    tooltip_info = intrigue
+
+    trigger = {
+      intrigue = 18
+    }
+
+    event_target:extra_tax_target = {
+      add_province_modifier = {
+        modifier = ruthless_tax_heist
+        duration = 3650
+      }
+    }
+
+    if = {
+      limit = {
+        OR = {
+          trait = kind
+          trait = honest
+          trait = charitable
+        }
+      }
+      effect = {
+          remove_trait = kind
+          remove_trait = honest
+          remove_trait = charitable
+      }
+    }
+  }
+}
+
+### Risky but profitable trade route
+# Start of chain (hidden)
+character_event = {
+	id = ZHE.10100
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		job_marshal = {
+			character_event = { id = ZHE.10101 }
+		}
+	}
+}
+
+# Start of chain (Marshal)
+character_event = {
+	id = ZHE.10101
+	is_triggered_only = yes
+	desc = EVTDESC_ZHE_10101
+	picture = GFX_evt_council
+	border = GFX_event_normal_frame_economy
+
+	option = {
+		name = EVTOPTA_ZHE_10101
+		ai_chance = {
+			factor = 1
+		}
+		save_event_target_as = marshal
+		FROM = { character_event = { id = ZHE.10102 } }
+	}
+
+	option = {
+		name = EVTOPTB_ZHE_10101
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Marshal presents an opportunity
+character_event = {
+	id = ZHE.10102
+	is_triggered_only = yes
+	desc = EVTDESC_ZHE_10102
+	picture = GFX_evt_council
+	border = GFX_event_normal_frame_economy
+
+	option = {
+		name = EVTOPTA_ZHE_10102
+		set_character_flag = trade_route_progress
+		if = {
+			limit = {
+				capital_scope = {
+					port = no
+				}
+			}
+			character_event = { id = ZHE.10103 }
+			break = yes
+		}
+		character_event = { id = ZHE.10104 }
+	}
+
+	option = {
+		name = EVTOPTB_ZHE_10102
+		clr_character_flag = trade_route_progress
+	}
+}
+
+# Land: setting up a land based trade route
+character_event = {
+	id = ZHE.10103
+	is_triggered_only = yes
+	desc = EVTDESC_ZHE_10103
+	picture = GFX_evt_merchant_caravan
+	border = GFX_event_normal_frame_economy
+
+	option = { # hire crew
+		name = EVTOPTA_ZHE_10103
+		set_character_flag = trade_is_land
+		if = {
+			limit = { yearly_income = 200 }
+			wealth = -200
+		}
+		if = {
+			limit = {
+				yearly_income = 25
+				NOT = { yearly_income = 200 }
+			}
+			scaled_wealth = -1
+		}
+		if = {
+			limit = { NOT = { yearly_income = 25 } }
+			wealth = -25
+		}
+		hidden_tooltip = {
+			character_event = { id = ZHE.10105 days = 3 }
+		}
+	}
+
+	option = { # pillage as we go
+		name = EVTOPTB_ZHE_10103
+		tooltip_info = martial
+    trigger = {
+      martial = 15
+    }
+		set_character_flag = trade_is_land
+		if = {
+			limit = { yearly_income = 200 }
+			wealth = -80
+		}
+		if = {
+			limit = {
+				yearly_income = 25
+				NOT = { yearly_income = 200 }
+			}
+			scaled_wealth = -0.4
+		}
+		if = {
+			limit = { NOT = { yearly_income = 25 } }
+			wealth = -10
+		}
+    remove_trait = kind
+    hidden_tooltip = {
+      character_event = { id = ZHE.10105 days = 3 }
+    }
+	}
+
+	option = { # this is too expensive
+		name = EVTOPTC_ZHE_10103
+		clr_character_flag = trade_route_progress
+	}
+}
+
+# Naval: setting up a naval based trade route
+character_event = {
+	id = ZHE.10104
+	is_triggered_only = yes
+	desc = EVTDESC_ZHE_10104
+	picture = GFX_evt_busy_trading_dock_republic
+	border = GFX_event_normal_frame_economy
+
+	option = { # hire crew
+		name = EVTOPTA_ZHE_10104
+		if = {
+			limit = { yearly_income = 200 }
+			wealth = -200
+		}
+		if = {
+			limit = {
+				yearly_income = 25
+				NOT = { yearly_income = 200 }
+			}
+			scaled_wealth = -1
+		}
+		if = {
+			limit = { NOT = { yearly_income = 25 } }
+			wealth = -25
+		}
+		hidden_tooltip = {
+			character_event = { id = ZHE.10105 days = 3 }
+		}
+	}
+
+	option = { # piracy
+		name = EVTOPTB_ZHE_10104
+    tooltip_info = martial
+    trigger = {
+      martial = 15
+    }
+		if = {
+			limit = { yearly_income = 200 }
+			wealth = -80
+		}
+		if = {
+			limit = {
+				yearly_income = 25
+				NOT = { yearly_income = 200 }
+			}
+			scaled_wealth = -0.4
+		}
+		if = {
+			limit = { NOT = { yearly_income = 25 } }
+			wealth = -10
+		}
+    remove_trait = kind
+    hidden_tooltip = {
+      character_event = { id = ZHE.10105 days = 3 }
+    }
+	}
+
+	option = { # this is too expensive
+		name = EVTOPTC_ZHE_10104
+		clr_character_flag = trade_route_progress
+	}
+}
+
+# Vassal wants some tribe killed and can finance some of the costs ## might be angered later
+character_event = {
+	id = ZHE.10105
+	is_triggered_only = yes
+	desc = EVTDESC_ZHE_10105
+	picture = GFX_evt_council
+	border = GFX_event_normal_frame_economy
+
+	option = {
+    name = EVTOPTA_ZHE_10105
+    add_trait = cruel
+    if = {
+      limit = { yearly_income = 200 }
+      wealth = 80
+    }
+    if = {
+      limit = {
+        yearly_income = 25
+        NOT = { yearly_income = 200 }
+      }
+      scaled_wealth = 0.4
+    }
+    if = {
+      limit = { NOT = { yearly_income = 25 } }
+      wealth = 5
+    }
+    set_character_flag = trade_priest
+    character_event = { id = ZHE.10111 days = 7 }
+	}
+
+	option = {
+		name = EVTOPTB_ZHE_10105
+    remove_trait = cruel
+		random_vassal = {
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+		}
+		character_event = { id = ZHE.10111 days = 7 }
+	}
+}
+
+# Heading out
+character_event = {
+	id = ZHE.10111
+	is_triggered_only = yes
+	desc = EVTDESC_ZHE_10111
+	picture = GFX_evt_market
+	border = GFX_event_normal_frame_economy
+	hide_from = yes
+
+	option = {
+		name = EVTOPTA_ZHE_10111
+		hidden_tooltip = {
+			character_event = { id = ZHE.10112 days = 35 random = 15 }
+		}
+	}
+}
+
+# Arriving (hidden)
+character_event = {
+	id = ZHE.10112
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		random_independent_ruler = {
+			limit = {
+				ai = yes
+				controls_religion = no
+				is_adult = yes
+				is_within_diplo_range = ROOT
+				mercenary = no
+				holy_order = no
+				primary_title = {
+					is_landless_type_title = no
+				}
+				NOR = {
+          is_friend = ROOT
+          is_lover = ROOT
+          culture = monster
+          trait = incapable
+          prisoner = yes
+          religion_group = ROOT
+					ROOT = {
+						any_liege = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+			character_event = { id = ZHE.10113 }
+			break = yes
+		}
+		random_independent_ruler = {
+			limit = {
+				ai = yes
+				controls_religion = no
+				is_adult = yes
+				is_within_diplo_range = ROOT
+				mercenary = no
+				holy_order = no
+				primary_title = {
+					is_landless_type_title = no
+				}
+				NOR = {
+          is_friend = ROOT
+          is_lover = ROOT
+          culture = monster
+          trait = incapable
+          prisoner = yes
+          religion = ROOT
+					ROOT = {
+						any_liege = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+			character_event = { id = ZHE.10113 }
+			break = yes
+		}
+		random_independent_ruler = {
+			limit = {
+				ai = yes
+				controls_religion = no
+				is_adult = yes
+				is_within_diplo_range = ROOT
+				mercenary = no
+				holy_order = no
+				primary_title = {
+					is_landless_type_title = no
+				}
+				NOR = {
+          is_friend = ROOT
+          is_lover = ROOT
+          culture = monster
+          trait = incapable
+          prisoner = yes
+					ROOT = {
+						any_liege = {
+							character = PREVPREV
+						}
+					}
+				}
+			}
+			character_event = { id = ZHE.10113 }
+			break = yes
+		}
+		random_independent_ruler = {
+			limit = {
+				ai = yes
+				controls_religion = no
+				is_adult = yes
+				mercenary = no
+				holy_order = no
+				primary_title = {
+					is_landless_type_title = no
+				}
+				NOT = {
+					OR = {
+            is_friend = ROOT
+            is_lover = ROOT
+            culture = monster
+            trait = incapable
+            prisoner = yes
+						ROOT = {
+							any_liege = {
+								character = PREVPREV
+							}
+						}
+					}
+				}
+			}
+			character_event = { id = ZHE.10113 }
+			break = yes
+		}
+		character_event = { id = WoL.10999 }
+	}
+}
+
+# Arriving at destination - Host (hidden)
+character_event = {
+	id = ZHE.10113
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		FROM = { character_event = { id = ZHE.10114 } }
+	}
+}
+
+# Foreign ruler interfering
+character_event = {
+	id = ZHE.10114
+	is_triggered_only = yes
+	desc = EVTDESC_ZHE_10114
+	picture = GFX_evt_market
+	border = GFX_event_normal_frame_economy
+
+	option = {
+		name = EVTOPTA_ZHE_10114
+		wealth = -30
+		FROM = {
+			hidden_tooltip = {
+				character_event = { id = ZHE.10115 }
+			}
+		}
+	}
+
+  option = {
+    name = EVTOPTB_ZHE_10114
+    tooltip_info = stewardship
+    trigger = {
+      stewardship = 15
+    }
+    FROM = {
+      hidden_tooltip = {
+        character_event = { id = ZHE.10115 }
+      }
+    }
+  }
+
+  option = {
+    name = EVTOPTC_ZHE_10114
+    tooltip_info = intrigue
+    trigger = {
+      intrigue = 17
+    }
+    hidden_tooltip = {
+      FROM = {
+        character_event = { id = ZHE.10115 }
+      }
+    }
+  }
+
+  option = {
+    name = EVTOPTD_ZHE_10114
+    random_list = {
+      75 = {
+        hidden_tooltip = {
+          FROM = {
+            character_event = { id = ZHE.10115 }
+          }
+        }
+      }
+      25 = {
+        FROM = {
+          hidden_tooltip = {
+            character_event = { id = ZHE.10122 }
+          }
+        }
+      }
+    }
+  }
+}
+
+# Foreign ruler responds (just bounce)
+character_event = {
+	id = ZHE.10115
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		FROM = {
+			character_event = { id = ZHE.10116 days = 7 }
+		}
+	}
+}
+
+# Deal with guerrillas
+character_event = {
+	id = ZHE.10116
+	is_triggered_only = yes
+	desc = EVTDESC_ZHE_10116
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_economy
+
+	option = {
+		name = EVTOPTA_ZHE_10116
+		tooltip_info = martial
+		trigger = {
+			martial = 15
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = ZHE.10117 }
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTB_ZHE_10116
+		event_target:marshal = {
+			opinion = {
+				modifier = opinion_angry
+				who = ROOT
+				years = 1
+			}
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = ZHE.10117 }
+			}
+		}
+	}
+
+  option = {
+    name = EVTOPTC_ZHE_10116
+    add_trait = severely_injured
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = ZHE.10117 }
+			}
+		}
+	}
+}
+
+# Foreign ruler (bounce)
+character_event = {
+	id = ZHE.10117
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				FROM = { has_character_flag = trade_priest }
+			}
+			FROM = {
+				character_event = { id = ZHE.10118 days = 7 }
+			}
+			break = yes
+		}
+		FROM = {
+			character_event = { id = ZHE.10119 days = 7}
+		}
+	}
+}
+
+# Massacre local tribe or not
+character_event = {
+  id = ZHE.10118
+  is_triggered_only = yes
+  desc = EVTDESC_ZHE_10118
+  picture = GFX_evt_melee
+  border = GFX_event_normal_frame_economy
+
+  option = {
+    name = EVTOPTA_ZHE_10118
+    add_trait = deceitful
+    remove_trait = cruel
+    any_vassal = {
+      opinion = {
+        modifier = opinion_angry
+        who = ROOT
+        years = 5
+      }
+    }
+    FROM = {
+      hidden_tooltip = {
+        character_event = { id = ZHE.10120 days = 7 }
+      }
+    }
+  }
+
+  option = {
+    name = EVTOPTB_ZHE_10118
+    tooltip_info = diplomacy
+    trigger = {
+      diplomacy = 15
+    }
+    FROM = {
+      hidden_tooltip = {
+        character_event = { id = ZHE.10120 days = 7 }
+      }
+    }
+  }
+
+  option = {
+    name = EVTOPTC_ZHE_10118
+    wealth = -50
+    FROM = {
+      hidden_tooltip = {
+        character_event = { id = ZHE.10120 days = 7 }
+      }
+      }
+    }
+  }
+
+  # Foreign ruler responds (just bounce from massacre)
+  character_event = {
+  id = ZHE.10120
+  is_triggered_only = yes
+  hide_window = yes
+
+  immediate = {
+  FROM = {
+  character_event = { id = ZHE.10119 }
+  }
+  }
+}
+
+# Ambush
+character_event = {
+	id = ZHE.10119
+	is_triggered_only = yes
+	desc = EVTDESC_ZHE_10119
+	picture = GFX_evt_melee
+	border = GFX_event_normal_frame_economy
+
+	option = {
+		name = EVTOPTA_ZHE_10119
+		tooltip_info = martial
+		trigger = {
+			martial = 12
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = ZHE.10121 }
+			}
+		}
+	}
+
+	option = {
+    name = EVTOPTB_ZHE_10119
+    tooltip_info = combat_rating
+		trigger = {
+			combat_rating = 50
+		}
+		hidden_tooltip = {
+			FROM = {
+				character_event = { id = ZHE.10121 }
+			}
+		}
+	}
+
+  option = {
+    name = EVTOPTC_ZHE_10119
+    random_list = {
+      75 = {
+        hidden_tooltip = {
+          FROM = {
+            character_event = { id = ZHE.10121 }
+          }
+        }
+      }
+      25 = {
+        FROM = {
+          hidden_tooltip = {
+            character_event = { id = ZHE.10122 }
+          }
+        }
+      }
+    }
+  }
+}
+
+# Foreign ruler responds (just bounce from ambush, success)
+character_event = {
+	id = ZHE.10121
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		FROM = {
+			character_event = { id = ZHE.10125 days = 7 }
+		}
+	}
+}
+
+# Foreign ruler responds (just bounce, fail)
+character_event = {
+	id = ZHE.10122
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		FROM = {
+			character_event = { id = ZHE.10128 days = 7 }
+		}
+	}
+}
+
+# Successful expedition
+character_event = {
+	id = ZHE.10125
+	is_triggered_only = yes
+	desc = EVTDESC_ZHE_10125
+	picture = GFX_evt_relaxed_ruler
+	border = GFX_event_normal_frame_economy
+
+	option = {
+		name = EVTOPTA_ZHE_10125
+		if = {
+			limit = { NOT = { yearly_income = 40 } }
+			wealth = 100
+		}
+		if = {
+			limit = {
+				NOT = { yearly_income = 200 }
+				yearly_income = 40
+			}
+			scaled_wealth = 2.5
+		}
+		if = {
+			limit = { yearly_income = 200 }
+			wealth = 500
+		}
+		prestige = 150
+    add_rival = FROM
+		set_character_flag = est_trade_route
+		if = {
+			limit = {
+				ai = no
+			}
+			set_character_flag = achievement_were_in_business
+		}
+		clr_character_flag = trade_route_progress
+		clr_character_flag = trade_priest
+		capital_scope = {
+			hidden_tooltip = {
+				remove_province_modifier = trade_route
+			}
+			add_province_modifier = {
+				name = trade_route
+				duration = 10950
+			}
+			hidden_tooltip = {
+				add_province_modifier = {
+					name = refresh_trade_route_timer
+					duration = 9125
+					hidden = yes
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Reapers"
+				}
+				custom_tooltip = {
+					text = capital_prospers_custom_tooltip
+					hidden_tooltip = {
+						change_variable = { which = prosperity_value value = 6 }
+					}
+				}
+			}
+		}
+
+		hidden_tooltip = {
+			character_event = { id = ZHE.10126 days = 5 }
+		}
+	}
+}
+
+# Reward marshal?
+character_event = {
+	id = ZHE.10126
+	is_triggered_only = yes
+	desc = EVTDESC_ZHE_10126
+	picture = GFX_evt_emissary
+	border = GFX_event_normal_frame_economy
+
+	option = {
+		name = EVTOPTA_ZHE_10126
+		transfer_scaled_wealth = {
+			to = event_target:marshal
+			value = 0.5
+			max = 200
+		}
+		event_target:marshal = {
+			hidden_tooltip = {
+				set_character_flag = trade_rewarded
+				character_event = { id = ZHE.10127 }
+			}
+			opinion = {
+				modifier = opinion_grateful
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+
+	option = {
+		name = EVTOPTB_ZHE_10126
+		random = {
+			chance = 50
+			add_trait = greedy
+			hidden_tooltip = {
+				character_event = {
+					id = 38252 #Notify Greedy
+				}
+			}
+		}
+		event_target:marshal = {
+			hidden_tooltip = {
+				character_event = { id = ZHE.10127 }
+			}
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
+			}
+		}
+	}
+}
+
+# Marshal conclusion
+character_event = {
+	id = ZHE.10127
+	is_triggered_only = yes
+	hide_window = yes ###fix if time
+
+	option = {
+		trigger = {
+			has_character_flag = trade_rewarded
+		}
+		tooltip = {
+			FROM = {
+				transfer_scaled_wealth = {
+					to = ROOT
+					value = 0.5
+				}
+			}
+		}
+		clr_character_flag = trade_rewarded
+	}
+
+	option = {
+		trigger = {
+			NOT = { has_character_flag = trade_rewarded }
+		}
+	}
+}
+
+# Failed expedition
+character_event = {
+	id = ZHE.10128
+	is_triggered_only = yes
+	desc = EVTDESC_ZHE_10128
+	picture = GFX_evt_stressed_ruler
+	border = GFX_event_normal_frame_economy
+
+	option = {
+		name = EVTOPTA_ZHE_10128
+		clr_character_flag = trade_bandits_fail
+		clr_character_flag = trade_bandits
+		clr_character_flag = trade_is_land
+		clr_character_flag = trade_priest
+		clr_character_flag = trade_friend
+		clr_character_flag = trade_success
+		clr_character_flag = trade_rival
+    add_rival = FROM
+	}
+}

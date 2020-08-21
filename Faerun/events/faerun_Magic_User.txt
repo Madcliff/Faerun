@@ -1,0 +1,234 @@
+namespace = FMU
+
+character_event = {
+    id = FMU.0001
+    hide_window = yes
+    is_triggered_only = yes
+    trigger = { 
+    	liege = {
+    		character = FROMFROM
+    		is_alive = yes
+    	}
+    	has_minor_title = title_magic_apprentice
+
+    }
+    immediate = { FROMFROM = { character_event = { id = FMU.0002 } } }
+}
+
+character_event = {
+    id = FMU.0002
+    desc = EVTDESC_FMU_0002
+    picture = GFX_evt_gathering_of_minds
+    border = GFX_event_normal_frame_religion
+
+    is_triggered_only = yes
+    
+    option = {
+		name = EVTOPTA_FMU_0002
+		trigger = {
+			OR = {
+				intrigue = 15
+				trait = paranoid
+				trait = envious
+				trait = lunatic
+				trait = possessed
+			}
+		}
+		add_trait = arbitrary
+		add_rival = FROMFROM
+    }
+	option = {
+		name = EVTOPTB_FMU_0002
+		trigger = {
+			OR = {
+				trait = trained_druid
+				trait = journeyman_druid
+				trait = expert_druid
+				trait = master_druid
+				trait = renowned_druid
+				trait = legendary_druid
+			}
+		}
+		FROM = {
+			change_learning = 2
+			add_trait = druid
+		}
+	}
+	option = {
+		name = EVTOPTC_FMU_0002
+		trigger = {
+			OR = {
+				trait = trained_wizard
+				trait = journeyman_wizard
+				trait = expert_wizard
+				trait = master_wizard
+				trait = renowned_wizard
+				trait = legendary_wizard
+			}
+		}
+		FROM = {
+			change_learning = 2
+			add_trait = wizard
+		}
+	}
+	option = {
+		name = EVTOPTD_FMU_0002
+		trigger = {
+			OR = {
+				trait = trained_cleric
+				trait = journeyman_cleric
+				trait = expert_cleric
+				trait = master_cleric
+				trait = renowned_cleric
+				trait = legendary_cleric
+			}
+		}
+		FROM = {
+			change_learning = 2
+			add_trait = cleric
+		}
+	}
+}
+
+### Repurposed event! ###
+character_event = {
+	id = 3021
+	desc = EVTDESC3021
+	picture = GFX_evt_bishop
+	border = GFX_event_normal_frame_religion
+	
+	only_playable = yes
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	religion = good_human_pantheon
+	ai = no
+	war = no
+	
+	trigger = {
+		OR = {
+			trait = journeyman_cleric	
+			trait = expert_cleric	
+			trait = master_cleric
+			trait = renowned_cleric
+			trait = legendary_cleric
+		}
+		trait = chaste
+		in_command = no
+		NOR = {
+			trait = excommunicated
+			trait = cynical
+			any_courtier_or_vassal = {
+				has_character_flag = special_marshal
+			}
+		}
+		piety = 250
+		
+	}
+	mean_time_to_happen = {
+		months = 48
+	}
+	option = {
+		name = EVTOPTA3021
+		random_list = {
+			5 = {
+				create_character = {
+					attributes = {
+						learning = 9
+					}
+					dynasty = random
+					religion = good_human_pantheon
+					age = 50
+					female = 50
+					trait = chaste
+					trait = zealous
+					trait = celibate
+					trait = mastermind_theologian
+					trait = creature_elf
+				}
+				new_character = {
+					set_character_flag = special_marshal
+					piety = 600
+					prestige = 150
+					if = {
+						random_list = {
+							80 = { add_trait = master_cleric }
+							15 = { add_trait = master_druid }
+							5 = { add_trait = master_bard } 
+						}
+					}
+					if = {
+						random_list = {
+							60 = { culture = green_elf }
+							20 = { culture = moon_elf }
+							15 = { culture = sun_elf }
+							5 = { culture = drow }
+						}
+					}
+					opinion = {
+						modifier = opinion_loyal_servant
+						who = ROOT
+						years = 150
+					}
+					random_list = {  # Small chance of having some unusual memorable trait
+						1 = { add_trait = pretty }
+						1 = { add_trait = genius }
+						50 = {}
+					}
+				}
+			}
+			95 = {
+				create_character = {
+					attributes = {
+						learning = 10
+					}
+					dynasty = random
+					culture = ROOT
+					religion = good_human_pantheon
+					age = 50
+					female = 50
+					trait = chaste
+					trait = zealous
+					trait = celibate
+					trait = mastermind_theologian
+					trait = creature_human
+				}
+				new_character = {
+					set_character_flag = special_marshal
+					piety = 600
+					prestige = 150
+					if = {
+						random_list = {
+							80 = { add_trait = master_cleric }
+							15 = { add_trait = master_druid }
+							5 = { add_trait = master_wizard } 
+						}
+					}
+					if = {
+						random_list = {
+							55 = { add_trait = patron_ilmater }
+							15 = { add_trait = patron_lathander }
+							15 = { add_trait = patron_torm }
+							15 = { add_trait = patron_tyr }
+						}
+					}
+					opinion = {
+						modifier = opinion_loyal_servant
+						who = ROOT
+						years = 25
+					}
+					random_list = {  # Small chance of having some unusual memorable trait
+						1 = { add_trait = scarred }
+						1 = { add_trait = genius }
+						50 = {}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTB3021
+		set_character_flag = special_marshal
+		piety = 25
+	}
+}

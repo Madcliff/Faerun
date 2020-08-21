@@ -14,6 +14,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_is_clone"
+		texturefile = "gfx/traits/born_in_the_purple.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_androgynous"
 		texturefile = "gfx/traits/androgynous.dds"
 		noOfFrames = 1
@@ -2381,6 +2388,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_chosen_bane"
+		texturefile = "gfx/traits/chosen_bane.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
 		name = "GFX_trait_sympathy_good_human_pantheon_group"
 		texturefile = "gfx/traits/sympathy_good_human_pantheon_group.dds"
 		noOfFrames = 1
@@ -2516,6 +2530,20 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_spell_longstrider_trait"
 		texturefile = "gfx/traits/spell_longstrider_trait.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_spell_rage_trait"
+		texturefile = "gfx/traits/spell_rage_trait.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_alustriels_banner_trait"
+		texturefile = "gfx/traits/alustriels_banner_trait.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

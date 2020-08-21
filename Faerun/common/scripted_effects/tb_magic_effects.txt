@@ -9,4 +9,2421 @@ dispel_minor_magic = {
 	remove_trait = spell_slow_trait
 	remove_trait = spell_longstrider_trait
 	remove_character_modifier = tensers_transformation_mod
+	remove_character_modifier = mordekainens_faithful_hound_mod
+	remove_character_modifier = detect_thoughts_mod
+	remove_character_modifier = legend_lore_mod
+	remove_trait = spell_rage_trait
+	remove_character_modifier = phantom_steed_mod
+	remove_trait = alustriels_banner_trait
+	remove_character_modifier = phantasmal_killer_mod
+	remove_character_modifier = spell_false_life_mod
+	remove_character_modifier = bestow_curse_mod
+}
+
+# This is for "Clone", please add any traits that are not acquired physical conditions (so only mental traits, or physical ones that can be passed down to children)
+
+copy_traits_of_root = {
+	ROOT = {
+		trigger_switch = {
+			on_trigger = trait
+			amateurish_plotter = {
+				new_character = { add_trait = amateurish_plotter }
+			}
+			flamboyant_schemer = {
+				new_character = { add_trait = flamboyant_schemer }
+			}
+			intricate_webweaver = {
+				new_character = { add_trait = intricate_webweaver }
+			}
+			elusive_shadow = {
+				new_character = { add_trait = elusive_shadow }
+			}
+			naive_appeaser = {
+				new_character = { add_trait = naive_appeaser }
+			}
+			underhanded_rogue = {
+				new_character = { add_trait = underhanded_rogue }
+			}
+			charismatic_negotiator = {
+				new_character = { add_trait = charismatic_negotiator }
+			}
+			grey_eminence = {
+				new_character = { add_trait = grey_eminence }
+			}
+			indulgent_wastrel = {
+				new_character = { add_trait = indulgent_wastrel }
+			}
+			thrifty_clerk = {
+				new_character = { add_trait = thrifty_clerk }
+			}
+			fortune_builder = {
+				new_character = { add_trait = fortune_builder }
+			}
+			midas_touched = {
+				new_character = { add_trait = midas_touched }
+			}
+			misguided_warrior = {
+				new_character = { add_trait = misguided_warrior }
+			}
+			tough_soldier = {
+				new_character = { add_trait = tough_soldier }
+			}
+			skilled_tactician = {
+				new_character = { add_trait = skilled_tactician }
+			}
+			brilliant_strategist = {
+				new_character = { add_trait = brilliant_strategist }
+			}
+			detached_priest = {
+				new_character = { add_trait = detached_priest }
+			}
+			martial_cleric = {
+				new_character = { add_trait = martial_cleric }
+			}
+			scholarly_theologian = {
+				new_character = { add_trait = scholarly_theologian }
+			}
+			mastermind_theologian = {
+				new_character = { add_trait = mastermind_theologian }
+			}
+			stressed = {
+				new_character = { add_trait = stressed }
+			}
+			depressed = {
+				new_character = { add_trait = depressed }
+			}
+			lunatic = {
+				new_character = { add_trait = lunatic }
+			}
+			drunkard = {
+				new_character = { add_trait = drunkard }
+			}
+			homosexual = {
+				new_character = { add_trait = homosexual }
+			}
+			clubfooted = {
+				new_character = { add_trait = clubfooted }
+			}
+			harelip = {
+				new_character = { add_trait = harelip }
+			}
+			hunchback = {
+				new_character = { add_trait = hunchback }
+			}
+			lisp = {
+				new_character = { add_trait = lisp }
+			}
+			stutter = {
+				new_character = { add_trait = stutter }
+			}
+			fair = {
+				new_character = { add_trait = fair }
+			}
+			ugly = {
+				new_character = { add_trait = ugly }
+			}
+			dwarf = {
+				new_character = { add_trait = dwarf }
+			}
+			genius = {
+				new_character = { add_trait = genius }
+			}
+			quick = {
+				new_character = { add_trait = quick }
+			}
+			slow = {
+				new_character = { add_trait = slow }
+			}
+			imbecile = {
+				new_character = { add_trait = imbecile }
+			}
+			inbred = {
+				new_character = { add_trait = inbred }
+			}
+			strong = {
+				new_character = { add_trait = strong }
+			}
+			weak = {
+				new_character = { add_trait = weak }
+			}
+			celibate = {
+				new_character = { add_trait = celibate }
+			}
+			hedonist = {
+				new_character = { add_trait = hedonist }
+			}
+			scholar = {
+				new_character = { add_trait = scholar }
+			}
+			gardener = {
+				new_character = { add_trait = gardener }
+			}
+			mystic = {
+				new_character = { add_trait = mystic }
+			}
+			impaler = {
+				new_character = { add_trait = impaler }
+			}
+			duelist = {
+				new_character = { add_trait = duelist }
+			}
+			hunter = {
+				new_character = { add_trait = hunter }
+			}
+			poet = {
+				new_character = { add_trait = poet }
+			}
+			falconer = {
+				new_character = { add_trait = falconer }
+			}
+			lustful = {
+				new_character = { add_trait = lustful }
+			}
+			chaste = {
+				new_character = { add_trait = chaste }
+			}
+			gluttonous = {
+				new_character = { add_trait = gluttonous }
+			}
+			temperate = {
+				new_character = { add_trait = temperate }
+			}
+			greedy = {
+				new_character = { add_trait = greedy }
+			}
+			charitable = {
+				new_character = { add_trait = charitable }
+			}
+			slothful = {
+				new_character = { add_trait = slothful }
+			}
+			diligent = {
+				new_character = { add_trait = diligent }
+			}
+			envious = {
+				new_character = { add_trait = envious }
+			}
+			kind = {
+				new_character = { add_trait = kind }
+			}
+			wroth = {
+				new_character = { add_trait = wroth }
+			}
+			patient = {
+				new_character = { add_trait = patient }
+			}
+			proud = {
+				new_character = { add_trait = proud }
+			}
+			humble = {
+				new_character = { add_trait = humble }
+			}
+			deceitful = {
+				new_character = { add_trait = deceitful }
+			}
+			honest = {
+				new_character = { add_trait = honest }
+			}
+			craven = {
+				new_character = { add_trait = craven }
+			}
+			brave = {
+				new_character = { add_trait = brave }
+			}
+			shy = {
+				new_character = { add_trait = shy }
+			}
+			gregarious = {
+				new_character = { add_trait = gregarious }
+			}
+			ambitious = {
+				new_character = { add_trait = ambitious }
+			}
+			content = {
+				new_character = { add_trait = content }
+			}
+			arbitrary = {
+				new_character = { add_trait = arbitrary }
+			}
+			just = {
+				new_character = { add_trait = just }
+			}
+			cynical = {
+				new_character = { add_trait = cynical }
+			}
+			zealous = {
+				new_character = { add_trait = zealous }
+			}
+			paranoid = {
+				new_character = { add_trait = paranoid }
+			}
+			trusting = {
+				new_character = { add_trait = trusting }
+			}
+			cruel = {
+				new_character = { add_trait = cruel }
+			}
+			light_foot_leader = {
+				new_character = { add_trait = light_foot_leader }
+			}
+			heavy_infantry_leader = {
+				new_character = { add_trait = heavy_infantry_leader }
+			}
+			cavalry_leader = {
+				new_character = { add_trait = cavalry_leader }
+			}
+			inspiring_leader = {
+				new_character = { add_trait = inspiring_leader }
+			}
+			trickster = {
+				new_character = { add_trait = trickster }
+			}
+			organizer = {
+				new_character = { add_trait = organizer }
+			}
+			defensive_leader = {
+				new_character = { add_trait = defensive_leader }
+			}
+			experimenter = {
+				new_character = { add_trait = experimenter }
+			}
+			flanker = {
+				new_character = { add_trait = flanker }
+			}
+			aggressive_leader = {
+				new_character = { add_trait = aggressive_leader }
+			}
+			siege_leader = {
+				new_character = { add_trait = siege_leader }
+			}
+			flat_terrain_leader = {
+				new_character = { add_trait = flat_terrain_leader }
+			}
+			rough_terrain_leader = {
+				new_character = { add_trait = rough_terrain_leader }
+			}
+			mountain_terrain_leader = {
+				new_character = { add_trait = mountain_terrain_leader }
+			}
+			desert_terrain_leader = {
+				new_character = { add_trait = desert_terrain_leader }
+			}
+			holy_warrior = {
+				new_character = { add_trait = holy_warrior }
+			}
+			unyielding_leader = {
+				new_character = { add_trait = unyielding_leader }
+			}
+			peasant_leader = {
+				new_character = { add_trait = peasant_leader }
+			}
+			heresiarch = {
+				new_character = { add_trait = heresiarch }
+			}
+			berserker = {
+				new_character = { add_trait = berserker }
+			}
+			viking = {
+				new_character = { add_trait = viking }
+			}
+			monk = {
+				new_character = { add_trait = monk }
+			}
+			nun = {
+				new_character = { add_trait = nun }
+			}
+			sympathy_many = {
+				new_character = { add_trait = sympathy_many }
+			}
+			sympathy_good_human_pantheon_group = {
+				new_character = { add_trait = sympathy_good_human_pantheon_group }
+			}
+			sympathy_evil_human_pantheon_group = {
+				new_character = { add_trait = sympathy_evil_human_pantheon_group }
+			}
+			sympathy_zakharan_group = {
+				new_character = { add_trait = sympathy_zakharan_group }
+			}
+			sympathy_karaturan_group = {
+				new_character = { add_trait = sympathy_karaturan_group }
+			}
+			sympathy_elven_pantheon_group = {
+				new_character = { add_trait = sympathy_elven_pantheon_group }
+			}
+			sympathy_drow_pantheon = {
+				new_character = { add_trait = sympathy_drow_pantheon }
+			}
+			sympathy_dwarven_pantheon_group = {
+				new_character = { add_trait = sympathy_dwarven_pantheon_group }
+			}
+			sympathy_giant_pantheon_group = {
+				new_character = { add_trait = sympathy_giant_pantheon_group }
+			}
+			sympathy_draconic_group = {
+				new_character = { add_trait = sympathy_draconic_group }
+			}
+			sympathy_pagans = {
+				new_character = { add_trait = sympathy_pagans }
+			}
+			narrow_flank_leader = {
+				new_character = { add_trait = narrow_flank_leader }
+			}
+			decadent = {
+				new_character = { add_trait = decadent }
+			}
+			war_elephant_leader = {
+				new_character = { add_trait = war_elephant_leader }
+			}
+			jungle_terrain_leader = {
+				new_character = { add_trait = jungle_terrain_leader }
+			}
+			winter_soldier = {
+				new_character = { add_trait = winter_soldier }
+			}
+			seducer = {
+				new_character = { add_trait = seducer }
+			}
+			seductress = {
+				new_character = { add_trait = seductress }
+			}
+			administrator = {
+				new_character = { add_trait = administrator }
+			}
+			architect = {
+				new_character = { add_trait = architect }
+			}
+			strategist = {
+				new_character = { add_trait = strategist }
+			}
+			socializer = {
+				new_character = { add_trait = socializer }
+			}
+			schemer = {
+				new_character = { add_trait = schemer }
+			}
+			theologian = {
+				new_character = { add_trait = theologian }
+			}
+			gamer = {
+				new_character = { add_trait = gamer }
+			}
+			adventurer = {
+				new_character = { add_trait = adventurer }
+			}
+			erudite = {
+				new_character = { add_trait = erudite }
+			}
+			stubborn = {
+				new_character = { add_trait = stubborn }
+			}
+			robust = {
+				new_character = { add_trait = robust }
+			}
+			feeble = {
+				new_character = { add_trait = feeble }
+			}
+			shrewd = {
+				new_character = { add_trait = shrewd }
+			}
+			dull = {
+				new_character = { add_trait = dull }
+			}
+			immortal = {
+				new_character = { add_trait = immortal }
+			}
+			ravager = {
+				new_character = { add_trait = ravager }
+			}
+			seaking = {
+				new_character = { add_trait = seaking }
+			}
+			shieldmaiden = {
+				new_character = { add_trait = shieldmaiden }
+			}
+			physician = {
+				new_character = { add_trait = physician }
+			}
+			sea_queen = {
+				new_character = { add_trait = sea_queen }
+			}
+			cannibal_trait = {
+				new_character = { add_trait = cannibal_trait }
+			}
+			master_of_flame = {
+				new_character = { add_trait = master_of_flame }
+			}
+			logistics_expert = {
+				new_character = { add_trait = logistics_expert }
+			}
+			levy_coordinator = {
+				new_character = { add_trait = levy_coordinator }
+			}
+			sapper = {
+				new_character = { add_trait = sapper }
+			}
+			giant = {
+				new_character = { add_trait = giant }
+			}
+			lefthanded = {
+				new_character = { add_trait = lefthanded }
+			}
+			norse_leader = {
+				new_character = { add_trait = norse_leader }
+			}
+			pirate = {
+				new_character = { add_trait = pirate }
+			}
+			groomed = {
+				new_character = { add_trait = groomed }
+			}
+			uncouth = {
+				new_character = { add_trait = uncouth }
+			}
+			gladiator = {
+				new_character = { add_trait = gladiator }
+			}
+			bard = {
+				new_character = { add_trait = bard }
+			}
+			trained_bard = {
+				new_character = { add_trait = trained_bard }
+			}
+			journeyman_bard = {
+				new_character = { add_trait = journeyman_bard }
+			}
+			expert_bard = {
+				new_character = { add_trait = expert_bard }
+			}
+			master_bard = {
+				new_character = { add_trait = master_bard }
+			}
+			renowned_bard = {
+				new_character = { add_trait = renowned_bard }
+			}
+			legendary_bard = {
+				new_character = { add_trait = legendary_bard }
+			}
+			wizard = {
+				new_character = { add_trait = wizard }
+			}
+			trained_wizard = {
+				new_character = { add_trait = wizard }
+			}
+			journeyman_wizard = {
+				new_character = { add_trait = journeyman_wizard }
+			}
+			expert_wizard = {
+				new_character = { add_trait = expert_wizard }
+			}
+			master_wizard = {
+				new_character = { add_trait = master_wizard }
+			}
+			renowned_wizard = {
+				new_character = { add_trait = renowned_wizard }
+			}
+			legendary_wizard = {
+				new_character = { add_trait = legendary_wizard }
+			}
+			sorcerer = {
+				new_character = { add_trait = sorcerer }
+			}
+			trained_sorcerer = {
+				new_character = { add_trait = trained_sorcerer }
+			}
+			journeyman_sorcerer = {
+				new_character = { add_trait = journeyman_sorcerer }
+			}
+			expert_sorcerer = {
+				new_character = { add_trait = expert_sorcerer }
+			}
+			master_sorcerer = {
+				new_character = { add_trait = master_sorcerer }
+			}
+			renowned_sorcerer = {
+				new_character = { add_trait = renowned_sorcerer }
+			}
+			legendary_sorcerer = {
+				new_character = { add_trait = legendary_sorcerer }
+			}
+			warlock = {
+				new_character = { add_trait = warlock }
+			}
+			trained_warlock = {
+				new_character = { add_trait = trained_warlock }
+			}
+			journeyman_warlock = {
+				new_character = { add_trait = journeyman_warlock }
+			}
+			expert_warlock = {
+				new_character = { add_trait = expert_warlock }
+			}
+			master_warlock = {
+				new_character = { add_trait = master_warlock }
+			}
+			renowned_warlock = {
+				new_character = { add_trait = renowned_warlock }
+			}
+			legendary_warlock = {
+				new_character = { add_trait = legendary_warlock }
+			}
+			cleric = {
+				new_character = { add_trait = cleric }
+			}
+			trained_cleric = {
+				new_character = { add_trait = trained_cleric }
+			}
+			journeyman_cleric = {
+				new_character = { add_trait = journeyman_cleric }
+			}
+			expert_cleric = {
+				new_character = { add_trait = expert_cleric }
+			}
+			master_cleric = {
+				new_character = { add_trait = master_cleric }
+			}
+			renowned_cleric = {
+				new_character = { add_trait = renowned_cleric }
+			}
+			legendary_cleric = {
+				new_character = { add_trait = legendary_cleric }
+			}
+			paladin = {
+				new_character = { add_trait = paladin }
+			}
+			trained_paladin = {
+				new_character = { add_trait = trained_paladin }
+			}
+			journeyman_paladin = {
+				new_character = { add_trait = journeyman_paladin }
+			}
+			expert_paladin = {
+				new_character = { add_trait = expert_paladin }
+			}
+			master_paladin = {
+				new_character = { add_trait = master_paladin }
+			}
+			renowned_paladin = {
+				new_character = { add_trait = renowned_paladin }
+			}
+			legendary_paladin = {
+				new_character = { add_trait = legendary_paladin }
+			}
+			druid = {
+				new_character = { add_trait = druid }
+			}
+			trained_druid = {
+				new_character = { add_trait = trained_druid }
+			}
+			journeyman_druid = {
+				new_character = { add_trait = journeyman_druid }
+			}
+			expert_druid = {
+				new_character = { add_trait = expert_druid }
+			}
+			master_druid = {
+				new_character = { add_trait = master_druid }
+			}
+			renowned_druid = {
+				new_character = { add_trait = renowned_druid }
+			}
+			legendary_druid = {
+				new_character = { add_trait = legendary_druid }
+			}
+			fighter = {
+				new_character = { add_trait = fighter }
+			}
+			trained_fighter = {
+				new_character = { add_trait = trained_fighter }
+			}
+			journeyman_fighter = {
+				new_character = { add_trait = journeyman_fighter }
+			}
+			expert_fighter = {
+				new_character = { add_trait = expert_fighter }
+			}
+			master_fighter = {
+				new_character = { add_trait = master_fighter }
+			}
+			renowned_fighter = {
+				new_character = { add_trait = renowned_fighter }
+			}
+			legendary_fighter = {
+				new_character = { add_trait = legendary_fighter }
+			}
+			ranger = {
+				new_character = { add_trait = ranger }
+			}
+			trained_ranger = {
+				new_character = { add_trait = trained_ranger }
+			}
+			journeyman_ranger = {
+				new_character = { add_trait = journeyman_ranger }
+			}
+			expert_ranger = {
+				new_character = { add_trait = expert_ranger }
+			}
+			master_ranger = {
+				new_character = { add_trait = master_ranger }
+			}
+			renowned_ranger = {
+				new_character = { add_trait = renowned_ranger }
+			}
+			legendary_ranger = {
+				new_character = { add_trait = legendary_ranger }
+			}
+			barbarian = {
+				new_character = { add_trait = barbarian }
+			}
+			trained_barbarian = {
+				new_character = { add_trait = trained_barbarian }
+			}
+			journeyman_barbarian = {
+				new_character = { add_trait = journeyman_barbarian }
+			}
+			expert_barbarian = {
+				new_character = { add_trait = expert_barbarian }
+			}
+			master_barbarian = {
+				new_character = { add_trait = master_barbarian }
+			}
+			renowned_barbarian = {
+				new_character = { add_trait = renowned_barbarian }
+			}
+			legendary_barbarian = {
+				new_character = { add_trait = legendary_barbarian }
+			}
+			class_monk = {
+				new_character = { add_trait = class_monk }
+			}
+			trained_monk = {
+				new_character = { add_trait = trained_monk }
+			}
+			journeyman_monk = {
+				new_character = { add_trait = journeyman_monk }
+			}
+			expert_monk = {
+				new_character = { add_trait = expert_monk }
+			}
+			master_monk = {
+				new_character = { add_trait = master_monk }
+			}
+			renowned_monk = {
+				new_character = { add_trait = renowned_monk }
+			}
+			legendary_monk = {
+				new_character = { add_trait = legendary_monk }
+			}
+			rogue = {
+				new_character = { add_trait = rogue }
+			}
+			trained_rogue = {
+				new_character = { add_trait = trained_rogue }
+			}
+			journeyman_rogue = {
+				new_character = { add_trait = journeyman_rogue }
+			}
+			expert_rogue = {
+				new_character = { add_trait = expert_rogue }
+			}
+			master_rogue = {
+				new_character = { add_trait = master_rogue }
+			}
+			renowned_rogue = {
+				new_character = { add_trait = renowned_rogue }
+			}
+			legendary_rogue = {
+				new_character = { add_trait = legendary_rogue }
+			}
+			shadow = {
+				new_character = { add_trait = shadow }
+			}
+			trained_shadow = {
+				new_character = { add_trait = trained_shadow }
+			}
+			journeyman_shadow = {
+				new_character = { add_trait = journeyman_shadow }
+			}
+			expert_shadow = {
+				new_character = { add_trait = expert_shadow }
+			}
+			master_shadow = {
+				new_character = { add_trait = master_shadow }
+			}
+			renowned_shadow = {
+				new_character = { add_trait = renowned_shadow }
+			}
+			legendary_shadow = {
+				new_character = { add_trait = legendary_shadow }
+			}
+			brilliant = {
+				new_character = { add_trait = brilliant }
+			}
+			smart = {
+				new_character = { add_trait = smart }
+			}
+			bright = {
+				new_character = { add_trait = bright }
+			}
+			idiot = {
+				new_character = { add_trait = idiot }
+			}
+			dumb = {
+				new_character = { add_trait = dumb }
+			}
+			dim = {
+				new_character = { add_trait = dim }
+			}
+			tough = {
+				new_character = { add_trait = tough }
+			}
+			hardy = {
+				new_character = { add_trait = hardy }
+			}
+			delicate = {
+				new_character = { add_trait = delicate }
+			}
+			soft = {
+				new_character = { add_trait = soft }
+			}
+			pretty = {
+				new_character = { add_trait = pretty }
+			}
+			beautiful = {
+				new_character = { add_trait = beautiful }
+			}
+			plain = {
+				new_character = { add_trait = plain }
+			}
+			unsightly = {
+				new_character = { add_trait = unsightly }
+			}
+			patron_azuth = {
+				new_character = { add_trait = patron_azuth }
+			}
+			patron_bane = {
+				new_character = { add_trait = patron_bane }
+			}
+			patron_chauntea = {
+				new_character = { add_trait = patron_chauntea }
+			}
+			patron_eilistraee = {
+				new_character = { add_trait = patron_eilistraee }
+			}
+			patron_gond = {
+				new_character = { add_trait = patron_gond }
+			}
+			patron_helm = {
+				new_character = { add_trait = patron_helm }
+			}
+			patron_ilmater = {
+				new_character = { add_trait = patron_ilmater }
+			}
+			patron_kelemvor = {
+				new_character = { add_trait = patron_kelemvor }
+			}
+			patron_kossuth = {
+				new_character = { add_trait = patron_kossuth }
+			}
+			patron_lathander = {
+				new_character = { add_trait = patron_lathander }
+			}
+			patron_malar = {
+				new_character = { add_trait = patron_malar }
+			}
+			patron_mask = {
+				new_character = { add_trait = patron_mask }
+			}
+			patron_mielikki = {
+				new_character = { add_trait = patron_mielikki }
+			}
+			patron_mystra = {
+				new_character = { add_trait = patron_mystra }
+			}
+			patron_oghma = {
+				new_character = { add_trait = patron_oghma }
+			}
+			patron_selune = {
+				new_character = { add_trait = patron_selune }
+			}
+			patron_shar = {
+				new_character = { add_trait = patron_shar }
+			}
+			patron_shaundakul = {
+				new_character = { add_trait = patron_shaundakul }
+			}
+			patron_silvanus = {
+				new_character = { add_trait = patron_silvanus }
+			}
+			patron_sune = {
+				new_character = { add_trait = patron_sune }
+			}
+			patron_talos = {
+				new_character = { add_trait = patron_talos }
+			}
+			patron_tempus = {
+				new_character = { add_trait = patron_tempus }
+			}
+			patron_torm = {
+				new_character = { add_trait = patron_torm }
+			}
+			patron_tymora = {
+				new_character = { add_trait = patron_tymora }
+			}
+			patron_tyr = {
+				new_character = { add_trait = patron_tyr }
+			}
+			patron_umberlee = {
+				new_character = { add_trait = patron_umberlee }
+			}
+			patron_waukeen = {
+				new_character = { add_trait = patron_waukeen }
+			}
+			patron_akadi = {
+				new_character = { add_trait = patron_akadi }
+			}
+			patron_auril = {
+				new_character = { add_trait = patron_auril }
+			}
+			patron_beshaba = {
+				new_character = { add_trait = patron_beshaba }
+			}
+			patron_deneir = {
+				new_character = { add_trait = patron_eldath }
+			}
+			patron_finder_wyvernspur = {
+				new_character = { add_trait = patron_finder_wyvernspur }
+			}
+			patron_garagos = {
+				new_character = { add_trait = patron_garagos }
+			}
+			patron_gargauth = {
+				new_character = { add_trait = patron_gargauth }
+			}
+			patron_grumbar = {
+				new_character = { add_trait = patron_grumbar }
+			}
+			patron_gwaeron_windstrom = {
+				new_character = { add_trait = patron_gwaeron_windstrom }
+			}
+			patron_hoar = {
+				new_character = { add_trait = patron_hoar }
+			}
+			patron_istishia = {
+				new_character = { add_trait = patron_istishia }
+			}
+			patron_iyachtu_xvim = {
+				new_character = { add_trait = patron_iyachtu_xvim }
+			}
+			patron_jergal = {
+				new_character = { add_trait = patron_jergal }
+			}
+			patron_lliira = {
+				new_character = { add_trait = patron_lliira }
+			}
+			patron_loviatar = {
+				new_character = { add_trait = patron_loviatar }
+			}
+			patron_lurue = {
+				new_character = { add_trait = patron_lurue }
+			}
+			patron_milil = {
+				new_character = { add_trait = patron_milil }
+			}
+			patron_nobanion = {
+				new_character = { add_trait = patron_nobanion }
+			}
+			patron_red_knight = {
+				new_character = { add_trait = patron_red_knight }
+			}
+			patron_savras = {
+				new_character = { add_trait = patron_savras }
+			}
+			patron_sharess = {
+				new_character = { add_trait = patron_sharess }
+			}
+			patron_shiallia = {
+				new_character = { add_trait = patron_shiallia }
+			}
+			patron_siamorphe = {
+				new_character = { add_trait = patron_siamorphe }
+			}
+			patron_talona = {
+				new_character = { add_trait = patron_talona }
+			}
+			patron_tiamat = {
+				new_character = { add_trait = patron_tiamat }
+			}
+			patron_ulutiu = {
+				new_character = { add_trait = patron_ulutiu }
+			}
+			patron_valkur = {
+				new_character = { add_trait = patron_valkur }
+			}
+			patron_velsharoon = {
+				new_character = { add_trait = patron_velsharoon }
+			}
+			patron_ghaunadaur = {
+				new_character = { add_trait = patron_ghaunadaur }
+			}
+			patron_kiaransalee = {
+				new_character = { add_trait = patron_kiaransalee }
+			}
+			patron_selvetarm = {
+				new_character = { add_trait = patron_selvetarm }
+			}
+			patron_vhaeraun = {
+				new_character = { add_trait = patron_vhaeraun }
+			}
+			patron_abbathor = {
+				new_character = { add_trait = patron_abbathor }
+			}
+			patron_berronar_truesilver = {
+				new_character = { add_trait = patron_berronar_truesilver }
+			}
+			patron_clangeddin_silverbeard = {
+				new_character = { add_trait = patron_clangeddin_silverbeard }
+			}
+			patron_dugmaren_brightmantle = {
+				new_character = { add_trait = patron_dugmaren_brightmantle }
+			}
+			patron_dumathoin = {
+				new_character = { add_trait = patron_dumathoin }
+			}
+			patron_gorm_gulthyn = {
+				new_character = { add_trait = patron_gorm_gulthyn }
+			}
+			patron_haela_brightaxe = {
+				new_character = { add_trait = patron_haela_brightaxe }
+			}
+			patron_marthammor_duin = {
+				new_character = { add_trait = patron_marthammor_duin }
+			}
+			patron_moradin = {
+				new_character = { add_trait = patron_moradin }
+			}
+			patron_sharindlar = {
+				new_character = { add_trait = patron_sharindlar }
+			}
+			patron_vergadain = {
+				new_character = { add_trait = patron_vergadain }
+			}
+			patron_aerdrie_faenya = {
+				new_character = { add_trait = patron_aerdrie_faenya }
+			}
+			patron_corellon_larethian = {
+				new_character = { add_trait = patron_corellon_larethian }
+			}
+			patron_erevan_ilesere = {
+				new_character = { add_trait = patron_erevan_ilesere }
+			}
+			patron_fenmarel_mestarine = {
+				new_character = { add_trait = patron_fenmarel_mestarine }
+			}
+			patron_hanali_celanil = {
+				new_character = { add_trait = patron_hanali_celanil }
+			}
+			patron_labelas_enoreth = {
+				new_character = { add_trait = patron_labelas_enoreth }
+			}
+			patron_rillifane_rallathil = {
+				new_character = { add_trait = patron_rillifane_rallathil }
+			}
+			patron_sehanine_moonbow = {
+				new_character = { add_trait = patron_sehanine_moonbow }
+			}
+			patron_shevarash = {
+				new_character = { add_trait = patron_shevarash }
+			}
+			patron_solonor_thelandira = {
+				new_character = { add_trait = patron_solonor_thelandira }
+			}
+			patron_baervan_wildwanderer = {
+				new_character = { add_trait = patron_baervan_wildwanderer }
+			}
+			patron_baravar_cloakshadow = {
+				new_character = { add_trait = patron_baravar_cloakshadow }
+			}
+			patron_callarduran_smoothhands = {
+				new_character = { add_trait = patron_callarduran_smoothhands }
+			}
+			patron_flandal_steelskin = {
+				new_character = { add_trait = patron_flandal_steelskin }
+			}
+			patron_gaerdal_ironhand = {
+				new_character = { add_trait = patron_gaerdal_ironhand }
+			}
+			patron_garl_glittergold = {
+				new_character = { add_trait = patron_garl_glittergold }
+			}
+			patron_segojan_earthcaller = {
+				new_character = { add_trait = patron_segojan_earthcaller }
+			}
+			patron_urdlen = {
+				new_character = { add_trait = patron_urdlen }
+			}
+			patron_arvoreen = {
+				new_character = { add_trait = patron_arvoreen }
+			}
+			patron_brandobaris = {
+				new_character = { add_trait = patron_brandobaris }
+			}
+			patron_cyrrollalee = {
+				new_character = { add_trait = patron_cyrrollalee }
+			}
+			patron_sheela_peryroyl = {
+				new_character = { add_trait = patron_sheela_peryroyl }
+			}
+			patron_urogalan = {
+				new_character = { add_trait = patron_urogalan }
+			}
+			patron_yondalla = {
+				new_character = { add_trait = patron_yondalla }
+			}
+			patron_anhur = {
+				new_character = { add_trait = patron_anhur }
+			}
+			patron_geb = {
+				new_character = { add_trait = patron_geb }
+			}
+			patron_hathor = {
+				new_character = { add_trait = patron_hathor }
+			}
+			patron_horus_re = {
+				new_character = { add_trait = patron_horus_re }
+			}
+			patron_isis = {
+				new_character = { add_trait = patron_isis }
+			}
+			patron_nephthys = {
+				new_character = { add_trait = patron_nephthys }
+			}
+			patron_osiris = {
+				new_character = { add_trait = patron_osiris }
+			}
+			patron_sebek = {
+				new_character = { add_trait = patron_sebek }
+			}
+			patron_set = {
+				new_character = { add_trait = patron_set }
+			}
+			patron_thoth = {
+				new_character = { add_trait = patron_thoth }
+			}
+			patron_ibrandul = {
+				new_character = { add_trait = patron_ibrandul }
+			}
+			patron_leira = {
+				new_character = { add_trait = patron_leira }
+			}
+			patron_bhaal = {
+				new_character = { add_trait = patron_bhaal }
+			}
+			patron_myrkul = {
+				new_character = { add_trait = patron_myrkul }
+			}
+			patron_gilgeam = {
+				new_character = { add_trait = patron_gilgeam }
+			}
+			patron_tyche = {
+				new_character = { add_trait = patron_tyche }
+			}
+			patron_bahgtru = {
+				new_character = { add_trait = patron_bahgtru }
+			}
+			patron_gruumsh = {
+				new_character = { add_trait = patron_gruumsh }
+			}
+			patron_ilneval = {
+				new_character = { add_trait = patron_ilneval }
+			}
+			patron_luthic = {
+				new_character = { add_trait = patron_luthic }
+			}
+			patron_shargaas = {
+				new_character = { add_trait = patron_shargaas }
+			}
+			patron_yurtrus = {
+				new_character = { add_trait = patron_yurtrus }
+			}
+			patron_hajama = {
+				new_character = { add_trait = patron_hajama }
+			}
+			patron_hakiyah = {
+				new_character = { add_trait = patron_hakiyah }
+			}
+			patron_haku = {
+				new_character = { add_trait = patron_haku }
+			}
+			patron_jisan = {
+				new_character = { add_trait = patron_jisan }
+			}
+			patron_kor = {
+				new_character = { add_trait = patron_kor }
+			}
+			patron_najm = {
+				new_character = { add_trait = patron_najm }
+			}
+			patron_zann = {
+				new_character = { add_trait = patron_zann }
+			}
+			patron_asgorath = {
+				new_character = { add_trait = patron_asgorath }
+			}
+			patron_astilabor = {
+				new_character = { add_trait = patron_astilabor }
+			}
+			patron_bahamut = {
+				new_character = { add_trait = patron_bahamut }
+			}
+			patron_garyx = {
+				new_character = { add_trait = patron_garyx }
+			}
+			patron_hlal = {
+				new_character = { add_trait = patron_hlal }
+			}
+			patron_kereska = {
+				new_character = { add_trait = patron_kereska }
+			}
+			patron_lendys = {
+				new_character = { add_trait = patron_lendys }
+			}
+			patron_null = {
+				new_character = { add_trait = patron_null }
+			}
+			patron_sardior = {
+				new_character = { add_trait = patron_sardior }
+			}
+			patron_tamara = {
+				new_character = { add_trait = patron_tamara }
+			}
+			patron_task = {
+				new_character = { add_trait = patron_task }
+			}
+			patron_zorquan = {
+				new_character = { add_trait = patron_zorquan }
+			}
+			patron_amaunator = {
+				new_character = { add_trait = patron_amaunator }
+			}
+			patron_zinzerena = {
+				new_character = { add_trait = patron_zinzerena }
+			}
+			patron_ilsensine = {
+				new_character = { add_trait = patron_ilsensine }
+			}
+			patron_maanzecorian = {
+				new_character = { add_trait = patron_maanzecorian }
+			}
+			patron_moander = {
+				new_character = { add_trait = patron_moander }
+			}
+			patron_vandria_gilmadrith = {
+				new_character = { add_trait = patron_vandria_gilmadrith }
+			}
+			patron_auppenser = {
+				new_character = { add_trait = patron_auppenser }
+			}
+			patron_great_mother = {
+				new_character = { add_trait = patron_great_mother }
+			}
+			patron_eshowdow = {
+				new_character = { add_trait = patron_eshowdow }
+			}
+			patron_sseth = {
+				new_character = { add_trait = patron_sseth }
+			}
+			patron_ubtao = {
+				new_character = { add_trait = patron_ubtao }
+			}
+			patron_thard_harr = {
+				new_character = { add_trait = patron_thard_harr }
+			}
+			patron_kurtulmak = {
+				new_character = { add_trait = patron_kurtulmak }
+			}
+			patron_maztica = {
+				new_character = { add_trait = patron_maztica }
+			}
+			patron_qotal = {
+				new_character = { add_trait = patron_qotal }
+			}
+			patron_zaltec = {
+				new_character = { add_trait = patron_zaltec }
+			}
+			patron_azul = {
+				new_character = { add_trait = patron_azul }
+			}
+			patron_plutoq = {
+				new_character = { add_trait = patron_plutoq }
+			}
+			patron_tezca = {
+				new_character = { add_trait = patron_tezca }
+			}
+			patron_kiltzi = {
+				new_character = { add_trait = patron_kiltzi }
+			}
+			patron_eha = {
+				new_character = { add_trait = patron_eha }
+			}
+			patron_watil = {
+				new_character = { add_trait = patron_watil }
+			}
+			patron_nula = {
+				new_character = { add_trait = patron_nula }
+			}
+			patron_pazuzu = {
+				new_character = { add_trait = patron_pazuzu }
+			}
+			patron_demogorgon = {
+				new_character = { add_trait = patron_demogorgon }
+			}
+			patron_orcus = {
+				new_character = { add_trait = patron_orcus }
+			}
+			patron_grazzt = {
+				new_character = { add_trait = patron_grazzt }
+			}
+			patron_baphomet = {
+				new_character = { add_trait = patron_baphomet }
+			}
+			patron_yeenoghu = {
+				new_character = { add_trait = patron_yeenoghu }
+			}
+			patron_fraz_urbluu = {
+				new_character = { add_trait = patron_fraz_urbluu }
+			}
+			patron_eltab = {
+				new_character = { add_trait = patron_eltab }
+			}
+			patron_sess_innek = {
+				new_character = { add_trait = patron_sess_innek }
+			}
+			patron_zuggtmoy = {
+				new_character = { add_trait = patron_zuggtmoy }
+			}
+			bhaalspawn = {
+				new_character = { add_trait = bhaalspawn }
+			}
+			planetouched = {
+				new_character = { add_trait = planetouched }
+			}
+			androgynous = {
+				new_character = { add_trait = androgynous }
+			}
+			lifespan_giant_stone = {
+				new_character = { add_trait = lifespan_giant_stone }
+			}
+			lifespan_giant_storm = {
+				new_character = { add_trait = lifespan_giant_storm }
+			}
+			lifespan_giant_cloud = {
+				new_character = { add_trait = lifespan_giant_cloud }
+			}
+			lifespan_giant_fire = {
+				new_character = { add_trait = lifespan_giant_fire }
+			}
+			lifespan_giant_frost = {
+				new_character = { add_trait = lifespan_giant_frost }
+			}
+			lifespan_giant_hill = {
+				new_character = { add_trait = lifespan_giant_hill }
+			}
+			creature_drow = {
+				new_character = { add_trait = creature_drow }
+			}
+			creature_elf = {
+				new_character = { add_trait = creature_elf }
+			}
+			creature_half_elf = {
+				new_character = { add_trait = creature_half_elf }
+			}
+			creature_feyri = {
+				new_character = { add_trait = creature_feyri }
+			}
+			creature_eladrin = {
+				new_character = { add_trait = creature_eladrin }
+			}
+			creature_treant = {
+				new_character = { add_trait = creature_treant }
+			}
+			creature_centaur = {
+				new_character = { add_trait = creature_centaur }
+			}
+			creature_wemic = {
+				new_character = { add_trait = creature_wemic }
+			}
+			creature_dwarf = {
+				new_character = { add_trait = creature_dwarf }
+			}
+			creature_half_dwarf = {
+				new_character = { add_trait = creature_half_dwarf }
+			}
+			creature_giant = {
+				new_character = { add_trait = creature_giant }
+			}
+			creature_half_giant = {
+				new_character = { add_trait = creature_half_giant }
+			}
+			creature_ogre = {
+				new_character = { add_trait = creature_ogre }
+			}
+			creature_half_ogre = {
+				new_character = { add_trait = creature_half_ogre }
+			}
+			creature_ogrillon = {
+				new_character = { add_trait = creature_ogrillon }
+			}
+			creature_troll = {
+				new_character = { add_trait = creature_troll }
+			}
+			creature_gnome = {
+				new_character = { add_trait = creature_gnome }
+			}
+			creature_gith = {
+				new_character = { add_trait = creature_gith }
+			}
+			creature_goblin = {
+				new_character = { add_trait = creature_goblin }
+			}
+			creature_hobgoblin = {
+				new_character = { add_trait = creature_hobgoblin }
+			}
+			creature_bugbear = {
+				new_character = { add_trait = creature_bugbear }
+			}
+			creature_gnoll = {
+				new_character = { add_trait = creature_gnoll }
+			}
+			creature_hag = {
+				new_character = { add_trait = creature_hag }
+			}
+			creature_halfling = {
+				new_character = { add_trait = creature_halfling }
+			}
+			creature_human = {
+				new_character = { add_trait = creature_human }
+			}
+			creature_illithid = {
+				new_character = { add_trait = creature_illithid }
+			}
+			creature_minotaur = {
+				new_character = { add_trait = creature_minotaur }
+			}
+			creature_yikarian = {
+				new_character = { add_trait = creature_yikarian }
+			}
+			creature_orc = {
+				new_character = { add_trait = creature_orc }
+			}
+			creature_half_orc = {
+				new_character = { add_trait = creature_half_orc }
+			}
+			creature_tanarukk = {
+				new_character = { add_trait = creature_tanarukk }
+			}
+			undead = {
+				new_character = { add_trait = undead }
+			}
+			longevity = {
+				new_character = { add_trait = longevity }
+			}
+			creature_sarrukh = {
+				new_character = { add_trait = creature_sarrukh }
+			}
+			creature_pureblood = {
+				new_character = { add_trait = creature_pureblood }
+			}
+			creature_malison = {
+				new_character = { add_trait = creature_malison }
+			}
+			creature_abomination = {
+				new_character = { add_trait = creature_abomination }
+			}
+			creature_lizardfolk = {
+				new_character = { add_trait = creature_lizardfolk }
+			}
+			creature_naga = {
+				new_character = { add_trait = creature_naga }
+			}
+			creature_dragonborn = {
+				new_character = { add_trait = creature_dragonborn }
+			}
+			creature_dragon = {
+				new_character = { add_trait = creature_dragon }
+			}
+			creature_red_dragon = {
+				new_character = { add_trait = creature_red_dragon }
+			}
+			creature_black_dragon = {
+				new_character = { add_trait = creature_black_dragon }
+			}
+			creature_blue_dragon = {
+				new_character = { add_trait = creature_blue_dragon }
+			}
+			creature_green_dragon = {
+				new_character = { add_trait = creature_green_dragon }
+			}
+			creature_white_dragon = {
+				new_character = { add_trait = creature_white_dragon }
+			}
+			creature_amethyst_dragon = {
+				new_character = { add_trait = creature_amethyst_dragon }
+			}
+			creature_crystal_dragon = {
+				new_character = { add_trait = creature_crystal_dragon }
+			}
+			creature_emerald_dragon = {
+				new_character = { add_trait = creature_emerald_dragon }
+			}
+			creature_sapphire_dragon = {
+				new_character = { add_trait = creature_sapphire_dragon }
+			}
+			creature_topaz_dragon = {
+				new_character = { add_trait = creature_topaz_dragon }
+			}
+			creature_brass_dragon = {
+				new_character = { add_trait = creature_brass_dragon }
+			}
+			creature_bronze_dragon = {
+				new_character = { add_trait = creature_bronze_dragon }
+			}
+			creature_copper_dragon = {
+				new_character = { add_trait = creature_copper_dragon }
+			}
+			creature_gold_dragon = {
+				new_character = { add_trait = creature_gold_dragon }
+			}
+			creature_silver_dragon = {
+				new_character = { add_trait = creature_silver_dragon }
+			}
+			creature_saurial = {
+				new_character = { add_trait = creature_saurial }
+			}
+			creature_pterafolk = {
+				new_character = { add_trait = creature_pterafolk }
+			}
+			creature_kobold = {
+				new_character = { add_trait = creature_kobold }
+			}
+			creature_tengu = {
+				new_character = { add_trait = creature_tengu }
+			}
+			creature_beholder = {
+				new_character = { add_trait = creature_beholder }
+			}
+			creature_genasi = {
+				new_character = { add_trait = creature_genasi }
+			}
+			creature_tiefling = {
+				new_character = { add_trait = creature_tiefling }
+			}
+			creature_aasimar = {
+				new_character = { add_trait = creature_aasimar }
+			}
+			faerun_immortal_race = {
+				new_character = { add_trait = faerun_immortal_race }
+			}
+			bisexual = {
+				new_character = { add_trait = bisexual }
+			}
+			former_adventurer = {
+				new_character = { add_trait = former_adventurer }
+			}
+			natural_lycanthrope = {
+				new_character = { add_trait = natural_lycanthrope }
+			}
+			afflicted_lycanthrope = {
+				new_character = { add_trait = afflicted_lycanthrope }
+			}
+			werewolf = {
+				new_character = { add_trait = werewolf }
+			}
+			wererat = {
+				new_character = { add_trait = wererat }
+			}
+			weretiger = {
+				new_character = { add_trait = weretiger }
+			}
+			vampire = {
+				new_character = { add_trait = vampire }
+			}
+			vampire_spawn = {
+				new_character = { add_trait = vampire_spawn }
+			}
+			lich = {
+				new_character = { add_trait = lich }
+			}
+			lich_baelnorn = {
+				new_character = { add_trait = lich_baelnorn }
+			}
+			half_dragon = {
+				new_character = { add_trait = half_dragon }
+			}
+			half_celestial = {
+				new_character = { add_trait = half_celestial }
+			}
+			half_fiend = {
+				new_character = { add_trait = half_fiend }
+			}
+			spirit_folk = {
+				new_character = { add_trait = spirit_folk }
+			}
+			feytouched = {
+				new_character = { add_trait = feytouched }
+			}
+			half_troll = {
+				new_character = { add_trait = half_troll }
+			}
+			origin_aberrant_mind = {
+				new_character = { add_trait = origin_aberrant_mind }
+			}
+			origin_draconic = {
+				new_character = { add_trait = origin_draconic }
+			}
+			origin_divine_soul = {
+				new_character = { add_trait = origin_divine_soul }
+			}
+			origin_shadow = {
+				new_character = { add_trait = origin_shadow }
+			}
+			origin_storm = {
+				new_character = { add_trait = origin_storm }
+			}
+			origin_wild_magic = {
+				new_character = { add_trait = origin_wild_magic }
+			}
+		}
+	}
+}
+
+#This is for "Forget Past", so omit any "ongoing" opinions
+remove_all_opinions_to_from = {
+	remove_opinion = { who = FROM modifier = opinion_former_lover }
+	remove_opinion = { who = FROM modifier = opinion_refused_guardianship }
+	remove_opinion = { who = FROM modifier = opinion_defeated_rebels }
+	remove_opinion = { who = FROM modifier = opinion_failed_plot }
+	remove_opinion = { who = FROM modifier = opinion_foreign_conqueror }
+	remove_opinion = { who = FROM modifier = opinion_heir_guardian_my_culture }
+	remove_opinion = { who = FROM modifier = opinion_heir_guardian_foreign_culture }
+	remove_opinion = { who = FROM modifier = opinion_revoked_honorary_title }
+	remove_opinion = { who = FROM modifier = opinion_loyal_vassal }
+	remove_opinion = { who = FROM modifier = opinion_rightful_vassal }
+	remove_opinion = { who = FROM modifier = opinion_granted_other_emperor_vice_royalty }
+	remove_opinion = { who = FROM modifier = opinion_granted_other_king_vice_royalty }
+	remove_opinion = { who = FROM modifier = opinion_granted_other_duke_vice_royalty }
+	remove_opinion = { who = FROM modifier = opinion_granted_other_count_vice_royalty }
+	remove_opinion = { who = FROM modifier = opinion_granted_other_baron_vice_royalty }
+	remove_opinion = { who = FROM modifier = clan_opinion_feud }
+	remove_opinion = { who = FROM modifier = clan_opinion_blood_oath }
+	remove_opinion = { who = FROM modifier = clan_opinion_absorbed_clan }
+	remove_opinion = { who = FROM modifier = clan_opinion_absorbed_blood_brother_clan }
+	remove_opinion = { who = FROM modifier = clan_opinion_absorbed_my_clan }
+	remove_opinion = { who = FROM modifier = clan_opinion_splitted_blood_brother_clan }
+	remove_opinion = { who = FROM modifier = clan_opinion_splitted_my_clan }
+	remove_opinion = { who = FROM modifier = clan_opinion_attempted_splitted_my_clan }
+	remove_opinion = { who = FROM modifier = clan_opinion_created }
+	remove_opinion = { who = FROM modifier = dissolved_alliance }
+	remove_opinion = { who = FROM modifier = lost_war }
+	remove_opinion = { who = FROM modifier = opinion_looted }
+	remove_opinion = { who = FROM modifier = opinion_destroyed_dj_liege_title }
+	remove_opinion = { who = FROM modifier = declared_war }
+	remove_opinion = { who = FROM modifier = opinion_dishonorable }
+	remove_opinion = { who = FROM modifier = opinion_tyrant }
+	remove_opinion = { who = FROM modifier = opinion_released_prisoner }
+	remove_opinion = { who = FROM modifier = dow_on_son_in_law }
+	remove_opinion = { who = FROM modifier = broke_alliance }
+	remove_opinion = { who = FROM modifier = tribal_vassal_refused_call }
+	remove_opinion = { who = FROM modifier = broke_truce }
+	remove_opinion = { who = FROM modifier = honored_alliance }
+	remove_opinion = { who = FROM modifier = called_into_war }
+	remove_opinion = { who = FROM modifier = joined_my_war }
+	remove_opinion = { who = FROM modifier = pressed_my_claim }
+	remove_opinion = { who = FROM modifier = insulted }
+	remove_opinion = { who = FROM modifier = sent_gift }
+	remove_opinion = { who = FROM modifier = gave_artifact }
+	remove_opinion = { who = FROM modifier = opinion_demanded_conversion }
+	remove_opinion = { who = FROM modifier = campaign_friend }
+	remove_opinion = { who = FROM modifier = campaign_rival }
+	remove_opinion = { who = FROM modifier = saved_on_battlefield }
+	remove_opinion = { who = FROM modifier = saved_him_on_battlefield }
+	remove_opinion = { who = FROM modifier = opinion_mentor }
+	remove_opinion = { who = FROM modifier = opinion_spurned }
+	remove_opinion = { who = FROM modifier = opinion_embarrassed }
+	remove_opinion = { who = FROM modifier = good_succ_law_change }
+	remove_opinion = { who = FROM modifier = bad_succ_law_change }
+	remove_opinion = { who = FROM modifier = succ_law_change }
+	remove_opinion = { who = FROM modifier = opinion_claimed_my_title }
+	remove_opinion = { who = FROM modifier = opinion_revoked_my_title }
+	remove_opinion = { who = FROM modifier = opinion_revoked_a_title }
+	remove_opinion = { who = FROM modifier = opinion_retracted_my_vassal }
+	remove_opinion = { who = FROM modifier = opinion_retracted_my_de_jure_vassal }
+	remove_opinion = { who = FROM modifier = opinion_retracted_a_vassal }
+	remove_opinion = { who = FROM modifier = opinion_retracted_a_de_jure_vassal }
+	remove_opinion = { who = FROM modifier = opinion_built_holding }
+	remove_opinion = { who = FROM modifier = opinion_granted_barony }
+	remove_opinion = { who = FROM modifier = opinion_granted_county }
+	remove_opinion = { who = FROM modifier = opinion_granted_duchy }
+	remove_opinion = { who = FROM modifier = opinion_granted_kingdom }
+	remove_opinion = { who = FROM modifier = opinion_granted_empire }
+	remove_opinion = { who = FROM modifier = opinion_granted_barony_vice_royalty }
+	remove_opinion = { who = FROM modifier = opinion_granted_county_vice_royalty }
+	remove_opinion = { who = FROM modifier = opinion_granted_duchy_vice_royalty }
+	remove_opinion = { who = FROM modifier = opinion_granted_kingdom_vice_royalty }
+	remove_opinion = { who = FROM modifier = opinion_granted_empire_vice_royalty }
+	remove_opinion = { who = FROM modifier = opinion_granted_barony_to_holy_order }
+	remove_opinion = { who = FROM modifier = opinion_granted_county_to_holy_order }
+	remove_opinion = { who = FROM modifier = opinion_vassal_transfer }
+	remove_opinion = { who = FROM modifier = opinion_usurped_title }
+	remove_opinion = { who = FROM modifier = opinion_granted_title_to_woman }
+	remove_opinion = { who = FROM modifier = opinion_divorced_relative }
+	remove_opinion = { who = FROM modifier = opinion_divorced }
+	remove_opinion = { who = FROM modifier = opinion_set_aside }
+	remove_opinion = { who = FROM modifier = opinion_entrusted_ward }
+	remove_opinion = { who = FROM modifier = opinion_lost_ward }
+	remove_opinion = { who = FROM modifier = opinion_betrothal_broken }
+	remove_opinion = { who = FROM modifier = opinion_given_nice_consort }
+	remove_opinion = { who = FROM modifier = opinion_traitor }
+	remove_opinion = { who = FROM modifier = opinion_rebel_traitor }
+	remove_opinion = { who = FROM modifier = opinion_regicide_traitor }
+	remove_opinion = { who = FROM modifier = opinion_lowered_crown_authority }
+	remove_opinion = { who = FROM modifier = opinion_lowered_tribal_organization }
+	remove_opinion = { who = FROM modifier = opinion_increased_council_power }
+	remove_opinion = { who = FROM modifier = opinion_decreased_council_power }
+	remove_opinion = { who = FROM modifier = opinion_likes_new_obligation_law }
+	remove_opinion = { who = FROM modifier = opinion_dislikes_new_obligation_law }
+	remove_opinion = { who = FROM modifier = opinion_discovered_plotting }
+	remove_opinion = { who = FROM modifier = opinion_subjugated }
+	remove_opinion = { who = FROM modifier = opinion_subjugated_other_rel }
+	remove_opinion = { who = FROM modifier = opinion_imprisoned_child }
+	remove_opinion = { who = FROM modifier = opinion_executed_child }
+	remove_opinion = { who = FROM modifier = opinion_defeated_major_revolt }
+	remove_opinion = { who = FROM modifier = opinion_spared_after_revolt }
+	remove_opinion = { who = FROM modifier = opinion_fought_for_claimant }
+	remove_opinion = { who = FROM modifier = opinion_failed_invasion }
+	remove_opinion = { who = FROM modifier = opinion_used }
+	remove_opinion = { who = FROM modifier = opinion_absorbed_my_clan }
+	remove_opinion = { who = FROM modifier = DEMAND_RELIGIOUS_CONVERSION_INTERACTION_ON_ACCEPT }
+	remove_opinion = { who = FROM modifier = DEMAND_RELIGIOUS_CONVERSION_INTERACTION_ON_DECLINE }
+	remove_opinion = { who = FROM modifier = stop_backing_ambition }
+	remove_opinion = { who = FROM modifier = STOP_BACKING_AMBITION_INTERACTION_ON_DECLINE }
+	remove_opinion = { who = FROM modifier = OFFER_SUCCESSION_MARRIGE_INTERACTION_ON_ACCEPT }
+	remove_opinion = { who = FROM modifier = OFFER_MARRIGE_INTERACTION_ON_ACCEPT }
+	remove_opinion = { who = FROM modifier = opinion_fired_from_council }
+	remove_opinion = { who = FROM modifier = opinion_granted_independence }
+	remove_opinion = { who = FROM modifier = opinion_recently_fired }
+	remove_opinion = { who = FROM modifier = opinion_refused_press_claims }
+	remove_opinion = { who = FROM modifier = opinion_resigned_from_council }
+	remove_opinion = { who = FROM modifier = black_honor }
+	remove_opinion = { who = FROM modifier = opinion_refused_council }
+	remove_opinion = { who = FROM modifier = opinion_my_saviour }
+	remove_opinion = { who = FROM modifier = opinion_fool_courtier }
+	remove_opinion = { who = FROM modifier = charitable_to_you }
+	remove_opinion = { who = FROM modifier = grace_to_forgive }
+	remove_opinion = { who = FROM modifier = saved_my_soul }
+	remove_opinion = { who = FROM modifier = liege_peaceful_resolution }
+	remove_opinion = { who = FROM modifier = clever_deceive }
+	remove_opinion = { who = FROM modifier = legitimized_child }
+	remove_opinion = { who = FROM modifier = acknowledged_child }
+	remove_opinion = { who = FROM modifier = denounced_child }
+	remove_opinion = { who = FROM modifier = legitimized_bastard }
+	remove_opinion = { who = FROM modifier = acknowledged_bastard }
+	remove_opinion = { who = FROM modifier = slut_seductress }
+	remove_opinion = { who = FROM modifier = opinion_cuckolded_private }
+	remove_opinion = { who = FROM modifier = opinion_unfaithful_private }
+	remove_opinion = { who = FROM modifier = opinion_potential_cuckold }
+	remove_opinion = { who = FROM modifier = opinion_denied_guardianship }
+	remove_opinion = { who = FROM modifier = opinion_granted_guardianship }
+	remove_opinion = { who = FROM modifier = opinion_tourney_boost }
+	remove_opinion = { who = FROM modifier = opinion_lying_about_confession }
+	remove_opinion = { who = FROM modifier = opinion_despise_chaste }
+	remove_opinion = { who = FROM modifier = opinion_chaste_advice_refused }
+	remove_opinion = { who = FROM modifier = opinion_admire_chaste }
+	remove_opinion = { who = FROM modifier = opinion_infatuated }
+	remove_opinion = { who = FROM modifier = opinion_impressed_infatuated }
+	remove_opinion = { who = FROM modifier = opinion_enjoyed_feast }
+	remove_opinion = { who = FROM modifier = opinion_money_stolen }
+	remove_opinion = { who = FROM modifier = opinion_betrayed }
+	remove_opinion = { who = FROM modifier = temperate_bad_judgement }
+	remove_opinion = { who = FROM modifier = temperate_good_judgement }
+	remove_opinion = { who = FROM modifier = temperate_annoyer }
+	remove_opinion = { who = FROM modifier = despise_drunkard }
+	remove_opinion = { who = FROM modifier = forced_drunkard }
+	remove_opinion = { who = FROM modifier = disrespects_dynasty }
+	remove_opinion = { who = FROM modifier = spouse_encouraged }
+	remove_opinion = { who = FROM modifier = spouse_ignores_me }
+	remove_opinion = { who = FROM modifier = ignores_local_saints }
+	remove_opinion = { who = FROM modifier = approves_of_my_behaviour }
+	remove_opinion = { who = FROM modifier = resentful_of_my_behaviour }
+	remove_opinion = { who = FROM modifier = not_feeling_apreciated }
+	remove_opinion = { who = FROM modifier = opinion_evil_tyrant }
+	remove_opinion = { who = FROM modifier = opinion_regent_lowered_CA }
+	remove_opinion = { who = FROM modifier = attempted_murder_of_spouse }
+	remove_opinion = { who = FROM modifier = attempted_murder_of_child }
+	remove_opinion = { who = FROM modifier = attempted_murder_of_parent }
+	remove_opinion = { who = FROM modifier = attempted_murder_of_sibling }
+	remove_opinion = { who = FROM modifier = attempted_murder_of_vassal }
+	remove_opinion = { who = FROM modifier = attempted_murder_of_spouse_vassal }
+	remove_opinion = { who = FROM modifier = attempted_murder }
+	remove_opinion = { who = FROM modifier = revealed_plot }
+	remove_opinion = { who = FROM modifier = scheming_bastard }
+	remove_opinion = { who = FROM modifier = dynastic_refused_claim }
+	remove_opinion = { who = FROM modifier = dynastic_refused_title }
+	remove_opinion = { who = FROM modifier = dynastic_refused_war }
+	remove_opinion = { who = FROM modifier = tight_ruler }
+	remove_opinion = { who = FROM modifier = ruler_not_respect_rank }
+	remove_opinion = { who = FROM modifier = marshal_overruled }
+	remove_opinion = { who = FROM modifier = refused_money_request }
+	remove_opinion = { who = FROM modifier = got_money_request }
+	remove_opinion = { who = FROM modifier = grudge_from_sin }
+	remove_opinion = { who = FROM modifier = opinion_converted_province }
+	remove_opinion = { who = FROM modifier = no_heretic }
+	remove_opinion = { who = FROM modifier = no_heretic }
+	remove_opinion = { who = FROM modifier = opinion_insulted }
+	remove_opinion = { who = FROM modifier = opinion_convinced }
+	remove_opinion = { who = FROM modifier = opinion_furious }
+	remove_opinion = { who = FROM modifier = opinion_bitter }
+	remove_opinion = { who = FROM modifier = opinion_unhappy }
+	remove_opinion = { who = FROM modifier = warning_received }
+	remove_opinion = { who = FROM modifier = opinion_idiot }
+	remove_opinion = { who = FROM modifier = opinion_unconvinced }
+	remove_opinion = { who = FROM modifier = opinion_branded_heretic }
+	remove_opinion = { who = FROM modifier = opinion_chastised_by_liege }
+	remove_opinion = { who = FROM modifier = opinion_improved_relations }
+	remove_opinion = { who = FROM modifier = opinion_liege_has_heretic_advisor }
+	remove_opinion = { who = FROM modifier = opinion_rekindle_love }
+	remove_opinion = { who = FROM modifier = opinion_whipped }
+	remove_opinion = { who = FROM modifier = no_annulment }
+	remove_opinion = { who = FROM modifier = opinion_poisonous_woman }
+	remove_opinion = { who = FROM modifier = opinion_denied_advice }
+	remove_opinion = { who = FROM modifier = opinion_revoked_chancellor_title }
+	remove_opinion = { who = FROM modifier = opinion_revoked_marshal_title }
+	remove_opinion = { who = FROM modifier = opinion_revoked_steward_title }
+	remove_opinion = { who = FROM modifier = opinion_revoked_spymaster_title }
+	remove_opinion = { who = FROM modifier = opinion_revoked_lord_spiritual_title }
+	remove_opinion = { who = FROM modifier = opinion_happy }
+	remove_opinion = { who = FROM modifier = opinion_happy_with_guardian }
+	remove_opinion = { who = FROM modifier = opinion_mad_at_guardian }
+	remove_opinion = { who = FROM modifier = opinion_envy }
+	remove_opinion = { who = FROM modifier = opinion_acquaintance }
+	remove_opinion = { who = FROM modifier = opinion_irritated }
+	remove_opinion = { who = FROM modifier = opinion_dislike }
+	remove_opinion = { who = FROM modifier = opinion_promised_title }
+	remove_opinion = { who = FROM modifier = opinion_denied_title }
+	remove_opinion = { who = FROM modifier = opinion_broken_title_promise }
+	remove_opinion = { who = FROM modifier = opinion_generous_relative }
+	remove_opinion = { who = FROM modifier = opinion_fulfilled_marriage_wish }
+	remove_opinion = { who = FROM modifier = opinion_promised_marriage }
+	remove_opinion = { who = FROM modifier = opinion_denied_marriage }
+	remove_opinion = { who = FROM modifier = opinion_sent_to_church }
+	remove_opinion = { who = FROM modifier = opinion_secret_marriage }
+	remove_opinion = { who = FROM modifier = opinion_mocked }
+	remove_opinion = { who = FROM modifier = opinion_good_punishment }
+	remove_opinion = { who = FROM modifier = opinion_bad_punishment }
+	remove_opinion = { who = FROM modifier = opinion_grateful }
+	remove_opinion = { who = FROM modifier = opinion_failed_conversion }
+	remove_opinion = { who = FROM modifier = opinion_successful_conversion }
+	remove_opinion = { who = FROM modifier = opinion_cruel }
+	remove_opinion = { who = FROM modifier = perfect_punishment }
+	remove_opinion = { who = FROM modifier = opinion_arrest_attempt }
+	remove_opinion = { who = FROM modifier = opinion_spouse_slayer }
+	remove_opinion = { who = FROM modifier = opinion_murder_attempt }
+	remove_opinion = { who = FROM modifier = opinion_dishonorable_scum }
+	remove_opinion = { who = FROM modifier = opinion_killed_close_kin }
+	remove_opinion = { who = FROM modifier = opinion_ignore_papal_demands }
+	# remove_opinion = { who = FROM modifier =  }
+	remove_opinion = { who = FROM modifier = opinion_ignore_patriarch_request }
+	remove_opinion = { who = FROM modifier = opinion_defended_me }
+	remove_opinion = { who = FROM modifier = evil_murderer }
+	remove_opinion = { who = FROM modifier = not_supportive_liege }
+	remove_opinion = { who = FROM modifier = opinion_disappointed }
+	remove_opinion = { who = FROM modifier = opinion_pitiful }
+	remove_opinion = { who = FROM modifier = opinion_munificent }
+	remove_opinion = { who = FROM modifier = opinion_delighted }
+	remove_opinion = { who = FROM modifier = opinion_shocked }
+	remove_opinion = { who = FROM modifier = opinion_impressed }
+	remove_opinion = { who = FROM modifier = opinion_thoroughly_impressed }
+	remove_opinion = { who = FROM modifier = opinion_wildly_impressed }
+	remove_opinion = { who = FROM modifier = opinion_tiresome }
+	remove_opinion = { who = FROM modifier = opinion_ambition_fulfilled }
+	remove_opinion = { who = FROM modifier = overstepped_jurisdiction }
+	remove_opinion = { who = FROM modifier = opinion_disgruntled }
+	remove_opinion = { who = FROM modifier = opinion_relieved }
+	remove_opinion = { who = FROM modifier = opinion_worried }
+	remove_opinion = { who = FROM modifier = opinion_woeful }
+	remove_opinion = { who = FROM modifier = opinion_selfsacrificing }
+	remove_opinion = { who = FROM modifier = opinion_afraid }
+	remove_opinion = { who = FROM modifier = opinion_proud }
+	remove_opinion = { who = FROM modifier = opinion_cautious }
+	remove_opinion = { who = FROM modifier = opinion_satisfied }
+	remove_opinion = { who = FROM modifier = opinion_angry }
+	remove_opinion = { who = FROM modifier = opinion_paragon }
+	remove_opinion = { who = FROM modifier = opinion_exalted }
+	remove_opinion = { who = FROM modifier = opinion_coward }
+	remove_opinion = { who = FROM modifier = opinion_corrupt }
+	remove_opinion = { who = FROM modifier = opinion_oblivious }
+	remove_opinion = { who = FROM modifier = opinion_approves }
+	remove_opinion = { who = FROM modifier = opinion_horrified }
+	remove_opinion = { who = FROM modifier = suspect_of_murder }
+	remove_opinion = { who = FROM modifier = accused_of_murder }
+	remove_opinion = { who = FROM modifier = opinion_not_release_prisoner }
+	remove_opinion = { who = FROM modifier = opinion_love_rival }
+	remove_opinion = { who = FROM modifier = opinion_glad }
+	remove_opinion = { who = FROM modifier = opinion_religious_tract }
+	remove_opinion = { who = FROM modifier = opinion_bragger }
+	remove_opinion = { who = FROM modifier = opinion_flattered }
+	remove_opinion = { who = FROM modifier = opinion_abandoned_wolves }
+	remove_opinion = { who = FROM modifier = opinion_falsely_convicted }
+	remove_opinion = { who = FROM modifier = opinion_sprung_from_jail }
+	remove_opinion = { who = FROM modifier = suspected_sodomite_rumour }
+	remove_opinion = { who = FROM modifier = denied_sodomite_rumour }
+	remove_opinion = { who = FROM modifier = suspected_of_incest_rumour }
+	remove_opinion = { who = FROM modifier = denied_incest_rumour }
+	remove_opinion = { who = FROM modifier = not_a_real_man }
+	remove_opinion = { who = FROM modifier = denied_impotence_rumour }
+	remove_opinion = { who = FROM modifier = committed_adultery_rumour }
+	remove_opinion = { who = FROM modifier = denied_adultery_rumour }
+	remove_opinion = { who = FROM modifier = opinion_merciful }
+	remove_opinion = { who = FROM modifier = opinion_head_of_religion_negative }
+	remove_opinion = { who = FROM modifier = opinion_denied_love }
+	remove_opinion = { who = FROM modifier = suspected_occultist_rumour }
+	remove_opinion = { who = FROM modifier = denied_occultist_rumour }
+	remove_opinion = { who = FROM modifier = opinion_mad_as_hell }
+	remove_opinion = { who = FROM modifier = opinion_forgive }
+	remove_opinion = { who = FROM modifier = opinion_unappreciated }
+	remove_opinion = { who = FROM modifier = opinion_ruler_do_not_trust_him }
+	remove_opinion = { who = FROM modifier = opinion_fine_gift }
+	remove_opinion = { who = FROM modifier = opinion_family_statues }
+	remove_opinion = { who = FROM modifier = opinion_religious_agenda }
+	remove_opinion = { who = FROM modifier = opinion_holding_contests }
+	remove_opinion = { who = FROM modifier = opinion_annoyed }
+	remove_opinion = { who = FROM modifier = opinion_disrespecting_culture }
+	remove_opinion = { who = FROM modifier = opinion_religious_quarrel }
+	remove_opinion = { who = FROM modifier = opinion_trade_partner }
+	remove_opinion = { who = FROM modifier = opinion_unchristian }
+	remove_opinion = { who = FROM modifier = suspected_coward_rumour }
+	remove_opinion = { who = FROM modifier = denied_coward_rumour }
+	remove_opinion = { who = FROM modifier = opinion_reassured_of_love }
+	remove_opinion = { who = FROM modifier = opinion_blackmailed }
+	remove_opinion = { who = FROM modifier = opinion_hate }
+	remove_opinion = { who = FROM modifier = opinion_great_feast }
+	remove_opinion = { who = FROM modifier = opinion_homosexual }
+	remove_opinion = { who = FROM modifier = opinion_upset }
+	remove_opinion = { who = FROM modifier = opinion_complaining }
+	remove_opinion = { who = FROM modifier = opinion_burned_same_faith }
+	remove_opinion = { who = FROM modifier = opinion_ignored_infidel }
+	remove_opinion = { who = FROM modifier = opinion_banished_same_faith }
+	remove_opinion = { who = FROM modifier = opinion_disgusted }
+	remove_opinion = { who = FROM modifier = opinion_associating_with_thieves }
+	remove_opinion = { who = FROM modifier = opinion_refused_city_tax_law }
+	remove_opinion = { who = FROM modifier = opinion_accepted_city_tax_law }
+	remove_opinion = { who = FROM modifier = opinion_disapprove }
+	remove_opinion = { who = FROM modifier = teenage_infatuation }
+	remove_opinion = { who = FROM modifier = childhood_sweetheart }
+	remove_opinion = { who = FROM modifier = love_scorned }
+	remove_opinion = { who = FROM modifier = opinion_beheaded_dynasty_member }
+	remove_opinion = { who = FROM modifier = opinion_hatred }
+	remove_opinion = { who = FROM modifier = opinion_saved_me_and_child }
+	remove_opinion = { who = FROM modifier = opinion_crestfallen }
+	remove_opinion = { who = FROM modifier = opinion_despised_fighting_bastard }
+	remove_opinion = { who = FROM modifier = opinion_despised_hiding_bastard }
+	remove_opinion = { who = FROM modifier = despised_bastard }
+	remove_opinion = { who = FROM modifier = pope_disappointed_over_heretic_province }
+	remove_opinion = { who = FROM modifier = show_true_humility }
+	remove_opinion = { who = FROM modifier = shown_true_humility }
+	remove_opinion = { who = FROM modifier = talent_recognized }
+	remove_opinion = { who = FROM modifier = opinion_increased_authority }
+	remove_opinion = { who = FROM modifier = opinion_increased_tribal_organization }
+	remove_opinion = { who = FROM modifier = opinion_mildly_disappointed }
+	remove_opinion = { who = FROM modifier = opinion_liar }
+	remove_opinion = { who = FROM modifier = opinion_sad }
+	remove_opinion = { who = FROM modifier = opinion_agog }
+	remove_opinion = { who = FROM modifier = opinion_stubborn }
+	remove_opinion = { who = FROM modifier = opinion_lost_respect }
+	remove_opinion = { who = FROM modifier = opinion_fled_duel }
+	remove_opinion = { who = FROM modifier = opinion_fought_duel }
+	remove_opinion = { who = FROM modifier = opinion_ruthless }
+	remove_opinion = { who = FROM modifier = opinion_dishonorable_duel_minor }
+	remove_opinion = { who = FROM modifier = opinion_dishonorable_duel }
+	remove_opinion = { who = FROM modifier = opinion_dishonorable_duel_major }
+	remove_opinion = { who = FROM modifier = opinion_unruly_spymaster }
+	remove_opinion = { who = FROM modifier = opinion_held_contest }
+	remove_opinion = { who = FROM modifier = opinion_built_temple }
+	remove_opinion = { who = FROM modifier = opinion_gained_respect }
+	remove_opinion = { who = FROM modifier = opinion_killed_merrymen }
+	remove_opinion = { who = FROM modifier = opinion_ignored_merrymen }
+	remove_opinion = { who = FROM modifier = i_attempted_murder }
+	remove_opinion = { who = FROM modifier = opinion_laughing_at_you }
+	remove_opinion = { who = FROM modifier = opinion_tossed_me }
+	remove_opinion = { who = FROM modifier = opinion_tournament_participant }
+	remove_opinion = { who = FROM modifier = opinion_tournament_winner }
+	remove_opinion = { who = FROM modifier = opinion_tournament_second_place }
+	remove_opinion = { who = FROM modifier = opinion_tournament_third_place }
+	remove_opinion = { who = FROM modifier = opinion_mutual_enemy }
+	remove_opinion = { who = FROM modifier = opinion_ignore }
+	remove_opinion = { who = FROM modifier = opinion_fellow_guardian_realm }
+	remove_opinion = { who = FROM modifier = opinion_very_disappointed }
+	remove_opinion = { who = FROM modifier = opinion_very_grateful }
+	remove_opinion = { who = FROM modifier = opinion_accepted_religion }
+	remove_opinion = { who = FROM modifier = opinion_happy_convertion }
+	remove_opinion = { who = FROM modifier = opinion_not_abandon_friendship }
+	remove_opinion = { who = FROM modifier = opinion_confused }
+	remove_opinion = { who = FROM modifier = opinion_revenge_seeker }
+	remove_opinion = { who = FROM modifier = opinion_disgraceful }
+	remove_opinion = { who = FROM modifier = opinion_stubborn_rival }
+	remove_opinion = { who = FROM modifier = opinion_respects_liege }
+	remove_opinion = { who = FROM modifier = opinion_continued_rivalry }
+	remove_opinion = { who = FROM modifier = opinion_killed_father }
+	remove_opinion = { who = FROM modifier = opinion_poisoner }
+	remove_opinion = { who = FROM modifier = opinion_rejected_friend }
+	remove_opinion = { who = FROM modifier = opinion_refused_abdicate_title }
+	remove_opinion = { who = FROM modifier = opinion_nomuslim }
+	remove_opinion = { who = FROM modifier = opinion_pleased }
+	remove_opinion = { who = FROM modifier = opinion_helped_wudu }
+	remove_opinion = { who = FROM modifier = opinion_chief_qadi }
+	remove_opinion = { who = FROM modifier = opinion_merciful_qadi }
+	remove_opinion = { who = FROM modifier = opinion_arbitrary_qadi }
+	remove_opinion = { who = FROM modifier = opinion_court_calligrapher }
+	remove_opinion = { who = FROM modifier = opinion_good_work }
+	remove_opinion = { who = FROM modifier = opinion_committed_zina }
+	remove_opinion = { who = FROM modifier = opinion_disappointed_calligrapher }
+	remove_opinion = { who = FROM modifier = opinion_grateful_calligrapher }
+	remove_opinion = { who = FROM modifier = opinion_dissatisfied_calligrapher }
+	remove_opinion = { who = FROM modifier = opinion_beautiful_song }
+	remove_opinion = { who = FROM modifier = opinion_beautiful_poem }
+	remove_opinion = { who = FROM modifier = opinion_seduce_spouse }
+	remove_opinion = { who = FROM modifier = opinion_adopted_foreign_ways }
+	remove_opinion = { who = FROM modifier = opinion_fatwa_target }
+	remove_opinion = { who = FROM modifier = opinion_has_fatwa }
+	remove_opinion = { who = FROM modifier = opinion_issued_fatwa }
+	remove_opinion = { who = FROM modifier = opinion_triumph_held }
+	remove_opinion = { who = FROM modifier = opinion_refused_order }
+	remove_opinion = { who = FROM modifier = opinion_castrated_me }
+	remove_opinion = { who = FROM modifier = opinion_blinded_me }
+	remove_opinion = { who = FROM modifier = opinion_castrated_family }
+	remove_opinion = { who = FROM modifier = opinion_castrated_close_kin }
+	remove_opinion = { who = FROM modifier = opinion_blinded_family }
+	remove_opinion = { who = FROM modifier = opinion_blinded_close_kin }
+	remove_opinion = { who = FROM modifier = opinion_loyal_servant }
+	remove_opinion = { who = FROM modifier = opinion_trusted_servant }
+	remove_opinion = { who = FROM modifier = opinion_insane_law }
+	remove_opinion = { who = FROM modifier = opinion_coerced_into_leaving_faction }
+	remove_opinion = { who = FROM modifier = opinion_coerced_into_joining_faction }
+	remove_opinion = { who = FROM modifier = opinion_feuding_family }
+	remove_opinion = { who = FROM modifier = opinion_feuding_family_light }
+	remove_opinion = { who = FROM modifier = opinion_seized_tp }
+	remove_opinion = { who = FROM modifier = opinion_bribed_tp }
+	remove_opinion = { who = FROM modifier = opinion_thwarted_tp_destruction }
+	remove_opinion = { who = FROM modifier = opinion_burned_tp }
+	remove_opinion = { who = FROM modifier = opinion_burned_tp_despite_bribe }
+	remove_opinion = { who = FROM modifier = opinion_nerge_rival }
+	remove_opinion = { who = FROM modifier = opinion_held_nerge }
+	remove_opinion = { who = FROM modifier = opinion_punished_nerge }
+	remove_opinion = { who = FROM modifier = opinion_held_blot }
+	remove_opinion = { who = FROM modifier = opinion_held_bema }
+	remove_opinion = { who = FROM modifier = opinion_held_sadah }
+	remove_opinion = { who = FROM modifier = opinion_feast_scandal }
+	remove_opinion = { who = FROM modifier = opinion_vomit }
+	remove_opinion = { who = FROM modifier = opinion_drinking_buddy }
+	remove_opinion = { who = FROM modifier = opinion_lustful_buddy }
+	remove_opinion = { who = FROM modifier = opinion_feast_friend }
+	remove_opinion = { who = FROM modifier = opinion_homosexual_sympathy }
+	remove_opinion = { who = FROM modifier = opinion_ukon_juhla }
+	remove_opinion = { who = FROM modifier = opinion_uzgavenes }
+	remove_opinion = { who = FROM modifier = opinion_refused_blot }
+	remove_opinion = { who = FROM modifier = opinion_refused_bema }
+	remove_opinion = { who = FROM modifier = opinion_refused_sadah }
+	remove_opinion = { who = FROM modifier = opinion_refused_ukon_juhla }
+	remove_opinion = { who = FROM modifier = opinion_refused_uzgavenes }
+	remove_opinion = { who = FROM modifier = opinion_went_berserk }
+	remove_opinion = { who = FROM modifier = opinion_jarilo }
+	remove_opinion = { who = FROM modifier = opinion_refused_jarilo }
+	remove_opinion = { who = FROM modifier = opinion_represented_jarilo }
+	remove_opinion = { who = FROM modifier = opinion_mutual_respect }
+	remove_opinion = { who = FROM modifier = opinion_imprisoned_missionary }
+	remove_opinion = { who = FROM modifier = opinion_allowed_missionary }
+	remove_opinion = { who = FROM modifier = opinion_banished_missionary }
+	remove_opinion = { who = FROM modifier = opinion_sent_preacher }
+	remove_opinion = { who = FROM modifier = opinion_did_not_support_preacher }
+	remove_opinion = { who = FROM modifier = opinion_supported_preacher }
+	remove_opinion = { who = FROM modifier = opinion_refused_request_holy_order }
+	remove_opinion = { who = FROM modifier = opinion_generous_donation }
+	remove_opinion = { who = FROM modifier = opinion_expelled_from_realm }
+	remove_opinion = { who = FROM modifier = opinion_passover }
+	remove_opinion = { who = FROM modifier = opinion_refused_passover }
+	remove_opinion = { who = FROM modifier = opinion_rejected_school }
+	remove_opinion = { who = FROM modifier = opinion_driven_from_my_lands }
+	remove_opinion = { who = FROM modifier = opinion_witch }
+	remove_opinion = { who = FROM modifier = opinion_the_chosen_one }
+	remove_opinion = { who = FROM modifier = opinion_creator_of_rel_heal }
+	remove_opinion = { who = FROM modifier = opinion_deposed_antipope }
+	remove_opinion = { who = FROM modifier = opinion_sacrilege }
+	remove_opinion = { who = FROM modifier = opinion_takfir }
+	remove_opinion = { who = FROM modifier = opinion_straightened_up }
+	remove_opinion = { who = FROM modifier = opinion_rebel_leader }
+	remove_opinion = { who = FROM modifier = opinion_fellow_rebel }
+	remove_opinion = { who = FROM modifier = opinion_killed_horse }
+	remove_opinion = { who = FROM modifier = opinion_enlightened }
+	remove_opinion = { who = FROM modifier = opinion_favorite }
+	remove_opinion = { who = FROM modifier = opinion_idolater }
+	remove_opinion = { who = FROM modifier = opinion_attempted_abduction }
+	remove_opinion = { who = FROM modifier = opinion_seducing_concubine }
+	remove_opinion = { who = FROM modifier = opinion_seduced_attracted }
+	remove_opinion = { who = FROM modifier = opinion_dominated }
+	remove_opinion = { who = FROM modifier = opinion_seduced_lustful_worship }
+	remove_opinion = { who = FROM modifier = opinion_seduced_repelled }
+	remove_opinion = { who = FROM modifier = opinion_seduced_yearning }
+	remove_opinion = { who = FROM modifier = opinion_seduced_refused }
+	remove_opinion = { who = FROM modifier = opinion_unfaithful_wife }
+	remove_opinion = { who = FROM modifier = opinion_unfaithful_husband }
+	remove_opinion = { who = FROM modifier = opinion_unfaithful_husband_crime }
+	remove_opinion = { who = FROM modifier = opinion_cuckolded }
+	remove_opinion = { who = FROM modifier = opinion_suspected_adultery }
+	remove_opinion = { who = FROM modifier = opinion_regrets_accusation }
+	remove_opinion = { who = FROM modifier = opinion_chasing_friend }
+	remove_opinion = { who = FROM modifier = opinion_chasing_spouse }
+	remove_opinion = { who = FROM modifier = opinion_chasing_child }
+	remove_opinion = { who = FROM modifier = opinion_advance_rejected }
+	remove_opinion = { who = FROM modifier = opinion_killed_lover }
+	remove_opinion = { who = FROM modifier = opinion_declined_romance }
+	remove_opinion = { who = FROM modifier = opinion_whorespawn }
+	remove_opinion = { who = FROM modifier = opinion_seduced_once }
+	remove_opinion = { who = FROM modifier = opinion_nice_dog }
+	remove_opinion = { who = FROM modifier = opinion_nice_dog_children }
+	remove_opinion = { who = FROM modifier = opinion_declined_duel }
+	remove_opinion = { who = FROM modifier = opinion_lost_duel }
+	remove_opinion = { who = FROM modifier = opinion_declined_party }
+	remove_opinion = { who = FROM modifier = opinion_carousing }
+	remove_opinion = { who = FROM modifier = opinion_condemned_decadence }
+	remove_opinion = { who = FROM modifier = opinion_charge_heresiarch }
+	remove_opinion = { who = FROM modifier = opinion_charge_infidel }
+	remove_opinion = { who = FROM modifier = opinion_charge_deviant }
+	remove_opinion = { who = FROM modifier = opinion_charge_illegitimate }
+	remove_opinion = { who = FROM modifier = opinion_charge_cultist }
+	remove_opinion = { who = FROM modifier = opinion_charge_dw }
+	remove_opinion = { who = FROM modifier = opinion_charge_traitor }
+	remove_opinion = { who = FROM modifier = opinion_charge_slanderer }
+	remove_opinion = { who = FROM modifier = opinion_slandered }
+	remove_opinion = { who = FROM modifier = opinion_spy_blackmailed }
+	remove_opinion = { who = FROM modifier = opinion_marital_love }
+	remove_opinion = { who = FROM modifier = opinion_family_love }
+	remove_opinion = { who = FROM modifier = opinion_complicity }
+	remove_opinion = { who = FROM modifier = opinion_contempt }
+	remove_opinion = { who = FROM modifier = grievously_offended }
+	remove_opinion = { who = FROM modifier = opinion_humiliated_rival }
+	remove_opinion = { who = FROM modifier = opinion_denied_request }
+	remove_opinion = { who = FROM modifier = opinion_spared_at_blot }
+	remove_opinion = { who = FROM modifier = proud_parent }
+	remove_opinion = { who = FROM modifier = strengthened_loyalty }
+	remove_opinion = { who = FROM modifier = squeezed_for_extra_tribute }
+	remove_opinion = { who = FROM modifier = refused_extra_tribute }
+	remove_opinion = { who = FROM modifier = clan_propaganda_effort }
+	remove_opinion = { who = FROM modifier = won_tributary_war }
+	remove_opinion = { who = FROM modifier = horse_regret }
+	remove_opinion = { who = FROM modifier = abuse_of_office }
+	remove_opinion = { who = FROM modifier = ally_inactive_in_war }
+	remove_opinion = { who = FROM modifier = broken_non_aggression_pact }
+	remove_opinion = { who = FROM modifier = requested_council_position }
+	remove_opinion = { who = FROM modifier = coerced_into_council_position }
+	remove_opinion = { who = FROM modifier = requested_land }
+	remove_opinion = { who = FROM modifier = well_mannered }
+	remove_opinion = { who = FROM modifier = opinion_childhood_sweetheart }
+	remove_opinion = { who = FROM modifier = opinion_abdicated }
+	remove_opinion = { who = FROM modifier = opinion_hypocrite }
+	remove_opinion = { who = FROM modifier = opinion_boring }
+	remove_opinion = { who = FROM modifier = opinion_tortured_me }
+	remove_opinion = { who = FROM modifier = opinion_tortured_family }
+	remove_opinion = { who = FROM modifier = opinion_tortured_close_kin }
+	remove_opinion = { who = FROM modifier = opinion_mutilated_me }
+	remove_opinion = { who = FROM modifier = opinion_mutilated_family }
+	remove_opinion = { who = FROM modifier = opinion_mutilated_close_kin }
+	remove_opinion = { who = FROM modifier = opinion_bad_poetry }
+	remove_opinion = { who = FROM modifier = opinion_humiliated_me }
+	remove_opinion = { who = FROM modifier = opinion_humiliated_family }
+	remove_opinion = { who = FROM modifier = opinion_humiliated_close_kin }
+	remove_opinion = { who = FROM modifier = opinion_tickled_me_right }
+	remove_opinion = { who = FROM modifier = opinion_tickled_me_wrong }
+	remove_opinion = { who = FROM modifier = opinion_alliance_breaker }
+	remove_opinion = { who = FROM modifier = opinion_took_my_advice }
+	remove_opinion = { who = FROM modifier = opinion_did_not_take_my_advice }
+	remove_opinion = { who = FROM modifier = opinion_budding_friendship }
+	remove_opinion = { who = FROM modifier = opinion_did_not_trust_me }
+	remove_opinion = { who = FROM modifier = opinion_leave }
+	remove_opinion = { who = FROM modifier = opinion_sought_mystic_knowledge }
+	remove_opinion = { who = FROM modifier = opinion_finished_mystic_task_1 }
+	remove_opinion = { who = FROM modifier = opinion_finished_mystic_task_2 }
+	remove_opinion = { who = FROM modifier = opinion_finished_mystic_task_3 }
+	remove_opinion = { who = FROM modifier = let_me_leave }
+	remove_opinion = { who = FROM modifier = forbade_me_to_leave }
+	remove_opinion = { who = FROM modifier = expelled_me_from_seclusion }
+	remove_opinion = { who = FROM modifier = let_us_stay_in_seclusion }
+	remove_opinion = { who = FROM modifier = expelled_lover_from_seclusion }
+	remove_opinion = { who = FROM modifier = opinion_budding_romance }
+	remove_opinion = { who = FROM modifier = opinion_was_praised }
+	remove_opinion = { who = FROM modifier = opinion_was_thoroughly_praised }
+	remove_opinion = { who = FROM modifier = opinion_was_wildly_praised }
+	remove_opinion = { who = FROM modifier = opinion_charmed }
+	remove_opinion = { who = FROM modifier = opinion_enchanted }
+	remove_opinion = { who = FROM modifier = opinion_inattentive }
+	remove_opinion = { who = FROM modifier = opinion_broken_promises }
+	remove_opinion = { who = FROM modifier = opinion_romantic_poem }
+	remove_opinion = { who = FROM modifier = opinion_romantic_gift }
+	remove_opinion = { who = FROM modifier = opinion_terrible_poem }
+	remove_opinion = { who = FROM modifier = opinion_acting_suspicious }
+	remove_opinion = { who = FROM modifier = opinion_neglectful_parent }
+	remove_opinion = { who = FROM modifier = opinion_repulsed_deformity }
+	remove_opinion = { who = FROM modifier = opinion_scolded }
+	remove_opinion = { who = FROM modifier = opinion_inept_dancer }
+	remove_opinion = { who = FROM modifier = opinion_loyal_shieldmaiden }
+	remove_opinion = { who = FROM modifier = opinion_gave_me_pet }
+	remove_opinion = { who = FROM modifier = opinion_insane_ruler }
+	remove_opinion = { who = FROM modifier = opinion_great_masquerade }
+	remove_opinion = { who = FROM modifier = opinion_unjust_execution }
+	remove_opinion = { who = FROM modifier = opinion_replaced_bad_ruler }
+	remove_opinion = { who = FROM modifier = opinion_shieldmaiden }
+	remove_opinion = { who = FROM modifier = opinion_fulfilled_demands }
+	remove_opinion = { who = FROM modifier = opinion_ignored_demands }
+	remove_opinion = { who = FROM modifier = opinion_refused_to_end_war }
+	remove_opinion = { who = FROM modifier = opinion_refused_council_position }
+	remove_opinion = { who = FROM modifier = opinion_appreciated_abilities }
+	remove_opinion = { who = FROM modifier = opinion_ungrateful }
+	remove_opinion = { who = FROM modifier = opinion_neglected }
+	remove_opinion = { who = FROM modifier = harsh_punishment }
+	remove_opinion = { who = FROM modifier = opinion_given_council_position_1 }
+	remove_opinion = { who = FROM modifier = opinion_given_council_position_2 }
+	remove_opinion = { who = FROM modifier = opinion_given_council_position_3 }
+	remove_opinion = { who = FROM modifier = opinion_distressing_encounter }
+	remove_opinion = { who = FROM modifier = declared_independence_nomad }
+	remove_opinion = { who = FROM modifier = comforted_opinion }
+	remove_opinion = { who = FROM modifier = tough_love_opinion }
+	remove_opinion = { who = FROM modifier = happy_parent_opinion }
+	remove_opinion = { who = FROM modifier = common_interests_opinion }
+	remove_opinion = { who = FROM modifier = immortal_suspicions }
+	remove_opinion = { who = FROM modifier = immortal_hate }
+	remove_opinion = { who = FROM modifier = immortal_loyalty }
+	remove_opinion = { who = FROM modifier = opinion_agreed_with_opinion }
+	remove_opinion = { who = FROM modifier = opinion_disagreed_with_opinion }
+	remove_opinion = { who = FROM modifier = opinion_honorable }
+	remove_opinion = { who = FROM modifier = opinion_lacks_conviction }
+	remove_opinion = { who = FROM modifier = opinion_parental_praise }
+	remove_opinion = { who = FROM modifier = opinion_was_shown_mercy }
+	remove_opinion = { who = FROM modifier = opinion_open_minded }
+	remove_opinion = { who = FROM modifier = opinion_narrow_minded }
+	remove_opinion = { who = FROM modifier = opinion_successful_corruption }
+	remove_opinion = { who = FROM modifier = opinion_failed_corruption }
+	remove_opinion = { who = FROM modifier = opinion_known_corrupter }
+	remove_opinion = { who = FROM modifier = opinion_ignorant }
+	remove_opinion = { who = FROM modifier = kind_parent }
+	remove_opinion = { who = FROM modifier = cruel_parent }
+	remove_opinion = { who = FROM modifier = opinion_outraged }
+	remove_opinion = { who = FROM modifier = opinion_thief }
+	remove_opinion = { who = FROM modifier = opinion_useless_moron }
+	remove_opinion = { who = FROM modifier = opinion_found_minor_artifact }
+	remove_opinion = { who = FROM modifier = opinion_found_medium_artifact }
+	remove_opinion = { who = FROM modifier = opinion_found_major_artifact }
+	remove_opinion = { who = FROM modifier = opinion_extremely_disappointed }
+	remove_opinion = { who = FROM modifier = opinion_was_rewarded }
+	remove_opinion = { who = FROM modifier = opinion_unimpressed }
+	remove_opinion = { who = FROM modifier = stole_artifact }
+	remove_opinion = { who = FROM modifier = stole_artifact_penance }
+	remove_opinion = { who = FROM modifier = paid_for_celebration_artifact }
+	remove_opinion = { who = FROM modifier = opinion_nemesis }
+	remove_opinion = { who = FROM modifier = opinion_rejected_society_membership }
+	remove_opinion = { who = FROM modifier = epic_adventure }
+	remove_opinion = { who = FROM modifier = great_adventure }
+	remove_opinion = { who = FROM modifier = nice_adventure }
+	remove_opinion = { who = FROM modifier = opinion_accomplice }
+	remove_opinion = { who = FROM modifier = opinion_gift_from_above }
+	remove_opinion = { who = FROM modifier = opinion_outlawed_society }
+	remove_opinion = { who = FROM modifier = opinion_accused_apostate }
+	remove_opinion = { who = FROM modifier = opinion_stargazing }
+	remove_opinion = { who = FROM modifier = opinion_out_of_touch }
+	remove_opinion = { who = FROM modifier = opinion_out_of_touch_mild }
+	remove_opinion = { who = FROM modifier = opinion_bad_parent }
+	remove_opinion = { who = FROM modifier = opinion_forgot_important_occasion }
+	remove_opinion = { who = FROM modifier = opinion_forgot_important_occasion_mild }
+	remove_opinion = { who = FROM modifier = opinion_academic_grudge }
+	remove_opinion = { who = FROM modifier = opinion_academic_failure }
+	remove_opinion = { who = FROM modifier = opinion_knowledge_theft }
+	remove_opinion = { who = FROM modifier = opinion_grateful_invitation }
+	remove_opinion = { who = FROM modifier = opinion_offended }
+	remove_opinion = { who = FROM modifier = opinion_argued }
+	remove_opinion = { who = FROM modifier = opinion_unreasonable }
+	remove_opinion = { who = FROM modifier = opinion_reasonable }
+	remove_opinion = { who = FROM modifier = opinion_great_minds }
+	remove_opinion = { who = FROM modifier = opinion_debate_participant }
+	remove_opinion = { who = FROM modifier = opinion_debate_winner }
+	remove_opinion = { who = FROM modifier = opinion_scholarly_appreciation }
+	remove_opinion = { who = FROM modifier = opinion_mediator }
+	remove_opinion = { who = FROM modifier = opinion_meddler }
+	remove_opinion = { who = FROM modifier = opinion_love_letters }
+	remove_opinion = { who = FROM modifier = opinion_pen_pal }
+	remove_opinion = { who = FROM modifier = opinion_delighted_parent }
+	remove_opinion = { who = FROM modifier = opinion_poet_love_letters }
+	remove_opinion = { who = FROM modifier = opinion_poet_pen_pal }
+	remove_opinion = { who = FROM modifier = opinion_poet_delighted_parent }
+	remove_opinion = { who = FROM modifier = opinion_threatened_me }
+	remove_opinion = { who = FROM modifier = opinion_apologized }
+	remove_opinion = { who = FROM modifier = opinion_calmed }
+	remove_opinion = { who = FROM modifier = opinion_cheered_up }
+	remove_opinion = { who = FROM modifier = opinion_abducted }
+	remove_opinion = { who = FROM modifier = opinion_spiritual_guidance }
+	remove_opinion = { who = FROM modifier = opinion_teach_virtue }
+	remove_opinion = { who = FROM modifier = sold_my_province }
+	remove_opinion = { who = FROM modifier = sold_vassal_province }
+	remove_opinion = { who = FROM modifier = opinion_no_cat }
+	remove_opinion = { who = FROM modifier = opinion_servant }
+	remove_opinion = { who = FROM modifier = opinion_poor_accommodations }
+	remove_opinion = { who = FROM modifier = opinion_sent_my_lover_away }
+	remove_opinion = { who = FROM modifier = opinion_feels_appreciated }
+	remove_opinion = { who = FROM modifier = suzerain_deserted }
+	remove_opinion = { who = FROM modifier = suzerain_deserted_reasons }
+	remove_opinion = { who = FROM modifier = opinion_turned_a_blind_eye }
+	remove_opinion = { who = FROM modifier = opinion_declared_unjust_conquest }
+	remove_opinion = { who = FROM modifier = opinion_infiltration_companion }
+	remove_opinion = { who = FROM modifier = opinion_forced_tributary }
+	remove_opinion = { who = FROM modifier = opinion_strangely_flattered }
+	remove_opinion = { who = FROM modifier = opinion_didnot_pay_homage }
+	remove_opinion = { who = FROM modifier = opinion_converted_heathens }
+	remove_opinion = { who = FROM modifier = opinion_forgiving_parent }
+	remove_opinion = { who = FROM modifier = opinion_jovial_host }
+	remove_opinion = { who = FROM modifier = opinion_jovial_matron }
+	remove_opinion = { who = FROM modifier = opinion_jovial_patriarch }
+	remove_opinion = { who = FROM modifier = opinion_pitiful_shell }
+	remove_opinion = { who = FROM modifier = opinion_cravings }
+	remove_opinion = { who = FROM modifier = opinion_upset_mother }
+	remove_opinion = { who = FROM modifier = opinion_motherly_love }
+	remove_opinion = { who = FROM modifier = opinion_fatherly_love }
+	remove_opinion = { who = FROM modifier = opinion_upset_father }
+	remove_opinion = { who = FROM modifier = opinion_irresponsible_mother }
+	remove_opinion = { who = FROM modifier = opinion_mother_goddess }
+	remove_opinion = { who = FROM modifier = opinion_killed_wife }
+	remove_opinion = { who = FROM modifier = opinion_godfather }
+	remove_opinion = { who = FROM modifier = opinion_godmother }
+	remove_opinion = { who = FROM modifier = opinion_swayed_0 }
+	remove_opinion = { who = FROM modifier = opinion_swayed_1 }
+	remove_opinion = { who = FROM modifier = opinion_swayed_2 }
+	remove_opinion = { who = FROM modifier = opinion_swayed_3 }
+	remove_opinion = { who = FROM modifier = opinion_broke_contract }
+	remove_opinion = { who = FROM modifier = opinion_antagonized_0 }
+	remove_opinion = { who = FROM modifier = opinion_antagonized_1 }
+	remove_opinion = { who = FROM modifier = opinion_antagonized_2 }
+	remove_opinion = { who = FROM modifier = opinion_antagonized_3 }
+	remove_opinion = { who = FROM modifier = opinion_repudiated_me }
+	remove_opinion = { who = FROM modifier = opinion_amused }
+	remove_opinion = { who = FROM modifier = opinion_antagonize_vassalize_claim }
+	remove_opinion = { who = FROM modifier = opinion_antagonize_slandering_spouse }
+	remove_opinion = { who = FROM modifier = antagonize_stop_cooldown }
+	remove_opinion = { who = FROM modifier = opinion_forgiven }
+	remove_opinion = { who = FROM modifier = opinion_honorable_combat }
+	remove_opinion = { who = FROM modifier = blasphemous_pyromaniac }
+	remove_opinion = { who = FROM modifier = insane_heathen }
+	remove_opinion = { who = FROM modifier = opinion_betrayed_me_in_battle }
+	remove_opinion = { who = FROM modifier = opinion_injured_me_in_battle }
+	remove_opinion = { who = FROM modifier = opinion_mocked_me_in_battle }
+	remove_opinion = { who = FROM modifier = opinion_impressed_me_in_battle }
+	remove_opinion = { who = FROM modifier = opinion_impressed_me_in_battle }
+	remove_opinion = { who = FROM modifier = opinion_conquered_new_land }
+	remove_opinion = { who = FROM modifier = opinion_inspiring_leader }
+	remove_opinion = { who = FROM modifier = opinion_rebuked_appeaser_cooldown }
+	remove_opinion = { who = FROM modifier = opinion_hermetic_apprentice }
+	remove_opinion = { who = FROM modifier = opinion_my_shou_lung_pet }
+	remove_opinion = { who = FROM modifier = opinion_scared_into_submission }
+	remove_opinion = { who = FROM modifier = opinion_weak_hunter }
+	remove_opinion = { who = FROM modifier = opinion_fought_together }
+	remove_opinion = { who = FROM modifier = opinion_weak_duelist }
+	remove_opinion = { who = FROM modifier = opinion_helpful_ally }
+	remove_opinion = { who = FROM modifier = opinion_unhelpful_ally }
+	remove_opinion = { who = FROM modifier = opinion_party_friend }
+	remove_opinion = { who = FROM modifier = opinion_useless_host }
+	remove_opinion = { who = FROM modifier = opinion_impaler_friends }
+	remove_opinion = { who = FROM modifier = opinion_fellow_speaker }
+	remove_opinion = { who = FROM modifier = opinion_impressive_speaker }
+	remove_opinion = { who = FROM modifier = opinion_confident_host }
+	remove_opinion = { who = FROM modifier = opinion_working_together }
+	remove_opinion = { who = FROM modifier = opinion_savage_butcher }
+	remove_opinion = { who = FROM modifier = opinion_cloistered_me }
+	remove_opinion = { who = FROM modifier = opinion_cloistered_me_family }
+	remove_opinion = { who = FROM modifier = opinion_blood_games_guest }
+	remove_opinion = { who = FROM modifier = opinion_held_blood_games }
+	remove_opinion = { who = FROM modifier = opinion_mass_sacrifice_positive }
+	remove_opinion = { who = FROM modifier = opinion_mass_sacrifice_negative }
+	remove_opinion = { who = FROM modifier = opinion_abducted_peasants }
+	remove_opinion = { who = FROM modifier = opinion_crusade_agreement }
+	remove_opinion = { who = FROM modifier = opinion_great_tribal_festival_guest }
+	remove_opinion = { who = FROM modifier = opinion_disrespectful_pest }
+	remove_opinion = { who = FROM modifier = opinion_disapprove_of_crusade_unpledge }
+	remove_opinion = { who = FROM modifier = opinion_sore_loser }
+	remove_opinion = { who = FROM modifier = opinion_held_great_festival }
+	remove_opinion = { who = FROM modifier = opinion_lousy_winner }
+	remove_opinion = { who = FROM modifier = opinion_kind_winner }
+	remove_opinion = { who = FROM modifier = opinion_loser }
+	remove_opinion = { who = FROM modifier = opinion_beneficiary }
+	remove_opinion = { who = FROM modifier = opinion_granted_crusader_kingdom }
+	remove_opinion = { who = FROM modifier = opinion_selfish_crusader }
+	remove_opinion = { who = FROM modifier = opinion_coronation_money_refund }
+	remove_opinion = { who = FROM modifier = opinion_requested_excommunication }
+	remove_opinion = { who = FROM modifier = opinion_cheater }
+	remove_opinion = { who = FROM modifier = opinion_victory_prize }
+	remove_opinion = { who = FROM modifier = opinion_very_grateful_donation }
+	remove_opinion = { who = FROM modifier = opinion_deeply_insulted }
+	remove_opinion = { who = FROM modifier = opinion_believed_in_me }
+	remove_opinion = { who = FROM modifier = opinion_great_leader }
+	remove_opinion = { who = FROM modifier = opinion_disrespects_me }
+	remove_opinion = { who = FROM modifier = opinion_tried_to_get_me_killed }
+	remove_opinion = { who = FROM modifier = opinion_saved_me }
+	remove_opinion = { who = FROM modifier = opinion_left_me_to_die }
+	remove_opinion = { who = FROM modifier = opinion_hunted_with_me }
+	remove_opinion = { who = FROM modifier = opinion_shared_spoils }
+	remove_opinion = { who = FROM modifier = opinion_family_saint }
+	remove_opinion = { who = FROM modifier = opinion_unfit_ruler }
+	remove_opinion = { who = FROM modifier = opinion_legendary_commander }
+	remove_opinion = { who = FROM modifier = opinion_my_reformer }
+	remove_opinion = { who = FROM modifier = opinion_formed_order }
+	remove_opinion = { who = FROM modifier = opinion_kindred_spirit }
+	remove_opinion = { who = FROM modifier = opinion_favored_child }
+	remove_opinion = { who = FROM modifier = opinion_unfavored_child }
+	remove_opinion = { who = FROM modifier = opinion_spoiled_ingrate }
+	remove_opinion = { who = FROM modifier = opinion_lousy_teacher }
+	remove_opinion = { who = FROM modifier = opinion_declined_my_duel }
+	remove_opinion = { who = FROM modifier = opinion_renowned_chicken }
+	remove_opinion = { who = FROM modifier = opinion_disrespectful_subject }
+	remove_opinion = { who = FROM modifier = opinion_hypocrit_ruler }
+	remove_opinion = { who = FROM modifier = opinion_elder_fulfilled_demand }
+	remove_opinion = { who = FROM modifier = opinion_elder_refused_demand }
+	remove_opinion = { who = FROM modifier = opinion_elders_pleased }
+	remove_opinion = { who = FROM modifier = opinion_elders_displeased }
+	remove_opinion = { who = FROM modifier = opinion_elder_traitor }
+	remove_opinion = { who = FROM modifier = elder_murderer }
+	remove_opinion = { who = FROM modifier = disrespectful_youngster }
+	remove_opinion = { who = FROM modifier = opinion_placated_spirits }
+	remove_opinion = { who = FROM modifier = opinion_kind }
+	remove_opinion = { who = FROM modifier = opinion_gifted_alcohol }
+	remove_opinion = { who = FROM modifier = opinion_gifted_alcohol_drunkard }
+	remove_opinion = { who = FROM modifier = opinion_intimidated }
+	remove_opinion = { who = FROM modifier = opinion_liked_a_good_joke }
+	remove_opinion = { who = FROM modifier = opinion_refused_invitation_to_meet }
+	remove_opinion = { who = FROM modifier = opinion_did_not_honor_the_dead }
+	remove_opinion = { who = FROM modifier = opinion_did_honor_the_dead }
+	remove_opinion = { who = FROM modifier = opinion_did_not_honor_hated_ruler }
+	remove_opinion = { who = FROM modifier = opinion_did_honor_hated_ruler }
+	remove_opinion = { who = FROM modifier = opinion_happy_with_nickname }
+	remove_opinion = { who = FROM modifier = opinion_dislikes_nickname }
+	remove_opinion = { who = FROM modifier = opinion_left_court }
+	remove_opinion = { who = FROM modifier = opinion_was_ordered_to_leave_crowded_court }
+	remove_opinion = { who = FROM modifier = vampiric_sire }
+	remove_opinion = { who = FROM modifier = vampiric_progeny }
+	remove_opinion = { who = FROM modifier = foul_undead }
+	remove_opinion = { who = FROM modifier = accepted_vampirism }
+	remove_opinion = { who = FROM modifier = orcduel_intimidated }
+	remove_opinion = { who = FROM modifier = tb_refused_law_change }
+	remove_opinion = { who = FROM modifier = tb_accepted_law_change }
+	remove_opinion = { who = FROM modifier = opinion_my_master }
+	remove_opinion = { who = FROM modifier = opinion_my_horse }
+	remove_opinion = { who = FROM modifier = opinion_my_servant }
+	remove_opinion = { who = FROM modifier = opinion_my_kitten }
+	remove_opinion = { who = FROM modifier = opinion_cat_spymaster }
+	remove_opinion = { who = FROM modifier = cast_spell_on_me }
+	remove_opinion = { who = FROM modifier = cured_my_lands }
+	remove_opinion = { who = FROM modifier = cured_me }
+	remove_opinion = { who = FROM modifier = charm_person_spell_after }
 }

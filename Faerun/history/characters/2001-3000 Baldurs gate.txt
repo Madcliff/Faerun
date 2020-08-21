@@ -1,4 +1,4 @@
-###ÄNSI
+###ï¿½NSI
 
 2001 = {
 	name = "Alistra"
@@ -963,6 +963,14 @@
 	trait = trained_wizard
 	trait = patron_mystra
 	1347.1.1 = { birth = yes }
+	1363.1.1 = {
+		effect = {
+			add_character_modifier = {
+				name = wiz_evocation
+				duration = -1
+			}
+		}
+	}
 	1367.1.1 = {
 		employer = 33085
 	}
@@ -1015,7 +1023,7 @@
 	}
 	1370.1.1 = {
 		employer = 2007
-		remove_trait = trained_ranger
+		remove_trait = journeyman_ranger
 		add_trait = renowned_ranger
 	}
 	1375.1.1 = {
@@ -1332,6 +1340,14 @@
 		birth = yes
 		employer = 56341
 	}
+	1346.1.1 = {
+		effect = {
+			add_character_modifier = {
+				name = wiz_necromancy
+				duration = -1
+			}
+		}
+	}
 	1367.1.1 = {
 		employer = 3
 	}
@@ -1354,6 +1370,14 @@
 	1344.1.1 = {
 		birth = yes
 		employer = 46001
+	}
+	1350.1.1 = {
+		effect = {
+			add_character_modifier = {
+				name = wiz_wild
+				duration = -1
+			}
+		}
 	}
 	1366.1.1 = {
 		employer = 9028
@@ -1382,6 +1406,14 @@
 	trait = arbitrary
 	trait = patron_baravar_cloakshadow
 	1280.1.1 = { birth = yes }
+	1296.1.1 = {
+		effect = {
+			add_character_modifier = {
+				name = wiz_illusion
+				duration = -1
+			}
+		}
+	}
 	1310.1.1 = { immortal_age = 30 }
 	1368.1.1 = {
 		employer = 30600
@@ -1515,6 +1547,14 @@
 	1270.1.1 = {
 		birth = yes
 		employer = 47101
+	}
+	1286.1.1 = {
+		effect = {
+			add_character_modifier = {
+				name = wiz_enchantment
+				duration = -1
+			}
+		}
 	}
 	1300.1.1 = { immortal_age = 30 }
 	1367.1.1 = {
@@ -1740,6 +1780,14 @@
 	trait = trained_rogue
 	trait = greedy
 	1280.1.1 = { birth = yes }
+	1296.1.1 = {
+		effect = {
+			add_character_modifier = {
+				name = wiz_illusion
+				duration = -1
+			}
+		}
+	}
 	1310.1.1 = { immortal_age = 30 }
 	1360.1.1 = {
 		employer = 33002
@@ -1911,7 +1959,7 @@
 	}
 	1374.1.1 = {
 		death = { death_reason = death_battle }
-	}	
+	}
 }
 2080 = {
 	name = "Grath"
@@ -2598,5 +2646,336 @@
 	}
 	1368.1.1 = {
 		death = { death_reason = death_battle }
+	}
+}
+
+2147 = {
+	name = "Jherek"
+	culture = highcoaster
+	religion = good_human_pantheon
+	martial = 4
+	diplomacy = 6
+	learning = 6
+	intrigue = 10
+	stewardship = 4
+	trait = creature_human
+	trait = elusive_shadow
+	trait = shrewd
+	trait = journeyman_monk
+	trait = kind
+	trait = patient
+	trait = brave
+	trait = humble
+	1329.1.1 = {
+		birth = yes
+	}
+	1360.1.1 = {
+		employer = 2010 #Eltan
+		effect = {
+			join_society = harpers
+		}
+	}
+	1406.1.1 = {
+		death = yes
+	}
+}
+
+2148 = {
+	name = "Vahn"
+	culture = highcoaster
+	religion = good_human_pantheon
+	martial = 7
+	diplomacy = 6
+	learning = 11
+	intrigue = 6
+	stewardship = 6
+	trait = creature_human
+	trait = tough_soldier
+	trait = pretty
+	trait = bright
+	trait = trained_fighter
+	trait = brave
+	1352.1.1 = {
+		birth = yes
+	}
+	1360.1.1 = {
+		employer = 2010 #Eltan
+	}
+	1373.1.1 = {
+		remove_trait = trained_fighter
+		add_trait = expert_fighter
+		effect = {
+			add_friend = 2152 # Dorn
+		}
+	}
+
+	1374.1.1 = {
+		remove_trait = expert_fighter
+		add_trait = master_fighter
+	}
+	1429.1.1 = {
+		death = yes
+	}
+}
+
+2149 = {
+	name = "Adrianna"
+	female = yes
+	culture = moon_elf
+	religion = elven_pantheon
+	martial = 5
+	diplomacy = 8
+	learning = 6
+	intrigue = 8
+	stewardship = 6
+	trait = creature_elf
+	trait = charismatic_negotiator
+	trait = beautiful
+	trait = trained_sorcerer
+	trait = brave
+	1320.1.1 = {
+		birth = yes
+	}
+	1320.1.1 = {
+		employer = 47101
+	}
+	1372.1.1 = {
+		employer = 2010 #Eltan
+	}
+	1373.1.1 = {
+		remove_trait = trained_sorcerer
+		add_trait = expert_sorcerer
+	}
+	1374.1.1 = {
+		remove_trait = expert_sorcerer
+		add_trait = master_sorcerer
+	}
+	1829.1.1 = {
+		death = yes
+	}
+}
+
+2150 = {
+	name = "Kromlech"
+	dynasty = 2648 # Bruenghor
+	culture = shield_dwarf
+	religion = dwarven_pantheon
+	martial = 10
+	diplomacy = 4
+	learning = 6
+	intrigue = 4
+	stewardship = 8
+	trait = creature_dwarf
+	trait = tough_soldier
+	trait = strong
+	trait = trained_fighter
+	trait = brave
+	1322.1.1 = {
+		birth = yes
+	}
+	1322.1.1 = {
+		employer = 18068 #Bardin
+	}
+	1372.1.1 = {
+		employer = 2010 #Eltan
+	}
+	1373.1.1 = {
+		remove_trait = trained_fighter
+		add_trait = expert_fighter
+	}
+	1374.1.1 = {
+		remove_trait = expert_fighter
+		add_trait = master_fighter
+	}
+	1650.1.1 = {
+		death = yes
+	}
+}
+
+2151 = {
+	name = "Borador"
+	dynasty = 2649 #Goblinbreaker
+	culture = shield_dwarf
+	religion = dwarven_pantheon
+	trait = creature_dwarf
+	trait = fortune_builder
+	trait = quick
+	trait = trained_rogue
+	trait = greedy
+	trait = arbitrary
+	trait = brave
+	1311.1.1 = {
+		birth = yes
+	}
+	1327.1.1 = {
+		employer = 18068 #Bardin
+	}
+	1360.1.1 = { give_nickname = nick_goldhand }
+	1374.1.1 = {
+		employer = 2011 #Belt
+	}
+	1375.1.1 = {
+		remove_trait = trained_rogue
+		add_trait = expert_rogue
+	}
+	1376.1.1 = {
+		remove_trait = expert_rogue
+		add_trait = master_rogue
+	}
+	1629.1.1 = {
+		death = yes
+	}
+}
+
+2152 = {
+	name = "Dorn"
+	culture = heartlander
+	religion = good_human_pantheon
+	trait = creature_human
+	trait = tough_soldier
+	trait = strong
+	trait = giant
+	trait = trained_barbarian
+	trait = patron_tempus
+	trait = wroth
+	trait = lustful
+	trait = brave
+	trait = kind
+	1354.1.1 = {
+		birth = yes
+	}
+	1360.1.1 = {
+		employer = 9270 #Barim
+	}
+	1374.1.1 = {
+		employer = 2011 #Belt
+	}
+	1375.1.1 = {
+		remove_trait = trained_barbarian
+		add_trait = expert_barbarian
+	}
+	1376.1.1 = {
+		remove_trait = expert_barbarian
+		add_trait = master_barbarian
+	}
+	1423.1.1 = {
+		death = yes
+	}
+}
+
+2153 = {
+	name = "Allessia"
+	female = yes
+	culture = highcoaster
+	religion = good_human_pantheon
+	trait = creature_human
+	trait = scholarly_theologian
+	trait = fair
+	trait = hardy
+	trait = trained_cleric
+	trait = patron_helm
+	trait = zealous
+	trait = kind
+	trait = brave
+	trait = just
+	1350.1.1 = {
+		birth = yes
+	}
+	1360.1.1 = {
+		employer = 9001 # Traskar Selarn
+	}
+	1374.1.1 = {
+		employer = 2011 #Belt
+	}
+	1375.1.1 = {
+		remove_trait = trained_cleric
+		add_trait = expert_cleric
+	}
+	1376.1.1 = {
+		remove_trait = expert_cleric
+		add_trait = master_cleric
+	}
+	1432.1.1 = {
+		death = yes
+	}
+}
+
+2154 = {
+	name = "Vhaidra"
+	female = yes
+	dynasty = 3403 #Uoswiir
+	culture = drow
+	religion = drow_polytheism
+	trait = creature_drow
+	trait = intricate_webweaver
+	trait = fair
+	trait = smart
+	trait = trained_monk
+	trait = brave
+	trait = proud
+	trait = envious
+	trait = cynical
+	1318.1.1 = {
+		birth = yes
+	}
+	1360.1.1 = {
+		employer = 48201 #Jezz
+	}
+	1374.1.1 = {
+		employer = 2011 #Belt
+	}
+	1375.1.1 = {
+		remove_trait = trained_monk
+		add_trait = expert_monk
+	}
+	1376.1.1 = {
+		remove_trait = expert_monk
+		add_trait = master_monk
+	}
+	1740.1.1 = {
+		death = yes
+	}
+}
+
+2155 = {
+	name = "Ysuran"
+	dynasty = 3402 # Auondril
+	culture = moon_elf
+	religion = elven_pantheon
+	trait = creature_elf
+	trait = mastermind_theologian
+	trait = genius
+	trait = master_wizard
+	trait = brave
+	trait = cruel
+	trait = chaste
+	trait = envious
+	1128.1.1 = {
+		birth = yes
+	}
+	1360.1.1 = {
+		employer = 47101
+	}
+	1370.1.1 = {
+		remove_trait = master_wizard
+		remove_trait = cruel
+		remove_trait = envious
+		add_trait = trained_wizard
+		add_trait = kind
+		add_trait = just
+	}
+	1374.1.1 = {
+		employer = 2011 #Belt
+	}
+	1375.1.1 = {
+		remove_trait = trained_wizard
+		add_trait = expert_wizard
+	}
+	1376.1.1 = {
+		remove_trait = expert_wizard
+		add_trait = master_wizard
+	}
+	1623.1.1 = {
+		death = yes
 	}
 }

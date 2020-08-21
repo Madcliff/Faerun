@@ -199,7 +199,7 @@ assign_sorcerer_trait = {
 						OR = {
 							trait = origin_storm
 							trait = creature_genie
-							trait = genasi
+							trait = creature_genasi
 						}
 					}
 				}
@@ -208,7 +208,7 @@ assign_sorcerer_trait = {
 						OR = {
 							trait = origin_storm
 							trait = creature_genie
-							trait = genasi
+							trait = creature_genasi
 						}
 					}
 					father_even_if_dead = {
@@ -358,7 +358,7 @@ assign_sorcerer_trait = {
 						OR = {
 							trait = origin_storm
 							trait = creature_genie
-							trait = genasi
+							trait = creature_genasi
 						}
 					}
 					father_even_if_dead = {
@@ -379,7 +379,7 @@ assign_sorcerer_trait = {
 						OR = {
 							trait = origin_storm
 							trait = creature_genie
-							trait = genasi
+							trait = creature_genasi
 						}
 					}
 				}
@@ -488,7 +488,7 @@ assign_sorcerer_trait = {
 						OR = {
 							trait = origin_storm
 							trait = creature_genie
-							trait = genasi
+							trait = creature_genasi
 						}
 					}
 					father_even_if_dead = {
@@ -509,7 +509,7 @@ assign_sorcerer_trait = {
 						OR = {
 							trait = origin_storm
 							trait = creature_genie
-							trait = genasi
+							trait = creature_genasi
 						}
 					}
 				}
@@ -580,7 +580,7 @@ assign_sorcerer_trait = {
 						OR = {
 							trait = origin_storm
 							trait = creature_genie
-							trait = genasi
+							trait = creature_genasi
 						}
 					}
 					father_even_if_dead = {
@@ -595,7 +595,7 @@ assign_sorcerer_trait = {
 						OR = {
 							trait = origin_storm
 							trait = creature_genie
-							trait = genasi
+							trait = creature_genasi
 						}
 					}
 				}
@@ -667,7 +667,7 @@ assign_sorcerer_trait = {
 						OR = {
 							trait = origin_storm
 							trait = creature_genie
-							trait = genasi
+							trait = creature_genasi
 						}
 					}
 				}
@@ -676,7 +676,7 @@ assign_sorcerer_trait = {
 						OR = {
 							trait = origin_storm
 							trait = creature_genie
-							trait = genasi
+							trait = creature_genasi
 						}
 					}
 					father_even_if_dead = {
@@ -1555,3 +1555,129 @@ faerun_debug_remove_creature = {
 		creature_half_dwarf = { remove_trait = creature_half_dwarf }
 	}
 }
+
+#
+# Ruler Designer Age Up
+#
+
+rd_age_up_dwarf = {
+	if = {
+		limit = {
+			age = 40
+		}
+		break = yes
+	}
+	else = {
+		set_variable = {
+			which = final_age
+			value = 40
+		}
+		export_to_variable = {
+			which = starting_age
+			value = age
+		}
+		subtract_variable = {
+			which = final_age
+			which = starting_age
+		}
+		add_age = final_age
+	}
+}
+
+rd_age_up_elf = {
+	if = {
+		limit = {
+			age = 110
+		}
+		break = yes
+	}
+	else = {
+		set_variable = {
+			which = final_age
+			value = 110
+		}
+		export_to_variable = {
+			which = starting_age
+			value = age
+		}
+		subtract_variable = {
+			which = final_age
+			which = starting_age
+		}
+		add_age = final_age
+	}
+}
+
+rd_age_up_rockgnome = {
+	if = {
+		limit = {
+			age = 40
+		}
+		break = yes
+	}
+	else = {
+		set_variable = {
+			which = final_age
+			value = 40
+		}
+		export_to_variable = {
+			which = starting_age
+			value = age
+		}
+		subtract_variable = {
+			which = final_age
+			which = starting_age
+		}
+		add_age = final_age
+	}
+}
+
+rd_age_up_halfelf = {
+	if = {
+		limit = {
+			age = 20
+		}
+		break = yes
+	}
+	else = {
+		set_variable = {
+			which = final_age
+			value = 20
+		}
+		export_to_variable = {
+			which = starting_age
+			value = age
+		}
+		subtract_variable = {
+			which = final_age
+			which = starting_age
+		}
+		add_age = final_age
+	}
+}
+
+rd_age_up_halfling = {
+	if = {
+		limit = {
+			age = 20
+		}
+		break = yes
+	}
+	else = {
+		set_variable = {
+			which = final_age
+			value = 20
+		}
+		export_to_variable = {
+			which = starting_age
+			value = age
+		}
+		subtract_variable = {
+			which = final_age
+			which = starting_age
+		}
+		add_age = final_age
+	}
+}
+
+		

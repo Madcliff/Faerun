@@ -123,6 +123,7 @@ good_human_pantheon_group = {
 		
 		can_retire_to_monastery = yes
 		priests_can_inherit = yes
+		can_demand_religious_conversion = no
 		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5		
@@ -168,6 +169,7 @@ good_human_pantheon_group = {
 		
 		uses_decadence = no
 		uses_jizya_tax = no
+		can_demand_religious_conversion = no
 		
 		intermarry = ten_thousand_gods
 		intermarry = qisma
@@ -209,6 +211,7 @@ good_human_pantheon_group = {
 #		can_hold_temples = yes
 		can_excommunicate = no
 		can_retire_to_monastery = yes
+		can_demand_religious_conversion = no
 		psc_marriage = no
 		intermarry = good_human_pantheon		
 		intermarry = calishite_faith
@@ -238,13 +241,13 @@ good_human_pantheon_group = {
 			GOD_SET GOD_SEBEK
 		}
 
-		can_grant_claim = yes
-		can_call_crusade = yes
+		can_grant_claim = no
+		can_call_crusade = no
 		matrilineal_marriages = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		feminist = yes
 #		can_hold_temples = yes
-		can_excommunicate = yes		
+		can_excommunicate = no		
 		can_retire_to_monastery = yes
 		priests_can_inherit = yes
 		
@@ -253,6 +256,7 @@ good_human_pantheon_group = {
 		max_wives = 4
 		divine_blood = yes
 		bs_marriage = yes
+		can_demand_religious_conversion = no
 		
 		religious_clothing_head = 25
 		religious_clothing_priest = 5
@@ -302,6 +306,7 @@ good_human_pantheon_group = {
 #		can_hold_temples = yes
 		can_excommunicate = no
 		can_retire_to_monastery = yes
+		can_demand_religious_conversion = no
 		psc_marriage = no
 	}
 	tuigan_shamanism = {
@@ -331,10 +336,10 @@ good_human_pantheon_group = {
 			angry_gods
 		}
 
-		can_grant_claim = yes
-		can_call_crusade = yes
+		can_grant_claim = no
+		can_call_crusade = no
 		matrilineal_marriages = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		female_temple_holders = yes
 		priests_can_marry = yes
 #		can_hold_temples = yes
@@ -343,6 +348,7 @@ good_human_pantheon_group = {
 		
 		can_retire_to_monastery = yes
 		priests_can_inherit = yes
+		can_demand_religious_conversion = no
 		
 		allow_looting = yes
 		max_consorts = 3
@@ -380,19 +386,20 @@ good_human_pantheon_group = {
 			gods_of_evil bane cyric GOD_TIAMAT
 		}
 		
-		can_grant_claim = yes
-		can_call_crusade = yes
+		can_grant_claim = no
+		can_call_crusade = no
 		matrilineal_marriages = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		female_temple_holders = yes
 		feminist = yes
 		priests_can_marry = yes
 #		can_hold_temples = yes
-		can_excommunicate = yes
+		can_excommunicate = no
 		psc_marriage = yes
 		
 		can_retire_to_monastery = yes
 		priests_can_inherit = yes
+		can_demand_religious_conversion = no
 		
 		religious_clothing_head = 0
 		religious_clothing_priest = 7		
@@ -434,6 +441,7 @@ good_human_pantheon_group = {
 		
 		can_retire_to_monastery = no
 		priests_can_inherit = yes
+		can_demand_religious_conversion = no
 				
 		allow_looting = yes
 		allow_rivermovement = yes
@@ -486,6 +494,7 @@ good_human_pantheon_group = {
 		
 		can_retire_to_monastery = yes
 		priests_can_inherit = yes
+		can_demand_religious_conversion = no
 		
 		religious_clothing_head = 5
 		religious_clothing_priest = 5		
@@ -541,7 +550,7 @@ evil_human_pantheon_group = {
 		allow_looting = yes
 		max_consorts = 1
 		women_can_take_consorts = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 				
 		religious_clothing_head = 3
 		religious_clothing_priest = 7
@@ -802,10 +811,10 @@ evil_human_pantheon_group = {
 			angry_gods ISTISHIA
 		}
 
-		can_grant_claim = yes
-		can_call_crusade = yes
+		can_grant_claim = no
+		can_call_crusade = no
 		matrilineal_marriages = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		female_temple_holders = yes
 		priests_can_marry = yes
 #		can_hold_temples = yes
@@ -870,7 +879,7 @@ zakharan_group = {
 			cold_gods
 		}
 		
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		priests_can_inherit = no
 		priests_can_marry = yes
 		psc_marriage = no # Disallow uncle-niece and aunt-nephew marriages
@@ -885,6 +894,7 @@ zakharan_group = {
 		
 		uses_decadence = yes
 		uses_jizya_tax = yes
+		can_demand_religious_conversion = no
 		
 		intermarry = adama
 		intermarry = pantheist_league
@@ -910,7 +920,7 @@ zakharan_group = {
 			cold_gods
 		}
 		
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		priests_can_inherit = no
 		priests_can_marry = yes
 		psc_marriage = no # Disallow uncle-niece and aunt-nephew marriages
@@ -925,6 +935,7 @@ zakharan_group = {
 		
 		uses_decadence = yes
 		uses_jizya_tax = yes
+		can_demand_religious_conversion = no
 		
 		intermarry = adama
 		intermarry = pantheist_league
@@ -951,7 +962,7 @@ zakharan_group = {
 			cold_gods
 		}
 		
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		priests_can_inherit = no
 		priests_can_marry = yes
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
@@ -966,6 +977,7 @@ zakharan_group = {
 		
 		uses_decadence = yes
 		uses_jizya_tax = yes
+		can_demand_religious_conversion = no
 		
 		intermarry = ten_thousand_gods
 		intermarry = qisma
@@ -995,7 +1007,7 @@ zakharan_group = {
 			GOD_ASMODEUS
 		}
 		
-		can_call_crusade = yes
+		can_call_crusade = no
 		priests_can_marry = yes
 		psc_marriage = no # Disallow uncle-nice and aunt-nephew marriages
 		max_wives = 4
@@ -1006,6 +1018,7 @@ zakharan_group = {
 		
 		landed_kin_prestige_bonus = yes
 		attacking_same_religion_piety_loss = yes
+		can_demand_religious_conversion = no
 		
 		uses_decadence = yes
 		uses_jizya_tax = yes
@@ -1069,6 +1082,8 @@ karaturan_group = {
 		priest_title = lama
 		piety_name = KARMA
 		
+		can_demand_religious_conversion = no
+		
 		intermarry = ten_thousand_gods
 		intermarry = qisma
 		intermarry = good_human_pantheon
@@ -1096,7 +1111,7 @@ karaturan_group = {
 		}
 
 		has_heir_designation = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		priests_can_inherit = no
 		max_consorts = 3 # Can take concubines
 		women_can_take_consorts = yes
@@ -1104,6 +1119,8 @@ karaturan_group = {
 		short_reign_opinion_year_mult = 0 # No short reign penalty
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
+		
+		can_demand_religious_conversion = no
 
 		scripture_name = PATH_OF_HEAVEN
 		priest_title = SHOULING
@@ -1135,13 +1152,15 @@ karaturan_group = {
 		}
 
 		has_heir_designation = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		priests_can_inherit = no
 		max_consorts = 3 # Can take concubines
 		
 		short_reign_opinion_year_mult = 0 # No short reign penalty
 		religious_clothing_head = 10
 		religious_clothing_priest = 10
+		
+		can_demand_religious_conversion = no
 
 		scripture_name = THREAD
 		priest_title = HSIANGTAO
@@ -1192,6 +1211,7 @@ elven_pantheon_group = {
 		raised_vassal_opinion_loss = no
 		feminist = yes
 		can_retire_to_monastery = yes
+		can_demand_religious_conversion = no
 		
 		short_reign_opinion_year_mult = 1
 	}
@@ -1226,6 +1246,7 @@ elven_pantheon_group = {
 		matrilineal_marriages = yes
 		feminist = yes
 		can_retire_to_monastery = yes
+		can_demand_religious_conversion = no
 		
 		short_reign_opinion_year_mult = 1.5
 	}
@@ -1261,6 +1282,7 @@ elven_pantheon_group = {
 		raised_vassal_opinion_loss = no
 		feminist = yes
 		can_retire_to_monastery = yes
+		can_demand_religious_conversion = no
 		
 		short_reign_opinion_year_mult = 1
 	}
@@ -1336,6 +1358,7 @@ drow_pantheon = {
 		raised_vassal_opinion_loss = no
 		feminist = yes
 		can_retire_to_monastery = yes
+		can_demand_religious_conversion = no
 		allow_looting = yes
 		short_reign_opinion_year_mult = 1
 	}
@@ -1398,10 +1421,11 @@ dwarven_pantheon_group = {
 		}
 		
 		has_heir_designation = yes
-		can_grant_claim = yes
+		can_grant_claim = no
 		can_call_crusade = no
 		matrilineal_marriages = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
+		can_demand_religious_conversion = no
 		defensive_attrition = yes
 	}
 	
@@ -1424,7 +1448,7 @@ dwarven_pantheon_group = {
 		}
 		
 		has_heir_designation = yes
-		can_grant_claim = yes
+		can_grant_claim = no
 		can_call_crusade = no
 		matrilineal_marriages = yes
 		can_grant_divorce = yes
@@ -1462,6 +1486,7 @@ dwarven_pantheon_group = {
 		priests_can_marry = yes
 #		can_hold_temples = yes
 		can_excommunicate = no
+		can_demand_religious_conversion = no
 		psc_marriage = no
 		
 		can_retire_to_monastery = yes
@@ -1557,10 +1582,10 @@ goblin_pantheon_group = {
 			key = "OFF_RELIGION"
 		}
 		
-		can_grant_claim = yes
+		can_grant_claim = no
 		can_call_crusade = no
 		matrilineal_marriages = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		allow_looting = yes
 
 		max_consorts = 2
@@ -1617,10 +1642,10 @@ orc_pantheon_group = {
 		}
 		male_temple_holders = yes
 		female_temple_holders = no
-		can_grant_claim = yes
-		can_call_crusade = yes
+		can_grant_claim = no
+		can_call_crusade = no
 		matrilineal_marriages = no
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		allow_looting = yes
 		priests_can_marry = yes
 		priests_can_inherit = yes
@@ -1682,10 +1707,10 @@ monster_group = {
 			key = "OFF_RELIGION"
 		}
 		
-		can_grant_claim = yes
+		can_grant_claim = no
 		can_call_crusade = no
 		matrilineal_marriages = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		allow_looting = yes
 		allow_viking_invasion = no
 		defensive_attrition = yes
@@ -1741,10 +1766,10 @@ draconic_group = {
 		}
 		
 		has_heir_designation = yes
-		can_grant_claim = yes
+		can_grant_claim = no
 		can_call_crusade = no
 		matrilineal_marriages = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		allow_looting = yes
 		max_consorts = 2
 		women_can_take_consorts = yes
@@ -1752,6 +1777,7 @@ draconic_group = {
 		defensive_attrition = yes
 		peace_prestige_loss = yes # Lose Prestige while at peace
 		raised_vassal_opinion_loss = no
+		can_demand_religious_conversion = no
 		aggression = 1.5
 	}
 }
@@ -1849,7 +1875,7 @@ pagan_group = {
 		} 
 
 		crusade_name = GREAT_HOLY_WAR
-		can_call_crusade = yes
+		can_call_crusade = no
 		join_crusade_if_bordering_hostile = yes
 		
 		unit_modifier = {		
@@ -2003,7 +2029,7 @@ pagan_group = {
 			key = "DEF_RELIGION_HOME_TERRITORY"
 		}
 
-		can_call_crusade = yes
+		can_call_crusade = no
 		join_crusade_if_bordering_hostile = yes
 		allow_looting = yes
 		max_consorts = 3
@@ -2135,7 +2161,7 @@ pagan_group = {
 		}
 		
 		female_temple_holders = yes
-		can_call_crusade = yes
+		can_call_crusade = no
 		join_crusade_if_bordering_hostile = yes
 		allow_looting = yes
 		max_consorts = 3
@@ -2257,7 +2283,7 @@ pagan_group = {
 		female_temple_holders = yes
 		
 		short_reign_opinion_year_mult = 2.5
-		can_call_crusade = yes
+		can_call_crusade = no
 		join_crusade_if_bordering_hostile = yes
 
 		religious_clothing_head = 25
@@ -2357,7 +2383,7 @@ pagan_group = {
 		
 		max_consorts = 3
 		women_can_take_consorts = yes
-		can_call_crusade = yes
+		can_call_crusade = no
 		join_crusade_if_bordering_hostile = yes
 		
 		aggression = 2.0 # AI aggression factor
@@ -2472,7 +2498,7 @@ pagan_group = {
 		
 		priests_can_marry = yes
 		female_temple_holders = yes
-		can_call_crusade = yes
+		can_call_crusade = no
 		join_crusade_if_bordering_hostile = yes
 		allow_looting = yes
 		max_consorts = 3
@@ -2590,7 +2616,7 @@ atheist_group = {
 		can_grant_claim = no
 		can_call_crusade = no
 		matrilineal_marriages = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		female_temple_holders = yes
 		feminist = yes
 		priests_can_inherit = yes
@@ -2634,7 +2660,7 @@ atheist_group = {
 		priest_title = ENTROPIST
 		priests_can_marry = yes
 		matrilineal_marriages = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		female_temple_holders = yes
 		feminist = yes
 		priests_can_inherit = yes
@@ -2676,7 +2702,7 @@ atheist_group = {
 		}
 		
 		has_heir_designation = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 		priests_can_inherit = no
 		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
 		female_temple_holders = yes
@@ -2694,6 +2720,7 @@ atheist_group = {
 		
 		uses_decadence = no
 		uses_jizya_tax = no
+		can_demand_religious_conversion = no
 		
 		intermarry = ten_thousand_gods
 		intermarry = qisma
@@ -2738,7 +2765,7 @@ aberration_group = {
 		allow_looting = yes
 		max_consorts = 1
 		women_can_take_consorts = yes
-		can_grant_divorce = yes
+		can_grant_divorce = no
 				
 		religious_clothing_head = 3
 		religious_clothing_priest = 7
@@ -2792,7 +2819,7 @@ aberration_group = {
 		feminist = yes
 		priests_can_inherit = yes
 		#can_hold_temples = yes
-		can_excommunicate = yes
+		can_excommunicate = no
 		
 		peace_prestige_loss = yes # Lose Prestige while at peace
 		raised_vassal_opinion_loss = no
@@ -2822,7 +2849,7 @@ aberration_group = {
 		}
 		has_heir_designation = yes
 		can_grant_claim = yes
-		can_call_crusade = yes
+		can_call_crusade = no
 		matrilineal_marriages = yes
 		can_grant_divorce = yes
 		allow_looting = yes

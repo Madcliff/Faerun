@@ -1,0 +1,1045 @@
+###Druids###
+temple = {
+###Druid Circles###
+	tp_druid_circle = {
+		desc = tp_druid_circle_desc
+		trigger = {
+			TECH_CONSTRUCTION = 0
+		}
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					z_druid = yes
+					location = {
+						has_building = tp_druid_circle
+					}
+				}
+			}
+		}
+		gold_cost = 50
+		build_time = 365
+		liege_piety = 0.1
+		light_infantry = 25
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 1.0
+	}
+	tp_druid_circle_2 = {
+		desc = tp_druid_circle_2_desc
+		trigger = { TECH_CONSTRUCTION = 2 }
+		upgrades_from = tp_druid_circle
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = trained_druid
+					trait = journeyman_druid
+					trait = expert_druid
+					trait = master_druid
+					trait = renowned_druid
+					trait = legendary_druid
+					location = {
+						has_building = tp_druid_circle_2
+					}
+				}
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		gold_cost = 100
+		build_time = 365
+		liege_piety = 0.1
+		light_infantry = 25
+		archers = 10
+		retinuesize = 25
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	tp_druid_circle_3 = {
+		desc = tp_druid_circle_3_desc
+		trigger = { TECH_CONSTRUCTION = 3 }
+		upgrades_from = tp_druid_circle_2
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = journeyman_druid
+					trait = expert_druid
+					trait = master_druid
+					trait = renowned_druid
+					trait = legendary_druid
+					location = {
+						has_building = tp_druid_circle_3
+					}
+				}
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		gold_cost = 150
+		build_time = 365
+		liege_piety = 0.2
+		light_infantry = 50
+		archers = 25
+		retinuesize = 30
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	tp_druid_circle_4 = {
+		desc = tp_druid_circle_4_desc
+		trigger = { TECH_CONSTRUCTION = 4 }
+		upgrades_from = tp_druid_circle_3
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = expert_druid
+					trait = master_druid
+					trait = renowned_druid
+					trait = legendary_druid
+					location = {
+						has_building = tp_druid_circle_4
+					}
+				}
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		gold_cost = 200
+		build_time = 365
+		liege_piety = 0.2
+		light_infantry = 75
+		archers = 50
+		retinuesize = 35
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	tp_druid_circle_5 = {
+		desc = tp_druid_circle_5_desc
+		trigger = { TECH_CONSTRUCTION = 5 }
+		upgrades_from = tp_druid_circle_4
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = master_druid
+					trait = renowned_druid
+					trait = legendary_druid
+					location = {
+						has_building = tp_druid_circle_5
+					}
+				}
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		gold_cost = 250
+		build_time = 365
+		liege_piety = 0.3
+		light_infantry = 100
+		archers = 50
+		retinuesize = 40
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	tp_druid_circle_6 = {
+		desc = tp_druid_circle_6_desc
+		trigger = { TECH_CONSTRUCTION = 6 }
+		upgrades_from = tp_druid_circle_5
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = renowned_druid
+					trait = legendary_druid
+					location = {
+						has_building = tp_druid_circle_6
+					}
+				}
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		gold_cost = 300
+		build_time = 365
+		liege_piety = 0.3
+		light_infantry = 150
+		archers = 75
+		retinuesize = 45
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	tp_druid_circle_7 = {
+		desc = tp_druid_circle_7_desc
+		trigger = { TECH_CONSTRUCTION = 7 }
+		upgrades_from = tp_druid_circle_6
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = legendary_druid
+					location = {
+						has_building = tp_druid_circle_7
+					}
+				}
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		gold_cost = 300
+		build_time = 365
+		liege_piety = 0.3
+		church_opinion = 5
+		light_infantry = 200
+		archers = 100
+		heavy_infantry = 50
+		knights = 25
+		retinuesize = 50
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+}
+tribal = {
+	tb_beastlairs_1 = {
+		desc = tb_beastlairs_1_desc
+		trigger = { TECH_RECRUITMENT = 0 }
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					z_druid = yes
+					location = {
+						has_building = tb_beastlairs_1
+					}
+				}
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		piety_cost = 25
+		build_time = 365
+		light_infantry = 25
+		retinuesize = 50
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 1.0
+	}
+	tb_beastlairs_2 = {
+		desc = tb_beastlairs_2_desc
+		trigger = { TECH_RECRUITMENT = 2 }
+		upgrades_from = tb_beastlairs_1
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = trained_druid
+					trait = journeyman_druid
+					trait = expert_druid
+					trait = master_druid
+					trait = renowned_druid
+					trait = legendary_druid
+					location = {
+						has_building = tb_beastlairs_2
+					}
+				}
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		piety_cost = 50
+		build_time = 365
+		light_infantry = 20
+		retinuesize = 50
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 1.0
+	}
+	tb_beastlairs_3 = {
+		desc = tb_beastlairs_3_desc
+		trigger = { TECH_RECRUITMENT = 3 }
+		upgrades_from = tb_beastlairs_2
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = journeyman_druid
+					trait = expert_druid
+					trait = master_druid
+					trait = renowned_druid
+					trait = legendary_druid
+					location = {
+						has_building = tb_beastlairs_3
+					}
+				}
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		piety_cost = 75
+		build_time = 365
+		light_infantry = 15
+		retinuesize = 50
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	tb_beastlairs_4 = {
+		desc = tb_beastlairs_4_desc
+		trigger = { TECH_RECRUITMENT = 4 }
+		upgrades_from = tb_beastlairs_3
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = expert_druid
+					trait = master_druid
+					trait = renowned_druid
+					trait = legendary_druid
+					location = {
+						has_building = tb_beastlairs_4
+					}
+				}
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		piety_cost = 100
+		build_time = 365
+		light_infantry = 10
+		retinuesize = 60
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	tb_beastlairs_5 = {
+		desc = tb_beastlairs_5_desc
+		trigger = { TECH_RECRUITMENT = 5 }
+		upgrades_from = tb_beastlairs_4
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = master_druid
+					trait = renowned_druid
+					trait = legendary_druid
+					location = {
+						has_building = tb_beastlairs_5
+					}
+				}
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		piety_cost = 125
+		build_time = 365
+		liege_prestige = 0.05
+		light_infantry = 50
+		archers = 25
+		retinuesize = 60
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	tb_beastlairs_6 = {
+		desc = tb_beastlairs_6_desc
+		trigger = { TECH_RECRUITMENT = 6 }
+		upgrades_from = tb_beastlairs_5
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = renowned_druid
+					trait = legendary_druid
+					location = {
+						has_building = tb_beastlairs_6
+					}
+				}
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		piety_cost = 150
+		build_time = 365
+		liege_prestige = 0.1
+		light_infantry = 75
+		archers = 50
+		retinuesize = 70
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	tb_beastlairs_7 = {
+		desc = tb_beastlairs_7_desc
+		trigger = { TECH_RECRUITMENT = 7 }
+		upgrades_from = tb_beastlairs_6
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_druid = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = legendary_druid
+					location = {
+						has_building = tb_beastlairs_7
+					}
+				}
+				NOR = {
+					culture = monster
+				}
+			}
+		}
+		piety_cost = 175
+		build_time = 365
+		liege_prestige = 0.15
+		light_infantry = 100
+		archers = 75
+		heavy_infantry = 25
+		retinuesize = 75
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+}
+hospital = {
+	hospital_herbalist = {
+		desc = hospital_herbalist_desc
+		trigger = { TECH_RELIGIOUS_CUSTOMS = 1 }
+		potential = {
+			FROM = {
+				OR = {
+					z_druid = yes
+					location = {
+						hospital_has_building = hospital_herbalist
+					}
+				}
+			}
+		}
+		piety_cost = 50
+		build_time = 185
+		disease_defence = 0.05
+		liege_piety = 0.10
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	hospital_herbalist_2 = {
+		desc = hospital_herbalist_2_desc
+		trigger = { TECH_RELIGIOUS_CUSTOMS = 2 }
+		prerequisites = { 
+			hospital_building_1
+		}
+		upgrades_from = hospital_herbalist
+		potential = {
+			FROM = {
+				OR = {
+					trait = expert_druid
+					trait = master_druid
+					trait = renowned_druid
+					trait = legendary_druid
+					location = {
+						hospital_has_building = hospital_herbalist_2
+					}
+				}
+			}
+		}
+		piety_cost = 100
+		build_time = 185
+		disease_defence = 0.1
+		liege_piety = 0.10
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	hospital_herbalist_3 = {
+		desc = hospital_herbalist_3_desc
+		trigger = { TECH_RELIGIOUS_CUSTOMS = 3 }
+		prerequisites = { 
+			hospital_building_2
+		}
+		upgrades_from = hospital_herbalist_2
+		potential = {
+			FROM = {
+				OR = {
+					trait = renowned_druid
+					trait = legendary_druid
+					location = {
+						hospital_has_building = hospital_herbalist_3
+					}
+				}
+			}
+		}
+		piety_cost = 150
+		build_time = 365
+		disease_defence = 0.15
+		liege_piety = 0.15
+		church_opinion = 5
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+}
+###Rogues###
+city = {
+###Thieves Guild###
+	ct_thieves_guild = {
+		desc = ct_thieves_guild_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 1 }
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_rogue = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					z_rogue = yes
+					location = {
+						has_building = ct_thieves_guild
+					}
+				}
+			}
+		}
+		gold_cost = 50
+		build_time = 365
+		tax_income = 1
+		light_infantry = 25
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	ct_thieves_guild_2 = {
+		desc = ct_thieves_guild_2_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		upgrades_from = ct_thieves_guild
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_rogue = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = trained_rogue
+					trait = journeyman_rogue
+					trait = expert_rogue
+					trait = master_rogue
+					trait = renowned_rogue
+					trait = legendary_rogue
+				location = {
+					has_building = ct_thieves_guild_2
+					}
+				}
+			}
+		}
+		gold_cost = 100
+		build_time = 365
+		tax_income = 1
+		light_infantry = 50
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	ct_thieves_guild_3 = {
+		desc = ct_thieves_guild_3_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 3 }
+		upgrades_from = ct_thieves_guild_2
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_rogue = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = journeyman_rogue
+					trait = expert_rogue
+					trait = master_rogue
+					trait = renowned_rogue
+					trait = legendary_rogue
+					location = {
+						has_building = ct_thieves_guild_3
+					}
+				}
+			}
+		}
+		gold_cost = 150
+		build_time = 365
+		tax_income = 2
+		light_infantry = 50
+		archers = 25
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	ct_thieves_guild_4 = {
+		desc = ct_thieves_guild_4_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		upgrades_from = ct_thieves_guild_3
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_rogue = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = expert_rogue
+					trait = master_rogue
+					trait = renowned_rogue
+					trait = legendary_rogue
+					location = {
+						has_building = ct_thieves_guild_4
+					}
+				}
+			}
+		}
+		gold_cost = 200
+		build_time = 365
+		tax_income = 3
+		light_infantry = 75
+		archers = 50
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	ct_thieves_guild_5 = {
+		desc = ct_thieves_guild_5_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 5 }
+		upgrades_from = ct_thieves_guild_4
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_rogue = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = master_rogue
+					trait = renowned_rogue
+					trait = legendary_rogue
+					location = {
+						has_building = ct_thieves_guild_5
+					}
+				}
+			}
+		}
+		gold_cost = 225
+		build_time = 365
+		tax_income = 3
+		light_infantry = 100
+		archers = 75
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	ct_thieves_guild_6 = {
+		desc = ct_thieves_guild_6_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 6 }
+		upgrades_from = ct_thieves_guild_5
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_rogue = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = renowned_rogue
+					trait = legendary_rogue
+					location = {
+						has_building = ct_thieves_guild_6
+					}
+				}
+			}
+		}
+		gold_cost = 250
+		build_time = 365
+		tax_income = 4
+		light_infantry = 125
+		archers = 100
+		heavy_infantry = 50
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	ct_thieves_guild_7 = {
+		desc = ct_thieves_guild_7_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 7 }
+		upgrades_from = ct_thieves_guild_6
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_rogue = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = legendary_rogue
+					location = {
+						has_building = ct_thieves_guild_6
+					}
+				}
+			}
+		}
+		gold_cost = 300
+		build_time = 365
+		tax_income = 5
+		light_infantry = 125
+		archers = 100
+		heavy_infantry = 50
+		light_cavalry = 25
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	ct_druids_oasis = {
+		desc = ct_druids_oasis_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 3 }
+		potential = {
+			terrain = desert
+			FROM = {
+				OR = {
+					trait = legendary_druid
+					location = {
+						has_building = ct_druids_oasis
+					}
+				}
+			}
+		}
+		gold_cost = 400
+		build_time = 567
+		tax_income = 5
+		liege_piety = 0.05
+		liege_prestige = 0.05
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+}
+family_palace = {
+###Rogues Den###
+	fp_rogues_den = {
+		desc = fp_rogues_den_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 2 }
+		prerequisites = { fp_vault_1 }
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_rogue = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = expert_rogue
+					trait = master_rogue
+					trait = renowned_rogue
+					trait = legendary_rogue
+					location = {
+						has_building = fp_rogues_den
+					}
+				}
+			}
+		}
+		gold_cost = 150
+		build_time = 365
+		tax_income = 2.5
+		light_cavalry = 50
+		knights = 15
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	fp_rogues_den_2 = {
+		desc = fp_rogues_den_2_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 3 }
+		prerequisites = { fp_vault_2 }
+		upgrades_from = fp_rogues_den
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_rogue = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = master_rogue
+					trait = renowned_rogue
+					trait = legendary_rogue
+					location = {
+							has_building = fp_rogues_den_2
+					}
+				}
+			}
+		}
+		gold_cost = 175
+		build_time = 365
+		tax_income = 3
+		light_cavalry = 75
+		knights = 30
+		intrigue = 1
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	fp_rogues_den_3 = {
+		desc = fp_rogues_den_3_desc
+		trigger = { TECH_CITY_CONSTRUCTION = 4 }
+		prerequisites = { fp_vault_3 }
+		upgrades_from = fp_rogues_den_2
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_rogue = yes
+				}
+			}
+		}
+		potential = {
+			FROM = {
+				OR = {
+					trait = renowned_rogue
+					trait = legendary_rogue
+					location = {
+							has_building = fp_rogues_den_3
+					}
+				}
+			}
+		}
+		gold_cost = 200
+		build_time = 365
+		tax_income = 3.5
+		light_cavalry = 100
+		knights = 45
+		intrigue = 2
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+}
+trade_post = {
+###Highwaymen###
+	tr_highwaymen_1 = {
+		desc = tr_highwaymen_1_desc
+		trigger = { TECH_TRADE_PRACTICES = 1 }
+		prerequisites = { tr_garrison_1 }
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_rogue = yes
+				}
+			}
+		}
+		potential = {
+			port = yes
+			FROM = {
+				is_patrician = yes
+				OR = {
+					z_rogue = yes
+					location = {
+						trade_post_has_building = tr_highwaymen_1
+					}
+				}
+			}
+		}
+		gold_cost = 50
+		build_time = 185
+		garrison_size = 1.0
+		tax_income = 1
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	tr_highwaymen_2 = {
+		desc = tr_highwaymen_2_desc
+		trigger = { TECH_TRADE_PRACTICES = 2 }
+		prerequisites = { tr_enclave_1 }
+		upgrades_from = tr_highwaymen_1
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_rogue = yes
+				}
+			}
+		}
+		potential = {
+			port = yes
+			FROM = {
+				is_patrician = yes
+				OR = {
+					trait = expert_rogue
+					trait = master_rogue
+					trait = renowned_rogue
+					trait = legendary_rogue
+					location = {
+						trade_post_has_building = tr_highwaymen_2
+					}
+				}
+			}
+		}
+		gold_cost = 100
+		build_time = 365
+		garrison_size = 2.0
+		tax_income = 2
+		fort_level = 1
+		retinuesize = 75
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+	tr_highwaymen_3 = {
+		desc = tr_highwaymen_3_desc
+		trigger = { TECH_TRADE_PRACTICES = 2 }
+		prerequisites = { 
+			tr_enclave_2
+			tr_garrison_2
+		}
+		upgrades_from = tr_highwaymen_2
+		is_active_trigger = {
+			hidden_tooltip = {
+				FROM = {
+					z_rogue = yes
+				}
+			}
+		}
+		potential = {
+			port = yes
+			FROM = {
+				is_patrician = yes
+				OR = {
+					trait = renowned_rogue
+					trait = legendary_rogue
+					location = {
+						trade_post_has_building = tr_highwaymen_3
+					}
+				}
+			}
+		}
+		gold_cost = 150
+		build_time = 365
+		garrison_size = 3.0
+		tax_income = 3
+		fort_level = 2
+		retinuesize = 150
+		ai_creation_factor = 100
+		add_number_to_name = no
+		extra_tech_building_start = 10.0
+	}
+}
