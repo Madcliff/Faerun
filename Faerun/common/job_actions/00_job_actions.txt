@@ -515,16 +515,24 @@ action_inquisition = {
 	attribute = learning
 	
 	potential = {
+		NOR = {
+			FROM = { government = magocratic_feudal_government }
+			FROM = { government = democratic_feudal_government }
+			FROM = { government = celestial_government }
+			FROM = { government = chinese_imperial_government }
+			FROM = { government = celestial_bureaucracy }
+			}
+        liege = { religion = PREVPREV } # Disabled proselytize if religion mismatch with liege to prevent AI from shooting itself in the foot
 	}
 	
 	trigger = {
 		num_of_settlements = 1
-		NAND = {
-			FROM = { job_spiritual = { has_character_modifier = spiritual_refused_pagans } }  # See Event ZE.5040
-			owner = { AND = { religion_group = pagan_group NOT = { religion = FROM } } }
-		}
+		# NAND = {
+			# FROM = { job_spiritual = { has_character_modifier = spiritual_refused_pagans } }  # See Event ZE.5040
+			# owner = { AND = { religion_group = pagan_group NOT = { religion = FROM } } }
+		# }
 		OR = {
-			proselytize_convert_independent_trigger = yes
+			# proselytize_convert_independent_trigger = yes
 			any_province_lord = {
 				OR = {
 					character = FROM
@@ -562,15 +570,15 @@ action_inquisition = {
 		color = { 0 255 0 }
 	}
 	
-	display_on_map = {
-		tooltip = JOB_PROSELYTIZE_CONVERT_INDEPENDENT
-		trigger = {
-			proselytize_convert_independent_trigger = yes
-		}
-		color = { 255 35 35 }
-	}
+	# display_on_map = {
+		# tooltip = JOB_PROSELYTIZE_CONVERT_INDEPENDENT
+		# trigger = {
+			# proselytize_convert_independent_trigger = yes
+		# }
+		# color = { 255 35 35 }
+	# }
 
-	events = { 900 901 902 903 }
+	events = { 900 901 902 }
 }
 
 action_improve_rel_relations = {
@@ -579,6 +587,8 @@ action_improve_rel_relations = {
 	potential = {
 		FROM = {
 			NOT = { religion_group = zakharan_group }
+			NOT = { government = magocratic_feudal_government }
+			NOT = { government = democratic_feudal_government }
 		}
 	}
 	
@@ -619,7 +629,7 @@ action_advance_cul_tech = {
 	
 	tech_growth_modifier_culture = 0.05
 	
-	events = { 926 927 }
+	events = { 926 } # removed 927: Lord Spiritual = heretic 
 }
 
 action_build_zeal = {
@@ -661,7 +671,14 @@ action_charity = {
 	attribute = learning
 	
 	potential = {
+		OR = {
 		FROM = { religion_group = zakharan_group }
+		FROM = { government = magocratic_feudal_government }
+		FROM = { government = democratic_feudal_government }
+		FROM = { government = celestial_government }
+		FROM = { government = chinese_imperial_government }
+		FROM = { government = celestial_bureaucracy }
+		}
 	}
 	
 	trigger = {
@@ -673,4 +690,22 @@ action_charity = {
 	local_revolt_risk = -0.01
 	
 	events = { 20040 20043 20048 20050 }
+}
+
+# Magocratic and Commonwealth Only
+action_local_leaders = {
+	attribute = learning
+
+	potential = {
+		OR = {
+		FROM = { government = magocratic_feudal_government }
+		FROM = { government = democratic_feudal_government }
+		}
+	}
+
+	liege_modifier = local_leader_liege_mod
+
+	offmap = yes
+	
+	events = { localleaders.1 localleaders.5 } 
 }

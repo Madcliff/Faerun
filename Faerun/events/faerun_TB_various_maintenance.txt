@@ -1,4 +1,4 @@
-namespace = govmaint
+namespace = govmaint # Keeping the namespace to avoid problems
 
 character_event = {
 	id = govmaint.1
@@ -345,6 +345,52 @@ character_event = {
 					set_government_type = tribal_government
 				}
 			}
+		}
+	}
+}
+
+character_event = {
+	id = govmaint.2
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+		is_save_game = no
+	}
+	
+	immediate = {
+		trigger_switch = {
+			on_trigger = date
+			1370.1.1 = {
+				set_global_flag = daemonfey_released
+			}
+		}
+	}
+}
+
+character_event = {
+	id = govmaint.2
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = undead_court
+	}
+	
+	immediate = {
+		any_demesne_province = {
+			religion = ROOT
+			add_province_modifier = {
+				name = undead_province
+				duration = -1
+			}
+		}
+		add_character_modifier = {
+			name = undead_realm_lord
+			duration = -1
 		}
 	}
 }

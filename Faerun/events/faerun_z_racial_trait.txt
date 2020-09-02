@@ -4704,6 +4704,7 @@ character_event = {
 		remove_trait = rd_water_genasi
 		remove_trait = rd_half_feyri
 		remove_trait = rd_half_giant
+		character_event = { id = KekvitMaint.6 }
 	}
 }
 
@@ -4801,6 +4802,7 @@ character_event = {
 			graphical_culture = trollgfx
 			graphical_culture = fomoriangfx
 		}
+		NOT = { culture = mountain_giant }
 	}
 	
 	immediate = {

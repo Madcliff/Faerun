@@ -98,18 +98,19 @@ decisions = {
 				}
 			}
 			in_battle = yes
-			combat = {
-				enemy = {
-					OR = {
-						trait = undead
-						trait = lich
-						trait = lich_baelnorn
-						trait = vampire
-						trait = vampire_spawn
-						any_controlled_unit = {
-							troops = {
-								who = undead_troops
-								value > 0
+			custom_tooltip = {
+				text = HASUNDEADARMY
+				combat = {
+					enemy = {
+						any_unit_leader = {
+							OR = {
+								is_undead = yes
+								any_controlled_unit = {
+									troops = {
+										who = undead_troops
+										value > 0
+									}
+								}
 							}
 						}
 					}
@@ -131,28 +132,10 @@ decisions = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					combat = {
-						enemy = {
-							any_controlled_unit = {
-								troops = {
-									who = undead_troops
-									value > 0
-								}
-							}
-						}
-					}
-				}
-				combat = {
-					enemy = {
+			combat = {
+				enemy = {
+					any_unit_leader = {
 						combat = {
-							#limit = {
-							#	troops = {
-							#		who = undead_troops
-							#		value > 0
-							#	}
-							#}
 							damage_unit = {
 								type = undead_troops
 								percentage = 33
@@ -164,46 +147,35 @@ decisions = {
 									percentage = 33
 								}
 							}
-							random = {
-								chance = 33
-								damage_unit = {
-									type = undead_troops
-									percentage = 33
-								}
-							}
 						}
 					}
 				}
 			}
-			if = {
-				limit = {
-					combat = {
-						enemy = {
-							ai = no
-						}
-					}
-				}
-				combat = {
-					enemy = {
+			combat = {
+				enemy = {
+					any_unit_leader = {
 						repeat_event = { id = spellaux.3 }
 					}
 				}
 			}
 			combat = {
 				enemy = {
-					spell_resistance_check = yes
-					if = {
-						limit = {
-							NOT = { has_character_modifier = disrupt_undead_mod }
-						}
-						add_character_modifier = {
-							name = disrupt_undead_mod
-							months = 2
-						}
-						opinion = {
-							modifier = cast_spell_on_me
-							who = ROOT
-							years = 1
+					any_unit_leader = {
+						if = {
+							limit = {
+								NOT = { has_character_modifier = disrupt_undead_mod }
+								is_undead = yes
+							}
+							spell_resistance_check = yes
+							add_character_modifier = {
+								name = disrupt_undead_mod
+								months = 2
+							}
+							opinion = {
+								modifier = cast_spell_on_me
+								who = ROOT
+								years = 1
+							}
 						}
 					}
 				}
@@ -540,14 +512,16 @@ decisions = {
 				factor = 10
 				in_battle = yes
 				enemy = {
-					OR = {
-						z_wizard = yes
-						z_sorcerer = yes
-						z_warlock = yes
-						z_paladin = yes
-						z_ranger = yes
-						z_cleric = yes
-						z_bard = yes
+					any_unit_leader = {
+						OR = {
+							z_wizard = yes
+							z_sorcerer = yes
+							z_warlock = yes
+							z_paladin = yes
+							z_ranger = yes
+							z_cleric = yes
+							z_bard = yes
+						}
 					}
 				}
 			}
@@ -1271,19 +1245,25 @@ decisions = {
 					}
 				}
 			}
-			spawn_unit = {
-				province = closest_to_capital
-				earmark = wiz_lesser_demons
-				troops = {
-					archers = { 300 300 }
-					light_infantry = { 700 700 }
-					heavy_infantry = { 100 100 }
+			location = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						home = PREV
+						owner = THIS
+						earmark = wiz_lesser_demons
+						troops = {
+							archers = { 300 300 }
+							light_infantry = { 700 700 }
+							heavy_infantry = { 100 100 }
+						}
+						cannot_inherit = yes
+						attrition = 0.4
+						maintenance_multiplier = 0.1
+						can_toggle_looting = no
+						reinforces = no
+					}
 				}
-				cannot_inherit = yes
-				attrition = 0.4
-				maintenance_multiplier = 0.1
-				can_toggle_looting = no
-				reinforces = no
 			}
 			hidden_tooltip = { character_event = { id = spellaux.19 months = 5 } }
 		}
@@ -1361,17 +1341,23 @@ decisions = {
 					}
 				}
 			}
-			spawn_unit = {
-				province = closest_to_capital
-				earmark = wiz_elementals
-				troops = {
-					elemental_troops = { 600 600 }
+			location = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						home = PREV
+						owner = THIS
+						earmark = wiz_elementals
+						troops = {
+							elemental_troops = { 600 600 }
+						}
+						cannot_inherit = yes
+						attrition = 0
+						maintenance_multiplier = 0
+						can_toggle_looting = no
+						reinforces = no
+					}
 				}
-				cannot_inherit = yes
-				attrition = 0
-				maintenance_multiplier = 0
-				can_toggle_looting = no
-				reinforces = no
 			}
 			hidden_tooltip = { character_event = { id = spellaux.40 months = 5 } }
 		}
@@ -1642,9 +1628,9 @@ decisions = {
 				}
 			}
 			custom_tooltip = {
-				text = HAS17SPELLPOINTS
+				text = HAS23SPELLPOINTS
 				hidden_tooltip = {
-					check_variable = { which = wizspellpoints value = 17 }
+					check_variable = { which = wizspellpoints value = 23 }
 				}
 			}
 			custom_tooltip = {
@@ -1659,7 +1645,7 @@ decisions = {
 		}
 		effect = {
 			set_character_flag = spell_incendiary_cloud_cooldown
-			hidden_tooltip = { change_variable = { which = wizspellpoints value = -17 } }
+			hidden_tooltip = { change_variable = { which = wizspellpoints value = -23 } }
 			hidden_tooltip = {
 				if = {
 					limit = {
@@ -1673,24 +1659,19 @@ decisions = {
 				}
 			}
 			hidden_tooltip = {
-				if = {
-					limit = {
-						combat = {
-							enemy = {
-								ai = no
-							}
-						}
-					}
-					combat = {
-						enemy = {
+				combat = {
+					enemy = {
+						any_unit_leader = {
 							repeat_event = { id = spellaux.30 }
 						}
 					}
 				}
 				combat = {
 					enemy = {
-						combat = {
-							damage_unit = { percentage = 0.15 } # Might be too much?
+						any_unit_leader = {
+							combat = {
+								damage_unit = { percentage = 15 }
+							}
 						}
 					}
 				}
@@ -2031,8 +2012,9 @@ decisions = {
 				}
 			}
 			any_courtier = {
+				limit = { NOT = { character = ROOT } }
 				spell_resistance_check_prev = yes
-				reveal_plot = ROOT
+				reveal_plot_w_message = yes
 				opinion = {
 					modifier = cast_spell_on_me
 					who = ROOT
@@ -2291,24 +2273,19 @@ decisions = {
 				}
 			}
 			hidden_tooltip = {
-				if = {
-					limit = {
-						combat = {
-							enemy = {
-								ai = no
-							}
-						}
-					}
-					combat = {
-						enemy = {
+				combat = {
+					enemy = {
+						any_unit_leader = {
 							repeat_event = { id = spellaux.24 }
 						}
 					}
 				}
 				combat = {
 					enemy = {
-						combat = {
-							damage_unit = { percentage = 0.05 }
+						any_unit_leader = {
+							combat = {
+								damage_unit = { percentage = 5 }
+							}
 						}
 					}
 				}
@@ -2395,7 +2372,9 @@ decisions = {
 			}
 			in_battle = yes
 			enemy = {
-				is_alive = yes # Just to make sure that there *is* a leader
+				any_unit_leader = {
+					is_alive = yes # Just to make sure that there *is* a leader
+				}
 			}
 		}
 		effect = {
@@ -2415,57 +2394,41 @@ decisions = {
 			}
 			combat = {
 				enemy = {
-					random_list = {
-						10 = {
-							modifier = {
-								factor = 0
-								has_injury_trigger = yes
+					random_unit_leader = {
+						random_list = {
+							10 = {
+								modifier = {
+									factor = 0
+									has_injury_trigger = yes
+								}
+								set_character_flag = lightning_wound
 							}
-							set_character_flag = lightning_wound
-						}
-						5 = {
-							modifier = {
-								factor = 0
-								OR = {
-									trait = maimed
-									AND = {
-										trait = one_eyed
-										trait = one_handed 
-										trait = one_legged 
-										trait = disfigured 
-										trait = mangled
+							5 = {
+								modifier = {
+									factor = 0
+									OR = {
+										trait = maimed
+										AND = {
+											trait = one_eyed
+											trait = one_handed 
+											trait = one_legged 
+											trait = disfigured 
+											trait = mangled
+										}
 									}
 								}
+								set_character_flag = lightning_maim
 							}
-							set_character_flag = lightning_maim
+							1 = {
+								set_character_flag = lightning_death
+							}
 						}
-						1 = {
-							set_character_flag = lightning_death
+						repeat_event = { id = spellaux.25 }
+						opinion = {
+							modifier = cast_spell_on_me
+							who = ROOT
+							years = 1
 						}
-					}
-					repeat_event = { id = spellaux.25 }
-				}
-			}
-			if = {
-				limit = {
-					combat = {
-						enemy = {
-							ai = no
-						}
-					}
-				}
-				combat = {
-					enemy = {
-						repeat_event = { id = spellaux.3 }
-					}
-				}
-			}
-			combat = {
-				enemy = {
-					opinion = {
-						modifier = cast_spell_on_me
-						who = ROOT
-						years = 1
 					}
 				}
 			}
@@ -2526,9 +2489,9 @@ decisions = {
 				}
 			}
 			custom_tooltip = {
-				text = HAS17SPELLPOINTS
+				text = HAS23SPELLPOINTS
 				hidden_tooltip = {
-					check_variable = { which = wizspellpoints value = 17 }
+					check_variable = { which = wizspellpoints value = 23 }
 				}
 			}
 			custom_tooltip = {
@@ -2543,7 +2506,7 @@ decisions = {
 		}
 		effect = {
 			set_character_flag = spell_chain_lightning_cooldown
-			hidden_tooltip = { change_variable = { which = wizspellpoints value = -17 } }
+			hidden_tooltip = { change_variable = { which = wizspellpoints value = -23 } }
 			hidden_tooltip = {
 				if = {
 					limit = {
@@ -2557,24 +2520,13 @@ decisions = {
 				}
 			}
 			hidden_tooltip = {
-				if = {
-					limit = {
-						combat = {
-							enemy = {
-								ai = no
-							}
-						}
-					}
-					combat = {
-						enemy = {
-							repeat_event = { id = spellaux.31 }
-						}
-					}
-				}
 				combat = {
 					enemy = {
+						any_unit_leader = {
+							repeat_event = { id = spellaux.31 }
+						}
 						combat = {
-							damage_unit = { percentage = 0.15 } # Might be too much
+							damage_unit = { percentage = 15 }
 						}
 					}
 				}
@@ -2620,9 +2572,9 @@ decisions = {
 				}
 			}
 			custom_tooltip = {
-				text = HAS17SPELLPOINTS
+				text = HAS23SPELLPOINTS
 				hidden_tooltip = {
-					check_variable = { which = wizspellpoints value = 17 }
+					check_variable = { which = wizspellpoints value = 23 }
 				}
 			}
 			custom_tooltip = {
@@ -2637,7 +2589,7 @@ decisions = {
 		}
 		effect = {
 			set_character_flag = spell_maddening_darkness_cooldown
-			hidden_tooltip = { change_variable = { which = wizspellpoints value = -17 } }
+			hidden_tooltip = { change_variable = { which = wizspellpoints value = -23 } }
 			hidden_tooltip = {
 				if = {
 					limit = {
@@ -2651,24 +2603,13 @@ decisions = {
 				}
 			}
 			hidden_tooltip = {
-				if = {
-					limit = {
-						combat = {
-							enemy = {
-								ai = no
-							}
-						}
-					}
-					combat = {
-						enemy = {
-							repeat_event = { id = spellaux.32 }
-						}
-					}
-				}
 				combat = {
 					enemy = {
-						combat = {
-							damage_unit_morale = 0.15 # Might be too much
+						any_unit_leader = {
+							repeat_event = { id = spellaux.32 }
+							combat = {
+								damage_unit_morale = 30 # It's not clear exactly how morale works for a unit.
+							}
 						}
 					}
 				}
@@ -2887,17 +2828,23 @@ decisions = {
 					}
 				}
 			}
-			spawn_unit = {
-				province = closest_to_capital
-				earmark = wiz_illusions
-				troops = {
-					illusory_troops = { 800 800 }
+			location = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						home = PREV
+						owner = THIS
+						earmark = wiz_illusions
+						troops = {
+							illusory_troops = { 800 800 }
+						}
+						cannot_inherit = yes
+						attrition = 0
+						maintenance_multiplier = 0
+						can_toggle_looting = no
+						reinforces = no
+					}
 				}
-				cannot_inherit = yes
-				attrition = 0
-				maintenance_multiplier = 0
-				can_toggle_looting = no
-				reinforces = no
 			}
 			hidden_tooltip = { character_event = { id = spellaux.27 months = 5 } }
 		}
@@ -2965,9 +2912,9 @@ decisions = {
 				}
 			}
 			custom_tooltip = {
-				text = HAS17SPELLPOINTS
+				text = HAS23SPELLPOINTS
 				hidden_tooltip = {
-					check_variable = { which = wizspellpoints value = 17 }
+					check_variable = { which = wizspellpoints value = 23 }
 				}
 			}
 			custom_tooltip = {
@@ -2982,7 +2929,7 @@ decisions = {
 		}
 		effect = {
 			set_character_flag = spell_weird_cooldown
-			hidden_tooltip = { change_variable = { which = wizspellpoints value = -17 } }
+			hidden_tooltip = { change_variable = { which = wizspellpoints value = -23 } }
 			hidden_tooltip = {
 				if = {
 					limit = {
@@ -2996,24 +2943,13 @@ decisions = {
 				}
 			}
 			hidden_tooltip = {
-				if = {
-					limit = {
-						combat = {
-							enemy = {
-								ai = no
-							}
-						}
-					}
-					combat = {
-						enemy = {
-							repeat_event = { id = spellaux.34 }
-						}
-					}
-				}
 				combat = {
 					enemy = {
-						combat = {
-							damage_unit_morale = 0.15 # Might be too much
+						any_unit_leader = {
+							repeat_event = { id = spellaux.34 }
+							combat = {
+								damage_unit_morale = 30 # See musings on Maddening Darkness
+							}
 						}
 					}
 				}
@@ -3114,17 +3050,23 @@ decisions = {
 					}
 				}
 			}
-			spawn_unit = {
-				province = closest_to_capital
-				earmark = wiz_animate_dead
-				troops = {
-					undead_troops = { 500 500 }
+			location = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						home = PREV
+						owner = THIS
+						earmark = wiz_animate_dead
+						troops = {
+							undead_troops = { 500 500 }
+						}
+						cannot_inherit = yes
+						attrition = 0
+						maintenance_multiplier = 0
+						can_toggle_looting = no
+						reinforces = no
+					}
 				}
-				cannot_inherit = yes
-				attrition = 0
-				maintenance_multiplier = 0
-				can_toggle_looting = no
-				reinforces = no
 			}
 			hidden_tooltip = { character_event = { id = spellaux.37 months = 5 } }
 		}
@@ -3346,7 +3288,29 @@ decisions = {
 			factor = 0 # Just to be sure
 		}
 	}
-	
+	spell_controlweather_fake = { # This is basically a reminder that you have this spell and who you can use it on
+		potential = {
+			ai = no
+			z_wizard = yes
+			has_character_flag = wiz_spellbook_open
+			OR = {
+				has_character_modifier = wiz_transmutation
+				has_character_flag = knows_spell_controlweather
+			}
+		}
+		
+		allow = {
+			always = no
+		}
+		
+		effect = {
+			break = yes # doesn't matter
+		}
+		
+		ai_will_do = {
+			factor = 0 # Just to be sure
+		}
+	}	
 	spell_clone = {
 		ai_check_interval = 50
 		potential = {
@@ -3415,33 +3379,35 @@ decisions = {
 				}
 			}
 			add_trait_wounded_effect = yes
-			export_to_variable = {
-				which = global_clone_health
-				value = base_health
-			}
-			export_to_variable = {
-				which = global_clone_fertility
-				value = fertility
-			}
-			export_to_variable = {
-				which = global_clone_diplomacy
-				value = diplomacy
-			}
-			export_to_variable = {
-				which = global_clone_martial
-				value = martial
-			}
-			export_to_variable = {
-				which = global_clone_stewardship
-				value =	stewardship
-			}
-			export_to_variable = {
-				which = global_clone_intrigue
-				value = intrigue
-			}
-			export_to_variable = {
-				which = global_clone_learning
-				value =	learning
+			hidden_tooltip = {
+				export_to_variable = {
+					which = global_clone_health
+					value = base_health
+				}
+				export_to_variable = {
+					which = global_clone_fertility
+					value = fertility
+				}
+				export_to_variable = {
+					which = global_clone_diplomacy
+					value = diplomacy
+				}
+				export_to_variable = {
+					which = global_clone_martial
+					value = martial
+				}
+				export_to_variable = {
+					which = global_clone_stewardship
+					value =	stewardship
+				}
+				export_to_variable = {
+					which = global_clone_intrigue
+					value = intrigue
+				}
+				export_to_variable = {
+					which = global_clone_learning
+					value =	learning
+				}
 			}
 			create_character = {
 				age = 20
@@ -3462,6 +3428,8 @@ decisions = {
 				fertility = global_clone_fertility
 				health = global_clone_health
 				add_trait = is_clone
+				culture = ROOT
+				religion = ROOT
 				if = {
 					limit = {
 						ROOT = {
@@ -3484,7 +3452,7 @@ decisions = {
 					recalc_succession = yes
 				}
 				copy_traits_of_root = yes
-				tb_graph_culture_racial = yes
+				ROOT = { tb_graph_culture_racial = yes }
 				any_sibling = {
 					limit = {
 						trait = is_clone
@@ -3938,6 +3906,9 @@ targeted_decisions = {
 				text = ONEDISEASECURED
 				hidden_tooltip = {
 					remove_trait = sickly
+					remove_character_modifier = mild_illness
+					remove_character_modifier = severe_illness
+					remove_character_modifier = bedridden_illness
 					if = {
 						limit = {
 							NOT = { has_dlc = "Reapers" }
@@ -4256,7 +4227,6 @@ targeted_decisions = {
 		allow = {
 			FROM = {
 				NOT = { has_character_modifier = burn_path_mod }
-				NOT = { is_foe = ROOT }
 				custom_tooltip = {
 					text = HAS5SPELLPOINTS
 					hidden_tooltip = {
@@ -4700,7 +4670,6 @@ targeted_decisions = {
 			NOT = { trait = lunatic }
 			FROM = {
 				NOT = { has_character_modifier = burn_path_mod }
-				NOT = { is_foe = ROOT }
 				custom_tooltip = {
 					text = HAS20SPELLPOINTS
 					hidden_tooltip = {
@@ -4782,18 +4751,17 @@ targeted_decisions = {
 		
 		potential = {
 			ai = yes
+		}
+		
+		allow = {
 			OR = {
 				is_ruler = yes
 				same_realm = FROM
 			}
-		}
-		
-		allow = {
 			NOT = { is_rival = FROM }
 			NOT = { is_friend = FROM }
 			FROM = {
 				NOT = { has_character_modifier = burn_path_mod }
-				NOT = { is_foe = ROOT }
 				custom_tooltip = {
 					text = HAS15SPELLPOINTS
 					hidden_tooltip = {
@@ -5182,7 +5150,6 @@ targeted_decisions = {
 		allow = {
 			FROM = {
 				NOT = { has_character_modifier = burn_path_mod }
-				NOT = { is_foe = ROOT }
 				custom_tooltip = {
 					text = HAS12SPELLPOINTS
 					hidden_tooltip = {
@@ -5283,7 +5250,6 @@ targeted_decisions = {
 			NOT = { is_incapable = yes }
 			FROM = {
 				NOT = { has_character_modifier = burn_path_mod }
-				NOT = { is_foe = ROOT }
 				custom_tooltip = {
 					text = HAS25SPELLPOINTS
 					hidden_tooltip = {
@@ -5382,7 +5348,6 @@ targeted_decisions = {
 			FROM = {
 				NOT = { has_character_modifier = bestow_curse_mod }
 				NOT = { has_character_modifier = burn_path_mod }
-				NOT = { is_foe = ROOT }
 				custom_tooltip = {
 					text = HAS15SPELLPOINTS
 					hidden_tooltip = {
@@ -5524,7 +5489,7 @@ settlement_decisions = {
 			random_list = {
 				1 = {
 					location = {
-						reduce_disease = 1.0 # *should* remove it completely
+						reduce_disease = -1.0 # *should* remove it completely
 					}
 					hidden_tooltip = {
 						if = {
@@ -6135,5 +6100,290 @@ settlement_decisions = {
 			}
 		}
 	}
-	
+	spell_controlweather = {
+		ai_check_interval = 5
+		filter = all
+		ai_target_filter = all # I really hope this doesn't mess it up
+		
+		from_potential = {
+			z_wizard = yes
+			OR = {
+				has_character_modifier = wiz_transmutation
+				#has_character_flag = knows_spell_controlweather
+			}
+		}
+		potential = {
+			location = { holder_scope = { is_foe = FROM } }
+			OR = {
+				location = {
+					FROM = {
+						at_location = PREV
+					}
+				}
+				location = {
+					any_neighbor_province = {
+						holder_scope = { same_realm = FROM }
+					}
+				}
+				holder_scope = {
+					character = FROM
+				}
+				
+			}
+		}
+		allow = {
+			FROM = {
+				NOT = { has_character_modifier = burn_path_mod }
+				custom_tooltip = {
+					text = HAS20SPELLPOINTS
+					hidden_tooltip = {
+						check_variable = { which = wizspellpoints value = 20 }
+					}
+				}
+				custom_tooltip = {
+					text = MASTERWIZHIGHER
+					hidden_tooltip = {
+						OR = {
+							trait = master_wizard
+							trait = renowned_wizard
+							trait = legendary_wizard
+						}
+					}
+				}
+				custom_tooltip = {
+					text = SPELL_ON_COOLDOWN
+					hidden_tooltip = {
+						OR = {
+							NOT = { has_character_flag = spell_controlweather_cooldown }
+							had_character_flag = { flag = spell_controlweather_cooldown months = 1 }
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			FROM = { set_character_flag = spell_controlweather_cooldown }
+			FROM = { hidden_tooltip = { change_variable = { which = wizspellpoints value = -20 } } }
+			hidden_tooltip = {
+				FROM = {
+					if = {
+						limit = {
+							has_character_modifier = wiz_wild
+						}
+						random = {
+							chance = 15
+							character_event = { id = spellaux.4 }
+							break = yes
+						}
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						location = {
+							holder_scope = {
+								ai = no
+							}
+						}
+					}
+					location = {
+						holder_scope = {
+							opinion = {
+								modifier = cast_spell_on_me
+								who = FROM
+								years = 1
+							}
+							repeat_event = { id = spellaux.39 }
+						}
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						location = {
+							holder_scope = {
+								NOT = {
+									character = FROM
+								}
+							}
+						}
+					}
+					#Insert Control Weather CB here
+				}
+			}
+			location = {
+				if = {
+					limit = {
+						location = {
+							holder_scope = {
+								character = FROM
+							}
+						}
+					}							
+					add_province_modifier = {
+						name = africa_light_rain
+						months = 12
+					}
+                }
+				if = {
+					limit = {
+						location = {
+							holder_scope = {
+								NOT = {
+									character = FROM
+								}
+							}
+						}
+					}							
+					random_list = {
+						1 = {
+							add_province_modifier = {
+								name = africa_heavy_rain
+								months = 3
+							}
+						}
+						1 = {
+							add_province_modifier = {
+								name = africa_drought_risk
+								months = 12
+							}
+						}
+						1 = {
+							add_province_modifier = {
+								name = africa_drought
+								months = 6
+							}
+						}			
+					}
+				}
+				
+				
+			}
+			any_neighbor_independent_ruler = {
+				any_realm_province = {
+					random_list = {
+						1 = {
+							add_province_modifier = {
+								name = africa_heavy_rain
+								months = 3
+							}
+						}
+						1 = {
+							add_province_modifier = {
+								name = africa_drought_risk
+								months = 12
+							}
+						}
+						1 = {
+							add_province_modifier = {
+								name = africa_drought
+								months = 6
+							}
+						}			
+					}
+				}
+				#Insert Control Weather CB here
+				
+			}
+			random = {
+				chance = 50
+				any_neighbor_independent_ruler = {
+					any_realm_province = {
+						random_list = {
+							1 = {
+								add_province_modifier = {
+									name = africa_heavy_rain
+									months = 3
+								}
+							}
+							1 = {
+								add_province_modifier = {
+									name = africa_drought_risk
+									months = 12
+								}
+							}
+							1 = {
+								add_province_modifier = {
+									name = africa_drought
+									months = 6
+								}
+							}			
+						}
+					}
+					#Insert Control Weather CB here
+				}
+			}
+				
+			
+		}
+		ai_will_do = {
+			factor = 0.3
+			modifier = {
+				factor = 10
+				location = {
+					holder_scope = {
+						is_foe = FROM
+					}
+				}
+			}
+			modifier = {
+				factor = 0.1
+				FROM = { trait = kind }
+			}
+			modifier = {
+				factor = 0
+				location = {
+					holder_scope = {
+						is_friend = FROM
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				location = {
+					holder_scope = {
+						opinion = {
+							who = FROM
+							value = 50
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				FROM = { trait = envious }
+			}
+			modifier = {
+				factor = 0.5
+				FROM = { trait = slothful }
+			}
+			modifier = {
+				factor = 10
+				FROM = {
+					OR = {
+						trait = cruel
+						trait = impaler
+					}
+				}
+			}
+			modifier = {
+				factor = 20
+				FROM = { trait = patron_talos }
+			}
+			modifier = {
+				factor = 20
+				FROM = { trait = patron_umberlee }
+			}
+			modifier = {
+				factor = 3
+				FROM = { culture = shadovar } #Shadovar canonically caused a war with Cormyr through use of weather manipulation
+			}		
+			modifier = {
+				factor = 10
+				FROM = { culture = thayan } #Thay is pretty notorious canonically for doing this, and dgaf about neighbors caring
+			}		
+		}
+	}	
 }

@@ -332,6 +332,9 @@
 316 = { name = "Squidgut" culture = ogre }
 317 = { name = "Heartfire" culture = fire_giant }
 318 = { name = "Clanbringer" culture = fire_giant }
+319 = { name = "Konishi" culture = shou }
+320 = { name = "Moorgnaw" culture = kobold }
+321 = { name = "Zikgnax" culture = goblin }
 
 400 = { name = "Ouroboros" culture = yuanti used_for_random = no }
 
@@ -1432,6 +1435,7 @@
 4571 = { name = "Sadek" culture = calishite } # Mameluk
 4572 = { name = "Fahmy" culture = calishite } # Mameluk
 4573 = { name = "Carim" culture = calishite }
+4574 = { name = "Entreri" culture = calishite used_for_random = no }
 
 
 4800 = { name = "Selemchant" culture = amnian used_for_random = no }
@@ -1489,3 +1493,4 @@
 4852 = { name = "Shaesarl" culture = amnian }
 4853 = { name = "Tarnis" culture = amnian }
 4854 = { name = "Arklen" culture = amnian }
+4855 = { name = "of Bral" culture = wildspacer }

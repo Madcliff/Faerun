@@ -6,7 +6,7 @@ black_network = { #by Olrox17
 	opinion_to_other_members = +10
 	opinion_per_rank_above = +10
 	society_rank_up_decision = request_to_rank_up_within_society
-	sound = assassins_interface
+	sound = secret_cults_interface
 	society_ranks_gfx = generic_ranks
 
 	can_join_society = {
@@ -41,6 +41,9 @@ black_network = { #by Olrox17
 	OR = {
 		religion_group = evil_human_pantheon_group
 		trait = cruel
+		any_liege = {
+			has_landed_title = k_zhentarim
+		}
 		}
 
 		hidden_trigger = {
@@ -111,6 +114,7 @@ black_network = { #by Olrox17
 		}
 		decisions = {
 			zhent_trade_route
+			scheme_for_leadership
 		}
 		custom_tooltip = black_network_tt_rank4
 	}

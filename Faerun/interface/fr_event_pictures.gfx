@@ -221,6 +221,11 @@ spriteTypes = {
 		allwaystransparent = yes
 	}
 	spriteType = {
+		name = "GFX_evt_dragon_1"
+		texturefile = "gfx\\event_pictures\dragon_1.dds"
+		allwaystransparent = yes
+	}	
+	spriteType = {
 		name = "GFX_evt_dragonspear_1"
 		texturefile = "gfx\\event_pictures\dragonspear_1.dds"
 		allwaystransparent = yes
@@ -838,6 +843,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_evt_zhentilar_1"
 		texturefile = "gfx\\event_pictures\zhentilar_1.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_sarya"
+		texturefile = "gfx\\event_pictures\sarya.dds"
 		allwaystransparent = yes
 	}
 }

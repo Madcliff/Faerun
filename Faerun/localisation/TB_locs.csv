@@ -252,7 +252,7 @@ undead_troops_defensive;Undead Defensive;;;;;;;;;;;;;x
 undead_troops_morale;Undead Morale;;;;;;;;;;;;;x
 undead_troops_modifier;Combat Modifier boost to Undead: $PERC$;;;;;;;;;;;;;x
 undead_province;Undead Province;;;;;;;;;;;;;x
-RULE_MINORS_STORY_EVENTS;§RFaerun:§! Minor Story Events;;;;;;;;;;;;;x
+RULE_MINOR_STORY_EVENTS;§RFaerun:§! Minor Story Events;;;;;;;;;;;;;x
 RULE_MINOR_STORY_ON_DESC;Minor story events will fire if their conditions are met;;;;;;;;;;;;;x
 RULE_MINOR_STORY_OFF_DESC;Minor story events will never happen;;;;;;;;;;;;;x
 warpriests;Warpriests;;;;;;;;;;;;;x
@@ -273,3 +273,35 @@ FRTUT.12.a;Wizard Tutorial;;;;;;;;;;;;;x
 FRTUT.12.b;Illithid Tutorial;;;;;;;;;;;;;x
 FRTUT.12.c;Holy War Tutorial;;;;;;;;;;;;;x
 FRTUT.13;Holy Wars in Faerun work differently than in the base game. A character can declare a holy war on others based on their religion and/or patron trait. This means that sometimes you can even declare a holy war on someone of your own religion.\n\nWho you can war against is detailed in either the patron trait or religion description.;;;;;;;;;;;;;x
+sword_of_chaos;Sword of Chaos;;;;;;;;;;;;;x
+sword_of_chaos_desc;The Sword of Chaos was a massive two-handed sword forged for the Bhaalspawn Sarevok Anchev and capable of transferring lifeforce from its victims to the wielder.;;;;;;;;;;;;;x
+RULE_MAJOR_STORY_EVENTS;§RFaerun:§! Major Story Events;;;;;;;;;;;;;x
+RULE_MAJOR_STORY_ON_DESC;Major story events will fire if their conditions are met;;;;;;;;;;;;;x
+RULE_MAJOR_STORY_OFF_DESC;Major story events will never happen;;;;;;;;;;;;;x
+RULE_DYNAMIC_HORDES;§RFaerun:§! Dynamic Hordes;;;;;;;;;;;;;x
+RULE_DYNAMIC_HORDES_ON_DESC;Dynamic hordes may spawn in various locations during play;;;;;;;;;;;;;x
+RULE_DYNAMIC_HORDES_OFF_DESC;Dynamic hordes will be disabled;;;;;;;;;;;;;x
+DynHordeOrc;orcs
+DynHordeHob;hobgoblins
+DynHordeGob;goblins
+DynHordeTroll;trolls
+DynHordeGnoll;gnolls
+DynHordeBug;bugbears
+DynHordeKob;kobolds
+DynHordeDrag;kobolds led by a dragon
+DYNHORDES.2;You have heard rumours that a large host of [From.DynHordeLoc] has been assembling in the wild regions around [From.GetName].;;;;;;;;;;;;;x
+DYNHORDES.2.a;Concerning.;;;;;;;;;;;;;x
+DYNHORDES.4;The monstrous horde lurking in [From.GetName] has finally come out into the open, seeking to ravage your lands!;;;;;;;;;;;;;x
+DYNHORDES.4.a;To arms!;;;;;;;;;;;;;x
+FEYRISTORYT.1;The Daemonfey;;;;;;;;;;;;;x
+FEYRISTORY.1;It seems that defeating the Scoured Legion and their fortress of Hellgate Keep has had unintended consequences. The siege of Hellgate has disrupted the magic of an ancient, long-forgotten elven prison. Now the prisoners, the Fey'ri of House Dlardrageth, have broken free and have already bolstered their forces with summoned demons in order to claim Hellgate for themselves.;;;;;;;;;;;;;x
+FEYRISTORY.1.a;Stop them!;;;;;;;;;;;;;x
+DAEMONFEY;Daemonfey;;;;;;;;;;;;;x
+FEYRISTORY.2;Though the demonic Scoured Legion has been defeated and driven off of their stronghold of Hellgate Keep, a new threat has arisen. Deep beneath Hellgate lies a long-forgotten prison, whose ancient magic was disrupted by the Scoured Legion's defeat. Now its prisoners, the Daemonfey, have been unleashed upon the world.;;;;;;;;;;;;;x
+FEYRISTORY.2.a;Concerning.;;;;;;;;;;;;;x
+undead_realm_lord;Master of Undeath;;;;;;;;;;;;;x
+undead_realm_lord_desc;This unliving character has a distate for the living so great that they are willing to purge them from all lands they control.;;;;;;;;;;;;;x
+undead_animate_dead_prov;Animate Dead;;;;;;;;;;;;;x
+undead_animate_dead_prov_desc;Reanimate the dead at this location, summoning a force of undead troops. If cast on a province populated by the living, this will cause a negative reaction.;;;;;;;;;;;;;x
+shun_the_living;Shun the Living;;;;;;;;;;;;;x
+shun_the_living_desc;Forsake the living, starting to transform your realm into one of undeath. Beware: all your living vassals will become independent in response!;;;;;;;;;;;;;x
