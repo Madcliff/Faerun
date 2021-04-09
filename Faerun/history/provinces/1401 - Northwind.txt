@@ -21,9 +21,9 @@ terrain = coastal
 #History
 256.1.1 = {
 	culture = northlander
-	religion = deities_of_fury
+	religion = martial_faith
 }
 560.1.1 = {
 	b_graystaad = castle
-	b_rottesheim = city
+	#b_rottesheim = city
 }

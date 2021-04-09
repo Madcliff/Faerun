@@ -36,7 +36,7 @@ giant_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 
-		modifier = giant_culture_modifier
+		modifier = default_culture_modifier
 	}
 	
 	fire_giant = {
@@ -45,10 +45,10 @@ giant_group = {
 		color = { 0.6 0.3 0.3 }
 				
 		male_names = {
-			Arnmun Asgrim Bardol Baugar Berenn Bjalf Brunil Dengor Emberol Fartheg Flint Fromuz Fydor Gargaros Gimund Girdolf Gommoth Grimwald Gunnhaut Hafnal Hallad Halldor Hallvard Hamin Hatoth Hauk Havard Herlaug Himdal Hlodar Hrodim Ildmane Irenmund Isgaut Kabbix Kakus Kar Kjallak Kolbein Kurgoth Kvasir Lasork Lodmund Logi Loptarl Mar Masud Northri Okssort Pyrosar Sigered Skoptil Skuli Solmund Stokar Stolvor Styrbiorn Sumarlid Surtr Thometill Thorgeir Thorix Thorket Thorvild Tryggold Tyrkir Tyvald Unil Utgar Veperyd Vulkar Zaltember Zalto Zarborn Zinar 
+			Arnmun Asgrim Bardol Baugar Berenn Bjalf Brunil Dengor Djzark Emberol Fartheg Flint Fromuz Fydor Gargaros Gimund Girdolf Gommoth Grimwald Gunnhaut Hafnal Hallad Halldor Hallvard Hamin Hatoth Hauk Havard Herlaug Himdal Hlodar Hrodim Ildmane Irenmund Isgaut Kabbix Kakus Kar Kjallak Kolbein Kurgoth Kvasir Lasork Lodmund Logi Loptarl Mar Masud Northri Okssort Pyrosar Raxakon Sigered Skoptil Skuli Solmund Stokar Stolvor Styrbiorn Sumarlid Surtr Thometill Thorgeir Thorix Thorket Thorvild Tryggold Tyrkir Tyvald Unil Utgar Veperyd Vulkar Zaltember Zalto Zarborn Zinar 
 		}
 		female_names = {
-			Adara Agnimitra Alfdis Alfida Annhild Aradna Arnora Asfri Audbjora Azar Bera Brandyr Brimskarda Cinderhild Dascha Dimsta Drolaug Forna Frida Frideburg Friga Gabija Glodha Gorma Gudfrid Gunnhild Hallbera Hallfrid Hallgerdi Hallva Hedinfrid Helya Hervora Hesta Hilda Hledh Holmfrid Hrefna Ingard Ingunn Javilda Jodis Keti Kyra Lezgha Ljotta Motera Olova Pelena Praurima Pyraphenia Ranvig Reginleif Saga Shula Signa Sigrunn Skuldi Sunni Svala Tartha Thorballa Thordis Thorgunna Thorkata Thraslaug Thyri Tola Torunn Vesta Vidis Zaastrid 
+			Adara Agnimitra Alfdis Alfida Alkana Annhild Aradna Arnora Asfri Audbjora Azar Bera Brandyr Brimskarda Cinderhild Dascha Dimsta Drolaug Forna Frida Frideburg Friga Gabija Glodha Gorma Gudfrid Gunnhild Hallbera Hallfrid Hallgerdi Hallva Hedinfrid Helya Hervora Hesta Hilda Hledh Holmfrid Hrefna Ingard Ingunn Javilda Jodis Keti Kyra Lezgha Ljotta Motera Olova Pelena Praurima Pyraphenia Ranvig Reginleif Saga Shula Signa Sigrunn Skuldi Sunni Svala Tartha Thorballa Thordis Thorgunna Thorkata Thraslaug Thyri Tola Torunn Umaja Vesta Vidis Zaastrid 
 		}
 		
 		from_dynasty_prefix = ""
@@ -71,7 +71,7 @@ giant_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 
-		modifier = giant_culture_modifier
+		modifier = default_culture_modifier
 	}
 	
 	frost_giant = {
@@ -106,7 +106,8 @@ giant_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 
-		modifier = giant_culture_modifier
+		modifier = default_culture_modifier
+		allow_looting = yes
 	}
 	
 	hill_giant = {
@@ -141,7 +142,8 @@ giant_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 
-		modifier = giant_culture_modifier
+		modifier = default_culture_modifier
+		allow_looting = yes
 	}
 
 	mountain_giant = {
@@ -178,7 +180,8 @@ giant_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 
-		modifier = giant_culture_modifier
+		modifier = default_culture_modifier
+		allow_looting = yes
 	}
 	
 	fomorian = {
@@ -213,7 +216,8 @@ giant_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 
-		modifier = giant_culture_modifier
+		modifier = default_culture_modifier
+		allow_looting = yes
 	}
 	
 	ogre = {
@@ -245,8 +249,41 @@ giant_group = {
 		mother_name_chance = 10
 		
 		modifier = default_culture_modifier
+		allow_looting = yes
 	}
 	
+	merrow = {
+		graphical_cultures = { merrowgfx ogresgfx westerngfx }
+
+		color = { 0.45 0.2 0.3 }
+	
+		male_names = {
+			Agurk Aguul Arghain Arleon Azug Bazag Big Blaerig Blagizag Blar Blorot Brikurk Brugruk Bukag Buldwar Dagryg Drazir Dresagrok Drool Drozrug Dugork Durkot Eg Eirok Ezug Geeraugh Gekur Georig Glexu Glizir Goboka Gosurok Gozur Grazor Grguch Grokor Grorag Grukor Gurog Haffa Hakim Hamhock Irek Izakur Jeordros Jom Jurth Kerag Klatoruk Klokoh Klukor Korek Krekeg Kurn Mabagrut Miagark Mikeg Mubuz Mukor Og Ozig Ragnor Rarnok Tarag Tazok Thag Toikurk Trarog Trazikig Turuk Ukuhr Vaurub Vokeg Vragakur Vrakureg Vrekuh Werut Xaorag Xeukorg Xukur Yaerok Yagoth Yibozor Yokag Yooret Yowirut Yozir Zekur Zikeg Zulozog Zumakur Zuzur 
+		}
+		
+		female_names = {
+			Aglatha Arzastra Asorek Azora Barga Beazog Beirig Biriga Bluzug Bratugut Brebaret Brimurug Bruxa Chogurugga Dartha Dirok Drisogut Drokog Drukag Ekora Eruba Gezegrot Glazoroka Glegrot Greguta Grezora Groxorg Gurig Igoguta Kesug Kledukora Klekohra Kriezig Krodazuga Kugukorka Kuxukohra Lutha Makega Mokekurg Nakohra Negruk Nikur Oereta Okora Orenk Tigruta Tregozag Treriga Tuzrog Ugrota Utoza Uugrot Vinurug Vraga Vroekorga Wumeruk Wuzar Wuzug Xinizar Xukozug Yakohra Yamerka Yekegrut Yoenk Zekor Zeugork Zokag Zorub Zozaga Zuzir 
+		}
+
+		dukes_called_kings = yes
+		baron_titles_hidden = yes
+		count_titles_hidden = no
+		
+		dynasty_title_names = yes
+		founder_named_dynasties = yes
+		
+		pat_grf_name_chance = 30
+		mat_grf_name_chance = 10
+		father_name_chance = 10
+
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 30
+		mother_name_chance = 10
+		
+		modifier = default_culture_modifier
+		allow_looting = yes
+		seafarer = yes
+	}
 		
 	stone_giant = {
 		graphical_cultures = { stonegiantgfx }
@@ -280,7 +317,7 @@ giant_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 
-		modifier = giant_culture_modifier
+		modifier = default_culture_modifier
 	}
 
 	storm_giant = {
@@ -294,15 +331,18 @@ giant_group = {
 		female_names = {
 			Adelia Akate Akyla Alaphia Althaia Anthosa Antilia Aphasi Aphedice Aretha Arethi Arisa Astera Astha Astrasi Atalanta Biphal Bronta Charissa Diana Egeria Eos Epicasta Evishia Hali Harmodia Helike Helis Hippola Hyrmina Iris Joca Juna Katana Khloe Kleio Klepheila Klepola Latona Lydia Marilla Menelaia Menilli Minvera Mirran Myrith Neri Nerid Nisi Nyetha Nym Olaphi Ophi Penna Pherophi Pherusa Protalla Saphissa Sathena Serissa Taphelsa Thamosia Therespia Thraila Vaasha Vakaria Zatrya Zorya 
 		}
-		
+
 		from_dynasty_prefix = ""
 		dynasty_title_names = no
 		founder_named_dynasties = no
 
+		allow_looting = yes
+		seafarer = yes
+
 		male_patronym = ""
 		female_patronym = ""
 		prefix = no
-		
+
 		baron_titles_hidden = no
 		count_titles_hidden = no
 		dukes_called_kings = no
@@ -315,7 +355,7 @@ giant_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 
-		modifier = giant_culture_modifier
+		modifier = default_culture_modifier
 	}
 	
 	ogre_magi = {
@@ -350,7 +390,8 @@ giant_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 
-		modifier = giant_culture_modifier
+		modifier = default_culture_modifier
+		allow_looting = yes
 	}
 	
 	troll = {
@@ -382,5 +423,153 @@ giant_group = {
 		mother_name_chance = 10
 		
 		modifier = default_culture_modifier
+		allow_looting = yes
+	}
+	
+	goliath = {
+		graphical_cultures = { goliathgfx }
+		
+		color = { 0.8 0.8 0.8 }
+		
+		male_names = {
+			Agrath Apamak Apaphak Arnoth Arrian Arvoi Auglok Augnath Aupath Aurrath Auvek Auziath Eaggath Eagtham Eagzak Egnak Egrin Egthi Egvhal Ergmahl Ergtham Gamak Ganak Garok Gathag Gavhal Gradath Iladath Ilakein Ilarad Ilatham Ilikan Iramahl Iraphak Kanamahk Kanazak Kavadak Kazamul Kazarein Keogak Keorad Khulig Koragan Koralath Krakein Lanihl Larhak Lazadak Lazakon Loropath Loroveith Madak Makein Maralath Maraman Maramith Mararoth Maurok Meathag Mokan Morian Mothok Naradath Naravhal Naudhan Naupath Naurad Neomahg Neoroth Panak Parad Paroth Pukon Pumul Tararian Taunath Thalok Thamak Thavarhan Thavarian Thavaveith Thavith Thogath Thogith Thorad Vakein Vakin Varagath Varalok Vathag Vaurakhal Vegamahl Veganihl Vegathok Vigath Vomahl Vorhan Zagak Zauvoi 
+		}
+		female_names = {
+			Agelea Agepu Anerra Arene Arenna Arethe Arethi Daakia Daavu Daumeo Daumia Dauthea Dimi Dithe Gala Galma Gauma Gaumi Gaupeu Gelkko Gella Ilannio Inane Inanea Inanna Inathio Kathea Kauthea Keghu Kithea Kithio Kuopu Larra Laumeo Lauvu Lenea Lenna Maakeo Maathia Mankea Manlea Manmeo Maunu Meni Menia Meri Nalkea Narea Nathe Naukeo Naukio Nokeo Nonna Novia Olakio Olarheo Onegeo Oneni Orelo Orerea Orila Paathe Pakia Paukha Pauneo Pauria Pauvi Pavi Pelo Pelu Thaugea Thauthe Thauthia Thauvu Therrea Thulo Thulu Thurea Thuthi Vaami Vaania Vaukeo Vaula Vauneo Vemeo Vevea Vokea Vomeo Vonnio Vorra Vuki Vunnio Zaakea Zaula Zauma Zaupeu Zoki Zola Zovia 
+		}
+		
+		from_dynasty_prefix = ""
+		dynasty_title_names = no
+		founder_named_dynasties = no
+
+		male_patronym = ""
+		female_patronym = ""
+		prefix = no
+		
+		baron_titles_hidden = no
+		count_titles_hidden = no
+		dukes_called_kings = no
+		
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 10
+		father_name_chance = 5
+		
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+
+		modifier = default_culture_modifier
+	}
+}
+nafili_group = {
+	graphical_cultures = { desertgiantgfx junglegiantgfx reefiantgfx arabicgfx }
+	
+	desert_giant = {
+		graphical_cultures = { desertgiantgfx arabicgfx }
+		
+		color = { 0.7 0.7 0.05 }
+				
+		male_names = {
+			Aasim Aban Abbak Abdul Achmed Adnan Adun Ahmahd Ahogar Aja Akil Akir Akura Akyid Ala'i Ali Alik Amakin Arash Atash Azhakar Aziz Azuah Bani Barak Basem Bazidan Beyab Bhokaran Cheddah Dakim Diyah Doth Dus Ebu Essafah Farim Farouk Farud Fayaniz Fennis Focran Garil Gholam Gogal Gomir Gorar Hajama Hakim Hamid Harin Harjad Haroun Harun Hasan Hasim Hassan Hatim Hava Hosan Hudid Huram Husam Ibrahim Isfizari Issad Janci Janik Jarmik Jawali Jera Jeremi Jiraad Jisan Jomhur Jubair Judarin Kabeer Kasad Kayid Kemil Kenai Keram Kerim Khafaz Khalil Khwaja Kilij Komar Korat Labeeb Ladok Mahmud Majdi Makin Mamaod Mamood Mehmet Moral Morim Mu'izzi Muaaid Musaddiq Musil Mustah Mustapha Nadheer Najib Nari Narim Nasir Nura Nusaril Oman Omar Osman Parigar Parok Ramas Rashad Rashid Rayad Razim Renn Rimaq Rumi Sa'id Saami Sadik Saleem Salman Samsi Sanjar Sardi Sedji Sika Sirhan Siri Sodar Sudai Tamood Tannous Thokkor Tocka Tuka Tun Umar Yezeed Yosh Zaid Zann Zarad Zima 
+		}
+		
+		female_names = {
+			Aida Akila Akima Alurah Alyana Amsha Andorra Asrah Aswiyah Ayesha Aziza Baccira Badiat Bahija Bahramiyah Bara Bassorah Batina Bint Cela Dalia Dalilah Ekuriyah Fadiya Faizah Fanya Fareeda Faridah Fatima Fayala Fayiz Gaitiyah Ghaliyah Ghazaala Ghunayya Gina Hadra Halah Halima Ibtisam Imnezzar Inayah Indeema Jaheira Jamila Jamina Janya Jarda Jayani Jenila Jessiyah Julnar Kalin Kemala Kerima Khadiga Kila Kili Kola Laksi Latifa Lelia Lufala Malin Mari Mira Monica Mur'i Naib Nisma Noora Nur Nura Perijan Qirmiz Qoha'dar Sabriyya Sadita Safana Safwa Sahla Sali Samia Sandara Sela Setara Shajar Shalinara Sofir Suhailah Sunil Tala Tali Tamr Tanya Tarni Tawheeda Tufala Ummu Wajdiyya Wudei'a Yasmi Yola Zamanyeh Zaynal Zobeida 
+		}
+		
+		from_dynasty_prefix = "al-"
+		dynasty_title_names = yes
+		founder_named_dynasties = no
+
+		male_patronym = "bin "
+		female_patronym = "bint "
+		prefix = yes
+		
+		baron_titles_hidden = no
+		count_titles_hidden = no
+		dukes_called_kings = no
+		
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 10
+		father_name_chance = 5
+		
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+
+		modifier = default_culture_modifier
+		allow_looting = yes
+	}
+	jungle_giant = {
+		graphical_cultures = { junglegiantgfx westafricangfx arabicgfx }
+		
+		color = { 0.1 0.7 0.05 }
+				
+		male_names = {
+			Aasim Aban Abbak Abdul Achmed Adnan Adun Ahmahd Ahogar Aja Akil Akir Akura Akyid Ala'i Ali Alik Amakin Arash Atash Azhakar Aziz Azuah Bani Barak Basem Bazidan Beyab Bhokaran Cheddah Dakim Diyah Doth Dus Ebu Essafah Farim Farouk Farud Fayaniz Fennis Focran Garil Gholam Gogal Gomir Gorar Hajama Hakim Hamid Harin Harjad Haroun Harun Hasan Hasim Hassan Hatim Hava Hosan Hudid Huram Husam Ibrahim Isfizari Issad Janci Janik Jarmik Jawali Jera Jeremi Jiraad Jisan Jomhur Jubair Judarin Kabeer Kasad Kayid Kemil Kenai Keram Kerim Khafaz Khalil Khwaja Kilij Komar Korat Labeeb Ladok Mahmud Majdi Makin Mamaod Mamood Mehmet Moral Morim Mu'izzi Muaaid Musaddiq Musil Mustah Mustapha Nadheer Najib Nari Narim Nasir Nura Nusaril Oman Omar Osman Parigar Parok Ramas Rashad Rashid Rayad Razim Renn Rimaq Rumi Sa'id Saami Sadik Saleem Salman Samsi Sanjar Sardi Sedji Sika Sirhan Siri Sodar Sudai Tamood Tannous Thokkor Tocka Tuka Tun Umar Yezeed Yosh Zaid Zann Zarad Zima 
+		}
+		
+		female_names = {
+			Aida Akila Akima Alurah Alyana Amsha Andorra Asrah Aswiyah Ayesha Aziza Baccira Badiat Bahija Bahramiyah Bara Bassorah Batina Bint Cela Dalia Dalilah Ekuriyah Fadiya Faizah Fanya Fareeda Faridah Fatima Fayala Fayiz Gaitiyah Ghaliyah Ghazaala Ghunayya Gina Hadra Halah Halima Ibtisam Imnezzar Inayah Indeema Jaheira Jamila Jamina Janya Jarda Jayani Jenila Jessiyah Julnar Kalin Kemala Kerima Khadiga Kila Kili Kola Laksi Latifa Lelia Lufala Malin Mari Mira Monica Mur'i Naib Nisma Noora Nur Nura Perijan Qirmiz Qoha'dar Sabriyya Sadita Safana Safwa Sahla Sali Samia Sandara Sela Setara Shajar Shalinara Sofir Suhailah Sunil Tala Tali Tamr Tanya Tarni Tawheeda Tufala Ummu Wajdiyya Wudei'a Yasmi Yola Zamanyeh Zaynal Zobeida 
+		}
+		
+		from_dynasty_prefix = "al-"
+		dynasty_title_names = yes
+		founder_named_dynasties = no
+
+		male_patronym = "bin "
+		female_patronym = "bint "
+		prefix = yes
+		
+		baron_titles_hidden = no
+		count_titles_hidden = no
+		dukes_called_kings = no
+		
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 10
+		father_name_chance = 5
+		
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+
+		modifier = default_culture_modifier
+		allow_looting = yes
+	}
+	reef_giant = {
+		graphical_cultures = { reefgiantgfx westafricangfx africangfx arabicgfx }
+		
+		color = { 0.05 0.1 0.7 }
+				
+		male_names = {
+			Aasim Aban Abbak Abdul Achmed Adnan Adun Ahmahd Ahogar Aja Akil Akir Akura Akyid Ala'i Ali Alik Amakin Arash Atash Azhakar Aziz Azuah Bani Barak Basem Bazidan Beyab Bhokaran Cheddah Dakim Diyah Doth Dus Ebu Essafah Farim Farouk Farud Fayaniz Fennis Focran Garil Gholam Gogal Gomir Gorar Hajama Hakim Hamid Harin Harjad Haroun Harun Hasan Hasim Hassan Hatim Hava Hosan Hudid Huram Husam Ibrahim Isfizari Issad Janci Janik Jarmik Jawali Jera Jeremi Jiraad Jisan Jomhur Jubair Judarin Kabeer Kasad Kayid Kemil Kenai Keram Kerim Khafaz Khalil Khwaja Kilij Komar Korat Labeeb Ladok Mahmud Majdi Makin Mamaod Mamood Mehmet Moral Morim Mu'izzi Muaaid Musaddiq Musil Mustah Mustapha Nadheer Najib Nari Narim Nasir Nura Nusaril Oman Omar Osman Parigar Parok Ramas Rashad Rashid Rayad Razim Renn Rimaq Rumi Sa'id Saami Sadik Saleem Salman Samsi Sanjar Sardi Sedji Sika Sirhan Siri Sodar Sudai Tamood Tannous Thokkor Tocka Tuka Tun Umar Yezeed Yosh Zaid Zann Zarad Zima 
+		}
+		
+		female_names = {
+			Aida Akila Akima Alurah Alyana Amsha Andorra Asrah Aswiyah Ayesha Aziza Baccira Badiat Bahija Bahramiyah Bara Bassorah Batina Bint Cela Dalia Dalilah Ekuriyah Fadiya Faizah Fanya Fareeda Faridah Fatima Fayala Fayiz Gaitiyah Ghaliyah Ghazaala Ghunayya Gina Hadra Halah Halima Ibtisam Imnezzar Inayah Indeema Jaheira Jamila Jamina Janya Jarda Jayani Jenila Jessiyah Julnar Kalin Kemala Kerima Khadiga Kila Kili Kola Laksi Latifa Lelia Lufala Malin Mari Mira Monica Mur'i Naib Nisma Noora Nur Nura Perijan Qirmiz Qoha'dar Sabriyya Sadita Safana Safwa Sahla Sali Samia Sandara Sela Setara Shajar Shalinara Sofir Suhailah Sunil Tala Tali Tamr Tanya Tarni Tawheeda Tufala Ummu Wajdiyya Wudei'a Yasmi Yola Zamanyeh Zaynal Zobeida 
+		}
+		
+		from_dynasty_prefix = "al-"
+		dynasty_title_names = yes
+		founder_named_dynasties = no
+
+		male_patronym = "bin "
+		female_patronym = "bint "
+		prefix = yes
+		
+		baron_titles_hidden = no
+		count_titles_hidden = no
+		dukes_called_kings = no
+		
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 10
+		father_name_chance = 5
+		
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+
+		modifier = default_culture_modifier
+		allow_looting = yes
 	}
 }

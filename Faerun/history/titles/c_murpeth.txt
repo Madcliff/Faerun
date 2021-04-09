@@ -12,10 +12,20 @@
 	holder = 49040 # Haedrar II Mornlight
 }
 293.1.1 = {
-	liege = d_greatmaw
+	liege = 0
 	holder = 49041 # Thaurgarl 'Greatmaw'
 }
 328.1.1 = {
 	holder = 0
-	liege = 0
+}
+1340.1.1 = {
+	law = enatic_cognatic_succession
+	law = succ_gavelkind
+	holder = 49585 # Hrug Reachclaw
+}
+1400.1.1 = {
+	holder = 49586 # Meerz Reachclaw
+}
+1455.1.1 = {
+	holder = 49587 # Nash Reachclaw
 }

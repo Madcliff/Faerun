@@ -10,7 +10,7 @@ b_tower_hlithal = castle
 
 # Misc
 culture = netherese
-religion = netherese_pantheon
+religion = arcane
 terrain = hills
 #History
 111.1.1 = {
@@ -20,11 +20,11 @@ terrain = hills
 }
 1040.1.1 = {
 	culture = cormyrian
-	religion = good_human_pantheon
+	religion = inventive
 	b_tower_hlithal = castle
 }
 1187.1.1 = {
-	culture = monster
-	religion = monster_pantheon
+	culture = orog
+	religion = orc_pantheon
 	b_tower_hlithal = tribal
 }

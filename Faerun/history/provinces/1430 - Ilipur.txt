@@ -6,8 +6,8 @@ title = c_ilipur
 # Settlements
 max_settlements = 3
 
-b_ilipur = castle
-b_bloodtower = city
+b_ilipur = city
+b_bloodtower = castle
 #b_overmoor = temple
 #b_limesvilles = castle
 #b_blackspines = city
@@ -15,7 +15,13 @@ b_bloodtower = city
 #b_dragonsands = castle
 
 # Misc
-culture = heartlander
-religion = good_human_pantheon
+culture = draeven
+religion = joyful
 
 #History
+1435.1.1 = {
+	remove_settlement = b_bloodtower
+	b_ilipur = castle
+	culture = reacher
+	religion = deities_of_fury
+}

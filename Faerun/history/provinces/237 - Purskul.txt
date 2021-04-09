@@ -24,10 +24,13 @@ terrain = farmlands
 }
 110.1.1 = {
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 }
 250.1.1 = {
 	b_karastra = city
+}
+300.1.1 = {
+	religion = joyful
 }
 600.1.1 = {
 	culture = monster
@@ -37,7 +40,7 @@ terrain = farmlands
 }
 620.1.1 = {
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 	b_purskul = castle
 }
 800.1.1 = {

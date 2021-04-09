@@ -46,12 +46,7 @@
 	trait = ambitious
 	1317.8.17 = { birth = yes }
 	1333.8.17 = {
-		effect = {
-			add_character_modifier = {
-				name = wiz_necromancy
-				duration = -1
-			}
-		}
+		add_trait = wiz_necromancy
 	}
 	1385.4.29 = {
 		add_trait = lich
@@ -82,16 +77,13 @@
 	trait = greedy
 	1318.3.14 = {
 		birth = yes
-		employer = 54002
 		give_job_title = job_spiritual
 	}
 	1324.3.14 = {
-		effect = {
-			add_character_modifier = {
-				name = wiz_necromancy
-				duration = -1
-			}
-		}
+		add_trait = wiz_necromancy
+	}
+	1350.1.1 = {
+		employer = 54002
 	}
 	1385.4.29 = {
 		add_trait = lich
@@ -118,7 +110,7 @@
 	name = "Tilbar"
 	dynasty = 7805 # Tarnalar
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = mercantile
 	stewardship = 8
 	trait = creature_human
 	trait = fortune_builder
@@ -146,7 +138,7 @@
 	name = "Danchilaer"
 	dynasty = 7807 # Ychad
 	culture = halruaan
-	religion = evil_human_pantheon
+	religion = arcane
 	diplomacy = 0
 	martial = 1
 	stewardship = 4
@@ -162,12 +154,7 @@
 	trait = mastermind_theologian
 	851.7.8 = { birth = yes }
 	867.7.8 = {
-		effect = {
-			add_character_modifier = {
-				name = wiz_necromancy
-				duration = -1
-			}
-		}
+		add_trait = wiz_necromancy
 	}
 	895.4.19 = {
 		trait = lich
@@ -225,7 +212,7 @@
 	name = "Renault"
 	dynasty = 7811 # Hornhelm
 	culture = chondathan
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	1310.6.18 = { birth = yes }
 	1367.1.1 = {
@@ -274,7 +261,7 @@
 	name = "Harrond"
 	dynasty = 7815 # Tralvus
 	culture = chondathan
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	1329.11.5 = { birth = yes }
 	1400.1.1 = {
@@ -286,7 +273,7 @@
 	name = "Darraskyn"
 	dynasty = 7816 # Eldron
 	culture = tashalan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = trained_cleric
 	1335.8.12 = { birth = yes }
@@ -317,7 +304,7 @@
 	name = "Astlur"
 	dynasty = 7818 # Adaunt
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = fortune_builder
 	1330.8.29 = { birth = yes }
@@ -330,7 +317,7 @@
 	name = "Ildyn"
 	dynasty = 7819 # Onsypir
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = fortune_builder
 	1335.4.21 = { birth = yes }
@@ -343,20 +330,20 @@
 	name = "Urthe"
 	dynasty = 7820 # Crownshimmer
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = fortune_builder
 	1329.3.11 = { birth = yes }
 	1400.1.1 = {
 		death = { death_reason = death_natural }
-	}	
+	}
 }
 
 54021 = {
 	name = "Ylothin"
 	dynasty = 7821 # Tlarst
 	culture = rashemi
-	religion = good_human_pantheon
+	religion = rasallesian
 	trait = creature_human
 	trait = fortune_builder
 	1328.5.6 = { birth = yes }
@@ -373,7 +360,7 @@
 	trait = creature_human
 	trait = tough_soldier
 	1330.4.11 = { birth = yes }
-	1340.1.1 = {
+	1345.1.1 = {
 		employer = 54017
 		give_job_title = job_marshal
 	}
@@ -399,7 +386,7 @@
 	name = "Bardran"
 	dynasty = 7824 # Thulmaer
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	martial = 8
 	trait = creature_human
 	trait = master_fighter
@@ -571,7 +558,7 @@
 	father = 54039
 	1310.1.1 = { birth = yes }
 	1350.1.1 = {
-		death = yes 
+		death = yes
 	}
 }
 54041 = {
@@ -627,7 +614,7 @@
 	name = "Gill"
 	dynasty = 7828 # Marel
 	culture = chondathan
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	880.1.1 = { birth = yes }
 	980.1.1 = { death = yes }
@@ -636,7 +623,7 @@
 	name = "Billfre"
 	dynasty = 7828 # Marel
 	culture = chondathan
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 54046
 	960.1.1 = { birth = yes }
@@ -646,7 +633,7 @@
 	name = "Giso"
 	dynasty = 7828 # Marel
 	culture = chondathan
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 54047
 	1040.1.1 = { birth = yes }
@@ -656,7 +643,7 @@
 	name = "Sendo"
 	dynasty = 7824 # Thulmaer
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	1120.1.1 = { birth = yes }
 	1220.1.1 = { death = yes }
@@ -665,7 +652,7 @@
 	name = "Tancard"
 	dynasty = 7824 # Thulmaer
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 54049
 	1200.1.1 = { birth = yes }
@@ -675,7 +662,7 @@
 	name = "Hugh"
 	dynasty = 7824 # Thulmaer
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 54050
 	1280.1.1 = { birth = yes }
@@ -1100,7 +1087,7 @@
 	female = yes
 	dynasty = 7843 # Calidan
 	culture = netherese
-	religion = netherese_pantheon
+	religion = arcane
 	trait = creature_human
 	trait = master_wizard
 	trait = longevity
@@ -1142,7 +1129,7 @@
 	name = "Clevdoarran"
 	dynasty = 7845 # Iharlmiir
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	trait = journeyman_fighter
 	1300.1.1 = { birth = yes }
@@ -1374,7 +1361,7 @@
 	female = yes
 	dynasty = 7852 # Llumen
 	culture = thayan
-	religion = evil_human_pantheon
+	religion = kossuth
 	trait = creature_human
 	trait = master_wizard
 	trait = longevity
@@ -1497,7 +1484,7 @@
 	religion = calishite_faith
 	trait = creature_human
 	father = 54126
-	960.1.1 = { 
+	960.1.1 = {
 		birth = yes
 	}
 	1060.1.1 = { death = yes }
@@ -1669,7 +1656,7 @@
 	name = "Galdarr"
 	dynasty = 7861 # Amcorth
 	culture = cormyrian
-	religion = good_human_pantheon
+	religion = inventive
 	trait = creature_human
 	trait = trained_fighter
 	960.1.1 = { birth = yes }
@@ -1686,7 +1673,7 @@
 	name = "Dorvon"
 	dynasty = 7862 # Meldrist
 	culture = cormyrian
-	religion = good_human_pantheon
+	religion = inventive
 	trait = creature_human
 	960.1.1 = { birth = yes }
 	990.1.1 = {

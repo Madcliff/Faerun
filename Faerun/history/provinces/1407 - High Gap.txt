@@ -20,16 +20,16 @@ religion = dwarven_pantheon
 terrain = hills
 #History
 882.1.1 = {
-	culture = tanarri
+	culture = tanarukk
 	religion = abyssal_cult
 }
 1370.1.1 = {
 	culture = feyri
-	religion = evil_human_pantheon
+	religion = dead_three
 }
 1374.4.19 = {
 	b_obrynns_landing = tribal
 	remove_settlement = b_fellridge
 	culture = treant
-	religion = elven_pantheon
+	religion = sylvan
 }

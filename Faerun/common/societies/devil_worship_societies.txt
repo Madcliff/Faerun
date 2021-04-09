@@ -11,7 +11,7 @@ the_satanists = {
 	sound = devil_worshippers_interface
 	society_ranks_gfx = devil_ranks
 	society_influence = no
-	
+
 	active = {
 		has_dlc = "Mystics"
 		NOT = {
@@ -20,9 +20,15 @@ the_satanists = {
 				value = none
 			}
 		}
+		NOT = {
+			has_game_rule = {
+				name = secret_cults
+				value = none
+			}
+		}
 	}
-	indestructible = yes
-	
+	indestructible = no
+
 	can_join_society = {
 		hidden_trigger = {
 			NOT = {
@@ -33,7 +39,7 @@ the_satanists = {
 			}
 			NAND = {
 				ai = yes
-				is_society_rank_full = { 
+				is_society_rank_full = {
 					society = the_satanists
 					rank = 1
 				}
@@ -41,7 +47,7 @@ the_satanists = {
 		}
 		has_satanists_prerequisites = yes
 		hidden_trigger = {
-			NOT = { 
+			NOT = {
 				has_character_flag = society_join_block
 				culture = monster
 				 }
@@ -60,13 +66,18 @@ the_satanists = {
 			}
 		}
 		age = 16
-		OR = {
-			NOT = { religion = infernal }
-			society_member_of = the_satanists
-		}
+		# OR = {
+			# NOT = { religion = infernal }
+			# society_member_of = the_satanists
+		# }
 	}
 
-	potential = { } #no rules
+	potential = {
+		OR = {
+		religion = infernal
+		secret_religion = infernal
+		}
+	}
 
 	society_rank = {
 		level = 1
@@ -76,16 +87,18 @@ the_satanists = {
 			decision_abduct
 			prisoner_dark_sacrifice #Available Decision: Sacrifice Prisoner
 			#Over time, lose virtues, gain vices. A Soul Corruption-effect is on a yearly pulse (with a chance to do nothing)
+			secret_religions_induct_child
+			secret_religions_evoke_sympathy
 		}
-		
+
 		#custom_tooltip = unlockable_DW_powers_at_rank_2;
 	}
-	
+
 	society_rank = {
 		level = 2
 		limit = 25
 		startup_limit = 6
-		modifier = { 
+		modifier = {
 			is_visible = {
 				OR = {
 					society_member_of = the_satanists
@@ -96,15 +109,16 @@ the_satanists = {
 		}
 		decisions = {
 			devil_worshipers_summon_familiar #Available Power: Summon Familiar
-			the_devil_worshipers_tainted_touch #Available Power: Curse people with disease
-			devil_worshipers_demonic_possession #Available Power: Possess someone to make fanatically loyal
+			# the_devil_worshipers_tainted_touch #Available Power: Curse people with disease
+			# devil_worshipers_demonic_possession #Available Power: Possess someone to make fanatically loyal
 			#Available Power: Abduction plot
 			#unlock new options in Seduction and Spy On?
+			secret_religions_induct_character
 		}
-		
+
 		#custom_tooltip = unlockable_DW_powers_at_rank_3;
 	}
-	
+
 	society_rank = {
 		level = 3
 		limit = 10
@@ -121,18 +135,19 @@ the_satanists = {
 		decisions = {
 			devil_worshipers_dark_divorce #Available Power: Dark Divorce
 			devil_worshipers_dark_healing #Available Power: Demonic Healing. Sacrifice a prisoner to heal a random illness or maiming.
-			devil_worshipers_invite_disciple_of_devil #Available Decision: Invite a witch to court
+			# devil_worshipers_invite_disciple_of_devil #Available Decision: Invite a witch to court
 			#Available Power: Love Potion
+			secret_religions_prepare_grounds
 		}
-		
+
 		#custom_tooltip = unlockable_DW_powers_at_rank_4;
 	}
 
 	society_rank = {
 		level = 4
-		limit = 1 
+		limit = 5
 		startup_limit = 1
-		modifier = { 
+		modifier = {
 			is_visible = {
 				OR = {
 					society_member_of = the_satanists
@@ -142,23 +157,24 @@ the_satanists = {
 			intrigue = 3
 		}
 		decisions = {
-			
+
 			DW_prolong_life #Available Power: Prolong Life
 			DW_demonic_impregnation #Available power: Unholy Impregnation
+			devil_worshipers_deal_with_asmodeus
 		}
-		obedience_tooltip = obedience_tooltip #this can be unique per rank/society 
-		obedient = {
-			ROOT = {
-				always = yes
-			}
-		}
+		# obedience_tooltip = obedience_tooltip #this can be unique per rank/society
+		# obedient = {
+			# ROOT = {
+				# always = yes
+			# }
+		# }
 	}
 
 	plots = {
 		plot1_tag
 		plot2_tag
 	}
-	
+
 	ambitions = {
 		ambition1_tag
 		ambition2_tag
@@ -166,7 +182,7 @@ the_satanists = {
 
 	monthly_currency_gain = {
 		name = currency_name_the_satanists
-	
+
 		per_attribute = {
 			name = intrigue
 			value = 0.5
@@ -245,6 +261,13 @@ the_satanists = {
 			rank = 4
 			value = 10
 		}
+		triggered_gain = {
+			desc = open_asmodean
+			trigger = {
+				religion = infernal
+			}
+			value = 3
+		}
 	}
 
 	member_score_per_attribute = 3
@@ -321,8 +344,12 @@ the_satanists = {
 			trait = arbitrary
 			factor = 1.1
 		}
+		modifier = {
+			religion = infernal
+			factor = 2
+		}
 	}
-	
+
 	startup_populate = {
 		trigger = {
 			NOT = {
@@ -333,21 +360,38 @@ the_satanists = {
 			}
 			ai = yes
 			controls_religion = no
-			NOT = { religion = infernal }
 			OR = {
-				has_impious_trait_trigger = yes
-				has_vice_trigger = yes
-				trait = drunkard
-				trait = possessed
-				trait = lunatic
+				religion = infernal
+				secret_religion = infernal
+				AND = {
+					OR = {
+						has_impious_trait_trigger = yes
+						has_vice_trigger = yes
+						trait = cruel
+						trait = possessed
+						trait = lunatic
+					}
+					NOR = {
+						trait = kind
+						trait = zealous
+						evilcat_is_chosen = yes
+					}
+				}
 			}
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
+			OR = {
+			is_ruler = no
+			independent = no
+			}
 			NOT = { culture = monster }
 			NOR = {
 				mercenary = yes
 				holy_order = yes
+				has_landed_title = k_zhentarim
+				has_landed_title = k_a_brotherhood
+				has_landed_title = d_victorious_blade
 			}
 		}
 	}

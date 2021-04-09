@@ -4,34 +4,36 @@
 title = c_omu
 
 # Settlements
-max_settlements = 7
+max_settlements = 6
 
-b_omu = tribal
-#b_tomb_of_the_nine_gods = city
-#b_fane_of_the_night_serpent = temple
-#b_aataz_yklawzi = castle
-#b_shrines_of_the_tricksters = city
-#b_gears_of_hate = temple
-#b_cradle_of_the_death_god = castle
+b_omu = castle
+b_aataz_yklawzi = city
+b_bibiwe = temple
+b_biloga = castle
+#b_konfra = city
+#b_odiandre = temple
 
 # Misc
-culture = monster
-religion = monster_pantheon
+culture = chultan
+religion = ubtao_worship
 terrain = jungle
 #History
-1000.1.1 = {
-	culture = chultan
-	religion = ubtao_worship
-	b_omu = castle
+1280.1.1 = { #Ubtao Forsook them
+	religion = primordial
 }
-#1280.1.1 = #Ubtao Forsook them
-#	religion = trickster_gods
-#}
 1375.1.1 = { #Omuans killed by Acererak
-	culture = monster
-	religion = monster_pantheon
+	religion = faithless
+	remove_settlement = b_aataz_yklawzi
+	remove_settlement = b_bibiwe
+	remove_settlement = b_biloga
 }
-1466.1.1 = { #Yuan-Ti arrive led by Ras Nsi
+1380.1.1 = {
+	culture = kobold
+	religion = draconic_pantheon
+	b_omu = tribal
+}
+1400.1.1 = {
+	b_omu = castle
 	culture = yuanti
-	religion = abyssal_cult
+	religion = entropy
 }

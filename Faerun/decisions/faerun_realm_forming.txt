@@ -1,0 +1,74 @@
+decisions = {
+
+	reform_shoon = {
+		only_independent = yes
+		is_high_prio = yes
+		ai_check_interval = 40
+		only_independent = yes
+		only_playable = yes
+
+		potential = {
+			not_casting = yes
+			OR = {
+				ai = no
+				tier = KING
+			}
+			OR = {
+				culture = calishite
+				culture = arnadar
+				culture = shoon
+				culture = amnian
+				culture = tethyrian
+			}
+			e_shoon = {
+				has_holder = no
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				text = SHOONCOND
+				hidden_tooltip = {
+					OR = { # Using this logic because count was causing issues
+						AND = {
+							has_landed_title = k_amn
+							has_landed_title = k_tethyr
+						}
+						AND = {
+							has_landed_title = k_tethyr
+							has_landed_title = k_calimshan
+						}
+						AND = {
+							has_landed_title = k_amn
+							has_landed_title = k_calimshan
+						}
+					}
+				}
+			}
+			has_landed_title = c_shoonach
+			prestige = 2000
+		}
+		effect = {
+			primary_title = {
+				e_shoon = {
+					copy_title_laws = PREV
+				}
+			}
+			grant_title = e_shoon
+			prestige = -2000
+			create_bloodline = {
+				type = shoon_restorer
+				inheritance = all_descendants
+			}
+			new_bloodline = {
+				propagate_bloodline_from = PREV
+			}
+			give_nickname = nick_the_restorer
+			character_event = { id = froldrealms.1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

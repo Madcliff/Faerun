@@ -1,0 +1,17 @@
+# c_ubar
+
+# County Title
+title = c_ubar
+
+# Settlements
+max_settlements = 4
+
+b_ubar = castle
+b_baqarm = city
+b_akhmedo = temple
+
+# Misc
+culture = jann
+religion = qisma
+
+#History

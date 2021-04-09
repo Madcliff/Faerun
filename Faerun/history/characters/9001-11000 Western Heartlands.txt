@@ -1,21 +1,21 @@
 ###ÄNSI
 
-9001 = { 
+9001 = {
 	name = Traskar
 	dynasty = 2407 # Selarn
-	religion = good_human_pantheon
+	religion = natural
 	culture = highcoaster
 	trait = creature_human
 	trait = journeyman_ranger
 	1326.1.1 = { birth = yes }
-	1400.1.1 = { death = yes }
+	1390.1.1 = { death = yes }
 }
 #9002-9020 Reserved for Daggerfords
 
 9002 = {
 	name = Tyndal
 	dynasty = 2408 # Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	920.1.1 = { birth = yes }
@@ -26,7 +26,7 @@
 	name = Draconandar
 	dynasty = 2408 # Daggerford
 	father = 9153 # Llew Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	trait = journeyman_fighter
@@ -41,7 +41,7 @@
 	name = Sonjara
 	female = yes
 	dynasty = 2308 # Loravatha
-	religion = good_human_pantheon
+	religion = natural
 	culture = highcoaster
 	trait = creature_human
 	trait = trained_ranger
@@ -54,12 +54,12 @@
 	dynasty = 2408 # Daggerford
 	father = 9003
 	mother = 9004
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	trait = expert_fighter
 	1300.1.1 = { birth = yes }
-	1356.1.1 = { 
+	1356.1.1 = {
 		death = {
 			death_reason = death_battle
 		}
@@ -69,13 +69,13 @@
 	name = Della
 	female = yes
 	dynasty = 2307 # Longhand
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1290.1.1 = { birth = yes }
-	1310.1.1 = { 
+	1310.1.1 = {
 		effect = {
-			add_lover = 9003 
+			add_lover = 9003
 		} # Conan Daggerford
 	}
 	1350.1.1 = { death = yes }
@@ -85,7 +85,7 @@
 	dynasty = 2407 # Longhand
 	father = 9003
 	mother = 9006
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	trait = bastard
@@ -98,12 +98,12 @@
 	female = yes
 	dynasty = 2069 # Talmost
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1302.1.1 = { birth = yes }
 	1325.1.1 = { add_spouse = 9005 } # Pryden Daggerford
 	1346.6.1 = { trait = flu } # Actually 'a wasting disease'
-	1346.8.1 = { 
+	1346.8.1 = {
 		death = {
 			death_reason = death_trait
 		}
@@ -114,12 +114,12 @@
 	dynasty = 2408 # Daggerford
 	father = 9005
 	mother = 9008
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	trait = trained_fighter
 	1326.1.1 = { birth = yes }
-	1354.1.1 = { 
+	1354.1.1 = {
 		death = {
 			death_reason = death_accident_hunt # 'Died adventuring' - we should add a tag for that
 		}
@@ -131,7 +131,7 @@
 	dynasty = 2408 # Daggerford
 	father = 9005
 	mother = 9008
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1332.1.1 = { birth = yes }
@@ -160,7 +160,7 @@
 	dynasty = 2408 # Daggerford
 	father = 9002 # Tyndal Daggerford
 	mother = 9147 # Eleesa Calandor
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	946.1.1 = { birth = yes }
@@ -170,7 +170,7 @@
 	name = Maeran
 	dynasty = 2408 # Daggerford
 	father = 9011 # Merovy Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	972.1.1 = { birth = yes }
@@ -180,7 +180,7 @@
 	name = Gryff
 	dynasty = 2408 # Daggerford
 	father = 9012 # Maeran Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1000.1.1 = { birth = yes }
@@ -190,7 +190,7 @@
 	name = Baeran
 	dynasty = 2408 # Daggerford
 	father = 9013 # Gryff Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1021.1.1 = { birth = yes }
@@ -200,7 +200,7 @@
 	name = Javilarhh
 	dynasty = 2408 # Daggerford
 	father = 9014 # Baeran Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1047.1.1 = { birth = yes }
@@ -210,7 +210,7 @@
 	name = Taroth
 	dynasty = 2408 # Daggerford
 	father = 9015 # Javilarhh Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1068.1.1 = { birth = yes }
@@ -220,7 +220,7 @@
 	name = Haelan
 	dynasty = 2408 # Daggerford
 	father = 9016 # Taroth Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1093.1.1 = { birth = yes }
@@ -230,7 +230,7 @@
 	name = Maeroth
 	dynasty = 2408 # Daggerford
 	father = 9017 # Haelan Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1119.1.1 = { birth = yes }
@@ -240,7 +240,7 @@
 	name = Prydath
 	dynasty = 2408 # Daggerford
 	father = 9018 # Maeroth Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1145.1.1 = { birth = yes }
@@ -250,7 +250,7 @@
 	name = Dracoth
 	dynasty = 2408 # Daggerford
 	father = 9019 # Prydath Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1167.1.1 = { birth = yes }
@@ -263,7 +263,7 @@
 9021 = {
 	name = Dhelt
 	dynasty = 2411 # Elturgard
-	religion = good_human_pantheon
+	religion = triadic
 	culture = highcoaster
 	trait = creature_human
 	trait = expert_paladin
@@ -276,7 +276,7 @@
 	name = Rhessajan
 	female = yes
 	dynasty = 2412 # Ambermantle
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1325.1.1 = { birth = yes }
@@ -289,7 +289,7 @@
 		trait = shrewd
 		trait = cynical
 	}
-	1355.1.1 = { give_nickname = nick_old_vixen }	
+	1355.1.1 = { give_nickname = nick_old_vixen }
 	1410.1.1 = { death = yes }
 }
 9023 = {
@@ -301,8 +301,14 @@
 	trait = creature_halfling
 	trait = rogue
 	trait = trained_sorcerer
+	trait = origin_wild_magic
 	trait = cynical
 	1310.1.1 = { birth = yes }
+	1320.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1340.1.1 = { immortal_age = 30 }
 	1430.1.1 = { death = yes }
 }
@@ -310,13 +316,16 @@
 	name = Cylyria
 	female = yes
 	dynasty = 2413 # Dragonbreast
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = inventive
+	culture = moon_elf
 	trait = creature_half_elf
 	trait = fighter
-	trait = journeyman_bard
+	trait = expert_bard
 	trait = content
-	1295.1.1 = { birth = yes }
+	1295.1.1 = {
+		birth = yes
+		culture = draeven
+	}
 	1325.1.1 = { immortal_age = 30 }
 	1340.1.1 = { give_nickname = nick_the_silent_lady }
 	1450.1.1 = { death = yes }
@@ -324,11 +333,12 @@
 9025 = {
 	name = Bron
 	dynasty = 2414 # Tor
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = natural
+	culture = draeven
 	trait = creature_human
 	trait = paladin
 	trait = fighter
+	trait = patron_eldath
 	father = 9328
 	1323.1.1 = { birth = yes }
 	1363.1.1 = {
@@ -346,7 +356,7 @@
 9026 = {
 	name = Thintel
 	dynasty = 2415 # Ormbar
-	religion = good_human_pantheon
+	religion = triadic
 	culture = highcoaster
 	trait = creature_human
 	trait = journeyman_fighter
@@ -358,18 +368,24 @@
 	name = Sindel
 	female = yes
 	dynasty = 2416 # Soubar
-	religion = good_human_pantheon
+	religion = arcane
 	culture = highcoaster
 	trait = creature_half_elf
 	trait = journeyman_sorcerer
+	trait = origin_wild_magic
 	1304.1.1 = { birth = yes }
+	1314.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1334.1.1 = { immortal_age = 30 }
 	1440.1.1 = { death = yes }
 }
 9028 = {
 	name = Kelddath
 	dynasty = 2417 # Ormlyr
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	trait = expert_cleric
@@ -379,7 +395,7 @@
 9029 = {
 	name = Thalantyr
 	dynasty = 2418 # o' the Hedge (invented, but matches his in-game location)
-	religion = good_human_pantheon
+	religion = arcane
 	culture = highcoaster
 	trait = creature_human
 	trait = expert_wizard
@@ -393,20 +409,25 @@
 	name = Leonara
 	female = yes
 	dynasty = 2419 # Obarstal
-	religion = evil_human_pantheon
-	culture = heartlander
+	religion = shadow_gods
+	culture = draeven
 	trait = creature_human
 	trait = journeyman_rogue
 	mother = 9332
-	1321.1.1 = { birth = yes }
+	1321.1.1 = {
+		birth = yes
+		effect = {
+			add_weak_claim = k_cormyr # claims to be a relation of the Obarskyrs
+		}
+	}
 	1405.1.1 = { death = yes }
 }
 9031 = {
 	name = Tar
 	female = yes
 	dynasty = 2420 # Hurara
-	religion = evil_human_pantheon
-	culture = heartlander
+	religion = dead_three
+	culture = draeven
 	trait = creature_human
 	trait = fighter
 	father = 9337
@@ -417,20 +438,26 @@
 	name = Yanseldara
 	female = yes
 	dynasty = 2421 # Elversult
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = joyful
+	culture = draeven
 	trait = creature_human
 	trait = journeyman_fighter
 	trait = trained_sorcerer
+	trait = origin_divine_soul
 	trait = homosexual
 	father = 9341
 	1326.1.1 = { birth = yes }
-	1420.1.1 = { death = yes }
+	1336.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
+	1380.1.1 = { death = yes }
 }
 9033 = {
 	name = Silvanor # This character was created by forum user Duarte: https://forum.paradoxplaza.com/forum/index.php?threads/mod-d-d-forgotten-realms.1042010/page-33#post-25523872
 	dynasty = 2432 # Tessarion
-	religion = abyssal_cult
+	religion = scale_cult
 	culture = yuanti
 	trait = creature_pureblood
 	trait = trained_shadow
@@ -462,7 +489,7 @@
 	mother = 3029
 	martial = 8
 	1334.12.1 = { birth = yes }
-	1400.1.1 = { death = yes }
+	1415.1.1 = { death = yes }
 }
 9035 = {
 	name = Skaveal
@@ -477,19 +504,19 @@
 	trait = rough_terrain_leader
 	mother = 3017
 	1330.1.1 = { birth = yes }
-	1400.1.1 = { death = yes }
+	1410.1.1 = { death = yes }
 }
 9036 = {
 	name = Vaerana
 	dynasty = 2435 # Hawklyn
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	trait = master_ranger
 	trait = bisexual
 	trait = just
 	1327.1.1 = { birth = yes }
-	1346.1.1 = { 
+	1346.1.1 = {
 		effect = {
 			add_lover = 9032
 		}
@@ -503,12 +530,12 @@
 9037 = {
 	name = Uthgrael
 	dynasty = 2486 # Aumar
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	trait = trained_fighter
 	152.1.1 = { birth = yes }
-	183.1.1 = { 
+	183.1.1 = {
 		give_nickname = nick_the_stag_king
 		create_bloodline = {
 			type = aumar_bloodline
@@ -520,8 +547,8 @@
 	name = Syndrel
 	female = yes
 	dynasty = 2487 # Hornweather
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	153.1.1 = { birth = yes }
 	188.1.1 = { add_spouse = 9037 } # Uthgrael Aumar
@@ -532,8 +559,8 @@
 	dynasty = 2486 # Aumar
 	father = 9037 # Uthgrael the Stag King
 	mother = 9038 # Syndrel Hornweather
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = shadow_gods
+	culture = draeven
 	trait = creature_human
 	trait = master_fighter
 	trait = strong
@@ -550,8 +577,8 @@
 	dynasty = 2486 # Aumar
 	father = 9037 # Uthgrael the Stag King
 	mother = 9038 # Syndrel Hornweather
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = shadow_gods
+	culture = draeven
 	trait = creature_human
 	trait = elusive_shadow
 	trait = expert_shadow
@@ -568,8 +595,8 @@
 	dynasty = 2486 # Aumar
 	father = 9037 # Uthgrael the Stag King
 	mother = 9038 # Syndrel Hornweather
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = arcane
+	culture = draeven
 	trait = creature_human
 	trait = journeyman_wizard
 	191.1.1 = { birth = yes }
@@ -585,8 +612,8 @@
 	dynasty = 2486 # Aumar
 	father = 9037 # Uthgrael the Stag King
 	mother = 9038 # Syndrel Hornweather
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	trait = ranger
 	trait = just
@@ -603,8 +630,8 @@
 	name = Amrythale
 	female = yes
 	dynasty = 2488 # Goldsheaf
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	191.1.1 = { birth = yes }
 	210.1.1 = { add_spouse = 9042 } # Elthryn Aumar
@@ -620,8 +647,8 @@
 	dynasty = 2486 # Aumar
 	father = 9037 # Uthgrael the Stag King
 	mother = 9038 # Syndrel Hornweather
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = joyful
+	culture = draeven
 	trait = creature_human
 	trait = expert_shadow
 	trait = is_fat
@@ -640,8 +667,8 @@
 	dynasty = 2486 # Aumar
 	father = 9037 # Uthgrael the Stag King
 	mother = 9038 # Syndrel Hornweather
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = shadow_gods
+	culture = draeven
 	trait = creature_human
 	trait = expert_shadow
 	194.1.1 = { birth = yes }
@@ -657,8 +684,8 @@
 	dynasty = 2486 # Aumar
 	father = 9037 # Uthgrael the Stag King
 	mother = 9038 # Syndrel Hornweather
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = joyful
+	culture = draeven
 	trait = creature_human
 	trait = weak
 	trait = craven
@@ -675,8 +702,8 @@
 	dynasty = 2486 # Aumar
 	father = 9042 # Elthryn Aumar
 	mother = 9043 # Amrythale Goldsheaf
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = arcane
+	culture = draeven
 	disallow_random_traits = yes
 	trait = creature_human
 	trait = brilliant
@@ -716,8 +743,8 @@
 9048 = {
 	name = Helm
 	dynasty = 2489 # Stoneblade
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	trait = journeyman_fighter
 	181.1.1 = { birth = yes }
@@ -727,8 +754,8 @@
 	name = Elthryn
 	dynasty = 2489 # Stoneblade
 	father = 9048
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	242.1.1 = { birth = yes }
 	259.1.1 = { give_nickname = nick_the_young_king }
@@ -742,8 +769,8 @@
 	name = Roreld
 	dynasty = 2489 # Stoneblade
 	father = 9049 # Elthryn
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	263.1.1 = { birth = yes }
 	290.1.1 = {
@@ -757,8 +784,8 @@
 	name = Rindol
 	dynasty = 2489 # Stoneblade
 	father = 9049 # Elthryn
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	266.1.1 = { birth = yes }
 	308.12.1 = { trait = flu }
@@ -772,8 +799,8 @@
 	name = Onthrar
 	dynasty = 2489 # Stoneblade
 	father = 9051 # Rindol
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	289.1.1 = { birth = yes }
 	313.1.1 = { give_nickname = nick_the_ill_fated }
@@ -787,8 +814,8 @@
 	name = Tyril
 	female = yes
 	dynasty = 2490
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	289.1.1 = { birth = yes }
 	310.1.1 = { add_spouse = 9052 }
@@ -802,8 +829,8 @@
 	name = Faeram
 	dynasty = 2489 # Stoneblade
 	father = 9051 # Rindol
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	292.1.1 = { birth = yes }
 	342.1.1 = {
@@ -816,8 +843,8 @@
 	name = Nyram # Invented name
 	dynasty = 2489 # Stoneblade
 	father = 9051 # Rindol
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	294.1.1 = { birth = yes }
 	320.1.1 = {
@@ -830,8 +857,8 @@
 	name = Dorgild
 	dynasty = 2489 # Stoneblade
 	father = 9055 # Nyram
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	315.1.1 = { birth = yes }
 	344.1.1 = { culture = uthgardt } # Joins the Tree Ghost Tribe
@@ -844,8 +871,8 @@
 9057 = {
 	name = Undarl
 	dynasty = 2491 # Malaug
-	religion = evil_human_pantheon
-	culture = heartlander
+	religion = shadow_gods
+	culture = draeven
 	trait = creature_human # Actually a Malaugrym
 	trait = master_wizard
 	150.1.1 = { birth = yes }
@@ -859,8 +886,8 @@
 9058 = {
 	name = "Aldiber"
 	dynasty = 2493 # Inchtarwurn
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = arcane
 	learning = 9
 	trait = creature_human
 	trait = mastermind_theologian
@@ -878,8 +905,8 @@
 9059 = {
 	name = "Esbern"
 	dynasty = 2494 # Korvak
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = joyful
 	trait = creature_human
 	father = 9210
 	1320.9.12 = { birth = yes }
@@ -899,7 +926,7 @@
 	name = Markus
 	dynasty = 6801 # Randol
 	culture = talfir
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	81.1.1 = { birth = yes }
 	139.1.1 = { death = yes }
@@ -910,7 +937,7 @@
 	dynasty = 6801 # Randol
 	father = 9061 # Markus
 	culture = talfir
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	107.1.1 = { birth = yes }
 	169.1.1 = { death = yes }
@@ -919,7 +946,7 @@
 	name = Pryderi # Invented name
 	dynasty = 6803 # Hugh
 	culture = talfir
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	99.1.1 = { birth = yes }
 	171.1.1 = { death = yes }
@@ -929,7 +956,7 @@
 	dynasty = 6803 # Hugh
 	father = 9063 # Pryderi
 	culture = talfir
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	125.1.1 = { birth = yes }
 	193.1.1 = { death = yes }
@@ -939,7 +966,7 @@
 	name = Skorgal
 	dynasty = 2301 # Aulgaard
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	1.1.1 = { birth = yes }
 	39.1.1 = { death = yes } # Winterchill fever - add later
@@ -949,7 +976,7 @@
 	dynasty = 2301 # Aulgaard
 	father = 9065 # Skorgal
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	7.1.1 = { birth = yes }
 	39.1.1 = { give_nickname = nick_the_grim }
@@ -964,7 +991,7 @@
 	dynasty = 2301 # Aulgaard
 	father = 9066
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	30.1.1 = { birth = yes }
 	92.1.1 = { death = yes }
@@ -974,7 +1001,7 @@
 	dynasty = 2301 # Aulgaard
 	father = 9066
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	32.1.1 = { birth = yes }
 	87.1.1 = { death = yes }
@@ -984,11 +1011,11 @@
 	dynasty = 2301 # Aulgaard
 	father = 9067
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	55.1.1 = { birth = yes }
-	92.1.1 = { give_nickname = nick_the_ill_fated }	
-	92.6.1 = { 
+	92.1.1 = { give_nickname = nick_the_ill_fated }
+	92.6.1 = {
 		death = {
 			death_reason = death_missing
 		}
@@ -999,10 +1026,10 @@
 	dynasty = 2301 # Aulgaard
 	father = 9067
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	60.1.1 = { birth = yes }
-	114.1.1 = { 
+	114.1.1 = {
 		death = {
 			death_reason = death_battle
 		}
@@ -1013,10 +1040,10 @@
 	dynasty = 2301 # Aulgaard
 	father = 9070
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	85.1.1 = { birth = yes }
-	111.1.1 = { 
+	111.1.1 = {
 		death = {
 			death_reason = death_accident_hunt
 		}
@@ -1027,10 +1054,10 @@
 	dynasty = 2301 # Aulgaard
 	father = 9070
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	87.1.1 = { birth = yes }
-	106.1.1 = { 
+	106.1.1 = {
 		death = {
 			death_reason = death_accident_wolf
 		}
@@ -1041,10 +1068,10 @@
 	dynasty = 2301 # Aulgaard
 	father = 9070
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	89.1.1 = { birth = yes }
-	145.1.1 = { 
+	145.1.1 = {
 		death = {
 			death_reason = death_murder
 			killer = 15006 # Uth Myrmoran
@@ -1056,11 +1083,11 @@
 	dynasty = 2301 # Aulgaard
 	father = 9073
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	116.1.1 = { birth = yes }
 	145.1.1 = { give_nickname = nick_longstride }
-	154.1.1 = { 
+	154.1.1 = {
 		death = {
 			death_reason = death_missing
 		}
@@ -1071,7 +1098,7 @@
 	dynasty = 2301 # Aulgaard
 	father = 9073
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	121.1.1 = { birth = yes }
 	160.1.1 = { death = yes } # Winterchill fever - add later
@@ -1081,7 +1108,7 @@
 	dynasty = 2301 # Aulgaard
 	father = 9075
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	trait = androgynous
 	142.1.1 = { birth = yes }
@@ -1098,7 +1125,7 @@
 	dynasty = 2301 # Aulgaard
 	father = 9075
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	144.1.1 = { birth = yes }
 	187.1.1 = {
@@ -1112,7 +1139,7 @@
 	dynasty = 2301 # Aulgaard
 	father = 9076
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	162.1.1 = { birth = yes }
 	182.1.1 = { give_nickname = nick_the_brave }
@@ -1127,7 +1154,7 @@
 	dynasty = 2301 # Aulgaard
 	father = 9078
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	190.1.1 = { birth = yes }
 	224.1.1 = { death = yes }
@@ -1137,7 +1164,7 @@
 	dynasty = 2301 # Aulgaard
 	father = 9078
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	191.1.1 = { birth = yes }
 	225.1.1 = { give_nickname = nick_the_foolish }
@@ -1148,7 +1175,7 @@
 	dynasty = 2301 # Aulgaard
 	father = 9080
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	215.1.1 = { birth = yes }
 	275.1.1 = {
@@ -1162,11 +1189,11 @@
 	dynasty = 2301 # Aulgaard
 	father = 9081
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	233.1.1 = { birth = yes }
 	280.8.1 = { trait = has_bubonic_plague }
-	281.1.1 = { 
+	281.1.1 = {
 		death = {
 			death_reason = death_trait
 		}
@@ -1177,7 +1204,7 @@
 	dynasty = 2301 # Aulgaard
 	father = 9082
 	culture = northlander
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	256.1.1 = { birth = yes }
 	338.1.1 = { death = yes }
@@ -1201,7 +1228,7 @@
 	name = Caruth
 	dynasty = 2302 # Darskul
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	trait = journeyman_fighter
 	102.1.1 = { birth = yes }
@@ -1219,7 +1246,7 @@
 	dynasty = 2302 # Darskul
 	father = 9085
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	133.1.1 = { birth = yes }
 	209.1.1 = { death = yes }
@@ -1229,19 +1256,19 @@
 	dynasty = 2302 # Darskul
 	father = 9085
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	135.1.1 = { birth = yes }
 	160.1.1 = { employer = 9076 } # Ragnar Aulgaard
-	182.1.1 = { employer = 9086 } # Caruth Darskul 
+	182.1.1 = { employer = 9086 } # Caruth Darskul
 	189.1.1 = { death = yes }
 }
 9088 = {
-	name = Davilarhh 
+	name = Davilarhh
 	dynasty = 2302 # Darskul
 	father = 9086
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	trait = trained_ranger
 	164.1.1 = { birth = yes }
@@ -1256,7 +1283,7 @@
 	dynasty = 2302 # Darskul
 	father = 9088
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	trait = journeyman_fighter
 	191.1.1 = { birth = yes }
@@ -1268,7 +1295,7 @@
 	dynasty = 2302 # Darskul
 	father = 9089 # Farryd
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	220.1.1 = { birth = yes }
 	228.1.1 = { death = yes }
@@ -1278,7 +1305,7 @@
 	dynasty = 2302 # Darskul
 	father = 9088
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	trait = journeyman_shadow
 	195.1.1 = { birth = yes }
@@ -1290,7 +1317,7 @@
 	dynasty = 2302 # Darskul
 	father = 9088
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	193.1.1 = { birth = yes }
 	259.1.1 = { death = yes }
@@ -1300,7 +1327,7 @@
 	dynasty = 2302 # Darskul
 	mother = 9092
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	221.1.1 = { birth = yes }
 	263.1.1 = { give_nickname = nick_the_towerlord }
@@ -1315,7 +1342,7 @@
 	dynasty = 2302 # Darskul
 	mother = 9092
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	226.1.1 = { birth = yes }
 	294.1.1 = {
@@ -1329,7 +1356,7 @@
 	dynasty = 2302 # Darskul
 	father = 9094
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	trait = weak
 	256.1.1 = { birth = yes }
@@ -1344,13 +1371,13 @@
 	name = Lathila # invented name
 	female = yes
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	257.1.1 = { birth = yes }
 	278.1.1 = { add_spouse = 9095 } # Gelidarhh
 	293.1.1 = {
 		effect = {
-			add_lover = 9097 
+			add_lover = 9097
 		}
 	} # Davilarhh
 	296.1.1 = { add_spouse = 9097 } # Davilarhh
@@ -1361,7 +1388,7 @@
 	dynasty = 2302 # Darskul
 	father = 9094
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	260.1.1 = { birth = yes }
 	330.1.1 = { death = yes	}
@@ -1372,7 +1399,7 @@
 	father = 9097
 	mother = 9096
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	297.1.1 = { birth = yes }
 	330.1.1 = { give_nickname = nick_the_bloody }
@@ -1388,7 +1415,7 @@
 	father = 9097
 	mother = 9096
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	300.1.1 = { birth = yes }
 	341.1.1 = {
@@ -1403,7 +1430,7 @@
 	father = 9097
 	mother = 9096
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	305.1.1 = { birth = yes }
 	354.1.1 = {
@@ -1417,7 +1444,7 @@
 	dynasty = 2302 # Darskul
 	father = 9100
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	326.1.1 = { birth = yes }
 	402.1.1 = { death = yes	}
@@ -1427,7 +1454,7 @@
 	dynasty = 2302 # Darskul
 	father = 9100
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	327.1.1 = { birth = yes }
 	400.1.1 = { death = yes	}
@@ -1437,11 +1464,11 @@
 	dynasty = 2302 # Darskul
 	father = 9101
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	353.1.1 = { birth = yes }
 	421.8.1 = { trait = has_bubonic_plague }
-	422.1.1 = { 
+	422.1.1 = {
 		death = {
 			death_reason = death_trait
 		}
@@ -1452,11 +1479,11 @@
 	dynasty = 2302 # Darskul
 	father = 9103
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	382.1.1 = { birth = yes }
 	421.4.1 = { trait = has_bubonic_plague }
-	421.9.1 = { 
+	421.9.1 = {
 		death = {
 			death_reason = death_trait
 		}
@@ -1467,11 +1494,11 @@
 	dynasty = 2302 # Darskul
 	father = 9103
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	383.1.1 = { birth = yes }
 	422.1.1 = { give_nickname = nick_the_blackaxe }
-	442.1.1 = { 
+	442.1.1 = {
 		death = {
 			death_reason = death_combat_dragon
 		}
@@ -1482,7 +1509,7 @@
 	dynasty = 2302 # Darskul
 	father = 9105
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	409.1.1 = { birth = yes }
 	489.1.1 = { give_nickname = nick_the_greybeard }
@@ -1493,7 +1520,7 @@
 	dynasty = 2302 # Darskul
 	father = 9106
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	433.1.1 = { birth = yes }
 	489.1.1 = { death = yes	}
@@ -1503,10 +1530,10 @@
 	dynasty = 2302 # Darskul
 	father = 9107
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	460.1.1 = { birth = yes } # Moved 10 years earlier: According to a Candlekeep answer from George Krashos, separate from the Elembar king-list, the first king of Delimbyran/Phalorm was the son of the last king of Elembar (as was his brother, the first Duke of Calandor) - therefore they must be born more than 9 years apart
-	511.1.1 = { 
+	511.1.1 = {
 		death = {
 			death_reason = death_battle
 		}
@@ -1516,7 +1543,7 @@
 	name = Elembar
 	dynasty = 2303 # of Eldath
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	trait = renowned_druid
 	40.1.1 = { birth = yes }
@@ -1531,7 +1558,7 @@
 	dynasty = 2302 # Darskul
 	father = 9108
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	trait = expert_fighter
 	479.1.1 = { birth = yes }
@@ -1551,10 +1578,10 @@
 	dynasty = 2304 # Snowsword
 	father = 9110 # Javilarhh I
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	502.1.1 = { birth = yes }
-	559.1.1 = { 
+	559.1.1 = {
 		death = {
 			death_reason = death_duel
 		}
@@ -1566,10 +1593,10 @@
 	dynasty = 2304 # Snowsword
 	father = 9111 # Darnorth I
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	530.1.1 = { birth = yes }
-	594.1.1 = { 
+	594.1.1 = {
 		death = {
 			death_reason = death_missing
 		}
@@ -1581,11 +1608,11 @@
 	dynasty = 2304 # Snowsword
 	father = 9112 # Darnorth II
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	552.1.1 = { birth = yes }
 	594.1.1 = { give_nickname = nick_the_fair }
-	626.1.1 = { 
+	626.1.1 = {
 		death = {
 			death_reason = death_battle
 		}
@@ -1596,11 +1623,11 @@
 	dynasty = 2304 # Snowsword
 	father = 9113 # Javilarhh II
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	574.1.1 = { birth = yes }
-	626.1.1 = { give_nickname = nick_the_brave }	
-	634.1.1 = { 
+	626.1.1 = { give_nickname = nick_the_brave }
+	634.1.1 = {
 		death = {
 			death_reason = death_battle
 		}
@@ -1611,12 +1638,12 @@
 	dynasty = 2304 # Snowsword
 	father = 9114 # Haryd I
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = expert_fighter
 	596.1.1 = { birth = yes }
 	645.1.1 = { give_nickname = nick_the_marching_king }
-	676.1.1 = { 
+	676.1.1 = {
 		death = {
 			death_reason = death_battle
 		}
@@ -1627,11 +1654,11 @@
 	dynasty = 2304 # Snowsword
 	father = 9115 # Haryd II
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	620.1.1 = { birth = yes }
 	676.1.1 = { give_nickname = nick_the_dark }
-	680.1.1 = { 
+	680.1.1 = {
 		death = {
 			death_reason = death_heartstop
 		}
@@ -1642,10 +1669,10 @@
 	dynasty = 2304 # Snowsword
 	father = 9116 # Javilarhh II
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	643.1.1 = { birth = yes }
-	681.1.1 = { 
+	681.1.1 = {
 		death = {
 			death_reason = death_accident
 		}
@@ -1656,10 +1683,10 @@
 	dynasty = 2304 # Snowsword
 	father = 9117 # Javilarhh III
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	664.1.1 = { birth = yes }
-	697.1.17 = { 
+	697.1.17 = {
 		death = {
 			death_reason = death_murder
 		}
@@ -1693,7 +1720,7 @@
 	dynasty = 2302 # Darskul
 	father = 9108
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	482.1.1 = {	birth = yes }
 	511.1.1 = { dynasty = 2305 } # Calandor starts here
@@ -1704,7 +1731,7 @@
 	dynasty = 2305 # Calandor
 	father = 9121
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	515.1.1 = {	birth = yes }
 	536.1.1 = { death = yes }
@@ -1714,7 +1741,7 @@
 	dynasty = 2305 # Calandor
 	father = 9121
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	516.1.1 = {	birth = yes }
 	539.1.1 = { death = yes }
@@ -1724,11 +1751,11 @@
 	dynasty = 2305 # Calandor
 	father = 9121
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = expert_fighter
 	518.1.1 = {	birth = yes }
-	557.1.1 = { 
+	557.1.1 = {
 		death = {
 			death_reason = death_battle
 		}
@@ -1739,11 +1766,11 @@
 	dynasty = 2305 # Calandor
 	father = 9124
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = expert_fighter
 	544.1.1 = {	birth = yes }
-	583.1.1 = { 
+	583.1.1 = {
 		death = {
 			death_reason = death_battle
 			# Killer is Black Alaric - but who was Black Alaric then?
@@ -1755,12 +1782,12 @@
 	dynasty = 2305 # Calandor
 	father = 9125
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = expert_fighter
 	565.1.1 = {	birth = yes }
 	583.1.1 = { give_nickname = nick_the_grimspear }
-	611.1.1 = { 
+	611.1.1 = {
 		death = {
 			death_reason = death_battle # Everhorde
 		}
@@ -1770,8 +1797,8 @@
 	name = Ravilarhh # invented name
 	dynasty = 2305 # Calandor
 	father = 9125
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = solar
+	culture = draeven
 	trait = creature_human
 	566.1.1 = { birth = yes }
 	617.1.1 = {
@@ -1784,8 +1811,8 @@
 	name = Ravilarhh # invented name
 	dynasty = 2305 # Calandor
 	father = 9126
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = solar
+	culture = draeven
 	trait = creature_human
 	591.1.1 = { birth = yes }
 	640.1.1 = {
@@ -1798,8 +1825,8 @@
 	name = Dornoth
 	dynasty = 2305 # Calandor
 	father = 9126
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = solar
+	culture = draeven
 	trait = creature_human
 	592.1.1 = { birth = yes }
 	644.12.1 = { trait = flu }
@@ -1813,8 +1840,8 @@
 	name = Maernorth
 	dynasty = 2305 # Calandor
 	father = 9129
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = solar
+	culture = draeven
 	trait = creature_human
 	617.1.1 = { birth = yes }
 	672.1.1 = {
@@ -1827,8 +1854,8 @@
 	name = Tarralin
 	dynasty = 2305 # Calandor
 	father = 9130
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = solar
+	culture = draeven
 	trait = creature_human
 	641.1.1 = { birth = yes }
 	698.1.1 = {
@@ -1842,8 +1869,8 @@
 	name = Harnorth # invented name
 	dynasty = 2305 # Calandor
 	father = 9130
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = solar
+	culture = draeven
 	trait = creature_human
 	643.1.1 = { birth = yes }
 	695.1.1 = {
@@ -1856,8 +1883,8 @@
 	name = Baroth
 	dynasty = 2305 # Calandor
 	father = 9131
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = solar
+	culture = draeven
 	trait = creature_human
 	trait = master_shadow
 	664.1.1 = { birth = yes }
@@ -1873,7 +1900,7 @@
 	dynasty = 2305 # Calandor
 	father = 9133
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	690.1.1 = {	birth = yes } # Moved from 688 to make his father 16 at the time
 	780.1.1 = { give_nickname = nick_the_ancient }
@@ -1884,11 +1911,11 @@
 	dynasty = 2305 # Calandor
 	father = 9134
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	714.1.1 = {	birth = yes }
 	734.1.1 = { give_nickname = nick_the_wanderer }
-	757.1.1 = { 
+	757.1.1 = {
 		death = {
 			death_reason = death_murder # Eldreth Veluuthra
 		}
@@ -1899,11 +1926,11 @@
 	dynasty = 2305 # Calandor
 	father = 9135
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	745.1.1 = {	birth = yes }
 	806.12.1 = { trait = flu }
-	807.1.1 = { 
+	807.1.1 = {
 		death = {
 			death_reason = death_trait
 		}
@@ -1914,7 +1941,7 @@
 	dynasty = 2305 # Calandor
 	father = 9136
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	770.1.1 = {	birth = yes }
 	797.1.1 = { death = yes }
@@ -1924,7 +1951,7 @@
 	dynasty = 2305 # Calandor
 	father = 9136
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	772.1.1 = {	birth = yes }
 	803.1.1 = { death = yes }
@@ -1934,7 +1961,7 @@
 	dynasty = 2305 # Calandor
 	father = 9136
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	775.1.1 = {	birth = yes }
 	847.1.1 = { death = yes } # Winterchill fever
@@ -1944,7 +1971,7 @@
 	dynasty = 2305 # Calandor
 	father = 9139
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	801.1.1 = {	birth = yes }
 	845.1.1 = { death = yes }
@@ -1954,7 +1981,7 @@
 	dynasty = 2305 # Calandor
 	father = 9139
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	805.1.1 = {	birth = yes }
 	870.1.1 = { death = yes }
@@ -1964,11 +1991,11 @@
 	dynasty = 2305 # Calandor
 	father = 9141
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	834.1.1 = {	birth = yes }
 	870.1.1 = { give_nickname = nick_the_terrible }
-	877.1.1 = { 
+	877.1.1 = {
 		death = {
 			death_reason = death_battle
 			killer = 30580
@@ -1980,11 +2007,11 @@
 	dynasty = 2305 # Calandor
 	father = 9141
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	832.1.1 = {	birth = yes }
 	898.12.1 = { trait = flu }
-	899.1.1 = { 
+	899.1.1 = {
 		death = {
 			death_reason = death_trait
 		}
@@ -1995,7 +2022,7 @@
 	dynasty = 2305 # Calandor
 	father = 9143
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = expert_fighter
 	852.1.1 = {	birth = yes }
@@ -2011,12 +2038,12 @@
 	dynasty = 2305 # Calandor
 	father = 9144
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = expert_fighter
 	888.1.1 = {	birth = yes }
 	910.1.1 = { give_nickname = nick_the_bold }
-	932.1.1 = { 
+	932.1.1 = {
 		death = {
 			death_reason = death_battle # First Trollwar
 		}
@@ -2027,10 +2054,10 @@
 	dynasty = 2305 # Calandor
 	father = 9144
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	890.1.1 = {	birth = yes }
-	947.1.1 = { 
+	947.1.1 = {
 		death = {
 			death_reason = death_accident_dragon
 		}
@@ -2042,7 +2069,7 @@
 	dynasty = 2305 # Calandor
 	father = 9146
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	923.1.1 = { birth = yes }
 	945.1.1 = { add_spouse = 9002 } # Tyndal Daggerford
@@ -2056,10 +2083,10 @@
 	dynasty = 2304 # Snowsword
 	father = 9117 # Javilarhh III
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	676.1.1 = { birth = yes }
-	697.1.1 = { 
+	697.1.1 = {
 		death = {
 			death_reason = death_murder
 		}
@@ -2070,10 +2097,10 @@
 	dynasty = 2306 # Javilarhhson
 	father = 9116 # Javilarhh II
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	645.1.1 = { birth = yes }
-	687.1.1 = { 
+	687.1.1 = {
 		death = {
 			death_reason = death_duel
 		}
@@ -2086,7 +2113,7 @@
 	name = Darovy
 	dynasty = 2408 # Daggerford
 	father = 9020 # Dracoth Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1190.1.1 = { birth = yes }
@@ -2097,7 +2124,7 @@
 	name = Ancodar
 	dynasty = 2408 # Daggerford
 	father = 9150 # Darovy Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1213.1.1 = { birth = yes }
@@ -2107,7 +2134,7 @@
 	name = Raenath
 	dynasty = 2408 # Daggerford
 	father = 9151 # Ancodar Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1234.1.1 = { birth = yes }
@@ -2117,7 +2144,7 @@
 	name = Llew
 	dynasty = 2408 # Daggerford
 	father = 9152 # Raenath Daggerford
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	1255.1.1 = { birth = yes }
@@ -2129,7 +2156,7 @@
 9154 = {
 	name = Julkoun
 	dynasty = 2310 # Julkoun
-	religion = good_human_pantheon 
+	religion = natural
 	culture = highcoaster
 	trait = creature_human
 	trait = journeyman_cleric
@@ -2139,7 +2166,7 @@
 9155 = {
 	name = Gawain # invented name
 	dynasty = 2309 # Delanter
-	religion = good_human_pantheon
+	religion = natural
 	culture = highcoaster
 	trait = creature_human
 	trait = expert_fighter
@@ -2154,7 +2181,7 @@
 	name = Agwain
 	dynasty = 2309 # Delanter
 	father = 9155 # Gawain
-	religion = good_human_pantheon
+	religion = natural
 	culture = highcoaster
 	trait = creature_human
 	trait = rogue
@@ -2165,7 +2192,7 @@
 	name = Agraveris # invented name
 	dynasty = 2309 # Delanter
 	father = 9155 # Gawain
-	religion = good_human_pantheon
+	religion = natural
 	culture = highcoaster
 	trait = creature_human
 	trait = fighter
@@ -2176,12 +2203,12 @@
 	name = Gahaut
 	dynasty = 2309 # Delanter
 	father = 9155 # Gawain
-	religion = good_human_pantheon
+	religion = natural
 	culture = highcoaster
 	trait = creature_human
 	trait = ranger
 	1333.1.1 = { birth = yes }
-	1355.1.1 = { 
+	1355.1.1 = {
 		death = {
 			death_reason = death_battle
 		}
@@ -2191,7 +2218,7 @@
 	name = Aglovale
 	dynasty = 2309 # Delanter
 	father = 9155 # Gawain
-	religion = good_human_pantheon
+	religion = natural
 	culture = highcoaster
 	trait = creature_human
 	trait = fighter
@@ -2200,9 +2227,9 @@
 }
 9160 = {
 	name = Delshara
-	female = yes 
+	female = yes
 	dynasty = 2312 # Windhair
-	religion = good_human_pantheon
+	religion = arcane
 	culture = highcoaster
 	trait = creature_human
 	trait = expert_wizard
@@ -2214,7 +2241,7 @@
 9161 = {
 	name = Pendurl
 	dynasty = 2313 # of Pendurl
-	religion = good_human_pantheon
+	religion = arcane
 	culture = highcoaster
 	trait = creature_human
 	trait = master_wizard
@@ -2309,19 +2336,19 @@
 	culture = uthgardt
 	trait = creature_human
 	485.1.1 = { birth = yes }
-	510.1.1 = { 
-		give_nickname = nick_the_grey 
+	510.1.1 = {
+		give_nickname = nick_the_grey
 		culture = highcoaster
-		religion = good_human_pantheon
+		religion = mercantile
 	}
 	555.1.1 = { death = yes }
 }
 9170 = {
-	name = Corvan 
+	name = Corvan
 	dynasty = 2489 # Stoneblade
 	father = 9169 # Turvan
 	mother = 9178 # Nareetha Darskul/Snowsword
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = highcoaster
 	trait = creature_human
 	trait = journeyman_fighter
@@ -2337,7 +2364,7 @@
 	dynasty = 2489 # Stoneblade
 	father = 9169 # Turvan
 	mother = 9178 # Nareetha Darskul/Snowsword
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = highcoaster
 	trait = creature_human
 	trait = journeyman_fighter
@@ -2352,7 +2379,7 @@
 	name = Naerild
 	dynasty = 2489 # Stoneblade
 	father = 9170 # Corvan
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = highcoaster
 	trait = creature_human
 	trait = journeyman_fighter
@@ -2367,7 +2394,7 @@
 	name = Turvan # invented name
 	dynasty = 2489 # Stoneblade
 	father = 9170 # Corvan
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = highcoaster
 	trait = creature_human
 	trait = journeyman_fighter
@@ -2382,7 +2409,7 @@
 	name = Laenril
 	dynasty = 2489 # Stoneblade
 	father = 9170 # Corvan
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = highcoaster
 	trait = creature_human
 	trait = journeyman_fighter
@@ -2398,7 +2425,7 @@
 	name = Malgarth
 	dynasty = 2489 # Stoneblade
 	father = 9174 # Laenril
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = highcoaster
 	trait = creature_human
 	trait = twin
@@ -2414,7 +2441,7 @@
 	name = Talgarth
 	dynasty = 2489 # Stoneblade
 	father = 9174 # Laenril
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = highcoaster
 	trait = creature_human
 	trait = twin
@@ -2430,7 +2457,7 @@
 	name = Baerild
 	dynasty = 2489 # Stoneblade
 	father = 9174 # Laenril
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = highcoaster
 	trait = creature_human
 	trait = journeyman_fighter
@@ -2450,7 +2477,7 @@
 	dynasty = 2302 # Darskul
 	father = 9108
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = expert_fighter
 	480.1.1 = { birth = yes }
@@ -2470,11 +2497,11 @@
 	culture = uthgardt
 	trait = creature_human
 	490.1.1 = { birth = yes }
-	510.1.1 = { 
+	510.1.1 = {
 		culture = highcoaster
-		religion = good_human_pantheon
+		religion = mercantile
 	}
-	548.1.1 = { 
+	548.1.1 = {
 		death = {
 			death_reason = death_missing # Legend has it that she fled while pregnant to escape the Hag Curse, but I think she might be too old
 		}
@@ -2486,7 +2513,7 @@
 	dynasty = 2408 # Daggerford
 	father = 9005
 	mother = 9008
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	trait = wizard
@@ -2509,7 +2536,7 @@
 	female = yes
 	dynasty = 2538 # Hart
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	1120.1.1 = { birth = yes }
 	1200.1.1 = { death = yes }
@@ -2518,7 +2545,7 @@
 	name = "Milton"
 	dynasty = 2538 # Hart
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	mother = 9182
 	1180.1.1 = { birth = yes }
@@ -2528,7 +2555,7 @@
 	name = "Ganon"
 	dynasty = 2538 # Hart
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 9183
 	1240.1.1 = { birth = yes }
@@ -2539,7 +2566,7 @@
 	female = yes
 	dynasty = 2538 # Hart
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 9184
 	1300.1.1 = { birth = yes }
@@ -2549,10 +2576,10 @@
 	name = "Raedric"
 	dynasty = 2539 # Janus
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	1340.1.1 = { birth = yes }
-	1400.1.1 = { death = yes }
+	1390.1.1 = { death = yes }
 }
 9187 = {
 	name = "Tulgar"
@@ -2648,8 +2675,8 @@
 9196 = {
 	name = "Boareskyr"
 	dynasty = 2543 # Boareskyr
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	trait = journeyman_fighter
 	420.1.1 = { birth = yes }
@@ -2658,8 +2685,8 @@
 9197 = {
 	name = "Georg"
 	dynasty = 2543 # Boareskyr
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	father = 9196
 	470.1.1 = { birth = yes }
@@ -2669,8 +2696,8 @@
 	name = "Inara"
 	female = yes
 	dynasty = 2543 # Boareskyr
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	father = 9197
 	530.1.1 = { birth = yes }
@@ -2680,8 +2707,8 @@
 	name = "Jeanne"
 	female = yes
 	dynasty = 2543 # Boareskyr
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	mother = 9198
 	600.1.1 = { birth = yes }
@@ -2691,8 +2718,8 @@
 	name = "Reyn"
 	female = yes
 	dynasty = 2543 # Boareskyr
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	mother = 9199
 	660.1.1 = { birth = yes }
@@ -2701,8 +2728,8 @@
 9201 = {
 	name = "Vekel"
 	dynasty = 2543 # Boareskyr
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	mother = 9200
 	710.1.1 = { birth = yes }
@@ -2711,8 +2738,8 @@
 9202 = {
 	name = "Amos"
 	dynasty = 2543 # Boareskyr
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	father = 9201
 	780.1.1 = { birth = yes }
@@ -2721,8 +2748,8 @@
 9203 = {
 	name = "William"
 	dynasty = 2543 # Boareskyr
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	father = 9202
 	820.1.1 = { birth = yes }
@@ -2732,8 +2759,8 @@
 	name = "Anne"
 	female = yes
 	dynasty = 2543 # Boareskyr
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	father = 9203
 	880.1.1 = { birth = yes }
@@ -2742,8 +2769,8 @@
 9205 = {
 	name = "Chelimber"
 	dynasty = 2543 # Boareskyr
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	mother = 9204
 	940.1.1 = { birth = yes }
@@ -2752,8 +2779,8 @@
 9206 = {
 	name = "Genn"
 	dynasty = 2494 # Korvak
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = joyful
 	trait = creature_human
 	1000.1.1 = { birth = yes }
 	1090.1.1 = { death = yes }
@@ -2762,8 +2789,8 @@
 	name = "Esmerella"
 	female = yes
 	dynasty = 2494 # Korvak
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = joyful
 	trait = creature_human
 	father = 9206
 	1070.1.1 = { birth = yes }
@@ -2773,8 +2800,8 @@
 	name = "Rose"
 	female = yes
 	dynasty = 2494 # Korvak
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = joyful
 	trait = creature_human
 	mother = 9207
 	1140.1.1 = { birth = yes }
@@ -2783,8 +2810,8 @@
 9209 = {
 	name = "Fennric"
 	dynasty = 2494 # Korvak
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = joyful
 	trait = creature_human
 	mother = 9208
 	1210.1.1 = { birth = yes }
@@ -2793,8 +2820,8 @@
 9210 = {
 	name = "Gulvan"
 	dynasty = 2494 # Korvak
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = joyful
 	trait = creature_human
 	father = 9209
 	1280.1.1 = { birth = yes }
@@ -2804,7 +2831,7 @@
 	name = "Antor"
 	dynasty = 2546 # Falasal
 	culture = netherese
-	religion = netherese_pantheon
+	religion = arcane
 	trait = creature_human
 	2.1.1 = { birth = yes }
 	63.1.1 = { death = yes }
@@ -2813,7 +2840,7 @@
 	name = "Henry"
 	dynasty = 2548 # Hillsfield
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	350.1.1 = { birth = yes }
 	450.1.1 = { death = yes }
@@ -2823,7 +2850,7 @@
 	female = yes
 	dynasty = 2548 # Hillsfield
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 9212
 	430.1.1 = { birth = yes }
@@ -2834,7 +2861,7 @@
 	female = yes
 	dynasty = 2548 # Hillsfield
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 9213
 	510.1.1 = { birth = yes }
@@ -2845,7 +2872,7 @@
 	female = yes
 	dynasty = 2548 # Hillsfield
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 9214
 	590.1.1 = { birth = yes }
@@ -2855,7 +2882,7 @@
 	name = "Abnur"
 	dynasty = 2548 # Hillsfield
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 9215
 	670.1.1 = { birth = yes }
@@ -2865,7 +2892,7 @@
 	name = "Crentor"
 	dynasty = 2548 # Hillsfield
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 9216
 	750.1.1 = { birth = yes }
@@ -2875,7 +2902,7 @@
 	name = "Jesshe"
 	dynasty = 2548 # Hillsfield
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 9217
 	830.1.1 = { birth = yes }
@@ -2885,7 +2912,7 @@
 	name = "Roderic"
 	dynasty = 2548 # Hillsfield
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 9218
 	910.1.1 = { birth = yes }
@@ -2895,7 +2922,7 @@
 	name = "Uriel"
 	dynasty = 2548 # Hillsfield
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 9219
 	990.1.1 = { birth = yes }
@@ -2905,7 +2932,7 @@
 	name = "Martin"
 	dynasty = 2548 # Hillsfield
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 9220
 	1070.1.1 = { birth = yes }
@@ -2916,7 +2943,7 @@
 	female = yes
 	dynasty = 2548 # Hillsfield
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 9221
 	1150.1.1 = { birth = yes }
@@ -2927,7 +2954,7 @@
 	female = yes
 	dynasty = 2548 # Hillsfield
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 9222
 	1230.1.1 = { birth = yes }
@@ -2938,7 +2965,7 @@
 	female = yes
 	dynasty = 2548 # Hillsfield
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 9223
 	1290.1.1 = { birth = yes }
@@ -2948,7 +2975,7 @@
 	name = "Jenner"
 	dynasty = 2550 # Greckle
 	culture = highcoaster
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = natural_lycanthrope
 	trait = wererat
@@ -2964,7 +2991,7 @@
 	name = "Vorden"
 	dynasty = 2550 # Greckle
 	culture = highcoaster
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = natural_lycanthrope
 	trait = wererat
@@ -2979,7 +3006,7 @@
 	name = "Valdis"
 	dynasty = 2550 # Greckle
 	culture = highcoaster
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = natural_lycanthrope
 	trait = wererat
@@ -2995,7 +3022,7 @@
 	female = yes
 	dynasty = 2550 # Greckle
 	culture = highcoaster
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = natural_lycanthrope
 	trait = wererat
@@ -3010,7 +3037,7 @@
 	name = "Formel"
 	dynasty = 2550 # Greckle
 	culture = highcoaster
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = natural_lycanthrope
 	trait = wererat
@@ -3026,7 +3053,7 @@
 	female = yes
 	dynasty = 2550 # Greckle
 	culture = highcoaster
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = natural_lycanthrope
 	trait = wererat
@@ -3042,7 +3069,7 @@
 	female = yes
 	dynasty = 2550 # Greckle
 	culture = highcoaster
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = natural_lycanthrope
 	trait = wererat
@@ -3057,7 +3084,7 @@
 	name = "Goose"
 	dynasty = 2550 # Greckle
 	culture = highcoaster
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = natural_lycanthrope
 	trait = wererat
@@ -3073,7 +3100,7 @@
 	female = yes
 	dynasty = 2550 # Greckle
 	culture = highcoaster
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = natural_lycanthrope
 	trait = wererat
@@ -3146,7 +3173,7 @@
 	name = "Varric"
 	dynasty = 2554 # Tisea
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	880.1.1 = { birth = yes }
 	970.1.1 = { death = yes }
@@ -3156,7 +3183,7 @@
 	female = yes
 	dynasty = 2554 # Tisea
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 9240
 	950.1.1 = { birth = yes }
@@ -3166,7 +3193,7 @@
 	name = "Tristan"
 	dynasty = 2554 # Tisea
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	mother = 9241
 	1020.1.1 = { birth = yes }
@@ -3176,7 +3203,7 @@
 	name = "Stan"
 	dynasty = 2554 # Tisea
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 9242
 	1090.1.1 = { birth = yes }
@@ -3187,7 +3214,7 @@
 	female = yes
 	dynasty = 2554 # Tisea
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 9243
 	1160.1.1 = { birth = yes }
@@ -3197,7 +3224,7 @@
 	name = "Bendu"
 	dynasty = 2554 # Tisea
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	mother = 9244
 	1230.1.1 = { birth = yes }
@@ -3207,7 +3234,7 @@
 	name = "Olo"
 	dynasty = 2554 # Tisea
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 9245
 	1300.1.1 = { birth = yes }
@@ -3216,14 +3243,14 @@
 9247 = {
 	name = "Derrin"
 	dynasty = 2411 # Elturgard
-	religion = good_human_pantheon
+	religion = triadic
 	culture = highcoaster
 	trait = creature_human
 	father = 9021
 	1400.1.1 = { birth = yes }
 	1428.1.1 = {
 		add_trait = vampire
-		secret_religion = evil_human_pantheon
+		secret_religion = shadow_gods
 	}
 	1430.1.1 = { immortal_age = 30 }
 	1444.5.1 = { death = yes }
@@ -3231,7 +3258,7 @@
 9248 = {
 	name = "Thavius"
 	dynasty = 2555 # Kreeg
-	religion = good_human_pantheon
+	religion = triadic
 	secret_religion = infernal
 	culture = highcoaster
 	trait = creature_human
@@ -3247,8 +3274,8 @@
 9249 = {
 	name = "Marcus"
 	dynasty = 2556 # Tavion
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	trait = journeyman_paladin
 	1410.1.1 = { birth = yes }
@@ -3258,7 +3285,7 @@
 	name = "Cal"
 	dynasty = 2559 # Dorman
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = inventive
 	trait = creature_human
 	trait = trained_cleric
 	850.1.1 = { birth = yes }
@@ -3269,7 +3296,7 @@
 	female = yes
 	dynasty = 2559 # Dorman
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = inventive
 	trait = creature_human
 	trait = trained_cleric
 	880.1.1 = { birth = yes }
@@ -3279,7 +3306,7 @@
 	name = "Otto"
 	dynasty = 2559 # Dorman
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = inventive
 	trait = creature_human
 	trait = trained_cleric
 	940.1.1 = { birth = yes }
@@ -3289,7 +3316,7 @@
 	name = "Astro"
 	dynasty = 2559 # Dorman
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = inventive
 	trait = creature_human
 	trait = trained_cleric
 	1000.1.1 = { birth = yes }
@@ -3300,7 +3327,7 @@
 	female = yes
 	dynasty = 2559 # Dorman
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = inventive
 	trait = creature_human
 	trait = trained_cleric
 	1070.1.1 = { birth = yes }
@@ -3310,7 +3337,7 @@
 	name = "Ulcaster"
 	dynasty = 2577 # Ulcaster
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = arcane
 	learning = 8
 	trait = creature_human
 	trait = scholarly_theologian
@@ -3330,7 +3357,7 @@
 	female = yes
 	dynasty = 2578 # Gader
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1080.1.1 = { birth = yes }
 	1180.1.1 = { death = yes }
@@ -3340,7 +3367,7 @@
 	female = yes
 	dynasty = 2578 # Gader
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 9256
 	1160.1.1 = { birth = yes }
@@ -3351,7 +3378,7 @@
 	female = yes
 	dynasty = 2578 # Gader
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 9257
 	1240.1.1 = { birth = yes }
@@ -3378,7 +3405,7 @@
 	name = "Djin"
 	dynasty = 2580 # Beskar
 	culture = netherese
-	religion = netherese_pantheon
+	religion = arcane
 	trait = creature_human
 	1.1.1 = { birth = yes }
 	66.1.1 = { death = yes }
@@ -3479,25 +3506,26 @@
 	name = "Grugaran"
 	dynasty = 30 # Dodkong
 	culture = stone_giant
-	religion = evil_human_pantheon
+	religion = giant_pantheon
 	learning = 8
 	trait = creature_giant
 	trait = lich
 	trait = cruel
 	trait = ambitious
 	trait = journeyman_sorcerer
+	trait = origin_wild_magic
 	trait = scholarly_theologian
 	1.1.1 = {
 		birth = yes
 		give_nickname = nick_dodkong
 	}
-	16.1.1 = {
+	1.1.1 = {
 		effect = {
-			add_character_modifier = {
-				name = wiz_necromancy
-				duration = -1
-			}
+			set_character_flag = sorc_originrevealed
 		}
+	}
+	16.1.1 = {
+		add_trait = wiz_necromancy
 	}
 	31.1.1 = { immortal_age = 30 }
 	1500.1.1 = { death = yes }
@@ -3506,20 +3534,20 @@
 	name = "Barim"
 	dynasty = 2585 # Stagwinter
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	martial = 6
 	trait = creature_human
 	trait = trained_fighter
 	trait = tough_soldier
 	father = 9276
 	1329.1.1 = { birth = yes }
-	1400.1.1 = { death = yes }
+	1415.1.1 = { death = yes }
 }
 9271 = {
 	name = "Mark"
 	dynasty = 2585 # Stagwinter
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	970.1.1 = { birth = yes }
 	1050.1.1 = { death = yes }
@@ -3528,7 +3556,7 @@
 	name = "Damian"
 	dynasty = 2585 # Stagwinter
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 9271
 	1030.1.1 = { birth = yes }
@@ -3539,7 +3567,7 @@
 	female = yes
 	dynasty = 2585 # Stagwinter
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 9272
 	1090.1.1 = { birth = yes }
@@ -3550,7 +3578,7 @@
 	female = yes
 	dynasty = 2585 # Stagwinter
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	mother = 9273
 	1150.1.1 = { birth = yes }
@@ -3560,7 +3588,7 @@
 	name = "Henry"
 	dynasty = 2585 # Stagwinter
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	mother = 9274
 	1200.1.1 = { birth = yes }
@@ -3570,7 +3598,7 @@
 	name = "Bim"
 	dynasty = 2585 # Stagwinter
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 9275
 	1260.1.1 = { birth = yes }
@@ -3580,7 +3608,7 @@
 	name = "Theskul"
 	dynasty = 2586 # Mirroreye
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	learning = 6
 	trait = creature_human
 	trait = trained_cleric
@@ -3605,7 +3633,7 @@
 	female = yes
 	dynasty = 2587 # Halacanter
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = joyful
 	stewardship = 6
 	learning = 7
 	trait = creature_human
@@ -3623,20 +3651,21 @@
 }
 9279 = {
 	name = "Asgar"
-	dynasty = 2589 # Telendar
-	culture = heartlander
-	religion = good_human_pantheon
+	dynasty = 2589 # Tellendar
+	culture = draeven
+	religion = mercantile
 	learning = 7
 	trait = creature_human
-	trait = journeyman_cleric
+	trait = trained_cleric
+	trait = patron_ilmater
 	1310.1.1 = { birth = yes }
 	1400.1.1 = { death = yes }
 }
 9280 = {
 	name = "Mirkil"
 	dynasty = 2590 # Calegros
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = mercantile
 	trait = creature_human
 	970.1.1 = { birth = yes }
 	1070.1.1 = { death = yes }
@@ -3644,8 +3673,8 @@
 9281 = {
 	name = "Gaenor"
 	dynasty = 2590 # Calegros
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = mercantile
 	trait = creature_human
 	father = 9280
 	1050.1.1 = { birth = yes }
@@ -3655,8 +3684,8 @@
 	name = "Faralda"
 	female = yes
 	dynasty = 2590 # Calegros
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = mercantile
 	trait = creature_human
 	father = 9281
 	1130.1.1 = { birth = yes }
@@ -3666,8 +3695,8 @@
 	name = "Vex"
 	female = yes
 	dynasty = 2590 # Calegros
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = mercantile
 	trait = creature_human
 	mother = 9282
 	1210.1.1 = { birth = yes }
@@ -3677,8 +3706,8 @@
 	name = "Sapphire"
 	female = yes
 	dynasty = 2590 # Calegros
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = mercantile
 	trait = creature_human
 	mother = 9283
 	1270.1.1 = { birth = yes }
@@ -3687,8 +3716,8 @@
 9285 = {
 	name = "Calixto"
 	dynasty = 2592 # Heartburn
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = inventive
 	trait = creature_human
 	350.1.1 = { birth = yes }
 	450.1.1 = { death = yes }
@@ -3696,8 +3725,8 @@
 9286 = {
 	name = "Tancred"
 	dynasty = 2592 # Heartburn
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = inventive
 	trait = creature_human
 	father = 9285
 	430.1.1 = { birth = yes }
@@ -3707,8 +3736,8 @@
 	name = "Alicia"
 	female = yes
 	dynasty = 2592 # Heartburn
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = inventive
 	trait = creature_human
 	father = 9286
 	510.1.1 = { birth = yes }
@@ -3718,8 +3747,8 @@
 	name = "Gianna"
 	female = yes
 	dynasty = 2592 # Heartburn
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = inventive
 	trait = creature_human
 	mother = 9287
 	590.1.1 = { birth = yes }
@@ -3728,8 +3757,8 @@
 9289 = {
 	name = "Vendon"
 	dynasty = 2592 # Heartburn
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = inventive
 	trait = creature_human
 	mother = 9288
 	670.1.1 = { birth = yes }
@@ -3738,8 +3767,8 @@
 9290 = {
 	name = "Rupert"
 	dynasty = 2592 # Heartburn
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = inventive
 	trait = creature_human
 	father = 9289
 	750.1.1 = { birth = yes }
@@ -3748,8 +3777,8 @@
 9291 = {
 	name = "Berdusk"
 	dynasty = 2593 # Orcslayer
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = inventive
 	martial = 7
 	trait = creature_human
 	trait = tough_soldier
@@ -3760,8 +3789,8 @@
 9292 = {
 	name = "Melchior"
 	dynasty = 2593 # Orcslayer
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = inventive
 	trait = creature_human
 	father = 9291
 	880.1.1 = { birth = yes }
@@ -3770,8 +3799,8 @@
 9293 = {
 	name = "Belchior"
 	dynasty = 2593 # Orcslayer
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = inventive
 	trait = creature_human
 	father = 9292
 	960.1.1 = { birth = yes }
@@ -3780,8 +3809,8 @@
 9294 = {
 	name = "Ben"
 	dynasty = 2593 # Orcslayer
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = inventive
 	trait = creature_human
 	father = 9293
 	1040.1.1 = { birth = yes }
@@ -3790,8 +3819,8 @@
 9295 = {
 	name = "Pollo"
 	dynasty = 2593 # Orcslayer
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = inventive
 	trait = creature_human
 	father = 9294
 	1120.1.1 = { birth = yes }
@@ -3801,8 +3830,8 @@
 	name = "Camila"
 	female = yes
 	dynasty = 2593 # Orcslayer
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = inventive
 	trait = creature_human
 	1200.1.1 = { birth = yes }
 	1300.1.1 = { death = yes }
@@ -3811,8 +3840,8 @@
 	name = "Bella"
 	female = yes
 	dynasty = 2593 # Orcslayer
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = inventive
 	trait = creature_human
 	mother = 9296
 	1280.1.1 = { birth = yes }
@@ -3821,8 +3850,8 @@
 9298 = {
 	name = "Marciel"
 	dynasty = 2594 # Hultel
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = joyful
 	trait = creature_human
 	1230.1.1 = { birth = yes }
 	1300.1.1 = { death = yes }
@@ -3831,8 +3860,8 @@
 	name = "Harriet"
 	female = yes
 	dynasty = 2594 # Hultel
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = joyful
 	trait = creature_human
 	father = 9298
 	1280.1.1 = { birth = yes }
@@ -3841,8 +3870,8 @@
 9300 = {
 	name = "Dundast"
 	dynasty = 2594 # Hultel
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = joyful
 	trait = creature_human
 	mother = 9299
 	1320.1.1 = { birth = yes }
@@ -3896,8 +3925,8 @@
 9305 = {
 	name = "Othlong"
 	dynasty = 2595 # Blackhelm
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	trait = trained_fighter
 	330.1.1 = { birth = yes }
@@ -3911,8 +3940,8 @@
 9306 = {
 	name = "Angarn"
 	dynasty = 2596 # Surfyst
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	trait = trained_rogue
 	333.1.1 = { birth = yes }
@@ -3926,8 +3955,8 @@
 9307 = {
 	name = "Birak"
 	dynasty = 2597 # Lupus
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	trait = trained_fighter
 	352.1.1 = { birth = yes }
@@ -3945,12 +3974,18 @@
 	name = "Sarunn"
 	female = yes
 	dynasty = 2598 # Thoon
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	trait = journeyman_sorcerer
+	trait = origin_draconic
 	trait = cruel
 	368.1.1 = { birth = yes }
+	378.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	424.1.1 = {
 		effect = { prisoner = 9307 }
 	}
@@ -3968,14 +4003,20 @@
 	religion = illithid_pantheon
 	trait = creature_illithid
 	trait = journeyman_sorcerer # should be psion
+	trait = origin_aberrant_mind
 	400.1.1 = { birth = yes }
+	410.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	470.1.1 = { death = yes }
 }
 9310 = {
 	name = "Jon"
 	dynasty = 2599 # Polman
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	trait = rogue
 	600.1.1 = { birth = yes }
@@ -3987,7 +4028,7 @@
 	name = "Brundar"
 	dynasty = 2600 # Tigerbane
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = martial_faith
 	martial = 7
 	trait = creature_human
 	trait = journeyman_barbarian
@@ -4000,8 +4041,8 @@
 9312 = {
 	name = "Jergol"
 	dynasty = 2602 # Sunburst
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	650.1.1 = { birth = yes }
 	730.1.1 = { death = yes }
@@ -4009,8 +4050,8 @@
 9313 = {
 	name = "Norman"
 	dynasty = 2602 # Sunburst
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	father = 9312
 	710.1.1 = { birth = yes }
@@ -4019,8 +4060,8 @@
 9314 = {
 	name = "James"
 	dynasty = 2602 # Sunburst
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	father = 9313
 	765.1.1 = { birth = yes }
@@ -4031,7 +4072,7 @@
 	female = yes
 	dynasty = 2603 # Ulvendor
 	culture = lich
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	learning = 8
 	trait = creature_human
 	trait = lich
@@ -4041,18 +4082,13 @@
 	trait = ambitious
 	720.1.1 = {
 		birth = yes
-		culture = heartlander
+		culture = draeven
 		effect = {
 			set_character_flag = undead_court
 		}
 	}
 	736.1.1 = {
-		effect = {
-			add_character_modifier = {
-				name = wiz_necromancy
-				duration = -1
-			}
-		}
+		add_trait = wiz_necromancy
 	}
 	1020.1.1 = {
 		remove_trait = absent
@@ -4065,7 +4101,7 @@
 	name = "Fendarl"
 	dynasty = 2604 # Fendarl
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = trained_fighter
 	1130.1.1 = { birth = yes }
@@ -4075,7 +4111,7 @@
 	name = "Angus"
 	dynasty = 2604 # Fendarl
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 9316
 	1150.1.1 = { birth = yes }
@@ -4085,7 +4121,7 @@
 	name = "Vorman"
 	dynasty = 2604 # Fendarl
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 9317
 	1177.1.1 = { birth = yes }
@@ -4095,7 +4131,7 @@
 	name = "Barret"
 	dynasty = 2604 # Fendarl
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 9318
 	1210.1.1 = { birth = yes }
@@ -4105,7 +4141,7 @@
 	name = "Janus"
 	dynasty = 2604 # Fendarl
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 9319
 	1255.1.1 = { birth = yes }
@@ -4115,7 +4151,7 @@
 	name = "Callus"
 	dynasty = 2604 # Fendarl
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 9320
 	1287.1.1 = { birth = yes }
@@ -4125,7 +4161,7 @@
 	name = "Eldbuck Thorm"
 	dynasty = 2604 # Fendarl
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = envious
 	trait = proud
@@ -4138,8 +4174,8 @@
 9323 = {
 	name = "Tor"
 	dynasty = 2414 # Tor
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	850.1.1 = { birth = yes }
 	950.1.1 = { death = yes }
@@ -4147,8 +4183,8 @@
 9324 = {
 	name = "Liam"
 	dynasty = 2414 # Tor
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	father = 9323
 	930.1.1 = { birth = yes }
@@ -4157,8 +4193,8 @@
 9325 = {
 	name = "Virman"
 	dynasty = 2414 # Tor
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	father = 9324
 	1010.1.1 = { birth = yes }
@@ -4168,8 +4204,8 @@
 	name = "Carol"
 	female = yes
 	dynasty = 2414 # Tor
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	father = 9325
 	1090.1.1 = { birth = yes }
@@ -4178,8 +4214,8 @@
 9327 = {
 	name = "Eudes"
 	dynasty = 2414 # Tor
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	mother = 9326
 	1170.1.1 = { birth = yes }
@@ -4188,8 +4224,8 @@
 9328 = {
 	name = "Carl"
 	dynasty = 2414 # Tor
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	father = 9327
 	1250.1.1 = { birth = yes }
@@ -4198,8 +4234,8 @@
 9329 = {
 	name = "Terry"
 	dynasty = 2419 # Obarastal
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	1070.1.1 = { birth = yes }
 	1170.1.1 = { death = yes }
@@ -4207,8 +4243,8 @@
 9330 = {
 	name = "Hend"
 	dynasty = 2419 # Obarastal
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	father = 9329
 	1150.1.1 = { birth = yes }
@@ -4218,8 +4254,8 @@
 	name = "Ciara"
 	female = yes
 	dynasty = 2419 # Obarastal
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	father = 9330
 	1230.1.1 = { birth = yes }
@@ -4229,8 +4265,8 @@
 	name = "Mikala"
 	female = yes
 	dynasty = 2419 # Obarastal
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	mother = 9331
 	1290.1.1 = { birth = yes }
@@ -4239,8 +4275,8 @@
 9333 = {
 	name = "Bendor"
 	dynasty = 2420 # Hurara
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	960.1.1 = { birth = yes }
 	1060.1.1 = { death = yes }
@@ -4248,8 +4284,8 @@
 9334 = {
 	name = "Modoc"
 	dynasty = 2420 # Hurara
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	father = 9333
 	1040.1.1 = { birth = yes }
@@ -4259,8 +4295,8 @@
 	name = "Lyssa"
 	female = yes
 	dynasty = 2420 # Hurara
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	father = 9334
 	1120.1.1 = { birth = yes }
@@ -4270,8 +4306,8 @@
 	name = "Myrtyl"
 	female = yes
 	dynasty = 2420 # Hurara
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	mother = 9335
 	1200.1.1 = { birth = yes }
@@ -4280,8 +4316,8 @@
 9337 = {
 	name = "Luthor"
 	dynasty = 2420 # Hurara
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	trait = creature_human
 	mother = 9336
 	1280.1.1 = { birth = yes }
@@ -4290,8 +4326,8 @@
 9338 = {
 	name = "Elver"
 	dynasty = 2421 # Elversult
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = joyful
+	culture = draeven
 	trait = creature_human
 	1050.1.1 = { birth = yes }
 	1150.1.1 = { death = yes }
@@ -4300,8 +4336,8 @@
 	name = "Delphine"
 	female = yes
 	dynasty = 2421 # Elversult
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = joyful
+	culture = draeven
 	trait = creature_human
 	father = 9338
 	1130.1.1 = { birth = yes }
@@ -4310,8 +4346,8 @@
 9340 = {
 	name = "Henry"
 	dynasty = 2421 # Elversult
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = joyful
+	culture = draeven
 	trait = creature_human
 	mother = 9339
 	1210.1.1 = { birth = yes }
@@ -4320,8 +4356,8 @@
 9341 = {
 	name = "Xander"
 	dynasty = 2421 # Elversult
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = joyful
+	culture = draeven
 	trait = creature_human
 	father = 9340
 	1280.1.1 = { birth = yes }
@@ -4332,7 +4368,7 @@
 	name = Derander # http://forum.candlekeep.com/topic.asp?TOPIC_ID=3803&whichpage=48
 	dynasty = 2408 # Daggerford
 	father = 9010 # Pwyll 'Greatshout'
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	trait = expert_fighter
@@ -4343,8 +4379,8 @@
 9343 = {
 	name = Garthos
 	dynasty = 2315 # Hornside - invented name
-	religion = evil_human_pantheon
-	culture = heartlander
+	religion = dead_three
+	culture = draeven
 	trait = creature_human
 	trait = journeyman_fighter
 	trait = greedy
@@ -4372,7 +4408,7 @@
 	name = Harson # Invented name
 	dynasty = 2643 # Darktreader
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	trait = trained_ranger
 	1252.1.1 = { birth = yes }
@@ -4386,10 +4422,10 @@
 	dynasty = 2643 # Darktreader
 	father = 9345
 	culture = moon_elf
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_half_elf
 	trait = ranger
-	1276.1.1 = { 
+	1276.1.1 = {
 		birth = yes
 		culture = highcoaster
 	}
@@ -4405,31 +4441,31 @@
 	dynasty = 2643 # Darktreader
 	father = 9345
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	trait = ranger
 	1279.1.1 = { birth = yes }
-	1300.1.1 = { 
+	1300.1.1 = {
 		employer = 47401 # Gwindiore Mistwalker
 		give_nickname = nick_forestheart
-	} 	
+	}
 	1336.1.1 = { death = yes }
 }
 9348 = {
 	name = Seandaer
 	dynasty = 2644 # Farranger
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	trait = journeyman_ranger
 	1296.1.1 = { birth = yes }
-	1325.1.1 = { 
+	1325.1.1 = {
 		employer = 9003 # Draconandar Daggerford
 		effect = {
 			give_minor_title = title_master_of_the_hunt
 		}
 	}
-	1340.1.1 = { 
+	1340.1.1 = {
 		employer = 9005 # Pryden Daggerford
 		effect = {
 			give_minor_title = title_master_of_the_hunt
@@ -4446,7 +4482,7 @@
 	name = Andrar
 	dynasty = 2645 # Tarthilt
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	trait = honest
 	1265.1.1 = { birth = yes }
@@ -4460,7 +4496,7 @@
 	name = Boruldyn
 	dynasty = 2646 # Rathgeld
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	trait = honest
 	1269.1.1 = { birth = yes }
@@ -4474,12 +4510,12 @@
 	name = Maskarl
 	dynasty = 2647 # Deldreir
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = inventive
 	trait = creature_human
 	trait = honest
 	trait = scholar
 	1268.1.1 = { birth = yes }
-	1315.1.1 = { employer = 33002 } # Erlranther Alibakkar
+	#1315.1.1 = { employer = 33002 } # Erlranther Alibakkar (he is dead when Erlranther gets his titles in 1362)
 	1327.1.1 = { trait = has_typhoid_fever }
 	1328.1.1 = {
 		death = {
@@ -4492,7 +4528,7 @@
 	name = Merovy # invented name
 	dynasty = 2408 # Daggerford
 	father = 9342 # Derander
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	trait = expert_fighter
@@ -4503,7 +4539,7 @@
 	name = Harcondyl # http://forum.candlekeep.com/topic.asp?TOPIC_ID=3803&whichpage=48
 	dynasty = 2408 # Daggerford
 	father = 9342 # Derander
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	trait = expert_fighter
@@ -4514,7 +4550,7 @@
 	name = Maldwyn # http://forum.candlekeep.com/topic.asp?TOPIC_ID=3803&whichpage=48
 	dynasty = 2408 # Daggerford
 	father = 9353 # Harcondyl
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	trait = expert_fighter
@@ -4526,10 +4562,1245 @@
 	female = yes
 	dynasty = 2408 # Daggerford
 	father = 9353 # Harcondyl
-	religion = good_human_pantheon
+	religion = solar
 	culture = highcoaster
 	trait = creature_human
 	trait = expert_fighter
 	1427.1.1 = { birth = yes }
+	1460.1.1 = {
+		add_trait = possessed # Replaced by a succubus
+		add_trait = lustful
+		secret_religion = shadow_gods # in 5e foocubi are their own fiend race who act as sort-of-mercenaries
+	}
 	1520.1.1 = { death = yes }
+}
+9356 = {
+	name = "Garrg"
+	female = yes
+	dynasty = 347 # Grok
+	culture = troll
+	religion = vaprak
+	trait = creature_troll
+	1340.1.1 = {
+		birth = yes
+	}
+	1370.1.1 = {
+		immortal_age = 30
+	}
+	1450.1.1 = {
+		death = yes
+	}
+}
+9357 = {
+	name = "Lenn"
+	dynasty = 348 # Nasdal
+	culture = highcoaster
+	religion = joyful
+	trait = creature_human
+	1330.1.1 = {
+		birth = yes
+	}
+	1373.1.1 = {
+		death = yes
+	}
+}
+9358 = {
+	name = "Menoth"
+	dynasty = 349 # Easting
+	culture = highcoaster
+	religion = joyful
+	trait = creature_human
+	1430.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9359 = {
+	name = "Lork"
+	dynasty = 350 # Haug
+	culture = hill_giant
+	religion = giant_pantheon
+	trait = creature_giant
+	1270.1.1 = {
+		birth = yes
+	}
+	1300.1.1 = {
+		immortal_age = 30
+	}
+	1465.1.1 = {
+		death = yes
+	}
+}
+9360 = {
+	name = "Guh"
+	female = yes
+	dynasty = 350 # Haug
+	father = 9359
+	culture = hill_giant
+	religion = giant_pantheon
+	trait = creature_giant
+	trait = is_fat
+	trait = gluttonous
+	trait = zealous
+	trait = lustful
+	trait = lunatic
+	1390.1.1 = {
+		birth = yes
+	}
+	1420.1.1 = {
+		immortal_age = 30
+	}
+	1490.5.20 = {
+		death = yes
+	}
+}
+9361 = {
+	name = "Zot"
+	dynasty = 351 # Gutgorger
+	culture = hill_giant
+	religion = giant_pantheon
+	trait = creature_giant
+	1410.1.1 = {
+		birth = yes
+	}
+	1440.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9362 = {
+	name = Alwain
+	dynasty = 2309 # Delanter
+	father = 9156
+	religion = natural
+	culture = highcoaster
+	trait = creature_human
+	1370.1.1 = { birth = yes }
+	1450.1.1 = { death = yes }
+}
+9363 = {
+	name = "Nessa"
+	female = yes
+	dynasty = 2309 # Delanter
+	father = 9362
+	religion = natural
+	culture = highcoaster
+	trait = creature_human
+	1420.1.1 = {
+		birth = yes
+	}
+	1480.1.1 = {
+		death = yes
+	}
+}
+9364 = {
+	name = "Alyssa"
+	female = yes
+	dynasty = 2309 # Delanter
+	mother = 9363
+	culture = highcoaster
+	religion = natural
+	trait = creature_human
+	1450.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9365 = {
+	name = "Jun"
+	dynasty = 352 # Rundil
+	culture = highcoaster
+	religion = natural
+	trait = creature_human
+	1370.1.1 = {
+		birth = yes
+	}
+	1470.1.1 = {
+		death = yes
+	}
+}
+9366 = {
+	name = "Kal"
+	dynasty = 353 # Sikarata
+	culture = earthgenasi
+	religion = natural
+	trait = creature_genasi
+	1450.1.1 = {
+		birth = yes
+		culture = highcoaster
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9367 = {
+	name = "Dane"
+	dynasty = 534 # Gamon
+	culture = highcoaster
+	religion = joyful
+	trait = creature_human
+	1330.1.1 = {
+		birth = yes
+	}
+	1420.1.1 = {
+		death = yes
+	}
+}
+9368 = {
+	name = "Lara"
+	female = yes
+	dynasty = 534 # Gamon
+	culture = highcoaster
+	religion = joyful
+	trait = creature_human
+	father = 9367
+	1400.1.1 = {
+		birth = yes
+	}
+	1454.1.1 = {
+		death = yes
+	}
+}
+9369 = {
+	name = "Ilum"
+	dynasty = 535 # Rustmaul
+	culture = ogre
+	religion = vaprak
+	trait = creature_human
+	1430.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9370 = {
+	name = "Kayalithica"
+	female = yes
+	dynasty = 359 # Skodkong
+	culture = stone_giant
+	religion = giant_pantheon
+	trait = creature_giant
+	trait = ambitious
+	trait = wroth
+	trait = zealous
+	1180.1.1 = {
+		birth = yes
+	}
+	1210.1.1 = {
+		immortal_age = 30
+	}
+	1490.6.10 = {
+		death = yes
+	}
+}
+9371 = {
+	name = "Cragrumm"
+	dynasty = 360 # Draunnar
+	culture = stone_giant
+	religion = giant_pantheon
+	trait = creature_giant
+	1350.1.1 = {
+		birth = yes
+	}
+	1380.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9372 = {
+	name = "Kev"
+	dynasty = 361 # Labran
+	culture = illuskan
+	religion = joyful
+	trait = creature_human
+	1350.1.1 = {
+		birth = yes
+	}
+	1430.1.1 = {
+		death = yes
+	}
+}
+9373 = {
+	name = "Tiber"
+	dynasty = 362 # Zann
+	culture = illuskan
+	religion = shadow_gods
+	trait = creature_human
+	trait = trained_rogue
+	1450.1.1 = {
+		birth = yes
+	}
+	1490.5.1 = {
+		death = yes
+	}
+}
+9374 = {
+	name = "Jaun"
+	dynasty = 361 # Labran
+	culture = illuskan
+	religion = joyful
+	trait = creature_human
+	father = 9372
+	1410.1.1 = {
+		birth = yes
+	}
+	1475.1.1 = {
+		death = yes
+	}
+}
+9375 = {
+	name = "Pargan"
+	dynasty = 363 # Graycrag
+	culture = goliath
+	religion = primordial
+	trait = creature_goliath
+	1470.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9376 = {
+	name = "Ganda"
+	female = yes
+	dynasty = 364 # Strongfist
+	culture = goliath
+	religion = primordial
+	trait = creature_goliath
+	1360.1.1 = {
+		birth = yes
+	}
+	1440.1.1 = {
+		death = yes
+	}
+}
+9377 = {
+	name = "Morn"
+	dynasty = 364 # Strongfist
+	culture = goliath
+	religion = primordial
+	trait = creature_goliath
+	mother = 9376
+	1410.1.1 = {
+		birth = yes
+	}
+	1470.1.1 = {
+		death = yes
+	}
+}
+9378 = {
+	name = "Ularra"
+	female = yes
+	dynasty = 364 # Strongfist
+	culture = goliath
+	religion = primordial
+	trait = creature_goliath
+	father = 9377
+	1440.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9379 = {
+	name = "Narmil"
+	dynasty = 365 # Gatefast
+	culture = centaur
+	religion = sylvan
+	trait = creature_centaur
+	1320.1.1 = {
+		birth = yes
+	}
+	1350.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9380 = {
+	name = "Kasma"
+	female = yes
+	dynasty = 366 # Darnell
+	culture = tharian
+	religion = dead_three
+	trait = creature_human
+	1360.1.1 = {
+		birth = yes
+	}
+	1440.1.1 = {
+		death = yes
+	}
+}
+9381 = {
+	name = "Farlon"
+	dynasty = 367 # Beykal
+	culture = tethyrian
+	religion = dead_three
+	trait = creature_human
+	1415.1.1 = {
+		birth = yes
+	}
+	1475.1.1 = {
+		death = yes
+	}
+}
+9382 = {
+	name = "Wolan"
+	dynasty = 368 # Laso
+	culture = draeven
+	religion = dead_three
+	trait = creature_human
+	1450.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9383 = {
+	name = "Gikath"
+	female = yes
+	dynasty = 2434
+	religion = goblin_pantheon
+	culture = goblin
+	trait = creature_goblin
+	mother = 9035
+	1380.1.1 = {
+		birth = yes
+	}
+	1480.1.1 = {
+		death = yes
+	}
+}
+9384 = {
+	name = "Freen"
+	female = yes
+	dynasty = 2434
+	religion = goblin_pantheon
+	culture = goblin
+	trait = creature_goblin
+	mother = 9383
+	1460.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9385 = {
+	name = "Lokkn"
+	female = yes
+	dynasty = 379 # Trugf
+	culture = troll
+	religion = vaprak
+	trait = creature_troll
+	1370.1.1 = {
+		birth = yes
+	}
+	1400.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9386 = {
+	name = "Wynne"
+	female = yes
+	dynasty = 380 # Cromm
+	culture = illuskan
+	religion = shadow_gods
+	trait = creature_human
+	1430.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9387 = {
+	name = "Neesh"
+	female = yes
+	dynasty = 381 # Grik
+	culture = goblin
+	religion = goblin_pantheon
+	trait = creature_goblin
+	1330.1.1 = {
+		birth = yes
+	}
+	1430.1.1 = {
+		death = yes
+	}
+}
+9388 = {
+	name = "Gusol"
+	female = yes
+	dynasty = 381 # Grik
+	culture = goblin
+	religion = goblin_pantheon
+	trait = creature_goblin
+	mother = 9387
+	1410.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9389 = {
+	name = "Hune"
+	female = yes
+	dynasty = 382 # Barkchew
+	culture = troll
+	religion = vaprak
+	trait = creature_troll
+	1330.1.1 = {
+		birth = yes
+	}
+	1360.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9390 = {
+	name = "Graj"
+	female = yes
+	dynasty = 386 # Shadeclub
+	culture = bugbear
+	religion = goblin_pantheon
+	trait = creature_bugbear
+	1320.1.1 = {
+		birth = yes
+	}
+	1420.1.1 = {
+		death = yes
+	}
+}
+9391 = {
+	name = "Ludgrub"
+	female = yes
+	dynasty = 386 # Shadeclub
+	culture = bugbear
+	religion = goblin_pantheon
+	trait = creature_bugbear
+	mother = 9390
+	1400.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9392 = {
+	name = "Kymon"
+	dynasty = 2494 # Korvak
+	culture = draeven
+	religion = joyful
+	trait = creature_human
+	father = 9059
+	1380.1.1 = {
+		birth = yes
+	}
+	1480.1.1 = {
+		death = yes
+	}
+}
+9393 = {
+	name = "Brenda"
+	female = yes
+	dynasty = 2494 # Korvak
+	culture = draeven
+	religion = joyful
+	trait = creature_human
+	father = 9392
+	1460.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9394 = {
+	name = "Kash"
+	dynasty = 387 # Crocuta
+	culture = gnoll
+	religion = abyssal_cult
+	trait = creature_gnoll
+	1330.1.1 = {
+		birth = yes
+	}
+	1430.1.1 = {
+		death = yes
+	}
+}
+9395 = {
+	name = "Lergar"
+	dynasty = 387 # Crocuta
+	culture = gnoll
+	religion = abyssal_cult
+	trait = creature_gnoll
+	father = 9394
+	1410.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9396 = {
+	name = "Aerith"
+	female = yes
+	dynasty = 388 # Gullwing
+	culture = draeven
+	religion = solar
+	trait = creature_human
+	1390.1.1 = {
+		birth = yes
+	}
+	1475.1.1 = {
+		death = yes
+	}
+}
+9397 = {
+	name = "Bartz"
+	dynasty = 388 # Gullwing
+	culture = draeven
+	religion = solar
+	trait = creature_human
+	mother = 9396
+	1430.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9398 = {
+	name = "Gruul"
+	female = yes
+	dynasty = 389 # Fiendtooth
+	culture = troll
+	religion = infernal
+	trait = creature_troll
+	trait = half_fiend
+	1400.1.1 = {
+		birth = yes
+	}
+	1430.1.1 = {
+		immortal_age = 30
+	}
+	1494.6.1 = {
+		death = yes
+	}
+}
+9399 = {
+	name = "Reya"
+	female = yes
+	dynasty = 390 # Mantlemorn
+	culture = turmic
+	religion = triadic
+	martial = 6
+	trait = creature_human
+	trait = tough_soldier
+	trait = trained_fighter
+	trait = patron_torm
+	1471.1.1 = {
+		birth = yes
+	}
+	1483.1.1 = {
+		employer = 9248
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9400 = {
+	name = "Nith"
+	dynasty = 391 # Tretch
+	culture = draeven
+	religion = shadow_gods
+	trait = creature_human
+	trait = wererat
+	trait = natural_lycanthrope
+	1330.1.1 = {
+		birth = yes
+		effect = {
+			set_character_flag = lycan_court
+		}
+	}
+	1420.1.1 = {
+		death = yes
+	}
+}
+9401 = {
+	name = "Skrolk"
+	dynasty = 391 # Tretch
+	culture = draeven
+	religion = shadow_gods
+	trait = creature_human
+	trait = wererat
+	trait = natural_lycanthrope
+	father = 9400
+	1400.1.1 = {
+		birth = yes
+		effect = {
+			set_character_flag = lycan_court
+		}
+	}
+	1460.1.1 = {
+		death = yes
+	}
+}
+9402 = {
+	name = "Camus"
+	dynasty = 392 # Dren
+	culture = draeven
+	religion = dead_three
+	trait = creature_human
+	trait = cleric
+	trait = patron_bane
+	1430.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9403 = {
+	name = "Lancel"
+	dynasty = 2585 # Stagwinter
+	culture = highcoaster
+	religion = triadic
+	trait = creature_human
+	father = 9270
+	1390.1.1 = {
+		birth = yes
+	}
+	1470.1.1 = {
+		death = yes
+	}
+}
+9404 = {
+	name = "Greta"
+	female = yes
+	dynasty = 2585 # Stagwinter
+	culture = highcoaster
+	religion = triadic
+	trait = creature_human
+	father = 9403
+	1450.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9405 = {
+	name = "Marina"
+	female = yes
+	dynasty = 409 # Dengar
+	religion = solar
+	culture = highcoaster
+	trait = creature_human
+	trait = trained_cleric
+	1380.1.1 = {
+		birth = yes
+	}
+	1480.1.1 = {
+		death = yes
+	}
+}
+9406 = {
+	name = "Panna"
+	female = yes
+	dynasty = 410 # Sollam
+	religion = solar
+	culture = highcoaster
+	trait = creature_human
+	trait = trained_cleric
+	1460.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9407 = {
+	name = "Neela"
+	female = yes
+	dynasty = 2582 # Luckyfoot
+	culture = lightfoot
+	religion = halfling_pantheon
+	trait = creature_halfling
+	father = 9261
+	1360.1.1 = {
+		birth = yes
+	}
+	1390.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9408 = {
+	name = "Gurm"
+	dynasty = 413 # Warcry
+	culture = orc
+	religion = orc_pantheon
+	trait = creature_orc
+	trait = wroth
+	trait = barbarian
+	1337.1.1 = {
+		birth = yes
+	}
+	1430.1.1 = {
+		death = yes
+	}
+}
+9409 = {
+	name = "Grosh"
+	dynasty = 413 # Warcry
+	culture = orc
+	religion = orc_pantheon
+	trait = creature_orc
+	trait = wroth
+	trait = barbarian
+	1410.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9410 = {
+	name = "Sausqash"
+	dynasty = 414 # Bigfoot
+	culture = hill_giant
+	religion = giant_pantheon
+	trait = creature_giant
+	1290.1.1 = {
+		birth = yes
+	}
+	1320.1.1 = {
+		immortal_age = 30
+	}
+	1365.1.1 = {
+		death = yes
+	}
+}
+9411 = {
+	name = "Lenny"
+	dynasty = 4318 # Scatterheart
+	religion = halfling_pantheon
+	culture = lightfoot
+	trait = creature_halfling
+	mother = 9023
+	1380.1.1 = {
+		birth = yes
+	}
+	1410.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9412 = {
+	name = "Ysolde"
+	female = yes
+	dynasty = 2594 # Hultel
+	culture = draeven
+	religion = joyful
+	trait = creature_human
+	father = 9300
+	1370.1.1 = {
+		birth = yes
+	}
+	1470.1.1 = {
+		death = yes
+	}
+}
+9413 = {
+	name = "Terry"
+	dynasty = 2594 # Hultel
+	culture = draeven
+	religion = joyful
+	trait = creature_human
+	mother = 9412
+	1430.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9414 = {
+	name = "Osalon"
+	dynasty = 415 # Leafmane
+	culture = centaur
+	religion = sylvan
+	trait = creature_centaur
+	1330.1.1 = {
+		birth = yes
+	}
+	1360.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9415 = {
+	name = "Meneth"
+	dynasty = 416 # Candos
+	culture = draeven
+	religion = mercantile
+	trait = creature_human
+	1380.1.1 = {
+		birth = yes
+	}
+	1480.1.1 = {
+		death = yes
+	}
+}
+9416 = {
+	name = "Merrin"
+	female = yes
+	dynasty = 416 # Candos
+	culture = draeven
+	religion = mercantile
+	trait = creature_human
+	father = 9415
+	1450.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9417 = {
+	name = "Donnel"
+	dynasty = 417 # Logen
+	culture = draeven
+	religion = inventive
+	trait = creature_human
+	1420.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9418 = {
+	name = "Kavar"
+	dynasty = 2414 # Tor
+	religion = natural
+	culture = draeven
+	trait = creature_human
+	father = 9025
+	1370.1.1 = {
+		birth = yes
+	}
+	1470.1.1 = {
+		death = yes
+	}
+}
+9419 = {
+	name = "Leah"
+	female = yes
+	dynasty = 2414 # Tor
+	religion = natural
+	culture = draeven
+	trait = creature_human
+	father = 9418
+	1450.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9420 = {
+	name = "Marcus"
+	dynasty = 2604 # Fendarl
+	culture = highcoaster
+	religion = mercantile
+	trait = creature_human
+	father = 9322
+	1380.1.1 = {
+		birth = yes
+	}
+	1480.1.1 = {
+		death = yes
+	}
+}
+9421 = {
+	name = "Hawthorne"
+	dynasty = 2604 # Fendarl
+	culture = highcoaster
+	religion = mercantile
+	trait = creature_human
+	father = 9420
+	1460.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9422 = {
+	name = "Kinak"
+	female = yes
+	dynasty = 418 # Pagrur
+	culture = goblin
+	religion = goblin_pantheon
+	trait = creature_goblin
+	1335.1.1 = {
+		birth = yes
+	}
+	1440.1.1 = {
+		death = yes
+	}
+}
+9423 = {
+	name = "Mishk"
+	female = yes
+	dynasty = 418 # Pagrur
+	culture = goblin
+	religion = goblin_pantheon
+	trait = creature_goblin
+	mother = 9422
+	1420.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9424 = {
+	name = "Nazorax"
+	dynasty = 419 # Oculum
+	culture = beholder
+	religion = beholder_pantheon
+	trait = creature_beholder
+	1290.1.1 = {
+		birth = yes
+	}
+	1320.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9425 = {
+	name = "Bumbo"
+	female = yes
+	dynasty = 420 # Jumm
+	culture = troll
+	religion = vaprak
+	trait = creature_troll
+	1330.1.1 = {
+		birth = yes
+	}
+	1360.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9426 = {
+	name = "Balagos"
+	dynasty = 421
+	culture = chromatic
+	religion = draconic_pantheon
+	trait = creature_dragon
+	trait = creature_red_dragon
+	trait = ambitious
+	trait = wroth
+	trait = proud
+	trait = groomed
+	trait = paranoid
+	1.1.1 = {
+		birth = yes
+		give_nickname = nick_the_flying_flame
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9427 = {
+	name = "Lish"
+	female = yes
+	dynasty = 9416 # Ribspreader
+	culture = goblin
+	religion = goblin_pantheon
+	trait = creature_goblin
+	mother = 110
+	1380.1.1 = {
+		birth = yes
+	}
+	1480.1.1 = {
+		death = yes
+	}
+}
+9428 = {
+	name = "Ikit"
+	female = yes
+	dynasty = 9416 # Ribspreader
+	culture = goblin
+	religion = goblin_pantheon
+	trait = creature_goblin
+	mother = 9427
+	1450.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9429 = {
+	name = "Gresh"
+	dynasty = 422 # Rocktooth
+	culture = ogre
+	religion = vaprak
+	trait = creature_ogre
+	1310.1.1 = {
+		birth = yes
+	}
+	1370.1.1 = {
+		death = yes
+	}
+}
+9430 = {
+	name = "Othkar"
+	dynasty = 423 # Thunderstout
+	culture = gold_dwarf
+	religion = dwarven_pantheon
+	trait = creature_dwarf
+	1300.1.1 = {
+		birth = yes
+	}
+	1330.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9431 = {
+	name = "Kuff"
+	dynasty = 424 # Murg
+	culture = hill_giant
+	religion = giant_pantheon
+	trait = creature_giant
+	1320.1.1 = {
+		birth = yes
+	}
+	1350.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9432 = {
+	name = "Wangan"
+	dynasty = 426 # Nob
+	culture = ogre
+	religion = abyssal_cult
+	trait = creature_ogre
+	1330.1.1 = {
+		birth = yes
+	}
+	1430.1.1 = {
+		death = yes
+	}
+}
+9433 = {
+	name = "Nerz"
+	dynasty = 426 # Nob
+	culture = ogre
+	religion = abyssal_cult
+	trait = creature_ogre
+	father = 9432
+	1410.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9434 = {
+	name = "Kenneth"
+	dynasty = 695 # Solgar
+	culture = draeven
+	religion = shadow_gods
+	trait = creature_human
+	1380.1.1 = {
+		birth = yes
+	}
+	1460.1.1 = {
+		death = yes
+	}
+}
+9435 = {
+	name = "Becket"
+	female = yes
+	dynasty = 696 # Olira
+	culture = draeven
+	religion = shadow_gods
+	trait = creature_human
+	1440.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+9436 = {
+	name = "Merry"
+	female = yes
+	dynasty = 2420 # Hurara
+	religion = dead_three
+	culture = draeven
+	trait = creature_human
+	mother = 9031
+	1370.1.1 = {
+		birth = yes
+	}
+	1460.1.1 = {
+		death = yes
+	}
+}
+9437 = {
+	name = "Olena"
+	female = yes
+	dynasty = 2420 # Hurara
+	religion = dead_three
+	culture = draeven
+	trait = creature_human
+	mother = 9436
+	1440.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
 }

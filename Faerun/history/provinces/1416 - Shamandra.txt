@@ -16,6 +16,9 @@ b_brokenshores = castle
 
 # Misc
 culture = aglarondan
-religion = good_human_pantheon
+religion = natural
 terrain = coastal
 #History
+1330.1.1 = {
+	religion = arcane
+}

@@ -7,15 +7,14 @@ title = c_shatterwave
 max_settlements = 4
 
 b_port_castigliar = castle
-b_sunpass = city
-#b_bunu = temple
-#b_dotsu = castle
-#b_bate = city
-#b_ouazin = temple
-#b_abang = castle
+#b_goya = city
 
 # Misc
 culture = chultan
 religion = ubtao_worship
 terrain = jungle
 #History
+1480.1.1 = {
+	b_port_castigliar = tribal
+	religion = entropy
+}

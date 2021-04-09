@@ -16,9 +16,6 @@
 	holder = 41343 # Drogor Torn Banner
 	liege = k_howltusk
 }
-528.6.1 = {
-	liege = d_torn_banner
-}
 567.1.1 = {
 	holder = 41345 # Horthgar
 	liege = k_horthgars_horde
@@ -48,7 +45,7 @@
 1042.1.1 = {
 	holder = 41190 # Shardra Harpell
 	law = true_cognatic_succession
-	law = succ_popular_elective
+	law = succ_magic_dynastic
 }
 1095.1.1 = {
 	holder = 41191 # Vantas Harpell

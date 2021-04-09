@@ -1,6 +1,10 @@
 # k_thay
 
+2.3.1 = {
+	liege = e_mulhorand
+}
 922.1.1 = {
+	liege = 0
 	law = cognatic_succession
 	law = succ_magic_elective
 	holder = 53029 # Ythazz Buvaar
@@ -12,5 +16,5 @@
 	holder = 53075 # Magidoros Mediocros the Elder	
 }
 1200.1.1 = {
-	holder = 53001
+	holder = 53001 # Szass Tam
 }

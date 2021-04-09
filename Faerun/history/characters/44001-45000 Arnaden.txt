@@ -3,9 +3,9 @@
 ##Arnadar characters
 
 44001 = {
-	name = Zalaster 
+	name = Zalaster
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	trait = skilled_tactician
@@ -18,7 +18,7 @@
 	name = Faerladeeyn
 	dynasty = 6400
 	father = 44001
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	trait = skilled_tactician
@@ -27,9 +27,9 @@
 	1390.1.1 = { death = yes }
 }
 44003 = {
-	name = Talduth 
+	name = Talduth
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	trait = charismatic_negotiator
@@ -42,7 +42,7 @@
 	name = Ibrym
 	dynasty = 6401
 	father = 44003
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	trait = martial_cleric
@@ -54,7 +54,7 @@
 44005 = {
 	name = Shoul
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44076
@@ -66,7 +66,7 @@
 	female = yes
 	dynasty = 6402
 	father = 44005
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	trait = tough_soldier
@@ -76,9 +76,9 @@
 	1386.1.1 = { death = yes }
 }
 44007 = {
-	name = Mashra 
+	name = Mashra
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = deities_of_fury
 	trait = creature_human
 	1303.1.1 = { birth = yes } #educated guess
@@ -88,7 +88,7 @@
 	name = Orblan
 	dynasty = 6403
 	father = 44007
-	culture = arnadar
+	culture = aslanlar
 	religion = deities_of_fury
 	trait = creature_human
 	trait = skilled_tactician
@@ -167,7 +167,7 @@
 	religion = calishite_faith
 	culture = arnadar
 	1321.1.1 = { birth = yes }
-	1400.1.1 = { 
+	1400.1.1 = {
 		death = yes
 	}
 }
@@ -226,7 +226,7 @@
 	trait = creature_human
 	trait = master_fighter
 	trait = patron_helm
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = arnadar
 	1310.1.1 = { birth = yes }
 	1390.1.1 = { death = yes }
@@ -279,7 +279,7 @@
 }
 44024 = {
 	name = Pristoleph
-	dna = "caikd0h0bb0"	
+	dna = "caikd0h0bb0"
 	dynasty = 6411
 	culture = firegenasi
 	religion = calishite_faith
@@ -311,9 +311,15 @@
 	secret_religion = church_of_cyric
 	trait = creature_naga
 	trait = expert_sorcerer
+	trait = origin_draconic
 	trait = intricate_webweaver
 	trait = cruel
 	1293.1.1 = { birth = yes }
+	1303.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1323.1.1 = { immortal_age = 30 }
 	1345.1.1 = {
 		add_spouse = 44024
@@ -323,7 +329,7 @@
 44026 = {
 	name = "Farim"
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	1.1.1 = { birth = yes }
@@ -332,7 +338,7 @@
 44027 = {
 	name = "Kader"
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44026
@@ -342,7 +348,7 @@
 44028 = {
 	name = "Lavakh"
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44027
@@ -353,7 +359,7 @@
 	name = "Rafeeqa"
 	female = yes
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44028
@@ -364,7 +370,7 @@
 	name = "Shana"
 	female = yes
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44029
@@ -375,7 +381,7 @@
 	name = "Gewre"
 	female = yes
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44030
@@ -385,7 +391,7 @@
 44032 = {
 	name = "Zaki"
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44031
@@ -395,7 +401,7 @@
 44033 = {
 	name = "Saamir"
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44032
@@ -406,7 +412,7 @@
 	name = "Farang"
 	female = yes
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44033
@@ -417,7 +423,7 @@
 	name = "Mina"
 	female = yes
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44034
@@ -427,7 +433,7 @@
 44036 = {
 	name = "Dilir"
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44035
@@ -437,7 +443,7 @@
 44037 = {
 	name = "Temo"
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44036
@@ -448,7 +454,7 @@
 	name = "Sumayya"
 	female = yes
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44037
@@ -459,7 +465,7 @@
 	name = "Faridah"
 	female = yes
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44038
@@ -469,7 +475,7 @@
 44040 = {
 	name = "Gerdin"
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44039
@@ -479,7 +485,7 @@
 44041 = {
 	name = "Sarif"
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44040
@@ -489,7 +495,7 @@
 44042 = {
 	name = "Shays"
 	dynasty = 6400
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44041
@@ -500,7 +506,7 @@
 	name = "Reema"
 	female = yes
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	1.1.1 = { birth = yes }
@@ -509,7 +515,7 @@
 44044 = {
 	name = "Sani"
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44043
@@ -519,7 +525,7 @@
 44045 = {
 	name = "Gherib"
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44044
@@ -529,7 +535,7 @@
 44046 = {
 	name = "Jan"
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44045
@@ -540,7 +546,7 @@
 	name = "Mata"
 	female = yes
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44046
@@ -550,7 +556,7 @@
 44048 = {
 	name = "Tara"
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44047
@@ -561,7 +567,7 @@
 	name = "Nefel"
 	female = yes
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44048
@@ -572,7 +578,7 @@
 	name = "Jayyyn"
 	female = yes
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44049
@@ -582,7 +588,7 @@
 44051 = {
 	name = "Koser"
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44050
@@ -592,7 +598,7 @@
 44052 = {
 	name = "Farlas"
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44051
@@ -602,7 +608,7 @@
 44053 = {
 	name = "Salm"
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44052
@@ -613,7 +619,7 @@
 	name = "Adeh"
 	female = yes
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44053
@@ -624,7 +630,7 @@
 	name = "Hafsa"
 	female = yes
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44054
@@ -634,7 +640,7 @@
 44056 = {
 	name = "Titai"
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44055
@@ -645,7 +651,7 @@
 	name = "Helat"
 	female = yes
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44056
@@ -656,7 +662,7 @@
 	name = "Tali"
 	female = yes
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44057
@@ -667,7 +673,7 @@
 	name = "Jilwa"
 	female = yes
 	dynasty = 6401
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44058
@@ -677,7 +683,7 @@
 44060 = {
 	name = "Koser"
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	1.1.1 = { birth = yes }
@@ -686,7 +692,7 @@
 44061 = {
 	name = "Hosi"
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44060
@@ -696,7 +702,7 @@
 44062 = {
 	name = "Quto"
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44061
@@ -706,7 +712,7 @@
 44063 = {
 	name = "Fahaki"
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44062
@@ -717,7 +723,7 @@
 	name = "Helez"
 	female = yes
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44063
@@ -728,7 +734,7 @@
 	name = "Batsha"
 	female = yes
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44064
@@ -739,7 +745,7 @@
 	name = "Samarr"
 	female = yes
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44065
@@ -749,7 +755,7 @@
 44067 = {
 	name = "Khosrau"
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44066
@@ -759,7 +765,7 @@
 44068 = {
 	name = "Maymid"
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44067
@@ -769,7 +775,7 @@
 44069 = {
 	name = "Haajid"
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44068
@@ -779,7 +785,7 @@
 44070 = {
 	name = "Nujid"
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44069
@@ -790,7 +796,7 @@
 	name = "Naz"
 	female = yes
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44070
@@ -800,7 +806,7 @@
 44072 = {
 	name = "Mirza"
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44071
@@ -811,7 +817,7 @@
 	name = "Zuhaira"
 	female = yes
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44072
@@ -822,7 +828,7 @@
 	name = "Zaira"
 	female = yes
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44073
@@ -832,7 +838,7 @@
 44075 = {
 	name = "Hanar"
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44074
@@ -842,7 +848,7 @@
 44076 = {
 	name = "Shafa"
 	dynasty = 6402
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44075
@@ -852,7 +858,7 @@
 44077 = {
 	name = "Ja'f"
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	1.1.1 = { birth = yes }
@@ -861,7 +867,7 @@
 44078 = {
 	name = "Akar"
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44077
@@ -871,7 +877,7 @@
 44079 = {
 	name = "Sadman"
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44078
@@ -882,7 +888,7 @@
 	name = "Dilmest"
 	female = yes
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44079
@@ -893,7 +899,7 @@
 	name = "Heycan"
 	female = yes
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44080
@@ -903,7 +909,7 @@
 44082 = {
 	name = "Qutb"
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44081
@@ -913,7 +919,7 @@
 44083 = {
 	name = "Denia"
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44082
@@ -924,7 +930,7 @@
 	name = "Sazuda"
 	female = yes
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44083
@@ -935,7 +941,7 @@
 	name = "Mebest"
 	female = yes
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44084
@@ -945,7 +951,7 @@
 44086 = {
 	name = "Za'ry"
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	mother = 44085
@@ -955,7 +961,7 @@
 44087 = {
 	name = "Min"
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	father = 44086
@@ -966,7 +972,7 @@
 	name = "Sala"
 	female = yes
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = calishite_faith
 	trait = creature_human
 	trait = journeyman_fighter
@@ -981,7 +987,7 @@
 44089 = {
 	name = "Fakili"
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = deities_of_fury
 	trait = creature_human
 	mother = 44088
@@ -991,7 +997,7 @@
 44090 = {
 	name = "Musba"
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = deities_of_fury
 	trait = creature_human
 	father = 44089
@@ -1002,7 +1008,7 @@
 	name = "Nujin"
 	female = yes
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = deities_of_fury
 	trait = creature_human
 	father = 44090
@@ -1012,7 +1018,7 @@
 44092 = {
 	name = "Kalaia"
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = deities_of_fury
 	trait = creature_human
 	mother = 44091
@@ -1022,7 +1028,7 @@
 44093 = {
 	name = "Rafi"
 	dynasty = 6403
-	culture = arnadar
+	culture = aslanlar
 	religion = deities_of_fury
 	trait = creature_human
 	father = 44092
@@ -1511,12 +1517,7 @@
 	trait = mastermind_theologian
 	640.1.1 = { birth = yes }
 	656.1.1 = {
-		effect = {
-			add_character_modifier = {
-				name = wiz_necromancy
-				duration = -1
-			}
-		}
+		add_trait = wiz_necromancy
 	}
 	680.1.1 = {
 		add_trait = longevity
@@ -1625,7 +1626,7 @@
 	name = "Calef"
 	dynasty = 6422 # Maneros
 	culture = arnadar
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = journeyman_cleric
 	trait = patron_ilmater
@@ -1636,7 +1637,7 @@
 	name = "Tomar"
 	dynasty = 6422 # Maneros
 	culture = arnadar
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = journeyman_cleric
 	trait = patron_ilmater
@@ -1648,7 +1649,7 @@
 	name = "Zilan"
 	dynasty = 6422 # Maneros
 	culture = arnadar
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = journeyman_cleric
 	trait = patron_ilmater
@@ -1660,7 +1661,7 @@
 	name = "Saif"
 	dynasty = 6423 # Valku
 	culture = arnadar
-	religion = good_human_pantheon
+	religion = inventive
 	trait = creature_human
 	trait = journeyman_cleric
 	trait = patron_oghma
@@ -1671,7 +1672,7 @@
 	name = "Gulroj"
 	dynasty = 6423 # Valku
 	culture = arnadar
-	religion = good_human_pantheon
+	religion = inventive
 	trait = creature_human
 	trait = journeyman_cleric
 	trait = patron_oghma
@@ -1683,7 +1684,7 @@
 	name = "Affay"
 	dynasty = 6423 # Valku
 	culture = arnadar
-	religion = good_human_pantheon
+	religion = inventive
 	trait = creature_human
 	trait = journeyman_cleric
 	trait = patron_oghma
@@ -1938,4 +1939,38 @@
 	1250.1.1 = { birth = yes }
 	1280.1.1 = { immortal_age = 30 }
 	1500.1.1 = { death = yes }
+}
+44182 = {
+	name = "Farid"
+	dynasty = 734 # el-Nadir
+	culture = earthgenasi
+	religion = primordial
+	trait = creature_genasi
+	trait = absent
+	1360.1.1 = {
+		birth = yes
+		culture = arnadar
+	}
+	1385.4.29 = {
+		remove_trait = absent
+	}
+	1440.1.1 = {
+		death = yes
+	}
+}
+
+44183 = {
+	name = "Khalil"
+	dynasty = 734 # el-Nadir
+	culture = earthgenasi
+	religion = primordial
+	trait = creature_genasi
+	father = 44182
+	1410.1.1 = {
+		birth = yes
+		culture = arnadar
+	}
+	1500.1.1 = {
+		death = yes
+	}
 }

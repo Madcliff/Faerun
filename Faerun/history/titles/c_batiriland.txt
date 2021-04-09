@@ -3,9 +3,16 @@
 	law = succ_gavelkind
 	liege = d_batiriland
 }
-1359.1.1 = { 
+1355.1.1 = { 
 	holder = 52806 # M'Bobo t'Batiri
 }
 1367.1.1 = {
 	holder = 52816 # N'Wembe t'Batiri
+}
+1400.1.1 = {
+	holder = 52924 # N'Gasta t'Batiri
+}
+1450.1.1 = {
+	holder = 52925 # Kithr Ghaskti
+	liege = k_omu
 }

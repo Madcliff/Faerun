@@ -1,15 +1,17 @@
 decisions = {
 
-	convert_to_magocracy_indep  = {
+	convert_to_magocracy_indep = {
 		only_independent = yes
 		is_high_prio = yes
 		ai_check_interval = 12
 		
 		potential = {
-			not_casting = yes
-			is_playable = yes
 			is_tribal = yes
 			independent = yes
+			OR = {
+				ai = yes
+				has_character_flag = gov_lists
+			}
 		}
 		allow = {
 			war = no
@@ -146,10 +148,13 @@ decisions = {
 		ai_check_interval = 12
 		
 		potential = {
-			not_casting = yes
-			is_ruler = yes
 			is_tribal = yes
+			is_ruler = yes
 			independent = no
+			OR = {
+				ai = yes
+				has_character_flag = gov_lists
+			}
 		}
 		allow = {
 			war = no
@@ -360,12 +365,14 @@ decisions = {
 		only_independent = yes
 		is_high_prio = yes
 		ai_check_interval = 12
-		
+
 		potential = {
-			not_casting = yes
-			is_playable = yes
 			is_tribal = yes
 			independent = yes
+			OR = {
+				ai = yes
+				has_character_flag = gov_lists
+			}
 		}
 		allow = {
 			war = no
@@ -389,7 +396,7 @@ decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			if = {
 				limit = { ai = no }
@@ -479,12 +486,15 @@ decisions = {
 		only_playable = yes
 		is_high_prio = yes
 		ai_check_interval = 12
-		
+
 		potential = {
-			not_casting = yes
-			is_ruler = yes
 			is_tribal = yes
+			is_ruler = yes
 			independent = no
+			OR = {
+				ai = yes
+				has_character_flag = gov_lists
+			}
 		}
 		allow = {
 			war = no
@@ -517,7 +527,7 @@ decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			set_character_flag = achievement_not_a_tribe
 			
@@ -674,12 +684,14 @@ decisions = {
 		only_independent = yes
 		is_high_prio = yes
 		ai_check_interval = 12
-		
+
 		potential = {
-			not_casting = yes
-			is_playable = yes
 			is_tribal = yes
 			independent = yes
+			OR = {
+				ai = yes
+				has_character_flag = gov_lists
+			}
 		}
 		allow = {
 			war = no
@@ -726,7 +738,7 @@ decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			if = {
 				limit = { ai = no }
@@ -814,12 +826,15 @@ decisions = {
 		only_playable = yes
 		is_high_prio = yes
 		ai_check_interval = 12
-		
+
 		potential = {
-			not_casting = yes
-			is_ruler = yes
 			is_tribal = yes
+			is_ruler = yes
 			independent = no
+			OR = {
+				ai = yes
+				has_character_flag = gov_lists
+			}
 		}
 		allow = {
 			war = no
@@ -875,7 +890,7 @@ decisions = {
 				}
 			}
 		}
-		
+
 		effect = {
 			set_character_flag = achievement_not_a_tribe
 			
@@ -1033,6 +1048,7 @@ decisions = {
 		ai_check_interval = 120
 
 		potential = {
+			reforming_gov = yes
 			not_casting = yes
 			culture_group = tethyrian_group
 			is_feudal = yes

@@ -1,9 +1,8 @@
 # k_chult
-3.1.1={
-	law = agnatic_succession
-	law = succ_gavelkind
-	liege = d_tabaxiland
+1350.1.1 = {
+	law = succ_sahuagin
+	holder = 52933 # Haaz Sharkskin
 }
-25.1.1 = {
-	holder = 52803 # Nsi
+1430.1.1 = {
+	holder = 52934 # Lasher Sharkskin
 }

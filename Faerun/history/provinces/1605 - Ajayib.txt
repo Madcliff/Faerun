@@ -1,0 +1,22 @@
+# County Title
+title = c_ajayib
+
+# Settlements
+max_settlements = 5
+
+b_ajayib = tribal
+
+# Misc
+culture = jaziran
+religion = jaziri
+
+#History
+
+1357.1.1 = {
+	culture = hadhar
+	religion = qisma
+	b_ajayib = castle
+	b_sadabulus = city
+	b_buni = temple
+	b_khamah = temple
+}

@@ -1,0 +1,27 @@
+# County Title
+title = c_the_old_trees
+
+# Settlements
+max_settlements = 3
+
+b_starshadow = castle
+b_old_trees = city
+#b_xilizars_glade = temple
+#b_judasta = castle
+#b_auroras = city
+#b_borealis = temple
+#b_phoras = castle
+
+# Misc
+culture = wood_elf
+religion = elven_pantheon
+terrain = forest
+#History
+882.1.1 = {
+	remove_settlement = b_old_trees
+}
+1325.1.1 = {
+	culture = orc
+	religion = deities_of_fury
+	b_starshadow = tribal
+}

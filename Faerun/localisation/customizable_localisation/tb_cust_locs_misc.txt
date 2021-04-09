@@ -1,3 +1,4 @@
+# Dynamic Hordes
 defined_text = {
 	name = DynHordeLoc
 	text = {

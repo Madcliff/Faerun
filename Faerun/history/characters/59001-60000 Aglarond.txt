@@ -6,71 +6,71 @@
 59001 = {
 	name = Aubayreer
 	dynasty = 8001
-	
+
 	trait = creature_human
 	trait = longevity
-	religion = good_human_pantheon
+	religion = solar
 	culture = dalesman
-	
+
 	435.1.1 = { birth = yes }
 	465.1.1 = { immortal_age = 30 }
 	642.1.1 = { death = yes }
 }
 59002 = {
-	name = Nytholops 
+	name = Nytholops
 	dynasty = 8001
-	father = 59001 # Aubayreer 
-	
+	father = 59001 # Aubayreer
+
 	trait = creature_human
 	trait = longevity
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	577.1.1 = { birth = yes }
 	607.1.1 = { immortal_age = 30 }
 	719.1.1 = {
-		death = yes 
+		death = yes
 	}
 }
 59003 = {
-	name = Lurskas 
-	dynasty = 8001 
-	father = 59002 # Nytholops 
-	
+	name = Lurskas
+	dynasty = 8001
+	father = 59002 # Nytholops
+
 	trait = creature_human
 	trait = longevity
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	663.1.1 = { birth = yes }
 	693.1.1 = { immortal_age = 30 }
 	968.1.1 = { death = yes }
 }
 59004 = {
-	name = Jholnareer 
+	name = Jholnareer
 	dynasty = 8001
-	father = 59003 # Lurskas 
-	
+	father = 59003 # Lurskas
+
 	trait = creature_human
 	trait = longevity
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	897.1.1 = { birth = yes }
 	927.1.1 = { immortal_age = 30 }
 	1249.1.1 = {
-		death = yes 
+		death = yes
 	}
 }
 59005 = {
 	name = Elthar # Prince Elthar
 	dynasty = 8001
-	father = 59004 # Jholnareer 
-	
+	father = 59004 # Jholnareer
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	1155.1.1 = { birth = yes }
 	1175.1.1 = {
 		add_spouse = 59034 # Previously undisclosed first wife
@@ -81,60 +81,60 @@
 	1245.1.1 = { death = yes }
 }
 59006 = {
-	name = Khalreer 
+	name = Khalreer
 	dynasty = 8001
 	father = 59004 # Jholnareer
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	1179.1.1 = {
-		birth = yes 
+		birth = yes
 	}
 	1260.1.1 = {
-		death = yes 
+		death = yes
 	}
 }
 59007 = {
-	name = Tholeam # Tholeam I 
+	name = Tholeam # Tholeam I
 	dynasty = 8002
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = untheric_faith
 	culture = untheric
-	
+
 	725.1.1 = { birth = yes }
 	750.1.1 = {
 		give_nickname = nick_the_wavelord
 	}
 	805.1.1 = {
-		death = yes 
+		death = yes
 	}
 }
 59008 = {
 	name = Samar # Samar I
 	dynasty = 8002
 	father = 59007 # Tholeam I
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	781.1.1 = { birth = yes }
 	846.1.1 = {
-		death = yes 
+		death = yes
 	}
 }
 59009 = {
-	name = Wisym # invented name 
-	dynasty = 8002 
-	father = 59007 # Tholeam I 
-	
+	name = Wisym # invented name
+	dynasty = 8002
+	father = 59007 # Tholeam I
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	791.1.1 = { birth = yes }
 	845.1.1 = { death = yes }
 }
@@ -142,71 +142,71 @@
 	name = Tholeam # Tholeam II
 	dynasty = 8002
 	father = 59009 # Wisym
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	808.1.1 = { birth = yes }
 	887.1.1 = { death = yes }
 }
 59011 = {
-	name = Namar # Namar I 
+	name = Namar # Namar I
 	dynasty = 8002
-	father = 59010 # Tholeam II 
-	
+	father = 59010 # Tholeam II
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	840.1.1 = { birth = yes }
 	909.1.1 = {
-		death = yes 
+		death = yes
 	}
 }
 59012 = {
-	name = Namar # Namar II 
-	dynasty = 8002 
-	father = 59011 # Namar I 
-	
+	name = Namar # Namar II
+	dynasty = 8002
+	father = 59011 # Namar I
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	874.1.1 = { birth = yes }
 	894.1.1 = {
 		give_nickname = nick_the_hunter
 	}
 	937.1.1 = {
 		death = {
-			death_reason = death_accident 
+			death_reason = death_accident
 		}
 	}
 }
 59013 = {
-	name = Rancent # invented name 
+	name = Rancent # invented name
 	dynasty = 8002
-	father = 59012 # Namar II 
-	
+	father = 59012 # Namar II
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
-	901.1.1 = {	
+
+	901.1.1 = {
 		birth = yes
 	}
 	935.1.1 = { death = yes }
 }
-	
+
 59014 = {
 	name = Tholeam # Tholeam III
 	dynasty = 8002
 	father = 59012 # Namar II
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	905.1.1 = { birth = yes }
 	953.1.1 = {
 		death = {
@@ -215,131 +215,131 @@
 	}
 }
 59015 = {
-	name = Ashtar 
+	name = Ashtar
 	dynasty = 8002
-	father = 59012 # Namar II 
-	
+	father = 59012 # Namar II
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	909.1.1 = {
-		birth = yes 
+		birth = yes
 	}
 	929.1.1 = {
-		trait = craven # 
+		trait = craven #
 	}
 	953.2.1 = {
 		give_nickname = nick_the_craven
-		# gave fealty to Tchazzar and became a vassal of Chessenta 
+		# gave fealty to Tchazzar and became a vassal of Chessenta
 	}
 	988.1.1 = { death = yes }
 }
-59016 = { 
+59016 = {
 	name = Samar # Samar II
 	dynasty = 8002
-	father = 59015 # Ashtar 
-	
+	father = 59015 # Ashtar
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	945.1.1 = { birth = yes }
 	1011.1.1 = { death = yes }
 }
 59017 = {
-	name = Hallarn # Hallarn I 
+	name = Hallarn # Hallarn I
 	dynasty = 8002
-	father = 59016 # Samar II 
-	
+	father = 59016 # Samar II
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	976.1.1 = {
-		birth = yes 
+		birth = yes
 	}
 	1012.1.1 = {
 		give_nickname = nick_elfbane
-		# reign saw skirmishes with elves of Yuirwood and independence from Chessenta 
+		# reign saw skirmishes with elves of Yuirwood and independence from Chessenta
 	}
 	1041.1.1 = {
-		death = yes 
+		death = yes
 	}
 }
 59018 = {
-	name = Hallarn # Hallarn II 
+	name = Hallarn # Hallarn II
 	dynasty = 8002
-	father = 59017 # Hallarn I 
-	
+	father = 59017 # Hallarn I
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	1017.1.1 = { birth = yes }
 	1058.1.1 = { death = yes }
 }
 59019 = {
-	name = Indrila 
+	name = Indrila
 	dynasty = 8002
-	father = 59018 # Hallarn II 
+	father = 59018 # Hallarn II
 	female = yes
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	1037.1.1 = {
-		birth = yes 
+		birth = yes
 	}
 	1065.1.1 = {
 		death = {
 			death_reason = death_battle
-			killer = 59020 # Brindor 
+			killer = 59020 # Brindor
 		}
 	}
 }
 59020 = {
-	name = Brindor 
+	name = Brindor
 	dynasty = 8003
-	
+
 	trait = creature_half_elf
 	religion = yuir
 	culture = wood_elf
-	
+
 	998.1.1 = {
-		birth = yes 
+		birth = yes
 	}
 	1028.1.1 = { immortal_age = 30 }
 	1128.1.1 = {
-		death = yes 
+		death = yes
 	}
 }
 59021 = {
-	name = Althon 
+	name = Althon
 	dynasty = 8003
-	father = 59020 # Brindor 
+	father = 59020 # Brindor
 
 	trait = creature_half_elf
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	1077.1.1 = { birth = yes }
 	1107.1.1 = { immortal_age = 30 }
 	1147.1.1 = {
-		give_nickname = nick_the_old 
+		give_nickname = nick_the_old
 	}
 	1189.1.1 = { death = yes }
 }
 59022 = {
-	name = Elthond 
+	name = Elthond
 	dynasty = 8003
-	father = 59021 # Althon 
-	
+	father = 59021 # Althon
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	1145.1.1 = { birth = yes }
 	1194.1.1 = {
 		death = {
@@ -348,79 +348,85 @@
 	}
 }
 59023 = {
-	name = Philaspur 
+	name = Philaspur
 	dynasty = 8003
 	father = 59021 # Althon
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	1150.1.1 = { birth = yes }
 	1197.1.1 = { death = yes }
 }
 59024 = {
-	name = Thara 
+	name = Thara
 	dynasty = 8003
-	father = 59023 # Philaspur 
+	father = 59023 # Philaspur
 	female = yes
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	1181.1.1 = { birth = yes }
 	1257.1.1 = { death = yes }
 }
 59025 = {
 	name = Ulae
 	dynasty = 8003
-	father = 59023 # Philaspur 
+	father = 59023 # Philaspur
 	female = yes
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	1181.1.1 = { birth = yes }
 	1257.1.1 = { death = yes }
 }
 59026 = {
-	name = Halacar 
+	name = Halacar
 	dynasty = 8003
 	father = 59028 # Ilion
 	mother = 59025 # Ulae
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = aglarondan
-	
+
 	1221.1.1 = { birth = yes }
 	1260.1.1 = {
 		death = {
-			death_reason = death_murder 
-			killer = 53001 # killed by agents of Thay 
+			death_reason = death_murder
+			killer = 53001 # killed by agents of Thay
 		}
 	}
 }
 59027 = {
-	name = Ilione 
+	name = Ilione
 	dynasty = 8003
 	father = 59028 # Ilion
 	mother = 59025 # Ulae
 	female = yes
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = arcane
 	culture = aglarondan
 	trait = master_sorcerer
+	trait = origin_storm
 	1224.1.1 = { birth = yes }
+	1234.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1319.12.14 = {
 		trait = has_bubonic_plague
 	}
 	1320.1.1 = {
 		death = {
-			death_reason = death_trait 
+			death_reason = death_trait
 		}
 	}
 }
@@ -440,10 +446,16 @@
 	female = yes
 	dynasty = 8011 # Silver
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_half_elf
 	trait = journeyman_sorcerer
+	trait = origin_wild_magic
 	1290.1.1 = { birth = yes }
+	1300.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1320.1.1 = { immortal_age = 30 }
 	1321.1.1 = { employer = 103 } # The Simbul
 	1410.1.1 = { death = yes }
@@ -456,12 +468,12 @@
 	dynasty = 8001
 	father = 59031
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1343.1.1 = { birth = yes }
 	1359.1.1 = {
 		effect = {
-			add_claim = k_aglarond 
+			add_claim = k_aglarond
 		}
 	}
 	1430.1.1 = { death = yes }
@@ -471,12 +483,12 @@
 	dynasty = 8001
 	father = 59032
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1306.1.1 = { birth = yes }
-	1320.1.1 = { 
+	1320.1.1 = {
 		effect = {
-			add_claim = k_aglarond 
+			add_claim = k_aglarond
 		}
 	}
 	1359.12.12 = { death = yes }
@@ -486,7 +498,7 @@
 	dynasty = 8001
 	father = 59033
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1271.1.1 = { birth = yes }
 	1349.1.1 = { death = yes }
@@ -497,7 +509,7 @@
 	father = 59005
 	mother = 59034
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	trait = expert_wizard
 	trait = longevity
@@ -510,7 +522,7 @@
 	female = yes
 	dynasty = 8012 # of Milvarune
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1156.6.1 = { birth = yes }
 	1209.1.1 = { death = yes }
@@ -520,10 +532,16 @@
 	female = yes
 	dynasty = 8014 # Parsuns
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_half_elf
 	trait = trained_sorcerer
+	trait = origin_wild_magic
 	1331.1.1 = { birth = yes }
+	1341.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1361.1.1 = { immortal_age = 30 }
 	1450.1.1 = { death = yes }
 }
@@ -531,7 +549,7 @@
 	name = Gante
 	dynasty = 8013 # Demelin
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_half_elf
 	trait = journeyman_fighter
 	1322.1.1 = { birth = yes }
@@ -543,7 +561,7 @@
 	name = Canton
 	dynasty = 8015 # Karlresad
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	trait = trained_wizard
 	1317.1.1 = { birth = yes }
@@ -554,7 +572,8 @@
 	name = Harl
 	dynasty = 8016 # Beskel
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = solar
+	secret_religion = kossuth
 	trait = creature_half_orc
 	trait = trained_rogue
 	1329.1.1 = { birth = yes }
@@ -565,7 +584,7 @@
 	name = Araevil
 	dynasty = 8017 # Darkeye
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_half_elf
 	trait = trained_fighter
 	trait = trained_rogue
@@ -578,7 +597,7 @@
 	name = Fardyl
 	dynasty = 8018 # Albin
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1321.1.1 = { birth = yes }
 	1400.1.1 = { death = yes }
@@ -588,7 +607,7 @@
 	female = yes
 	dynasty = 8019 # Ordo
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	stewardship = 8
 	1318.1.1 = { birth = yes }
@@ -598,7 +617,7 @@
 	name = Nartandil
 	dynasty = 8020 # Greatshield
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_half_elf
 	trait = master_fighter
 	martial = 10
@@ -612,11 +631,11 @@
 	female = yes
 	dynasty = 8021 # Madrell
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = trained_fighter
 	1324.1.1 = { birth = yes }
-	1350.1.1 = { employer = 59041 } # Again, actually part of the garrison, not the court	
+	1350.1.1 = { employer = 59041 } # Again, actually part of the garrison, not the court
 	1410.1.1 = { death = yes }
 }
 59044 = {
@@ -628,7 +647,13 @@
 	religion = elven_pantheon
 	trait = creature_half_elf
 	trait = trained_sorcerer
+	trait = origin_wild_magic
 	1291.1.1 = { birth = yes }
+	1301.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1292.1.1 = {
 		culture = aglarondan
 	}
@@ -710,7 +735,7 @@
 	1309.1.1 = { immortal_age = 30 }
 	1324.1.1 = {
 		employer = 59044
-	}	
+	}
 	1430.1.1 = { death = yes }
 }
 59050 = {
@@ -720,7 +745,13 @@
 	religion = elven_pantheon
 	trait = creature_half_elf
 	trait = journeyman_sorcerer
+	trait = origin_wild_magic
 	1304.1.1 = { birth = yes }
+	1314.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1324.1.1 = {
 		employer = 59044
 		give_nickname = nick_the_green_mage
@@ -732,7 +763,7 @@
 	name = Kargil
 	dynasty = 8024 # Ninton
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1308.1.1 = { birth = yes }
 	1390.1.1 = { death = yes }
@@ -741,7 +772,7 @@
 	name = Aldemus
 	dynasty = 8025 # Rington
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	trait = trained_wizard
 	1301.1.1 = { birth = yes }
@@ -752,7 +783,7 @@
 	name = Nerrol
 	dynasty = 8026 # Hamastyl
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_half_elf
 	trait = trained_ranger
 	trait = trained_paladin
@@ -765,7 +796,7 @@
 	name = Hovor
 	dynasty = 8027 # Seawind
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_half_elf
 	trait = journeyman_fighter
 	trait = trained_rogue
@@ -778,7 +809,7 @@
 	name = Caytran
 	dynasty = 8028 # Halvasyn
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_half_elf
 	trait = expert_bard
 	trait = fortune_builder
@@ -792,7 +823,7 @@
 	female = yes
 	dynasty = 8029 # Benstyl
 	culture = aglarondan
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = journeyman_rogue
 	trait = trained_fighter
@@ -804,7 +835,7 @@
 	name = Colophonius # This character was designed by forum user xandervm: https://forum.paradoxplaza.com/forum/index.php?threads/mod-d-d-forgotten-realms.1042010/page-33#post-25526379
 	dynasty = 8030 # Regenschein
 	culture = wood_elf
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_half_elf
 	trait = trained_rogue
 	martial = 6
@@ -829,7 +860,7 @@
 	name = Buckley # This character was designed by forum user Truewhit: https://forum.paradoxplaza.com/forum/index.php?threads/mod-d-d-forgotten-realms.1042010/page-34#post-25534034
 	dynasty = 8031 # Bushyansta
 	culture = tiefling
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_tiefling
 	trait = warlock
 	trait = is_fat
@@ -850,7 +881,7 @@
 	dynasty = 8031 # Bushyansta
 	father = 59058
 	culture = tiefling
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_tiefling
 	trait = class_monk
 	trait = celibate
@@ -864,7 +895,7 @@
 	name = Elihir # This character was designed by forum user misiame: https://forum.paradoxplaza.com/forum/index.php?threads/mod-d-d-forgotten-realms.1042010/page-34#post-25599092
 	dynasty = 8032 # of Laothkund
 	culture = wood_elf # Should be sea elf; fix when adding aquatic cultures
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_half_elf
 	trait = journeyman_rogue
 	trait = bard
@@ -891,7 +922,7 @@
 	dynasty = 8033 # Never stated a dynasty name, so had to make one up
 	culture = shield_dwarf
 	religion = dwarven_pantheon
-	secret_religion = evil_human_pantheon
+	secret_religion = dead_three
 	trait = creature_dwarf
 	trait = journeyman_cleric
 	trait = martial_cleric
@@ -914,5 +945,20 @@
 			death_reason = death_battle
 			killer = 24035 # Darthorn II of Impiltur
 		}
+	}
+}
+59063 = {
+	name = "Gante" #Lord of the Army of the Lion
+	dynasty = 8013 #Demelin
+	culture = aglarondan
+	religion = solar
+	trait = tough_soldier
+	trait = creature_half_elf
+	trait = master_fighter
+	1335.1.1 = {
+		birth = yes
+	}
+	1405.1.1 = {
+		death = yes
 	}
 }

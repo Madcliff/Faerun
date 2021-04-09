@@ -1,44 +1,50 @@
 ###ÄNSI
 #Also the Eraka because they were Nar before we set them as Ulutiun
 30001 = {
-	name = Amercu
+	name = Ulegocarn
 	dynasty = 5000
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = rogue
 	#trait = thief
 	trait = creature_human
 	1320.10.21 = { birth = yes }
-	1351.1.1 = {add_spouse = 30003 }
+	1351.1.1 = { add_spouse = 30003 }
 	1395.9.15 = { death = yes }
 }
 30002 = {
-	name = Aniar
+	name = Rinthau
 	dynasty = 5000
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	father = 30001	#Amercu
 	mother = 30003	#Bonda
 	trait = expert_sorcerer
+	trait = origin_storm
 	trait = creature_human
 	1356.12.8 = { birth = yes }
+	1360.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1424.6.28 = { death = yes }
 }
 30003 = {
-	name = Bonda
+	name = Sala
 	female = "yes"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = pregnant
 	trait = creature_human
 	1335.1.19 = { birth = yes }
 	1400.3.22 = { death = yes }
 }
 30004 = {
-	name = Brysa
+	name = Danton
 	dynasty = 5001
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	father = 30007 #Ciaro
 	mother = 30011
 	trait = trained_fighter
@@ -48,19 +54,19 @@
 	1386.1.1 = { death = yes }
 }
 30005 = {
-	name = Ceithla
+	name = Panthia
 	female = "yes"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	1331.1.1 = { birth = yes }
 	1391.1.1 = { death = yes }
 }
 30006 = {
-	name = Cassa
+	name = Harl
 	dynasty = 5001
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	father = 30004	#Brysa
 	mother = 30005	#Ceithla
 	trait = trained_warlock
@@ -69,21 +75,21 @@
 	1424.6.28 = { death = yes }
 }
 30007 = {
-	name = Ciaro
+	name = Aunthaun
 	dynasty = 5001
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1299.1.1 = { birth = yes }
 	1320.1.1 = { add_spouse = 30011 }
 	1359.1.1 = { death = yes }
 }
 30008 = {
-	name = Conca
+	name = Vina
 	female = yes
 	dynasty = 5001
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = warlock
 	trait = creature_human
 	father = 30007 #Ciaro
@@ -92,10 +98,10 @@
 	1392.1.1 = { death = yes }
 }
 30009 = {
-	name = Cogi
+	name = Sena
 	dynasty = 5001
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = fighter
 	trait = creature_human
 	father = 30007 #Ciaro
@@ -104,10 +110,10 @@
 	1399.1.1 = { death = yes }
 }
 30010 = {
-	name = Crexoeis
+	name = Abordabe
 	dynasty = 5001
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	father = 30007 #Ciaro
 	mother = 30011
@@ -116,19 +122,19 @@
 	1406.1.1 = { death = yes }
 }
 30011 = {
-	name = Cotta
+	name = Dara
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1304.1.1 = { birth = yes }
 	1359.1.1 = { death = yes }
 }
 30012 = {
-	name = Decim
+	name = Eothan
 	dynasty = 5002
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = trained_ranger
 	trait = creature_human
 	1310.7.14 = { birth = yes }
@@ -136,10 +142,10 @@
 	1379.1.1 = { death = yes }
 }
 30013 = {
-	name = Domam
+	name = Teltha
 	dynasty = 5002
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = trained_druid
 	trait = creature_human
 	father = 30012	#Decim
@@ -149,12 +155,11 @@
 	1391.4.1 = { death = yes }
 }
 30014 = {
-	name = Doman
+	name = Eolair
 	dynasty = 5002
-	culture = nar 
-	religion = good_human_pantheon
-	#trait = monk
-	trait = bard
+	culture = nar
+	religion = natural
+	trait = class_monk
 	trait = creature_human
 	father = 30012	#Decim
 	mother = 30019	#Eanal
@@ -162,11 +167,11 @@
 	1407.5.4 = { death = yes }
 }
 30015 = {
-	name = Crina
+	name = Daalna
 	female = yes
 	dynasty = 5002
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = druid
 	trait = creature_human
 	father = 30012	#Decim
@@ -175,11 +180,11 @@
 	1389.12.7 = { death = yes }
 }
 30016 = {
-	name = Delgna
+	name = Treca
 	female = yes
 	dynasty = 5002
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = arcane
 	trait = trained_wizard
 	trait = creature_human
 	father = 30013	#Domam
@@ -188,51 +193,57 @@
 	1410.4.1 = { death = yes }
 }
 30017 = {
-	name = Domer
+	name = Pargar
 	dynasty = 5002
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = sorcerer
+	trait = origin_wild_magic
 	trait = creature_human
 	father = 30013	#Domam
 	mother = 30018	#Dica
 	1357.2.10 = { birth = yes }
+	1360.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1401.7.16 = { death = yes }
 }
 30018 = {
-	name = Dica
+	name = Ulian
 	female = yes
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = pregnant
 	trait = creature_human
 	1337.11.3 = { birth = yes }
 	1402.11.14 = { death = yes }
 }
 30019 = {
-	name = Eanal
+	name = Abana
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1315.1.1 = { birth = yes }
 	1375.1.1 = { death = yes }
 }
 30020 = {
-	name = Ecbrel
+	name = Jardau
 	dynasty = 5003
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	1309.7.20 = { birth = yes }
 	1330.1.1 = { add_spouse = 30026 }
 	1354.7.1 = { death = yes }
 }
 30021 = {
-	name = Ethal
+	name = Thal
 	dynasty = 5003
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = trained_ranger
 	trait = creature_human
 	father = 30020	#Ecbrel
@@ -242,11 +253,11 @@
 	1388.7.1 = { death = yes }
 }
 30022 = {
-	name = Erin
+	name = Pera
 	female = yes
 	dynasty = 5003
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = ranger
 	trait = creature_human
 	father = 30020	#Ecbrel
@@ -255,11 +266,10 @@
 	1397.5.5 = { death = yes }
 }
 30023 = {
-	name = Fausta
+	name = Ayta
 	female = yes
-	dna = "bjeobdilhmg"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = rogue
 	trait = creature_human
 	father = 30020	#Ecbrel
@@ -268,10 +278,10 @@
 	1398.4.5 = { death = yes }
 }
 30024 = {
-	name = Fursa
+	name = Jumoth
 	dynasty = 5003
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = fighter
 	trait = creature_human
 	father = 30020	#Ecbrel
@@ -280,10 +290,10 @@
 	1398.2.12 = { death = yes }
 }
 30025 = {
-	name = Gnaesaeth
+	name = Brechti
 	dynasty = 5003
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = warlock
 	trait = creature_human
 	father = 30021	#Ethal
@@ -292,39 +302,39 @@
 	1427.3.23 = { death = yes }
 }
 30026 = {
-	name = Findua
+	name = Shaloon
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1314.1.1 = { birth = yes }
 	1374.1.1 = { death = yes }
 }
 30027 = {
-	name = Gila
+	name = Dara
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1336.1.1 = { birth = yes }
 	1396.1.1 = { death = yes }
 }
 30028 = {
-	name = Goino
+	name = Orsin
 	dynasty = 5004
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = shadow
 	1319.5.25 = { birth = yes }
 	1340.1.1 = { add_spouse = 30032 }
 	1373.5.27 = { death = yes }
 }
 30029 = {
-	name = Juliar
+	name = Quintor
 	dynasty = 5004
-	culture = nar 
-	religion = good_human_pantheon
-	trait = paladin 
+	culture = nar
+	religion = natural
+	trait = paladin
 	trait = creature_human
 	father = 30028	#Goino
 	mother = 30032	#Grina
@@ -333,11 +343,11 @@
 	1397.6.5 = { death = yes }
 }
 30030 = {
-	name = Hayaera
+	name = Vina
 	female = yes
 	dynasty = 5004
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = cleric
 	trait = creature_human
 	father = 30028	#Goino
@@ -346,11 +356,11 @@
 	1397.3.7 = { death = yes }
 }
 30031 = {
-	name = Honath
+	name = Rochna
 	female = yes
 	dynasty = 5004
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = trained_paladin
 	trait = creature_human
 	father = 30028	#Goino
@@ -359,19 +369,19 @@
 	1406.9.14 = { death = yes }
 }
 30032 = {
-	name = Grina
+	name = Ryturn
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1324.1.1 = { birth = yes }
 	1384.1.1 = { death = yes }
 }
 30033 = {
-	name = Kaeso
+	name = Hargrid
 	dynasty = 5005
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	#trait = elementalist
 	trait = wizard
@@ -380,10 +390,10 @@
 	1365.5.27 = { death = yes }
 }
 30034 = {
-	name = Lesaeth
+	name = Hethartha
 	dynasty = 5005
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = warlock
 	trait = creature_human
 	father = 30033	#Kaeso
@@ -392,10 +402,10 @@
 	1404.11.8 = { death = yes }
 }
 30035 = {
-	name = Maila
+	name = Laeghi
 	dynasty = 5005
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = trained_druid
 	trait = creature_human
 	father = 30033	#Kaeso
@@ -404,11 +414,11 @@
 	1413.5.19 = { death = yes }
 }
 30036 = {
-	name = Iondar
+	name = Britha
 	female = yes
 	dynasty = 5005
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = ranger
 	trait = creature_human
 	father = 30033	#Kaeso
@@ -417,19 +427,19 @@
 	1440.9.10 = { death = yes }
 }
 30037 = {
-	name = Laria
+	name = Wyanaera
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1325.1.1 = { birth = yes }
 	1385.1.1 = { death = yes }
 }
 30038 = {
-	name = Muler
+	name = Dakaunth
 	dynasty = 5006
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = fighter
 	trait = creature_human
 	1319.8.11 = { birth = yes }
@@ -437,10 +447,10 @@
 	1372.5.17 = { death = yes }
 }
 30039 = {
-	name = Ogall
+	name = Rantha
 	dynasty = 5006
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = barbarian
 	father = 30038	#Muler
 	mother = 30043	#Mora
@@ -448,11 +458,11 @@
 	1394.3.9 = { death = yes }
 }
 30040 = {
-	name = Acis
+	name = Silva
 	female = yes
 	dynasty = 5006
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	#trait = thief
 	trait = rogue
 	trait = creature_human
@@ -462,10 +472,10 @@
 	1399.9.11 = { death = yes }
 }
 30041 = {
-	name = Kletoeis
+	name = Sobor
 	dynasty = 5006
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = shadow
 	trait = creature_human
 	father = 30038	#Muler
@@ -474,11 +484,11 @@
 	1393.7.17 = { death = yes }
 }
 30042 = {
-	name = Erin
+	name = Sonja
 	female = yes
 	dynasty = 5006
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = trained_ranger
 	trait = creature_human
 	father = 30038	#Muler
@@ -487,29 +497,19 @@
 	1393.1.1 = { death = yes }
 }
 30043 = {
-	name = Mora
+	name = Glana
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1324.1.1 = { birth = yes }
 	1384.1.1 = { death = yes }
 }
 30044 = {
-	name = Dolath
+	name = Uldarth
 	dynasty = 5007
-	dna = "ppkaiaaakae"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 4 
-	diplomacy = 8 
-	stewardship = 6 
-	intrigue = 7 
-	learning = 6
-	trait = detached_priest 
-	trait = cruel 
-	trait = zealous 
-	trait = chaste 
+	culture = nar
+	religion = natural
 	trait = creature_human
 	trait = trained_fighter
 	1320.6.21 = { birth = yes }
@@ -517,96 +517,74 @@
 	1379.3.5 = { death = yes }
 }
 30045 = {
-	name = Cesio
+	name = Hethet
 	dynasty = 5007
-	dna = "jjkaiaapkmh"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 8 
-	diplomacy = 6 
-	stewardship = 7 
-	intrigue = 8 
-	learning = 5
-	trait = detached_priest 
-	trait = zealous 
-	trait = deceitful 
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = druid
 	father = 30044	#Dolath
 	mother = 30051	#Glalans
 	1345.5.6 = { birth = yes }
-	1361.1.1 = { trait = druid }
 	1401.5.23 = { death = yes }
 }
 30046 = {
-	name = Flaxion
+	name = Shaloon
 	female = yes
 	dynasty = 5007
-	dna = "bpaapananhk"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = arcane
 	trait = creature_human
+	trait = wizard
 	father = 30044	#Dolath
 	mother = 30051	#Glalans
 	1348.12.1 = { birth = yes }
-	1364.1.1 = { trait = wizard }
 	1402.4.28 = { death = yes }
 }
 30047 = {
-	name = Uregys
+	name = Nestinaka
 	female = yes
 	dynasty = 5007
-	dna = "ppbgmhjckfk"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = trained_warlock
 	father = 30044	#Dolath
 	mother = 30051	#Glalans
 	1349.3.9 = { birth = yes }
-	1359.1.1 = { trait = warlock }
-	1365.1.1 = {
-		remove_trait = warlock
-		trait = trained_warlock
-	}
 	1395.10.14 = { death = yes }
 }
 30048 = {
-	name = Fela
+	name = Kesa
 	female = yes
 	dynasty = 5007
-	dna = "dpfagaaakae"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = trained_cleric
 	father = 30044	#Dolath
 	mother = 30051	#Glalans
 	1353.11.12 = { birth = yes }
-	1363.1.1 = { trait = cleric }
-	1369.1.1 = {
-		remove_trait = cleric
-		trait = trained_cleric
-	}
 	1419.10.13 = { death = yes }
 }
 30049 = {
-	name = Aleriu
+	name = Iran
 	dynasty = 5007
-	dna = "imklibmakae"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = paladin
 	father = 30044	#Dolath
 	mother = 30051	#Glalans
 	1356.10.26 = { birth = yes }
-	1372.1.1 = { trait = paladin }
 	1423.10.17 = { death = yes }
 }
 30050 = {
-	name = Teria
+	name = Urithis
 	female = yes
 	dynasty = 5007
-	dna = "piioidaalde"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30044	#Dolath
 	mother = 30051	#Glalans
@@ -614,106 +592,75 @@
 	1406.12.30 = { death = yes }
 }
 30051 = {
-	name = Glalans
+	name = Sabra
 	female = yes
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = pregnant
 	trait = creature_human
 	1325.8.3 = { birth = yes }
 	1385.8.15 = { death = yes }
 }
 30052 = {
-	name = Atec
+	name = Jhelat
 	dynasty = 5008
-	dna = "aalofofcaff"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 7 
-	diplomacy = 6 
-	stewardship = 4 
-	intrigue = 5 
-	learning = 6
-	trait = charismatic_negotiator 
-	trait = slothful 
-	trait = cruel 
-	trait = temperate 
-	trait = cynical 
-	#trait = trained_monk
-	trait = trained_bard
+	culture = nar
+	religion = natural
+	trait = trained_monk
 	trait = creature_human
 	1319.12.20 = { birth = yes }
 	1340.1.1 = { add_spouse = 30055 }
 	1365.12.8 = { death = yes }
 }
 30053 = {
-	name = Xuvynirn
+	name = Dakaunth
 	dynasty = 5008
-	dna = "aaneloojafg"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 7 
-	diplomacy = 5 
-	stewardship = 7 
-	intrigue = 5 
-	learning = 7
-	trait = honest
-	trait = greedy
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = ranger
 	father = 30052	#Atec
 	mother = 30055	#Acis
 	1346.8.12 = { birth = yes }
-	1362.1.1 = { trait = ranger }
 	1393.9.30 = { death = yes }
 }
 30054 = {
-	name = Ican
+	name = Brenna
 	female = yes
 	dynasty = 5008
-	dna = "aaloajccakk"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = druid
 	father = 30052	#Atec
 	mother = 30055	#Acis
 	1349.6.22 = { birth = yes }
-	1365.1.1 = { trait = druid }
 	1431.2.4 = { death = yes }
 }
 30055 = {
-	name = Acis
+	name = Larnaeril
 	female = yes
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	1324.8.3 = { birth = yes }
 	1384.8.15 = { death = yes }
 }
 30056 = {
-	name = Cassa
+	name = Jhuvik
 	dynasty = 5009
-	dna = "pekkmjgijfn"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	1300.12.19 = { birth = yes }
 	1321.1.1 = { add_spouse = 30066 }
 	1355.10.13 = { death = yes }
 }
 30057 = {
-	name = Feinne
+	name = Aunthaun
 	dynasty = 5009
-	dna = "pamcmmdiegn"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 6 
-	diplomacy = 8 
-	stewardship = 6 
-	intrigue = 5 
-	learning = 5
-	trait = midas_touched 
-	trait = wroth 
-	trait = kind 
+	culture = nar
+	religion = natural
 	trait = trained_cleric
 	trait = creature_human
 	father = 30056	#Cassa
@@ -723,12 +670,11 @@
 	1388.2.28 = { death = yes }
 }
 30058 = {
-	name = Pulaumas
+	name = Cana
 	female = yes
 	dynasty = 5009
-	dna = "kdkemmoijin"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = paladin
 	trait = creature_human
 	father = 30056	#Cassa
@@ -737,38 +683,30 @@
 	1390.7.26 = { death = yes }
 }
 30059 = {
-	name = Decaiar
+	name = Harthant
 	dynasty = 5009
-	dna = "gckjmigfjfj"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 5 
-	diplomacy = 5 
-	stewardship = 5 
-	intrigue = 7 
-	learning = 5
-	trait = grey_eminence 
-	trait = cruel 
-	trait = chaste 
-	trait = zealous 
-	trait = content 
-	trait = harelip 
+	culture = nar
+	religion = arcane
 	trait = sorcerer
+	trait = origin_divine_soul
 	trait = creature_human
 	father = 30056	#Cassa
 	mother = 30066	#Zraela
 	1332.4.2 = { birth = yes }
+	1342.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1404.6.2 = { death = yes }
 }
 30060 = {
-	name = Bari
+	name = Larit
 	female = yes
 	dynasty = 5009
-	dna = "pdkkfjoijan"
-	culture = nar 
-	religion = good_human_pantheon
-	#trait = trained_monk
-	trait = trained_bard
+	culture = nar
+	religion = natural
+	trait = trained_monk
 	trait = creature_human
 	father = 30056	#Cassa
 	mother = 30066	#Zraela
@@ -776,148 +714,98 @@
 	1397.7.6 = { death = yes }
 }
 30061 = {
-	name = Cainco
+	name = Riulba
 	dynasty = 5009
-	dna = "nkecjkoaegm"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 8 
-	diplomacy = 8 
-	stewardship = 7 
-	intrigue = 7 
-	learning = 7
-	trait = intricate_webweaver 
-	trait = gregarious 
-	trait = paranoid 
-	trait = patient 
-	trait = just 
-	trait = kind
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = shadow
 	father = 30057	#Feinne
 	mother = 30067	#Plesbia
 	1346.3.3 = { birth = yes }
-	1362.1.1 = { trait = shadow }
 	1410.4.27 = { death = yes }
 }
 30062 = {
-	name = Julus
+	name = Terorn
 	dynasty = 5009
-	dna = "pkmcmgdiegn"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 8 
-	diplomacy = 8 
-	stewardship = 4 
-	intrigue = 7 
-	learning = 4
-	trait = midas_touched 
-	trait = patient 
-	trait = cruel 
-	trait = content 
-	trait = cynical 
-	trait = wizard
+	culture = nar
+	religion = natural
+	trait = trained_wizard
 	trait = creature_human
 	father = 30057	#Feinne
 	mother = 30067	#Plesbia
 	1349.4.1 = { birth = yes }
-	1365.1.1 = {
-		remove_trait = wizard
-		trait = trained_wizard
-	}
 	1393.4.6 = { death = yes }
 }
 30063 = {
-	name = Dubne
+	name = Tesith
 	dynasty = 5009
-	dna = "iaflfopieka"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 7 
-	diplomacy = 5 
-	stewardship = 6 
-	intrigue = 4 
-	learning = 5
-	trait = duelist 
-	trait = cruel 
-	trait = charitable 
-	trait = paranoid 
-	trait = just 
-	trait = paladin
+	culture = nar
+	religion = natural
+	trait = trained_paladin
 	trait = creature_human
 	father = 30057	#Feinne
 	mother = 30067	#Plesbia
 	1351.3.10 = { birth = yes }
-	1367.1.1 = { 
-		remove_trait = paladin
-		trait = trained_paladin 
-	}
 	1402.4.24 = { death = yes }
 }
 30064 = {
-	name = Nestinaka
+	name = Hayaera
 	female = yes
 	dynasty = 5009
-	dna = "pajabmaajln"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = ranger
 	father = 30057	#Feinne
 	mother = 30067	#Plesbia
 	1355.11.8 = { birth = yes }
-	1371.1.1 = { trait = ranger }
 	1429.7.9 = { death = yes }
 }
 30065 = {
-	name = Brechti
+	name = Athair
 	dynasty = 5009
-	dna = "pkmcmidignd"
-	culture = nar 
-	religion = good_human_pantheon
-	trait = honest 
-	trait = patient
-	trait = greedy
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = ranger
 	father = 30057	#Feinne
 	mother = 30067	#Plesbia
 	1357.4.24 = { birth = yes }
-	1373.1.1 = { trait = ranger }
 	1427.1.1 = { death = yes }
 }
 30066 = {
-	name = Zraela
+	name = Viva
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1300.1.1 = { birth = yes }
 	1360.1.1 = { death = yes }
 }
 30067 = {
-	name = Plesbia
+	name = Findua
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1324.1.1 = { birth = yes }
 	1384.1.1 = { death = yes }
 }
 30068 = {
-	name = Dada
+	name = Riulba
 	dynasty = 5010
-	dna = "klpncjkbodo"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	1300.1.11 = { birth = yes }
-	1319.1.1 = { add_spouse = 30078 }
 	1352.1.22 = { death = yes }
 }
 30069 = {
-	name = Magla
+	name = Ilorle
 	dynasty = 5010
-	dna = "ilpnobgknlf"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = trained_barbarian
 	trait = creature_human
 	father = 30068	#Dada
@@ -927,22 +815,10 @@
 	1364.9.16 = { death = yes }
 }
 30070 = {
-	name = Umbril
+	name = Morgard
 	dynasty = 5010
-	dna = "klejfjkbhco"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 4 
-	diplomacy = 8 
-	stewardship = 8 
-	intrigue = 7 
-	learning = 4
-	trait = charismatic_negotiator 
-	trait = hedonist 
-	trait = craven 
-	trait = chaste 
-	trait = arbitrary 
-	trait = stressed 
+	culture = nar
+	religion = natural
 	trait = paladin
 	trait = creature_human
 	father = 30068	#Dada
@@ -951,12 +827,11 @@
 	1378.8.14 = { death = yes }
 }
 30071 = {
-	name = Teria
+	name = Ayta
 	female = yes
 	dynasty = 5010
-	dna = "klppeeabjdh"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = trained_ranger
 	trait = creature_human
 	father = 30068	#Dada
@@ -967,17 +842,8 @@
 30072 = {
 	name = Daca
 	dynasty = 5010
-	dna = "nlhnfikjcdn"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 6 
-	diplomacy = 4 
-	stewardship = 5 
-	intrigue = 8 
-	learning = 7
-	trait = flamboyant_schemer 
-	trait = brave 
-	trait = cruel 
+	culture = nar
+	religion = natural
 	trait = barbarian
 	trait = creature_human
 	father = 30068	#Dada
@@ -988,21 +854,8 @@
 30073 = {
 	name = Waervyn
 	dynasty = 5010
-	dna = "klpokiaokdi"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 7 
-	diplomacy = 7 
-	stewardship = 4 
-	intrigue = 5 
-	learning = 8
-	trait = elusive_shadow 
-	trait = scholar 
-	trait = envious 
-	trait = trusting 
-	trait = shy 
-	trait = patient 
-	trait = craven 
+	culture = nar
+	religion = arcane
 	trait = wizard
 	trait = creature_human
 	father = 30068	#Dada
@@ -1013,19 +866,8 @@
 30074 = {
 	name = Gaibla
 	dynasty = 5010
-	dna = "ildmnngkflf"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 7 
-	diplomacy = 7 
-	stewardship = 5 
-	intrigue = 4 
-	learning = 5
-	trait = elusive_shadow 
-	trait = kind 
-	trait = brave 
-	trait = patient 
-	trait = zealous 
+	culture = nar
+	religion = natural
 	trait = trained_barbarian
 	trait = creature_human
 	father = 30069	#Magla
@@ -1037,64 +879,46 @@
 30075 = {
 	name = Cesaeth
 	dynasty = 5010
-	dna = "ikpbnmiknhf"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 5 
-	diplomacy = 6 
-	stewardship = 6 
-	intrigue = 4 
-	learning = 7
-	trait = midas_touched 
-	trait = wroth 
-	trait = deceitful 
-	trait = greedy 
-	trait = stressed 
-	trait = rogue
+	culture = nar
+	religion = natural
+	trait = trained_rogue
 	trait = creature_human
 	father = 30069	#Magla
 	mother = 30079	#Crutizorn
 	1346.5.16 = { birth = yes }
-	1362.1.1 = {
-		remove_trait = rogue
-		trait = trained_rogue
-	}
 	1417.12.19 = { death = yes }
 }
 30076 = {
 	name = Cathna
 	female = yes
 	dynasty = 5010
-	dna = "dmcndbgdnla"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = rogue
 	father = 30069	#Magla
 	mother = 30079	#Crutizorn
 	1349.10.20 = { birth = yes }
-	1365.1.1 = { trait = rogue }
 	1407.4.10 = { death = yes }
 }
 30077 = {
 	name = Cori
 	female = yes
 	dynasty = 5010
-	dna = "iepnofpbnhf"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = rogue
 	father = 30069	#Magla
 	mother = 30079	#Crutizorn
 	1354.8.23 = { birth = yes }
-	#1370.1.1 = { trait = thief }
-	1370.1.1 = { trait = rogue }
 	1400.10.16 = { death = yes }
 }
 30078 = {
 	name = Cracarn
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1300.1.1 = { birth = yes }
 	1360.1.1 = { death = yes }
@@ -1103,7 +927,7 @@
 	name = Crutizorn
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1319.1.1 = { birth = yes }
 	1379.1.1 = { death = yes }
@@ -1112,7 +936,7 @@
 	name = Prina
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	trait = pregnant
 	1342.1.1 = { birth = yes }
@@ -1121,19 +945,8 @@
 30081 = {
 	name = Aniar
 	dynasty = 5011
-	dna = "dfoiggdfkep"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 7 
-	diplomacy = 4 
-	stewardship = 7 
-	intrigue = 4 
-	learning = 8
-	trait = intricate_webweaver 
-	trait = craven 
-	trait = gregarious 
-	trait = charitable 
-	trait = cruel 
+	culture = nar
+	religion = natural
 	trait = fighter
 	trait = creature_human
 	1309.7.11 = { birth = yes }
@@ -1143,17 +956,8 @@
 30082 = {
 	name = Domus
 	dynasty = 5011
-	dna = "dffiggdfgep"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 4 
-	diplomacy = 4 
-	stewardship = 6 
-	intrigue = 4 
-	learning = 7
-	trait = naive_appeaser 
-	trait = brave 
-	trait = cynical 
+	culture = nar
+	religion = natural
 	trait = shadow
 	trait = creature_human
 	father = 30081	#Aniar
@@ -1165,19 +969,8 @@
 30083 = {
 	name = Leanua
 	dynasty = 5011
-	dna = "ofongdpmfjp"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 8 
-	diplomacy = 4 
-	stewardship = 6 
-	intrigue = 4 
-	learning = 8
-	trait = martial_cleric 
-	trait = cruel 
-	trait = greedy 
-	trait = just 
-	trait = gregarious 
+	culture = nar
+	religion = natural
 	trait = fighter
 	trait = creature_human
 	father = 30081	#Aniar
@@ -1189,9 +982,8 @@
 	name = Grahaenon
 	female = yes
 	dynasty = 5011
-	dna = "bfoibgpgeeb"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = shadow
 	trait = creature_human
 	father = 30081	#Aniar
@@ -1202,20 +994,8 @@
 30085 = {
 	name = Cogi
 	dynasty = 5011
-	dna = "ceonogdjkep"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 4 
-	diplomacy = 4 
-	stewardship = 5 
-	intrigue = 6 
-	learning = 4
-	trait = flamboyant_schemer 
-	trait = impaler 
-	trait = temperate 
-	trait = honest 
-	trait = humble 
-	trait = zealous 
+	culture = nar
+	religion = natural
 	trait = trained_barbarian
 	trait = creature_human
 	father = 30081	#Aniar
@@ -1227,9 +1007,8 @@
 	name = Bluvral
 	female = yes
 	dynasty = 5011
-	dna = "hpoicamlgpp"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30082	#Domus
 	mother = 30089	#Ulled
@@ -1239,9 +1018,8 @@
 30087 = {
 	name = Dexom
 	dynasty = 5011
-	dna = "dfiimgddhhn"
-	culture = nar 
-	religion = good_human_pantheon 
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30082	#Domus
 	mother = 30089	#Ulled
@@ -1252,7 +1030,7 @@
 	name = Klureroth
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1309.1.1 = { birth = yes }
 	1369.1.1 = { death = yes }
@@ -1261,7 +1039,7 @@
 	name = Ulled
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1333.1.1 = { birth = yes }
 	1393.1.1 = { death = yes }
@@ -1269,18 +1047,8 @@
 30090 = {
 	name = Xuvynirn
 	dynasty = 5012
-	dna = "ebgnlljgebf"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 5 
-	diplomacy = 4 
-	stewardship = 4 
-	intrigue = 5 
-	learning = 7
-	trait = thrifty_clerk 
-	trait = trusting 
-	trait = humble 
-	trait = zealous 
+	culture = nar
+	religion = natural
 	#trait = thief
 	trait = rogue
 	trait = creature_human
@@ -1291,78 +1059,56 @@
 30091 = {
 	name = Magla
 	dynasty = 5012
-	dna = "ebgnllbgcbh"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 8 
-	diplomacy = 4 
-	stewardship = 6 
-	intrigue = 5 
-	learning = 6
-	trait = flamboyant_schemer 
-	trait = mystic 
-	trait = just 
-	trait = paranoid 
-	trait = temperate 
+	culture = nar
+	religion = natural
 	trait = sorcerer
+	trait = origin_wild_magic
 	trait = creature_human
 	father = 30090	#Xuvynirn
 	mother = 30095	#Petra
 	1341.9.10 = { birth = yes }
+	1351.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1391.1.30 = { death = yes }
 }
 30092 = {
 	name = Appiar
 	dynasty = 5012
-	dna = "nbdnllpabbb"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 5 
-	diplomacy = 6 
-	stewardship = 4 
-	intrigue = 4 
-	learning = 7
-	trait = flamboyant_schemer 
-	trait = kind 
-	trait = temperate 
-	trait = trusting 
-	trait = diligent 
-	trait = drunkard 
+	culture = nar
+	religion = natural
 	trait = sorcerer
+	trait = origin_wild_magic
 	trait = creature_human
 	father = 30090	#Xuvynirn
 	mother = 30095	#Petra
 	1344.7.10 = { birth = yes }
+	1354.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1402.8.2 = { death = yes }
 }
 30093 = {
 	name = Lona
 	dynasty = 5012
-	dna = "eomnenagebo"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 6 
-	diplomacy = 5 
-	stewardship = 6 
-	intrigue = 8 
-	learning = 4
-	trait = skilled_tactician 
-	trait = wroth 
-	trait = humble 
-	trait = zealous 
-	trait = kind 
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = paladin
 	father = 30090	#Xuvynirn
 	mother = 30095	#Petra
 	1349.5.13 = { birth = yes }
-	1365.1.1 = { trait = paladin }
 	1420.3.31 = { death = yes }
 }
 30094 = {
 	name = Pubius
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	trait = pregnant
 	1341.1.1 = { birth = yes }
@@ -1372,7 +1118,7 @@
 	name = Petra
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1319.1.1 = { birth = yes }
 	1379.1.1 = { death = yes }
@@ -1380,19 +1126,8 @@
 30096 = {
 	name = Gortha
 	dynasty = 5013
-	dna = "fllakmljlmd"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 8 
-	diplomacy = 8 
-	stewardship = 7 
-	intrigue = 6 
-	learning = 8
-	trait = tough_soldier 
-	trait = honest 
-	trait = wroth 
-	trait = ambitious 
-	trait = envious 
+	culture = nar
+	religion = natural
 	trait = paladin
 	trait = creature_human
 	1299.2.4 = { birth = yes }
@@ -1402,19 +1137,8 @@
 30097 = {
 	name = Clorio
 	dynasty = 5013
-	dna = "flofdmjlede"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 7 
-	diplomacy = 8 
-	stewardship = 4 
-	intrigue = 8 
-	learning = 5
-	trait = scholarly_theologian 
-	trait = humble 
-	trait = temperate 
-	trait = arbitrary 
-	trait = diligent 
+	culture = nar
+	religion = natural
 	trait = trained_shadow
 	trait = creature_human
 	father = 30096	#Gortha
@@ -1426,18 +1150,8 @@
 30098 = {
 	name = Servus
 	dynasty = 5013
-	dna = "folekmljjhd"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 8 
-	diplomacy = 6 
-	stewardship = 4 
-	intrigue = 7 
-	learning = 6
-	trait = charismatic_negotiator 
-	trait = greedy 
-	trait = arbitrary 
-	trait = slothful 
+	culture = nar
+	religion = natural
 	trait = fighter
 	trait = creature_human
 	father = 30096	#Gortha
@@ -1448,20 +1162,8 @@
 30099 = {
 	name = Krifias
 	dynasty = 5013
-	dna = "fjmdmfpjlmd"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 6 
-	diplomacy = 4 
-	stewardship = 7 
-	intrigue = 4 
-	learning = 7
-	trait = flamboyant_schemer 
-	trait = patient 
-	trait = shy 
-	trait = honest 
-	trait = cruel 
-	trait = stressed 
+	culture = nar
+	religion = natural
 	trait = rogue
 	trait = creature_human
 	father = 30096	#Gortha
@@ -1472,35 +1174,27 @@
 30100 = {
 	name = Mori
 	dynasty = 5013
-	dna = "flmakdpdabd"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 7 
-	diplomacy = 6 
-	stewardship = 6 
-	intrigue = 8 
-	learning = 5
-	trait = tough_soldier 
-	trait = cruel 
-	trait = diligent 
-	trait = ambitious 
-	trait = paranoid 
-	trait = envious 
-	trait = charitable 
+	culture = nar
+	religion = arcane
 	trait = trained_sorcerer
+	trait = origin_divine_soul
 	trait = creature_human
 	father = 30096	#Gortha
 	mother = 30107	#Mila
 	1331.1.22 = { birth = yes }
+	1341.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1385.5.4 = { death = yes }
 }
 30101 = {
 	name = Bari
 	female = yes
 	dynasty = 5013
-	dna = "fifpkjcmkld"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = paladin
 	trait = creature_human
 	father = 30096	#Gortha
@@ -1511,19 +1205,8 @@
 30102 = {
 	name = Gaba
 	dynasty = 5013
-	dna = "fiofnmcbedc"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 4 
-	diplomacy = 4 
-	stewardship = 8 
-	intrigue = 5 
-	learning = 6
-	trait = misguided_warrior 
-	trait = arbitrary 
-	trait = deceitful 
-	trait = wroth 
-	trait = trusting 
+	culture = nar
+	religion = natural
 	trait = cleric
 	trait = creature_human
 	father = 30097	#Clorio
@@ -1534,66 +1217,59 @@
 30103 = {
 	name = Dexom
 	dynasty = 5013
-	dna = "imofemjlgdf"
-	culture = nar 
-	religion = good_human_pantheon
-	trait = greedy 
-	trait = cynical 
-	trait = drunkard 
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = bard
 	father = 30097	#Clorio
 	mother = 30108	#Iliygatos
 	1347.3.27 = { birth = yes }
-	1363.1.1 = { trait = bard }
 	1390.1.22 = { death = yes }
 }
 30104 = {
 	name = Vicia
 	female = yes
 	dynasty = 5013
-	dna = "cpooohjlcde"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = shadow
 	father = 30097	#Clorio
 	mother = 30108	#Iliygatos
 	1351.6.3 = { birth = yes }
-	1367.1.1 = { trait = shadow }
 	1397.5.9 = { death = yes }
 }
 30105 = {
 	name = Finndia
 	female = yes
 	dynasty = 5013
-	dna = "fbmhlkjldde"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = shadow
 	father = 30097	#Clorio
 	mother = 30108	#Iliygatos
 	1353.3.20 = { birth = yes }
-	1369.1.1 = { trait = shadow }
 	1401.1.8 = { death = yes }
 }
 30106 = {
 	name = Grina
 	female = yes
 	dynasty = 5013
-	dna = "fidkfgjlegj"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = bard
 	father = 30097	#Clorio
 	mother = 30108	#Iliygatos
 	1357.7.11 = { birth = yes }
-	1373.1.1 = { trait = bard }
 	1419.6.21 = { death = yes }
 }
 30107 = {
 	name = Mila
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1299.1.1 = { birth = yes }
 	1364.1.1 = { death = yes }
@@ -1602,7 +1278,7 @@
 	name = Iliygatos
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = pregnant
 	trait = creature_human
 	1322.1.1 = { birth = yes }
@@ -1611,19 +1287,8 @@
 30109 = {
 	name = Lachu
 	dynasty = 5014
-	dna = "feokkcnfcfn"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 8 
-	diplomacy = 8 
-	stewardship = 5 
-	intrigue = 8 
-	learning = 4
-	trait = indulgent_wastrel 
-	trait = shy 
-	trait = temperate 
-	trait = cruel 
-	trait = ambitious 
+	culture = nar
+	religion = natural
 	trait = ranger
 	trait = creature_human
 	1320.3.2 = { birth = yes }
@@ -1633,21 +1298,8 @@
 30110 = {
 	name = Fleriar
 	dynasty = 5014
-	dna = "beokccnpcfa"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 4 
-	diplomacy = 4 
-	stewardship = 6 
-	intrigue = 6 
-	learning = 5
-	trait = midas_touched 
-	trait = gardener 
-	trait = greedy 
-	trait = humble 
-	trait = gluttonous 
-	trait = arbitrary 
-	trait = cruel 
+	culture = nar
+	religion = natural
 	trait = druid
 	trait = creature_human
 	father = 30109	#Lachu
@@ -1658,24 +1310,20 @@
 30111 = {
 	name = Mole
 	dynasty = 5014
-	dna = "ceoklcofcfj"
-	culture = nar 
-	religion = good_human_pantheon
-	trait = ambitious 
-	trait = humble
-	trait = cynical
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = cleric
 	father = 30109	#Lachu
 	mother = 30112	#Pharoth
 	1345.5.15 = { birth = yes }
-	1361.1.1 = { trait = cleric }
 	1389.7.13 = { death = yes }
 }
 30112 = {
 	name = Pharoth
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1320.1.1 = { birth = yes }
 	1393.1.1 = { death = yes }
@@ -1683,10 +1331,9 @@
 30113 = {
 	name = Sextib
 	dynasty = 5015
-	dna = "lffbpioiaib"
-	culture = nar 
-	religion = good_human_pantheon
-	trait = creature_human	
+	culture = nar
+	religion = natural
+	trait = creature_human
 	1299.3.2 = { birth = yes }
 	1320.1.1 = { add_spouse = 30120 }
 	1357.10.30 = { death = yes }
@@ -1695,11 +1342,9 @@
 	name = Vaca
 	female = yes
 	dynasty = 5015
-	dna = "llfpppnbdip"
-	culture = nar 
-	religion = good_human_pantheon
-	#trait = monk
-	trait = bard
+	culture = nar
+	religion = natural
+	trait = monk
 	trait = creature_human
 	father = 30113	#Sextib
 	mother = 30120	#Inen
@@ -1709,20 +1354,8 @@
 30115 = {
 	name = Goino
 	dynasty = 5015
-	dna = "lfnbpipkmib"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 6 
-	diplomacy = 8 
-	stewardship = 8 
-	intrigue = 7 
-	learning = 7
-	trait = martial_cleric 
-	trait = humble 
-	trait = deceitful 
-	trait = just 
-	trait = kind 
-	trait = lunatic 
+	culture = nar
+	religion = natural
 	trait = paladin
 	trait = creature_human
 	father = 30113	#Sextib
@@ -1735,9 +1368,8 @@
 	name = Jufaumas
 	female = yes
 	dynasty = 5015
-	dna = "lgfdpioilij"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = trained_ranger
 	trait = creature_human
 	father = 30113	#Sextib
@@ -1749,60 +1381,51 @@
 	name = Silva
 	female = yes
 	dynasty = 5015
-	dna = "lfaapaliiib"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = arcane
 	trait = journeyman_sorcerer
+	trait = origin_storm
 	trait = creature_human
 	father = 30113	#Sextib
 	mother = 30120	#Inen
 	1338.7.6 = { birth = yes }
+	1348.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1408.7.21 = { death = yes }
 }
 30118 = {
 	name = Dulla
 	dynasty = 5015
-	dna = "ljbgpipkmfb"
-	culture = nar 
-	religion = good_human_pantheon
-	trait = diligent 
-	trait = ambitious
-	trait = paladin
+	culture = nar
+	religion = natural
+	trait = journeyman_paladin
 	trait = creature_human
 	father = 30115	#Goino
+	mother = 30121	#Feda
 	1352.4.6 = { birth = yes }
-	1364.1.1 = {
-		remove_trait = paladin
-		trait = trained_paladin
-	}
-	1368.1.1 = {
-		remove_trait = trained_paladin
-		trait = journeyman_paladin
-	}
 	1412.12.26 = { death = yes }
 }
 30119 = {
 	name = Unan
 	female = yes
 	dynasty = 5015
-	dna = "hfgpnimlijb"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
+	trait = trained_druid
 	trait = creature_human
 	father = 30115	#Goino
+	mother = 30121	#Feda
 	1356.12.19 = { birth = yes }
-	1366.1.1 = { trait = druid }
-	1372.1.1 = {
-		remove_trait = druid
-		trait = trained_druid
-	}
 	1414.1.2 = { death = yes }
 }
 30120 = {
 	name = Inen
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1299.1.1 = { birth = yes }
 	1357.1.1 = { death = yes }
@@ -1811,7 +1434,7 @@
 	name = Feda
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1330.1.1 = { birth = yes }
 	1383.1.1 = { death = yes }
@@ -1819,18 +1442,8 @@
 30122 = {
 	name = Caiaro
 	dynasty = 5016
-	dna = "imkldhibkin"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 8 
-	diplomacy = 7 
-	stewardship = 5 
-	intrigue = 8 
-	learning = 8
-	trait = martial_cleric 
-	trait = proud 
-	trait = just 
-	trait = diligent 
+	culture = nar
+	religion = natural
 	trait = journeyman_ranger
 	trait = creature_human
 	1310.11.16 = { birth = yes }
@@ -1840,20 +1453,8 @@
 30123 = {
 	name = Telaeus
 	dynasty = 5016
-	dna = "amehfhiikpa"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 4 
-	diplomacy = 6 
-	stewardship = 6 
-	intrigue = 5 
-	learning = 4
-	trait = charismatic_negotiator 
-	trait = shy 
-	trait = cruel 
-	trait = honest 
-	trait = greedy 
-	trait = content 
+	culture = nar
+	religion = natural
 	trait = expert_paladin
 	trait = creature_human
 	father = 30122	#Caiaro
@@ -1865,21 +1466,8 @@
 30124 = {
 	name = Bulorn
 	dynasty = 5016
-	dna = "ikjlkmmbehn"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 5 
-	diplomacy = 8 
-	stewardship = 6 
-	intrigue = 4 
-	learning = 4
-	trait = martial_cleric 
-	trait = cynical 
-	trait = humble 
-	trait = lustful 
-	trait = greedy 
-	trait = trusting 
-	trait = content 
+	culture = nar
+	religion = natural
 	trait = trained_ranger
 	trait = creature_human
 	father = 30122	#Caiaro
@@ -1891,9 +1479,8 @@
 	name = Petra
 	female = yes
 	dynasty = 5016
-	dna = "ipkldhibnin"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = trained_ranger
 	trait = creature_human
 	father = 30122	#Caiaro
@@ -1904,22 +1491,8 @@
 30126 = {
 	name = Tanto
 	dynasty = 5016
-	dna = "omkldhkbhin"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 8 
-	diplomacy = 4 
-	stewardship = 5 
-	intrigue = 4 
-	learning = 4
-	trait = skilled_tactician 
-	trait = patient 
-	trait = zealous 
-	trait = content 
-	trait = arbitrary 
-	trait = envious 
-	trait = trusting 
-	trait = lunatic 
+	culture = nar
+	religion = natural
 	trait = journeyman_shadow
 	trait = creature_human
 	father = 30122	#Caiaro
@@ -1930,25 +1503,20 @@
 30127 = {
 	name = Avus
 	dynasty = 5016
-	dna = "okgldhdbkii"
-	culture = nar 
-	religion = good_human_pantheon
-	trait = zealous 
-	trait = diligent
-	trait = cruel
+	culture = nar
+	religion = natural
+	trait = cleric
 	trait = creature_human
 	father = 30122	#Caiaro
 	mother = 30129	#Paulla
 	1346.10.1 = { birth = yes }
-	1362.1.1 = { trait = cleric }
 	1431.9.30 = { death = yes }
 }
 30128 = {
 	name = Slesagos
 	dynasty = 5016
-	dna = "dpehlhmikja"
-	culture = nar 
-	religion = good_human_pantheon 
+	culture = nar
+	religion = natural
 	father = 30123	#Telaeus
 	mother = 30130	#Vicia
 	1359.5.7 = { birth = yes }
@@ -1958,7 +1526,7 @@
 	name = Paulla
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1310.1.1 = { birth = yes }
 	1362.1.1 = { death = yes }
@@ -1967,7 +1535,7 @@
 	name = Vicia
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1333.1.1 = { birth = yes }
 	1402.1.1 = { death = yes }
@@ -1975,9 +1543,8 @@
 30131 = {
 	name = Asach
 	dynasty = 5017
-	dna = "hfapkllapka"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	1299.5.10 = { birth = yes }
 	1320.1.1 = { add_spouse = 30139 }
@@ -1986,21 +1553,8 @@
 30132 = {
 	name = Malbra
 	dynasty = 5017
-	dna = "hiankilnbka"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 7 
-	diplomacy = 6 
-	stewardship = 8 
-	intrigue = 7 
-	learning = 6
-	trait = intricate_webweaver 
-	trait = arbitrary 
-	trait = shy 
-	trait = cynical 
-	trait = deceitful 
-	trait = greedy 
-	trait = depressed 
+	culture = nar
+	religion = natural
 	trait = journeyman_druid
 	trait = creature_human
 	father = 30131	#Asach
@@ -2013,9 +1567,8 @@
 	name = Ceithlia
 	female = yes
 	dynasty = 5017
-	dna = "lffpkelooma"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = paladin
 	trait = creature_human
 	father = 30131	#Asach
@@ -2027,9 +1580,8 @@
 	name = Hola
 	female = yes
 	dynasty = 5017
-	dna = "hoflmdlbpka"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = expert_shadow
 	trait = creature_human
 	father = 30131	#Asach
@@ -2041,9 +1593,8 @@
 	name = Zynerion
 	female = yes
 	dynasty = 5017
-	dna = "klpmkijdpka"
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = trained_shadow
 	trait = creature_human
 	father = 30131	#Asach
@@ -2054,22 +1605,8 @@
 30136 = {
 	name = Mitiar
 	dynasty = 5017
-	dna = "ifddkjfpbkd"
-	culture = nar 
-	religion = good_human_pantheon
-	martial = 4 
-	diplomacy = 8 
-	stewardship = 7 
-	intrigue = 6 
-	learning = 7
-	trait = midas_touched 
-	trait = hunter 
-	trait = cruel 
-	trait = slothful 
-	trait = greedy 
-	trait = deceitful 
-	trait = drunkard 
-	trait = possessed 
+	culture = nar
+	religion = natural
 	#trait = expert_elementalist
 	trait = expert_wizard
 	trait = creature_human
@@ -2082,44 +1619,33 @@
 	name = Rinath
 	female = yes
 	dynasty = 5017
-	dna = "hmjplnlabla"
-	culture = nar 
-	religion = good_human_pantheon
-	trait = rogue
+	culture = nar
+	religion = natural
+	trait = journeyman_rogue
 	trait = creature_human
 	father = 30132	#Malbra
 	mother = 30140	#Hleina
 	1348.12.12 = { birth = yes }
-	1364.1.1 = { trait = journeyman_rogue }
 	1400.10.21 = { death = yes }
 }
 30138 = {
 	name = Lica
 	female = yes
 	dynasty = 5017
-	dna = "miankllhbga"
-	culture = nar 
-	religion = good_human_pantheon
-	trait = shadow
+	culture = nar
+	religion = natural
+	trait = journeyman_shadow
 	trait = creature_human
 	father = 30132	#Malbra
 	mother = 30140	#Hleina
 	1350.1.18 = { birth = yes }
-	1363.1.1 = {
-		remove_trait = shadow
-		trait = trained_shadow
-	}
-	1366.1.1 = { 
-		remove_trait = trained_shadow
-		trait = journeyman_shadow
-	}
 	1414.7.29 = { death = yes }
 }
 30139 = {
 	name = Roda
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1299.1.1 = { birth = yes }
 	1355.1.1 = { death = yes }
@@ -2128,7 +1654,7 @@
 	name = Hleina
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1321.1.1 = { birth = yes }
 	1374.1.1 = { death = yes }
@@ -2138,8 +1664,8 @@
 	name = Asach
 	female = yes
 	dynasty = 5000
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	father = 30001	#Amercu
 	mother = 30003	#Bonda
 	trait = creature_human
@@ -2149,8 +1675,8 @@
 30142 = {
 	name = Avus
 	dynasty = 5000
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	father = 30001	#Amercu
 	mother = 30003	#Bonda
 	trait = creature_human
@@ -2161,8 +1687,8 @@
 	name = Bluvral
 	female = yes
 	dynasty = 5000
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	father = 30001	#Amercu
 	mother = 30003	#Bonda
 	trait = creature_human
@@ -2174,8 +1700,8 @@
 	name = Brechti
 	female = yes
 	dynasty = 5002
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30013	#Domam
 	mother = 30018	#Dica
@@ -2185,8 +1711,8 @@
 30145 = {
 	name = Mitiar
 	dynasty = 5002
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30013	#Domam
 	mother = 30018	#Dica
@@ -2197,8 +1723,8 @@
 	name = Mora
 	female = yes
 	dynasty = 5002
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30013	#Domam
 	mother = 30018	#Dica
@@ -2210,8 +1736,8 @@
 	name = Feda
 	female = yes
 	dynasty = 5003
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30021	#Ethal
 	mother = 30027	#Gila
@@ -2221,8 +1747,8 @@
 30148 = {
 	name = Mitiar
 	dynasty = 5003
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30021	#Ethal
 	mother = 30027	#Gila
@@ -2233,8 +1759,8 @@
 	name = Mora
 	female = yes
 	dynasty = 5003
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30021	#Ethal
 	mother = 30027	#Gila
@@ -2246,34 +1772,30 @@
 	name = Iliyga
 	female = yes
 	culture = nar
-	religion = good_human_pantheon
-	trait = druid
+	religion = natural
+	trait = trained_druid
 	trait = creature_human
 	1345.1.1 = { birth = yes }
-	1361.1.1 = { 
-		remove_trait = druid
-		trait = trained_druid
-	}
 	1397.1.1 = { death = yes }
 }
 30151 = {
 	name = Mitiar
 	dynasty = 5004
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
+	trait = cleric
 	father = 30028	#Goino
 	mother = 30032	#Grina
 	1355.2.18 = { birth = yes }
-	1371.1.1 = { trait = cleric }
 	1411.9.14 = { death = yes }
 }
 30152 = {
 	name = Mora
 	female = yes
 	dynasty = 5004
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30028	#Goino
 	mother = 30032	#Grina
@@ -2283,8 +1805,8 @@
 30153 = {
 	name = Muler
 	dynasty = 5004
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30028	#Goino
 	mother = 30032	#Grina
@@ -2295,8 +1817,8 @@
 	name = Ogallia
 	female = yes
 	dynasty = 5004
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30029	#Juliar
 	mother = 30150	#Iliyga
@@ -2307,8 +1829,8 @@
 30155 = {
 	name = Xuvynirn
 	dynasty = 5005
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30033	#Kaeso
 	mother = 30037	#Laria
@@ -2319,8 +1841,8 @@
 	name = Zynerion
 	female = yes
 	dynasty = 5005
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30033	#Kaeso
 	mother = 30037	#Laria
@@ -2331,8 +1853,8 @@
 30157 = {
 	name = Sextib
 	dynasty = 5006
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30038	#Muler
 	mother = 30043	#Mora
@@ -2343,8 +1865,8 @@
 	name = Slesagosia
 	female = yes
 	dynasty = 5006
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30038	#Muler
 	mother = 30043	#Mora
@@ -2354,8 +1876,8 @@
 30159 = {
 	name = Umbril
 	dynasty = 5006
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30038	#Muler
 	mother = 30043	#Mora
@@ -2366,8 +1888,8 @@
 30160 = {
 	name = Uregys
 	dynasty = 5007
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30044	#Dolath
 	mother = 30051	#Glalans
@@ -2378,8 +1900,8 @@
 	name = Vicia
 	female = yes
 	dynasty = 5007
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30044	#Dolath
 	mother = 30051	#Glalans
@@ -2390,30 +1912,22 @@
 30162 = {
 	name = Julus
 	dynasty = 5008
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = legendary_fighter
+	trait = rogue
 	trait = creature_human
 	father = 30052	#Atec
 	mother = 30055	#Acis
 	1354.6.22 = { birth = yes }
-	1364.1.1 = { trait = rogue }
-	1367.1.1 = {
-		remove_trait = rogue
-		trait = trained_rogue
-	}
-	1372.1.1 = { 
-		remove_trait = trained_rogue
-		trait = expert_rogue 
-	}
 	1436.2.4 = { death = yes }
 }
 30163 = {
 	name = Kaesoia
 	female = yes
 	dynasty = 5008
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30052	#Atec
 	mother = 30055	#Acis
@@ -2423,8 +1937,8 @@
 30164 = {
 	name = Klureroth
 	dynasty = 5008
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30052	#Atec
 	mother = 30055	#Acis
@@ -2435,8 +1949,8 @@
 	name = Kaesoia
 	female = yes
 	dynasty = 5008
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30053	#Xuvynirn
 	1369.6.22 = { birth = yes }
@@ -2447,8 +1961,8 @@
 	name = Lachu
 	female = yes
 	dynasty = 5009
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30057	#Feinne
 	mother = 30067	#Plesbia
@@ -2458,8 +1972,8 @@
 30167 = {
 	name = Mila
 	dynasty = 5009
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30057	#Feinne
 	mother = 30067	#Plesbia
@@ -2470,8 +1984,8 @@
 	name = Ogallia
 	female = yes
 	dynasty = 5009
-	culture = nar 
-	religion = good_human_pantheon
+	culture = nar
+	religion = natural
 	trait = creature_human
 	father = 30057	#Feinne
 	mother = 30067	#Plesbia
@@ -2482,7 +1996,7 @@
 	name = "Abordabe"
 	dynasty = 5018 # Abordabe
 	culture = nar
-	religion = evil_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	trait = skilled_tactician
 	trait = legendary_fighter
@@ -2511,7 +2025,7 @@
 	name = "Dag"
 	dynasty = 5020 # Dag Nost
 	culture = nar
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = expert_ranger
 	trait = tough_soldier
@@ -2536,7 +2050,7 @@
 	name = "Ghur"
 	dynasty = 5022 # Var
 	culture = nar
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	trait = trained_barbarian
 	trait = tough_soldier
@@ -2578,7 +2092,7 @@
 	name = "Orbaz"
 	dynasty = 5025 # Creel
 	culture = nar
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	trait = trained_barbarian
 	trait = tough_soldier
@@ -2591,11 +2105,17 @@
 	female = yes
 	dynasty = 5026 # Far Quey
 	culture = nar
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	trait = trained_sorcerer
+	trait = origin_shadow
 	trait = martial_cleric
 	1335.12.1 = { birth = yes }
+	1345.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1400.1.1 = { death = yes }
 }
 
@@ -2603,7 +2123,7 @@
 	name = "Thagros"
 	dynasty = 5027 # Blightheart
 	culture = nar
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	intrigue = 8
 	learning = 10
 	trait = creature_human
@@ -2615,6 +2135,8 @@
 	trait = impaler
 	trait = ambitious
 	trait = proud
+	trait = patron_talona
+	trait = chosen_talona
 	1330.1.18 = {
 		birth = yes
 		give_nickname = nick_rotting_man
@@ -2643,7 +2165,7 @@
 	name = "Hilvar"
 	dynasty = 5028 # Jannath
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	learning = 10
 	trait = creature_human
 	trait = legendary_druid
@@ -2658,7 +2180,7 @@
 	name = "Jerm"
 	dynasty = 5029 # Haggar
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	trait = martial_cleric
 	trait = expert_druid
@@ -2670,7 +2192,7 @@
 	name = "Razal"
 	dynasty = 5030 # Kark
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	trait = martial_cleric
 	trait = expert_druid
@@ -2682,7 +2204,7 @@
 	name = "Carwyth"
 	dynasty = 5031 # Carwyth
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1330.6.19 = { birth = yes }
 	1400.1.1 = { death = yes }
@@ -2693,7 +2215,7 @@
 	female = yes
 	dynasty = 5032 # Mufdan
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	trait = expert_fighter
 	1331.7.18 = { birth = yes }
@@ -2704,7 +2226,7 @@
 	name = "Abraer"
 	dynasty = 5033 # Thellblade
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	trait = kind
 	trait = brave
@@ -2718,7 +2240,7 @@
 	name = "Gav"
 	dynasty = 5034 # Furcloak
 	culture = nar
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	trait = scholarly_theologian
 	trait = master_wizard
@@ -2729,7 +2251,7 @@
 30186 = {
 	name = "Jolm"
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	trait = trained_barbarian
@@ -2742,7 +2264,7 @@
 	name = "Ivara"
 	female = yes
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	trait = trained_barbarian
@@ -2754,7 +2276,7 @@
 30188 = {
 	name = "Hermor"
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	1.1.1 = { birth = yes }
@@ -2763,7 +2285,7 @@
 30189 = {
 	name = "Morkar"
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30188
@@ -2774,7 +2296,7 @@
 	name = "Ceekay"
 	female = yes
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30189
@@ -2785,7 +2307,7 @@
 	name = "Brandshe"
 	female = yes
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30190
@@ -2795,7 +2317,7 @@
 30192 = {
 	name = "Caveel"
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30191
@@ -2805,7 +2327,7 @@
 30193 = {
 	name = "Kimvun"
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30192
@@ -2815,7 +2337,7 @@
 30194 = {
 	name = "Abron"
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30193
@@ -2826,7 +2348,7 @@
 	name = "Zintal"
 	female = yes
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30194
@@ -2837,7 +2359,7 @@
 	name = "Nimeria"
 	female = yes
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30195
@@ -2848,7 +2370,7 @@
 	name = "Mia"
 	female = yes
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30196
@@ -2858,7 +2380,7 @@
 30198 = {
 	name = "Daevro"
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30197
@@ -2868,7 +2390,7 @@
 30199 = {
 	name = "Variss"
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30198
@@ -2878,7 +2400,7 @@
 30200 = {
 	name = "Tymvaul"
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30199
@@ -2889,7 +2411,7 @@
 	name = "Qu"
 	female = yes
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30200
@@ -2899,7 +2421,7 @@
 30202 = {
 	name = "Keri"
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30201
@@ -2909,7 +2431,7 @@
 30203 = {
 	name = "Mikk"
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30202
@@ -2919,7 +2441,7 @@
 30204 = {
 	name = "Jonvan"
 	dynasty = 5035 # Vaegould
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30203
@@ -2930,7 +2452,7 @@
 	name = "Gara"
 	female = yes
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	1.1.1 = { birth = yes }
@@ -2940,7 +2462,7 @@
 	name = "Quiette"
 	female = yes
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30205
@@ -2950,7 +2472,7 @@
 30207 = {
 	name = "Daak"
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30206
@@ -2961,7 +2483,7 @@
 	name = "Amiry"
 	female = yes
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30207
@@ -2971,7 +2493,7 @@
 30209 = {
 	name = "Colmi"
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30208
@@ -2982,7 +2504,7 @@
 	name = "Aral"
 	female = yes
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30209
@@ -2993,7 +2515,7 @@
 	name = "Rweda"
 	female = yes
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30210
@@ -3004,7 +2526,7 @@
 	name = "Unara"
 	female = yes
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30211
@@ -3014,7 +2536,7 @@
 30213 = {
 	name = "Acaro"
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30212
@@ -3024,7 +2546,7 @@
 30214 = {
 	name = "Inaro"
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30213
@@ -3034,7 +2556,7 @@
 30215 = {
 	name = "Jimo"
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30214
@@ -3045,7 +2567,7 @@
 	name = "Seara"
 	female = yes
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30215
@@ -3056,7 +2578,7 @@
 	name = "Waera"
 	female = yes
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30216
@@ -3066,7 +2588,7 @@
 30218 = {
 	name = "Maero"
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	mother = 30217
@@ -3076,7 +2598,7 @@
 30219 = {
 	name = "Omal"
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30218
@@ -3086,7 +2608,7 @@
 30220 = {
 	name = "Cacel"
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30219
@@ -3097,7 +2619,7 @@
 	name = "Jannei"
 	female = yes
 	dynasty = 5036 # Varm
-	culture = ulutiun
+	culture = eraka
 	religion = ulutiuan
 	trait = creature_human
 	father = 30220
@@ -3109,7 +2631,7 @@
 	name = Windyn
 	dynasty = 5037 # Balindre
 	culture = impilturan
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	889.1.1 = { birth = yes }
 	950.1.1 = { death = yes }
@@ -3119,7 +2641,7 @@
 	dynasty = 5037 # Balindre
 	father = 30222
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	927.1.1 = { birth = yes }
 	1003.1.1 = { death = yes }
@@ -3129,7 +2651,7 @@
 	dynasty = 5037 # Balindre
 	father = 30223
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	966.1.1 = { birth = yes }
 	1043.1.1 = { death = yes }
@@ -3139,7 +2661,7 @@
 	dynasty = 5037 # Balindre
 	father = 30224
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	991.1.1 = { birth = yes }
 	1078.1.1 = { death = yes }
@@ -3149,7 +2671,7 @@
 	dynasty = 5037 # Balindre
 	father = 30225
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1045.1.1 = { birth = yes }
 	1132.1.1 = { death = yes }
@@ -3159,7 +2681,7 @@
 	dynasty = 5037 # Balindre
 	father = 30226
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1081.1.1 = { birth = yes }
 	1165.1.1 = { death = yes }
@@ -3169,7 +2691,7 @@
 	dynasty = 5037 # Balindre
 	father = 30227
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1112.1.1 = { birth = yes }
 	1175.1.1 = { death = yes }
@@ -3180,7 +2702,7 @@
 	dynasty = 5037 # Balindre
 	father = 30228
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1145.1.1 = { birth = yes }
 	1212.1.1 = { death = yes }
@@ -3190,7 +2712,7 @@
 	dynasty = 5037 # Balindre
 	mother = 30229
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1178.1.1 = { birth = yes }
 	1250.1.1 = { death = yes }
@@ -3200,7 +2722,7 @@
 	dynasty = 5037 # Balindre
 	father = 30230
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1200.1.1 = { birth = yes }
 	1276.1.1 = { death = yes }
@@ -3210,7 +2732,7 @@
 	dynasty = 5037 # Balindre
 	father = 30231
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1226.1.1 = { birth = yes }
 	1296.1.1 = { death = yes }
@@ -3221,7 +2743,7 @@
 	dynasty = 5037 # Balindre
 	father = 30231
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1228.1.1 = { birth = yes }
 	1274.1.1 = { death = yes }
@@ -3231,7 +2753,7 @@
 	dynasty = 5037 # Balindre
 	father = 30232
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1267.1.1 = { birth = yes }
 	1342.1.1 = { death = yes }
@@ -3241,7 +2763,7 @@
 	dynasty = 5037 # Balindre
 	father = 30234
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	1298.1.1 = { birth = yes }
 	1358.1.1 = { death = yes }
@@ -3251,7 +2773,7 @@
 	dynasty = 5037 # Balindre
 	father = 30235
 	culture = nar
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	trait = rogue
 	trait = shadow

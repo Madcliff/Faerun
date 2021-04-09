@@ -1864,7 +1864,7 @@ claim_all = {
 						has_dlc = "Legacy of Rome"
 						OR = { 
 							has_landed_title = e_cormanthor
-							has_landed_title = e_fallen_stars
+							has_landed_title = e_the_heartlands
 						}
 						religion_group = good_human_pantheon_group
 					}
@@ -1948,7 +1948,7 @@ claim_all = {
 					has_dlc = "Legacy of Rome"
 					OR = { 
 						has_landed_title = e_cormanthor
-						has_landed_title = e_fallen_stars
+						has_landed_title = e_the_heartlands
 					}
 					religion_group = good_human_pantheon_group
 				}
@@ -2693,7 +2693,7 @@ invasion = {
 						has_dlc = "Legacy of Rome"
 						OR = { 
 							has_landed_title = e_cormanthor
-							has_landed_title = e_fallen_stars
+							has_landed_title = e_the_heartlands
 						}
 						religion_group = good_human_pantheon_group
 					}
@@ -2902,7 +2902,7 @@ invasion = {
 					has_dlc = "Legacy of Rome"
 					OR = { 
 						has_landed_title = e_cormanthor
-						has_landed_title = e_fallen_stars
+						has_landed_title = e_the_heartlands
 					}
 					religion_group = good_human_pantheon_group
 				}
@@ -3334,7 +3334,7 @@ invasion = {
 					# has_dlc = "Legacy of Rome"
 					# OR = { 
 						# has_landed_title = e_cormanthor
-						# has_landed_title = e_fallen_stars
+						# has_landed_title = e_the_heartlands
 					# }
 					# religion_group = good_human_pantheon_group
 				# }
@@ -5657,7 +5657,7 @@ religious = {
 			}
 		}
 	}
-	
+
 	can_use_gui = {
 		ROOT = {
 			piety = 250
@@ -5828,7 +5828,7 @@ religious = {
 	}
 
 	on_success_title = {
-		show_scope_change = no
+		#show_scope_change = no
 		custom_tooltip = {
 			text = religious_cb_succ_tip
 			hidden_tooltip = {
@@ -9179,7 +9179,7 @@ imperial_reconquest = {
 			NOT = { culture = monster }
 		}
 		ROOT = {
-			has_landed_title = e_fallen_stars
+			has_landed_title = e_the_heartlands
 			independent = yes
 			religion_group = good_human_pantheon_group
 			NOT = { same_realm = FROM }
@@ -9880,7 +9880,7 @@ viking_invasion = {
 					has_dlc = "Legacy of Rome"
 					OR = { 
 						has_landed_title = e_cormanthor
-						has_landed_title = e_fallen_stars
+						has_landed_title = e_the_heartlands
 					}
 					religion_group = good_human_pantheon_group
 				}
@@ -10102,7 +10102,7 @@ pagan_subjugation = {
 					has_dlc = "Legacy of Rome"
 					OR = { 
 						has_landed_title = e_cormanthor
-						has_landed_title = e_fallen_stars
+						has_landed_title = e_the_heartlands
 					}
 					religion_group = good_human_pantheon_group
 				}
@@ -11865,7 +11865,7 @@ kingdom_adventure = { # Used mainly for Muslims adventuring into India
 					# has_dlc = "Legacy of Rome"
 					# OR = { 
 						# has_landed_title = e_cormanthor
-						# has_landed_title = e_fallen_stars
+						# has_landed_title = e_the_heartlands
 					# }
 					# religion_group = good_human_pantheon_group
 				# }
@@ -11960,13 +11960,27 @@ muslim_county_conquest = {
 				#NOT = { same_realm = ROOT }
 			}
 		}
-		
+
 		ROOT = {
 			OR = {
 				#religion_group = zakharan_group
 				religion_group = evil_human_pantheon_group
 				religion_group = orc_pantheon_group
 				religion_group = drow_pantheon
+				religion = deities_of_fury
+				religion = kossuth
+				religion = geomancy
+				religion = primordial
+				religion = tuigan_shamanism
+				religion = uthgardt_faith
+				religion = martial_faith
+				religion = laduguer
+				religion = urdlen
+				religion = tiamat
+				religion = entropy
+				religion_group = giant_pantheon_group
+				religion_group = goblin_pantheon_group
+				religion_group = aberration_group
 			}
 		}
 
@@ -11980,7 +11994,7 @@ muslim_county_conquest = {
 				}
 			}
 		}
-		
+
 		location = {
 			any_neighbor_province = {
 				owner = {
@@ -17181,7 +17195,7 @@ nomad_subjugation = {
 					has_dlc = "Legacy of Rome"
 					OR = { 
 						has_landed_title = e_cormanthor
-						has_landed_title = e_fallen_stars
+						has_landed_title = e_the_heartlands
 					}
 					religion_group = good_human_pantheon_group
 				}
@@ -17453,7 +17467,7 @@ nomad_invasion = {
 				limit = { 
 					has_dlc = "Legacy of Rome"
 					OR = { 
-						has_landed_title = e_fallen_stars
+						has_landed_title = e_the_heartlands
 						has_landed_title = e_cormanthor
 					}
 					religion_group = good_human_pantheon_group

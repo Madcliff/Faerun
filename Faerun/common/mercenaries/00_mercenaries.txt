@@ -2,7 +2,7 @@
 # Landed title modifiers
 #
 # mercenaries are now in separete file (sine RoI 2.1.1)
-# 
+#
 ##########################################################################
 ##Holy Orders
 d_militant_myrlochar_modifier = {
@@ -16,7 +16,21 @@ d_handmaidens_of_the_spider_queen_modifier = {
 	light_infantry = 300
 	archers = 200
 }
-
+d_knights_of_blue_moon_modifier = {
+	levy_size = 1
+	knights = 100
+	heavy_infantry = 200
+	light_infantry = 300
+	archers = 50
+	warpriests = 50
+}
+d_blades_of_uthgar_modifier = {
+	levy_size = 1
+	light_infantry = 350
+	light_cavalry = 100
+	archers = 350
+	warpriests = 25
+}
 
 #Drow
 d_bregan_daerthe_modifier = {
@@ -37,16 +51,21 @@ d_knights_of_samular_modifier = {
 	archers = 200
 	pikemen = 200
 }
-
-
-
+d_army_of_lion_modifier = {
+	knights = 225
+	heavy_infantry = 300
+	pikemen = 125
+	light_infantry = 450
+	archers = 400
+}
 d_flaming_fist_modifier = {
 	levy_size = 1
 	heavy_infantry = 600
 }
 d_purple_dragons_modifier = {
 	levy_size = 1
-	heavy_infantry = 600
+	heavy_infantry = 300
+	knights = 150
 }
 d_iron_throne_modifier = {
 	levy_size = 1

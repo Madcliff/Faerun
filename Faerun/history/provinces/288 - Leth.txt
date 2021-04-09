@@ -16,6 +16,17 @@ b_myth_iiscar = castle
 
 # Misc
 culture = lantanna
-religion = good_human_pantheon
+religion = inventive
 terrain = hills
 #History
+1385.4.29 = {
+	remove_settlement = b_myth_iiscar
+	culture = sea_elf
+	religion = asathalfinare
+	b_lethtar = castle
+}
+1487.1.1 = {
+	culture = lantanna
+	religion = inventive
+	b_lethtar = city
+}

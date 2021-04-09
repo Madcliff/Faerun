@@ -33,16 +33,12 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_patrons_fae_mul"
-		texturefile = "gfx\\interface\\patrons_fae_mul.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_patrons_fae_dof"
-		texturefile = "gfx\\interface\\patrons_fae_dof.dds"
+		name = "GFX_open_gov_list"
+		texturefile = "gfx\\interface\\decision_icon_observe_ramadan.dds"
 	}
 	
 ###Spell book icons###
+##Wizards##
 
 	spriteType = {
 		name = "GFX_open_wiz_spellbook"
@@ -76,8 +72,16 @@ spriteTypes = {
 		name = "GFX_spell_banish_fake"
 		texturefile = "gfx\\interface\\decision_spell_banish_fake.dds"
 	}
-### Temporary Generic Placeholder Icon ###
 
+##Clerics##
+	
+	spriteType = {
+		name = "GFX_open_cle_spellbook"
+		texturefile = "gfx\\interface\\decision_icon_adopt_divine.dds"
+	}
+
+### Temporary Generic Placeholder Icon ###
+	
 	spriteType = {
 		name = "GFX_patrons_fae_drow"
 		texturefile = "gfx\\interface\\fr_decisions.dds"
@@ -87,4 +91,20 @@ spriteTypes = {
 		name = "GFX_find_runecaster"
 		texturefile = "gfx\\interface\\find_runecaster.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_patrons_fae_mul"
+		texturefile = "gfx\\interface\\patrons_fae_mul.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_patrons_fae_dof"
+		texturefile = "gfx\\interface\\patrons_fae_dof.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_present_male_debutante"
+		texturefile = "gfx\\interface\\decision_icon_present_debutante.dds"
+	}
+
 }

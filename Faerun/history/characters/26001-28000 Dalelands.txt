@@ -5,12 +5,18 @@
 	dynasty = 3900
 	father = 26002 # Flars
 	mother = 26004 # Maerindra Elrproast
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	trait = fair
+	trait = brilliant_strategist
+	trait = brave
+	trait = patient
+	trait = proud
+	trait = ambitious
+	religion = joyful
 	culture = dalesman
-	
-	1302.1.1 = { birth = yes }
+
+	1312.1.1 = { birth = yes }
 	1318.1.1 = {
 		trait = expert_fighter
 		trait = expert_rogue
@@ -29,9 +35,9 @@
 	dynasty = 3900
 	father = 26046
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = triadic
 	culture = dalesman
-	
+
 	1280.1.1 = { birth = yes }
 	1296.1.1 = {
 		trait = expert_fighter
@@ -47,11 +53,11 @@
 	dynasty = 3900
 	father = 26002 # Flars
 	mother = 26004 # Maerindra Elrproast
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = triadic
 	culture = dalesman
-	
+
 	1304.1.1 = { birth = yes }
 	1320.1.1 = {
 		add_spouse = 20110 # Ohlmer Cormaeril (totally non-canon but she married a Cormaeril)
@@ -69,11 +75,11 @@
 	female = yes
 	dynasty = 3901
 	father = 26043
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = dalesman
-	
+
 	1282.1.1 = { birth = yes }
 	1298.1.1 = {
 		add_spouse = 26002 # Flars Morn
@@ -85,9 +91,9 @@
 	name = Theremen
 	dynasty = 3902
 	trait = creature_half_elf
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = dalesman
-	
+
 	1314.1.1 = { birth = yes }
 	1330.1.1 = {
 		trait = expert_fighter
@@ -100,9 +106,9 @@
 	female = yes
 	dynasty = 3903
 	trait = creature_half_elf
-	religion = good_human_pantheon
+	religion = solar
 	culture = dalesman
-	
+
 	1330.1.1 = {
 		birth = yes
 		employer = 26009
@@ -116,10 +122,10 @@
 26007 = {
 	name = Alduvar
 	dynasty = 3904
-	
-	religion = good_human_pantheon
+
+	religion = arcane
 	culture = dalesman
-	
+
 	1328.1.1 = { birth = yes }
 	1344.1.1 = {
 		trait = expert_wizard
@@ -133,15 +139,15 @@
 26008 = {
 	name = Dheren
 	dynasty = 3905
-	
-	religion = good_human_pantheon
+
+	religion = solar
 	culture = dalesman
-	
+
 	1334.1.1 = { birth = yes }
 	1350.1.1 = {
 		trait = expert_fighter
 		employer = 26009
-		
+
 		effect = {
 			give_job_title = job_marshal
 			give_minor_title = title_archendale_red_sword
@@ -150,13 +156,13 @@
 	1410.1.1 = { death = yes }
 }
 26009 = {
-	name = Jalia
+	name = "Jalia"
 	female = yes
 	dynasty = 3906
-	
-	religion = good_human_pantheon
+
+	religion = joyful
 	culture = dalesman
-	
+
 	1314.1.1 = { birth = yes }
 	1330.1.1 = {
 		trait = master_fighter
@@ -168,11 +174,11 @@
 26010 = {
 	name = Aencar
 	dynasty = 3907
-	
-	religion = good_human_pantheon
+
+	religion = solar
 	culture = dalesman
 	trait = creature_human
-	
+
 	998.1.1 = { # Estimate
 		birth = yes
 	}
@@ -196,15 +202,15 @@
 }
 
 26011 = {
-	name = Ilmeth
-	dynasty = 3908
-	religion = good_human_pantheon
+	name = "Ilmeth"
+	dynasty = 3908 # Wyvernblade
+	religion = solar
 	culture = dalesman
 	trait = creature_human
 	trait = just
 	trait = paranoid
 	trait = cynical
-	
+
 	1311.1.1 = { birth = yes }
 	1327.1.1 = {
 		trait = master_fighter
@@ -217,7 +223,7 @@
 	female = yes
 	dynasty = 3910
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = expert_fighter
 	trait = expert_cleric
 	trait = creature_human
@@ -228,7 +234,7 @@
 	name = Erich
 	dynasty = 3911
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = expert_paladin
 	trait = creature_human
 	1348.7.12 = { birth = yes }
@@ -238,7 +244,7 @@
 	name = Myrian
 	dynasty = 3912
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = wroth
 	trait = trained_cleric
 	trait = creature_human
@@ -250,17 +256,17 @@
 	name = Quiral
 	dynasty = 3913
 	dna = "gnpbicbjake"
-	culture = dalesman 
-	religion = good_human_pantheon
-	martial = 5 
-	diplomacy = 7 
-	stewardship = 7 
-	intrigue = 7 
+	culture = dalesman
+	religion = solar
+	martial = 5
+	diplomacy = 7
+	stewardship = 7
+	intrigue = 7
 	learning = 5
-	trait = grey_eminence 
-	trait = celibate 
-	trait = content 
-	trait = diligent 
+	trait = grey_eminence
+	trait = celibate
+	trait = content
+	trait = diligent
 	trait = rogue
 	trait = creature_human
 	1326.10.12 = { birth = yes }
@@ -271,17 +277,17 @@
 	name = Robert
 	dynasty = 3913
 	dna = "iipoblbagkn"
-	culture = dalesman 
-	religion = good_human_pantheon
-	martial = 8 
-	diplomacy = 8 
-	stewardship = 7 
-	intrigue = 5 
+	culture = dalesman
+	religion = solar
+	martial = 8
+	diplomacy = 8
+	stewardship = 7
+	intrigue = 5
 	learning = 4
-	trait = grey_eminence 
-	trait = gluttonous 
-	trait = lustful 
-	trait = patient 
+	trait = grey_eminence
+	trait = gluttonous
+	trait = lustful
+	trait = patient
 	trait = creature_human
 	father = 26015	#Quiral
 	mother = 26023	#Flaria
@@ -294,8 +300,8 @@
 	female = yes
 	dynasty = 3913
 	dna = "gnpminbjafe"
-	culture = dalesman 
-	religion = good_human_pantheon
+	culture = dalesman
+	religion = solar
 	trait = creature_human
 	father = 26015	#Quiral
 	mother = 26023	#Flaria
@@ -307,21 +313,21 @@
 	name = Taldeth
 	dynasty = 3913
 	dna = "gnpcnhjdbki"
-	culture = dalesman 
-	religion = good_human_pantheon
-	martial = 8 
-	diplomacy = 8 
-	stewardship = 7 
-	intrigue = 8 
+	culture = dalesman
+	religion = solar
+	martial = 8
+	diplomacy = 8
+	stewardship = 7
+	intrigue = 8
 	learning = 5
-	trait = flamboyant_schemer 
-	trait = hunter 
-	trait = zealous 
-	trait = proud 
-	trait = slothful 
-	trait = gluttonous 
-	trait = gregarious 
-	trait = wroth 
+	trait = flamboyant_schemer
+	trait = hunter
+	trait = zealous
+	trait = proud
+	trait = slothful
+	trait = gluttonous
+	trait = gregarious
+	trait = wroth
 	trait = creature_human
 	father = 26015	#Quiral
 	mother = 26023	#Flaria
@@ -333,30 +339,35 @@
 	name = Adrian
 	dynasty = 3913
 	dna = "gnpcioojajb"
-	culture = dalesman 
-	religion = good_human_pantheon
-	martial = 7 
-	diplomacy = 5 
-	stewardship = 5 
-	intrigue = 5 
+	culture = dalesman
+	religion = solar
+	martial = 7
+	diplomacy = 5
+	stewardship = 5
+	intrigue = 5
 	learning = 6
-	trait = midas_touched 
-	trait = craven 
-	trait = zealous 
+	trait = midas_touched
+	trait = craven
+	trait = zealous
 	trait = trained_sorcerer
+	trait = origin_draconic
 	trait = creature_human
 	father = 26015	#Quiral
 	mother = 26023	#Flaria
 	1357.9.1 = { birth = yes }
-	1373.1.1 = { trait = sorcerer }
+	1367.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1403.3.23 = { death = yes }
 }
 26020 = {
 	name = Alacantheria
 	female = yes
 	dynasty = 3913
-	culture = dalesman 
-	religion = good_human_pantheon
+	culture = dalesman
+	religion = solar
 	trait = creature_human
 	father = 26015	#Quiral
 	mother = 26023	#Flaria
@@ -366,8 +377,8 @@
 26021 = {
 	name = Arrabar
 	dynasty = 3913
-	culture = dalesman 
-	religion = good_human_pantheon
+	culture = dalesman
+	religion = solar
 	trait = creature_human
 	father = 26015	#Quiral
 	mother = 26023	#Flaria
@@ -378,8 +389,8 @@
 	name = Cormaerilia
 	female = yes
 	dynasty = 3913
-	culture = dalesman 
-	religion = good_human_pantheon
+	culture = dalesman
+	religion = solar
 	trait = creature_human
 	father = 26015	#Quiral
 	mother = 26023	#Flaria
@@ -389,8 +400,8 @@
 26023 = {
 	name = Flaria
 	female = yes
-	culture = dalesman 
-	religion = good_human_pantheon
+	culture = dalesman
+	religion = solar
 	trait = creature_human
 	1326.10.12 = { birth = yes }
 	1399.12.23 = { death = yes }
@@ -398,8 +409,8 @@
 26024 = { #harrowdale councilmember
 	name = Alosius
 	dynasty = 3914
-	culture = dalesman 
-	religion = good_human_pantheon
+	culture = dalesman
+	religion = triadic
 	trait = greedy
 	trait = trained_fighter
 	trait = creature_human
@@ -409,9 +420,9 @@
 26025 = { #harrowdale councilmember & current leader
 	name = Erethun
 	dynasty = 3915
-	culture = dalesman 
-	religion = good_human_pantheon
-	secret_religion = evil_human_pantheon # Is a secret agent of Mulmaster
+	culture = dalesman
+	religion = arcane
+	secret_religion = dead_three # Is a secret agent of Mulmaster
 	trait = expert_wizard
 	trait = creature_human
 	1338.10.12 = { birth = yes }
@@ -436,7 +447,7 @@
 	name = Halfgar
 	dynasty = 6902
 	culture = northlander
-	religion = good_human_pantheon
+	religion = triadic
 	trait = trained_fighter
 	trait = creature_human
 	1338.10.12 = { birth = yes }
@@ -450,9 +461,9 @@
 26028 = {	#harrowdale councilmember
 	name = Helena
 	female = yes
-	dynasty = 3916
+	dynasty = 3916 # Treskeden
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = fighter
 	trait = creature_human
 	1330.1.1 = { birth = yes }
@@ -490,7 +501,7 @@
 	name = Irreph
 	dynasty = 3917
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = journeyman_ranger
 	trait = creature_human
 	1332.1.1 = { birth = yes }
@@ -501,7 +512,7 @@
 	female = yes
 	dynasty = 3919 # Standard
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = cleric
 	1287.1.1 = { birth = yes }
@@ -511,7 +522,7 @@
 	name = Rhauntides
 	dynasty = 3918 # of Highmoon
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	trait = expert_wizard
 	trait = longevity
@@ -531,17 +542,17 @@
 	name = Haresk
 	dynasty = 3920 # Malorn
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = fighter
 	1320.1.1 = { birth = yes }
 	1400.1.1 = { death = yes }
 }
-26035 = { 
+26035 = {
 	name = Buorstag
 	dynasty = 3921 # Hlammythyl
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = greedy
 	trait = cruel
@@ -552,7 +563,7 @@
 26036 = {
 	name = Noristuor
 	culture = tiefling
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_tiefling
 	trait = trained_wizard
 	trait = kind
@@ -567,7 +578,7 @@
 	name = Doust
 	dynasty = 3922
 	culture = cormyrian
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	trait = trained_cleric
 	1320.1.1 = { birth = yes }
@@ -580,7 +591,7 @@
 	female = yes
 	dynasty = 3923
 	culture = cormyrian
-	religion = good_human_pantheon
+	religion = martial_faith
 	trait = creature_human
 	trait = trained_fighter
 	1320.1.1 = { birth = yes }
@@ -593,7 +604,7 @@
 	father = 26037
 	mother = 26038
 	culture = cormyrian
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	1356.10.22 = { birth = yes }
 	1440.1.1 = { death = yes }
@@ -602,11 +613,11 @@
 	name = Jyordhan
 	dynasty = 3924
 	culture = dalesman
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = trained_fighter
 	1300.1.1 = { birth = yes }
-	1345.1.1 = { 
+	1345.1.1 = {
 		death = {
 			death_reason = death_murder
 			killer = 7007 # Khelben Arunsun
@@ -622,7 +633,7 @@
 	trait = cruel
 	trait = cynical
 	1240.1.1 = { birth = yes }
-	1300.1.1 = { 
+	1300.1.1 = {
 		death = {
 			death_reason = death_battle
 		}
@@ -632,14 +643,14 @@
 	name = Valdenar
 	dynasty = 6538 # Octi
 	culture = dragonborn
-	religion = good_human_pantheon
+	religion = bahamut
 	trait = creature_dragonborn
 	trait = trained_paladin
 	trait = brave
 	trait = kind
 	1337.1.1 = { birth = yes }
-	1357.1.1 = { 
-		trait = longevity 
+	1357.1.1 = {
+		trait = longevity
 		employer = 26011
 	}
 	1367.1.1 = { immortal_age = 30 }
@@ -648,23 +659,23 @@
 26043 = {
 	name = Randal
 	dynasty = 3901 # Elrproast
-	
+
 	trait = creature_human
-	religion = good_human_pantheon
+	religion = solar
 	culture = dalesman
-	
+
 	1259.1.1 = { birth = yes }
 	1304.1.1 = { death = yes }
 }
 26044 = {
 	name = Hlonagh
 	dynasty = 7918 # Hlontan
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = martial_faith
 	trait = creature_human
 	trait = expert_fighter
 	497.1.1 = { birth = yes }
-	551.1.1 = { 
+	551.1.1 = {
 		death = {
 			death_reason = death_murder
 			killer = 26045
@@ -675,7 +686,7 @@
 	name = Alokkair
 	dynasty = 7919 # Anauran
 	culture = netherese
-	religion = netherese_pantheon
+	religion = arcane
 	trait = creature_human
 	trait = expert_wizard
 	trait = longevity
@@ -696,7 +707,7 @@
 	father = 26047 # Colderan Morn
 	mother = 26053 # Belesaria
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	1255.1.1 = { birth = yes }
 	1298.1.1 = { death = yes }
@@ -706,7 +717,7 @@
 	dynasty = 3900 # Morn
 	father = 26048
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	trait = expert_wizard
 	trait = cruel
@@ -718,7 +729,7 @@
 	name = Hammar # Invented name
 	dynasty = 3900 # Morn
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	mother = 26078
 	1193.1.1 = { birth = yes }
@@ -729,7 +740,7 @@
 	dynasty = 3900 # Morn
 	father = 26048
 	culture = dalesman
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	1223.1.1 = { birth = yes }
 	1278.1.1 = { death = yes }
@@ -739,7 +750,7 @@
 	dynasty = 3900 # Morn
 	father = 26049
 	culture = dalesman
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	1249.1.1 = { birth = yes }
 	1302.1.1 = {
@@ -754,7 +765,7 @@
 	dynasty = 3900 # Morn
 	father = 26050
 	culture = dalesman
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	1274.1.1 = { birth = yes }
 	1329.1.1 = { death = yes }
@@ -764,10 +775,10 @@
 	dynasty = 3900 # Morn
 	father = 26051
 	culture = dalesman
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	1299.1.1 = { birth = yes }
-	1353.6.1 = { 
+	1353.6.1 = {
 		death = {
 			death_reason = death_battle
 			killer = 26001 # Randal Morn
@@ -778,7 +789,7 @@
 	name = Belesaria
 	female = yes
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	1222.1.1 = { birth = yes }
 	1249.1.1 = { add_spouse = 26047 } # Colderan Morn
@@ -794,25 +805,25 @@
 	culture = dalesman
 	father = 20499
 	mother = 101
-	religion = good_human_pantheon
+	religion = natural
 	martial = 7
 	stewardship = 6
 	trait = creature_human
 	trait = fair
 	1359.1.1 = { birth = yes }
-	1375.1.1 = { 
+	1375.1.1 = {
 		add_trait = trained_ranger
 		add_trait = tough_soldier
 		add_trait = kind
 		add_trait = brave
 	}
-	1400.1.1 = { death = yes }
+	1461.1.1 = { death = yes }
 }
 26055 = {
 	name = "Grypht"
 	dynasty = 8214 # Bonecrest
 	culture = saurial
-	religion = good_human_pantheon
+	religion = bahamut
 	trait = creature_saurial
 	trait = absent
 	trait = bio_grypht
@@ -826,7 +837,7 @@
 	name = "Mendel"
 	dynasty = 3928 # Greenstride
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	990.1.1 = { birth = yes }
 	1090.1.1 = { death = yes }
@@ -835,7 +846,7 @@
 	name = "Markhal"
 	dynasty = 3928 # Greenstride
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	father = 26056
 	1070.1.1 = { birth = yes }
@@ -846,7 +857,7 @@
 	female = yes
 	dynasty = 3928 # Greenstride
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	father = 26057
 	1150.1.1 = { birth = yes }
@@ -857,7 +868,7 @@
 	female = yes
 	dynasty = 3928 # Greenstride
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	mother = 26058
 	1230.1.1 = { birth = yes }
@@ -868,7 +879,7 @@
 	female = yes
 	dynasty = 9419
 	culture = hobgoblin
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_hobgoblin
 	680.1.1 = { birth = yes }
 	714.7.30 = {
@@ -880,7 +891,7 @@
 	name = "Morghar"
 	dynasty = 5149
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_orc
 	680.1.1 = { birth = yes }
 	714.7.30 = {
@@ -892,7 +903,7 @@
 	name = "Novan"
 	dynasty = 3930 # Summershield
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1080.1.1 = { birth = yes }
 	1100.1.1 = {
@@ -905,7 +916,7 @@
 	female = yes
 	dynasty = 3931 # Elffriend
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1160.1.1 = { birth = yes }
 	1180.1.1 = {
@@ -917,7 +928,7 @@
 	name = "Hermon"
 	dynasty = 3932 # Redsash
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1240.1.1 = { birth = yes }
 	1260.1.1 = {
@@ -929,7 +940,7 @@
 	name = "Calern"
 	dynasty = 3933 # Landgave
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	940.1.1 = { birth = yes }
 	1030.1.1 = { death = yes }
@@ -939,7 +950,7 @@
 	female = yes
 	dynasty = 3934 # Shadowfoe
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1020.1.1 = { birth = yes }
 	1120.1.1 = { death = yes }
@@ -948,7 +959,7 @@
 	name = "Hovarth"
 	dynasty = 3934 # Shadowfoe
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 26066
 	1100.1.1 = { birth = yes }
@@ -958,7 +969,7 @@
 	name = "Eltarion"
 	dynasty = 3934 # Shadowfoe
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26067
 	1180.1.1 = { birth = yes }
@@ -969,7 +980,7 @@
 	female = yes
 	dynasty = 3934 # Shadowfoe
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26068
 	1240.1.1 = { birth = yes }
@@ -980,7 +991,7 @@
 	female = yes
 	dynasty = 7919 # Anauran
 	culture = netherese
-	religion = netherese_pantheon
+	religion = arcane
 	trait = creature_human
 	father = 26045
 	530.1.1 = { birth = yes }
@@ -990,7 +1001,7 @@
 	name = "Brenton"
 	dynasty = 3935 # Merryfair
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	610.1.1 = { birth = yes }
 	710.1.1 = { death = yes }
@@ -1000,7 +1011,7 @@
 	female = yes
 	dynasty = 3935 # Merryfair
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	700.1.1 = { birth = yes }
 	796.1.1 = { death = yes }
@@ -1009,7 +1020,7 @@
 	name = "Caldor"
 	dynasty = 3900 # Morn
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	760.1.1 = { birth = yes }
 	860.1.1 = { death = yes }
@@ -1019,7 +1030,7 @@
 	female = yes
 	dynasty = 3900 # Morn
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26073
 	840.1.1 = { birth = yes }
@@ -1029,7 +1040,7 @@
 	name = "Luther"
 	dynasty = 3900 # Morn
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	mother = 26074
 	920.1.1 = { birth = yes }
@@ -1039,7 +1050,7 @@
 	name = "Clarence"
 	dynasty = 3900 # Morn
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26075
 	1000.1.1 = { birth = yes }
@@ -1049,7 +1060,7 @@
 	name = "Nevalle"
 	dynasty = 3900 # Morn
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26076
 	1080.1.1 = { birth = yes }
@@ -1060,7 +1071,7 @@
 	female = yes
 	dynasty = 3900 # Morn
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26077
 	1160.1.1 = { birth = yes }
@@ -1069,8 +1080,8 @@
 26079 = {
 	name = "Tren"
 	dynasty = 7965 # Noemfor
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1310.1.1 = { birth = yes }
 	1369.1.1 = { death = yes }
@@ -1080,11 +1091,17 @@
 	female = yes
 	dynasty = 3936 # Eluarshee
 	culture = moon_elf
-	religion = good_human_pantheon
+	religion = arcane
 	learning = 8
 	trait = creature_half_elf
 	trait = master_sorcerer
+	trait = origin_wild_magic
 	1000.1.1 = { birth = yes }
+	1010.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1030.1.1 = { immortal_age = 30 }
 	1120.1.1 = { death = yes }
 }
@@ -1092,7 +1109,7 @@
 	name = "Alandar"
 	dynasty = 3937 # Farhome
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	1100.1.1 = { birth = yes }
 	1200.1.1 = { death = yes }
@@ -1101,7 +1118,7 @@
 	name = "Gerard"
 	dynasty = 3937 # Farhome
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 26081
 	1180.1.1 = { birth = yes }
@@ -1112,7 +1129,7 @@
 	female = yes
 	dynasty = 3937 # Farhome
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 26082
 	1240.1.1 = { birth = yes }
@@ -1123,7 +1140,7 @@
 	female = yes
 	dynasty = 3938 # Redfeather
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	970.1.1 = { birth = yes }
 	1070.1.1 = { death = yes }
@@ -1132,7 +1149,7 @@
 	name = "Prinder"
 	dynasty = 3938 # Redfeather
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	mother = 26084
 	1050.1.1 = { birth = yes }
@@ -1142,7 +1159,7 @@
 	name = "Geiron"
 	dynasty = 3938 # Redfeather
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26085
 	1130.1.1 = { birth = yes }
@@ -1152,13 +1169,13 @@
 	name = "Cholandrothipe"
 	dynasty = 3939 # of Featherdale
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = arcane
 	learning = 9
 	trait = creature_human
 	trait = renowned_wizard
 	1180.1.1 = { birth = yes }
 	1240.1.1 = {
-		add_trait = longevity 
+		add_trait = longevity
 		immortal_age = 60
 	}
 	1351.1.1 = {
@@ -1169,7 +1186,7 @@
 	name = "Velar"
 	dynasty = 3940 # Velar
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	300.1.1 = { birth = yes }
 	400.1.1 = { death = yes }
@@ -1179,7 +1196,7 @@
 	female = yes
 	dynasty = 3940 # Velar
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26088
 	380.1.1 = { birth = yes }
@@ -1189,7 +1206,7 @@
 	name = "Trey"
 	dynasty = 3940 # Velar
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 26089
 	460.1.1 = { birth = yes }
@@ -1199,7 +1216,7 @@
 	name = "Niall"
 	dynasty = 3940 # Velar
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26090
 	540.1.1 = { birth = yes }
@@ -1210,7 +1227,7 @@
 	female = yes
 	dynasty = 3940 # Velar
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26091
 	620.1.1 = { birth = yes }
@@ -1221,7 +1238,7 @@
 	female = yes
 	dynasty = 3940 # Velar
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 26092
 	700.1.1 = { birth = yes }
@@ -1232,7 +1249,7 @@
 	female = yes
 	dynasty = 3940 # Velar
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 26093
 	780.1.1 = { birth = yes }
@@ -1243,7 +1260,7 @@
 	female = yes
 	dynasty = 3940 # Velar
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 26094
 	860.1.1 = { birth = yes }
@@ -1253,7 +1270,7 @@
 	name = "Jakben"
 	dynasty = 3940 # Velar
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 26095
 	940.1.1 = { birth = yes }
@@ -1263,7 +1280,7 @@
 	name = "Nelos"
 	dynasty = 3940 # Velar
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26096
 	1020.1.1 = { birth = yes }
@@ -1273,7 +1290,7 @@
 	name = "Thaundass"
 	dynasty = 7009 # Rahr
 	culture = sembite
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = trained_fighter
 	1100.1.1 = { birth = yes }
@@ -1283,7 +1300,7 @@
 	name = "Orimmon"
 	dynasty = 7010 # Harrow
 	culture = sembite
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = journeyman_warlock
 	1090.1.1 = { birth = yes }
@@ -1293,7 +1310,7 @@
 	name = "Feltaern"
 	dynasty = 7011 # Urnsarr
 	culture = sembite
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = journeyman_rogue
 	1100.1.1 = { birth = yes }
@@ -1303,7 +1320,7 @@
 	name = "Imbar"
 	dynasty = 7012 # Thaelwood
 	culture = sembite
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = journeyman_ranger
 	1110.1.1 = { birth = yes }
@@ -1313,17 +1330,23 @@
 	name = "Elzar"
 	dynasty = 7013 # Darth
 	culture = sembite
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = trained_sorcerer
+	trait = origin_storm
 	1120.1.1 = { birth = yes }
+	1130.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1155.1.1 = { death = yes }
 }
 26103 = {
 	name = "Harlstakh"
 	dynasty = 7014 # Kethtor
 	culture = sembite
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = trained_shadow
 	1125.1.1 = { birth = yes }
@@ -1333,7 +1356,7 @@
 	name = "Elmaer"
 	dynasty = 7015 # Oraun
 	culture = sembite
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = journeyman_fighter
 	1130.1.1 = { birth = yes }
@@ -1345,7 +1368,7 @@
 	name = "Erammon"
 	dynasty = 7015 # Oraun
 	culture = sembite
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 26104
 	1150.1.1 = { birth = yes }
@@ -1357,7 +1380,7 @@
 	name = "Halvan"
 	dynasty = 3941 # Halvan
 	culture = dalesman
-	religion = evil_human_pantheon
+	religion = dead_three
 	martial = 7
 	intrigue = 6
 	trait = creature_human
@@ -1379,7 +1402,7 @@
 	name = "Gordon"
 	dynasty = 3942 # Goodtiller
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1160.1.1 = { birth = yes }
 	1260.1.1 = { death = yes }
@@ -1388,7 +1411,7 @@
 	name = "Geralt"
 	dynasty = 3942 # Goodtiller
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26107
 	1240.1.1 = { birth = yes }
@@ -1398,7 +1421,7 @@
 	name = "Dendor"
 	dynasty = 3942 # Goodtiller
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26108
 	1300.1.1 = { birth = yes }
@@ -1408,8 +1431,8 @@
 	name = "Lashan"
 	dynasty = 9047 # Aumersair
 	culture = dalesman
-	religion = good_human_pantheon
-	secret_religion = evil_human_pantheon
+	religion = solar
+	secret_religion = shadow_gods
 	trait = creature_human
 	trait = trained_fighter
 	trait = ambitious
@@ -1423,7 +1446,7 @@
 	name = "Jenso"
 	dynasty = 3944 # Coldcrag
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	680.1.1 = { birth = yes }
 	780.1.1 = { death = yes }
@@ -1432,7 +1455,7 @@
 	name = "Lemmy"
 	dynasty = 3944 # Coldcrag
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26111
 	760.1.1 = { birth = yes }
@@ -1442,7 +1465,7 @@
 	name = "Swanson"
 	dynasty = 3944 # Coldcrag
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26112
 	840.1.1 = { birth = yes }
@@ -1452,7 +1475,7 @@
 	name = "Kenneth"
 	dynasty = 3944 # Coldcrag
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26113
 	920.1.1 = { birth = yes }
@@ -1463,7 +1486,7 @@
 	female = yes
 	dynasty = 3945 # Snowpath
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1000.1.1 = { birth = yes }
 	1100.1.1 = { death = yes }
@@ -1473,7 +1496,7 @@
 	female = yes
 	dynasty = 3945 # Snowpath
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 26115
 	1080.1.1 = { birth = yes }
@@ -1483,7 +1506,7 @@
 	name = "Relzo"
 	dynasty = 3945 # Snowpath
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 26116
 	1160.1.1 = { birth = yes }
@@ -1493,7 +1516,7 @@
 	name = "Enzo"
 	dynasty = 3945 # Snowpath
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26117
 	1240.1.1 = { birth = yes }
@@ -1503,8 +1526,8 @@
 	name = "Carrila"
 	female = yes
 	dynasty = 7966 # Nemsor
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1324.1.1 = { birth = yes }
 	1360.1.1 = {
@@ -1515,7 +1538,7 @@
 	name = "Galath"
 	dynasty = 3946 # Grimblade
 	culture = dalesman
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	trait = trained_rogue
 	920.1.1 = { birth = yes }
@@ -1527,7 +1550,7 @@
 	name = "Pendrek"
 	dynasty = 3947 # Mistwatch
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	950.1.1 = { birth = yes }
 	1040.1.1 = { death = yes }
@@ -1536,7 +1559,7 @@
 	name = "Peldan"
 	dynasty = 3948 # Peldan
 	culture = cormyrian
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = trained_fighter
 	990.1.1 = { birth = yes }
@@ -1546,7 +1569,7 @@
 	name = "Lennan"
 	dynasty = 3948 # Peldan
 	culture = cormyrian
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26122
 	1070.1.1 = { birth = yes }
@@ -1557,7 +1580,7 @@
 	female = yes
 	dynasty = 3948 # Peldan
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26123
 	1150.1.1 = { birth = yes }
@@ -1568,16 +1591,16 @@
 	female = yes
 	dynasty = 3949 # Clearsky
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1230.1.1 = { birth = yes }
-	1310.1.1 = { death = yes }	
+	1310.1.1 = { death = yes }
 }
 26126 = {
 	name = "Glarrim"
 	dynasty = 3949 # Clearsky
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 26125
 	1290.1.1 = { birth = yes }
@@ -1586,8 +1609,8 @@
 26127 = {
 	name = "Elman"
 	dynasty = 3943 # Aumersair
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = triadic
 	trait = creature_human
 	trait = bastard
 	father = 9047 # Elminster, set up a bloodline later!
@@ -1598,7 +1621,7 @@
 	name = "Waldric"
 	dynasty = 3943 # Aumersair
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26127
 	800.1.1 = { birth = yes }
@@ -1609,7 +1632,7 @@
 	female = yes
 	dynasty = 3943 # Aumersair
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26128
 	880.1.1 = { birth = yes }
@@ -1619,7 +1642,7 @@
 	name = "Sorlan"
 	dynasty = 3943 # Aumersair
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	mother = 26129
 	960.1.1 = { birth = yes }
@@ -1629,7 +1652,7 @@
 	name = "Lauror"
 	dynasty = 3943 # Aumersair
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26130
 	1040.1.1 = { birth = yes }
@@ -1639,7 +1662,7 @@
 	name = "Kimber"
 	dynasty = 3943 # Aumersair
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26131
 	1120.1.1 = { birth = yes }
@@ -1650,7 +1673,7 @@
 	female = yes
 	dynasty = 3943 # Aumersair
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26132
 	1200.1.1 = { birth = yes }
@@ -1660,7 +1683,7 @@
 	name = "Devin"
 	dynasty = 3943 # Aumersair
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	mother = 26133
 	1260.1.1 = { birth = yes }
@@ -1670,7 +1693,7 @@
 	name = "Khelvos"
 	dynasty = 3950 # Dermmen
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	trait = fighter
 	trait = cleric
@@ -1682,7 +1705,7 @@
 	female = yes
 	dynasty = 138 # Merzzinn
 	culture = drow
-	religion = drow_polytheism # Elistraee
+	religion = eilistraee
 	trait = creature_drow
 	1.1.1 = { birth = yes }
 	31.1.1 = { immortal_age = 30 }
@@ -1717,7 +1740,7 @@
 	name = "Ashaba"
 	dynasty = 3951 # Waterwalker
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	trait = renowned_wizard
 	850.1.1 = { birth = yes }
@@ -1731,7 +1754,7 @@
 	name = "Daeve"
 	dynasty = 3952 # Woodstrider
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	920.1.1 = { birth = yes }
 	1020.1.1 = { death = yes }
@@ -1740,7 +1763,7 @@
 	name = "Farenn"
 	dynasty = 3952 # Woodstrider
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	father = 26140
 	1000.1.1 = { birth = yes }
@@ -1751,7 +1774,7 @@
 	female = yes
 	dynasty = 3952 # Woodstrider
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	father = 26141
 	1080.1.1 = { birth = yes }
@@ -1762,7 +1785,7 @@
 	female = yes
 	dynasty = 3952 # Woodstrider
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	mother = 26142
 	1160.1.1 = { birth = yes }
@@ -1772,7 +1795,7 @@
 	name = "Vitro"
 	dynasty = 3952 # Woodstrider
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	mother = 26143
 	1220.1.1 = { birth = yes }
@@ -1783,7 +1806,7 @@
 	female = yes
 	dynasty = 3953 # Blackblade
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	850.1.1 = { birth = yes }
 	880.1.1 = {
@@ -1795,7 +1818,7 @@
 	name = "Gaver"
 	dynasty = 3953 # Blackblade
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 26145
 	930.1.1 = { birth = yes }
@@ -1808,7 +1831,7 @@
 	name = "Lomaxan"
 	dynasty = 3953 # Blackblade
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26146
 	1010.1.1 = { birth = yes }
@@ -1821,7 +1844,7 @@
 	name = "Nolli"
 	dynasty = 3954 # Shadevale
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	850.1.1 = { birth = yes }
 	950.1.1 = { death = yes }
@@ -1830,7 +1853,7 @@
 	name = "Jianno"
 	dynasty = 3954 # Shadevale
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26148
 	930.1.1 = { birth = yes }
@@ -1840,7 +1863,7 @@
 	name = "Umeric"
 	dynasty = 3954 # Shadevale
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26149
 	1010.1.1 = { birth = yes }
@@ -1850,7 +1873,7 @@
 	name = "Emerican"
 	dynasty = 3954 # Shadevale
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = legendary_wizard
 	father = 26150
@@ -1860,15 +1883,15 @@
 		immortal_age = 60
 		give_nickname = nick_the_dusk_lord
 	}
-	1274.1.1 = {
-		death = { death_reason = death_planes }
+	1500.1.1 = {
+		death = yes
 	}
 }
 26152 = {
 	name = "Annorian"
 	dynasty = 3955 # Dustwatcher
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	300.1.1 = { birth = yes }
 	400.1.1 = { death = yes }
@@ -1877,7 +1900,7 @@
 	name = "Rethan"
 	dynasty = 3955 # Dustwatcher
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26152
 	380.1.1 = { birth = yes }
@@ -1887,7 +1910,7 @@
 	name = "Uvirith"
 	dynasty = 3955 # Dustwatcher
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26153
 	460.1.1 = { birth = yes }
@@ -1897,7 +1920,7 @@
 	name = "Indarys"
 	dynasty = 3955 # Dustwatcher
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26154
 	540.1.1 = { birth = yes }
@@ -1907,7 +1930,7 @@
 	name = "Vedan"
 	dynasty = 3955 # Dustwatcher
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26155
 	620.1.1 = { birth = yes }
@@ -1917,7 +1940,7 @@
 	name = "Tholer"
 	dynasty = 3955 # Dustwatcher
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26156
 	700.1.1 = { birth = yes }
@@ -1927,7 +1950,7 @@
 	name = "Crassio"
 	dynasty = 3955 # Dustwatcher
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26157
 	780.1.1 = { birth = yes }
@@ -1937,7 +1960,7 @@
 	name = "Gabot"
 	dynasty = 3955 # Dustwatcher
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26158
 	860.1.1 = { birth = yes }
@@ -1947,7 +1970,7 @@
 	name = "Balris"
 	dynasty = 3955 # Dustwatcher
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26159
 	940.1.1 = { birth = yes }
@@ -1957,7 +1980,7 @@
 	name = "Carver"
 	dynasty = 3955 # Dustwatcher
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26160
 	1020.1.1 = { birth = yes }
@@ -1967,7 +1990,7 @@
 	name = "Hawker"
 	dynasty = 3955 # Dustwatcher
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26161
 	1100.1.1 = { birth = yes }
@@ -1977,7 +2000,7 @@
 	name = "Holdan"
 	dynasty = 3955 # Dustwatcher
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26162
 	1180.1.1 = { birth = yes }
@@ -1987,7 +2010,7 @@
 	name = "Niero"
 	dynasty = 3955 # Dustwatcher
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 26163
 	1260.1.1 = { birth = yes }
@@ -1997,7 +2020,7 @@
 	name = "Gavan"
 	dynasty = 3956 # Dalehome
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	960.1.1 = { birth = yes }
 	1060.1.1 = { death = yes }
@@ -2007,7 +2030,7 @@
 	female = yes
 	dynasty = 3956 # Dalehome
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 26165
 	1040.1.1 = { birth = yes }
@@ -2018,7 +2041,7 @@
 	female = yes
 	dynasty = 3956 # Dalehome
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 26166
 	1120.1.1 = { birth = yes }
@@ -2029,7 +2052,7 @@
 	female = yes
 	dynasty = 3956 # Dalehome
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 26167
 	1200.1.1 = { birth = yes }
@@ -2040,7 +2063,7 @@
 	female = yes
 	dynasty = 3956 # Dalehome
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 26168
 	1280.1.1 = { birth = yes }
@@ -2050,7 +2073,7 @@
 	name = "Nerath"
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	1.1.1 = { birth = yes }
 	100.1.1 = { death = yes }
@@ -2059,7 +2082,7 @@
 	name = "Alesso"
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	father = 26170
 	80.1.1 = { birth = yes }
@@ -2070,7 +2093,7 @@
 	female = yes
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	father = 26171
 	160.1.1 = { birth = yes }
@@ -2080,7 +2103,7 @@
 	name = "Patreo"
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	mother = 26172
 	240.1.1 = { birth = yes }
@@ -2091,7 +2114,7 @@
 	female = yes
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	father = 26173
 	320.1.1 = { birth = yes }
@@ -2101,7 +2124,7 @@
 	name = "Gianlo"
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	mother = 26174
 	400.1.1 = { birth = yes }
@@ -2112,7 +2135,7 @@
 	female = yes
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	father = 26175
 	480.1.1 = { birth = yes }
@@ -2123,17 +2146,17 @@
 	female = yes
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	mother = 26176
 	560.1.1 = { birth = yes }
-	660.1.1 = { death = yes }	
+	660.1.1 = { death = yes }
 }
 26178 = {
 	name = "Traven"
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	mother = 26177
 	640.1.1 = { birth = yes }
@@ -2143,7 +2166,7 @@
 	name = "Stalvern"
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	father = 26178
 	720.1.1 = { birth = yes }
@@ -2154,7 +2177,7 @@
 	female = yes
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	father = 26179
 	800.1.1 = { birth = yes }
@@ -2165,7 +2188,7 @@
 	female = yes
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	mother = 26180
 	880.1.1 = { birth = yes }
@@ -2176,7 +2199,7 @@
 	female = yes
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	mother = 26181
 	960.1.1 = { birth = yes }
@@ -2186,7 +2209,7 @@
 	name = "Carth"
 	dynasty = 3957 # Glazehand
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	mother = 26182
 	1030.1.1 = { birth = yes }
@@ -2196,7 +2219,7 @@
 	name = Dragonbait
 	dynasty = 8216 # Champion
 	culture = saurial
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_saurial
 	trait = expert_paladin
 	trait = just
@@ -2207,8 +2230,8 @@
 	trait = absent
 	trait = bio_dragonbait
 	1335.1.1 = { birth = yes }
-	1357.1.1 = { 
-		remove_trait = absent 
+	1357.1.1 = {
+		remove_trait = absent
 
 		employer = 20081 # Azoun IV of Cormyr - she flees to Suzail
 	}
@@ -2219,7 +2242,7 @@
 
 		}
 	1359.1.1 = {
-	   employer = 56277 #Yulash	
+	   employer = 56277 #Yulash
 	}
 	1360.5.1 = {
 		employer = 26055 # Grypht of Tarkhaldale
@@ -2232,18 +2255,18 @@
 	female = yes
 	dynasty = 8217 # Luckpriest
 	culture = saurial
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_saurial
 	trait = journeyman_cleric
 	trait = patron_tymora
 	trait = scholarly_theologian
 	trait = absent
 	1334.1.1 = { birth = yes }
-	1357.1.1 = { 
-			remove_trait = absent 
+	1357.1.1 = {
+			remove_trait = absent
 	}
 	1357.6.1 = {
-		religion = evil_human_pantheon
+		religion = shadow_gods
 		effect = {
 			remove_trait = patron_tymora
 		}
@@ -2258,4 +2281,1929 @@
 			killer = 26184 # Dragonbait
 		}
 	}
+}
+# Winter Laurelins Mulmar Family of High Dale History
+26186 = { # count of high dale
+	name = "Beldrian"
+	dynasty = 3917 # Mulmar
+	culture = dalesman
+	religion = solar
+	father = 26031 # Irreph
+	trait = creature_human
+	1362.1.1 = { birth = yes }
+	1422.1.1 = { death = yes }
+}
+# 1422 becomes part of Cormyr
+26187 = { # count of high dale
+	name = "Lielindrea" # daughter
+	dynasty = 3917 # Mulmar
+	culture = dalesman
+	religion = solar
+	female = yes
+	father = 26186 # Beldrian
+	trait = creature_human
+	1382.1.1 = { birth = yes }
+	1442.1.1 = { death = yes }
+}
+26188 = { # count of high dale
+	name = "Emthra" # 
+	dynasty = 3917 # Mulmar
+	culture = dalesman
+	religion = solar
+	female = yes
+	mother = 26187 # Lielindrea
+	trait = creature_human
+	1402.1.1 = { birth = yes }
+	1472.1.1 = { death = yes }
+}
+26189 = { # count of high dale
+	name = "Haressar" # son
+	dynasty = 12043 # Marguerin
+	culture = dalesman
+	religion = joyful
+	trait = creature_human
+	1422.1.1 = { birth = yes }
+	1492.1.1 = { death = yes }
+}
+26190 = { # count of high dale
+	name = "Wynder" #
+	dynasty = 12043 # Marguerin
+	culture = dalesman
+	religion = joyful
+	trait = creature_human
+	trait = androgynous
+	father = 26189
+	1442.1.1 = { birth = yes }
+	1512.1.1 = { death = yes }
+}
+# Winter Laurelins Mossgreen Family of Archendale
+26212 = { # brother brother sister	daughter
+	name = "Aucia"
+	female = yes
+	dynasty = 3906 # Mossgreen
+	mother = 26009 # Jalia
+	religion = triadic
+	culture = dalesman
+	trait = creature_human
+	1334.1.1 = { birth = yes }
+	1416.1.1 = { death = yes }
+}
+26191 = { # 
+	name = "Kallumor" # no children
+	dynasty = 3906 # Mossgreen
+	mother = 26009 # Jalia
+	religion = triadic
+	culture = dalesman
+	trait = creature_human
+	1335.1.1 = { birth = yes }
+	1417.1.1 = { death = yes }
+}
+26192 = { # 
+	name = "Haran Amglark" # no children
+	dynasty = 3906 # Mossgreen
+	mother = 26009 # Jalia
+	religion = triadic
+	culture = dalesman
+	trait = creature_human
+	1336.1.1 = { birth = yes }
+	1418.1.1 = { death = yes }
+}
+26193 = { #
+	name = "Shael" # no children
+	female = yes
+	dynasty = 3906 # Mossgreen
+	mother = 26009 # Jalia
+	religion = triadic
+	culture = dalesman
+	trait = creature_human
+	1337.1.1 = { birth = yes }
+	1419.1.1 = { death = yes }
+}
+26194 = { #
+	name = "Laerine" # daughter
+	female = yes
+	dynasty = 3906 # Mossgreen
+	mother = 26190 # Aucia
+	religion = triadic
+	culture = dalesman
+	trait = creature_human
+	1354.1.1 = { birth = yes }
+	1429.1.1 = { death = yes }
+}
+26195 = { #
+	name = "Havilandyl" # daughter
+	female = yes
+	dynasty = 3906 # Mossgreen
+	mother = 26194 # Laerine
+	religion = triadic
+	culture = dalesman
+	trait = creature_human
+	1374.1.1 = { birth = yes }
+	1449.1.1 = { death = yes }
+}
+# Winter Laurelins Wyndrey Family of Archendale
+26196 = { #
+	name = "Odmanadar" # daughter son
+	dynasty = 12044 # Wyndrey
+	religion = triadic
+	culture = dalesman
+	trait = creature_human
+	1404.1.1 = { birth = yes }
+	1460.1.1 = { death = yes }
+}
+26197 = { #
+	name = "Elisabeau" # daughter daughter child
+	dynasty = 12044 # Wyndrey
+	religion = triadic
+	culture = dalesman
+	female = yes
+	father = 26196 # Odmanadar
+	trait = creature_human
+	1424.1.1 = { birth = yes }
+	1443.1.1 = { add_matrilineal_spouse = 26199 }
+	1485.1.1 = { death = yes }
+}
+26198 = { #
+	name = "Kurngruin" #
+	dynasty = 12044 # Wyndrey
+	religion = triadic
+	culture = dalesman
+	father = 26196 # Odmanadar
+	trait = creature_human
+	1425.1.1 = { birth = yes }
+	1486.1.1 = { death = yes }
+}
+26199 = { #
+	name = "Narstan" #
+	religion = triadic
+	culture = dalesman
+	trait = creature_human
+	1424.1.1 = { birth = yes }
+	1485.1.1 = { death = yes }
+}
+26200 = { #
+	name = "Amarue" #
+	dynasty = 12044 # Wyndrey
+	religion = triadic
+	culture = dalesman
+	mother = 26197 # Elisabeau
+	father = 26199 # Narstan
+	female = yes
+	trait = creature_human
+	1445.1.1 = { birth = yes }
+	1506.1.1 = { death = yes }
+}
+# Winter Laurelins Ulath family of Deepingdale
+26201 = {
+	name = "Archen"
+	dynasty = 3902
+	trait = creature_human
+	religion = mercantile
+	culture = dalesman
+	father = 26005 # Theremen
+	1334.1.1 = { birth = yes }
+	1403.1.1 = { death = yes }
+}
+# Winter Laurelins Jalmaes family of Deepingdale
+26202 = {
+	name = "Jhael"
+	dynasty = 12045 # Jalmaes
+	trait = creature_human
+	religion = mercantile
+	culture = dalesman
+	female = yes
+	1380.1.1 = { birth = yes }
+	1399.1.1 = { add_matrilineal_spouse = 26203 } # Oriedrin
+	1450.1.1 = { death = yes }
+}
+26203 = {
+	name = "Oriedrin"
+	trait = creature_human
+	religion = arcane
+	culture = dalesman
+	1379.1.1 = { birth = yes }
+	1428.1.1 = { death = yes }
+}
+26204 = {
+	name = "Beldar" # son daughter
+	dynasty = 12045 # Jalmaes
+	trait = creature_human
+	religion = mercantile
+	culture = dalesman
+	mother = 26202 # Jhael Jalmaes
+	father = 26203 # Oriedrin
+	1401.1.1 = { birth = yes }
+	1469.1.1 = { death = yes }
+}
+26205 = {
+	name = "Rhauntil" #
+	dynasty = 12045 # Jalmaes
+	trait = creature_human
+	religion = mercantile
+	culture = dalesman
+	father = 26204 # Beldar
+	1444.1.1 = { birth = yes }
+	1462.1.1 = { add_spouse = 26207}
+	1500.1.1 = { death = yes }
+}
+26206 = {
+	name = "Isabenn" #
+	dynasty = 12045 # Jalmaes
+	trait = creature_human
+	religion = mercantile
+	culture = dalesman
+	female = yes
+	father = 26204 # Beldar
+	1445.1.1 = { birth = yes }
+	1463.1.1 = { add_matrilineal_spouse = 26208 }
+	1506.1.1 = { death = yes }
+}
+26207 = {
+	name = "Braunil" #
+	trait = creature_human
+	religion = mercantile
+	culture = dalesman
+	female = yes
+	1444.1.1 = { birth = yes }
+	1500.1.1 = { death = yes }
+}
+26208 = {
+	name = "Gustienne" #
+	trait = creature_human
+	religion = mercantile
+	culture = dalesman
+	1444.1.1 = { birth = yes }
+	1500.1.1 = { death = yes }
+}
+26209 = {
+	name = "Tessea" # husband and daughter
+	dynasty = 12045 # Jalmaes
+	trait = creature_human
+	religion = mercantile
+	culture = dalesman
+	female = yes
+	father = 26208 # Gustienne
+	mother = 26206 # Isabenn Jalmaes
+	1465.1.1 = { birth = yes }
+	1484.1.1 = { add_matrilineal_spouse = 26211 }
+	1527.1.1 = { death = yes }
+}
+26210 = {
+	name = "Laera" # 
+	dynasty = 12045 # Jalmaes
+	trait = creature_human
+	religion = mercantile
+	culture = dalesman
+	female = yes
+	father = 26211 # Lahast
+	mother = 26209 # Tessea Jalmaes
+	1485.1.1 = { birth = yes }
+	1567.1.1 = { death = yes }
+}
+26211 = {
+	name = "Lahast" # 
+	trait = creature_human
+	religion = mercantile
+	culture = dalesman
+	1466.1.1 = { birth = yes }
+	1542.1.1 = { death = yes }
+}
+# next is 26213
+
+26214 = {
+	name = "Orndave" # Has a son Aragon # LOTR reference to your Homestuck reference
+	trait = creature_human
+	religion = solar
+	culture = dalesman
+	dynasty = 12047 # Longstrider # Homestuck reference
+	1340.1.1 = { birth = yes }
+	1358.1.1 = { add_spouse = 26215 }
+	1420.1.1 = { death = yes }
+}
+26215 = {
+	name = "Carethea" # wife of Orndave
+	trait = creature_human
+	female = yes
+	religion = solar
+	culture = thayan # maybe fantasy counterpart culture Armenian for the # ian part of the Homestuck reference
+	dynasty = 12048 # Vantassian
+	1340.1.1 = { birth = yes }
+	1420.1.1 = { death = yes }
+}
+26216 = {
+	name = "Aragon" # LOTR reference # daughter Kattaryn # Six reference son Allarin # LOTR reference
+	trait = creature_human
+	father = 26214 # Orndave Longstrider
+	mother = 26215 # Carethea Vantassian
+	religion = solar
+	culture = dalesman
+	dynasty = 12047 # Longstrider
+	1360.1.1 = { birth = yes }
+	1380.1.1 = { add_spouse = 26217 }
+	1440.1.1 = { death = yes }
+}
+26217 = {
+	name = "Arven" # Arwen LOTR reference # bastard daughter Ameena # HS reference 
+	trait = creature_human
+	female = yes
+	religion = solar
+	culture = dalesman
+	dynasty = 12049 # Pixieblood # family with feywild ancestry
+	trait = feytouched
+	trait = journeyman_sorcerer
+	1360.1.1 = { birth = yes }
+	1440.1.1 = { death = yes }
+}
+26218 = {
+	name = "Kattaryn" # daughter Jhaen
+	trait = creature_human
+	female = yes
+	religion = solar
+	culture = dalesman
+	father = 26216
+	mother = 26217
+	dynasty = 12047 # Longstrider 
+	1381.1.1 = { birth = yes }
+	1400.1.1 = { add_matrilineal_spouse = 26221 }
+	1461.1.1 = { death = yes }
+}
+26219 = {
+	name = "Allarin" # Eldarion reference
+	trait = creature_human
+	religion = solar
+	culture = dalesman
+	father = 26216
+	mother = 26217
+	dynasty = 12047 # Longstrider 
+	1382.1.1 = { birth = yes }
+	1462.1.1 = { death = yes }
+}
+26220 = {
+	name = "Ameena" # Meenah Peixes reference
+	trait = creature_human
+	female = yes
+	religion = solar
+	culture = chultan
+	mother = 26217
+	dynasty = 12049 # Pixieblood 
+	trait = bastard
+	1399.1.1 = { 
+		birth = yes 
+		culture = dalesman
+	}
+	1421.1.1 = { add_matrilineal_spouse = 26223 }
+	1462.1.1 = { death = yes }
+}
+26221 = {
+	name = "Friedram" # husband of Kattaryn
+	trait = creature_human
+	religion = solar
+	culture = dalesman
+	1381.1.1 = { birth = yes }
+	1461.1.1 = { death = yes }
+}
+26222 = {
+	name = "Jhaen" # 
+	trait = creature_human
+	female = yes
+	religion = solar
+	culture = dalesman
+	father = 26221 # Friedram
+	mother = 26218 # Kattaryn
+	dynasty = 12047 # Longstrider 
+	1401.1.1 = { birth = yes }
+	1421.1.1 = { add_matrilineal_spouse = 26224 }
+	1481.1.1 = { death = yes }
+}
+26223 = {
+	name = "Ghardroun"
+	trait = creature_human
+	religion = solar
+	culture = dalesman
+	1399.1.1 = { 
+		birth = yes 
+	}
+	1462.1.1 = { death = yes }
+}
+26224 = {
+	name = "Cresk" # 
+	trait = creature_human
+	religion = solar
+	culture = dalesman
+	1401.1.1 = { birth = yes }
+	1481.1.1 = { death = yes }
+}
+26225 = {
+	name = "Bryndra" # 
+	trait = creature_human
+	female = yes
+	religion = solar
+	culture = dalesman
+	father = 26224 # Cresk
+	mother = 26222 # Jhaen Longstrider
+	dynasty = 12047 # Longstrider 
+	1431.1.1 = { birth = yes }
+	1501.1.1 = { death = yes }
+}
+26226 = {
+	name = "Alman" # 
+	trait = creature_human
+	religion = solar
+	culture = dalesman
+	mother = 26225 # Bryndra Longstrider
+	dynasty = 12047 # Longstrider 
+	1461.1.1 = { birth = yes }
+	1521.1.1 = { death = yes }
+}
+# Winter Laurelins Wyvernblade family of Battledale
+26227 = {
+	name = "Zalathond"
+	dynasty = 3908 # Wyvernblade
+	religion = martial_faith
+	culture = dalesman
+	trait = creature_human
+	father = 26011 # Ilmeth
+	1331.1.1 = { birth = yes }
+	1411.1.1 = { death = yes }
+}
+26228 = {
+	name = "Runescar" # husband and daughter
+	dynasty = 3908 # Wyvernblade
+	female = yes
+	religion = martial_faith
+	culture = dalesman
+	trait = creature_human
+	father = 26011 # Ilmeth
+	1332.1.1 = { birth = yes }
+	1351.1.1 = { add_matrilineal_spouse = 26229 }
+	1401.1.1 = { death = yes }
+}
+26229 = {
+	name = "Melothgam" # daughter with Runescar
+	religion = martial_faith
+	culture = dalesman
+	trait = creature_human
+	1332.1.1 = { birth = yes }
+	1401.2.1 = { death = yes }
+}
+26230 = {
+	name = "Jalandyl" # bastard daughter
+	dynasty = 3908 # Wyvernblade
+	female = yes
+	religion = martial_faith
+	culture = dalesman
+	trait = creature_human
+	father = 26229 # Melothgam
+	mother = 26228 # Runescar
+	1352.1.1 = { birth = yes }
+	1422.1.1 = { death = yes }
+}
+26231 = {
+	name = "Alarra"
+	dynasty = 3908 # Wyvernblade
+	female = yes
+	religion = martial_faith
+	culture = dalesman
+	trait = creature_human
+	trait = bastard
+	mother = 26230 # Jalandyl
+	1377.1.1 = { birth = yes }
+	1444.1.1 = { death = yes }
+}
+# Elder is elected after Jalandyl's death, then after his death Alarra her bastard daughter is elected
+26232 = {
+	name = "Elder" # simply known as The Elder
+	dynasty = 12050 # Shadowthrone
+	religion = martial_faith
+	culture = dalesman
+	trait = creature_human
+	trait = longevity
+	trait = chaste
+	1321.1.1 = { birth = yes }
+	1401.1.1 = { add_spouse = 26233 }
+	1431.1.1 = { death = yes }
+}
+# Elder Shadowthrone has twins with a Drow woman
+26233 = {
+	name = "Nedylene" #
+	female = yes
+	religion = eilistraee
+	culture = drow
+	trait = lustful
+	trait = creature_drow
+	1300.1.1 = { birth = yes }
+	1400.1.1 = { 
+		culture = dalesman
+		give_nickname = nick_the_fair
+	}
+	1500.1.1 = { death = yes }
+}
+26234 = {
+	name = "Finni'they" #
+	dynasty = 12050 # Shadowthrone
+	female = yes
+	religion = martial_faith
+	culture = drow
+	father = 26232
+	mother = 26233
+	trait = creature_half_elf
+	trait = twin
+	1402.1.1 = { 
+		birth = yes 
+		culture = dalesman
+	}
+	1500.1.1 = { death = yes }
+}
+26235 = {
+	name = "Havel" #
+	dynasty = 12050 # Shadowthrone
+	religion = martial_faith
+	culture = drow
+	father = 26232
+	mother = 26233
+	trait = creature_half_elf
+	trait = twin
+	1402.1.1 = { 
+		birth = yes 
+		culture = dalesman
+	}
+	1500.1.1 = { death = yes }
+}
+# Winter Laurelins Inshiland family of Tasseldale
+26236 = { #
+	name = "Anthondaril" # wife and two daughters
+	dynasty = 3911 # Inshiland
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	father = 26013
+	1368.1.1 = { birth = yes }
+	1387.1.1 = { add_spouse = 26237 }
+	1428.1.1 = { death = yes }
+}
+26237 = { #
+	name = "Cybriana" # wife of Anthondaril
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	female = yes
+	1368.1.1 = { birth = yes }
+	1428.1.1 = { death = yes }
+}
+26238 = { #
+	name = "Eveena" # has sister Jalassra
+	dynasty = 3911 # Inshiland
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	female = yes
+	father = 26236 # Anthondaril Inshiland
+	mother = 26237 # Cybriana
+	1389.1.1 = { birth = yes }
+	1409.1.1 = { add_matrilineal_spouse = 26240 } # Ilmer
+	1449.1.1 = { death = yes }
+}
+26239 = { #
+	name = "Jalassra" # daughter daughter
+	dynasty = 3911 # Inshiland
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	female = yes
+	father = 26236 # Anthondaril Inshiland
+	mother = 26237 # Cybriana
+	1390.1.1 = { birth = yes }
+	1410.1.1 = { add_matrilineal_spouse = 26242 } # Ondral
+	1450.1.1 = { death = yes }
+}
+26240 = { #
+	name = "Ilmer" #
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	1389.1.1 = { birth = yes }
+	1445.1.1 = { death = yes }
+}
+26241 = { #
+	name = "Jhaera" # daughter daughter second named Glameril
+	dynasty = 3911 # Inshiland
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	female = yes
+	father = 26240 # Ilmer
+	mother = 26238 # Eveena Inshiland
+	1410.1.1 = { birth = yes }
+	1470.1.1 = { death = yes }
+}
+26242 = { #
+	name = "Ondral" #
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	1389.1.1 = { birth = yes }
+	1445.1.1 = { death = yes }
+}
+26243 = { #
+	name = "Jeryn" # no children
+	dynasty = 3911 # Inshiland
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	female = yes
+	father = 26242 # Ondral
+	mother = 26239 # Jalassra Inshiland
+	1411.1.1 = { birth = yes }
+	1471.1.1 = { death = yes }
+}
+26244 = { #
+	name = "Lucquelle" # no children
+	dynasty = 3911 # Inshiland
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	female = yes
+	father = 26242 # Ondral
+	mother = 26239 # Jalassra Inshiland
+	1412.1.1 = { birth = yes }
+	1472.1.1 = { death = yes }
+}
+26245 = { #
+	name = "Timmon" #
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	1410.1.1 = { birth = yes }
+	1470.1.1 = { death = yes }
+}
+26246 = { #
+	name = "Jasanneth" # daughter Pheid # child androgynous Haun 
+	dynasty = 3911 # Inshiland
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	female = yes
+	father = 26245 # Timmon
+	mother = 26241 # Jhaera Inshiland
+	1430.1.1 = { birth = yes }
+	1449.1.1 = { add_matrilineal_spouse = 26248 } # Timmer
+	1490.1.1 = { death = yes }
+}
+26247 = { #
+	name = "Glameril" # husband Darstar daughter Shael
+	dynasty = 3911 # Inshiland
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	female = yes
+	father = 26245 # Timmon
+	mother = 26241 # Jhaera Inshiland
+	1431.1.1 = { birth = yes }
+	1450.1.1 = { add_matrilineal_spouse = 26251 } # Darstar
+	1492.1.1 = { death = yes }
+}
+26248 = { #
+	name = "Timmer" #
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	1430.1.1 = { birth = yes }
+	1490.1.1 = { death = yes }
+}
+26249 = { #
+	name = "Pheid" # 
+	dynasty = 3911 # Inshiland
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	female = yes
+	father = 26248 # Timmer
+	mother = 26246 # Jasanneth Inshiland
+	1450.1.1 = { birth = yes }
+	1520.1.1 = { death = yes }
+}
+26250 = { #
+	name = "Haun" # daughter Katriane husband Althryn
+	dynasty = 3911 # Inshiland
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	female = yes
+	trait = androgynous
+	father = 26248 # Timmer
+	mother = 26246 # Jasanneth Inshiland
+	1451.1.1 = { birth = yes }
+	1470.1.1 = { add_matrilineal_spouse = 26253 } # Althryn
+	1521.1.1 = { death = yes }
+}
+26251 = { #
+	name = "Darstar" #
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	1430.1.1 = { birth = yes }
+	1490.1.1 = { death = yes }
+}
+26252 = { #
+	name = "Shael" # 
+	dynasty = 3911 # Inshiland
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	female = yes
+	father = 26251 # Darstar
+	mother = 26247 # Jasanneth Inshiland
+	1451.1.1 = { birth = yes }
+	1521.1.1 = { death = yes }
+}
+26253 = { #
+	name = "Althryn" #
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	1451.1.1 = { birth = yes }
+	1521.1.1 = { death = yes }
+}
+26254 = { #
+	name = "Katriane" # 
+	dynasty = 3911 # Inshiland
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	female = yes
+	father = 26253 # Althryn
+	mother = 26250 # Haun Inshiland
+	1471.1.1 = { birth = yes }
+	1541.1.1 = { death = yes }
+}
+# Winter Laurelins Embrasus family of Tasseldale
+26255 = { #
+	name = "Aregar" # daughter Enett # daughter Alisabeth # wife Annellia
+	dynasty = 12051 # Embrasus
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	1400.1.1 = { birth = yes }
+	1419.1.1 = { add_trait = journeyman_fighter }
+	1475.1.1 = { death = yes }
+}
+26256 = { #
+	name = "Annellia" #
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	1400.1.1 = { birth = yes }
+	1421.1.1 = { add_spouse = 26255 }
+	1475.1.1 = { death = yes }
+}
+26257 = { # husband Ilthallard # son Dinal # daughter Elaerica
+	name = "Enett"
+	dynasty = 12051 # Embrasus
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	father = 26255 # Aregar
+	mother = 26256 # Annellia
+	1422.1.1 = { birth = yes }
+	1441.1.1 = { add_matrilineal_spouse = 26259 }
+	1477.1.1 = { death = yes }
+}
+26258 = { #
+	name = "Alisabeth" # husband Gelvarim # daughter Sundra
+	dynasty = 12051 # Embrasus
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	father = 26255 # Aregar
+	mother = 26256 # Annellia
+	1423.1.1 = { birth = yes }
+	1441.1.1 = { add_matrilineal_spouse = 26260 }
+	1498.1.1 = { death = yes }
+}
+26259 = { # 
+	name = "Ilthallard"
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	1422.1.1 = { birth = yes }
+	1497.1.1 = { death = yes }
+}
+26260 = { # 
+	name = "Gelvarim"
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	1422.1.1 = { birth = yes }
+	1497.1.1 = { death = yes }
+}
+26261 = { # 
+	name = "Dinal" # wife Blanthal # daughter Dalerelda
+	dynasty = 12051 # Embrasus
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	father = 26259 # Ilthallard
+	mother = 26257 # Enett Embrasus
+	1442.1.1 = { birth = yes }
+	1462.1.1 = { add_spouse = 26264 }
+	1497.1.1 = { death = yes }
+}
+26262 = { # 
+	name = "Elaerica" # no children
+	dynasty = 12051 # Embrasus
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	father = 26259 # Ilthallard
+	mother = 26257 # Enett Embrasus
+	1443.1.1 = { birth = yes }
+	1498.1.1 = { death = yes }
+}
+26263 = { # 
+	name = "Sundra" # husband Vencent # daughter Heryth
+	dynasty = 12051 # Embrasus
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	father = 26260 # Gelvarim
+	mother = 26258 # Alisabeth Embrasus
+	1444.1.1 = { birth = yes }
+	1464.1.1 = { add_matrilineal_spouse = 26266 }
+	1519.1.1 = { death = yes }
+}
+26264 = { # 
+	name = "Blanthal"
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	1442.1.1 = { birth = yes }
+	1517.1.1 = { death = yes }
+}
+26265 = { # 
+	name = "Dalerelda" # 
+	dynasty = 12051 # Embrasus
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	father = 26261 # Dinal Embrasus
+	mother = 26264 # Blanthal
+	1463.1.1 = { birth = yes }
+	1550.1.1 = { death = yes }
+}
+26266 = { # 
+	name = "Vencent"
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	1442.1.1 = { birth = yes }
+	1517.1.1 = { death = yes }
+}
+26267 = { # 
+	name = "Heryth" # 
+	dynasty = 12051 # Embrasus
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	father = 26266 # Vencent
+	mother = 26263 # Sundra Embrasus
+	1465.1.1 = { birth = yes }
+	1555.1.1 = { death = yes }
+}
+# Winter Laurelins Blackfeather family of Featherdale
+26268 = { # 
+	name = "Caria" # 
+	dynasty = 3913	# Blackfeather
+	culture = dalesman
+	religion = solar
+	trait = creature_human
+	female = yes
+	father = 26016
+	1368.1.1 = { birth = yes }
+	1448.1.1 = { death = yes }
+}
+# next # 1418 Sembian Annexation of Featherdale # New Family
+# Winter Laurelins Fevoros family of Featherdale
+26269 = { # 
+	name = "Aelmorht" # wife Tessail # daughter Marguerica # daughter Caritte
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	1389.1.1 = { birth = yes }
+	1409.1.1 = { add_spouse = 26272 } # Tessail
+	1454.1.1 = { death = yes }
+}
+26270 = { # 
+	name = "Tessail" # 
+	female = yes
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	1389.1.1 = { birth = yes }
+	1454.1.1 = { death = yes }
+}
+26271 = { # 
+	name = "Marguerica" # husband Halart # daughter Heryth # daughter Margueril # daughter Fleuba
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	father = 26269 # Aelmorht Fevoros
+	mother = 26270 # Tessail
+	female = yes
+	1411.1.1 = { birth = yes }
+	1430.1.1 = { add_matrilineal_spouse = 26273 }
+	1490.1.1 = { death = yes }
+}
+26272 = { # 
+	name = "Caritte" # husband Thauvyr # daughter Madelda
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	father = 26269 # Aelmorht Fevoros
+	mother = 26270 # Tessail
+	female = yes
+	1412.1.1 = { birth = yes }
+	1432.1.1 = { add_matrilineal_spouse = 26277 } # Thauvyr
+	1491.1.1 = { death = yes }
+}
+26273 = { # 
+	name = "Halart" # 
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	1411.1.1 = { birth = yes }
+	1480.1.1 = { death = yes }
+}
+26274 = { # 
+	name = "Heryth" # husband Gelvesten # son Helbaster
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	father = 26273 # Halart
+	mother = 26271 # Marguerica Fevoros
+	female = yes
+	1431.1.1 = { birth = yes }
+	1450.1.1 = { add_matrilineal_spouse = 26279 } # Gelvesten
+	1511.1.1 = { death = yes }
+}
+26275 = { # 
+	name = "Margueril" # husband Orlel # daughter Lankelda
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	father = 26273 # Halart
+	mother = 26271 # Marguerica Fevoros
+	female = yes
+	1432.1.1 = { birth = yes }
+	1451.1.1 = { add_matrilineal_spouse = 26281 } # Orlel
+	1512.1.1 = { death = yes }
+}
+26276 = { # 
+	name = "Fleuba" # no children
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	father = 26273 # Halart
+	mother = 26271 # Marguerica Fevoros
+	female = yes
+	1433.1.1 = { birth = yes }
+	1513.1.1 = { death = yes }
+}
+26277 = { # 
+	name = "Thauvyr" # 
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	1412.1.1 = { birth = yes }
+	1481.1.1 = { death = yes }
+}
+26278 = { # 
+	name = "Madelda" # husband Zelrauvyn # daughter Javiere
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	father = 26277 # Thauvyr
+	mother = 26272 # Caritte
+	female = yes
+	1433.1.1 = { birth = yes }
+	1452.1.1 = { add_matrilineal_spouse = 26283 } # Zelrauvyn
+	1522.1.1 = { death = yes }
+}
+26279 = { # 
+	name = "Gelvesten" # 
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	1431.1.1 = { birth = yes }
+	1501.1.1 = { death = yes }
+}
+26280 = { # 
+	name = "Helbaster" # wife Janey # son Vasek # son Asbrasus # son Bruither # daughter Witheen
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	father = 26279 # Gelvesten
+	mother = 26274 # Heryth
+	1451.1.1 = { birth = yes }
+	1470.1.1 = { add_spouse = 26285 } # Janey
+	1541.1.1 = { death = yes }
+}
+26281 = { # 
+	name = "Orlel" # 
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	1431.1.1 = { birth = yes }
+	1501.1.1 = { death = yes }
+}
+26282 = { # 
+	name = "Lankelda" # 
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	father = 26281 # Orlel
+	mother = 26275 # Margueril Fevoros
+	1452.1.1 = { birth = yes }
+	1522.1.1 = { death = yes }
+}
+26283 = { # 
+	name = "Zelrauvyn" # 
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	1433.1.1 = { birth = yes }
+	1504.1.1 = { death = yes }
+}
+26284 = { # 
+	name = "Javiere" # 
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	father = 26283 # Zelrauvyn
+	mother = 26278 # Madelda Fevoros
+	1453.1.1 = { birth = yes }
+	1523.1.1 = { death = yes }
+}
+26285 = { # 
+	name = "Janey" # 
+	female = yes
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	1451.1.1 = { birth = yes }
+	1521.1.1 = { death = yes }
+}
+26286 = { # 
+	name = "Vasek" # 
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	father = 26280 # Helbaster Fevoros
+	mother = 26285 # Janey
+	1473.1.1 = { birth = yes }
+	1550.1.1 = { death = yes }
+}
+26287 = { # 
+	name = "Asbrasus" # 
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	father = 26280 # Helbaster Fevoros
+	mother = 26285 # Janey
+	1474.1.1 = { birth = yes }
+	1551.1.1 = { death = yes }
+}
+26288 = { # 
+	name = "Bruither" # 
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	father = 26280 # Helbaster Fevoros
+	mother = 26285 # Janey
+	1475.1.1 = { birth = yes }
+	1552.1.1 = { death = yes }
+}
+26289 = { # 
+	name = "Witheen" # 
+	dynasty = 12052	# Fevoros
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	father = 26280 # Helbaster Fevoros
+	mother = 26285 # Janey
+	1476.1.1 = { birth = yes }
+	1553.1.1 = { death = yes }
+}
+# Winter Laurelins Dermmen family of Scardale
+26290 = {
+	name = "Rober"
+	dynasty = 3950 # Dermmen
+	culture = dalesman
+	religion = triadic
+	trait = creature_human
+	father = 26135 # Khelvos
+	1365.1.1 = { birth = yes }
+	1420.1.1 = { death = yes }
+}
+# Winter Laurelins Rivenstave family of Harrowdale
+26291 = { #
+	name = "Herburgo" # wife Dhaunil child androgynous Arden # son openly dead_three faith Auguin
+	dynasty = 3915 # Rivenstave
+	culture = dalesman
+	religion = arcane
+	trait = creature_human
+	father = 26025 # Erethun Rivenstave
+	1358.1.1 = { birth = yes }
+	1378.1.1 = { add_spouse = 26292 } # Dhaunil 
+	1418.1.2 = { death = yes }
+}
+26292 = { # 
+	name = "Dhaunil" # 
+	female = yes
+	culture = dalesman
+	religion = arcane
+	trait = creature_human
+	1351.1.1 = { birth = yes }
+	1421.1.1 = { death = yes }
+}
+26293 = { #
+	name = "Arden" # no spouse # daughter Medalanna
+	dynasty = 3915 # Rivenstave
+	culture = dalesman
+	religion = arcane
+	trait = creature_human
+	father = 26291 # Herburgo Rivenstave
+	mother = 26292 # Dhaunil
+	1379.1.1 = { birth = yes }
+	1391.1.1 = { add_trait = androgynous }
+	1439.1.2 = { death = yes }
+}
+26294 = { #
+	name = "Auguin" # no spouse # child male androgynous Nalassar # child female androgynous Hollyn
+	dynasty = 3915 # Rivenstave
+	culture = dalesman
+	religion = dead_three
+	trait = creature_human
+	father = 26291 # Herburgo Rivenstave
+	mother = 26292 # Dhaunil
+	1381.1.1 = { birth = yes }
+	1441.1.2 = { death = yes }
+}
+26295 = { #
+	name = "Medalanna" # no spouse # son Malan Andable
+	dynasty = 3915 # Rivenstave
+	culture = dalesman
+	religion = arcane
+	trait = creature_human
+	female = yes
+	father = 26293 # Arden Rivenstave
+	1399.1.1 = { birth = yes }
+	1469.1.2 = { death = yes }
+}
+26296 = { #
+	name = "Nalassar" # no spouse or children
+	dynasty = 3915 # Rivenstave
+	culture = dalesman
+	religion = dead_three
+	trait = creature_human
+	father = 26294 # Auguin Rivenstave
+	1401.1.1 = { birth = yes }
+	1413.1.1 = { add_trait = androgynous }
+	1471.1.2 = { death = yes }
+}
+26297 = { #
+	name = "Hollyn" # no spouse no children
+	dynasty = 3915 # Rivenstave
+	culture = dalesman
+	religion = dead_three
+	female = yes
+	trait = creature_human
+	father = 26294 # Auguin Rivenstave
+	1402.1.1 = { birth = yes }
+	1414.1.1 = { add_trait = androgynous }
+	1472.1.2 = { death = yes }
+}
+26298 = { #
+	name = "Malan Andable" # wife Nansy # daughter Jalass # daughter Tansra # daughter Pheid
+	dynasty = 3915 # Rivenstave
+	culture = dalesman
+	religion = arcane
+	trait = creature_human
+	mother = 26295 # Medalanna Rivenstave
+	1419.1.1 = { birth = yes }
+	1438.1.1 = { 
+		religion = joyful
+		add_spouse = 26299 # Nansy
+	}
+	1489.1.2 = { death = yes }
+}
+26299 = { # 
+	name = "Nansy" # 
+	female = yes
+	culture = dalesman
+	religion = joyful
+	trait = creature_human
+	1419.1.1 = { birth = yes }
+	1437.1.1 = { add_trait = journeyman_cleric }
+	1489.1.1 = { death = yes }
+}
+26300 = { #
+	name = "Jalass" # husband Villias # child daughter androgynous bisexual Qualle
+	dynasty = 3915 # Rivenstave
+	culture = dalesman
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	father = 26298 # Malan Andable Rivenstave
+	mother = 26299 # Nansy
+	1439.1.1 = { birth = yes }
+	1458.1.1 = { add_matrilineal_spouse = 26303 } # Villias
+	1509.1.2 = { death = yes }
+}
+26301 = { #
+	name = "Tansra" # no spouse # no children
+	dynasty = 3915 # Rivenstave
+	culture = dalesman
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	father = 26298 # Malan Andable Rivenstave
+	mother = 26299 # Nansy
+	1440.1.1 = { birth = yes }
+	1510.1.2 = { death = yes }
+}
+26302 = { #
+	name = "Pheid" # no husband # son Landave
+	dynasty = 3915 # Rivenstave
+	culture = dalesman
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	father = 26298 # Malan Andable Rivenstave
+	mother = 26299 # Nansy
+	1441.1.1 = { birth = yes }
+	1511.1.2 = { death = yes }
+}
+26303 = { # 
+	name = "Villias" # 
+	culture = dalesman
+	religion = mercantile
+	trait = creature_human
+	1439.1.1 = { birth = yes }
+	1509.1.1 = { death = yes }
+}
+26304 = { #
+	name = "Qualle" #
+	dynasty = 3915 # Rivenstave
+	culture = dalesman
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	father = 26303 # Villias
+	mother = 26300 # Jalass
+	1459.1.1 = { birth = yes }
+	1471.1.1 = { 
+		add_trait = androgynous
+		add_trait = bisexual
+	}
+	1529.1.2 = { death = yes }
+}
+26305 = { #
+	name = "Landave" #
+	dynasty = 3915 # Rivenstave
+	culture = dalesman
+	religion = mercantile
+	trait = creature_human
+	mother = 26302 # Pheid
+	1461.1.1 = { birth = yes }
+	1531.1.2 = { death = yes }
+}
+26306 = { #
+	name = "Malan Strider" #
+	dynasty = 3915 # Rivenstave
+	culture = dalesman
+	religion = mercantile
+	trait = creature_human
+	mother = 26304 # Qualle
+	1479.1.1 = { birth = yes }
+	1549.1.2 = { death = yes }
+}
+# Winter Laurelins Goldenleaf family of Harrowdale
+26307 = { #
+	name = "Findrastra"
+	female = yes
+	dynasty = 3330 # Goldenleaf
+	culture = green_elf
+	religion = elven_pantheon
+	trait = pretty
+	mother = 26026
+	1166.10.12 = { birth = yes }
+	1186.10.12 = { immortal_age = 20 }
+	1746.12.23 = { death = yes }
+}
+# Winter Laurelins Treskeden family of Harrowdale
+26308 = {	#
+	name = "Helena Longarrow" # maybe convert longarrow to nickname # son named Kaster # no husband
+	female = yes
+	dynasty = 3916 # Treskeden
+	culture = dalesman
+	religion = mercantile
+	mother = 26028
+	trait = creature_human
+	1350.1.1 = { birth = yes }
+	1366.1.1 = { 
+		add_trait = trained_ranger
+		give_nickname = nick_longarrow
+	}
+	1420.1.1 = { death = yes }
+}
+26309 = {	#
+	name = "Kaster Longarrow" # daughter Lorraine # originally named Loren but changed her name and transitioned via magic # also has a son Sorgan
+	dynasty = 3916 # Treskeden
+	culture = dalesman
+	religion = mercantile
+	mother = 26308 # Helena Longarrow Treskeden
+	trait = creature_human
+	1370.1.1 = { birth = yes }
+	1376.1.1 = {
+		add_trait = ranger 
+		give_nickname = nick_longarrow # takes after his mother
+
+	} # 1400 expert ranger # 1425 master ranger
+	1377.12.1 = { 
+		remove_trait = ranger
+		add_trait = trained_ranger
+	}
+	1380.1.1 = { 
+		remove_trait = trained_ranger
+		add_trait = journeyman_ranger
+	}
+	1400.1.1 = { 
+		remove_trait = journeyman_ranger
+		add_trait = expert_ranger
+	}
+	1425.1.1 = { 
+		remove_trait = expert_ranger
+		add_trait = master_ranger
+	}
+	1440.1.1 = { death = yes }
+}
+26310 = {	#
+	name = "Loren" # no husband # daughter Adelaïda # androgynous AMAB transitioning infertile child deadname Amicus real name Gloria # daughter Alichanna # androgynous AFAB non transitioning celibate child deadname Aunra real name Aver 
+	dynasty = 3916 # Treskeden
+	culture = dalesman # androgynous AFAB transitioning fertile child dead name Alusail real name Primrose # daughter Amarue
+	religion = mercantile
+	father = 26309 # Kaster Longarrow Treskeden
+	trait = creature_human
+	1390.1.1 = { birth = yes }
+	1400.1.1 = { 
+		name = "Lorraine"
+		add_trait = androgynous
+	}
+	1415.1.1 = {
+		effect_even_if_dead = {
+			set_gender = female
+		}
+		remove_trait = androgynous
+	}
+	1460.1.1 = { death = yes }
+}
+26311 = {	#
+	name = "Sorgan" # androgynous wife # son #
+	dynasty = 3916 # Treskeden
+	culture = dalesman
+	religion = mercantile
+	father = 26309 # Kaster Longarrow Treskeden
+	trait = creature_human
+	1391.1.1 = { birth = yes }
+	1461.1.1 = { death = yes }
+}
+26312 = {	#
+	name = "Adelaïda" # husband and son
+	dynasty = 3916 # Treskeden
+	culture = dalesman
+	religion = mercantile
+	mother = 26310 # Lorraine Treskeden
+	female = yes
+	trait = creature_human
+	1416.1.1 = { birth = yes }
+	1487.1.1 = { death = yes }
+}
+26313 = {	#
+	name = "Amicus" #
+	dynasty = 3916 # Treskeden
+	culture = dalesman
+	religion = mercantile
+	mother = 26310 # Lorraine Treskeden
+	trait = creature_human
+	1418.1.1 = { birth = yes }
+	1437.1.1 = {
+		effect_even_if_dead = {
+			set_gender = female
+		}
+		name = "Gloria"
+		fertility = -10
+		add_trait = androgynous
+	}
+	1488.1.1 = { death = yes }
+}
+26314 = {	#
+	name = "Alichanna" #
+	dynasty = 3916 # Treskeden
+	culture = dalesman
+	religion = mercantile
+	mother = 26310 # Lorraine Treskeden
+	female = yes
+	trait = creature_human
+	trait = twin
+	1419.1.1 = { birth = yes }
+	1492.1.1 = { death = yes }
+}
+26316 = {	#
+	name = "Aucie" #
+	dynasty = 3916 # Treskeden
+	culture = dalesman
+	religion = mercantile
+	mother = 26310 # Lorraine Treskeden
+	female = yes
+	trait = creature_human
+	trait = twin
+	1419.1.1 = { birth = yes }
+	1492.1.1 = { death = yes }
+}
+26315 = {	#
+	name = "Aunra" #
+	dynasty = 3916 # Treskeden
+	culture = dalesman
+	religion = mercantile
+	mother = 26310 # Lorraine Treskeden
+	female = yes
+	trait = creature_human
+	1426.1.1 = { birth = yes }
+	1433.1.1 = { 
+		add_trait = androgynous
+		add_trait = celibate
+		name = "Aver"
+	}
+	1487.1.1 = { death = yes }
+}
+26317 = {	#
+	name = "Alusail" #
+	dynasty = 3916 # Treskeden
+	culture = dalesman
+	religion = mercantile
+	mother = 26310 # Lorraine Treskeden
+	female = yes
+	trait = creature_human
+	1427.1.1 = { birth = yes }
+	1443.1.1 = { 
+		add_trait = androgynous
+		name = "Primrose"
+		effect_even_if_dead = {
+			set_gender = male
+		}
+	}
+	1501.1.1 = { death = yes }
+}
+26318 = {	#
+	name = "Amarue" # the small
+	dynasty = 3916 # Treskeden
+	culture = dalesman
+	religion = mercantile
+	mother = 26310 # Lorraine Treskeden
+	female = yes
+	trait = creature_human
+	1428.1.1 = { birth = yes }
+	1429.1.1 = {
+		give_nickname = nick_the_small
+	}
+	1508.1.1 = { death = yes }
+}
+# Sorgan 26311 androgynous wife and son
+# Adelaida 26312 husband Erdred and son Andable
+# Alichanna 26314 daughter
+# Primrose 26317 wife after 1443 and son Narndal
+26319 = {	#
+	name = "Amarue" # the tall
+	culture = dalesman
+	religion = mercantile
+	female = yes
+	trait = creature_human
+	1391.1.1 = { birth = yes }
+	1429.1.1 = { 
+		add_trait = androgynous
+		add_spouse = 26311 
+		give_nickname = nick_the_tall
+	}
+	1461.1.1 = { death = yes }
+}
+26320 = {	#
+	name = "Shados"
+	culture = dalesman
+	religion = mercantile
+	dynasty = 3916 # Treskeden
+	father = 26311 # Sorgan Treskeden
+	mother = 26319 # Amarue the Tall
+	trait = creature_human
+	1430.1.1 = { birth = yes }
+	1499.1.1 = { death = yes }
+}
+26321 = {	#
+	name = "Erdred" #
+	culture = dalesman
+	religion = mercantile
+	trait = creature_human
+	1416.1.1 = { birth = yes }
+	1436.1.1 = { 
+		add_spouse = 26312 # Adelaida
+	}
+	1487.1.1 = { death = yes }
+}
+26322 = {	#
+	name = "Andable"
+	culture = dalesman
+	religion = mercantile
+	dynasty = 3916 # Treskeden
+	mother = 26312 # Adelaïda Treskeden
+	father = 26321 # Erdred
+	trait = creature_human
+	1438.1.1 = { birth = yes }
+	1510.1.1 = { death = yes }
+}
+26323 = {	#
+	name = "Jalia Alichannette"
+	culture = dalesman
+	religion = mercantile
+	dynasty = 3916 # Treskeden
+	mother = 26314 # Alichanna Treskeden
+	female = yes
+	trait = creature_human
+	1438.1.1 = { birth = yes }
+	1510.1.1 = { death = yes }
+}
+26324 = {	#
+	name = "Atheldreda" #
+	culture = sembite
+	religion = mercantile
+	trait = creature_human
+	female = yes
+	1424.1.1 = { birth = yes }
+	1444.1.1 = { 
+		add_spouse = 26317 # Primrose
+	}
+	1487.1.1 = { death = yes }
+}
+26325 = {	#
+	name = "Narndal"
+	culture = dalesman
+	religion = mercantile
+	dynasty = 3916 # Treskeden
+	mother = 26324 # Atheldreda
+	father = 26317 # Primrose
+	trait = creature_human
+	1445.1.1 = { birth = yes }
+	1510.1.1 = { death = yes }
+}
+# Winter Laurelins Grimwarrow family of Harrowdale
+26326 = { #
+	name = "Bondar" # daughter who has a son Illum
+	dynasty = 3914 # Grimwarrow
+	culture = dalesman
+	trait = creature_human
+	religion = triadic
+	father = 26024 # Alosius
+	1335.1.1 = { birth = yes }
+	1395.1.1 = { death = yes }
+}
+26327 = { #
+	name = "Lureena" # has a son Illum
+	dynasty = 3914 # Grimwarrow
+	female = yes
+	trait = creature_human
+	culture = dalesman
+	religion = triadic
+	father = 26326 # Bondar
+	1355.1.1 = { birth = yes }
+	1415.1.1 = { death = yes }
+}
+26328 = { #
+	name = "Illum" # daughter Katherie # daughter Terey # daughter Cybriane
+	dynasty = 3914 # Grimwarrow
+	trait = creature_human
+	culture = dalesman
+	religion = triadic
+	mother = 26327 # Lureena Grimwarrow
+	1375.1.1 = { birth = yes }
+	1435.1.1 = { death = yes }
+}
+26329 = { #
+	name = "Katherie" # husband Zalando # daughter Bryne
+	dynasty = 3914 # Grimwarrow
+	trait = creature_human
+	culture = dalesman
+	religion = triadic
+	father = 26328 # Illum
+	female = yes
+	1395.1.1 = { birth = yes }
+	1414.1.1 = { add_matrilineal_spouse = 26332 }
+	1465.1.1 = { death = yes }
+}
+26330 = { #
+	name = "Terey" # husband Tarran # son Tarrandave who is natural
+	dynasty = 3914 # Grimwarrow
+	culture = dalesman
+	religion = triadic
+	trait = creature_human
+	father = 26328 # Illum Grimwarrow
+	female = yes
+	1396.1.1 = { birth = yes }
+	1416.1.1 = { add_matrilineal_spouse = 26334 } # Tarran
+	1466.1.1 = { death = yes }
+}
+26331 = { #
+	name = "Cybriane" # husband Mourngruin who is a gnome # human daughter Meryth and three gnome triplet sons # represented with twin trait # Arrey # Barrey # Carrey
+	dynasty = 3914 # Grimwarrow
+	trait = creature_human
+	culture = dalesman
+	religion = triadic
+	father = 26328 # Illum Grimwarrow
+	female = yes
+	1397.1.1 = { birth = yes }
+	1417.1.1 = { add_matrilineal_spouse = 26336 } # Mourngruin
+	1467.1.1 = { death = yes }
+}
+26332 = { #
+	name = "Zalando" # 
+	trait = creature_human
+	culture = dalesman
+	religion = triadic
+	1395.1.1 = { birth = yes }
+	1465.1.1 = { death = yes }
+}
+26333 = { #
+	name = "Bryne" # 
+	dynasty = 3914 # Grimwarrow
+	trait = creature_human
+	culture = dalesman
+	religion = triadic
+	father = 26332 # Zalando
+	mother = 26329 # Katherie Grimwarrow
+	female = yes
+	1415.1.1 = { birth = yes }
+	1485.1.1 = { death = yes }
+}
+26334 = { #
+	name = "Tarran" # 
+	trait = creature_human
+	culture = dalesman
+	religion = natural
+	1396.1.1 = { birth = yes }
+	1466.1.1 = { death = yes }
+}
+26335 = { #
+	name = "Tarrandave" # 
+	dynasty = 3914 # Grimwarrow
+	trait = creature_human
+	culture = dalesman
+	religion = natural
+	father = 26334 # Tarran
+	mother = 26330 # Terey Grimwarrow
+	1417.1.1 = { birth = yes }
+	1487.1.1 = { death = yes }
+}
+26336 = { #
+	name = "Mourngruin" # 
+	trait = creature_gnome
+	culture = gnome
+	religion = gnome_pantheon
+	1300.1.1 = { birth = yes }
+	1600.1.1 = { death = yes }
+}
+26337 = { #
+	name = "Meryth" # 
+	dynasty = 3914 # Grimwarrow
+	trait = creature_human
+	culture = dalesman
+	religion = triadic
+	father = 26336 # Mourngruin
+	mother = 26331 # Cybriane Grimwarrow
+	female = yes
+	1418.1.1 = { birth = yes }
+	1489.1.1 = { death = yes }
+}
+26338 = { #
+	name = "Arrey" # 
+	dynasty = 3914 # Grimwarrow
+	father = 26336 # Mourngruin
+	mother = 26331 # Cybriane Grimwarrow
+	trait = creature_gnome
+	trait = twin # actually triplet
+	culture = gnome
+	religion = gnome_pantheon
+	1419.1.1 = { birth = yes }
+	1600.1.1 = { death = yes }
+}
+26339 = { #
+	name = "Barrey" # 
+	dynasty = 3914 # Grimwarrow
+	father = 26336 # Mourngruin
+	mother = 26331 # Cybriane Grimwarrow
+	trait = creature_gnome
+	trait = twin # actually triplet
+	culture = gnome
+	religion = gnome_pantheon
+	1419.1.1 = { birth = yes }
+	1600.1.1 = { death = yes }
+}
+26340 = { #
+	name = "Carrey" # 
+	dynasty = 3914 # Grimwarrow
+	father = 26336 # Mourngruin
+	mother = 26331 # Cybriane Grimwarrow
+	trait = creature_gnome
+	trait = twin # actually triplet
+	culture = gnome
+	religion = gnome_pantheon
+	1419.1.1 = { birth = yes }
+	1600.1.1 = { death = yes }
+}
+# 1459 Azalar Falconhand resigns as Leader of Shadowdale
+# 1461 Azalar Falconhand 26054 dies
+# Winter Laurelins Ulphor family of Shadowdale
+26341 = { #
+	name = "Addee" # husband Aence and daughter Ilryne
+	dynasty = 12053 # Ulphor
+	trait = creature_human
+	culture = dalesman
+	religion = natural
+	female = yes
+	1419.1.1 = { birth = yes }
+	1438.1.1 = { add_matrilineal_spouse = 26342 } # Aence
+	1489.1.1 = { death = yes }
+}
+26342 = { #
+	name = "Aence" # 
+	trait = creature_human
+	culture = dalesman
+	religion = triadic
+	1419.1.1 = { birth = yes }
+	1489.1.1 = { death = yes }
+}
+26343 = { #
+	name = "Ilryne" # husband Baernos # daughter Erine # son Gylias
+	dynasty = 12053 # Ulphor
+	trait = creature_human
+	culture = dalesman
+	religion = natural
+	father = 26342 # Aence
+	mother = 26341 # Addee Ulphor
+	female = yes
+	1439.1.1 = { birth = yes }
+	1458.1.1 = { add_matrilineal_spouse = 26344 } # Baernos
+	1509.1.1 = { death = yes }
+}
+26344 = { #
+	name = "Baernos" # 
+	trait = creature_human
+	culture = dalesman
+	religion = inventive
+	1439.1.1 = { birth = yes }
+	1509.1.1 = { death = yes }
+}
+26345 = { #
+	name = "Erine" #
+	dynasty = 12053 # Ulphor
+	trait = creature_human
+	culture = dalesman
+	religion = inventive
+	father = 26344 # Baernos
+	mother = 26343 # Ilryne Ulphor
+	female = yes
+	1459.1.1 = { birth = yes }
+	1529.1.1 = { death = yes }
+}
+26346 = { #
+	name = "Gylias" # wife Eressair # daughter Filfaera # daughter Ennel # daughter Shaunild # daughter Baeril # son Gamos # son Erdyntar # son Rosonser
+	dynasty = 12053 # Ulphor
+	trait = creature_human
+	culture = dalesman
+	religion = triadic
+	father = 26344 # Baernos
+	mother = 26343 # Ilryne Ulphor
+	1460.1.1 = { birth = yes }
+	1478.1.1 = { add_spouse = 26347 } # Eressair
+	1530.1.1 = { death = yes }
+}
+26347 = { #
+	name = "Eressair" # 
+	trait = creature_human
+	culture = dalesman
+	religion = joyful
+	female = yes
+	1460.1.1 = { birth = yes }
+	1530.1.1 = { death = yes }
+}
+26348 = { #
+	name = "Filfaera" #
+	dynasty = 12053 # Ulphor
+	trait = creature_human
+	culture = dalesman
+	religion = triadic
+	father = 26346 # Gylias Ulphor
+	mother = 26347 # Eressair
+	female = yes
+	1479.1.1 = { birth = yes }
+	1559.1.1 = { death = yes }
+}
+26349 = { #
+	name = "Ennel" #
+	dynasty = 12053 # Ulphor
+	trait = creature_human
+	culture = dalesman
+	religion = arcane
+	father = 26346 # Gylias Ulphor
+	mother = 26347 # Eressair
+	female = yes
+	1480.1.1 = { birth = yes }
+	1560.1.1 = { death = yes }
+}
+26350 = { #
+	name = "Shaunild" #
+	dynasty = 12053 # Ulphor
+	trait = creature_human
+	culture = dalesman
+	religion = mercantile
+	father = 26346 # Gylias Ulphor
+	mother = 26347 # Eressair
+	female = yes
+	1481.1.1 = { birth = yes }
+	1559.1.1 = { death = yes }
+}
+26351 = { #
+	name = "Baeril" #
+	dynasty = 12053 # Ulphor
+	trait = creature_human
+	culture = dalesman
+	religion = inventive
+	father = 26346 # Gylias Ulphor
+	mother = 26347 # Eressair
+	female = yes
+	1482.1.1 = { birth = yes }
+	1560.1.1 = { death = yes }
+}
+26352 = { #
+	name = "Gamos" #
+	dynasty = 12053 # Ulphor
+	trait = creature_human
+	culture = dalesman
+	religion = joyful
+	father = 26346 # Gylias Ulphor
+	mother = 26347 # Eressair
+	1483.1.1 = { birth = yes }
+	1561.1.1 = { death = yes }
+}
+26353 = { #
+	name = "Erdyntar" #
+	dynasty = 12053 # Ulphor
+	trait = creature_human
+	culture = dalesman
+	religion = solar
+	father = 26346 # Gylias Ulphor
+	mother = 26347 # Eressair
+	1484.1.1 = { birth = yes }
+	1562.1.1 = { death = yes }
+}
+26354 = { #
+	name = "Rosonser" #
+	dynasty = 12053 # Ulphor
+	trait = creature_human
+	culture = dalesman
+	religion = natural
+	father = 26346 # Gylias Ulphor
+	mother = 26347 # Eressair
+	1485.1.1 = { birth = yes }
+	1563.1.1 = { death = yes }
 }

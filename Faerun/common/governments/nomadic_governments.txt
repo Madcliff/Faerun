@@ -25,8 +25,9 @@ nomadic_governments = {
 		frame_suffix = "_nomadic"
 		title_prefix = "nomadic_"
 		potential = {
+			NOT = { tier = BARON }
 			NOT = { is_government_potential = confucian_bureaucracy }
-			NOT = { is_government_potential = fiendish_government }
+			#NOT = { is_government_potential = fiendish_government }
 			NOT = { is_government_potential = yikaria_government }
 			NOT = {
 				AND = {
@@ -63,7 +64,7 @@ nomadic_governments = {
 		can_build_hospitals = no
 		can_build_temple = yes
 		can_demand_religious_conversion = no
-		marriage_ignore_religion = yes								
+		marriage_ignore_religion = no								
 		
 		vassal_limit = -10
 		commander_limit = -4

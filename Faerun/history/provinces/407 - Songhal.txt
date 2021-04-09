@@ -4,10 +4,10 @@
 title = c_songhal
 
 # Settlements
-max_settlements = 3
+max_settlements = 4
 
 b_songhal = castle
-b_filur = temple
+b_filfur = temple
 #b_catun = castle
 #b_mordeng = city
 #b_thanto = temple
@@ -15,6 +15,6 @@ b_filur = temple
 
 # Misc
 culture = impilturan
-religion = good_human_pantheon
+religion = triadic
 
 #History

@@ -203,7 +203,7 @@ character_event = { # Great warrior character arrives
 			opinion = {
 				modifier = opinion_loyal_servant
 				who = ROOT
-				years = 100
+				years = 10
 			}
 		}
 	}
@@ -321,7 +321,7 @@ character_event = { # Great warrior character arrives
 			opinion = {
 				modifier = opinion_loyal_servant
 				who = ROOT
-				years = 100
+				years = 10
 			}
 		}
 	}
@@ -332,7 +332,7 @@ character_event = { # Great warrior character arrives
 			opinion = {
 				modifier = opinion_loyal_servant
 				who = ROOT
-				years = 100
+				years = 10
 			}
 		}
 	}
@@ -393,6 +393,24 @@ character_event = { # Sympathy for founder group
 							}
 						}
 					}
+					AND = {
+						religion_group = wild_human_pantheon_group
+						ROOT = {
+							NOR = {
+								religion_group = wild_human_pantheon_group
+								trait = sympathy_wild_human_pantheon_group
+							}
+						}
+					}
+					AND = {
+						religion_group = evil_human_pantheon_group
+						ROOT = {
+							NOR = {
+								religion_group = evil_human_pantheon_group
+								trait = sympathy_evil_human_pantheon_group
+							}
+						}
+					}
 				}
 			}
 		}
@@ -422,6 +440,24 @@ character_event = { # Sympathy for founder group
 								NOR = {
 									religion_group = good_human_pantheon_group
 									trait = sympathy_good_human_pantheon_group
+								}
+							}
+						}
+						AND = {
+							religion_group = wild_human_pantheon_group
+							ROOT = {
+								NOR = {
+									religion_group = wild_human_pantheon_group
+									trait = sympathy_wild_human_pantheon_group
+								}
+							}
+						}
+						AND = {
+							religion_group = evil_human_pantheon_group
+							ROOT = {
+								NOR = {
+									religion_group = evil_human_pantheon_group
+									trait = sympathy_evil_human_pantheon_group
 								}
 							}
 						}
@@ -478,6 +514,22 @@ character_event = { # Sympathy for founder group
 				}
 			}
 			add_trait = sympathy_good_human_pantheon_group
+		}
+		else_if = {
+			limit = {
+				event_target:target_bloodline_founder = {
+					religion_group = wild_human_pantheon_group
+				}
+			}
+			add_trait = sympathy_wild_human_pantheon_group
+		}
+		else_if = {
+			limit = {
+				event_target:target_bloodline_founder = {
+					religion_group = evil_human_pantheon_group
+				}
+			}
+			add_trait = sympathy_evil_human_pantheon_group
 		}
 		
 		ai_chance = {
@@ -6871,7 +6923,7 @@ character_event = { # Knight character arrives
 			opinion = {
 				modifier = opinion_loyal_servant
 				who = ROOT
-				years = 100
+				years = 10
 			}
 		}
 	}
@@ -6989,7 +7041,7 @@ character_event = { # Knight character arrives
 			opinion = {
 				modifier = opinion_loyal_servant
 				who = ROOT
-				years = 100
+				years = 10
 			}
 		}
 	}
@@ -7000,7 +7052,7 @@ character_event = { # Knight character arrives
 			opinion = {
 				modifier = opinion_loyal_servant
 				who = ROOT
-				years = 100
+				years = 10
 			}
 		}
 	}
@@ -7044,7 +7096,7 @@ character_event = { # Bard character arrives
 			opinion = {
 				modifier = opinion_loyal_servant
 				who = ROOT
-				years = 100
+				years = 10
 			}
 		}
 	}
@@ -10939,7 +10991,7 @@ character_event = { # Bard character arrives
 			opinion = {
 				modifier = opinion_loyal_servant
 				who = ROOT
-				years = 100
+				years = 10
 			}
 		}
 	}
@@ -10983,7 +11035,7 @@ character_event = { # Scholar character arrives
 			opinion = {
 				modifier = opinion_loyal_servant
 				who = ROOT
-				years = 100
+				years = 10
 			}
 		}
 	}
@@ -11038,34 +11090,7 @@ character_event = { # Mystic character arrives
 			remove_trait = trusting
 			remove_trait = kind
 			remove_trait = humble
-			if = {
-				limit = {
-					ROOT = {
-						OR = {
-							religion_group = christian
-							religion_group = muslim
-						}
-					}
-				}
-				become_heretic = yes
-				set_character_flag = ai_flag_refuse_conversion
-			}
-			else = {
-				random_list = {
-					25 = {
-						religion = zun_pagan
-					}
-					25 = {
-						religion = baltic_pagan
-					}
-					25 = {
-						religion = slavic_pagan
-					}
-					25 = {
-					}
-				}
-				set_character_flag = ai_flag_refuse_conversion
-			}
+			set_character_flag = ai_flag_refuse_conversion
 		}
 	}
 	
@@ -11076,7 +11101,7 @@ character_event = { # Mystic character arrives
 			opinion = {
 				modifier = opinion_loyal_servant
 				who = ROOT
-				years = 100
+				years = 10
 			}
 		}
 	}

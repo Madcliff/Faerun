@@ -1,0 +1,13 @@
+# County Title
+title = c_elne
+
+# Settlements
+max_settlements = 3
+
+b_elne = tribal
+
+# Misc
+culture = naga
+religion = ten_thousand_gods
+
+#History

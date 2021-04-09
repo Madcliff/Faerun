@@ -3,10 +3,10 @@
 ##Naga characters and their vassals
 
 57001 = {
-	name = Oreme 
+	name = Oreme
 	dynasty = 6713 # Oreme
 	culture = bone_naga
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_sarrukh
 	trait = lich
 	trait = mastermind_theologian
@@ -16,17 +16,9 @@
 	1.1.1 = { birth = yes } #earlier than this
 	4.1.1 = {
 		culture = sarrukh
-		effect = {
-			set_character_flag = undead_court
-		}
 	}
 	16.1.1 = {
-		effect = {
-			add_character_modifier = {
-				name = wiz_necromancy
-				duration = -1
-			}
-		}
+		add_trait = wiz_necromancy
 	}
 	31.1.1 = { immortal_age = 30 }
 	1600.1.1 = { death = yes }
@@ -35,14 +27,20 @@
 	name = Ebarnaje
 	dynasty = 6711 # Terpenzi
 	culture = naga
-	religion = abyssal_cult # Ebarnaje is LE, but so many of its subjects are CE, it makes sense to set it this way
+	religion = scale_cult
 	trait = creature_naga
 	trait = trained_sorcerer
+	trait = origin_draconic
 	trait = trained_fighter
 	trait = intricate_webweaver
 	trait = ambitious
 	father = 57025
 	1150.1.1 = { birth = yes }
+	1160.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1180.1.1 = { immortal_age = 30 }
 	1450.1.1 = { death = yes }
 }
@@ -50,7 +48,7 @@
 	name = Amiskal
 	dynasty = 8203 # Kalrani
 	culture = lizardfolk
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_lizardfolk
 	trait = master_fighter
 	trait = tough_soldier
@@ -63,7 +61,7 @@
 	name = Kront
 	dynasty = 8204 # Chelimbri
 	culture = lizardfolk
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_lizardfolk
 	trait = expert_barbarian
 	trait = misguided_warrior
@@ -74,15 +72,19 @@
 57005 = {
 	name = Ssenstyr
 	dynasty = 6714
-	culture = yuanti
-	religion = abyssal_cult
+	culture = malison
+	religion = scale_cult
 	trait = creature_malison
 	trait = master_sorcerer
+	trait = origin_shadow
 	trait = fortune_builder
 	1318.6.1 = {
-		birth = yes 
+		birth = yes
+		culture = yuanti
+	}
+	1328.1.1 = {
 		effect = {
-			set_graphical_culture = malison
+			set_character_flag = sorc_originrevealed
 		}
 	}
 	1400.1.1 = { death = yes }
@@ -94,13 +96,13 @@
 	name = Shaulk # invented name - no first name is given for the priestly custodians of Sseth's coming rule in Serpent Kingdoms
 	dynasty = 6710 # Se'sehen
 	culture = yuanti
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_malison
 	trait = renowned_cleric
 	trait = mastermind_theologian
 	trait = zealous
 	1307.9.21 = {
-		birth = yes 
+		birth = yes
 		effect = {
 			set_graphical_culture = malison
 		}
@@ -111,7 +113,7 @@
 	name = Istasfis
 	dynasty = 6715
 	culture = yuanti
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_pureblood
 	trait = trained_fighter
 	trait = fortune_builder
@@ -123,7 +125,7 @@
 	name = Zelsstasz
 	dynasty = 6719
 	culture = yuanti
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_pureblood
 	trait = trained_shadow
 	trait = charismatic_negotiator
@@ -134,7 +136,7 @@
 	name = Sthulkesth
 	dynasty = 6720
 	culture = yuanti
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_pureblood
 	trait = expert_warlock
 	trait = fortune_builder
@@ -170,13 +172,13 @@
 	name = "S'vess" # invented name
 	dynasty = 6723 # Sseradess
 	culture = yuanti
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_pureblood
 	trait = master_fighter
 	trait = skilled_tactician
 	trait = paranoid
 	1319.1.1 = {
-		birth = yes 
+		birth = yes
 	}
 	1400.1.1 = { death = yes }
 }
@@ -185,13 +187,13 @@
 	female = yes
 	dynasty = 6717 # Jennestas
 	culture = yuanti
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_pureblood
 	trait = expert_warlock
 	trait = flamboyant_schemer
 	trait = quick
 	1327.1.1 = {
-		birth = yes 
+		birth = yes
 	}
 	1400.1.1 = { death = yes }
 }
@@ -199,13 +201,13 @@
 	name = "V'th'uuats" # invented name
 	dynasty = 6716 # Eselemas
 	culture = yuanti
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_pureblood
 	trait = expert_shadow
 	trait = charismatic_negotiator
 	trait = shrewd
 	1322.11.1 = {
-		birth = yes 
+		birth = yes
 	}
 	1400.1.1 = { death = yes }
 }
@@ -215,20 +217,26 @@
 	name = Terpenzi
 	dynasty = 6711 # Terpenzi
 	culture = naga
-	religion = abyssal_cult # Ebarnaje is LE, but so many of its subjects are CE, it makes sense to set it this way
+	religion = scale_cult
 	trait = creature_naga
 	trait = master_sorcerer
+	trait = origin_draconic
 	trait = expert_fighter
 	trait = elusive_shadow
 	trait = ambitious
 	3.1.1 = { birth = yes }
+	13.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	19.1.1 = {
 		create_bloodline = {
 			type = terpenzi_bloodline
 		}
 	}
 	33.1.1 = { immortal_age = 30 }
-	90.1.1 = { 
+	90.1.1 = {
 		death = {
 			death_reason = death_battle
 			killer = 3001
@@ -241,7 +249,7 @@
 	dynasty = 6711 # Terpenzi
 	father = 57015
 	culture = naga
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_naga
 	trait = expert_wizard
 	trait = craven
@@ -255,7 +263,7 @@
 	dynasty = 6711 # Terpenzi
 	father = 57015
 	culture = naga
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_naga
 	trait = master_wizard
 	trait = cruel
@@ -269,7 +277,7 @@
 	dynasty = 6711 # Terpenzi
 	father = 57017
 	culture = naga
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_naga
 	trait = expert_warlock
 	trait = intricate_webweaver
@@ -282,13 +290,19 @@
 	dynasty = 6711 # Terpenzi
 	father = 57017
 	culture = naga
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_naga
 	trait = trained_sorcerer
+	trait = origin_draconic
 	trait = skilled_tactician
 	357.1.1 = { birth = yes }
+	367.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	387.1.1 = { immortal_age = 30 }
-	523.1.1 = { 
+	523.1.1 = {
 		death = {
 			death_reason = death_duel
 			killer = 57018 # Nejizar
@@ -299,7 +313,7 @@
 	name = "Hissho"
 	dynasty = 6727 # Mossclaw
 	culture = lizardfolk
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_naga
 	410.1.1 = { birth = yes }
 	480.1.1 = { death = yes }
@@ -308,7 +322,7 @@
 	name = "Kissthe"
 	dynasty = 6728 # Verrtho
 	culture = yuanti
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_abomination
 	420.1.1 = { birth = yes }
 	490.1.1 = { death = yes }
@@ -317,7 +331,7 @@
 	name = "Filgith"
 	dynasty = 6728 # Verrtho
 	culture = yuanti
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_malison
 	470.1.1 = { birth = yes }
 	560.1.1 = { death = yes }
@@ -326,7 +340,7 @@
 	name = "Ohmas"
 	dynasty = 6711 # Terpenzi
 	culture = naga
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_naga
 	father = 57018
 	525.1.1 = { birth = yes }
@@ -337,7 +351,7 @@
 	name = "Lod"
 	dynasty = 6711 # Terpenzi
 	culture = naga
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_naga
 	father = 57023
 	700.1.1 = { birth = yes }
@@ -348,10 +362,279 @@
 	name = "Ekoz"
 	dynasty = 6711 # Terpenzi
 	culture = naga
-	religion = abyssal_cult
+	religion = scale_cult
 	trait = creature_naga
 	father = 57024
 	950.1.1 = { birth = yes }
 	980.1.1 = { immortal_age = 30 }
 	1295.1.1 = { death = yes }
+}
+57026 = {
+	name = "Hass"
+	dynasty = 8204 # Chelimbri
+	culture = lizardfolk
+	religion = scale_cult
+	trait = creature_lizardfolk
+	father = 57004
+	1380.1.1 = {
+		birth = yes
+	}
+	1480.1.1 = {
+		death = yes
+	}
+}
+57027 = {
+	name = "Kasirth"
+	female = yes
+	dynasty = 8204 # Chelimbri
+	culture = lizardfolk
+	religion = scale_cult
+	trait = creature_lizardfolk
+	father = 57026
+	1460.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+57028 = {
+	name = "Kazoth"
+	dynasty = 8203 # Kalrani
+	culture = lizardfolk
+	religion = scale_cult
+	trait = creature_lizardfolk
+	father = 57003
+	1380.1.1 = {
+		birth = yes
+	}
+	1470.1.1 = {
+		death = yes
+	}
+}
+57029 = {
+	name = "Kizrak"
+	female = yes
+	dynasty = 8203 # Kalrani
+	culture = lizardfolk
+	religion = scale_cult
+	trait = creature_lizardfolk
+	father = 57028
+	1450.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+57030 = {
+	name = "Fass"
+	dynasty = 6714
+	culture = abomination
+	religion = scale_cult
+	trait = creature_abomination
+	father = 57005
+	1380.1.1 = {
+		birth = yes
+		culture = yuanti
+	}
+	1470.1.1 = {
+		death = yes
+	}
+}
+57031 = {
+	name = "Navera"
+	female = yes
+	dynasty = 6714
+	culture = malison
+	religion = scale_cult
+	trait = creature_malison
+	father = 57030
+	1450.1.1 = {
+		birth = yes
+		culture = yuanti
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+57032 = {
+	name = "Jarant"
+	dynasty = 6711 # Terpenzi
+	culture = naga
+	religion = scale_cult
+	trait = creature_naga
+	trait = trained_warlock
+	father = 57002
+	1310.1.1 = {
+		birth = yes
+	}
+	1340.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+57033 = {
+	name = "Ilgriss"
+	female = yes
+	dynasty = 6717 # Jennestas
+	culture = yuanti
+	religion = scale_cult
+	trait = creature_pureblood
+	mother = 57013
+	1380.1.1 = {
+		birth = yes
+	}
+	1470.1.1 = { death = yes }
+}
+57034 = {
+	name = "Kase"
+	dynasty = 6717 # Jennestas
+	culture = yuanti
+	religion = scale_cult
+	trait = creature_pureblood
+	mother = 57033
+	1450.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = { death = yes }
+}
+57035 = {
+	name = "S'than"
+	dynasty = 6723 # Sseradess
+	culture = malison
+	religion = scale_cult
+	trait = creature_malison
+	father = 57012
+	1380.1.1 = {
+		birth = yes
+		culture = yuanti
+	}
+	1470.1.1 = { death = yes }
+}
+57036 = {
+	name = "Kash"
+	dynasty = 6723 # Sseradess
+	culture = malison
+	religion = scale_cult
+	trait = creature_malison
+	father = 57035
+	1440.1.1 = {
+		birth = yes
+		culture = yuanti
+	}
+	1500.1.1 = { death = yes }
+}
+57037 = {
+	name = Itha
+	female = yes
+	dynasty = 6710 # Se'sehen
+	culture = abomination
+	religion = scale_cult
+	trait = creature_abomination
+	father = 57006
+	1380.1.1 = {
+		birth = yes
+		culture = yuanti
+	}
+	1470.1.1 = { death = yes }
+}
+57038 = {
+	name = "Vaati"
+	dynasty = 6716 # Eselemas
+	culture = malison
+	religion = scale_cult
+	trait = creature_malison
+	father = 57014
+	1380.11.1 = {
+		birth = yes
+		culture = yuanti
+	}
+	1480.1.1 = { death = yes }
+}
+57039 = {
+	name = "Uliri"
+	female = yes
+	dynasty = 6716 # Eselemas
+	culture = malison
+	religion = scale_cult
+	trait = creature_malison
+	father = 57038
+	1460.11.1 = {
+		birth = yes
+		culture = yuanti
+	}
+	1500.1.1 = { death = yes }
+}
+57040 = {
+	name = "Kal"
+	dynasty = 6715
+	culture = yuanti
+	religion = scale_cult
+	trait = creature_pureblood
+	father = 57007
+	1380.1.1 = {
+		birth = yes
+	}
+	1480.1.1 = { death = yes }
+}
+57041 = {
+	name = "Nissra"
+	dynasty = 6715
+	culture = yuanti
+	religion = scale_cult
+	trait = creature_pureblood
+	father = 57040
+	1460.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = { death = yes }
+}
+57042 = { 
+	name = "Nosh"
+	dynasty = 636
+	culture = sahuagin
+	religion = infernal
+	trait = creature_sahuagin
+	1350.1.1 = {
+		birth = yes
+	}
+	1380.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+57043 = {
+	name = "Gsivan"
+	dynasty = 637
+	culture = malison
+	religion = scale_cult
+	trait = creature_malison
+	1320.1.1 = {
+		birth = yes
+		culture = yuanti
+	}
+	1420.1.1 = {
+		death = yes
+	}
+}
+57044 = {
+	name = "Ulissra"
+	female = yes
+	dynasty = 637
+	culture = malison
+	religion = scale_cult
+	trait = creature_malison
+	father = 57043
+	1400.1.1 = {
+		birth = yes
+		culture = yuanti
+	}
+	1500.1.1 = {
+		death = yes
+	}
 }

@@ -7,16 +7,10 @@ title = c_the_throat
 max_settlements = 3
 
 b_delia = castle
-#b_vil = city
-#b_ebumlf = temple
-#b_dred = castle
-#b_reuben = city
-#b_ahah = temple
-#b_brenisene = castle
 
 # Misc
 culture = netherese
-religion = netherese_pantheon
+religion = arcane
 
 #History
 329.1.1 = {
@@ -26,6 +20,11 @@ religion = netherese_pantheon
 }
 1340.1.1 = {
 	b_delia = castle
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
+}
+1383.1.1 = {
+	b_delia = tribal
+	culture = naga
+	religion = scale_cult
 }

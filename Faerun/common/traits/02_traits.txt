@@ -364,6 +364,7 @@ sympathy_many = {
 		zealous
 	}
 	tolerates_good_human_pantheon_group = yes
+	tolerates_wild_human_pantheon_group = yes
 	tolerates_zakharan_group = yes
 	tolerates_karaturan_group = yes
 	tolerates_elven_pantheon_group = yes
@@ -389,6 +390,28 @@ sympathy_good_human_pantheon_group = {
 	}
 
 	tolerates_good_human_pantheon_group = yes		# Tolerates and is tolerated by good humans
+	
+	same_opinion_if_same_religion = 5
+
+	customizer = no
+	random = no
+
+	male_insult = INSULT_LOVER_OF_HEATHENS
+	female_insult = INSULT_LOVER_OF_HEATHENS
+	male_insult_adj = INSULT_UNPRINCIPLED
+	female_insult_adj = INSULT_UNPRINCIPLED
+	child_insult_adj = INSULT_STUPID
+}
+sympathy_wild_human_pantheon_group = {
+	opposites =  {
+		zealous
+	}
+	
+	potential = {
+		NOT = { religion_group = wild_human_pantheon_group }
+	}
+
+	tolerates_wild_human_pantheon_group = yes		# Tolerates and is tolerated by good humans
 	
 	same_opinion_if_same_religion = 5
 
@@ -2483,38 +2506,6 @@ disinherited = {
 ###SECRET RELIGION TRAITS###
 
 #Good Human Pantheon
-secretly_good_human_pantheon = {
-
-	potential = {
-		NOT = {
-			religion = good_human_pantheon
-		}
-	}
-	
-	opposites = {
-		secretly_calishite_faith
-		secretly_chauntean_faith
-		secretly_mulhorandi_faith
-		secretly_tuigan_shamanism
-	}
-
-	is_visible = {
-		OR = {
-			character = FROM
-			society_member_of = secret_religious_society_good_human_pantheon
-			AND = {
-				is_close_relative = FROM
-				trait = secretly_good_human_pantheon
-			}
-		}
-	}
-
-	same_opinion = 15
-	
-	random = no
-	customizer = no
-	ai_zeal = -50
-}
 
 #Chauntean Faith
 secretly_chauntean_faith = {
@@ -2527,7 +2518,6 @@ secretly_chauntean_faith = {
 	
 	opposites = {
 		secretly_calishite_faith
-		secretly_good_human_pantheon
 		secretly_mulhorandi_faith
 		secretly_tuigan_shamanism
 	}
@@ -2560,7 +2550,6 @@ secretly_calishite_faith = {
 	}
 	
 	opposites = {
-		secretly_good_human_pantheon
 		secretly_chauntean_faith
 		secretly_mulhorandi_faith
 		secretly_tuigan_shamanism
@@ -2596,7 +2585,6 @@ secretly_mulhorandi_faith = {
 	opposites = {
 		secretly_calishite_faith
 		secretly_chauntean_faith
-		secretly_good_human_pantheon
 		secretly_tuigan_shamanism
 	}
 
@@ -3677,3 +3665,13 @@ tribal_kinslayer = {
 	female_insult = INSULT_KINSLAYER
 }
 
+knight_order_leader = {
+	leader = yes
+	random = no
+	command_modifier = {
+		terrain = steppe
+		terrain = plains
+		terrain = farmlands
+		cavalry = 0.15
+	}
+}

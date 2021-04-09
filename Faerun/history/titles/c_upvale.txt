@@ -14,13 +14,14 @@
 	holder = 46014 # Wulgreth of Ascalhorn
 }
 882.1.1 = {
+	law = succ_divine_elective
 	holder = 66207
 	liege = d_scoured_legion
 }
 1365.1.1 = {
 	holder = 66201
 }
-1368.1.1 = {
+1366.1.1 = {
 	holder = 23014
 }
 1370.1.1 = {

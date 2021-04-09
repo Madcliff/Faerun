@@ -20,8 +20,8 @@ religion = monster_pantheon
 terrain = forest
 #History
 536.1.1 = {
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	b_finders_keep = castle
 }
 569.1.1 = {

@@ -1,0 +1,9 @@
+# k_chult
+1350.1.1 = {
+	law = true_cognatic_succession
+	law = succ_gavelkind
+	holder = 52904 # Cid Highwind
+}
+1430.1.1 = {
+	holder = 52905 # Falco Highwind
+}

@@ -1,0 +1,13 @@
+# County Title
+title = c_aman
+
+# Settlements
+max_settlements = 3
+
+b_aman = tribal
+
+# Misc
+culture = fabada
+religion = kahin
+
+#History

@@ -2,7 +2,6 @@
 	law = agnatic_succession
 	law = succ_gavelkind
 	holder = 61220
-	liege = d_estam
 }
 100.1.1 = {
 	holder = 61221
@@ -53,3 +52,4 @@
 	holder = 61236
 }
 1325.1.1={holder=30383} #Hanoz[5109]
+1400.7.13={holder=30391} #Gutlug

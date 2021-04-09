@@ -22,10 +22,13 @@ terrain = hills
 163.1.1 = {
 	b_crimmor = castle
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 }
 240.1.1 = {
 	b_arnise = castle
+}
+300.1.1 = {
+	religion = joyful
 }
 400.1.1 = {
 	b_goldspires = temple
@@ -39,7 +42,7 @@ terrain = hills
 }
 620.1.1 = {
 	culture = amnian
-	religion = good_human_pantheon
+	religion = joyful
 	b_crimmor = castle
 }
 680.1.1 = {
@@ -50,4 +53,7 @@ terrain = hills
 }
 1000.1.1 = {
 	b_minsor_vale = castle
+}
+1333.1.1 = {
+	b_crimmor = city
 }

@@ -26,8 +26,8 @@ religion = giant_pantheon
 }
 350.1.1 = {
 	b_darkhold = castle
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = shadow_gods
 }
 470.1.1 = {
 	b_darkhold = tribal
@@ -36,11 +36,11 @@ religion = giant_pantheon
 }
 620.1.1 = {
 	b_darkhold = castle
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = shadow_gods
 }
 640.1.1 = {
-	religion = good_human_pantheon
+	religion = triadic
 }
 850.1.1 = {
 	b_darkhold = tribal
@@ -51,8 +51,8 @@ religion = giant_pantheon
 	b_darkhold = castle
 	b_far_hills_post = city
 	b_ink_dell = temple
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 }
 1368.1.1 = {
 	religion = church_of_cyric

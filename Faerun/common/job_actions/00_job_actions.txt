@@ -182,16 +182,78 @@ action_settle_tribe = {
 	attribute = stewardship
 
 	potential = {
-		FROM = {
-			is_tribal = yes
+		OR = {
+			ai = no
+			liege = { culture = PREVPREV } # Disabled proselytize if religion mismatch with liege to prevent AI from shooting itself in the foot
 		}
 	}
 
 	trigger = {
 		any_province_lord = {
-			character = FROM
+			OR = {
+				character = FROM
+				AND = {
+					is_liege_or_above = FROM
+					FROM = { ai = no }
+					OR = {
+						culture = FROM
+						AND = {
+							FROM = {
+								OR = {
+									culture = chromatic
+									culture = metallic
+									culture = shadow_dragon
+									culture = gem
+									culture = angel
+									culture = celestial_eladrin
+									culture_group = genie_group
+									culture_group = outworlder_group
+								}
+							}
+							FROM = {
+								capital_scope = {
+									culture = PREVPREV
+								}
+							}
+						}
+					}
+				}
+			}
 		}
-		NOT = { culture = FROM }
+		OR = {
+			AND = {
+				NOT = { culture = FROM }
+				FROM = {
+					NOR = {
+						culture = chromatic
+						culture = metallic
+						culture = shadow_dragon
+						culture = gem
+						culture = angel
+						culture = celestial_eladrin
+						culture_group = genie_group
+						culture_group = outworlder_group
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					culture = chromatic
+					culture = metallic
+					culture = shadow_dragon
+					culture = gem
+					culture = angel
+					culture = celestial_eladrin
+					culture_group = genie_group
+					culture_group = outworlder_group
+				}
+				capital_scope = {
+					ROOT = {
+						NOT = { culture = PREV }
+					}
+				}
+			}
+		}
 		OR = {
 			NOT = { 
 				has_game_rule = {
@@ -214,6 +276,9 @@ action_oversee_construction = {
 	}
 
 	trigger = {
+		FROM = {
+			is_tribal = yes
+		}
 		any_province_lord = {
 			character = FROM
 		}
@@ -515,13 +580,13 @@ action_inquisition = {
 	attribute = learning
 	
 	potential = {
-		NOR = {
-			FROM = { government = magocratic_feudal_government }
-			FROM = { government = democratic_feudal_government }
-			FROM = { government = celestial_government }
-			FROM = { government = chinese_imperial_government }
-			FROM = { government = celestial_bureaucracy }
-			}
+		#NOR = {
+		#	FROM = { government = magocratic_feudal_government }
+		#	FROM = { government = democratic_feudal_government }
+		#	FROM = { government = celestial_government }
+		#	FROM = { government = chinese_imperial_government }
+		#	FROM = { government = celestial_bureaucracy }
+		#	}
         liege = { religion = PREVPREV } # Disabled proselytize if religion mismatch with liege to prevent AI from shooting itself in the foot
 	}
 	
@@ -586,9 +651,14 @@ action_improve_rel_relations = {
 	
 	potential = {
 		FROM = {
-			NOT = { religion_group = zakharan_group }
-			NOT = { government = magocratic_feudal_government }
-			NOT = { government = democratic_feudal_government }
+			NOR = {
+				FROM = { religion_group = zakharan_group }
+				FROM = { government = celestial_government }
+				FROM = { government = democratic_feudal_government }
+				FROM = { government = magocratic_feudal_government }
+				FROM = { government = chinese_imperial_government }
+				FROM = { government = celestial_bureaucracy }
+			}
 		}
 	}
 	
@@ -673,8 +743,8 @@ action_charity = {
 	potential = {
 		OR = {
 		FROM = { religion_group = zakharan_group }
-		FROM = { government = magocratic_feudal_government }
-		FROM = { government = democratic_feudal_government }
+		#FROM = { government = magocratic_feudal_government }
+		#FROM = { government = democratic_feudal_government }
 		FROM = { government = celestial_government }
 		FROM = { government = chinese_imperial_government }
 		FROM = { government = celestial_bureaucracy }

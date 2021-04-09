@@ -22,14 +22,14 @@ terrain = hills
 177.1.1 = {
 	b_beruns_hill = tribal
 	culture = troll
-	religion = abyssal_cult
+	religion = vaprak
 }
 611.4.1 = {
 	culture = orc
 	religion = orc_pantheon
 }
 1230.1.1 = {
-	b_beruns_hill = castle
+	b_beruns_hill = temple
 	culture = shield_dwarf
 	religion = dwarven_pantheon
 }

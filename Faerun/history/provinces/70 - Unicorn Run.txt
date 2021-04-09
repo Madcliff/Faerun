@@ -20,24 +20,22 @@ religion = dwarven_pantheon
 terrain = forest
 #History
 882.1.1 = {
-	culture = monster
-	religion = monster_pantheon
+	culture = wood_elf
+	religion = elven_pantheon
 	b_caerilcarn = tribal
 	remove_settlement = b_ellatharion
 }
 1335.1.1 = {
 	b_caerilcarn = castle
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = arcane
 }
 1357.1.1 = {
 	b_caerilcarn = tribal
-	culture = monster
-	religion = monster_pantheon
-}
-1372.1.1 = {
 	culture = wood_elf
 	religion = elven_pantheon
+}
+1372.1.1 = {
 	b_caerilcarn = castle
 	b_ellatharion = city
 }

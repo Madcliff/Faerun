@@ -1,0 +1,24 @@
+
+# County Title
+title = c_bulobo
+
+# Settlements
+max_settlements = 4
+
+b_bulobo = castle
+#b_mbusie = city
+#b_ndikkou = temple
+#b_nwose = castle
+#b_barba = city
+#b_ojux = temple
+#b_azarvale = castle
+
+# Misc
+culture = chultan
+religion = ubtao_worship
+
+#History
+1460.1.1 = {
+	religion = entropy
+	b_bulobo = tribal
+}

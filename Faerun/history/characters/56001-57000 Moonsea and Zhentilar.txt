@@ -1,11 +1,11 @@
-###ï¿½NSI
+###ÄNSI
 
 56001 = {
 	name = Manshoon
 	dynasty = 7901
 	father = 56002
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 8
 	diplomacy = 13
 	learning = 14
@@ -29,7 +29,7 @@
 			add_character_modifier = { name = true_villain_modifier duration = -1 }
 		}
 	}
-	1360.1.1 = {
+	1261.1.1 = {
 		effect = {
 			join_society = black_network
 			set_society_grandmaster = yes
@@ -42,13 +42,23 @@
 			}
 		}
 	}
+	1369.1.1 = {
+		effect = {
+			leave_society = yes
+		}
+	}
+	1370.1.1 = {
+		effect = {
+			join_society = black_network
+		}
+	}
 	1500.1.1 = { death = yes }
 }
 56002 = {
 	name = Harlshoon
 	dynasty = 7901
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = renowned_fighter
 	1195.1.1 = { birth = yes }
@@ -58,8 +68,8 @@
 	name = Asmuth
 	dynasty = 7901
 	father = 56002
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = renowned_fighter
 	1227.1.1 = { birth = yes }
@@ -69,8 +79,8 @@
 56004 = {
 	name = Calkontor
 	dynasty = 7902
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = renowned_wizard
 	1190.1.1 = { birth = yes }
@@ -80,8 +90,8 @@
 	name = Chess
 	dynasty = 7902
 	father = 56004
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = trained_fighter
 	trait = trained_cleric
@@ -102,8 +112,8 @@
 56006 = {
 	name = Fzoul
 	dynasty = 7903
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 7
 	diplomacy = 10
 	learning = 12
@@ -119,28 +129,34 @@
 	trait = brave
 	trait = longevity
 	dna = "djfigdddhau"
+	properties = "ec0ab0"
 	1210.1.1 = { birth = yes }
 	1230.1.1 = {
-		effect = {
-			add_trait = patron_bane
-		}
+		add_trait = patron_bane
 	}
 	1240.1.1 = { immortal_age = 30 }
 	1260.4.1 = {
 		employer = 56001 # Manshoon
 		effect = {add_friend = 56001}
 	}
-	1358.1.1 = {
+	1261.1.1 = {
 		effect = {
-			remove_trait = patron_bane
-			add_trait = patron_iyachtu_xvim
+			join_society = black_network
 		}
+	}
+	1285.1.1 = {
+		add_claim = k_zhentarim
+	}
+	1358.1.1 = {
+		remove_trait = patron_bane
+		add_trait = patron_iyachtu_xvim
 	}
 	1369.1.1 = {
 		effect = { add_trait = possessed } # By Bane
 	}
 	1370.1.1 = {
 		effect = {
+			add_artifact = scepter_tyrant_eye
 			join_society = black_network
 			set_society_grandmaster = yes
 		}
@@ -161,8 +177,8 @@
 	name = Orgauth
 	dynasty = 7904
 	father = 56008
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = master_fighter
 	1310.1.1 = { birth = yes }
@@ -178,8 +194,8 @@
 56008 = {
 	name = Denuth
 	dynasty = 7904
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = trained_fighter
 	1270.1.1 = { birth = yes }
@@ -188,19 +204,22 @@
 56009 = {
 	name = Geildarr
 	dynasty = 7905 # Ithym
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = expert_wizard
 	1312.1.1 = { birth = yes }
+	1359.1.1 = {
+		religion = church_of_cyric
+	}
 	1400.1.1 = { death = yes }
 }
 56010 = {
 	name = Desmonda
 	dynasty = 7907
 	female = yes
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = expert_wizard
 	1342.1.1 = {
@@ -222,7 +241,7 @@
 	father = 56012
 	dynasty = 7906 # adopted
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	trait = tough_soldier
 	trait = zealous
@@ -232,7 +251,7 @@
 	trait = adopted
 	1338.1.1 = { birth = yes }
 	1368.1.1 = {
-		religion = evil_human_pantheon
+		religion = dead_three
 	}
 	1375.1.13 = {
 		death =
@@ -243,8 +262,8 @@
 	name = Valshor # invented name
 	dynasty = 7906
 	father = 56013
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1310.1.1 = { birth = yes }
 	1358.1.1 = { death = yes }
@@ -253,8 +272,8 @@
 	name = Walgrim # invented name
 	dynasty = 7906
 	father = 56014
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1279.1.1 = { birth = yes }
 	1334.1.1 = { death = yes }
@@ -262,8 +281,8 @@
 56014 = {
 	name = Teldorn # the elder; invented name
 	dynasty = 7906
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1250.1.1 = { birth = yes }
 	1302.1.1 = { death = yes }
@@ -272,8 +291,8 @@
 	name = Helgrim # invented name
 	dynasty = 7906
 	father = 56014
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1285.1.1 = { birth = yes }
 	1339.1.1 = { death = yes }
@@ -282,23 +301,29 @@
 	name = Teldorn # the younger
 	dynasty = 7906
 	father = 56015
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = expert_cleric
 	trait = cruel
 	trait = ambitious
 	1325.1.1 = { birth = yes }
-	1400.1.1 = { death = yes }
+	1385.4.29 = { death = yes }
 }
 56017 = {
 	name = Thusk
 	dynasty = 7313
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = arcane
 	trait = creature_human
 	trait = legendary_sorcerer
+	trait = origin_divine_soul
 	1210.1.1 = { birth = yes }
+	1220.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1273.1.1 = {
 		add_trait = longevity
 		immortal_age = 63
@@ -314,8 +339,8 @@
 56018 = {
 	name = Rassendyll
 	dynasty = 7314
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = ranger
 	trait = renowned_fighter
@@ -329,8 +354,8 @@
 56019 = {
 	name = Selfaril
 	dynasty = 7314
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = renowned_fighter
 	trait = twin
@@ -347,8 +372,8 @@
 56020 = { #fictional father of the twins
 	name = Halaster
 	dynasty = 7314
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56313
 	1295.1.1 = { birth = yes }
@@ -358,8 +383,8 @@
 56021 = { #fictional mother of the twins
 	name = Shandril
 	female = yes
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1297.1.1 = { birth = yes }
 	1359.1.1 = { death = yes }
@@ -371,8 +396,8 @@
 	name = Premir
 	dynasty = 7315
 	dna = "mkggpalcmde"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 7
 	diplomacy = 6
 	stewardship = 4
@@ -395,8 +420,8 @@
 	name = Gauvith
 	dynasty = 7315
 	dna = "okpgialicib"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 4
 	diplomacy = 6
 	stewardship = 5
@@ -418,8 +443,8 @@
 	female = yes
 	dynasty = 7315
 	dna = "fkpglapcede"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = journeyman_shadow
 	trait = creature_human
 	father = 56022	#Premir
@@ -432,8 +457,8 @@
 	female = yes
 	dynasty = 7315
 	dna = "lkbiealcddd"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = bard
 	trait = creature_human
 	father = 56022	#Premir
@@ -445,8 +470,8 @@
 	name = Aosinin
 	dynasty = 7315
 	dna = "oppkphphcig"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56023	#Gauvith
 	mother = 56030	#Ruga
@@ -457,8 +482,8 @@
 	name = Maley
 	dynasty = 7315
 	dna = "okanoabipmg"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56023	#Gauvith
 	mother = 56030	#Ruga
@@ -470,8 +495,8 @@
 	female = yes
 	dynasty = 7315
 	dna = "okpgiflfiio"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56023	#Gauvith
 	mother = 56030	#Ruga
@@ -481,8 +506,8 @@
 56029 = {
 	name = Lanka
 	female = yes
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1312.7.27 = { birth = yes }
 	1385.6.2 = { death = yes }
@@ -490,8 +515,8 @@
 56030 = {
 	name = Ruga
 	female = yes
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1339.7.27 = { birth = yes }
 	1396.6.2 = { death = yes }
@@ -503,8 +528,8 @@
 	name = Zayehr
 	dynasty = 7316
 	dna = "ldnfkoeckkp"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 6
 	diplomacy = 4
 	stewardship = 5
@@ -528,8 +553,8 @@
 	name = Thavalath
 	dynasty = 7316
 	dna = "ldcakoimkmp"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 4
 	diplomacy = 6
 	stewardship = 5
@@ -552,8 +577,8 @@
 	name = Tareb
 	dynasty = 7316
 	dna = "kfnfkfmcfjo"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 8
 	diplomacy = 8
 	stewardship = 4
@@ -575,8 +600,8 @@
 	name = Ames
 	dynasty = 7316
 	dna = "lggfkoplail"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 7
 	diplomacy = 5
 	stewardship = 7
@@ -599,8 +624,8 @@
 	female = yes
 	dynasty = 7316
 	dna = "nlcakonglmp"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = warlock
 	father = 56032	#Thavalath
 	mother = 56038	#Beatrey
@@ -611,8 +636,8 @@
 	name = Mathim
 	dynasty = 7316
 	dna = "odcokdamfej"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 6
 	diplomacy = 5
 	stewardship = 6
@@ -626,16 +651,16 @@
 	1360.10.9 = { birth = yes }
 	1370.1.1 = { trait = druid }
 	1373.1.1 = {
-		trait = trained_druid
 		remove_trait = druid
+		trait = trained_druid
 	}
 	1430.1.5 = { death = yes }
 }
 56037 = {
 	name = Elyn
 	female = yes
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1311.7.27 = { birth = yes }
 	1393.6.2 = { death = yes }
@@ -643,8 +668,8 @@
 56038 = {
 	name = Beatrey
 	female = yes
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1337.7.27 = { birth = yes }
 	1385.6.2 = { death = yes }
@@ -656,8 +681,8 @@
 	name = Hopag
 	dynasty = 7317
 	dna = "cgncanoghlm"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 8
 	diplomacy = 5
 	stewardship = 7
@@ -678,8 +703,8 @@
 	name = Khumith
 	dynasty = 7317
 	dna = "fgndahonjlp"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 4
 	diplomacy = 8
 	stewardship = 8
@@ -695,10 +720,10 @@
 	father = 56039	#Hopag
 	mother = 56045	#Chanane
 	1354.12.12 = { birth = yes }
-	1364.1.1 = { trait = shadow }
+	1364.1.1 = { add_trait = shadow }
 	1370.1.1 = {
-		trait = trained_shadow
 		remove_trait = shadow
+		add_trait = trained_shadow
 	}
 	1417.5.25 = { death = yes }
 }
@@ -707,16 +732,16 @@
 	female = yes
 	dynasty = 7317
 	dna = "ainfaindnlp"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56039	#Hopag
 	mother = 56045	#Chanane
 	1358.2.16 = { birth = yes }
 	1368.1.1 = { trait = ranger }
 	1373.1.1 = {
-		trait = trained_ranger
 		remove_trait = ranger
+		trait = trained_ranger
 	}
 	1406.3.17 = { death = yes }
 }
@@ -724,8 +749,8 @@
 	name = Hiyab
 	dynasty = 7317
 	dna = "cgemlnonhlm"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56039	#Hopag
 	mother = 56045	#Chanane
@@ -737,8 +762,8 @@
 	female = yes
 	dynasty = 7317
 	dna = "gbmjknokmhg"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56039	#Hopag
 	mother = 56045	#Chanane
@@ -749,8 +774,8 @@
 	name = Jotor
 	dynasty = 7317
 	dna = "opncadonkfm"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56039	#Hopag
 	mother = 56045	#Chanane
@@ -760,8 +785,8 @@
 56045 = {
 	name = Chanane
 	female = yes
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1334.7.27 = { birth = yes }
 	1406.6.2 = { death = yes }
@@ -773,8 +798,8 @@
 	name = Thurndan
 	dynasty = 7318
 	dna = "ngebmilohph"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 5
 	diplomacy = 7
 	stewardship = 4
@@ -797,8 +822,8 @@
 	name = Aunadar
 	dynasty = 7318
 	dna = "ipemmilohpb"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 8
 	diplomacy = 5
 	stewardship = 5
@@ -823,8 +848,8 @@
 	female = yes
 	dynasty = 7318
 	dna = "lgeknifmdlh"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = barbarian
 	trait = creature_human
 	father = 56046	#Osconivon
@@ -837,8 +862,8 @@
 	female = yes
 	dynasty = 7318
 	dna = "hpemoelhpeo"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56047	#Aunadar
 	mother = 56055	#Zboza
@@ -850,8 +875,8 @@
 	name = Maroth
 	dynasty = 7318
 	dna = "icaflilolhb"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56047	#Aunadar
 	mother = 56055	#Zboza
@@ -863,8 +888,8 @@
 	female = yes
 	dynasty = 7318
 	dna = "ipcfmilolpe"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56047	#Aunadar
 	mother = 56055	#Zboza
@@ -876,8 +901,8 @@
 	female = yes
 	dynasty = 7318
 	dna = "mpemoilokpj"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56047	#Aunadar
 	mother = 56055	#Zboza
@@ -888,8 +913,8 @@
 	name = Thanobert
 	dynasty = 7318
 	dna = "leemmphokpb"
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56047	#Aunadar
 	mother = 56055	#Zboza
@@ -899,8 +924,8 @@
 56054 = {
 	name = Omalra
 	female = yes
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1306.7.27 = { birth = yes }
 	1380.6.2 = { death = yes }
@@ -908,8 +933,8 @@
 56055 = {
 	name = Zboza
 	female = yes
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1335.7.27 = { birth = yes }
 	1400.6.2 = { death = yes }
@@ -922,8 +947,8 @@
 56056 = {
 	name = Dundeld
 	dynasty = 7319
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	trait = trained_fighter
 	1300.12.9 = { birth = yes }
@@ -932,8 +957,8 @@
 56057 = {
 	name = Woarsten
 	dynasty = 7319
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = trained_bard
 	trait = creature_human
 	father = 56056
@@ -945,8 +970,8 @@
 56058 = {
 	name = Olma
 	female = yes
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	1320.7.27 = { birth = yes }
 	1365.1.1 = { death = yes }
@@ -954,8 +979,8 @@
 56059 = {
 	name = Killian
 	dynasty = 7319
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	trait = midas_touched
 	father = 56057
@@ -971,8 +996,8 @@
 56060 = {
 	name = Oreal
 	dynasty = 7319
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = trusting
 	trait = brave
 	trait = ranger
@@ -988,8 +1013,8 @@
 56061 = {
 	name = Vanth
 	dynasty = 7320
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = gluttonous
 	trait = greedy
 	trait = gregarious
@@ -1003,8 +1028,8 @@
 56062 = {
 	name = Halmuth
 	dynasty = 7320
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = expert_fighter
 	trait = creature_human
 	trait = cruel
@@ -1017,8 +1042,8 @@
 56063 = {
 	name = Argens
 	dynasty = 7320
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = bastard
 	trait = paladin
 	trait = creature_human
@@ -1026,19 +1051,19 @@
 	1355.12.9 = { birth = yes }
 	1370.1.1 = {
 		remove_trait = bastard
-		trait = legit_bastard
+		add_trait = legit_bastard
 	}
 	1371.1.1 = {
-		trait = trained_paladin
 		remove_trait = paladin
+		add_trait = trained_paladin
 	}
 	1425.6.1 = { death = yes }
 }
 56064 = {
 	name = Anya
 	female = yes
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1305.12.9 = { birth = yes }
 	1400.6.1 = { death = yes }
@@ -1047,8 +1072,8 @@
 	name = Elkanaeh
 	female = yes
 	dynasty = 7320
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = bastard
 	trait = creature_human
 	father = 56061
@@ -1058,8 +1083,8 @@
 56066 = {
 	name = Rento
 	dynasty = 7320
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = bastard
 	trait = creature_human
 	father = 56061
@@ -1070,8 +1095,8 @@
 	name = Zita
 	female = yes
 	dynasty = 7320
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = bastard
 	trait = creature_human
 	father = 56061
@@ -1084,8 +1109,8 @@
 56068 = {
 	name = Rather
 	dynasty = 7321
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = cruel
 	trait = wroth
 	trait = ambitious
@@ -1100,8 +1125,8 @@
 56069 = {
 	name = Ghunduilith
 	dynasty = 7321
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = just
 	trait = patient
 	trait = ambitious
@@ -1115,8 +1140,8 @@
 56070 = {
 	name = Kalman
 	dynasty = 7321
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = gregarious
 	trait = warlock
 	trait = creature_human
@@ -1128,8 +1153,8 @@
 56071 = {
 	name = Elel
 	female = yes
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	1305.1.1 = { birth = yes }
 	1375.6.1 = { death = yes }
@@ -1137,8 +1162,8 @@
 56072 = {
 	name = "Maalthiir"
 	dynasty = 7920 # Darkgray
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	learning = 8
 	trait = creature_human
 	trait = renowned_wizard
@@ -1164,8 +1189,8 @@
 56074 = {
 	name = "Porphyrys"
 	dynasty = 7921 # Cadorna
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = greedy
 	1309.1.1 = { birth = yes }
@@ -1176,8 +1201,8 @@
 56075 = {
 	name = "Tarl"
 	dynasty = 7922 # Desanea
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = triadic
 	learning = 8
 	trait = creature_human
 	trait = master_cleric
@@ -1200,7 +1225,7 @@
 	name = "Shal"
 	female = yes
 	culture = cormyrian
-	religion = good_human_pantheon
+	religion = arcane
 	learning = 8
 	trait = creature_human
 	trait = strong
@@ -1219,7 +1244,7 @@
 	name = "Ren"
 	dynasty = 7923 # Redfletching
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	martial = 7
 	intrigue = 7
 	trait = creature_human
@@ -1239,7 +1264,7 @@
 	female = yes
 	dynasty = 7923 # Redfletching
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = ranger
 	father = 56077
@@ -1249,8 +1274,8 @@
 56079 = {
 	name = "Cvaal"
 	dynasty = 7924 # Daoran
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = fighter
 	trait = cleric
@@ -1264,7 +1289,7 @@
 56080 = {
 	name = "Xeno"
 	dynasty = 7925 # Mirrormane
-	culture = moonsea
+	culture = tharian
 	religion = church_of_cyric
 	learning = 8
 	trait = creature_human
@@ -1278,8 +1303,8 @@
 56081 = {
 	name = "Hardil"
 	dynasty = 7926 # Gearas
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	diplomacy = 7
 	trait = creature_human
 	1330.1.1 = { birth = yes }
@@ -1288,8 +1313,8 @@
 56083 = {
 	name = "Malathar"
 	dynasty = 7928 # Wingstarl
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = chondathan
+	religion = dead_three
 	stewardship = 7
 	learning = 9
 	trait = creature_human
@@ -1301,6 +1326,7 @@
 	trait = ambitious
 	trait = cruel
 	1234.1.1 = { birth = yes }
+	1250.1.1 = { add_trait = patron_bane }
 	1258.1.1 = {
 		employer = 56001
 		add_trait = longevity
@@ -1309,9 +1335,11 @@
 	1275.1.1 = {
 		name = "Sememmon"
 	}
-	1355.1.1 = { effect = {add_lover = 56084 }}
+	1355.1.1 = { effect = {add_lover = 56084 } }
 	1372.1.1 = {
-		religion = good_human_pantheon
+		religion = arcane
+		remove_trait = patron_bane
+		add_trait = patron_mystra
 	}
 	1500.1.1 = { death = yes }
 }
@@ -1339,7 +1367,7 @@
 	1344.1.1 = {
 		name = "Ashemmi"
 		employer = 56083
-		religion = evil_human_pantheon
+		religion = dead_three
 		secret_religion = elven_pantheon
 	}
 	1372.1.1 = {
@@ -1873,8 +1901,8 @@
 56136 = {
 	name = "Beldoran"
 	dynasty = 7359 # Vinnol
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = solar
 	trait = creature_human
 	1250.1.1 = { birth = yes }
 	1303.1.1 = {
@@ -1906,12 +1934,12 @@
 	name = "Sulass"
 	dynasty = 7929 # Drowsbane
 	culture = moon_elf
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_elf
 	trait = journeyman_ranger
 	930.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	960.1.1 = { immortal_age = 30 }
 	1061.1.1 = { death = yes }
@@ -1920,12 +1948,12 @@
 	name = "Galadyl"
 	dynasty = 7929 # Drowsbane
 	culture = moon_elf
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_elf
 	father = 56139
 	1040.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	1070.1.1 = { immortal_age = 30 }
 	1200.1.1 = { death = yes }
@@ -1934,12 +1962,12 @@
 	name = "Olmar"
 	dynasty = 7929 # Drowsbane
 	culture = moon_elf
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_elf
 	father = 56140
 	1150.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	1180.1.1 = { immortal_age = 30 }
 	1280.1.1 = { death = yes }
@@ -1948,12 +1976,12 @@
 	name = "Cimmar"
 	dynasty = 7929 # Drowsbane
 	culture = moon_elf
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_elf
 	father = 56141
 	1200.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	1230.1.1 = { immortal_age = 30 }
 	1307.1.1 = { death = yes }
@@ -1984,8 +2012,8 @@
 56144 = {
 	name = "Menol"
 	dynasty = 7931 # Hulmaster
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	910.1.1 = { birth = yes }
 	1000.1.1 = { death = yes }
@@ -1993,8 +2021,8 @@
 56145 = {
 	name = "Colman"
 	dynasty = 7931 # Hulmaster
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56144
 	970.1.1 = { birth = yes }
@@ -2004,8 +2032,8 @@
 	name = "Janise"
 	female = yes
 	dynasty = 7931 # Hulmaster
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56145
 	1010.1.1 = { birth = yes }
@@ -2014,8 +2042,8 @@
 56147 = {
 	name = "Saren"
 	dynasty = 7931 # Hulmaster
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	mother = 56146
 	1050.1.1 = { birth = yes }
@@ -2024,8 +2052,8 @@
 56148 = {
 	name = "Nilatak"
 	dynasty = 7931 # Hulmaster
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56147
 	1080.1.1 = { birth = yes }
@@ -2034,8 +2062,8 @@
 56149 = {
 	name = "Demavend"
 	dynasty = 7931 # Hulmaster
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56148
 	1120.1.1 = { birth = yes }
@@ -2044,8 +2072,8 @@
 56150 = {
 	name = "Korhil"
 	dynasty = 7931 # Hulmaster
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56149
 	1170.1.1 = { birth = yes }
@@ -2055,8 +2083,8 @@
 	name = "Aleena"
 	female = yes
 	dynasty = 7931 # Hulmaster
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56150
 	1210.1.1 = { birth = yes }
@@ -2065,8 +2093,8 @@
 56152 = {
 	name = "Landros"
 	dynasty = 7931 # Hulmaster
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	mother = 56151
 	1250.1.1 = { birth = yes }
@@ -2075,8 +2103,8 @@
 56153 = {
 	name = "Agryl"
 	dynasty = 7931 # Hulmaster
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = tough_soldier
 	trait = master_fighter
@@ -2088,8 +2116,8 @@
 	name = "Amali"
 	female = yes
 	dynasty = 7931 # Hulmaster
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = trained_fighter
 	father = 56153
@@ -2099,8 +2127,8 @@
 56155 = {
 	name = "Angmar"
 	dynasty = 7931 # Hulmaster
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = trained_fighter
 	father = 56153
@@ -2110,8 +2138,8 @@
 56156 = {
 	name = "Luren"
 	dynasty = 7931 # Hulmaster
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = trained_fighter
 	father = 56153
@@ -2123,11 +2151,11 @@
 	name = "Reitlin"
 	dynasty = 7929 # Drowsbane
 	culture = moon_elf
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_elf
 	1320.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 		#place previous holder of High Dale as employer
 	}
 	1340.1.1 = {
@@ -2140,11 +2168,11 @@
 	name = "Bannon"
 	dynasty = 7929 # Drowsbane
 	culture = moon_elf
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_elf
 	1334.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 		employer = 7001
 	}
 	1364.1.1 = { immortal_age = 30 }
@@ -2158,11 +2186,11 @@
 	female = yes
 	dynasty = 7929 # Drowsbane
 	culture = moon_elf
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_elf
 	1335.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 		#place previous holder of Raven's Bluff as employer
 	}
 	1337.1.1 = {
@@ -2176,11 +2204,11 @@
 	female = yes
 	dynasty = 7929 # Drowsbane
 	culture = moon_elf
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_elf
 	1337.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 		employer = 56325
 	}
 	1348.1.1 = {
@@ -2196,11 +2224,11 @@
 	name = "Gallus"
 	dynasty = 7929 # Drowsbane
 	culture = moon_elf
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_elf
 	1338.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 		employer = 20194
 	}
 	1352.3.1 = {
@@ -2219,11 +2247,11 @@
 	name = "Trias"
 	dynasty = 7929 # Drowsbane
 	culture = moon_elf
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_elf
 	1340.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 		employer = 63510
 	}
 	1370.1.1 = { immortal_age = 30 }
@@ -2232,8 +2260,8 @@
 56163 = {
 	name = "Crindol"
 	dynasty = 7933 # Swifthands
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	770.1.1 = { birth = yes }
 	870.1.1 = { death = yes }
@@ -2241,8 +2269,8 @@
 56164 = {
 	name = "Noldur"
 	dynasty = 7933 # Swifthands
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56163
 	850.1.1 = {
@@ -2260,8 +2288,8 @@
 56165 = {
 	name = "Temmin"
 	dynasty = 7933 # Swifthands
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56164
 	930.1.1 = {
@@ -2273,8 +2301,8 @@
 56166 = {
 	name = "Zane"
 	dynasty = 7933 # Swifthands
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56165
 	1010.1.1 = {
@@ -2286,8 +2314,8 @@
 56167 = {
 	name = "Flynn"
 	dynasty = 7933 # Swifthands
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56166
 	1090.1.1 = {
@@ -2305,8 +2333,8 @@
 56168 = {
 	name = "Crestus"
 	dynasty = 7933 # Swifthands
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56167
 	1170.1.1 = {
@@ -2321,8 +2349,8 @@
 56169 = {
 	name = "Mercer"
 	dynasty = 7933 # Swifthands
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56168
 	1250.1.1 = {
@@ -2340,8 +2368,8 @@
 56170 = {
 	name = "Benthic"
 	dynasty = 7933 # Swifthands
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56169
 	1330.1.1 = {
@@ -2357,8 +2385,8 @@
 	name = "Yrinna"
 	female = yes
 	dynasty = 7934 # Khodolis
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	780.1.1 = { birth = yes }
 	800.1.1 = {
@@ -2369,8 +2397,8 @@
 56172 = {
 	name = "Sinnal"
 	dynasty = 7934 # Khodolis
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	mother = 56171
 	860.1.1 = {
@@ -2389,8 +2417,8 @@
 	name = "Liara"
 	female = yes
 	dynasty = 7934 # Khodolis
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56172
 	940.1.1 = {
@@ -2408,8 +2436,8 @@
 56174 = {
 	name = "Simms"
 	dynasty = 7934 # Khodolis
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	mother = 56173
 	1020.1.1 = {
@@ -2427,8 +2455,8 @@
 56175 = {
 	name = "Lukas"
 	dynasty = 7934 # Khodolis
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56174
 	1100.1.1 = {
@@ -2445,8 +2473,8 @@
 56176 = {
 	name = "Damian"
 	dynasty = 7934 # Khodolis
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56175
 	1180.1.1 = {
@@ -2462,8 +2490,8 @@
 	name = "Daressa"
 	female = yes
 	dynasty = 7934 # Khodolis
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56176
 	1260.1.1 = {
@@ -2485,8 +2513,8 @@
 	name = "Liena"
 	female = yes
 	dynasty = 7934 # Khodolis
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	mother = 56177
 	1340.1.1 = {
@@ -2501,8 +2529,8 @@
 56179 = {
 	name = "Brenner"
 	dynasty = 7935 # Birneir
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	780.1.1 = { birth = yes }
 	800.1.1 = {
@@ -2516,8 +2544,8 @@
 56180 = {
 	name = "Kheldon"
 	dynasty = 7935 # Birneir
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56179
 	860.1.1 = {
@@ -2533,8 +2561,8 @@
 	name = "Mira"
 	female = yes
 	dynasty = 7935 # Birneir
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56180
 	940.1.1 = {
@@ -2553,8 +2581,8 @@
 	name = "Quisling"
 	female = yes
 	dynasty = 7935 # Birneir
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	mother = 56181
 	1020.1.1 = {
@@ -2573,8 +2601,8 @@
 	name = "Catrinne"
 	female = yes
 	dynasty = 7935 # Birneir
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	mother = 56182
 	1100.1.1 = {
@@ -2593,8 +2621,8 @@
 	name = "Nirra"
 	female = yes
 	dynasty = 7935 # Birneir
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	mother = 56183
 	1180.1.1 = {
@@ -2610,8 +2638,8 @@
 	name = "Pelagia"
 	female = yes
 	dynasty = 7935 # Birneir
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	mother = 56184
 	1260.1.1 = {
@@ -2630,8 +2658,8 @@
 	name = "Dinara"
 	female = yes
 	dynasty = 7935 # Birneir
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	mother = 56185
 	1340.1.1 = {
@@ -2646,8 +2674,8 @@
 56187 = {
 	name = "Paulir"
 	dynasty = 7936 # Mamarrathen
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	1050.1.1 = { birth = yes }
 	1110.1.1 = {
@@ -2658,8 +2686,8 @@
 56188 = {
 	name = "Wendel"
 	dynasty = 7936 # Mamarrathen
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56187
 	1130.1.1 = {
@@ -2671,8 +2699,8 @@
 56189 = {
 	name = "Kringler"
 	dynasty = 7936 # Mamarrathen
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56188
 	1210.1.1 = {
@@ -2684,8 +2712,8 @@
 56190 = {
 	name = "Lennir"
 	dynasty = 7936 # Mamarrathen
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56189
 	1290.1.1 = {
@@ -2707,8 +2735,8 @@
 	name = "Jill"
 	female = yes
 	dynasty = 7937 # Casplardann
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	1070.1.1 = {
 		birth = yes
@@ -2719,8 +2747,8 @@
 56192 = {
 	name = "Gaspar"
 	dynasty = 7937 # Casplardann
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	mother = 56191
 	1150.1.1 = {
@@ -2739,8 +2767,8 @@
 	name = "Prin"
 	female = yes
 	dynasty = 7937 # Casplardann
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	father = 56192
 	1230.1.1 = {
@@ -2753,8 +2781,8 @@
 	name = "Triss"
 	female = yes
 	dynasty = 7937 # Casplardann
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	1310.1.1 = {
 		birth = yes
@@ -2771,8 +2799,8 @@
 56195 = {
 	name = "Gelduth"
 	dynasty = 7938 # Blackturret
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	trait = creature_human
 	trait = tough_soldier
 	trait = journeyman_fighter
@@ -2784,8 +2812,8 @@
 }
 56196 = {
 	name = "Phourkon"
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = arcane
 	learning = 9
 	trait = creature_human
 	trait = mastermind_theologian
@@ -2812,8 +2840,8 @@
 56197 = {
 	name = "Flammuldinath"
 	dynasty = 7939 # Thuldoum
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = arcane
 	learning = 9
 	trait = creature_human
 	trait = renowned_wizard
@@ -2839,8 +2867,8 @@
 56198 = {
 	name = "Rilitar"
 	dynasty = 7940 # Shadowewater
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = arcane
 	learning = 8
 	trait = creature_human
 	trait = scholarly_theologian
@@ -2859,8 +2887,8 @@
 }
 56199 = {
 	name = "Scattercloak"
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = arcane
 	learning = 8
 	trait = creature_human
 	trait = scholarly_theologian
@@ -2881,8 +2909,8 @@
 	name = "Sureene"
 	female = yes
 	dynasty = 7941 # Aumratha
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = joyful
 	learning = 7
 	trait = creature_human
 	trait = scholarly_theologian
@@ -2901,8 +2929,8 @@
 56201 = {
 	name = "Vend"
 	dynasty = 7319
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	880.1.1 = { birth = yes }
 	980.1.1 = { death = yes }
@@ -2910,8 +2938,8 @@
 56202 = {
 	name = "Castol"
 	dynasty = 7319
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	father = 56201
 	960.1.1 = { birth = yes }
@@ -2920,8 +2948,8 @@
 56203 = {
 	name = "Melvar"
 	dynasty = 7319
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	father = 56202
 	1040.1.1 = { birth = yes }
@@ -2931,8 +2959,8 @@
 	name = "Manara"
 	female = yes
 	dynasty = 7319
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	father = 56203
 	1120.1.1 = { birth = yes }
@@ -2942,8 +2970,8 @@
 	name = "Krinsen"
 	female = yes
 	dynasty = 7319
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	mother = 56204
 	1200.1.1 = { birth = yes }
@@ -2952,8 +2980,8 @@
 56206 = {
 	name = "Panteo"
 	dynasty = 7319
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	mother = 56205
 	1280.1.1 = { birth = yes }
@@ -2962,12 +2990,12 @@
 56207 = { # Utterly unlinked because he's stated to be of a different branch of the family
 	name = "Lyran"
 	dynasty = 7319
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	1310.1.1 = { birth = yes }
 	1330.1.1 = {
-		secret_religion = evil_human_pantheon # becomes a Zhent
+		secret_religion = dead_three # becomes a Zhent
 	}
 	1345.1.1 = {
 		add_claim = c_shadowdale
@@ -2980,8 +3008,8 @@
 56208 = {
 	name = "Bannor"
 	dynasty = 7320
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	880.1.1 = { birth = yes }
 	980.1.1 = { death = yes }
@@ -2989,8 +3017,8 @@
 56209 = {
 	name = "Carver"
 	dynasty = 7320
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56208
 	960.1.1 = { birth = yes }
@@ -3000,8 +3028,8 @@
 	name = "Bethany"
 	female = yes
 	dynasty = 7320
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56209
 	1040.1.1 = { birth = yes }
@@ -3011,8 +3039,8 @@
 	name = "Leandra"
 	female = yes
 	dynasty = 7320
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	mother = 56210
 	1120.1.1 = { birth = yes }
@@ -3021,8 +3049,8 @@
 56212 = {
 	name = "Cresus"
 	dynasty = 7320
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	mother = 56211
 	1200.1.1 = { birth = yes }
@@ -3031,8 +3059,8 @@
 56213 = {
 	name = "Matther"
 	dynasty = 7320
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56212
 	1270.1.1 = { birth = yes }
@@ -3042,8 +3070,8 @@
 56214 = {
 	name = "Mace"
 	dynasty = 7321
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	880.1.1 = { birth = yes }
 	980.1.1 = { death = yes }
@@ -3051,8 +3079,8 @@
 56215 = {
 	name = "Henry"
 	dynasty = 7321
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	father = 56214
 	960.1.1 = { birth = yes }
@@ -3062,8 +3090,8 @@
 	name = "Alessia"
 	female = yes
 	dynasty = 7321
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	father = 56215
 	1040.1.1 = { birth = yes }
@@ -3073,8 +3101,8 @@
 	name = "Crinn"
 	female = yes
 	dynasty = 7321
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	mother = 56216
 	1120.1.1 = { birth = yes }
@@ -3086,8 +3114,8 @@
 	name = "Yenn"
 	female = yes
 	dynasty = 7321
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	mother = 56217
 	1200.1.1 = { birth = yes }
@@ -3096,8 +3124,8 @@
 56219 = {
 	name = "Gaspard"
 	dynasty = 7321
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	mother = 56218
 	1280.1.1 = { birth = yes }
@@ -3107,8 +3135,8 @@
 56220 = {
 	name = "Meldonder"
 	dynasty = 7943
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = arcane
 	learning = 8
 	trait = creature_human
 	trait = expert_wizard
@@ -3120,8 +3148,8 @@
 56221 = {
 	name = "Carle"
 	dynasty = 7944 # Preen
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	340.1.1 = { birth = yes }
 	400.1.1 = { death = yes }
@@ -3129,8 +3157,8 @@
 56222 = {
 	name = "Ladrak"
 	dynasty = 7945 # Jensun
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	380.1.1 = { birth = yes }
 	480.1.1 = { death = yes }
@@ -3138,8 +3166,8 @@
 56223 = {
 	name = "Olvin"
 	dynasty = 7945 # Jensun
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	father = 56222
 	460.1.1 = { birth = yes }
@@ -3149,8 +3177,8 @@
 	name = "Dricha"
 	female = yes
 	dynasty = 7945 # Jensun
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	father = 56223
 	540.1.1 = { birth = yes }
@@ -3159,8 +3187,8 @@
 56225 = {
 	name = "Aristides"
 	dynasty = 7945 # Jensun
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	mother = 56224
 	620.1.1 = { birth = yes }
@@ -3169,8 +3197,8 @@
 56226 = {
 	name = "Milsor"
 	dynasty = 7946 # Valjevo
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	660.1.1 = { birth = yes }
 	760.1.1 = { death = yes }
@@ -3179,8 +3207,8 @@
 	name = "Birna"
 	female = yes
 	dynasty = 7946 # Valjevo
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	father = 56226
 	740.1.1 = { birth = yes }
@@ -3190,8 +3218,8 @@
 	name = "Zaria"
 	female = yes
 	dynasty = 7946 # Valjevo
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	mother = 56227
 	820.1.1 = { birth = yes }
@@ -3200,8 +3228,8 @@
 56229 = {
 	name = "Zoltan"
 	dynasty = 7946 # Valjevo
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	mother = 56228
 	900.1.1 = { birth = yes }
@@ -3210,8 +3238,8 @@
 56230 = {
 	name = "Angus"
 	dynasty = 7946 # Valjevo
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	father = 56229
 	980.1.1 = { birth = yes }
@@ -3220,8 +3248,8 @@
 56231 = {
 	name = "Kilroy"
 	dynasty = 7946 # Valjevo
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	father = 56230
 	1060.1.1 = { birth = yes }
@@ -3231,8 +3259,8 @@
 	name = "Manera"
 	female = yes
 	dynasty = 7946 # Valjevo
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	father = 56231
 	1140.1.1 = { birth = yes }
@@ -3242,8 +3270,8 @@
 	name = "Carlotta"
 	female = yes
 	dynasty = 7946 # Valjevo
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	mother = 56232
 	1220.1.1 = { birth = yes }
@@ -3252,9 +3280,10 @@
 56234 = {
 	name = "Tyranthraxus"
 	dynasty = 12811
-	culture = draconic # Possessing a bronze dragon
+	culture = metallic # Possessing a bronze dragon
 	religion = faithless
 	trait = creature_dragon
+	trait = creature_bronze_dragon
 	trait = cruel
 	trait = ambitious
 	trait = master_warlock
@@ -3266,9 +3295,10 @@
 	}
 	1340.1.1 = {
 		add_trait = absent
-		effect = { set_graphical_culture = moonsea }
-		culture = moonsea
+		effect = { set_graphical_culture = tharian }
+		culture = tharian
 		remove_trait = creature_dragon
+		remove_trait = creature_bronze_dragon
 		add_trait = creature_human
 	}
 	1357.1.1 = {
@@ -3285,17 +3315,18 @@
 	}
 	1492.1.1 = {
 		effect = { set_graphical_culture = draconic }
-		culture = draconic
+		culture = chromatic
 		remove_trait = creature_giant
 		add_trait = creature_dragon
+		add_trait = creature_green_dragon
 	}
 	1500.1.1 = { death = yes }
 }
 56235 = {
 	name = "Polk"
 	dynasty = 7947 # Kriz
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = solar
 	trait = creature_human
 	620.1.1 = { birth = yes }
 	711.9.1 = { death = yes }
@@ -3303,8 +3334,8 @@
 56236 = {
 	name = "Ilos"
 	dynasty = 7930 # Zennir
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = solar
 	trait = creature_human
 	690.1.1 = { birth = yes }
 	747.1.1 = { death = yes }
@@ -3313,7 +3344,7 @@
 	name = "Orlephar"
 	dynasty = 7007 # Flostren
 	culture = sembite
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	710.1.1 = { birth = yes }
 	770.1.1 = { death = yes }
@@ -3322,7 +3353,7 @@
 	name = "Elephstron"
 	dynasty = 7008 # Meljai
 	culture = sembite
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = journeyman_fighter
 	trait = ambitious
@@ -3335,7 +3366,7 @@
 	name = "Jhoaz"
 	dynasty = 7008 # Meljai
 	culture = sembite
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 56238
 	731.1.1 = { birth = yes }
@@ -3344,8 +3375,8 @@
 56240 = {
 	name = "Zhentar"
 	dynasty = 2621 # Kemvol
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	learning = 8
 	trait = creature_human
 	trait = journeyman_wizard
@@ -3371,8 +3402,8 @@
 56241 = {
 	name = "Kalruz"
 	dynasty = 7948 # Wroast
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	800.1.1 = { birth = yes }
 	900.1.1 = { death = yes }
@@ -3381,8 +3412,8 @@
 	name = "Lomara"
 	female = yes
 	dynasty = 7948 # Wroast
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56241
 	880.1.1 = { birth = yes }
@@ -3392,8 +3423,8 @@
 	name = "Crimmara"
 	female = yes
 	dynasty = 7948 # Wroast
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	mother = 56242
 	960.1.1 = { birth = yes }
@@ -3402,8 +3433,8 @@
 56244 = {
 	name = "Murdok"
 	dynasty = 7948 # Wroast
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	mother = 56243
 	1040.1.1 = { birth = yes }
@@ -3412,8 +3443,8 @@
 56245 = {
 	name = "Bronmir"
 	dynasty = 7948 # Wroast
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56244
 	1120.1.1 = { birth = yes }
@@ -3422,8 +3453,8 @@
 56246 = {
 	name = "Zolvar"
 	dynasty = 7948 # Wroast
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56245
 	1160.1.1 = { birth = yes }
@@ -3432,8 +3463,8 @@
 56247 = {
 	name = "Theilon"
 	dynasty = 7949 # Greencloak
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	learning = 7
 	trait = creature_human
 	trait = scholarly_theologian
@@ -3452,8 +3483,8 @@
 56248 = {
 	name = "Ulsan"
 	dynasty = 7950 # Baneservant
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	learning = 7
 	trait = creature_human
 	trait = scholarly_theologian
@@ -3477,7 +3508,7 @@
 	name = "Gruk"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	1.1.1 = {
 		birth = yes
@@ -3489,7 +3520,7 @@
 	name = "Mort"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56249
 	80.1.1 = {
@@ -3502,7 +3533,7 @@
 	name = "Lonk"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56250
 	160.1.1 = {
@@ -3515,7 +3546,7 @@
 	name = "Karsum"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56251
 	240.1.1 = {
@@ -3528,7 +3559,7 @@
 	name = "Mokvar"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56252
 	320.1.1 = {
@@ -3541,7 +3572,7 @@
 	name = "Tharashk"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56253
 	400.1.1 = {
@@ -3554,7 +3585,7 @@
 	name = "Jormlarn"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56254
 	480.1.1 = {
@@ -3567,7 +3598,7 @@
 	name = "Sormm"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56255
 	560.1.1 = {
@@ -3580,7 +3611,7 @@
 	name = "Yormungur"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56256
 	640.1.1 = {
@@ -3593,7 +3624,7 @@
 	name = "Narzulbur"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56257
 	720.1.1 = {
@@ -3606,7 +3637,7 @@
 	name = "Dushkin"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56258
 	800.1.1 = {
@@ -3619,7 +3650,7 @@
 	name = "Dukaan"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56259
 	880.1.1 = {
@@ -3632,7 +3663,7 @@
 	name = "Nurglak"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56260
 	960.1.1 = { birth = yes }
@@ -3642,7 +3673,7 @@
 	name = "Ertlan"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56261
 	1040.1.1 = {
@@ -3655,7 +3686,7 @@
 	name = "Kreeg"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56262
 	1120.1.1 = {
@@ -3668,7 +3699,7 @@
 	name = "Lavuk"
 	dynasty = 7361 # Blugrak
 	culture = orc
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_half_orc
 	father = 56263
 	1200.1.1 = {
@@ -3682,8 +3713,8 @@
 56265 = {
 	name = "Tolman"
 	dynasty = 7951 # Guljaan
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = triadic
 	trait = creature_human
 	1245.1.1 = { birth = yes }
 	1310.1.1 = { death = yes }
@@ -3692,8 +3723,8 @@
 	name = "Arissa"
 	female = yes
 	dynasty = 7951 # Guljaan
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = triadic
 	trait = creature_human
 	father = 56265
 	1280.1.1 = { birth = yes }
@@ -3704,8 +3735,8 @@
 56267 = {
 	name = "Kandar"
 	dynasty = 7952 # Milinal
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 7
 	trait = creature_human
 	trait = journeyman_fighter
@@ -3716,8 +3747,8 @@
 56268 = {
 	name = "Bozar"
 	dynasty = 7953 # Grendel
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1300.1.1 = { birth = yes }
 	1355.1.1 = { death = yes }
@@ -3725,8 +3756,8 @@
 56269 = {
 	name = "Guthbert"
 	dynasty = 7954 # Golthammer
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 6
 	trait = creature_human
 	trait = tough_soldier
@@ -3742,7 +3773,7 @@
 	female = yes
 	dynasty = 10020 # Rottar
 	culture = netherese
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	trait = journeyman_cleric
 	trait = patron_moander
@@ -3754,7 +3785,7 @@
 	female = yes
 	dynasty = 10020 # Rottar
 	culture = netherese
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	trait = journeyman_cleric
 	trait = patron_moander
@@ -3767,8 +3798,8 @@
 56272 = {
 	name = "Mierik"
 	dynasty = 7955 # Ultor
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	760.1.1 = { birth = yes }
 	860.1.1 = { death = yes }
@@ -3777,8 +3808,8 @@
 	name = "Kiala"
 	female = yes
 	dynasty = 7955 # Ultor
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	father = 56272
 	840.1.1 = { birth = yes }
@@ -3788,8 +3819,8 @@
 	name = "Clarissa"
 	female = yes
 	dynasty = 7955 # Ultor
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	mother = 56273
 	880.1.1 = { birth = yes }
@@ -3798,8 +3829,8 @@
 56275 = {
 	name = "Calo"
 	dynasty = 7956 # Nordan
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1250.1.1 = { birth = yes }
 	1337.1.1 = { death = yes }
@@ -3807,8 +3838,8 @@
 56276 = {
 	name = "Lodros"
 	dynasty = 7957 # Bremvo
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1300.1.1 = { birth = yes }
 	1355.1.1 = { death = yes }
@@ -3816,8 +3847,8 @@
 56277 = {
 	name = "Haliator"
 	dynasty = 7958 # Mendara
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	martial = 7
 	trait = creature_human
 	trait = greedy
@@ -3829,8 +3860,8 @@
 56278 = {
 	name = "Darik"
 	dynasty = 7959 # Beskan
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	1340.1.1 = { birth = yes }
 	1400.1.1 = { death = yes }
@@ -3839,7 +3870,7 @@
 	name = "Lafaril"
 	dynasty = 10021 # Mievarian
 	culture = netherese
-	religion = netherese_pantheon
+	religion = arcane
 	trait = creature_human
 	160.1.1 = { birth = yes }
 	260.1.1 = { death = yes }
@@ -3848,7 +3879,7 @@
 	name = "Marca"
 	dynasty = 10021 # Mievarian
 	culture = netherese
-	religion = netherese_pantheon
+	religion = arcane
 	trait = creature_human
 	father = 56279
 	240.1.1 = { birth = yes }
@@ -3858,7 +3889,7 @@
 	name = "Niklavv"
 	dynasty = 10021 # Mievarian
 	culture = netherese
-	religion = netherese_pantheon
+	religion = arcane
 	trait = creature_human
 	father = 56280
 	320.1.1 = { birth = yes }
@@ -3868,7 +3899,7 @@
 	name = "Harrig"
 	dynasty = 10021 # Mievarian
 	culture = netherese
-	religion = netherese_pantheon
+	religion = arcane
 	trait = creature_human
 	father = 56281
 	400.1.1 = { birth = yes }
@@ -3877,8 +3908,8 @@
 56283 = {
 	name = "Jom"
 	dynasty = 7960 # Ryster
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	480.1.1 = { birth = yes }
 	580.1.1 = { death = yes }
@@ -3887,8 +3918,8 @@
 	name = "Lanera"
 	female = yes
 	dynasty = 7960 # Ryster
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	father = 56283
 	560.1.1 = { birth = yes }
@@ -3898,8 +3929,8 @@
 	name = "Ylanni"
 	female = yes
 	dynasty = 7960 # Ryster
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	mother = 56284
 	640.1.1 = { birth = yes }
@@ -3909,8 +3940,8 @@
 	name = "Bismiel"
 	female = yes
 	dynasty = 7960 # Ryster
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = mercantile
 	trait = creature_human
 	mother = 56285
 	720.1.1 = { birth = yes }
@@ -3919,8 +3950,8 @@
 56287 = {
 	name = "Vanus"
 	dynasty = 7961 # Crindal
-	culture = moonsea
-	religion = good_human_pantheon
+	culture = tharian
+	religion = solar
 	trait = creature_human
 	320.1.1 = { birth = yes }
 	400.1.1 = {
@@ -3931,11 +3962,11 @@
 	name = "Nomos"
 	dynasty = 7962 # Faendar
 	culture = green_elf
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_half_elf
 	650.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	680.1.1 = { immortal_age = 30 }
 	800.1.1 = { death = yes }
@@ -3945,12 +3976,12 @@
 	female = yes
 	dynasty = 7962 # Faendar
 	culture = green_elf
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_half_elf
 	father = 56288
 	750.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	780.1.1 = { immortal_age = 30 }
 	900.1.1 = { death = yes }
@@ -3960,12 +3991,12 @@
 	female = yes
 	dynasty = 7962 # Faendar
 	culture = green_elf
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_half_elf
 	mother = 56289
 	850.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	880.1.1 = { immortal_age = 30 }
 	1000.1.1 = { death = yes }
@@ -3974,12 +4005,12 @@
 	name = "Anduras"
 	dynasty = 7962 # Faendar
 	culture = green_elf
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_half_elf
 	mother = 56290
 	950.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	980.1.1 = { immortal_age = 30 }
 	1100.1.1 = { death = yes }
@@ -3988,12 +4019,12 @@
 	name = "Inaro"
 	dynasty = 7962 # Faendar
 	culture = green_elf
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_half_elf
 	father = 56291
 	1050.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	1080.1.1 = { immortal_age = 30 }
 	1200.1.1 = { death = yes }
@@ -4002,12 +4033,12 @@
 	name = "Justen"
 	dynasty = 7962 # Faendar
 	culture = green_elf
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_half_elf
 	father = 56292
 	1150.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	1180.1.1 = { immortal_age = 30 }
 	1300.1.1 = { death = yes }
@@ -4017,12 +4048,12 @@
 	female = yes
 	dynasty = 7962 # Faendar
 	culture = green_elf
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_half_elf
 	father = 56293
 	1270.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	1300.1.1 = { immortal_age = 30 }
 	1354.1.1 = { death = yes }
@@ -4032,7 +4063,7 @@
 	female = yes
 	dynasty = 3929 # Elmshadow
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	140.1.1 = { birth = yes }
 	240.1.1 = { death = yes }
@@ -4042,7 +4073,7 @@
 	female = yes
 	dynasty = 3929 # Elmshadow
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	mother = 56295
 	220.1.1 = { birth = yes }
@@ -4052,7 +4083,7 @@
 	name = "Carson"
 	dynasty = 3929 # Elmshadow
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	mother = 56296
 	300.1.1 = { birth = yes }
@@ -4062,7 +4093,7 @@
 	name = "Hubbard"
 	dynasty = 3929 # Elmshadow
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	father = 56297
 	380.1.1 = { birth = yes }
@@ -4073,7 +4104,7 @@
 	female = yes
 	dynasty = 3929 # Elmshadow
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	father = 56298
 	460.1.1 = { birth = yes }
@@ -4084,7 +4115,7 @@
 	female = yes
 	dynasty = 3929 # Elmshadow
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	mother = 56299
 	540.1.1 = { birth = yes }
@@ -4095,7 +4126,7 @@
 	female = yes
 	dynasty = 3929 # Elmshadow
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_human
 	mother = 56300
 	620.1.1 = { birth = yes }
@@ -4105,11 +4136,11 @@
 	name = "Tyermailin"
 	dynasty = 7963 # Vaergol
 	culture = moon_elf
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_half_elf
 	700.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	730.1.1 = { immortal_age = 30 }
 	850.1.1 = { death = yes }
@@ -4119,12 +4150,12 @@
 	female = yes
 	dynasty = 7963 # Vaergol
 	culture = moon_elf
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_half_elf
 	father = 56302
 	820.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	850.1.1 = { immortal_age = 30 }
 	970.1.1 = { death = yes }
@@ -4133,12 +4164,12 @@
 	name = "Pritchar"
 	dynasty = 7963 # Vaergol
 	culture = moon_elf
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_half_elf
 	mother = 56303
 	950.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	980.1.1 = { immortal_age = 30 }
 	1100.1.1 = { death = yes }
@@ -4147,12 +4178,12 @@
 	name = "Janilo"
 	dynasty = 7963 # Vaergol
 	culture = moon_elf
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_half_elf
 	father = 56304
 	1080.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	1110.1.1 = { immortal_age = 30 }
 	1230.1.1 = { death = yes }
@@ -4162,11 +4193,11 @@
 	female = yes
 	dynasty = 7964 # Duskcloak
 	culture = sun_elf
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_half_elf
 	1200.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	1230.1.1 = { immortal_age = 30 }
 	1340.1.1 = { death = yes }
@@ -4175,12 +4206,12 @@
 	name = "Dessaer"
 	dynasty = 7964 # Duskcloak
 	culture = sun_elf
-	religion = good_human_pantheon
+	religion = natural
 	trait = creature_half_elf
 	mother = 56306
 	1310.1.1 = {
 		birth = yes
-		culture = moonsea
+		culture = tharian
 	}
 	1340.1.1 = { immortal_age = 30 }
 	1450.1.1 = { death = yes }
@@ -4190,8 +4221,8 @@
 56308 = {
 	name = "Dalton"
 	dynasty = 7314
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	900.1.1 = { birth = yes }
 	1000.1.1 = { death = yes }
@@ -4199,8 +4230,8 @@
 56309 = {
 	name = "Karlton"
 	dynasty = 7314
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56308
 	980.1.1 = { birth = yes }
@@ -4209,8 +4240,8 @@
 56310 = {
 	name = "Misko"
 	dynasty = 7314
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56309
 	1060.1.1 = { birth = yes }
@@ -4219,8 +4250,8 @@
 56311 = {
 	name = "Janus"
 	dynasty = 7314
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56310
 	1140.1.1 = { birth = yes }
@@ -4229,8 +4260,8 @@
 56312 = {
 	name = "Mayn"
 	dynasty = 7314
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56311
 	1220.1.1 = { birth = yes }
@@ -4239,8 +4270,8 @@
 56313 = {
 	name = "Fenric"
 	dynasty = 7314
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56312
 	1260.1.1 = { birth = yes }
@@ -4250,8 +4281,8 @@
 56314 = {
 	name = "Klimmek"
 	dynasty = 7315
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	900.1.1 = { birth = yes }
 	1000.1.1 = { death = yes }
@@ -4260,8 +4291,8 @@
 	name = "Fiona"
 	female = yes
 	dynasty = 7315
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56314
 	980.1.1 = { birth = yes }
@@ -4271,8 +4302,8 @@
 	name = "Azra"
 	female = yes
 	dynasty = 7315
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	mother = 56315
 	1060.1.1 = { birth = yes }
@@ -4281,8 +4312,8 @@
 56317 = {
 	name = "Lobot"
 	dynasty = 7315
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	mother = 56316
 	1140.1.1 = { birth = yes }
@@ -4291,8 +4322,8 @@
 56318 = {
 	name = "Brando"
 	dynasty = 7315
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56317
 	1220.1.1 = { birth = yes }
@@ -4302,8 +4333,8 @@
 	name = "Iona"
 	female = yes
 	dynasty = 7315
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56318
 	1260.1.1 = { birth = yes }
@@ -4313,8 +4344,8 @@
 56320 = {
 	name = "Zeno"
 	dynasty = 7316
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	900.1.1 = { birth = yes }
 	1000.1.1 = { death = yes }
@@ -4322,8 +4353,8 @@
 56321 = {
 	name = "Nero"
 	dynasty = 7316
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56320
 	980.1.1 = { birth = yes }
@@ -4333,8 +4364,8 @@
 	name = "Elana"
 	female = yes
 	dynasty = 7316
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56321
 	1060.1.1 = { birth = yes }
@@ -4343,8 +4374,8 @@
 56323 = {
 	name = "Carrik"
 	dynasty = 7316
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	mother = 56322
 	1140.1.1 = { birth = yes }
@@ -4353,8 +4384,8 @@
 56324 = {
 	name = "Aldo"
 	dynasty = 7316
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56323
 	1220.1.1 = { birth = yes }
@@ -4363,8 +4394,8 @@
 56325 = {
 	name = "Rualph"
 	dynasty = 7316
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56324
 	1280.1.1 = { birth = yes }
@@ -4376,8 +4407,8 @@
 56326 = {
 	name = "Xander"
 	dynasty = 7317
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	900.1.1 = { birth = yes }
 	1000.1.1 = { death = yes }
@@ -4385,8 +4416,8 @@
 56327 = {
 	name = "Trent"
 	dynasty = 7317
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56326
 	980.1.1 = { birth = yes }
@@ -4396,8 +4427,8 @@
 	name = "Carmine"
 	female = yes
 	dynasty = 7317
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56327
 	1060.1.1 = { birth = yes }
@@ -4407,8 +4438,8 @@
 	name = "Carina"
 	female = yes
 	dynasty = 7317
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	mother = 56328
 	1140.1.1 = { birth = yes }
@@ -4418,8 +4449,8 @@
 	name = "Lina"
 	female = yes
 	dynasty = 7317
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	mother = 56329
 	1220.1.1 = { birth = yes }
@@ -4428,8 +4459,8 @@
 56331 = {
 	name = "Amdrauth"
 	dynasty = 7317
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	mother = 56330
 	1270.1.1 = { birth = yes }
@@ -4441,8 +4472,8 @@
 56332 = {
 	name = "Fisto"
 	dynasty = 7318
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	900.1.1 = { birth = yes }
 	1000.1.1 = { death = yes }
@@ -4450,8 +4481,8 @@
 56333 = {
 	name = "Danik"
 	dynasty = 7318
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56332
 	980.1.1 = { birth = yes }
@@ -4460,8 +4491,8 @@
 56334 = {
 	name = "Niko"
 	dynasty = 7318
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56333
 	1060.1.1 = { birth = yes }
@@ -4470,8 +4501,8 @@
 56335 = {
 	name = "Olfentos"
 	dynasty = 7318
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56334
 	1140.1.1 = { birth = yes }
@@ -4480,8 +4511,8 @@
 56336 = {
 	name = "Mannfred"
 	dynasty = 7318
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	father = 56335
 	1220.1.1 = { birth = yes }
@@ -4490,7 +4521,7 @@
 56337 = {
 	name = "Volfred"
 	dynasty = 7318
-	culture = moonsea
+	culture = tharian
 	religion = beholder_pantheon
 	trait = creature_human
 	father = 56336
@@ -4535,8 +4566,8 @@
 56340 = {
 	name = "Aramman"
 	dynasty = 7967 # Freebane
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	trait = creature_human
 	trait = cruel
 	trait = journeyman_fighter
@@ -4547,8 +4578,8 @@
 56341 = {
 	name = "The Pereghost"
 	dynasty = 3
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = dead_three
 	martial = 12
 	diplomacy = 8
 	intrigue = 8
@@ -4567,6 +4598,9 @@
 	1356.1.1 = {
 		remove_trait = absent
 		employer = 56083
+		effect = {
+			join_society = black_network
+		}
 	}
 	1359.1.1 = {
 		give_job_title = job_marshal
@@ -4574,13 +4608,18 @@
 	1368.1.1 = {
 		religion = church_of_cyric
 	}
+	1383.1.1 = {
+		effect = {
+			set_society_grandmaster = yes
+		}
+	}
 	1500.1.1 = { death = yes }
 }
 
 56342 = {
 	name = Karne
 	culture = amnian
-	religion = evil_human_pantheon
+	religion = dead_three
 	martial = 10
 	diplomacy = 10
 	learning = 5
@@ -4590,6 +4629,7 @@
 	trait = elusive_shadow
 	trait = cruel
 	trait = journeyman_rogue
+	trait = fighter
 	trait = deceitful
 	trait = greedy
 	trait = patient
@@ -4610,7 +4650,7 @@
 56343 = {
 	name = Sleyvas
 	culture = lizardfolk
-	religion = evil_human_pantheon
+	religion = dead_three
 	martial = 4
 	diplomacy = 10
 	learning = 10

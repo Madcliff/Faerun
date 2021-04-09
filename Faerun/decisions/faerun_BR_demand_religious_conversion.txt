@@ -3,9 +3,10 @@ targetted_decisions = {
 	# "Demand Religious Conversion"
 	# Note: need to disable DEMAND_RELIGIOUS_CONVERSION_INTERACTION_ENABLED in defines.lua
 	# - Split in 2 decisions as there is no ai_target_filter for both direct vassals and courtiers.
-	
+
 	demand_courtier_religious_conversion = {
 		ai_target_filter = home_court
+		only_rulers = yes
 		from_potential = {
 			is_ruler = yes
 			trait = zealous
@@ -14,10 +15,13 @@ targetted_decisions = {
 				religion_group = aberration_group
 				religion_group = goblin_pantheon_group
 				religion_group = orc_pantheon_group
-				religion = lolth_cult
+				religion_group = drow_pantheon
 				religion = laduguer
 				religion = entropy
 				religion = faithless
+				religion = urdlen
+				religion = vaprak
+				religion = tiamat
 				}
 			NOR = {
 				government = democratic_feudal_government
@@ -91,7 +95,7 @@ targetted_decisions = {
 			show_maybe_for_human = yes 
 			
 			additive_modifier = {			# Custom localizations are located in traits_religious
-				value = -30
+				value = -20
 				localisation_key = AIREASON_BASE_RELUCTANCE
 				always = yes
 				}
@@ -384,6 +388,7 @@ targetted_decisions = {
 				localisation_key = sympathy_for_good_alignment_reason
 				OR = {
 				trait = sympathy_good_human_pantheon_group
+				trait = sympathy_wild_human_pantheon_group
 				trait = sympathy_zakharan_group
 				trait = sympathy_karaturan_group
 				trait = sympathy_elven_pantheon_group
@@ -419,7 +424,8 @@ targetted_decisions = {
 					religion_group = pagan_group
 					religion = adama
 					religion = faithless
-					religion = drow_polytheism
+					religion = vhaeraun
+					religion = kiaransalee
 					}
 				}
 			additive_modifier = {
@@ -594,6 +600,7 @@ targetted_decisions = {
 	}
 	demand_vassal_religious_conversion = {
 		ai_target_filter = vassals
+		only_rulers = yes
 		from_potential = {
 			is_ruler = yes
 			trait = zealous
@@ -602,10 +609,13 @@ targetted_decisions = {
 				religion_group = aberration_group
 				religion_group = goblin_pantheon_group
 				religion_group = orc_pantheon_group
-				religion = lolth_cult
+				religion_group = drow_pantheon
 				religion = laduguer
 				religion = entropy
 				religion = faithless
+				religion = urdlen
+				religion = vaprak
+				religion = tiamat
 				}
 			NOR = {
 				government = democratic_feudal_government
@@ -679,7 +689,7 @@ targetted_decisions = {
 			show_maybe_for_human = yes 
 			
 			additive_modifier = {			# Custom localizations are located in traits_religious
-				value = -30
+				value = -20
 				localisation_key = AIREASON_BASE_RELUCTANCE
 				always = yes
 				}
@@ -972,6 +982,7 @@ targetted_decisions = {
 				localisation_key = sympathy_for_good_alignment_reason
 				OR = {
 				trait = sympathy_good_human_pantheon_group
+				trait = sympathy_wild_human_pantheon_group
 				trait = sympathy_zakharan_group
 				trait = sympathy_karaturan_group
 				trait = sympathy_elven_pantheon_group
@@ -1007,7 +1018,8 @@ targetted_decisions = {
 					religion_group = pagan_group
 					religion = adama
 					religion = faithless
-					religion = drow_polytheism
+					religion = vhaeraun
+					religion = kiaransalee
 					}
 				}
 			additive_modifier = {

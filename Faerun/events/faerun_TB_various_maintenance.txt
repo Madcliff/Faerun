@@ -1,350 +1,19 @@
 namespace = govmaint # Keeping the namespace to avoid problems
 
-character_event = {
+character_event = { # Is a placeholder workaround
 	id = govmaint.1
 	hide_window = yes
 	
 	is_triggered_only = yes
-	ai = no
+	
+	trigger = {
+		government = baron_theocracy_government
+		NOT = { has_law = succ_open_elective }
+	}
 	
 	immediate = {
-		any_character = {
-			limit = {
-				is_landed = yes
-				has_law = succ_divine_elective
-				NOT = { government = divine_feudal_government }
-			}
-			set_government_type = divine_feudal_government
-		}
-		any_character = {
-			limit = {
-				is_landed = yes
-				has_law = succ_popular_elective
-				NOT = { government = democratic_feudal_government }
-			}
-			set_government_type = democratic_feudal_government
-		}
-		any_character = {
-			limit = {
-				is_landed = yes
-				has_law = succ_magic_elective
-				NOT = { government = magocratic_feudal_government }
-			}
-			set_government_type = magocratic_feudal_government
-		}
-		#Phlan
-		if = {
-			limit = {
-				NOT = { year = 1345 }
-			}
-			c_phlan = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		if = {
-			limit = {
-				 year = 1375
-			}
-			c_phlan = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Westgate
-		if = {
-			limit = {
-				OR = {
-					NOT = { year = 137 }
-					AND = {
-						year = 257
-						NOT = { year = 710 }
-					}
-					AND = {
-						year = 734
-						NOT = { year = 890 }
-					}
-					AND = {
-						year = 900
-						NOT = { year = 1248 }
-					}
-				}
-			}
-			d_westgate = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Nesmé
-		if = {
-			limit = {
-				NOT = { year = 1269 }
-			}
-			c_nesme = {
-				holder_scope = {
-					set_government_type = tribal_government
-				}
-			}
-		}
-		if = {
-			limit = {
-				year = 1269
-				NOT = { year = 1294 }
-			}
-			c_nesme = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		if = {
-			limit = {
-				date = 1484.4.1
-				NOT = { date = 1485.5.1 }
-			}
-			c_nesme = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		if = {
-			limit = {
-				date = 1485.5.1
-			}
-			c_nesme = {
-				holder_scope = {
-					set_government_type = tribal_government
-				}
-			}
-		}
-		#Everlund
-		if = {
-			limit = {
-				NOT = { year = 850 }
-			}
-			c_everlund = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Sunset Vale
-		if = {
-			limit = {
-				NOT = { year = 850 }
-			}
-			d_sunset_vale = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Asbravn
-		if = {
-			limit = {
-				NOT = { year = 990 }
-				NOT = { culture = monster }
-			}
-			c_asbravn = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Berdusk
-		if = {
-			limit = {
-				NOT = { year = 377 }
-			}
-			c_berdusk = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Corm Orp
-		if = {
-			limit = {
-				NOT = { year = 1250 }
-				NOT = { culture = monster }
-			}
-			c_corm_orp = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Scornubel
-		if = {
-			limit = {
-				NOT = { year = 377 }
-			}
-			c_scornubel = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Proskur
-		if = {
-			limit = {
-				NOT = { year = 1090 }
-			}
-			c_proskur = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Beregost
-		if = {
-			limit = {
-				year = 1370
-			}
-			c_beregost = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Hillsfar
-		if = {
-			limit = {
-				year = 348
-				NOT = { year = 400 }
-			}
-			c_hillsfar = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		if = {
-			limit = {
-				year = 1357
-				NOT = { year = 1374 }
-			}
-			c_hillsfar = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Mistledale
-		if = {
-			limit = {
-				year = 940
-				NOT = { year = 947 }
-			}
-			c_mistledale = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Shadowdale
-		if = {
-			limit = {
-				NOT = { year = 907 }
-			}
-			c_shadowdale = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Vast Swamp
-		if = {
-			limit = {
-				OR = {
-					NOT = { year = 1232 }
-					year = 1310
-				}
-			}
-			c_vast_swamp = {
-				holder_scope = {
-					set_government_type = feudal_government 
-				}
-			}
-		}
-		#Turmish
-		if = {
-			limit = {
-				NOT = { year = 1248 }
-			}
-			k_turmish = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Shamph
-		if = {
-			limit = {
-				NOT = { year = 139 }
-			}
-			c_shamph = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Talduth Vale
-		if = {
-			limit = {
-				year = 180
-				NOT = { year = 980 }
-			}
-			c_talduth_vale = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Dapplegate
-		if = {
-			limit = {
-				year = 500
-				NOT = { year = 1030 }
-			}
-			c_dapplegate = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#The Rift
-		if = {
-			limit = {
-				OR = {
-					NOT = { year = 1220 }
-					AND = {
-						year = 1310
-						NOT = { year = 1485 }
-					}
-					date = 1486.5.1
-				}
-			}
-			c_the_rift = {
-				holder_scope = {
-					set_government_type = feudal_government
-				}
-			}
-		}
-		#Silverymoon
-		if = {
-			limit = {
-				NOT = { year = 637 }
-			}
-			c_silverymoon = {
-				holder_scope = {
-					set_government_type = tribal_government
-				}
-			}
+		primary_title = {
+			add_law = succ_open_elective
 		}
 	}
 }
@@ -371,15 +40,16 @@ character_event = {
 }
 
 character_event = {
-	id = govmaint.2
+	id = govmaint.3
 	hide_window = yes
 	
 	is_triggered_only = yes
-	
+
 	trigger = {
 		has_character_flag = undead_court
+		higher_tier_than = BARON
 	}
-	
+
 	immediate = {
 		any_demesne_province = {
 			religion = ROOT
@@ -392,5 +62,409 @@ character_event = {
 			name = undead_realm_lord
 			duration = -1
 		}
+	}
+}
+
+character_event = {
+	id = govmaint.4
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		ROOT = {
+			higher_tier_than = BARON
+			NOT = { has_character_flag = undead_court }
+			NOT = { has_character_modifier = undead_realm_lord }
+		}
+		any_demesne_province = {
+			has_province_modifier = undead_province
+		}
+	}
+
+	immediate = {
+		any_demesne_province = {
+			limit = {
+				has_province_modifier = undead_province
+			}
+			religion = ROOT
+			remove_province_modifier = undead_province
+			set_variable = { which = prosperity_value value = 0 }
+			if = {
+				limit = {
+					has_province_modifier = prosperity_modifier_3
+				}
+				remove_province_modifier = prosperity_modifier_3
+			}
+			if = {
+				limit = {
+					has_province_modifier = prosperity_modifier_2
+				}
+				remove_province_modifier = prosperity_modifier_2
+			}
+			if = {
+				limit = {
+					has_province_modifier = prosperity_modifier_1
+				}
+				remove_province_modifier = prosperity_modifier_1
+			}
+			if = {
+				limit = {
+					has_province_modifier = depopulated_1
+				}
+				remove_province_modifier = depopulated_1
+			}
+			if = {
+				limit = {
+					has_province_modifier = depopulated_2
+				}
+				remove_province_modifier = depopulated_2
+			}
+			add_province_modifier = {
+				name = depopulated_3
+				duration = -1
+			}
+		}
+	}
+}
+
+character_event = { # Is a placeholder workaround
+	id = govmaint.5
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { tier = BARON }
+		any_demesne_title = {
+			has_law = succ_open_elective
+		}
+	}
+	
+	immediate = {
+		any_demesne_title = {
+			limit = {
+				has_law = succ_open_elective
+			}
+			primary_title = {
+				PREV = {
+					copy_title_laws = PREV
+				}
+			}
+		}
+	}
+}
+
+character_event = { # Is a placeholder workaround
+	id = govmaint.6
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { tier = baron }
+		capital_holding = {
+			holding_type = temple
+		}
+		NOR = {
+			government = muslim_government
+			government = theocracy_government
+			government = divine_feudal_government
+			government = yikaria_government
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				is_government_potential = muslim_government
+			}
+			set_government_type = muslim_government
+		}
+		else_if = {
+			limit = {
+				is_government_potential = divine_feudal_government
+			}
+			set_government_type = divine_feudal_government
+		}
+		else_if = {
+			limit = {
+				NOR = {
+					is_government_potential = muslim_government
+					is_government_potential = divine_feudal_government
+				}
+			}
+			set_government_type = theocracy_government
+		}
+	}
+}
+
+character_event = {
+	id = govmaint.7
+	hide_window = yes
+	
+	trigger = {
+		religion = uthgardt_faith
+		NOT = { has_uthgardt_totem = yes }
+	}
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					has_landed_title = d_black_lion
+					any_liege = {
+						has_landed_title = d_black_lion
+					}
+				}
+			}
+			add_trait = uthgar_black_lion
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_landed_title = d_black_raven
+					any_liege = {
+						has_landed_title = d_black_raven
+					}
+				}
+			}
+			add_trait = uthgar_black_raven
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_landed_title = d_blue_bear
+					any_liege = {
+						has_landed_title = d_blue_bear
+					}
+				}
+			}
+			add_trait = uthgar_blue_bear
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_landed_title = d_elk
+					any_liege = {
+						has_landed_title = d_elk
+					}
+				}
+			}
+			add_trait = uthgar_elk
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_landed_title = d_gray_wolf
+					any_liege = {
+						has_landed_title = d_gray_wolf
+					}
+				}
+			}
+			add_trait = uthgar_gray_wolf
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_landed_title = d_great_worm
+					any_liege = {
+						has_landed_title = d_great_worm
+					}
+				}
+			}
+			add_trait = uthgar_great_worm
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_landed_title = d_griffon
+					any_liege = {
+						has_landed_title = d_griffon
+					}
+				}
+			}
+			add_trait = uthgar_griffon
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_landed_title = d_red_tiger
+					any_liege = {
+						has_landed_title = d_red_tiger
+					}
+				}
+			}
+			add_trait = uthgar_red_tiger
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_landed_title = d_sky_pony
+					any_liege = {
+						has_landed_title = d_sky_pony
+					}
+				}
+			}
+			add_trait = uthgar_sky_pony
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_landed_title = d_tree_ghost
+					any_liege = {
+						has_landed_title = d_tree_ghost
+					}
+				}
+			}
+			add_trait = uthgar_tree_ghost
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_landed_title = d_thunderbeast
+					any_liege = {
+						has_landed_title = d_thunderbeast
+					}
+				}
+			}
+			add_trait = uthgar_thunderbeast
+		}
+	}
+}
+
+character_event = {
+	id = govmaint.8
+	hide_window = yes
+	
+	trigger = {
+		date = 1372.2.1
+		ai = no
+	}
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = bane_returned
+	}
+}
+
+character_event = {
+	id = govmaint.9
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		primary_title = {
+			FROM = {
+				copy_title_laws = PREV
+			}
+		}
+	}
+}
+
+character_event = {
+	id = govmaint.10
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { government = magocratic_feudal_government }
+		primary_title = {
+			title = FROM
+		}
+		OR = {
+			z_wizard = yes
+			z_sorcerer = yes
+			z_warlock = yes
+			z_bard = yes
+		}
+		FROM = {
+			OR = {
+				has_law = succ_magic_elective
+				has_law = succ_magic_dynastic
+				AND = {
+					has_law = succ_magic_wizard
+					ROOT = {
+						z_wizard = yes
+					}
+				}
+				AND = {
+					has_law = succ_magic_zulkir
+					ROOT = {
+						z_wizard = yes
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		set_government_type = magocratic_feudal_government
+	}
+}
+
+character_event = {
+	id = govmaint.11
+	hide_window = yes
+	
+	trigger = {
+		independent = no
+		liege = {
+			government = magocratic_feudal_government
+		}
+		FROM = {
+			capital_holding = {
+				holding_type = castle
+			}
+		}
+		OR = {
+			AND = {
+				liege = {
+					OR = {
+						has_law = succ_magic_wizard
+						has_law = succ_magic_zulkir
+					}
+				}
+				z_wizard = yes
+			}
+			AND = {
+				liege = {
+					OR = {
+						has_law = succ_magic_dynastic
+						has_law = succ_magic_elective
+					}
+				}
+				OR = {
+					z_wizard = yes
+					z_bard = yes
+					z_sorcerer = yes
+					z_warlock = yes
+				}
+			}
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_government_type = magocratic_feudal_government
+		if = {
+			limit = {
+				liege = {
+					OR = {
+						has_law = succ_magic_wizard
+						has_law = succ_magic_zulkir
+					}
+				}
+			}
+			add_law = succ_magic_wizard
+			break = yes
+		}
+		add_law = succ_magic_elective
 	}
 }

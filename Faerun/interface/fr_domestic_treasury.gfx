@@ -1,4 +1,4 @@
-spriteTypes = {	
+spriteTypes = {
 	spriteType = {
 		name = "GFX_homunculus"
 		texturefile = "gfx\\interface\\inventory\\artifacts\\homunculus.dds"
@@ -14,5 +14,85 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_wiz_familiar_artf_small"
 		texturefile = "gfx\\interface\\inventory\\artifacts\\wiz_familiar_artf_small.dds"
+	}
+	spriteType = {
+		name = "GFX_spellguard_shield"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\spellguard_shield.dds"
+	}
+	spriteType = {
+		name = "GFX_spellguard_shield_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\spellguard_shield_small.dds"
+	}
+	spriteType = {
+		name = "GFX_arrowcatching_shield"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\arrowcatching_shield.dds"
+	}
+	spriteType = {
+		name = "GFX_arrowcatching_shield_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\arrowcatching_shield_small.dds"
+	}
+	spriteType = {
+		name = "GFX_animated_shield"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\animated_shield.dds"
+	}
+	spriteType = {
+		name = "GFX_animated_shield_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\animated_shield_small.dds"
+	}
+	spriteType = {
+		name = "GFX_holy_avenger"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\holy_avenger.dds"
+	}
+	spriteType = {
+		name = "GFX_holy_avenger_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\holy_avenger_small.dds"
+	}
+	spriteType = {
+		name = "GFX_vorpal"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\vorpal.dds"
+	}
+	spriteType = {
+		name = "GFX_vorpal_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\vorpal_small.dds"
+	}
+	spriteType = {
+		name = "GFX_sentinel_shield"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\sentinel_shield.dds"
+	}
+	spriteType = {
+		name = "GFX_sentinel_shield_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\sentinel_shield_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dancing_sword"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\dancing_sword.dds"
+	}
+	spriteType = {
+		name = "GFX_dancing_sword_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\dancing_sword_small.dds"
+	}
+	spriteType = {
+		name = "GFX_berserker_axe"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\berserker_axe.dds"
+	}
+	spriteType = {
+		name = "GFX_berserker_axe_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\berserker_axe_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dwarven_thrower"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\dwarven_thrower.dds"
+	}
+	spriteType = {
+		name = "GFX_dwarven_thrower_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\dwarven_thrower_small.dds"
+	}
+	spriteType = {
+		name = "GFX_defender"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\defender.dds"
+	}
+	spriteType = {
+		name = "GFX_defender_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\defender_small.dds"
 	}
 }

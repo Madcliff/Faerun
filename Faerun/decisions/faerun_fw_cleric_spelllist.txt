@@ -3,7 +3,7 @@
 decisions = {
 
 #Universal spells
-	
+
 	dispel_clerical = {
 		ai_check_interval = 30
 		potential = {
@@ -14,17 +14,16 @@ decisions = {
 			}
 		}
 		allow = {
-			NOT = { has_character_modifier = burn_path_mod }
-			custom_tooltip = {
-				text = HASBADSPELL
-				hidden_tooltip = {
-					has_bad_spell_effect = yes
-				}
-			}
 			custom_tooltip = {
 				text = HAS10SPELLPOINTS
 				hidden_tooltip = {
 					check_variable = { which = clespellpoints value = 10 }
+				}
+			}
+			custom_tooltip = {
+				text = HASBADSPELL
+				hidden_tooltip = {
+					has_bad_spell_effect = yes
 				}
 			}
 			custom_tooltip = {
@@ -36,6 +35,7 @@ decisions = {
 					}
 				}
 			}
+			#NOT = { has_character_modifier = burn_path_mod }
 		}
 		effect = {
 			hidden_tooltip = { change_variable = { which = clespellpoints value = -10 } }
@@ -47,22 +47,32 @@ decisions = {
 			factor = 0.1
 		}
 	}
-	
+
 	turn_undead = {
-		ai_check_interval = 5
+		ai = no
 		potential = {
-			z_cleric = yes
-			OR = {
-				ai = yes
+			#z_cleric = yes
+			#OR = {
+				#ai = yes
 				has_character_flag = cle_spellbook_open
-			}
+			#}
 		}
 		allow = {
-			NOT = { has_character_modifier = burn_path_mod }
+			in_battle = yes
 			custom_tooltip = {
 				text = HAS10SPELLPOINTS #only costs 10 for clerics since they're better at turning/destroying undead
 				hidden_tooltip = {
 					check_variable = { which = clespellpoints value = 10 }
+				}
+			}
+			war = yes
+			any_current_enemy = {
+				OR = {
+					trait = undead
+					trait = lich
+					trait = lich_baelnorn
+					trait = vampire
+					trait = vampire_spawn
 				}
 			}
 			custom_tooltip = {
@@ -74,71 +84,60 @@ decisions = {
 					}
 				}
 			}
-			in_battle = yes
-			combat = {
-				enemy = {
-					OR = {
-						trait = undead
-						trait = lich
-						trait = lich_baelnorn
-						trait = vampire
-						trait = vampire_spawn
-						any_controlled_unit = {
-							troops = {
-								who = undead_troops
-								value > 0
-							}
-						}
-					}
-				}
-			}
+
+			#NOT = { has_character_modifier = burn_path_mod }
 		}
 		effect = {
 			change_variable = { which = clespellpoints value = -10 }
 			set_character_flag = spell_disrupt_undead_cooldown
 
-			if = {
-				limit = {
-					combat = {
-						enemy = {
-							any_controlled_unit = {
-								troops = {
-									who = undead_troops
-									value > 0
-								}
-							}
-						}
-					}
-				}
-				combat = {
-					enemy = {
-						combat = {
-							#limit = {
-							#	troops = {
-							#		who = undead_troops
-							#		value > 0
-							#	}
+			#if = {
+				#limit = {
+					#combat = {
+						#enemy = {
+							#any_controlled_unit = {
+								#troops = {
+									#who = undead_troops
+									#value > 0
+								#}
 							#}
-							damage_unit = {
-								type = undead_troops
-								percentage = 33
-							}
-							random = {
-								chance = 33
-								damage_unit = {
-									type = undead_troops
-									percentage = 33
-								}
-							}
-							random = {
-								chance = 33
-								damage_unit = {
-									type = undead_troops
-									percentage = 33
-								}
-							}
-						}
+						#}
+					#}
+				#}
+				#combat = {
+					#enemy = {
+						#combat = {
+							#damage_unit = {
+								#type = undead_troops
+								#percentage = 33
+							#}
+							#random = {
+								#chance = 33
+								#damage_unit = {
+									#type = undead_troops
+									#percentage = 33
+								#}
+							#}
+							#random = {
+								#chance = 33
+								#damage_unit = {
+									#type = undead_troops
+									#percentage = 33
+								#}
+							#}
+						#}
+					#}
+				#}
+			#}
+
+			any_current_enemy = {
+				random_realm_character = {
+					limit = {
+						at_location = ROOT
+						in_command = yes
+						prisoner = no
 					}
+					morale = -0.35
 				}
 			}
 			if = {
@@ -179,18 +178,24 @@ decisions = {
 			factor = 0.5
 		}
 	}
-	
+
 	planar_binding_clerical = {
 		ai_check_interval = 24
+		only_rulers = yes
 		potential = {
-			z_cleric = yes
+			#z_cleric = yes
 			OR = {
 				ai = yes
 				has_character_flag = cle_spellbook_open
 			}
 		}
 		allow = {
-			NOT = { has_character_modifier = burn_path_mod }
+			custom_tooltip = {
+				text = HAS20SPELLPOINTS
+				hidden_tooltip = {
+					check_variable = { which = clespellpoints value = 20 }
+				}
+			}
 			custom_tooltip = {
 				text = EXPERTCLEHIGHER
 				hidden_tooltip = {
@@ -203,12 +208,6 @@ decisions = {
 				}
 			}
 			custom_tooltip = {
-				text = HAS20SPELLPOINTS
-				hidden_tooltip = {
-					check_variable = { which = clespellpoints value = 20 }
-				}
-			}
-			custom_tooltip = {
 				text = SPELL_ON_COOLDOWN
 				hidden_tooltip = {
 					OR = {
@@ -217,6 +216,7 @@ decisions = {
 					}
 				}
 			}
+			#NOT = { has_character_modifier = burn_path_mod }
 		}
 		effect = {
 			set_character_flag = spell_planar_binding_cooldown
@@ -228,23 +228,23 @@ decisions = {
 					random_list = {
 						1 = {
 							modifier = {   #evil types won't summon angels
-								religion_group = evil_human_pantheon_group
+								olrox_is_evil_religion_trigger = yes
 								factor = 0
 							}
-							modifier = {
-								AND = {   #evil types won't summon angels
-										religion_group = drow_pantheon
-										NOT = { trait = patron_eilistraee }
-								}
-								factor = 0
-							}
-						
+							#modifier = {
+								#AND = {   #evil types won't summon angels
+										#religion_group = drow_pantheon
+										#NOT = { trait = patron_eilistraee }
+								#}
+								#factor = 0
+							#}
+
 							create_character = {
 								age = 1000
 								female = random
 								trait = creature_angel
 								random_traits = yes
-								religion = good_human_pantheon
+								religion = triadic
 								culture = angel
 								dynasty = none
 								immortal_age = 30
@@ -263,22 +263,17 @@ decisions = {
 							}
 						}
 						1 = {
-							modifier = {
-								OR = {  #goodly types won't summon fiends
-									religion_group = good_human_pantheon_group
-									religion_group = elven_pantheon_group
-									religion = dwarven_pantheon
-									religion = gnome_pantheon					
-								}
+							modifier = { #goodly types won't summon fiends
+								olrox_is_good_religion_trigger = yes
 								factor = 0
 							}
-							modifier = {
-								AND = {
-										religion_group = drow_pantheon
-										trait = patron_eilistraee
-								}
-								factor = 0
-							}
+							#modifier = {
+								#AND = {
+										#religion_group = drow_pantheon
+										#trait = patron_eilistraee
+								#}
+								#factor = 0
+							#}
 							create_character = {
 								age = 1000
 								female = random
@@ -291,22 +286,17 @@ decisions = {
 							}
 						}
 						1 = {
-							modifier = {
-								OR = { #goodly types won't summon fiends
-									religion_group = good_human_pantheon_group
-									religion_group = elven_pantheon_group
-									religion = dwarven_pantheon
-									religion = gnome_pantheon					
-								}
+							modifier = { #goodly types won't summon fiends
+								olrox_is_good_religion_trigger = yes
 								factor = 0
 							}
-							modifier = {
-								AND = {
-										religion_group = drow_pantheon
-										trait = patron_eilistraee
-								}
-								factor = 0
-							}
+							#modifier = {
+								#AND = {
+										#religion_group = drow_pantheon
+										#trait = patron_eilistraee
+								#}
+								#factor = 0
+							#}
 							create_character = {
 								age = 1000
 								female = random
@@ -319,28 +309,23 @@ decisions = {
 							}
 						}
 						1 = {
-							modifier = {
-								OR = { #goodly types won't summon fiends
-									religion_group = good_human_pantheon_group
-									religion_group = elven_pantheon_group
-									religion = dwarven_pantheon
-									religion = gnome_pantheon					
-								}
+							modifier = { #goodly types won't summon fiends
+								olrox_is_good_religion_trigger = yes
 								factor = 0
 							}
-							modifier = {
-								AND = {
-										religion_group = drow_pantheon
-										trait = patron_eilistraee
-								}
-								factor = 0
-							}
+							#modifier = {
+								#AND = {
+										#religion_group = drow_pantheon
+										#trait = patron_eilistraee
+								#}
+								#factor = 0
+							#}
 							create_character = {
 								age = 1000
 								female = random
 								trait = creature_daemon
 								random_traits = yes
-								religion = evil_human_pantheon
+								religion = shadow_gods
 								culture = yugoloth
 								dynasty = none
 								immortal_age = 30
@@ -351,8 +336,9 @@ decisions = {
 						opinion = {
 							modifier = planar_binding_mod
 							who = ROOT
-							years = 2000
+							years = 10
 						}
+						character_event = { id = spellaux.43 years = 20 }
 						if = {
 							limit = {
 								trait = creature_devil
@@ -391,7 +377,7 @@ decisions = {
 								10 = {
 									set_graphical_culture = succubus
 									add_trait = greater_fiend # marilith
-								}						
+								}
 								2 = {
 									set_graphical_culture = baatezu # balors look a lot like pit fiends
 									add_trait = greater_fiend
@@ -410,7 +396,7 @@ decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 0.2
+			factor = 0.1
 			modifier = {
 				factor = 0
 				has_full_court = yes
@@ -418,18 +404,23 @@ decisions = {
 		}
 	}
 
-
 	planar_ally = {
 		ai_check_interval = 24
+		only_rulers = yes
 		potential = {
-			z_cleric = yes
+			#z_cleric = yes
 			OR = {
 				ai = yes
 				has_character_flag = cle_spellbook_open
 			}
 		}
 		allow = {
-			NOT = { has_character_modifier = burn_path_mod }
+			custom_tooltip = {
+				text = HAS20SPELLPOINTS
+				hidden_tooltip = {
+					check_variable = { which = clespellpoints value = 20 }
+				}
+			}
 			custom_tooltip = {
 				text = MASTERCLEHIGHER
 				hidden_tooltip = {
@@ -441,12 +432,6 @@ decisions = {
 				}
 			}
 			custom_tooltip = {
-				text = HAS20SPELLPOINTS
-				hidden_tooltip = {
-					check_variable = { which = clespellpoints value = 20 }
-				}
-			}
-			custom_tooltip = {
 				text = SPELL_ON_COOLDOWN
 				hidden_tooltip = {
 					OR = {
@@ -455,6 +440,7 @@ decisions = {
 					}
 				}
 			}
+			#NOT = { has_character_modifier = burn_path_mod }
 		}
 		effect = {
 			set_character_flag = spell_greater_planar_binding_cooldown
@@ -466,17 +452,17 @@ decisions = {
 					random_list = {
 						1 = {
 							modifier = {   #evil types won't summon angels
-								religion_group = evil_human_pantheon_group
+								olrox_is_evil_religion_trigger = yes
 								factor = 0
 							}
-							modifier = {
-								AND = {   #evil types won't summon angels
-										religion_group = drow_pantheon
-										NOT = { trait = patron_eilistraee }
-								}
-								factor = 0
-							}
-						
+							#modifier = {
+								#AND = {   #evil types won't summon angels
+										#religion_group = drow_pantheon
+										#NOT = { trait = patron_eilistraee }
+								#}
+								#factor = 0
+							#}
+
 							create_character = {
 								age = 1000
 								female = random
@@ -489,7 +475,7 @@ decisions = {
 									learning = 8
 								}
 								random_traits = yes
-								religion = good_human_pantheon
+								religion = triadic
 								culture = angel
 								dynasty = none
 								immortal_age = 30
@@ -515,22 +501,17 @@ decisions = {
 							}
 						}
 						1 = {
-							modifier = {
-								OR = {  #goodly types won't summon fiends
-									religion_group = good_human_pantheon_group
-									religion_group = elven_pantheon_group
-									religion = dwarven_pantheon
-									religion = gnome_pantheon					
-								}
+							modifier = { #goodly types won't summon fiends
+								olrox_is_good_religion_trigger = yes
 								factor = 0
 							}
-							modifier = {
-								AND = {
-										religion_group = drow_pantheon
-										trait = patron_eilistraee
-								}
-								factor = 0
-							}
+							#modifier = {
+								#AND = {
+										#religion_group = drow_pantheon
+										#trait = patron_eilistraee
+								#}
+								#factor = 0
+							#}
 							create_character = {
 								age = 1000
 								female = random
@@ -550,22 +531,17 @@ decisions = {
 							}
 						}
 						1 = {
-							modifier = {
-								OR = { #goodly types won't summon fiends
-									religion_group = good_human_pantheon_group
-									religion_group = elven_pantheon_group
-									religion = dwarven_pantheon
-									religion = gnome_pantheon					
-								}
+							modifier = { #goodly types won't summon fiends
+								olrox_is_good_religion_trigger = yes
 								factor = 0
 							}
-							modifier = {
-								AND = {
-										religion_group = drow_pantheon
-										trait = patron_eilistraee
-								}
-								factor = 0
-							}
+							#modifier = {
+								#AND = {
+										#religion_group = drow_pantheon
+										#trait = patron_eilistraee
+								#}
+								#factor = 0
+							#}
 							create_character = {
 								age = 1000
 								female = random
@@ -585,22 +561,17 @@ decisions = {
 							}
 						}
 						1 = {
-							modifier = {
-								OR = { #goodly types won't summon fiends
-									religion_group = good_human_pantheon_group
-									religion_group = elven_pantheon_group
-									religion = dwarven_pantheon
-									religion = gnome_pantheon					
-								}
+							modifier = { #goodly types won't summon fiends
+								olrox_is_good_religion_trigger = yes
 								factor = 0
 							}
-							modifier = {
-								AND = {
-										religion_group = drow_pantheon
-										trait = patron_eilistraee
-								}
-								factor = 0
-							}
+							#modifier = {
+								#AND = {
+										#religion_group = drow_pantheon
+										#trait = patron_eilistraee
+								#}
+								#factor = 0
+							#}
 							create_character = {
 								age = 1000
 								female = random
@@ -613,7 +584,7 @@ decisions = {
 									learning = 8
 								}
 								random_traits = yes
-								religion = evil_human_pantheon
+								religion = shadow_gods
 								culture = yugoloth
 								dynasty = none
 								immortal_age = 30
@@ -624,8 +595,9 @@ decisions = {
 						opinion = {
 							modifier = planar_binding_mod
 							who = ROOT
-							years = 2000
+							years = 10
 						}
+						character_event = { id = spellaux.43 years = 20 }
 						if = {
 							limit = {
 								trait = creature_devil
@@ -656,7 +628,7 @@ decisions = {
 								20 = {
 									set_graphical_culture = succubus
 									add_trait = greater_fiend # marilith
-								}						
+								}
 								5 = {
 									set_graphical_culture = baatezu # balors look a lot like pit fiends
 									add_trait = greater_fiend
@@ -672,45 +644,43 @@ decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 0.2
+			factor = 0.1
 			modifier = {
 				factor = 0
 				has_full_court = yes
 			}
 		}
 	}
-	
+
 	spell_animate_dead_clerical = {
-		ai_check_interval = 10
+		only_playable = yes
+		ai_check_interval = 6
 		potential = {
+			is_playable = yes
 			z_cleric = yes
 			NOT = {  #religions of deities opposed to raising the undead can't cast this
-					religion_group = good_human_pantheon_group
-					religion_group = elven_pantheon_group
-					religion = dwarven_pantheon
-					religion = gnome_pantheon					
+					olrox_is_good_religion_trigger = yes
 			}
 			OR = {
-				AND = {
+				#AND = {
 					ai = yes
-					is_ruler = yes
-				}
+				#	is_ruler = yes
+				#}
 				has_character_flag = cle_spellbook_open
 			}
 		}
 		allow = {
 			war = yes
-			NOT = { has_character_modifier = burn_path_mod }
-			custom_tooltip = {
-				text = NOSUMMONEDDEMONS
-				hidden_tooltip = {
-					NOT = { has_earmarked_regiments = wiz_animate_dead }
-				}
-			}
 			custom_tooltip = {
 				text = HAS12SPELLPOINTS
 				hidden_tooltip = {
 					check_variable = { which = clespellpoints value = 10 }
+				}
+			}
+			custom_tooltip = {
+				text = NOSUMMONEDDEMONS
+				hidden_tooltip = {
+					NOT = { has_earmarked_regiments = wiz_animate_dead }
 				}
 			}
 			custom_tooltip = {
@@ -722,6 +692,7 @@ decisions = {
 					}
 				}
 			}
+			#NOT = { has_character_modifier = burn_path_mod }
 		}
 		effect = {
 			set_character_flag = spell_animate_dead_cooldown
@@ -738,42 +709,42 @@ decisions = {
 					}
 				}
 			}
-			spawn_unit = {
-				province = closest_to_capital
-				earmark = wiz_animate_dead
-				troops = {
-					undead_troops = { 500 500 }
+			location = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						home = PREV
+						owner = THIS
+						earmark = wiz_animate_dead
+						troops = {
+							undead_troops = { 1000 1000 }
+						}
+						cannot_inherit = yes
+						attrition = 0
+						maintenance_multiplier = 0
+						can_toggle_looting = no
+						reinforces = no
+					}
 				}
-				cannot_inherit = yes
-				attrition = 0
-				maintenance_multiplier = 0
-				can_toggle_looting = no
-				reinforces = no
 			}
 			hidden_tooltip = { character_event = { id = spellaux.37 months = 5 } }
 		}
 		ai_will_do = {
-			factor = 0.5
+			factor = 1
 			modifier = {
-				factor = 2
-				trait = diligent
-			}
-			modifier = {
-				factor = 0.5
-				trait = slothful
+				factor = 0
+				war = no
 			}
 		}
 	}
-	
+
 	spell_create_undead_clerical = {
 		ai_check_interval = 24
+		only_rulers = yes
 		potential = {
 			z_cleric = yes
 			NOT = {  #religions of deities opposed to raising the undead can't cast this
-					religion_group = good_human_pantheon_group
-					religion_group = elven_pantheon_group
-					religion = dwarven_pantheon
-					religion = gnome_pantheon					
+					olrox_is_good_religion_trigger = yes
 			}
 			OR = {
 				ai = yes
@@ -781,7 +752,12 @@ decisions = {
 			}
 		}
 		allow = {
-			NOT = { has_character_modifier = burn_path_mod }
+			custom_tooltip = {
+				text = HAS20SPELLPOINTS
+				hidden_tooltip = {
+					check_variable = { which = clespellpoints value = 20 }
+				}
+			}
 			custom_tooltip = {
 				text = MASTERCLEHIGHER
 				hidden_tooltip = {
@@ -793,12 +769,6 @@ decisions = {
 				}
 			}
 			custom_tooltip = {
-				text = HAS20SPELLPOINTS
-				hidden_tooltip = {
-					check_variable = { which = clespellpoints value = 20 }
-				}
-			}
-			custom_tooltip = {
 				text = SPELL_ON_COOLDOWN
 				hidden_tooltip = {
 					OR = {
@@ -807,6 +777,7 @@ decisions = {
 					}
 				}
 			}
+			#NOT = { has_character_modifier = burn_path_mod }
 		}
 		effect = {
 			set_character_flag = spell_create_undead_cooldown
@@ -814,50 +785,58 @@ decisions = {
 			custom_tooltip = {
 				text = UNDEADSUMMONED
 				hidden_tooltip = {
-					location = {
-						create_character = {
-							age = 100
-							female = random
-							random_traits = yes
-							trait = undead
-							religion = ROOT
-							culture = THIS
-							dynasty = none
-							immortal_age = 30
-						}
+					create_character = {
+						age = 100
+						female = random
+						random_traits = yes
+						trait = undead
+						religion = ROOT
+						culture = THIS
+						dynasty = none
+						immortal_age = 30
 					}
 					new_character = {
 						character_event = { id = z_character_trait.1 }
 						opinion = {
 							modifier = planar_binding_mod
 							who = ROOT
-							years = 2000
+							years = 10
 						}
 					}
 				}
 			}
 		}
 		ai_will_do = {
-			factor = 0.2
+			factor = 0.1
 			modifier = {
 				factor = 0
 				has_full_court = yes
 			}
+			modifier = {
+				factor = 0
+				NOR = {
+					trait = vampire
+					trait = lich
+					trait = undead
+					trait = patron_velsharoon
+					trait = patron_myrkul
+					trait = patron_orcus
+				}
+			}
 		}
 	}
+
 	sunesplendor = {
 		ai_check_interval = 30
 		potential = {
-			z_cleric = yes
 			trait = patron_sune
+			z_cleric = yes
 			OR = {
 				ai = yes
 				has_character_flag = cle_spellbook_open
 			}
 		}
 		allow = {
-			NOT = { has_character_modifier = burn_path_mod }
-			
 			custom_tooltip = {
 				text = HAS10SPELLPOINTS
 				hidden_tooltip = {
@@ -873,6 +852,7 @@ decisions = {
 					}
 				}
 			}
+			#NOT = { has_character_modifier = burn_path_mod }
 		}
 		effect = {
 			hidden_tooltip = { change_variable = { which = clespellpoints value = -10 } }
@@ -912,25 +892,113 @@ decisions = {
 			factor = 0.1
 		}
 	}
-	
-	
-}	
-	
+
+	spell_lesser_restoration_cleric_fake = { # This is basically a reminder that you have this spell and who you can use it on
+		ai = no
+		ai_check_interval = 6000
+		potential = {
+			#ai = no
+			#z_cleric = yes
+			has_character_flag = cle_spellbook_open
+		}
+
+		allow = {
+			always = no
+		}
+
+		effect = {
+			break = yes # doesn't matter
+		}
+
+		ai_will_do = {
+			factor = 0 # Just to be sure
+		}
+	}
+
+	spell_heal_cleric_fake = { # This is basically a reminder that you have this spell and who you can use it on
+		ai = no
+		ai_check_interval = 6000
+		potential = {
+			#ai = no
+			#z_cleric = yes
+			has_character_flag = cle_spellbook_open
+		}
+
+		allow = {
+			always = no
+		}
+
+		effect = {
+			break = yes # doesn't matter
+		}
+
+		ai_will_do = {
+			factor = 0 # Just to be sure
+		}
+	}
+
+	spell_greater_restoration_cleric_fake = { # This is basically a reminder that you have this spell and who you can use it on
+		ai = no
+		ai_check_interval = 6000
+		potential = {
+			#ai = no
+			#z_cleric = yes
+			has_character_flag = cle_spellbook_open
+		}
+
+		allow = {
+			always = no
+		}
+
+		effect = {
+			break = yes # doesn't matter
+		}
+
+		ai_will_do = {
+			factor = 0 # Just to be sure
+		}
+	}
+
+	spell_regenerate_cleric_fake = { # This is basically a reminder that you have this spell and who you can use it on
+		ai = no
+		ai_check_interval = 6000
+		potential = {
+			#ai = no
+			#z_cleric = yes
+			has_character_flag = cle_spellbook_open
+		}
+
+		allow = {
+			always = no
+		}
+
+		effect = {
+			break = yes # doesn't matter
+		}
+
+		ai_will_do = {
+			factor = 0 # Just to be sure
+		}
+	}
+
+}
+
 
 targeted_decisions = {
 
 #Universal spells
 
 	spell_banish_clerical = {
-		ai_check_interval = 4
+		ai_check_interval = 6
 		filter = rivals
 		ai_target_filter = rivals
-		
+
 		from_potential = {
 			z_cleric = yes
 		}
-		
+
 		potential = {
+			at_location = FROM
 			OR = {
 				trait = creature_angel
 				trait = creature_demon
@@ -938,11 +1006,16 @@ targeted_decisions = {
 				trait = creature_daemon
 			}
 		}
-		
+
 		allow = {
 			FROM = {
-				NOT = { has_character_modifier = burn_path_mod }
-				at_location = ROOT
+				#at_location = ROOT
+				custom_tooltip = {
+					text = HAS20SPELLPOINTS
+					hidden_tooltip = {
+						check_variable = { which = clespellpoints value = 20 }
+					}
+				}
 				custom_tooltip = {
 					text = JOURNEYMANCLEHIGHER
 					hidden_tooltip = {
@@ -956,12 +1029,6 @@ targeted_decisions = {
 					}
 				}
 				custom_tooltip = {
-					text = HAS20SPELLPOINTS
-					hidden_tooltip = {
-						check_variable = { which = clespellpoints value = 20 }
-					}
-				}
-				custom_tooltip = {
 					text = SPELL_ON_COOLDOWN
 					hidden_tooltip = {
 						OR = {
@@ -970,9 +1037,10 @@ targeted_decisions = {
 						}
 					}
 				}
+				#NOT = { has_character_modifier = burn_path_mod }
 			}
 		}
-		
+
 		effect = {
 			FROM = { set_character_flag = spell_banish_cooldown }
 			FROM = { hidden_tooltip = { change_variable = { which = clespellpoints value = -20 } } }
@@ -1013,13 +1081,15 @@ targeted_decisions = {
 		}
 	}
 
-	
+
 	spell_lesser_restoration = {
-		ai_check_interval = 5
+		ai = no
+		ai_check_interval = 6000
 		filter = realm_including_me
-		ai_target_filter = realm_including_me
-		
+		ai_target_filter = none #ai has its own version
+
 		from_potential = {
+			ai = no
 			z_cleric = yes
 		}
 		potential = {
@@ -1028,10 +1098,13 @@ targeted_decisions = {
 				trait = sickly
 				character_disease_trigger = yes
 			}
+			NOR = { #if it's this bad they need greater restoration
+				trait = incapable
+				trait = sick_incapable
+			}
 		}
 		allow = {
 			FROM = {
-				NOT = { has_character_modifier = burn_path_mod }
 				custom_tooltip = {
 					text = HAS10SPELLPOINTS
 					hidden_tooltip = {
@@ -1059,6 +1132,7 @@ targeted_decisions = {
 						}
 					}
 				}
+				#NOT = { has_character_modifier = burn_path_mod }
 			}
 		}
 		effect = {
@@ -1096,6 +1170,19 @@ targeted_decisions = {
 					remove_character_modifier = mild_illness
 					remove_character_modifier = severe_illness
 					remove_character_modifier = bedridden_illness
+					#remove treatments
+					remove_character_modifier = mystic_treatment_decent
+					remove_character_modifier = mystic_treatment_poor
+					remove_character_modifier = mystic_treatment_terrible
+					remove_character_modifier = symptom_treatment_1
+					remove_character_modifier = symptom_treatment_2
+					remove_character_modifier = symptom_treatment_3
+					remove_character_modifier = symptom_treatment_4
+					remove_character_modifier = successful_treatment_1
+					remove_character_modifier = successful_treatment_2
+					remove_character_modifier = successful_treatment_3
+					remove_character_modifier = failed_treatment_1
+					remove_character_modifier = failed_treatment_2
 					if = {
 						limit = {
 							NOT = { has_dlc = "Reapers" }
@@ -1113,6 +1200,7 @@ targeted_decisions = {
 									factor = 0
 								}
 								remove_trait = flu
+								clr_character_flag = manifest_flu
 							}
 							20 = {
 								modifier = {
@@ -1287,13 +1375,15 @@ targeted_decisions = {
 		}
 	}
 
-	
+
 	spell_greater_restoration = {
-		ai_check_interval = 5
+		ai = no
+		ai_check_interval = 6000
 		filter = realm_including_me
-		ai_target_filter = realm_including_me
-		
+		ai_target_filter = none #ai has its own version
+
 		from_potential = {
+			ai = no
 			z_cleric = yes
 		}
 		potential = {
@@ -1305,7 +1395,6 @@ targeted_decisions = {
 		}
 		allow = {
 			FROM = {
-				NOT = { has_character_modifier = burn_path_mod }
 				custom_tooltip = {
 					text = HAS15SPELLPOINTS
 					hidden_tooltip = {
@@ -1331,6 +1420,7 @@ targeted_decisions = {
 						}
 					}
 				}
+				#NOT = { has_character_modifier = burn_path_mod }
 			}
 		}
 		effect = {
@@ -1414,7 +1504,22 @@ targeted_decisions = {
 						remove_character_modifier = mild_illness
 						remove_character_modifier = severe_illness
 						remove_character_modifier = bedridden_illness
-						
+						#remove treatments
+						remove_character_modifier = mystic_treatment_decent
+						remove_character_modifier = mystic_treatment_poor
+						remove_character_modifier = mystic_treatment_terrible
+						remove_character_modifier = symptom_treatment_1
+						remove_character_modifier = symptom_treatment_2
+						remove_character_modifier = symptom_treatment_3
+						remove_character_modifier = symptom_treatment_4
+						remove_character_modifier = successful_treatment_1
+						remove_character_modifier = successful_treatment_2
+						remove_character_modifier = successful_treatment_3
+						remove_character_modifier = failed_treatment_1
+						remove_character_modifier = failed_treatment_2
+						#lastly remove incapable
+						remove_trait = incapable
+						remove_trait = sick_incapable
 					}
 				}
 			}
@@ -1467,10 +1572,11 @@ targeted_decisions = {
 	}
 
 	spell_heal = {
-		ai_check_interval = 5
+		ai = no
+		ai_check_interval = 6000
 		filter = realm_including_me
-		ai_target_filter = realm_including_me
-		
+		ai_target_filter = none
+
 		from_potential = {
 			z_cleric = yes
 		}
@@ -1483,7 +1589,6 @@ targeted_decisions = {
 		}
 		allow = {
 			FROM = {
-				NOT = { has_character_modifier = burn_path_mod }
 				custom_tooltip = {
 					text = HAS15SPELLPOINTS
 					hidden_tooltip = {
@@ -1510,6 +1615,7 @@ targeted_decisions = {
 						}
 					}
 				}
+				#NOT = { has_character_modifier = burn_path_mod }
 			}
 		}
 		effect = {
@@ -1594,10 +1700,11 @@ targeted_decisions = {
 	}
 
 	spell_regenerate = {
-		ai_check_interval = 5
+		ai = no
+		ai_check_interval = 6000
 		filter = realm_including_me
-		ai_target_filter = realm_including_me
-		
+		ai_target_filter = none
+
 		from_potential = {
 			z_cleric = yes
 		}
@@ -1614,7 +1721,6 @@ targeted_decisions = {
 		}
 		allow = {
 			FROM = {
-				NOT = { has_character_modifier = burn_path_mod }
 				custom_tooltip = {
 					text = HAS30SPELLPOINTS
 					hidden_tooltip = {
@@ -1639,6 +1745,7 @@ targeted_decisions = {
 						}
 					}
 				}
+				#NOT = { has_character_modifier = burn_path_mod }
 			}
 		}
 		effect = {
@@ -1685,7 +1792,7 @@ targeted_decisions = {
 		ai_will_do = {
 			factor = 0.3
 			modifier = {
-				factor = 100
+				factor = 1000
 				character = ROOT
 			}
 			modifier = {
@@ -1729,12 +1836,12 @@ targeted_decisions = {
 settlement_decisions = {
 
 
-	
+
 	spell_restoration_prov = {
-		ai_check_interval = 5
+		ai_check_interval = 6
 		filter = realm_owned
 		ai_target_filter = realm_owned
-		
+
 		from_potential = {
 			z_cleric = yes
 		}
@@ -1779,7 +1886,7 @@ settlement_decisions = {
 			random_list = {
 				1 = {
 					location = {
-						reduce_disease = 1.0 # *should* remove it completely
+						reduce_disease = -1.0 # *should* remove it completely
 					}
 					hidden_tooltip = {
 						if = {
@@ -1897,144 +2004,146 @@ settlement_decisions = {
 			}
 		}
 	}
-	
-	spell_animate_dead_clerical_prov = {
-		ai_check_interval = 10
-		filter = realm_owned
-		ai_target_filter = realm_owned
-		
-		from_potential = {
-			z_cleric = yes
-			NOT = {  #religions of deities opposed to raising the undead can't cast this
-					religion_group = good_human_pantheon_group
-					religion_group = elven_pantheon_group
-					religion = dwarven_pantheon
-					religion = gnome_pantheon					
-			}
-		}
-		potential = {
-			location = {
-				holder_scope = {
-					character = FROM
-				}
-			}
-		}
-		allow = {
-			location = {
-				NOT = { has_province_modifier = empty_graves_mod }
-			}
-			FROM = {
-				NOT = { has_character_modifier = burn_path_mod }
-				custom_tooltip = {
-					text = EXPERTCLEHIGHER
-					hidden_tooltip = {
-						OR = {
-							trait = expert_cleric
-							trait = master_cleric
-							trait = renowned_cleric
-							trait = legendary_cleric
-						}
-					}
-				}
-				custom_tooltip = {
-					text = HAS12SPELLPOINTS
-					hidden_tooltip = {
-						check_variable = { which = clespellpoints value = 12 }
-					}
-				}
-				custom_tooltip = {
-					text = SPELL_ON_COOLDOWN
-					hidden_tooltip = {
-						OR = {
-							NOT = { has_character_flag = spell_animate_dead_cooldown }
-							had_character_flag = { flag = spell_animate_dead_cooldown months = 1 }
-						}
-					}
-				}
-			}
-		}
-		effect = {
-			FROM = { set_character_flag = spell_animate_dead_cooldown }
-			FROM = { hidden_tooltip = { change_variable = { which = clespellpoints value = -12 } } }
-			hidden_tooltip = {
-				FROM = {
-					if = {
-						limit = {
-							has_character_modifier = wiz_wild
-						}
-						random = {
-							chance = 15
-							character_event = { id = spellaux.4 }
-							break = yes
-						}
-					}
-				}
-			}
-			location = {
-				FROM = {
-					spawn_unit = {
-						province = PREV
-						home = PREV
-						owner = FROM
-						troops = {
-							undead_troops = { 100 100 }
-						}
-						scaled_by_biggest_garrison = 1
-						cannot_inherit = yes
-						attrition = 0.1
-						can_toggle_looting = no
-						reinforces = no
-					}
-				}
-			}
-			location = {
-				add_province_modifier = {
-					name = empty_graves_mod
-					years = 3
-				}
-				if = {
-					limit = {
-						NOT = { 
-							has_province_modifier = undead_province
-						}
-					}
-					add_province_modifier = {
-						name = raised_dead_in_prov
-						years = 3
-					}
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 0.5
-			modifier = {
-				factor = 0
-				FROM = { NOT = { wealth = 100 } }
-			}
-			modifier = {
-				factor = 10
-				FROM = { trait = diligent }
-			}
-			modifier = {
-				factor = 0.5
-				FROM = { trait = slothful }
-			}
-			modifier = {
-				factor = 20
-				FROM = { trait = patron_velsharoon }
-			}
-			modifier = {
-				factor = 20
-				FROM = { 
-					OR = {
-						trait = undead
-						trait = vampire
-						trait = vampire_spawn
-						trait = lich
-					}
-				}
-			}
-		}
-	}
-	
+
+	#spell_animate_dead_clerical_prov = {
+		#ai_check_interval = 10
+		#filter = realm_owned
+		#ai_target_filter = realm_owned
+
+		#from_potential = {
+			#z_cleric = yes
+			#NOT = {  #religions of deities opposed to raising the undead can't cast this
+					#religion_group = good_human_pantheon_group
+					#religion_group = elven_pantheon_group
+					#religion = dwarven_pantheon
+					#religion = gnome_pantheon
+					#religion = bahamut
+					#religion = adama
+			#}
+		#}
+		#potential = {
+			#location = {
+				#holder_scope = {
+					#character = FROM
+				#}
+			#}
+		#}
+		#allow = {
+			#location = {
+				#NOT = { has_province_modifier = empty_graves_mod }
+			#}
+			#FROM = {
+				#NOT = { has_character_modifier = burn_path_mod }
+				#custom_tooltip = {
+					#text = EXPERTCLEHIGHER
+					#hidden_tooltip = {
+						#OR = {
+							#trait = expert_cleric
+							#trait = master_cleric
+							#trait = renowned_cleric
+							#trait = legendary_cleric
+						#}
+					#}
+				#}
+				#custom_tooltip = {
+					#text = HAS12SPELLPOINTS
+					#hidden_tooltip = {
+						#check_variable = { which = clespellpoints value = 12 }
+					#}
+				#}
+				#custom_tooltip = {
+					#text = SPELL_ON_COOLDOWN
+					#hidden_tooltip = {
+						#OR = {
+							#NOT = { has_character_flag = spell_animate_dead_cooldown }
+							#had_character_flag = { flag = spell_animate_dead_cooldown months = 1 }
+						#}
+					#}
+				#}
+			#}
+		#}
+		#effect = {
+			#FROM = { set_character_flag = spell_animate_dead_cooldown }
+			#FROM = { hidden_tooltip = { change_variable = { which = clespellpoints value = -12 } } }
+			#hidden_tooltip = {
+				#FROM = {
+					#if = {
+						#limit = {
+							#has_character_modifier = wiz_wild
+						#}
+						#random = {
+							#chance = 15
+							#character_event = { id = spellaux.4 }
+							#break = yes
+						#}
+					#}
+				#}
+			#}
+			#location = {
+				#FROM = {
+					#spawn_unit = {
+						#province = PREV
+						#home = PREV
+						#owner = FROM
+						#troops = {
+							#undead_troops = { 100 100 }
+						#}
+						#scaled_by_biggest_garrison = 1
+						#cannot_inherit = yes
+						#attrition = 0.1
+						#can_toggle_looting = no
+						#reinforces = no
+					#}
+				#}
+			#}
+			#location = {
+				#add_province_modifier = {
+					#name = empty_graves_mod
+					#years = 3
+				#}
+				#if = {
+					#limit = {
+						#NOT = {
+							#has_province_modifier = undead_province
+						#}
+					#}
+					#add_province_modifier = {
+						#name = raised_dead_in_prov
+						#years = 3
+					#}
+				#}
+			#}
+		#}
+		#ai_will_do = {
+			#factor = 0.5
+			#modifier = {
+				#factor = 0
+				#FROM = { NOT = { wealth = 100 } }
+			#}
+			#modifier = {
+				#factor = 10
+				#FROM = { trait = diligent }
+			#}
+			#modifier = {
+				#factor = 0.5
+				#FROM = { trait = slothful }
+			#}
+			#modifier = {
+				#factor = 20
+				#FROM = { trait = patron_velsharoon }
+			#}
+			#modifier = {
+				#factor = 20
+				#FROM = {
+					#OR = {
+						#trait = undead
+						#trait = vampire
+						#trait = vampire_spawn
+						#trait = lich
+					#}
+				#}
+			#}
+		#}
+	#}
+
 }

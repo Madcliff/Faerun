@@ -7,7 +7,7 @@ title = c_winterglen
 max_settlements = 3
 
 b_citadel_umbra = castle
-b_taeya = city
+#b_taeya = city
 #b_grimstad = temple
 #b_firloch = castle
 #b_fallen_house = city
@@ -21,6 +21,7 @@ terrain = forest
 #History
 201.1.1 = {
 	culture = ffolk
+	b_taeya = city
 }
 1346.1.1 = {
 	religion = chauntean_faith
@@ -28,5 +29,5 @@ terrain = forest
 1377.1.1 = {
 	remove_settlement = b_taeya
 	culture = ogre
-	religion = sylvan
+	religion = shadow_gods
 }

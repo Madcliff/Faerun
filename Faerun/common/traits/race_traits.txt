@@ -1115,12 +1115,13 @@ creature_drow = {
 	intrigue = 1
 	combat_rating = 5
 	# health = -1
-	same_opinion = 10
-	same_opinion_if_same_religion = 20
+	same_opinion_if_same_religion = 10
 	sex_appeal_opinion = 10
-	good_human_pantheon_group_opinion = -20
-	elven_pantheon_group_opinion = -30
-	dwarven_pantheon_group_opinion = -20
+	good_human_pantheon_group_opinion = -10
+	elven_pantheon_opinion = -15
+	asathalfinare_opinion = -10
+	sylvan_opinion = -10
+	dwarven_pantheon_group_opinion = -10
 	opposites = {
 		creature_elf
 		creature_feyri
@@ -1147,6 +1148,7 @@ creature_drow = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -1163,6 +1165,7 @@ creature_drow = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -1184,12 +1187,8 @@ creature_drow = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -1199,6 +1198,7 @@ creature_drow = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -1235,6 +1235,7 @@ creature_elf = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -1251,6 +1252,7 @@ creature_elf = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -1272,12 +1274,8 @@ creature_elf = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -1287,6 +1285,7 @@ creature_elf = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -1323,6 +1322,7 @@ creature_sea_elf = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -1339,6 +1339,7 @@ creature_sea_elf = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -1360,12 +1361,8 @@ creature_sea_elf = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -1375,6 +1372,7 @@ creature_sea_elf = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -1410,6 +1408,7 @@ creature_half_elf = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -1426,6 +1425,7 @@ creature_half_elf = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -1447,12 +1447,8 @@ creature_half_elf = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -1462,12 +1458,13 @@ creature_half_elf = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
 creature_feyri = {
 	customizer = no
-	random = no	
+	random = no
 	immortal = yes
 	learning = 2
 	intrigue = 2
@@ -1503,6 +1500,7 @@ creature_feyri = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -1519,6 +1517,7 @@ creature_feyri = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -1540,12 +1539,8 @@ creature_feyri = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -1555,6 +1550,7 @@ creature_feyri = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -1592,6 +1588,7 @@ creature_eladrin = { # Technically fey too
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -1608,6 +1605,7 @@ creature_eladrin = { # Technically fey too
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -1629,12 +1627,8 @@ creature_eladrin = { # Technically fey too
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -1644,6 +1638,7 @@ creature_eladrin = { # Technically fey too
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -1651,7 +1646,7 @@ creature_eladrin = { # Technically fey too
 
 creature_treant = {
 	customizer = no
-	random = no	
+	random = no
 	immortal = yes
 	martial = 3
 	stewardship = 2
@@ -1688,6 +1683,7 @@ creature_treant = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -1704,6 +1700,7 @@ creature_treant = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -1725,12 +1722,8 @@ creature_treant = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -1740,6 +1733,7 @@ creature_treant = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -1780,6 +1774,7 @@ creature_centaur = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -1796,6 +1791,7 @@ creature_centaur = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -1817,12 +1813,8 @@ creature_centaur = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -1832,6 +1824,7 @@ creature_centaur = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 creature_wemic = {
@@ -1869,6 +1862,7 @@ creature_wemic = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -1885,6 +1879,7 @@ creature_wemic = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -1906,12 +1901,8 @@ creature_wemic = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -1921,9 +1912,10 @@ creature_wemic = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
-	
+
 #DWARVES
 creature_dwarf = {
 	customizer = no
@@ -1959,6 +1951,7 @@ creature_dwarf = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -1975,6 +1968,7 @@ creature_dwarf = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -1996,12 +1990,8 @@ creature_dwarf = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -2011,6 +2001,7 @@ creature_dwarf = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 creature_half_dwarf = {
@@ -2046,6 +2037,7 @@ creature_half_dwarf = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -2062,6 +2054,7 @@ creature_half_dwarf = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -2083,12 +2076,8 @@ creature_half_dwarf = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -2098,6 +2087,7 @@ creature_half_dwarf = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -2138,6 +2128,7 @@ creature_giant = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -2154,6 +2145,7 @@ creature_giant = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -2175,12 +2167,8 @@ creature_giant = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -2190,6 +2178,7 @@ creature_giant = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -2228,6 +2217,7 @@ creature_half_giant = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -2244,6 +2234,7 @@ creature_half_giant = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -2265,12 +2256,8 @@ creature_half_giant = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -2280,6 +2267,7 @@ creature_half_giant = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -2317,6 +2305,7 @@ creature_ogre = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -2333,6 +2322,7 @@ creature_ogre = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -2354,12 +2344,8 @@ creature_ogre = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -2369,6 +2355,7 @@ creature_ogre = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -2406,6 +2393,7 @@ creature_half_ogre = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -2422,6 +2410,7 @@ creature_half_ogre = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -2443,12 +2432,8 @@ creature_half_ogre = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -2458,6 +2443,7 @@ creature_half_ogre = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -2495,6 +2481,7 @@ creature_ogrillon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -2511,6 +2498,7 @@ creature_ogrillon = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -2532,12 +2520,8 @@ creature_ogrillon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -2547,6 +2531,7 @@ creature_ogrillon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -2588,6 +2573,7 @@ creature_troll = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -2604,6 +2590,7 @@ creature_troll = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -2625,12 +2612,97 @@ creature_troll = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
+		creature_genasi
+		creature_tiefling
+		creature_aasimar
+		creature_devil
+		creature_daemon
+		creature_demon
+		greater_fiend
+		creature_genie
+		creature_angel
+		creature_goliath
+	}
+}
+
+creature_goliath = {
+	customizer = no
+	random = no
+	martial = 2
+	diplomacy = -1 # bluntly honest
+	intrigue = -1 # as above
+	combat_rating = 5
+	same_opinion = 7
+	opposites = {
+		creature_drow
+		creature_elf
+		creature_feyri
+		creature_eladrin
+		creature_half_elf
+		creature_treant
+		creature_centaur
+		creature_wemic
+		creature_dwarf
+		creature_half_dwarf
+		creature_giant
+		creature_half_giant
+		creature_ogre
+		creature_half_ogre
+		creature_ogrillon
+		creature_troll
+		creature_gnome
+		creature_gith
+		creature_goblin
+		creature_hobgoblin
+		creature_bugbear
+		creature_gnoll
+		creature_hag
+		creature_halfling
+		creature_human
+		creature_illithid
+		creature_ulitharid
+		creature_minotaur
+		creature_yikarian
+		creature_orc
+		creature_half_orc
+		creature_tanarukk
+		creature_sea_elf
+		creature_pig
+		creature_toad
+		creature_sarrukh
+		creature_pureblood
+		creature_malison
+		creature_abomination
+		creature_lizardfolk
+		creature_naga
+		creature_dragonborn
+		creature_dragon
+		creature_shadow_dragon
+		creature_red_dragon
+		creature_black_dragon
+		creature_blue_dragon
+		creature_green_dragon
+		creature_white_dragon
+		creature_amethyst_dragon
+		creature_crystal_dragon
+		creature_sapphire_dragon
+		creature_emerald_dragon
+		creature_topaz_dragon
+		creature_brass_dragon
+		creature_bronze_dragon
+		creature_copper_dragon
+		creature_gold_dragon
+		creature_silver_dragon
+		creature_saurial
+		creature_pterafolk
+		creature_kobold
+		creature_tengu
+		creature_monster
+		creature_beholder
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -2679,6 +2751,7 @@ creature_gnome = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -2695,6 +2768,7 @@ creature_gnome = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -2716,12 +2790,8 @@ creature_gnome = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -2731,6 +2801,7 @@ creature_gnome = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -2772,6 +2843,7 @@ creature_gith = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -2788,6 +2860,7 @@ creature_gith = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -2809,12 +2882,8 @@ creature_gith = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -2824,6 +2893,7 @@ creature_gith = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -2837,9 +2907,9 @@ creature_goblin = {
 	diplomacy = -2
 	learning = -2
 	same_opinion = 20
-	good_human_pantheon_group_opinion = -30
-	elven_pantheon_group_opinion = -30
-	dwarven_pantheon_group_opinion = -30
+	good_human_pantheon_group_opinion = -15
+	elven_pantheon_group_opinion = -15
+	dwarven_pantheon_group_opinion = -15
 	opposites = {
 		creature_drow
 		creature_elf
@@ -2866,6 +2936,7 @@ creature_goblin = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -2882,6 +2953,7 @@ creature_goblin = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -2903,12 +2975,8 @@ creature_goblin = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -2918,6 +2986,7 @@ creature_goblin = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -2928,9 +2997,9 @@ creature_hobgoblin = {
 	stewardship = -2
 	combat_rating = 5
 	same_opinion = 20
-	good_human_pantheon_group_opinion = -30
-	elven_pantheon_group_opinion = -30
-	dwarven_pantheon_group_opinion = -30
+	good_human_pantheon_group_opinion = -15
+	elven_pantheon_group_opinion = -15
+	dwarven_pantheon_group_opinion = -15
 	opposites = {
 		creature_drow
 		creature_elf
@@ -2957,6 +3026,7 @@ creature_hobgoblin = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -2973,6 +3043,7 @@ creature_hobgoblin = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -2994,12 +3065,8 @@ creature_hobgoblin = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -3009,6 +3076,7 @@ creature_hobgoblin = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -3021,9 +3089,9 @@ creature_bugbear = {
 	stewardship = -2
 	combat_rating = 10
 	same_opinion = 20
-	good_human_pantheon_group_opinion = -30
-	elven_pantheon_group_opinion = -30
-	dwarven_pantheon_group_opinion = -30
+	good_human_pantheon_group_opinion = -15
+	elven_pantheon_group_opinion = -15
+	dwarven_pantheon_group_opinion = -15
 	opposites = {
 		creature_drow
 		creature_elf
@@ -3050,6 +3118,7 @@ creature_bugbear = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -3066,6 +3135,7 @@ creature_bugbear = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -3087,12 +3157,8 @@ creature_bugbear = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -3102,6 +3168,7 @@ creature_bugbear = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -3115,9 +3182,99 @@ creature_gnoll = {
 	stewardship = -2
 	combat_rating = 10
 	same_opinion = 20
-	good_human_pantheon_group_opinion = -40
-	elven_pantheon_group_opinion = -40
-	dwarven_pantheon_group_opinion = -30
+	good_human_pantheon_group_opinion = -20
+	elven_pantheon_group_opinion = -20
+	dwarven_pantheon_group_opinion = -15
+	opposites = {
+		creature_drow
+		creature_elf
+		creature_feyri
+		creature_eladrin
+		creature_half_elf
+		creature_treant
+		creature_centaur
+		creature_wemic
+		creature_dwarf
+		creature_half_dwarf
+		creature_giant
+		creature_half_giant
+		creature_ogre
+		creature_half_ogre
+		creature_ogrillon
+		creature_troll
+		creature_gnome
+		creature_gith
+		creature_goblin
+		creature_hobgoblin
+		creature_bugbear
+		creature_hag
+		creature_halfling
+		creature_human
+		creature_illithid
+		creature_ulitharid
+		creature_minotaur
+		creature_yikarian
+		creature_orc
+		creature_half_orc
+		creature_tanarukk
+		creature_sea_elf
+		creature_pig
+		creature_toad
+		creature_sarrukh
+		creature_pureblood
+		creature_malison
+		creature_abomination
+		creature_lizardfolk
+		creature_naga
+		creature_dragonborn
+		creature_dragon
+		creature_shadow_dragon
+		creature_red_dragon
+		creature_black_dragon
+		creature_blue_dragon
+		creature_green_dragon
+		creature_white_dragon
+		creature_amethyst_dragon
+		creature_crystal_dragon
+		creature_sapphire_dragon
+		creature_emerald_dragon
+		creature_topaz_dragon
+		creature_brass_dragon
+		creature_bronze_dragon
+		creature_copper_dragon
+		creature_gold_dragon
+		creature_silver_dragon
+		creature_saurial
+		creature_pterafolk
+		creature_kobold
+		creature_tengu
+		creature_monster
+		creature_beholder
+		creature_aarakocra
+		creature_sahuagin
+		creature_genasi
+		creature_tiefling
+		creature_aasimar
+		creature_devil
+		creature_daemon
+		creature_demon
+		greater_fiend
+		creature_genie
+		creature_angel
+		creature_goliath
+	}
+}
+creature_half_gnoll = {
+	customizer = no
+	random = no
+	martial = 1
+	learning = -1
+	stewardship = -1
+	combat_rating = 5
+	same_opinion = 10
+	good_human_pantheon_group_opinion = -10
+	elven_pantheon_group_opinion = -10
+	dwarven_pantheon_group_opinion = -10
 	opposites = {
 		creature_drow
 		creature_elf
@@ -3160,6 +3317,7 @@ creature_gnoll = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -3181,12 +3339,8 @@ creature_gnoll = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -3196,6 +3350,9 @@ creature_gnoll = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
+		creature_gnoll
+		creature_ulitharid
 	}
 }
 
@@ -3205,10 +3362,11 @@ creature_hag = {
 	random = no
 	learning = 4
 	diplomacy = -2
+	immortal = yes
 	same_opinion = 30
-	good_human_pantheon_group_opinion = -40
-	elven_pantheon_group_opinion = -40
-	dwarven_pantheon_group_opinion = -40
+	good_human_pantheon_group_opinion = -25
+	elven_pantheon_group_opinion = -25
+	dwarven_pantheon_group_opinion = -25
 	opposites = {
 		creature_drow
 		creature_elf
@@ -3235,6 +3393,7 @@ creature_hag = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -3251,6 +3410,7 @@ creature_hag = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -3272,12 +3432,8 @@ creature_hag = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -3287,6 +3443,7 @@ creature_hag = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -3324,6 +3481,7 @@ creature_halfling = {
 		creature_hag
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -3340,6 +3498,7 @@ creature_halfling = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -3361,12 +3520,8 @@ creature_halfling = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -3376,6 +3531,7 @@ creature_halfling = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -3413,6 +3569,7 @@ creature_human = {
 		creature_hag
 		creature_halfling
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -3429,6 +3586,7 @@ creature_human = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -3450,12 +3608,8 @@ creature_human = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -3465,6 +3619,7 @@ creature_human = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -3473,9 +3628,11 @@ creature_human = {
 creature_illithid = {
 	customizer = no
 	random = no
+	immortal = yes
 	diplomacy = -1
 	martial = -1
-	learning = 2
+	learning = 4
+	combat_rating = 10
 	same_opinion = 80
 	fertility = -5000
 	general_opinion = -50
@@ -3521,6 +3678,7 @@ creature_illithid = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -3542,12 +3700,8 @@ creature_illithid = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -3557,6 +3711,98 @@ creature_illithid = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
+	}
+}
+
+#ULITHARID
+
+creature_ulitharid = {
+	customizer = no
+	random = no
+	immortal = yes
+	martial = 2
+	diplomacy = 2
+	learning = 1
+	health = 2
+	combat_rating = 15
+	same_opinion = 20
+	opposites = {
+		creature_drow
+		creature_elf
+		creature_feyri
+		creature_eladrin
+		creature_half_elf
+		creature_treant
+		creature_centaur
+		creature_wemic
+		creature_dwarf
+		creature_half_dwarf
+		creature_giant
+		creature_half_giant
+		creature_ogre
+		creature_half_ogre
+		creature_ogrillon
+		creature_troll
+		creature_gnome
+		creature_gith
+		creature_goblin
+		creature_hobgoblin
+		creature_bugbear
+		creature_gnoll
+		creature_hag
+		creature_halfling
+		creature_human
+		creature_minotaur
+		creature_yikarian
+		creature_orc
+		creature_half_orc
+		creature_tanarukk
+		creature_sea_elf
+		creature_pig
+		creature_toad
+		creature_sarrukh
+		creature_pureblood
+		creature_malison
+		creature_abomination
+		creature_lizardfolk
+		creature_naga
+		creature_dragonborn
+		creature_dragon
+		creature_shadow_dragon
+		creature_red_dragon
+		creature_black_dragon
+		creature_blue_dragon
+		creature_green_dragon
+		creature_white_dragon
+		creature_amethyst_dragon
+		creature_crystal_dragon
+		creature_sapphire_dragon
+		creature_emerald_dragon
+		creature_topaz_dragon
+		creature_brass_dragon
+		creature_bronze_dragon
+		creature_copper_dragon
+		creature_gold_dragon
+		creature_silver_dragon
+		creature_saurial
+		creature_pterafolk
+		creature_kobold
+		creature_tengu
+		creature_monster
+		creature_beholder
+		creature_aarakocra
+		creature_sahuagin
+		creature_genasi
+		creature_tiefling
+		creature_aasimar
+		creature_devil
+		creature_daemon
+		creature_demon
+		greater_fiend
+		creature_genie
+		creature_angel
+		creature_goliath
 	}
 }
 
@@ -3597,6 +3843,7 @@ creature_minotaur = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_yikarian
 		creature_orc
 		creature_half_orc
@@ -3612,6 +3859,7 @@ creature_minotaur = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -3633,12 +3881,8 @@ creature_minotaur = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -3648,6 +3892,7 @@ creature_minotaur = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -3686,6 +3931,7 @@ creature_yikarian = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_orc
 		creature_half_orc
@@ -3701,6 +3947,7 @@ creature_yikarian = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -3722,12 +3969,8 @@ creature_yikarian = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -3737,6 +3980,7 @@ creature_yikarian = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -3750,97 +3994,6 @@ creature_orc = {
 	stewardship = -1
 	combat_rating = 10
 	same_opinion = 10
-	good_human_pantheon_group_opinion = -20
-	elven_pantheon_group_opinion = -20
-	dwarven_pantheon_group_opinion = -20
-	opposites = {
-		creature_drow
-		creature_elf
-		creature_feyri
-		creature_eladrin
-		creature_half_elf
-		creature_treant
-		creature_centaur
-		creature_wemic
-		creature_dwarf
-		creature_half_dwarf
-		creature_giant
-		creature_half_giant
-		creature_ogre
-		creature_half_ogre
-		creature_ogrillon
-		creature_troll
-		creature_gnome
-		creature_gith
-		creature_goblin
-		creature_hobgoblin
-		creature_bugbear
-		creature_gnoll
-		creature_hag
-		creature_halfling
-		creature_human
-		creature_illithid
-		creature_minotaur
-		creature_yikarian
-		creature_half_orc
-		creature_tanarukk
-		creature_sea_elf
-		creature_pig
-		creature_toad
-		creature_sarrukh
-		creature_pureblood
-		creature_malison
-		creature_abomination
-		creature_lizardfolk
-		creature_naga
-		creature_dragonborn
-		creature_dragon
-		creature_red_dragon
-		creature_black_dragon
-		creature_blue_dragon
-		creature_green_dragon
-		creature_white_dragon
-		creature_amethyst_dragon
-		creature_crystal_dragon
-		creature_sapphire_dragon
-		creature_emerald_dragon
-		creature_topaz_dragon
-		creature_brass_dragon
-		creature_bronze_dragon
-		creature_copper_dragon
-		creature_gold_dragon
-		creature_silver_dragon
-		creature_saurial
-		creature_pterafolk
-		creature_kobold
-		creature_tengu
-		creature_monster
-		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
-		creature_genasi
-		creature_tiefling
-		creature_aasimar
-		creature_devil
-		creature_daemon
-		creature_demon
-		greater_fiend
-		creature_genie
-		creature_angel
-	}
-}
-
-creature_half_orc = {
-	customizer = no
-	random = no
-	martial = 1
-	combat_rating = 5
-	general_opinion = -10
-	same_opinion = 30
 	good_human_pantheon_group_opinion = -10
 	elven_pantheon_group_opinion = -10
 	dwarven_pantheon_group_opinion = -10
@@ -3871,9 +4024,10 @@ creature_half_orc = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
-		creature_orc
+		creature_half_orc
 		creature_tanarukk
 		creature_sea_elf
 		creature_pig
@@ -3886,6 +4040,7 @@ creature_half_orc = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -3907,12 +4062,8 @@ creature_half_orc = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -3922,6 +4073,97 @@ creature_half_orc = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
+	}
+}
+
+creature_half_orc = {
+	customizer = no
+	random = no
+	martial = 1
+	combat_rating = 5
+	general_opinion = -10
+	same_opinion = 30
+	good_human_pantheon_group_opinion = -5
+	elven_pantheon_group_opinion = -5
+	dwarven_pantheon_group_opinion = -5
+	opposites = {
+		creature_drow
+		creature_elf
+		creature_feyri
+		creature_eladrin
+		creature_half_elf
+		creature_treant
+		creature_centaur
+		creature_wemic
+		creature_dwarf
+		creature_half_dwarf
+		creature_giant
+		creature_half_giant
+		creature_ogre
+		creature_half_ogre
+		creature_ogrillon
+		creature_troll
+		creature_gnome
+		creature_gith
+		creature_goblin
+		creature_hobgoblin
+		creature_bugbear
+		creature_gnoll
+		creature_hag
+		creature_halfling
+		creature_human
+		creature_illithid
+		creature_ulitharid
+		creature_minotaur
+		creature_yikarian
+		creature_orc
+		creature_tanarukk
+		creature_sea_elf
+		creature_pig
+		creature_toad
+		creature_sarrukh
+		creature_pureblood
+		creature_malison
+		creature_abomination
+		creature_lizardfolk
+		creature_naga
+		creature_dragonborn
+		creature_dragon
+		creature_shadow_dragon
+		creature_red_dragon
+		creature_black_dragon
+		creature_blue_dragon
+		creature_green_dragon
+		creature_white_dragon
+		creature_amethyst_dragon
+		creature_crystal_dragon
+		creature_sapphire_dragon
+		creature_emerald_dragon
+		creature_topaz_dragon
+		creature_brass_dragon
+		creature_bronze_dragon
+		creature_copper_dragon
+		creature_gold_dragon
+		creature_silver_dragon
+		creature_saurial
+		creature_pterafolk
+		creature_kobold
+		creature_tengu
+		creature_monster
+		creature_beholder
+		creature_aarakocra
+		creature_sahuagin
+		creature_genasi
+		creature_tiefling
+		creature_aasimar
+		creature_devil
+		creature_daemon
+		creature_demon
+		greater_fiend
+		creature_genie
+		creature_angel
+		creature_goliath
 	}
 }
 
@@ -3934,9 +4176,9 @@ creature_tanarukk = {
 	stewardship = -1
 	combat_rating = 5
 	same_opinion = 10
-	good_human_pantheon_group_opinion = -30
-	elven_pantheon_group_opinion = -30
-	dwarven_pantheon_group_opinion = -30
+	good_human_pantheon_group_opinion = -15
+	elven_pantheon_group_opinion = -15
+	dwarven_pantheon_group_opinion = -15
 	opposites = {
 		creature_drow
 		creature_elf
@@ -3964,6 +4206,7 @@ creature_tanarukk = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -3979,6 +4222,7 @@ creature_tanarukk = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -4000,12 +4244,8 @@ creature_tanarukk = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -4015,6 +4255,7 @@ creature_tanarukk = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -4025,24 +4266,19 @@ undead = {
 	random = no
 	immortal = yes
 	fertility = -5000
-	sex_appeal_opinion = -100
+	sex_appeal_opinion = -10
 	general_opinion = -20
-	same_opinion = 15
+	same_opinion = 30
 	opposites = {
 		lich
 		lich_baelnorn
 		vampire
 		vampire_spawn
-		creature_monster
-		creature_devil
-		creature_daemon
-		creature_demon
-		greater_fiend
-		creature_genie
-		creature_angel
+		#dhampyr
 	}
+	opposite_opinion = 20
 }
-longevity = { 
+longevity = {
 	customizer = no
 	random = no
 	immortal = yes
@@ -4050,7 +4286,7 @@ longevity = {
 
 #Pig/Toad
 
-creature_pig = { 
+creature_pig = {
 	customizer = no
 	random = no
 	opposites = {
@@ -4081,6 +4317,7 @@ creature_pig = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -4095,6 +4332,7 @@ creature_pig = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -4116,12 +4354,8 @@ creature_pig = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -4131,6 +4365,7 @@ creature_pig = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -4164,6 +4399,7 @@ creature_toad = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -4179,6 +4415,7 @@ creature_toad = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -4200,12 +4437,8 @@ creature_toad = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -4215,6 +4448,7 @@ creature_toad = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -4260,6 +4494,7 @@ creature_sarrukh = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -4275,6 +4510,7 @@ creature_sarrukh = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -4296,12 +4532,8 @@ creature_sarrukh = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -4311,6 +4543,7 @@ creature_sarrukh = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -4349,6 +4582,7 @@ creature_pureblood = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -4364,6 +4598,7 @@ creature_pureblood = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -4385,12 +4620,8 @@ creature_pureblood = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -4400,8 +4631,9 @@ creature_pureblood = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
-}	
+}
 
 creature_malison = {
 	customizer = no
@@ -4437,6 +4669,7 @@ creature_malison = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -4452,6 +4685,7 @@ creature_malison = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -4473,12 +4707,8 @@ creature_malison = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -4488,6 +4718,7 @@ creature_malison = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -4527,6 +4758,7 @@ creature_abomination = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -4542,6 +4774,7 @@ creature_abomination = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -4563,12 +4796,8 @@ creature_abomination = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -4578,6 +4807,7 @@ creature_abomination = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -4615,6 +4845,7 @@ creature_lizardfolk = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -4630,6 +4861,7 @@ creature_lizardfolk = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -4651,12 +4883,8 @@ creature_lizardfolk = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -4666,8 +4894,9 @@ creature_lizardfolk = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
-}		
+}
 
 #nagas
 
@@ -4707,6 +4936,7 @@ creature_naga = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -4722,6 +4952,7 @@ creature_naga = {
 		creature_lizardfolk
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -4743,12 +4974,8 @@ creature_naga = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -4758,6 +4985,7 @@ creature_naga = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -4799,6 +5027,7 @@ creature_dragonborn = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -4814,6 +5043,7 @@ creature_dragonborn = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -4835,12 +5065,8 @@ creature_dragonborn = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -4850,21 +5076,23 @@ creature_dragonborn = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
-}	
+}
 
 #Character Dragon
 creature_dragon = {
 	customizer = no
 	random = no
-	diplomacy = 5
-	martial = 5
-	stewardship = 5
-	intrigue = 5
-	learning = 5
+	hidden = yes
+	#diplomacy = 5
+	#martial = 5
+	#stewardship = 5
+	#intrigue = 5
+	#learning = 5
 	immortal = yes
-	combat_rating = 20
-	health = 4
+	#combat_rating = 20
+	#health = 4
 	same_opinion = 10
 	opposites = {
 		creature_drow
@@ -4893,6 +5121,7 @@ creature_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -4914,12 +5143,8 @@ creature_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -4929,6 +5154,7 @@ creature_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
  #Chromatic Dragons
@@ -4936,8 +5162,8 @@ creature_red_dragon = {
 	customizer = no
 	random = no
 	same_opinion = 10
-	diplomacy = 2
-	martial = 2
+	diplomacy = 3
+	martial = 3
 	opposites = {
 		creature_drow
 		creature_elf
@@ -4965,6 +5191,7 @@ creature_red_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -4980,6 +5207,7 @@ creature_red_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_black_dragon
 		creature_blue_dragon
 		creature_green_dragon
@@ -5000,12 +5228,8 @@ creature_red_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -5015,15 +5239,16 @@ creature_red_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
-creature_black_dragon = { 
+creature_black_dragon = {
 	customizer = no
 	random = no
 	same_opinion = 10
-	intrigue = 2
-	martial = 2
+	intrigue = 3
+	martial = 3
 	opposites = {
 		creature_drow
 		creature_elf
@@ -5051,6 +5276,7 @@ creature_black_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -5066,6 +5292,7 @@ creature_black_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_blue_dragon
 		creature_green_dragon
@@ -5086,12 +5313,8 @@ creature_black_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -5101,15 +5324,16 @@ creature_black_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 creature_blue_dragon = {
 	customizer = no
 	random = no
 	same_opinion = 10
-	diplomacy = 1
+	diplomacy = 2
 	stewardship = 2
-	learning = 1
+	learning = 2
 	opposites = {
 		creature_drow
 		creature_elf
@@ -5137,6 +5361,7 @@ creature_blue_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -5152,6 +5377,7 @@ creature_blue_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_green_dragon
@@ -5172,12 +5398,8 @@ creature_blue_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -5187,14 +5409,15 @@ creature_blue_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 creature_green_dragon = {
 	customizer = no
 	random = no
 	same_opinion = 10
-	intrigue = 2
-	diplomacy = 2
+	intrigue = 3
+	diplomacy = 3
 	opposites = {
 		creature_drow
 		creature_elf
@@ -5222,6 +5445,7 @@ creature_green_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -5237,6 +5461,7 @@ creature_green_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -5257,12 +5482,8 @@ creature_green_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -5272,6 +5493,7 @@ creature_green_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -5280,7 +5502,7 @@ creature_white_dragon = {
 	random = no
 	same_opinion = 10
 	general_opinion = -5 #Savage, even by dragon standards
-	martial = 4
+	martial = 5
 	opposites = {
 		creature_drow
 		creature_elf
@@ -5308,6 +5530,7 @@ creature_white_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -5323,6 +5546,7 @@ creature_white_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -5343,12 +5567,8 @@ creature_white_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -5358,15 +5578,16 @@ creature_white_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 #Gem Dragons
-creature_amethyst_dragon = { 
+creature_amethyst_dragon = {
 	customizer = no
 	random = no
 	same_opinion = 10
-	diplomacy = 2
-	learning = 2
+	diplomacy = 3
+	learning = 3
 	opposites = {
 		creature_drow
 		creature_elf
@@ -5394,6 +5615,7 @@ creature_amethyst_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -5409,6 +5631,7 @@ creature_amethyst_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -5429,12 +5652,8 @@ creature_amethyst_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -5444,14 +5663,15 @@ creature_amethyst_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 creature_crystal_dragon = {
 	customizer = no
 	random = no
 	same_opinion = 10
-	diplomacy = 3
-	intrigue = 1
+	diplomacy = 4
+	intrigue = 2
 	opposites = {
 		creature_drow
 		creature_elf
@@ -5479,6 +5699,7 @@ creature_crystal_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -5494,6 +5715,7 @@ creature_crystal_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -5514,12 +5736,8 @@ creature_crystal_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -5529,14 +5747,15 @@ creature_crystal_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 creature_emerald_dragon = {
 	customizer = no
 	random = no
 	same_opinion = 10
-	intrigue = 2 
-	learning = 2
+	intrigue = 3
+	learning = 3
 	opposites = {
 		creature_drow
 		creature_elf
@@ -5564,6 +5783,7 @@ creature_emerald_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -5579,6 +5799,7 @@ creature_emerald_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -5599,12 +5820,8 @@ creature_emerald_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -5614,14 +5831,15 @@ creature_emerald_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 creature_sapphire_dragon = {
 	customizer = no
 	random = no
 	same_opinion = 10
-	martial = 2 #strongest of the gem dragons
-	learning = 2
+	martial = 3 #strongest of the gem dragons
+	learning = 3
 	opposites = {
 		creature_drow
 		creature_elf
@@ -5649,6 +5867,7 @@ creature_sapphire_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -5664,6 +5883,7 @@ creature_sapphire_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -5684,12 +5904,8 @@ creature_sapphire_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -5699,16 +5915,17 @@ creature_sapphire_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 creature_topaz_dragon = {
 	customizer = no
 	random = no
 	same_opinion = 10
-	learning = 1
+	learning = 2
 	intrigue = 1
 	martial = 1
-	stewardship = 1 #Isolationist generalists
+	stewardship = 2 #Isolationist generalists
 	opposites = {
 		creature_drow
 		creature_elf
@@ -5736,6 +5953,7 @@ creature_topaz_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -5751,6 +5969,7 @@ creature_topaz_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -5771,12 +5990,8 @@ creature_topaz_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -5786,6 +6001,7 @@ creature_topaz_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 #Metallic Dragons
@@ -5794,8 +6010,8 @@ creature_brass_dragon = {
 	random = no
 	same_opinion = 10
 	general_opinion = 5 #super friendly
-	diplomacy = 3 #have many friends..
-	martial = 1  #and just as many enemies.
+	diplomacy = 4 #have many friends..
+	martial = 2  #and just as many enemies.
 	opposites = {
 		creature_drow
 		creature_elf
@@ -5823,6 +6039,7 @@ creature_brass_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -5838,6 +6055,7 @@ creature_brass_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -5858,12 +6076,8 @@ creature_brass_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -5873,14 +6087,15 @@ creature_brass_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 creature_bronze_dragon = {
 	customizer = no
 	random = no
 	same_opinion = 10
-	stewardship = 3 
-	diplomacy = 1
+	stewardship = 4
+	diplomacy = 2
 	opposites = {
 		creature_drow
 		creature_elf
@@ -5908,6 +6123,7 @@ creature_bronze_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -5923,6 +6139,7 @@ creature_bronze_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -5943,12 +6160,8 @@ creature_bronze_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -5958,14 +6171,15 @@ creature_bronze_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 creature_copper_dragon = {
 	customizer = no
 	random = no
 	same_opinion = 10
-	martial = 1
-	intrigue = 3 #Tricksters
+	martial = 2
+	intrigue = 4 #Tricksters
 	opposites = {
 		creature_drow
 		creature_elf
@@ -5993,6 +6207,7 @@ creature_copper_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -6008,6 +6223,7 @@ creature_copper_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -6028,12 +6244,8 @@ creature_copper_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -6043,14 +6255,15 @@ creature_copper_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 creature_gold_dragon = {
 	customizer = no
 	random = no
 	same_opinion = 10
-	stewardship = 2 #Overall, good rulers
-	diplomacy = 1
+	stewardship = 3 #Overall, good rulers
+	diplomacy = 2
 	intrigue = 1
 	opposites = {
 		creature_drow
@@ -6079,6 +6292,7 @@ creature_gold_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -6094,6 +6308,7 @@ creature_gold_dragon = {
 		creature_lizardfolk
 		creature_naga
 		creature_dragonborn
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -6114,12 +6329,8 @@ creature_gold_dragon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -6129,15 +6340,16 @@ creature_gold_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 creature_silver_dragon = {
 	customizer = no
 	random = no
 	same_opinion = 10
-	martial = 2
+	martial = 3
 	learning = 1
-	diplomacy = 1
+	diplomacy = 2
 	opposites = {
 		creature_drow
 		creature_elf
@@ -6165,6 +6377,92 @@ creature_silver_dragon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
+		creature_minotaur
+		creature_yikarian
+		creature_orc
+		creature_half_orc
+		creature_tanarukk
+		creature_sea_elf
+		creature_pig
+		creature_toad
+		creature_sarrukh
+		creature_pureblood
+		creature_malison
+		creature_abomination
+		creature_lizardfolk
+		creature_naga
+		creature_dragonborn
+		creature_shadow_dragon
+		creature_red_dragon
+		creature_black_dragon
+		creature_blue_dragon
+		creature_green_dragon
+		creature_white_dragon
+		creature_amethyst_dragon
+		creature_crystal_dragon
+		creature_sapphire_dragon
+		creature_emerald_dragon
+		creature_topaz_dragon
+		creature_brass_dragon
+		creature_bronze_dragon
+		creature_copper_dragon
+		creature_gold_dragon
+		creature_saurial
+		creature_pterafolk
+		creature_kobold
+		creature_tengu
+		creature_monster
+		creature_beholder
+		creature_aarakocra
+		creature_sahuagin
+		creature_genasi
+		creature_tiefling
+		creature_aasimar
+		creature_devil
+		creature_daemon
+		creature_demon
+		greater_fiend
+		creature_genie
+		creature_angel
+		creature_goliath
+	}
+}
+#Shadow Dragon
+creature_shadow_dragon = {
+	customizer = no
+	random = no
+	same_opinion = 10
+	intrigue = 3
+	martial = 3
+	opposites = {
+		creature_drow
+		creature_elf
+		creature_feyri
+		creature_eladrin
+		creature_half_elf
+		creature_treant
+		creature_centaur
+		creature_wemic
+		creature_dwarf
+		creature_half_dwarf
+		creature_giant
+		creature_half_giant
+		creature_ogre
+		creature_half_ogre
+		creature_ogrillon
+		creature_troll
+		creature_gnome
+		creature_gith
+		creature_goblin
+		creature_hobgoblin
+		creature_bugbear
+		creature_gnoll
+		creature_hag
+		creature_halfling
+		creature_human
+		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -6194,18 +6492,15 @@ creature_silver_dragon = {
 		creature_bronze_dragon
 		creature_copper_dragon
 		creature_gold_dragon
+		creature_silver_dragon
 		creature_saurial
 		creature_pterafolk
 		creature_kobold
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -6215,6 +6510,7 @@ creature_silver_dragon = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 #Saurial
@@ -6251,6 +6547,7 @@ creature_saurial = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -6267,6 +6564,7 @@ creature_saurial = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -6287,12 +6585,8 @@ creature_saurial = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -6302,6 +6596,7 @@ creature_saurial = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -6339,6 +6634,7 @@ creature_pterafolk = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -6355,6 +6651,7 @@ creature_pterafolk = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -6375,12 +6672,8 @@ creature_pterafolk = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -6390,6 +6683,7 @@ creature_pterafolk = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -6427,6 +6721,7 @@ creature_kobold = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -6443,6 +6738,7 @@ creature_kobold = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -6463,12 +6759,8 @@ creature_kobold = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -6478,6 +6770,7 @@ creature_kobold = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -6518,6 +6811,7 @@ creature_tengu = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -6534,6 +6828,7 @@ creature_tengu = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -6554,12 +6849,8 @@ creature_tengu = {
 		creature_kobold
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -6569,9 +6860,274 @@ creature_tengu = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
+creature_aarakocra = {
+	customizer = no
+	random = no
+	martial = -2
+	diplomacy = 2
+	stewardship = 1
+	combat_rating = -5
+	same_opinion = 10
+	opposites = {
+		creature_drow
+		creature_elf
+		creature_feyri
+		creature_eladrin
+		creature_half_elf
+		creature_treant
+		creature_centaur
+		creature_wemic
+		creature_dwarf
+		creature_half_dwarf
+		creature_giant
+		creature_half_giant
+		creature_ogre
+		creature_half_ogre
+		creature_ogrillon
+		creature_troll
+		creature_gnome
+		creature_gith
+		creature_goblin
+		creature_hobgoblin
+		creature_bugbear
+		creature_gnoll
+		creature_hag
+		creature_halfling
+		creature_human
+		creature_illithid
+		creature_ulitharid
+		creature_minotaur
+		creature_yikarian
+		creature_orc
+		creature_half_orc
+		creature_tanarukk
+		creature_sea_elf
+		creature_pig
+		creature_toad
+		creature_sarrukh
+		creature_pureblood
+		creature_malison
+		creature_abomination
+		creature_lizardfolk
+		creature_naga
+		creature_dragonborn
+		creature_dragon
+		creature_shadow_dragon
+		creature_red_dragon
+		creature_black_dragon
+		creature_blue_dragon
+		creature_green_dragon
+		creature_white_dragon
+		creature_amethyst_dragon
+		creature_crystal_dragon
+		creature_sapphire_dragon
+		creature_emerald_dragon
+		creature_topaz_dragon
+		creature_brass_dragon
+		creature_bronze_dragon
+		creature_copper_dragon
+		creature_gold_dragon
+		creature_silver_dragon
+		creature_saurial
+		creature_pterafolk
+		creature_kobold
+		creature_monster
+		creature_beholder
+		creature_tengu
+		creature_sahuagin
+		creature_genasi
+		creature_tiefling
+		creature_aasimar
+		creature_devil
+		creature_daemon
+		creature_demon
+		greater_fiend
+		creature_genie
+		creature_angel
+		creature_goliath
+	}
+}
+
+#Sahuagin
+
+creature_sahuagin = {
+	customizer = no
+	random = no
+	immortal = yes
+	martial = 2
+	diplomacy = -2
+	combat_rating = 5
+	same_opinion = 10
+	opposites = {
+		creature_drow
+		creature_elf
+		creature_feyri
+		creature_eladrin
+		creature_half_elf
+		creature_treant
+		creature_centaur
+		creature_wemic
+		creature_dwarf
+		creature_half_dwarf
+		creature_giant
+		creature_half_giant
+		creature_ogre
+		creature_half_ogre
+		creature_ogrillon
+		creature_troll
+		creature_gnome
+		creature_gith
+		creature_goblin
+		creature_hobgoblin
+		creature_bugbear
+		creature_gnoll
+		creature_hag
+		creature_halfling
+		creature_human
+		creature_illithid
+		creature_ulitharid
+		creature_minotaur
+		creature_yikarian
+		creature_orc
+		creature_half_orc
+		creature_tanarukk
+		creature_sea_elf
+		creature_pig
+		creature_toad
+		creature_sarrukh
+		creature_pureblood
+		creature_malison
+		creature_abomination
+		creature_lizardfolk
+		creature_naga
+		creature_dragonborn
+		creature_dragon
+		creature_shadow_dragon
+		creature_red_dragon
+		creature_black_dragon
+		creature_blue_dragon
+		creature_green_dragon
+		creature_white_dragon
+		creature_amethyst_dragon
+		creature_crystal_dragon
+		creature_sapphire_dragon
+		creature_emerald_dragon
+		creature_topaz_dragon
+		creature_brass_dragon
+		creature_bronze_dragon
+		creature_copper_dragon
+		creature_gold_dragon
+		creature_silver_dragon
+		creature_saurial
+		creature_pterafolk
+		creature_kobold
+		creature_monster
+		creature_beholder
+		creature_tengu
+		creature_aarakocra
+		creature_genasi
+		creature_tiefling
+		creature_aasimar
+		creature_devil
+		creature_daemon
+		creature_demon
+		greater_fiend
+		creature_genie
+		creature_angel
+		creature_goliath
+	}
+}
+
+creature_malenti = {
+	customizer = no
+	random = no
+	both_parent_has_trait_inherit_chance = 100
+	martial = 1
+	intrigue = 2
+	combat_rating = 5
+	opposites = {
+		creature_drow
+		creature_elf
+		creature_feyri
+		creature_eladrin
+		creature_half_elf
+		creature_treant
+		creature_centaur
+		creature_wemic
+		creature_dwarf
+		creature_half_dwarf
+		creature_giant
+		creature_half_giant
+		creature_ogre
+		creature_half_ogre
+		creature_ogrillon
+		creature_troll
+		creature_gnome
+		creature_gith
+		creature_goblin
+		creature_hobgoblin
+		creature_bugbear
+		creature_gnoll
+		creature_hag
+		creature_halfling
+		creature_human
+		creature_illithid
+		creature_ulitharid
+		creature_minotaur
+		creature_yikarian
+		creature_orc
+		creature_half_orc
+		creature_tanarukk
+		creature_sea_elf
+		creature_pig
+		creature_toad
+		creature_sarrukh
+		creature_pureblood
+		creature_malison
+		creature_abomination
+		creature_lizardfolk
+		creature_naga
+		creature_dragonborn
+		creature_dragon
+		creature_shadow_dragon
+		creature_red_dragon
+		creature_black_dragon
+		creature_blue_dragon
+		creature_green_dragon
+		creature_white_dragon
+		creature_amethyst_dragon
+		creature_crystal_dragon
+		creature_sapphire_dragon
+		creature_emerald_dragon
+		creature_topaz_dragon
+		creature_brass_dragon
+		creature_bronze_dragon
+		creature_copper_dragon
+		creature_gold_dragon
+		creature_silver_dragon
+		creature_saurial
+		creature_pterafolk
+		creature_kobold
+		creature_monster
+		creature_beholder
+		creature_tengu
+		creature_aarakocra
+		creature_genasi
+		creature_tiefling
+		creature_aasimar
+		creature_devil
+		creature_daemon
+		creature_demon
+		greater_fiend
+		creature_genie
+		creature_angel
+		creature_goliath
+	}
+}
 #Monsters
 
 creature_monster = {
@@ -6609,6 +7165,7 @@ creature_monster = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -6625,6 +7182,7 @@ creature_monster = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -6645,12 +7203,8 @@ creature_monster = {
 		creature_kobold
 		creature_tengu
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -6660,6 +7214,7 @@ creature_monster = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -6673,9 +7228,9 @@ creature_beholder = {
 	immortal = yes
 	customizer = no
 	random = no
-	good_human_pantheon_group_opinion = -50
-	elven_pantheon_group_opinion = -50
-	dwarven_pantheon_group_opinion = -50
+	good_human_pantheon_group_opinion = -25
+	elven_pantheon_group_opinion = -25
+	dwarven_pantheon_group_opinion = -25
 	opposites = {
 		creature_drow
 		creature_elf
@@ -6703,6 +7258,7 @@ creature_beholder = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -6719,6 +7275,7 @@ creature_beholder = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -6739,12 +7296,8 @@ creature_beholder = {
 		creature_kobold
 		creature_tengu
 		creature_monster
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -6754,512 +7307,10 @@ creature_beholder = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
-creature_minotaur_male = {
-	customizer = no
-	random = no
-	opposites = {
-		creature_drow
-		creature_elf
-		creature_feyri
-		creature_eladrin
-		creature_half_elf
-		creature_treant
-		creature_centaur
-		creature_wemic
-		creature_dwarf
-		creature_half_dwarf
-		creature_giant
-		creature_half_giant
-		creature_ogre
-		creature_half_ogre
-		creature_ogrillon
-		creature_troll
-		creature_gnome
-		creature_gith
-		creature_goblin
-		creature_hobgoblin
-		creature_bugbear
-		creature_gnoll
-		creature_hag
-		creature_halfling
-		creature_human
-		creature_illithid
-		creature_minotaur
-		creature_yikarian
-		creature_orc
-		creature_half_orc
-		creature_tanarukk
-		creature_sea_elf
-		creature_pig
-		creature_toad
-		creature_sarrukh
-		creature_pureblood
-		creature_malison
-		creature_abomination
-		creature_lizardfolk
-		creature_naga
-		creature_dragonborn
-		creature_dragon
-		creature_red_dragon
-		creature_black_dragon
-		creature_blue_dragon
-		creature_green_dragon
-		creature_white_dragon
-		creature_amethyst_dragon
-		creature_crystal_dragon
-		creature_sapphire_dragon
-		creature_emerald_dragon
-		creature_topaz_dragon
-		creature_brass_dragon
-		creature_bronze_dragon
-		creature_copper_dragon
-		creature_gold_dragon
-		creature_silver_dragon
-		creature_saurial
-		creature_pterafolk
-		creature_kobold
-		creature_tengu
-		creature_monster
-		creature_beholder
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
-		creature_genasi
-		creature_tiefling
-		creature_aasimar
-		creature_devil
-		creature_daemon
-		creature_demon
-		greater_fiend
-		creature_genie
-		creature_angel
-	}
-}
-
-creature_minotaur_female = {
-	customizer = no
-	random = no
-	opposites = {
-		creature_drow
-		creature_elf
-		creature_feyri
-		creature_eladrin
-		creature_half_elf
-		creature_treant
-		creature_centaur
-		creature_wemic
-		creature_dwarf
-		creature_half_dwarf
-		creature_giant
-		creature_half_giant
-		creature_ogre
-		creature_half_ogre
-		creature_ogrillon
-		creature_troll
-		creature_gnome
-		creature_gith
-		creature_goblin
-		creature_hobgoblin
-		creature_bugbear
-		creature_gnoll
-		creature_hag
-		creature_halfling
-		creature_human
-		creature_illithid
-		creature_minotaur
-		creature_yikarian
-		creature_orc
-		creature_half_orc
-		creature_tanarukk
-		creature_sea_elf
-		creature_pig
-		creature_toad
-		creature_sarrukh
-		creature_pureblood
-		creature_malison
-		creature_abomination
-		creature_lizardfolk
-		creature_naga
-		creature_dragonborn
-		creature_dragon
-		creature_red_dragon
-		creature_black_dragon
-		creature_blue_dragon
-		creature_green_dragon
-		creature_white_dragon
-		creature_amethyst_dragon
-		creature_crystal_dragon
-		creature_sapphire_dragon
-		creature_emerald_dragon
-		creature_topaz_dragon
-		creature_brass_dragon
-		creature_bronze_dragon
-		creature_copper_dragon
-		creature_gold_dragon
-		creature_silver_dragon
-		creature_saurial
-		creature_pterafolk
-		creature_kobold
-		creature_tengu
-		creature_monster
-		creature_beholder
-		creature_minotaur_male
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
-		creature_genasi
-		creature_tiefling
-		creature_aasimar
-		creature_devil
-		creature_daemon
-		creature_demon
-		greater_fiend
-		creature_genie
-		creature_angel
-	}
-}
-
-creature_illithid_male = {
-	customizer = no
-	random = no
-	opposites = {
-		creature_drow
-		creature_elf
-		creature_feyri
-		creature_eladrin
-		creature_half_elf
-		creature_treant
-		creature_centaur
-		creature_wemic
-		creature_dwarf
-		creature_half_dwarf
-		creature_giant
-		creature_half_giant
-		creature_ogre
-		creature_half_ogre
-		creature_ogrillon
-		creature_troll
-		creature_gnome
-		creature_gith
-		creature_goblin
-		creature_hobgoblin
-		creature_bugbear
-		creature_gnoll
-		creature_hag
-		creature_halfling
-		creature_human
-		creature_illithid
-		creature_minotaur
-		creature_yikarian
-		creature_orc
-		creature_half_orc
-		creature_tanarukk
-		creature_sea_elf
-		creature_pig
-		creature_toad
-		creature_sarrukh
-		creature_pureblood
-		creature_malison
-		creature_abomination
-		creature_lizardfolk
-		creature_naga
-		creature_dragonborn
-		creature_dragon
-		creature_red_dragon
-		creature_black_dragon
-		creature_blue_dragon
-		creature_green_dragon
-		creature_white_dragon
-		creature_amethyst_dragon
-		creature_crystal_dragon
-		creature_sapphire_dragon
-		creature_emerald_dragon
-		creature_topaz_dragon
-		creature_brass_dragon
-		creature_bronze_dragon
-		creature_copper_dragon
-		creature_gold_dragon
-		creature_silver_dragon
-		creature_saurial
-		creature_pterafolk
-		creature_kobold
-		creature_tengu
-		creature_monster
-		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
-		creature_genasi
-		creature_tiefling
-		creature_aasimar
-		creature_devil
-		creature_daemon
-		creature_demon
-		greater_fiend
-		creature_genie
-		creature_angel
-	}
-}
-
-creature_illithid_female = {
-	customizer = no
-	random = no
-	opposites = {
-		creature_drow
-		creature_elf
-		creature_feyri
-		creature_eladrin
-		creature_half_elf
-		creature_treant
-		creature_centaur
-		creature_wemic
-		creature_dwarf
-		creature_half_dwarf
-		creature_giant
-		creature_half_giant
-		creature_ogre
-		creature_half_ogre
-		creature_ogrillon
-		creature_troll
-		creature_gnome
-		creature_gith
-		creature_goblin
-		creature_hobgoblin
-		creature_bugbear
-		creature_gnoll
-		creature_hag
-		creature_halfling
-		creature_human
-		creature_illithid
-		creature_minotaur
-		creature_yikarian
-		creature_orc
-		creature_half_orc
-		creature_tanarukk
-		creature_sea_elf
-		creature_pig
-		creature_toad
-		creature_sarrukh
-		creature_pureblood
-		creature_malison
-		creature_abomination
-		creature_lizardfolk
-		creature_naga
-		creature_dragonborn
-		creature_dragon
-		creature_red_dragon
-		creature_black_dragon
-		creature_blue_dragon
-		creature_green_dragon
-		creature_white_dragon
-		creature_amethyst_dragon
-		creature_crystal_dragon
-		creature_sapphire_dragon
-		creature_emerald_dragon
-		creature_topaz_dragon
-		creature_brass_dragon
-		creature_bronze_dragon
-		creature_copper_dragon
-		creature_gold_dragon
-		creature_silver_dragon
-		creature_saurial
-		creature_pterafolk
-		creature_kobold
-		creature_tengu
-		creature_monster
-		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_frost_giant_male
-		creature_frost_giant_female
-		creature_genasi
-		creature_tiefling
-		creature_aasimar
-		creature_devil
-		creature_daemon
-		creature_demon
-		greater_fiend
-		creature_genie
-		creature_angel
-	}
-}
-
-creature_frost_giant_male = {
-	customizer = no
-	random = no
-	opposites = {
-		creature_drow
-		creature_elf
-		creature_feyri
-		creature_eladrin
-		creature_half_elf
-		creature_treant
-		creature_centaur
-		creature_wemic
-		creature_dwarf
-		creature_half_dwarf
-		creature_giant
-		creature_half_giant
-		creature_ogre
-		creature_half_ogre
-		creature_ogrillon
-		creature_troll
-		creature_gnome
-		creature_gith
-		creature_goblin
-		creature_hobgoblin
-		creature_bugbear
-		creature_gnoll
-		creature_hag
-		creature_halfling
-		creature_human
-		creature_illithid
-		creature_minotaur
-		creature_yikarian
-		creature_orc
-		creature_half_orc
-		creature_tanarukk
-		creature_sea_elf
-		creature_pig
-		creature_toad
-		creature_sarrukh
-		creature_pureblood
-		creature_malison
-		creature_abomination
-		creature_lizardfolk
-		creature_naga
-		creature_dragonborn
-		creature_dragon
-		creature_red_dragon
-		creature_black_dragon
-		creature_blue_dragon
-		creature_green_dragon
-		creature_white_dragon
-		creature_amethyst_dragon
-		creature_crystal_dragon
-		creature_sapphire_dragon
-		creature_emerald_dragon
-		creature_topaz_dragon
-		creature_brass_dragon
-		creature_bronze_dragon
-		creature_copper_dragon
-		creature_gold_dragon
-		creature_silver_dragon
-		creature_saurial
-		creature_pterafolk
-		creature_kobold
-		creature_tengu
-		creature_monster
-		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_female
-		creature_genasi
-		creature_tiefling
-		creature_aasimar
-		creature_devil
-		creature_daemon
-		creature_demon
-		greater_fiend
-		creature_genie
-		creature_angel
-	}
-}
-
-creature_frost_giant_female = {
-	customizer = no
-	random = no
-	opposites = {
-		creature_drow
-		creature_elf
-		creature_feyri
-		creature_eladrin
-		creature_half_elf
-		creature_treant
-		creature_centaur
-		creature_wemic
-		creature_dwarf
-		creature_half_dwarf
-		creature_giant
-		creature_half_giant
-		creature_ogre
-		creature_half_ogre
-		creature_ogrillon
-		creature_troll
-		creature_gnome
-		creature_gith
-		creature_goblin
-		creature_hobgoblin
-		creature_bugbear
-		creature_gnoll
-		creature_hag
-		creature_halfling
-		creature_human
-		creature_illithid
-		creature_minotaur
-		creature_yikarian
-		creature_orc
-		creature_half_orc
-		creature_tanarukk
-		creature_sea_elf
-		creature_pig
-		creature_toad
-		creature_sarrukh
-		creature_pureblood
-		creature_malison
-		creature_abomination
-		creature_lizardfolk
-		creature_naga
-		creature_dragonborn
-		creature_dragon
-		creature_red_dragon
-		creature_black_dragon
-		creature_blue_dragon
-		creature_green_dragon
-		creature_white_dragon
-		creature_amethyst_dragon
-		creature_crystal_dragon
-		creature_sapphire_dragon
-		creature_emerald_dragon
-		creature_topaz_dragon
-		creature_brass_dragon
-		creature_bronze_dragon
-		creature_copper_dragon
-		creature_gold_dragon
-		creature_silver_dragon
-		creature_saurial
-		creature_pterafolk
-		creature_kobold
-		creature_tengu
-		creature_monster
-		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_genasi
-		creature_tiefling
-		creature_aasimar
-		creature_devil
-		creature_daemon
-		creature_demon
-		greater_fiend
-		creature_genie
-		creature_angel
-	}
-}
 #PLANETOUCHED
 
 creature_genasi = {
@@ -7295,6 +7346,7 @@ creature_genasi = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -7311,6 +7363,7 @@ creature_genasi = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -7332,12 +7385,8 @@ creature_genasi = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_tiefling
 		creature_aasimar
 		creature_devil
@@ -7346,6 +7395,7 @@ creature_genasi = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -7354,7 +7404,7 @@ creature_tiefling = {
 	random = no
 	learning = 1
 	intrigue = 1
-	same_opinion_if_same_religion = 30
+	same_opinion_if_same_religion = 15
 	sex_appeal_opinion = 5
 	good_human_pantheon_group_opinion = -10
 	elven_pantheon_group_opinion = -10
@@ -7386,6 +7436,7 @@ creature_tiefling = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -7402,6 +7453,7 @@ creature_tiefling = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -7423,12 +7475,8 @@ creature_tiefling = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_aasimar
 		creature_devil
@@ -7437,6 +7485,7 @@ creature_tiefling = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -7445,7 +7494,7 @@ creature_aasimar = {
 	random = no
 	learning = 1
 	stewardship = 1
-	same_opinion_if_same_religion = 30
+	same_opinion_if_same_religion = 15
 	sex_appeal_opinion = 5
 	good_human_pantheon_group_opinion = 10
 	evil_human_pantheon_group_opinion = -10
@@ -7476,6 +7525,7 @@ creature_aasimar = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -7492,6 +7542,7 @@ creature_aasimar = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -7513,12 +7564,8 @@ creature_aasimar = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_devil
@@ -7527,6 +7574,7 @@ creature_aasimar = {
 		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -7573,6 +7621,7 @@ creature_devil = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -7589,6 +7638,7 @@ creature_devil = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -7610,12 +7660,8 @@ creature_devil = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -7623,6 +7669,7 @@ creature_devil = {
 		creature_demon
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -7666,6 +7713,7 @@ creature_daemon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -7682,6 +7730,7 @@ creature_daemon = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -7703,20 +7752,16 @@ creature_daemon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
 		creature_devil
 		creature_demon
-		greater_fiend
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -7760,6 +7805,7 @@ creature_demon = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -7776,6 +7822,7 @@ creature_demon = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -7797,12 +7844,8 @@ creature_demon = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -7810,6 +7853,7 @@ creature_demon = {
 		creature_daemon
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -7851,6 +7895,7 @@ greater_fiend = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -7867,6 +7912,7 @@ greater_fiend = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -7888,18 +7934,14 @@ greater_fiend = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
-		creature_daemon
 		creature_genie
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -7910,7 +7952,7 @@ creature_genie = {
 	martial = 1
 	diplomacy = 2
 	combat_rating = 10
-	same_opinion_if_same_religion = 15
+	same_opinion_if_same_religion = 5
 	same_opinion = 10
 	zakharan_group_opinion = 10
 	opposites = {
@@ -7940,6 +7982,7 @@ creature_genie = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -7956,6 +7999,7 @@ creature_genie = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -7977,12 +8021,8 @@ creature_genie = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -7991,6 +8031,7 @@ creature_genie = {
 		creature_demon
 		greater_fiend
 		creature_angel
+		creature_goliath
 	}
 }
 
@@ -8006,7 +8047,7 @@ creature_angel = {
 	combat_rating = 15
 	same_opinion_if_same_religion = 15
 	same_opinion = 10
-	abyssal_opinion = -40
+	abyssal_cult_opinion = -40
 	infernal_opinion = -40
 	ai_zeal = 30
 	ai_greed = -50
@@ -8039,6 +8080,7 @@ creature_angel = {
 		creature_halfling
 		creature_human
 		creature_illithid
+		creature_ulitharid
 		creature_minotaur
 		creature_yikarian
 		creature_orc
@@ -8055,6 +8097,7 @@ creature_angel = {
 		creature_naga
 		creature_dragonborn
 		creature_dragon
+		creature_shadow_dragon
 		creature_red_dragon
 		creature_black_dragon
 		creature_blue_dragon
@@ -8076,12 +8119,8 @@ creature_angel = {
 		creature_tengu
 		creature_monster
 		creature_beholder
-		creature_minotaur_male
-		creature_minotaur_female
-		creature_illithid_male
-		creature_illithid_female
-		creature_frost_giant_male
-		creature_frost_giant_female
+		creature_aarakocra
+		creature_sahuagin
 		creature_genasi
 		creature_tiefling
 		creature_aasimar
@@ -8090,6 +8129,7 @@ creature_angel = {
 		creature_demon
 		greater_fiend
 		creature_genie
+		creature_goliath
 	}
 }
 

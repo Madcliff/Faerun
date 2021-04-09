@@ -105,5 +105,6 @@
 	holder = 15125 # Soman Galt
 }
 1489.1.1 = {
+	clear_tribute_suzerain = d_waterdeep
 	holder = 15122 # Dagult Neverember
 }

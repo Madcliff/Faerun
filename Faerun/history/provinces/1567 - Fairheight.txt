@@ -22,7 +22,7 @@ terrain = mountain
 #History
 499.1.1 = {
 	culture = northlander
-	religion = deities_of_fury
+	religion = martial_faith
 	b_blackstone = tribal
 	remove_settlement = b_white_rock
 }
@@ -30,5 +30,5 @@ terrain = mountain
 	b_blackstone = castle
 }
 1100.1.1 = {
-	b_white_rock = city
+	#b_white_rock = city
 }

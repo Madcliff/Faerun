@@ -3,7 +3,6 @@
 	law = agnatic_succession
 	law = succ_gavelkind
 	holder = 30530 # Nubar
-	liege = d_oldens
 }
 100.1.1 = {
 	holder = 30531 # Zugmok
@@ -55,3 +54,4 @@
 }
 1324.1.1={holder=30456} #Naffgul[5114]
 1343.10.05={holder=30458} #Snarrl[5114]
+1400.5.7={holder=30464} #Uzgat

@@ -1,0 +1,15 @@
+# County Title
+title = c_al_asirr
+
+# Settlements
+max_settlements = 5
+
+b_al_asirr = castle
+b_bashera = city
+b_taxal = temple
+
+# Misc
+culture = affa
+religion = ten_thousand_gods
+terrain = jungle
+#History

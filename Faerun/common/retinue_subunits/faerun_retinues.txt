@@ -1,27 +1,49 @@
+##Generic Giant##
 retinuegiant = {
-	first_type = 1
-	first_amount = 25
-	
+	first_type = 6
+	first_amount = 20
+	second_type = 1
+	second_amount = 80
+
+	special_troops = giant_troops
+
 	potential = {
 		OR = {
-			government = ordning_government
-			culture_group = giant_group
+			culture = cloud_giant
+			culture = fire_giant
+			culture = frost_giant
+			culture = hill_giant
+			culture = mountain_giant
+			culture = fomorian
+			culture = stone_giant
+			culture = storm_giant
+			culture = troll
+			culture = desert_giant
+			culture = jungle_giant
+			culture = reef_giant
 		}
+		NOT = { has_character_modifier = undead_realm_lord }
 	}
-	
-	hire_cost = 75
+
+	hire_cost = 225
 	costs_prestige = yes
-	
+
+	maintenance_multiplier = 0.75
+
 	modifier = {
-		heavy_infantry_offensive = 0.1
+		heavy_infantry_offensive = 0.3
+		heavy_infantry_morale = 0.4
 	}
 }
+##War Mammoths##
 retinuegiant_2 = {
-	first_type = 6
-	first_amount = 10
-	
+	first_type = 1
+	first_amount = 200
+	second_type = 6
+	second_amount = 20
+
 	special_troops = war_mammoths
-	
+
 	potential = {
 		OR = {
 			AND = {
@@ -29,7 +51,6 @@ retinuegiant_2 = {
 				location = {
 					OR = {
 						has_building = tb_mammothherd
-						has_building = ca_manors_1
 					}
 				}
 			}
@@ -42,43 +63,25 @@ retinuegiant_2 = {
 				}
 			}
 		}
+		NOT = { has_character_modifier = undead_realm_lord }
 	}
-	
-	hire_cost = 75
-	costs_prestige = yes
-	
+
+
 	modifier = {
-		war_mammoths_offensive = 0.9
-		war_mammoths_morale = 1
-	}
-}
-retinuegiant_3 = {
-	first_type = 6
-	first_amount = 5
-	
-	special_troops = mages_troops
-	
-	potential = {
-		OR = {
-			government = ordning_government
-			culture_group = giant_group
-		}
-	}
-	
-	hire_cost = 250
-	costs_piety = yes
-	
-	modifier = {
-		mages_troops_offensive = 1
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.3
+		war_mammoths_offensive = 0.1
+		war_mammoths_defensive = 0.3
 	}
 }
 
+##Generic Monster/Animal##
 retinue_beasts = {
 	first_type = 6
 	first_amount = 50
-	
+
 	special_troops = beast_troops
-	
+
 	potential = {
 		location = {
 			OR = {
@@ -86,22 +89,122 @@ retinue_beasts = {
 				has_building = tb_beastlairs_1
 			}
 		}
+		NOT = { has_character_modifier = undead_realm_lord }
 	}
-	
+
 	hire_cost = 50
 	costs_piety = yes
-	
+
 	modifier = {
-		beast_troops_offensive = 1
+		beast_troops_offensive = 0.3
 	}
 }
+##Generic Wizards##
+retinue_generic_wizards = {
+	first_type = 6
+	first_amount = 10
 
-retinue_druids = {
+	special_troops = mages_troops
+
+	potential =  {
+		NOR = {
+			culture = halruaan # all of these get unique wizard retinues
+			culture = shadovar
+			culture = netherese
+			culture = thayan
+			culture = raumviran
+			culture = gnome
+			culture = svirfneblin
+			OR = {
+				government = ordning_government
+			}
+		}
+		OR = {
+			trait = master_wizard
+			trait = renowned_wizard
+			trait = legendary_wizard
+			trait = master_sorcerer
+			trait = renowned_sorcerer
+			trait = legendary_sorcerer
+			culture = cormyrian
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 0.5
+		mages_troops_defensive = 0.5
+	}
+}
+##Generic Clerics##
+retinue_generic_clerics = {
+	first_type = 6
+	first_amount = 10
+
+	special_troops = warpriests
+
+	potential =  {
+		NOR = { # get unique cleric retinues
+			culture = ondonti
+			culture = angel
+		}
+		OR = {
+			trait = master_cleric
+			trait = renowned_cleric
+			trait = legendary_cleric
+			trait = master_paladin
+			trait = renowned_paladin
+			trait = legendary_paladin
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_piety = yes
+
+	modifier = {
+		warpriests_offensive = 0.2
+		warpriests_defensive = 0.6
+		warpriests_morale = 0.4
+	}
+}
+##Druids##
+retinue_druids_1 = {
+	first_type = 6
+	first_amount = 10
+
+	special_troops = mages_troops
+
+	potential =  {
+		OR = {
+			trait = master_druid
+			trait = renowned_druid
+			trait = legendary_druid
+			trait = master_ranger
+			trait = renowned_ranger
+			trait = legendary_ranger
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 0.4
+		mages_troops_defensive = 0.6
+	}
+}
+##Circle Druids##
+retinue_druids_2 = {
 	first_type = 6
 	first_amount = 5
-	
+
 	special_troops = mages_troops
-	
+
 	potential =  {
 		location = {
 			OR = {
@@ -109,12 +212,1495 @@ retinue_druids = {
 				has_building = tb_beastlairs_4
 			}
 		}
+		NOT = { has_character_modifier = undead_realm_lord }
 	}
-	
+
 	hire_cost = 250
 	costs_piety = yes
-	
+
 	modifier = {
-		mages_troops_offensive = 1
+		mages_troops_offensive = 1.4
+		mages_troops_defensive = 1.6
+	}
+}
+##Purple Dragon##
+retinue_cormyr = {
+	first_type = 4
+	first_amount = 80
+	second_type = 3
+	second_amount = 20
+
+	potential = {
+		is_nomadic = no
+		is_tribal = no
+		OR = {
+			culture = cormyrian
+			society_member_of = knight_order_purple_dragons
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		knights_morale = 0.2
+		knights_offensive = 0.35
+		knights_defensive = 0.25
+		light_cavalry_morale = 0.2
+		light_cavalry_offensive = 0.1
+		light_cavalry_defensive = 0.3
+	}
+}
+##Cormyr War Wizards##
+retinue_cormyr_2 = {
+	first_type = 6
+	first_amount = 5
+
+	special_troops = mages_troops
+
+	potential = {
+		is_nomadic = no
+		is_tribal = no
+		culture = cormyrian
+		OR = {
+			has_landed_title = e_cormanthor
+			has_landed_title = k_cormyr
+			has_landed_title = e_the_heartlands
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 1.5
+		mages_troops_defensive = 1.5
+	}
+}
+##Cormyr Battle Priests##
+retinue_cormyr_3 = {
+	first_type = 6
+	first_amount = 5
+
+	special_troops = warpriests
+
+	potential = {
+		culture = cormyrian
+		OR = {
+			religion = triadic
+			religion = joyful
+			religion = solar
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		warpriests_offensive = 1.2
+		warpriests_defensive = 1.6
+		warpriests_morale = 0.4
+	}
+}
+##Cormyrian Nobles##
+retinue_cormyr_4 = {
+	first_type = 1
+	first_amount = 25
+	second_type = 0
+	second_amount = 75
+
+	potential = {
+		is_tribal = no
+		is_nomadic = no
+		culture = cormyrian
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_prestige = yes
+
+	modifier = {
+		heavy_infantry_offensive = 0.3
+		heavy_infantry_defensive = 0.3
+		heavy_infantry_morale = 0.2
+		light_infantry_offensive = 0.3
+		light_infantry_defensive = 0.1
+		light_infantry_morale = 0.2
+	}
+}
+##Maquar Crusaders##
+retinue_durpar = {
+	first_type = 1
+	first_amount = 250
+
+	potential = {
+		is_nomadic = no
+		is_tribal = no
+		culture = durpari
+		religion = adama
+		OR = {
+			has_landed_title = d_estagund
+			has_landed_title = k_estagund
+			has_landed_title = e_golden_lands
+			has_landed_title = e_shining_south
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		heavy_infantry_offensive = 0.25
+		heavy_infantry_defensive = 0.25
+		heavy_infantry_morale = 0.4
+	}
+}
+##Vengeance Knights##
+retinue_merc = {
+	first_type = 1
+	first_amount = 250
+
+	potential = {
+		OR = {
+			government = democratic_feudal_government
+			is_republic = yes
+		}
+		OR = {
+			culture = amnian
+			culture = tethyrian
+			culture_group = calishite_group
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		heavy_infantry_offensive = 0.25
+		heavy_infantry_defensive = 0.25
+		heavy_infantry_morale = 0.4
+	}
+}
+##Moon Knights##
+retinue_warpriests = {
+	first_type = 6
+	first_amount = 5
+
+	special_troops = warpriests
+
+	potential = {
+		trait = patron_selune
+		is_nomadic = no
+		is_tribal = no
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		warpriests_offensive = 1.1
+		warpriests_defensive = 1.6
+		warpriests_morale = 0.6
+	}
+}
+##Talontar Acolytes##
+retinue_warpriests_2 = {
+	first_type = 6
+	first_amount = 10
+
+	special_troops = warpriests
+
+	potential = {
+		trait = patron_talona
+		culture = nar
+		OR = {
+			has_landed_title = e_narfell
+			has_landed_title = k_blightlords
+			has_landed_title = k_narfell
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_piety = yes
+
+	modifier = {
+		warpriests_defensive = 0.6
+		warpriests_morale = 0.4
+		attrition = -0.5
+	}
+}
+##Talontar Blightlords##
+retinue_warpriests_3 = {
+	first_type = 6
+	first_amount = 5
+
+	special_troops = warpriests
+
+	potential = {
+		trait = patron_talona
+		culture = nar
+		OR = {
+			has_landed_title = e_narfell
+			has_landed_title = k_blightlords
+			has_landed_title = k_narfell
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		warpriests_defensive = 1.6
+		warpriests_offensive = 1.0
+		warpriests_morale = 0.4
+		attrition = -0.5
+	}
+}
+##Black Flame Acolytes##
+retinue_warpriests_4 = {
+	first_type = 6
+	first_amount = 10
+
+	special_troops = warpriests
+
+	potential = {
+		trait = patron_kossuth
+		culture = thayan
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_piety = yes
+
+	modifier = {
+		warpriests_offensive = 0.6
+		warpriests_morale = 0.4
+		attrition = -0.5
+	}
+}
+##Black Flame Zealots##
+retinue_warpriests_5 = {
+	first_type = 6
+	first_amount = 5
+
+	special_troops = warpriests
+
+	potential = {
+		trait = patron_kossuth
+		culture = thayan
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		warpriests_offensive = 1.6
+		warpriests_defensive = 1.0
+		warpriests_morale = 0.4
+		attrition = -0.5
+	}
+}
+##Halruaan Wizards##
+retinue_halruaa_1 = {
+	first_type = 6
+	first_amount = 10
+
+	special_troops = mages_troops
+
+	potential = {
+		culture = halruaan
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 0.5
+		mages_troops_defensive = 0.2
+		mages_troops_morale = 0.6
+	}
+}
+##Halruaan Magehounds##
+retinue_halruaa_2 = {
+	first_type = 6
+	first_amount = 5
+
+	special_troops = mages_troops
+
+	potential = {
+		culture = halruaan
+		OR = {
+			has_landed_title = e_halruaa
+			has_landed_title = k_halruaa
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 1.5
+		mages_troops_defensive = 1.2
+		mages_troops_morale = 0.6
+	}
+}
+##Shadovar Wizards##
+retinue_shadovar_1 = {
+	first_type = 6
+	first_amount = 10
+
+	special_troops = mages_troops
+
+	potential = {
+		culture = shadovar
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 0.6
+		mages_troops_defensive = 0.3
+		mages_troops_morale = 0.2
+	}
+}
+##Shadow Adepts##
+retinue_shadovar_2 = {
+	first_type = 6
+	first_amount = 5
+
+	special_troops = mages_troops
+
+	potential = {
+		culture = shadovar
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 1.6
+		mages_troops_defensive = 1.3
+		mages_troops_morale = 0.2
+	}
+}
+##Netherese Wizards##
+retinue_netherese_1 = {
+	first_type = 6
+	first_amount = 10
+
+	special_troops = mages_troops
+
+	potential = {
+		culture = netherese
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 0.7
+		mages_troops_defensive = 0.2
+		mages_troops_morale = 0.2
+	}
+}
+##Netherese High Mages##
+retinue_netherese_2 = {
+	first_type = 6
+	first_amount = 5
+
+	special_troops = mages_troops
+
+	potential = {
+		culture = netherese
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 1.7
+		mages_troops_defensive = 1.2
+		mages_troops_morale = 0.2
+	}
+}
+##Thayan Gladiators##
+retinue_thay = {
+	first_type = 6
+	first_amount = 50
+
+	special_troops = beast_troops
+
+	potential = {
+		culture = thayan
+		NOR = {
+			religion = solar
+			religion = triadic
+			religion = joyful
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		beast_troops_offensive = 0.4
+		beast_troops_defensive = 0.2
+		beast_troops_morale = 0.2
+	}
+}
+##Thayan Slavers##
+retinue_thay_2 = {
+	first_type = 3
+	first_amount = 200
+	second_type = 6
+	second_amount = 50
+
+	special_troops = horse_archers
+
+	potential = {
+		culture = thayan
+		NOR = {
+			religion = solar
+			religion = triadic
+			religion = joyful
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		light_cavalry_offensive = 0.3
+		light_cavalry_morale = 0.25
+		horse_archers_offensive = 0.4
+		horse_archers_defensive = 0.3
+	}
+}
+##Thayan Wizards##
+retinue_thay_3 = {
+	first_type = 6
+	first_amount = 10
+
+	special_troops = mages_troops
+
+	potential = {
+		culture = thayan
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 0.6
+		mages_troops_defensive = 0.4
+	}
+}
+##Red Wizards##
+retinue_thay_4 = {
+	first_type = 6
+	first_amount = 5
+
+	special_troops = mages_troops
+
+	potential = {
+		culture = thayan
+		NOR = {
+			religion = solar
+			religion = triadic
+			religion = joyful
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 1.6
+		mages_troops_defensive = 1.4
+	}
+}
+##Sword Coast Pike Formation##
+retinue_highcoaster = {
+	first_type = 2
+	first_amount = 90
+	second_type = 5
+	second_amount = 10
+
+	potential = {
+		is_nomadic = no
+		is_tribal = no
+		OR = {
+			culture = highcoaster
+			culture = amnian
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		pikemen_morale = 0.2
+		pikemen_offensive = 0.2
+		pikemen_defensive = 0.4
+		archers_offensive = 0.25
+		archers_defensive = 0.25
+	}
+}
+##Griffon Cavalry##
+retinue_griff_cav = {
+	first_type = 4
+	first_amount = 70
+	second_type = 6
+	second_amount = 30
+
+	special_troops = horse_archers
+
+	potential = {
+		is_nomadic = no
+		is_tribal = no
+		AND = {
+			culture = highcoaster
+			has_landed_title = d_waterdeep
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+	modifier = {
+		knights_morale = 0.2
+		knights_offensive = 0.2
+		knights_defensive = 0.2
+		horse_archers_offensive = 0.2
+		horse_archers_defensive = 0.4
+		horse_archers_morale = 0.2
+	}
+}
+##Tethyrian Knights##
+retinue_tethyr = {
+	first_type = 4
+	first_amount = 80
+	second_type = 3
+	second_amount = 20
+
+	potential = {
+		is_nomadic = no
+		is_tribal = no
+		culture = tethyrian
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		knights_morale = 0.2
+		knights_offensive = 0.25
+		knights_defensive = 0.35
+		light_cavalry_morale = 0.2
+		light_cavalry_offensive = 0.3
+		light_cavalry_defensive = 0.1
+	}
+}
+##Knights##
+retinue_chondath= {
+	first_type = 4
+	first_amount = 80
+	second_type = 3
+	second_amount = 20
+
+	potential = {
+		is_nomadic = no
+		is_tribal = no
+		OR = {
+			culture = chondathan
+			culture = draeven
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		knights_morale = 0.2
+		knights_offensive = 0.3
+		knights_defensive = 0.3
+		light_cavalry_morale = 0.2
+		light_cavalry_offensive = 0.2
+		light_cavalry_defensive = 0.2
+	}
+}
+##Runescarred Berserkers##
+retinue_rashemen = {
+	first_type = 0
+	first_amount = 150
+	second_type = 1
+	second_amount = 100
+
+	potential = {
+		culture = rashemi
+		OR = {
+			has_minor_title = title_othlor
+			has_landed_title = k_rashemen
+			has_landed_title = e_raumathar
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 150
+	costs_piety = yes
+
+	modifier = {
+		light_infantry_morale = 0.4
+		light_infantry_offensive = 0.4
+		heavy_infantry_morale = 0.4
+		heavy_infantry_offensive = 0.4
+	}
+}
+##Raumathari Wizards##
+retinue_rashemen_2 = {
+	first_type = 6
+	first_amount = 10
+
+	special_troops = mages_troops
+
+	potential = {
+		culture = raumviran
+		OR = {
+			trait = master_wizard
+			trait = renowned_wizard
+			trait = legendary_wizard
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_defensive = 0.25
+		mages_troops_offensive = 0.25
+		mages_troops_morale = 1
+	}
+}
+##Raumathari Battlemages##
+retinue_rashemen_3 = {
+	first_type = 6
+	first_amount = 5
+
+	special_troops = mages_troops
+
+	potential = {
+		culture = raumviran
+		OR = {
+			trait = master_wizard
+			trait = renowned_wizard
+			trait = legendary_wizard
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_defensive = 1.25
+		mages_troops_offensive = 1.25
+		mages_troops_morale = 1
+	}
+}
+##Durthan##
+retinue_rashemen_4 = {
+	first_type = 6
+	first_amount = 5
+
+	special_troops = mages_troops
+
+	potential = {
+		culture = rashemi
+		NOR = {
+			religion = solar
+			religion = triadic
+			religion = joyful
+		}
+		OR = {
+			has_minor_title = title_othlor
+			has_landed_title = k_rashemen
+			has_landed_title = e_raumathar
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 1.5
+		mages_troops_defensive = 1.5
+	}
+}
+##Nenytar Hunters##
+retinue_narfell = {
+	first_type = 5
+	first_amount = 100
+	second_type = 0
+	second_amount = 150
+
+	potential = {
+		culture = nar
+		OR = {
+			religion = rasallesian
+			religion = natural
+		}
+		OR = {
+			has_landed_title = k_circle_of_leth
+			has_landed_title = k_narfell
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		light_infantry_morale = 0.3
+		light_infantry_defensive = 0.35
+		archers_defensive = 0.4
+		archers_offensive = 0.1
+		archers_morale = 0.3
+	}
+}
+##Nar Demonbinders##
+retinue_narfell_2 = {
+	first_type = 6
+	first_amount = 5
+
+	special_troops = mages_troops
+
+	potential = {
+		culture = nar
+		OR = {
+			religion = abyssal_cult
+			religion = infernal
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 1.5
+		mages_troops_defensive = 1.5
+	}
+}
+##Yuirwood Masters##
+retinue_algarond = {
+	first_type = 5
+	first_amount = 250
+
+	potential = {
+		OR = {
+			religion = elven_pantheon
+			religion = natural
+		}
+		OR ={
+			has_landed_title = d_yuirwood
+			has_landed_title = k_aglarond
+		}
+		OR = {
+			AND = {
+				culture = green_elf
+				trait = creature_half_elf
+			}
+			AND = {
+				culture = aglarondan
+				trait = creature_half_elf
+			}
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		archers_morale = 0.4
+		archers_defensive = 0.4
+		archers_offensive = 0.1
+	}
+}
+##Dalelands Longbowmen##
+retinue_dalelands = {
+	first_type = 5
+	first_amount = 70
+	second_type = 0
+	second_amount = 130
+
+	potential = {
+		is_nomadic = no
+		culture = dalesman
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		archers_morale = 0.2
+		archers_offensive = 0.4
+		archers_defensive = 0.2
+		light_infantry_offensive = 0.3
+		light_infantry_defensive = 0.2
+	}
+}
+##Zhentarim Phalanx##
+retinue_zhent_phalanx = {
+	first_type = 1
+	first_amount = 90
+	second_type = 5
+	second_amount = 10
+
+	potential = {
+		is_nomadic = no
+		is_tribal = no
+		OR = {
+			has_landed_title = k_zhentarim
+			society_member_of = black_network
+			any_liege = {
+				has_landed_title = k_zhentarim
+			}
+			AND = {
+				culture = tharian
+				religion_group = evil_human_pantheon_group
+			}
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		heavy_infantry_offensive = 0.3
+		heavy_infantry_defensive = 0.4
+		archers_offensive = 0.3
+		archers_defensive = 0.2
+	}
+}
+##Moonsea Skysentinels##
+retinue_skysentinels = {
+	first_type = 4
+	first_amount = 70
+	second_type = 6
+	second_amount = 30
+
+	special_troops = horse_archers
+
+	potential = {
+		is_nomadic = no
+		is_tribal = no
+		AND = {
+			culture = tharian
+			NOT = { religion_group = evil_human_pantheon_group }
+		}
+		NOR = {
+			has_landed_title = k_zhentarim
+			society_member_of = black_network
+			any_liege = {
+				has_landed_title = k_zhentarim
+			}
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+	modifier = {
+		knights_offensive = 0.2
+		knights_defensive = 0.3
+		horse_archers_offensive = 0.3
+		horse_archers_defensive = 0.4
+	}
+}
+##Knights of the Sacred Shrike##
+retinue_impiltur_1 = {
+	first_type = 4
+	first_amount = 80
+	second_type = 6
+	second_amount = 20
+
+	special_troops = horse_archers
+
+	potential = {
+		is_nomadic = no
+		is_tribal = no
+		AND = {
+			OR = {
+				culture = impilturan
+				society_member_of = knight_order_imphras
+			}
+			NOT = { religion_group = evil_human_pantheon_group }
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+	modifier = {
+		knights_morale = 0.4
+		knights_offensive = 0.25
+		knights_defensive = 0.25
+		horse_archers_offensive = 0.25
+		horse_archers_defensive = 0.25
+	}
+}
+##Steppe Cavalry##
+retinue_tuigan = {
+	first_type = 4
+	first_amount = 40
+	second_type = 6
+	second_amount = 60
+
+	special_troops = horse_archers
+
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = tuigan
+			culture = chuchian
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+	modifier = {
+		knights_morale = 0.3
+		knights_offensive = 0.1
+		knights_defensive = 0.25
+		horse_archers_offensive = 0.5
+		horse_archers_defensive = 0.2
+	}
+}
+##Illuskan Berserkers##
+retinue_illuskan = {
+	first_type = 1
+	first_amount = 100
+
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = illuskan
+			culture = northlander
+			culture = uthgardt
+			culture = reghedman
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		heavy_infantry_morale = 0.4
+		heavy_infantry_offensive = 0.4
+		heavy_infantry_defensive = 0.1
+	}
+}
+##Desert Warriors##
+retinue_bedine = {
+	first_type = 0
+	first_amount = 30
+	second_type = 6
+	second_amount = 70
+
+	special_troops = camel_cavalry
+
+	potential = {
+		OR = {
+			culture = bedine
+			culture = badia
+			culture = hadhar
+			culture = calishite
+			culture = shoon
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		camel_cavalry_morale = 0.2
+		camel_cavalry_offensive = 0.2
+		camel_cavalry_defensive = 0.4
+		light_infantry_morale = 0.2
+		light_infantry_offensive = 0.1
+		light_infantry_defensive = 0.3
+	}
+}
+##Elementals##
+retinue_elementals = {
+	first_type = 6
+	first_amount = 100
+
+	special_troops = elemental_troops
+
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = jann
+			culture = dao
+			culture = djinn
+			culture = efreet
+			culture = marid
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		elemental_troops_morale = 0.4
+		elemental_troops_offensive = 0.5
+	}
+}
+##Hound Archons##
+retinue_angel_1 = {
+	first_type = 6
+	first_amount = 20
+
+	special_troops = warpriests
+
+	potential =  {
+		culture = angel
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_piety = yes
+
+	modifier = {
+		warpriests_defensive = 0.4
+		warpriests_offensive = 0.4
+		warpriests_morale = 0.4
+	}
+}
+##Devas##
+retinue_angel_2 = {
+	first_type = 6
+	first_amount = 5
+
+	special_troops = warpriests
+
+	potential = {
+		culture = angel
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 250
+	costs_piety = yes
+
+	modifier = {
+		warpriests_defensive = 1.4
+		warpriests_offensive = 1.4
+		warpriests_morale = 0.4
+	}
+}
+##Dwarven Defenders##
+retinue_dwarven_defenders = {
+	first_type = 1
+	first_amount = 100
+
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = shield_dwarf
+			culture = gold_dwarf
+			culture = arctic_dwarf
+			culture = duergar
+			culture = wild_dwarf
+			culture = derro
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		heavy_infantry_morale = 0.4
+		heavy_infantry_defensive = 0.5
+	}
+}
+##Arcane Archers##
+retinue_arcane_archers = {
+	first_type = 5
+	first_amount = 100
+
+	potential = {
+		OR = {
+			culture = green_elf
+			culture = moon_elf
+			culture = sun_elf
+			culture = wood_elf
+			culture = eladrin
+			culture = maviddi
+			culture = sea_elf
+			culture = snow_elf
+			culture = drow
+			culture = crinti
+			culture = feyri
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		archers_morale = 0.2
+		archers_offensive = 0.5
+		archers_defensive = 0.1
+	}
+}
+##Gnome Illusionists##
+retinue_gnome_illus = {
+	first_type = 6
+	first_amount = 20
+
+	special_troops = mages_troops
+
+	potential = {
+		OR = {
+			culture = gnome
+			culture = svirfneblin
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_piety = yes
+
+	modifier = {
+		mages_troops_offensive = 0.7
+		mages_troops_defensive = 0.3
+	}
+}
+##Halfling Scouts##
+retinue_halfling = {
+	first_type = 0
+	first_amount = 60
+	second_type = 3
+	second_amount = 40
+
+	potential = {
+		OR = {
+			culture = lightfoot
+			culture = strongheart
+			culture = ghostwise
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		light_cavalry_morale = 0.5
+		light_cavalry_offensive = 0.1
+		light_cavalry_defensive = 0.15
+		light_infantry_morale = 0.5
+		light_infantry_offensive = 0.1
+		light_infantry_defensive = 0.35
+	}
+}
+##Orc Berserkers##
+retinue_orc_1 = {
+	first_type = 1
+	first_amount = 100
+
+	potential = {
+		is_nomadic = no
+		OR = {
+			culture = orc
+			culture = gray_orc
+			culture = orog
+			culture = tanarukk
+		}
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	modifier = {
+		heavy_infantry_morale = 0.5
+		heavy_infantry_offensive = 0.45
+	}
+}
+##Ondonti Priests##
+retinue_orc_2 = {
+	first_type = 6
+	first_amount = 20
+
+	special_troops = warpriests
+
+	potential =  {
+		culture = ondonti
+		NOT = { has_character_modifier = undead_realm_lord }
+	}
+
+	hire_cost = 100
+	costs_piety = yes
+
+	modifier = {
+		warpriests_defensive = 0.75
+		warpriests_morale = 0.5
+	}
+}
+##Undead - Wights##
+retinue_wight = {
+	first_type = 1
+	first_amount = 100
+
+	potential = {
+		OR = {
+			has_character_modifier = wiz_necromancy
+			is_undead = yes
+			AND = {
+				trait = patron_velsharoon
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+			AND = {
+				trait = patron_myrkul
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+			AND = {
+				trait = patron_orcus
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+		}
+	}
+	hire_cost = 60
+	costs_prestige = yes
+
+	modifier = {
+		attrition = -1
+		heavy_infantry_offensive = 0.1
+		heavy_infantry_defensive = 0.1
+		heavy_infantry_morale = 3
+	}
+}
+##Undead - Ghouls##
+retinue_ghoul = {
+	first_type = 0
+	first_amount = 100
+
+	potential = {
+		OR = {
+			has_character_modifier = wiz_necromancy
+			is_undead = yes
+			AND = {
+				trait = patron_velsharoon
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+			AND = {
+				trait = patron_myrkul
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+			AND = {
+				trait = patron_orcus
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+		}
+	}
+	hire_cost = 15
+	costs_prestige = yes
+
+	modifier = {
+		attrition = -1
+		light_infantry_offensive = 0.4
+		light_infantry_defensive = 0.1
+		light_infantry_morale = 5
+	}
+}
+##Undead - Skeletons##
+retinue_skeleton_archers = {
+	first_type = 5
+	first_amount = 100
+
+	potential = {
+		OR = {
+			has_character_modifier = wiz_necromancy
+			is_undead = yes
+			AND = {
+				trait = patron_velsharoon
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+			AND = {
+				trait = patron_myrkul
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+			AND = {
+				trait = patron_orcus
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+		}
+	}
+	hire_cost = 45
+	costs_prestige = yes
+
+	modifier = {
+		attrition = -1
+		archers_offensive = 0.3
+		archers_defensive = 0.1
+		archers_morale = 15
+	}
+}
+##Undead - Wraiths##
+retinue_wraith = {
+	first_type = 3
+	first_amount = 100
+
+	potential = {
+		OR = {
+			has_character_modifier = wiz_necromancy
+			is_undead = yes
+			AND = {
+				trait = patron_velsharoon
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+			AND = {
+				trait = patron_myrkul
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+			AND = {
+				trait = patron_orcus
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+		}
+	}
+	hire_cost = 60
+	costs_prestige = yes
+
+	modifier = {
+		attrition = -1
+		light_cavalry_offensive = 0.1
+		light_cavalry_defensive = 0.1
+		light_cavalry_morale = 3
+	}
+}
+##Undead - Vampire Spawns##
+retinue_vampire_spawn = {
+	first_type = 4
+	first_amount = 50
+
+	potential = {
+		OR = {
+			has_character_modifier = wiz_necromancy
+			is_undead = yes
+			AND = {
+				trait = patron_velsharoon
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+			AND = {
+				trait = patron_myrkul
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+			AND = {
+				trait = patron_orcus
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+		}
+	}
+	hire_cost = 75
+	costs_prestige = yes
+
+	modifier = {
+		attrition = -1
+		knights_offensive = 0.1
+		knights_defensive = 0.35
+		knights_morale = 0.5
+	}
+}
+##Undead - Zombies##
+retinue_zombies = {
+	first_type = 6
+	first_amount = 150
+
+	special_troops = undead_troops
+
+	potential = {
+		OR = {
+			has_character_modifier = wiz_necromancy
+			is_undead = yes
+			AND = {
+				trait = patron_velsharoon
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+			AND = {
+				trait = patron_myrkul
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+			AND = {
+				trait = patron_orcus
+				OR = {
+					trait = expert_cleric
+					trait = master_cleric
+					trait = renowned_cleric
+					trait = legendary_cleric
+				}
+			}
+		}
+	}
+	hire_cost = 15
+	costs_prestige = yes
+
+	modifier = {
+		attrition = -1
 	}
 }

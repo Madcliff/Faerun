@@ -21,12 +21,12 @@ religion = goblin_pantheon
 #History
 515.1.1 = {
 	culture = netherese
-	religion = netherese_pantheon
+	religion = solar
 	b_everlund = castle
 	b_lhuvenhead = city
 	b_hilltop = temple
 }
 850.1.1 = {
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 }

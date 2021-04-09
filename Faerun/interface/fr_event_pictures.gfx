@@ -41,12 +41,12 @@ spriteTypes = {
 		allwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_evt_angels_1_1"
+		name = "GFX_evt_angels_1"
 		texturefile = "gfx\\event_pictures\angels_1.dds"
 		allwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_evt_angels_1_2"
+		name = "GFX_evt_angels_2"
 		texturefile = "gfx\\event_pictures\angels_2.dds"
 		allwaystransparent = yes
 	}
@@ -83,6 +83,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_evt_baldurs_gate_1"
 		texturefile = "gfx\\event_pictures\baldurs_gate_1.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_bane_1"
+		texturefile = "gfx\\event_pictures\bane_1.dds"
 		allwaystransparent = yes
 	}
 	spriteType = {
@@ -224,7 +229,7 @@ spriteTypes = {
 		name = "GFX_evt_dragon_1"
 		texturefile = "gfx\\event_pictures\dragon_1.dds"
 		allwaystransparent = yes
-	}	
+	}
 	spriteType = {
 		name = "GFX_evt_dragonspear_1"
 		texturefile = "gfx\\event_pictures\dragonspear_1.dds"
@@ -356,6 +361,11 @@ spriteTypes = {
 		allwaystransparent = yes
 	}
 	spriteType = {
+		name = "GFX_evt_gnoll_2"
+		texturefile = "gfx\\event_pictures\gnoll_2.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
 		name = "GFX_evt_gnomes"
 		texturefile = "gfx\\event_pictures\gnomes.dds"
 		allwaystransparent = yes
@@ -431,6 +441,11 @@ spriteTypes = {
 		allwaystransparent = yes
 	}
 	spriteType = {
+		name = "GFX_evt_king_of_shadows_1"
+		texturefile = "gfx\\event_pictures\king_of_shadows_1.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
 		name = "GFX_evt_kuldahar_1"
 		texturefile = "gfx\\event_pictures\kuldahar_1.dds"
 		allwaystransparent = yes
@@ -443,6 +458,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_evt_melvaunt_1"
 		texturefile = "gfx\\event_pictures\melvaunt_1.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_mephisto_1"
+		texturefile = "gfx\\event_pictures\mephisto_1.dds"
 		allwaystransparent = yes
 	}
 	spriteType = {
@@ -638,11 +658,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_evt_scalykind_1"
 		texturefile = "gfx\\event_pictures\scalykind_1.dds"
-		alwaystransparent = yes
+		allwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_evt_scholar_1"
 		texturefile = "gfx\\event_pictures\scholar_1.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_sea_elves"
+		texturefile = "gfx\\event_pictures\sea_elves.dds"
 		allwaystransparent = yes
 	}
 	spriteType = {
@@ -850,4 +875,9 @@ spriteTypes = {
 		texturefile = "gfx\\event_pictures\sarya.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_fire_imp"
+		texturefile = "gfx\\event_pictures\fire_imp.dds"
+		allwaystransparent = yes
+	}    
 }

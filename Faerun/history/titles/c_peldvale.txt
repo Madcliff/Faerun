@@ -13,8 +13,15 @@
 1345.1.1 = {
 	holder = 9259
 	liege = d_shadow_druids
+	law = succ_divine_druid
 }
 1368.5.1 = {
-	holder = 0
+	holder = 2175 # Amarande Shadehunt
 	liege = 0
+}
+1410.1.1 = {
+	holder = 2176 # Grath Fanghold
+}
+1480.1.1 = {
+	holder = 2177 # Oleana Burntheart
 }

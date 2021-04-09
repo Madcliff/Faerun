@@ -16,7 +16,7 @@ b_corm_orp = tribal
 
 # Misc
 culture = tunlar
-religion = evil_human_pantheon
+religion = shadow_gods
 terrain = farmlands
 #History
 580.1.1 = {
@@ -24,7 +24,7 @@ terrain = farmlands
 	religion = monster_pantheon
 }
 1250.1.1 = {
-	b_corm_orp = castle
+	b_corm_orp = city
 	culture = lightfoot
 	religion = halfling_pantheon
 }

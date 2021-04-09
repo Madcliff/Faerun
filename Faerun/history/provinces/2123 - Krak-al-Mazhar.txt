@@ -1,0 +1,15 @@
+# c_krak_al_mazhar
+
+# County Title
+title = c_krak_al_mazhar
+
+# Settlements
+max_settlements = 3
+
+b_krak_al_mazhar = castle
+
+# Misc
+culture = hadhar
+religion = kossuth
+
+#History

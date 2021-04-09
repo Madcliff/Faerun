@@ -148,12 +148,6 @@ rift_overpop = {
 	levy_reinforce_rate = 0.05
 }
 
-secret_good_human_pantheon_community = {
-	icon = 18
-	is_visible = {
-		society_member_of = secret_religious_society_good_human_pantheon
-	}
-}
 secret_calishite_faith_community = {
 	icon = 18
 	is_visible = {
@@ -179,6 +173,16 @@ secret_tuigan_shamanism_community = {
 	}
 }
 
+secret_infernal_community = {
+    icon = 18
+    is_visible = {
+	OR = {
+        society_member_of = the_satanists
+	society_member_of = secret_religious_society_infernal
+	}
+    }
+}
+
 class_cd = {
 	icon = 1
 }
@@ -190,4 +194,47 @@ recent_holy_war = {
 blessed_by_ilneval = {
   icon = 115
   land_morale = 0.1
+}
+
+weak_sahuagin = {
+	icon = 42
+	sahuagin_opinion = -20
+	tribal_opinion = -20
+}
+angry_sahuagin = {
+	icon = 78
+	local_revolt_risk = 0.15
+	levy_reinforce_rate = -0.1
+}
+infernal_wealth = {
+	icon = 56
+	global_tax_modifier = 0.25
+}
+infernal_poverty = {
+	icon = 57
+	global_tax_modifier = -0.25
+	castle_vassal_tax_modifier = -0.25
+	temple_vassal_tax_modifier = -0.25
+	city_vassal_tax_modifier = -0.25
+	tribal_vassal_tax_modifier = -0.25    
+}
+infernal_desertion = {
+	icon = 31
+	global_levy_size = -0.25
+    levy_reinforce_rate = -0.25
+    global_supply_limit = -0.25
+	threat_decay_speed = -0.25
+	martial = -5  
+}
+infernal_demoralisation = {
+	icon = 19
+	land_morale  = -0.25
+	global_movement_speed = -0.25
+	combat_rating = -20
+	command_modifier = {
+		morale_offence = -0.15
+		morale_defence = -0.15
+		defence = -0.25
+		damage = -0.2
+	}  
 }

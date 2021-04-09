@@ -15,8 +15,8 @@ b_badest = castle
 #b_ferralg = castle
 
 # Misc
-culture = heartlander
-religion = good_human_pantheon
+culture = draeven
+religion = mercantile
 terrain = coastal
 #History
 1286.1.1 = {

@@ -1,4 +1,4 @@
-###ï¿½NSI
+###ÄNSI
 1 = { name = "Bhaal" culture = highcoaster used_for_random = no}
 2 = {
 	name = "Dlardrageth"
@@ -16,14 +16,14 @@
 	}
 	used_for_random = no
 }
-3 = { name = "of Darkhold" culture = heartlander used_for_random = no }
+3 = { name = "of Darkhold" culture = draeven used_for_random = no }
 4 = { name = "Monster" culture = monster }
 5 = { name = "Deathstalker" culture = tethyrian used_for_random = no } #Amelyssan
 6 = { name = "Viridianbase" culture = thinguth used_for_random = no }
 7 = { name = "Astralbright" culture = ffolk used_for_random = no }
 8 = { name = "Lightninguard" culture = shield_dwarf used_for_random = no }
 9 = { name = "Sourgrass" culture = strongheart used_for_random = no }
-10 = { name = "Tarquinson" culture = moonsea used_for_random = no }
+10 = { name = "Tarquinson" culture = tharian used_for_random = no }
 11 = { name = "Inkyriud" culture = moon_elf used_for_random = no }
 12 = { name = "Orbrekh" culture = stone_giant used_for_random = no }
 13 = { name = "Surkh" culture = lizardfolk used_for_random = no }
@@ -36,7 +36,7 @@
 20 = { name = "Xvim" culture = tiefling used_for_random = no }
 21 = { name = "Rockface" culture = hill_giant }
 22 = { name = "Granitejaw" culture = hill_giant }
-23 = { name = "Cliffwalker" culture = mountain_giant }
+23 = { name = "Cliffwalker" culture = cloud_giant }
 24 = { name = "Bleaksight" culture = baatezu }
 25 = { name = "Alasklerbanbastos" culture = draconic used_for_random = no }
 26 = { name = "Tchazzar" culture = draconic used_for_random = no }
@@ -47,12 +47,12 @@
 31 = { name = "Darkrock" culture = mountain_giant }
 32 = { name = "Hungergnaw" culture = gnoll }
 33 = { name = "Forgeblaze" culture = fire_giant }
-34 = { name = "Moander" culture = moonsea used_for_random = no }
+34 = { name = "Moander" culture = tharian used_for_random = no }
 35 = { name = "Ealoeth" culture = feyri }
 36 = { name = "Aelorothi" culture = feyri }
 37 = { name = "Scalesinger" culture = kobold used_for_random = no }
 38 = { name = "of Celestia" culture = planar used_for_random = no }
-39 = { name = "Darkmantle" culture = moonsea }
+39 = { name = "Darkmantle" culture = tharian }
 40 = { name = "Spellseer" culture = amnian used_for_random = no }
 41 = { name = "Spulzeer" culture = amnian used_for_random = no }
 42 = { name = "Thauglorimorgorus" culture = draconic used_for_random = no }
@@ -293,7 +293,7 @@
 277 = { name = "Runetwister" culture = calishite used_for_random = no }
 278 = { name = "Puiral" culture = highcoaster }
 279 = { name = "of Tathtar" culture = tethyrian used_for_random = no }
-280 = { name = "el Maredol" culture = calishite }
+280 = { name = "el-Maredol" culture = calishite }
 281 = { name = "Kassad" culture = calishite }
 282 = { name = "Sapphiraktar" culture = draconic used_for_random = no }
 283 = { name = "of Almraiven" culture = calishite used_for_random = no }
@@ -335,10 +335,184 @@
 319 = { name = "Konishi" culture = shou }
 320 = { name = "Moorgnaw" culture = kobold }
 321 = { name = "Zikgnax" culture = goblin }
-
+322 = { name = "Ilnaseri" culture = sea_elf }
+323 = { name = "Mar" culture = sea_elf }
+324 = { name = "Onda" culture = sea_elf }
+325 = { name = "Zarem" culture = illuskan }
+326 = { name = "Deadeye" culture = nelanthern }
+327 = { name = "Kathl" culture = highcoaster }
+328 = { name = "Iluim" culture = drow }
+329 = { name = "Starshine" culture = drow }
+330 = { name = "Orcbane" culture = uthgardt }
+331 = { name = "Kavren" culture = drow }
+332 = { name = "Chloracridara" culture = draconic used_for_random = no }
+333 = { name = "Skyflower" culture = illuskan }
+334 = { name = "of New Empyrea" culture = planar used_for_random = no }
+335 = { name = "Grimnoshtadrano" culture = draconic used_for_random = no }
+336 = { name = "Oakfriend" culture = wood_elf }
+337 = { name = "Hoofmight" culture = centaur }
+338 = { name = "Wormtongue" culture = tanarri }
+339 = { name = "Astalor" culture = highcoaster }
+340 = { name = "Goodfellow" culture = highcoaster }
+341 = { name = "Dornen" culture = highcoaster }
+342 = { name = "Ornra" culture = highcoaster }
+343 = { name = "Umbralax" culture = draconic used_for_random = no }
+344 = { name = "Horn" culture = shield_dwarf }
+345 = { name = "Cassalanter" culture = highcoaster }
+346 = { name = "Vantur" culture = highcoaster }
+347 = { name = "Grok" culture = troll }
+348 = { name = "Nasdal" culture = highcoaster }
+349 = { name = "Easting" culture = highcoaster }
+350 = { name = "Haug" culture = hill_giant used_for_random = no }
+351 = { name = "Gutgorger" culture = hill_giant }
+352 = { name = "Rundil" culture = highcoaster }
+353 = { name = "Sikrata" culture = highcoaster }
+354 = { name = "Gamon" culture = highcoaster }
+355 = { name = "Rustmaul" culture = ogre }
+356 = { name = "Danglor" culture = illuskan }
+357 = { name = "Moonfire" culture = highcoaster }
+358 = { name = "Zazrek" culture = damaran }
+359 = { name = "Skodkong" culture = stone_giant used_for_random = no }
+360 = { name = "Draunnar" culture = stone_giant }
+361 = { name = "Labran" culture = illuskan }
+362 = { name = "Zann" culture = illuskan }
+363 = { name = "Graycrag" culture = goliath }
+364 = { name = "Strongfist" culture = goliath }
+365 = { name = "Gatefast" culture = centaur }
+366 = { name = "Darnell" culture = tharian }
+367 = { name = "Beykal" culture = tethyrian }
+368 = { name = "Laso" culture = draeven }
+369 = { name = "Mazvar" culture = netherese }
+370 = { name = "Orogoth" culture = netherese used_for_random = no }
+371 = { name = "Vilholin" culture = draconic used_for_random = no }
+372 = { name = "Sjachmalsvir" culture = draconic used_for_random = no }
+373 = { name = "Warforge" culture = highcoaster }
+374 = { name = "Sorrowbane" culture = highcoaster }
+375 = { name = "Axehand" culture = highcoaster }
+376 = { name = "Szarlnaxi" culture = tethyrian used_for_random = no }
+377 = { name = "Glar" culture = highcoaster }
+378 = { name = "Greenwarder" culture = wood_elf }
+379 = { name = "Trugf" culture = troll }
+380 = { name = "Cromm" culture = illuskan }
+381 = { name = "Grik" culture = goblin }
+382 = { name = "Barkchew" culture = troll }
+383 = { name = "Aerosclughpalar" culture = draconic used_for_random = no }
+384 = { name = "Kazamid" culture = dtarig }
+385 = { name = "Nightstalker" culture = draeven }
+386 = { name = "Shadeclub" culture = bugbear }
+387 = { name = "Crocuta" culture = gnoll }
+388 = { name = "Gullwing" culture = draeven }
+389 = { name = "Fiendtooth" culture = troll }
+390 = { name = "Mantlemorn" culture = turmic }
+391 = { name = "Tretch" culture = draeven }
+392 = { name = "Dren" culture = draeven }
+393 = { name = "Kroom" culture = troll }
+394 = { name = "Bant" culture = amnian }
+395 = { name = "Kheldrivver" culture = amnian used_for_random = no }
+396 = { name = "Portyr" culture = highcoaster }
+397 = { name = "Valarken" culture = highcoaster }
+398 = { name = "Stelmantle" culture = highcoaster }
+399 = { name = "Vanthampur" culture = highcoaster }
 400 = { name = "Ouroboros" culture = yuanti used_for_random = no }
-
-
+401 = { name = "Ravengard" culture = highcoaster }
+402 = { name = "Eldenbark" culture = treant }
+403 = { name = "Shadehunt" culture = highcoaster }
+404 = { name = "Fanghold" culture = highcoaster }
+405 = { name = "Burntheart" culture = highcoaster }
+406 = { name = "Uolofiin" culture = sea_elf }
+407 = { name = "Kelpan" culture = sea_elf }
+408 = { name = "Cliffwatch" culture = highcoaster }
+409 = { name = "Dengar" culture = highcoaster }
+410 = { name = "Sollam" culture = highcoaster }
+411 = { name = "Foulblood" culture = tanarri }
+412 = { name = "Rotgut" culture = tanarri }
+413 = { name = "Warcry" culture = orc }
+414 = { name = "Bigfoot" culture = hill_giant }
+415 = { name = "Leafmane" culture = centaur }
+416 = { name = "Candos" culture = draeven }
+417 = { name = "Logen" culture = draeven }
+418 = { name = "Pagrur" culture = goblin }
+419 = { name = "Oculum" culture = beholder }
+420 = { name = "Jumm" culture = troll }
+421 = { name = "Balagos" culture = draconic used_for_random = no }
+422 = { name = "Rocktooth" culture = ogre }
+423 = { name = "Thunderstout" culture = gold_dwarf }
+424 = { name = "Landaessor" culture = sun_elf }
+425 = { name = "Murg" culture = hill_giant }
+426 = { name = "Nob" culture = ogre }
+427 = { name = "Seahorn" culture = minotaur }
+428 = { name = "Iomic" culture = nelanthern }
+429 = { name = "Saltrock" culture = nelanthern }
+430 = { name = "Invalissen" culture = sea_elf }
+431 = { name = "Aniantilor" culture = sea_elf }
+432 = { name = "Kuurgan" culture = tethyrian }
+433 = { name = "Buck" culture = nelanthern }
+434 = { name = "Bloodblade" culture = nelanthern }
+435 = { name = "Duayn" culture = nelanthern }
+436 = { name = "Yetam" culture = nelanthern }
+437 = { name = "Stiss" culture = lizardfolk }
+438 = { name = "Nul'kass" culture = illithid }
+439 = { name = "Thonok" culture = amnian }
+440 = { name = "Craumerdaun" culture = amnian }
+441 = { name = "Thallavv" culture = amnian }
+442 = { name = "Gaall" culture = amnian }
+443 = { name = "Jamok" culture = amnian }
+444 = { name = "Droverson" culture = amnian }
+445 = { name = "Rosznar" culture = amnian }
+446 = { name = "Traver" culture = amnian }
+447 = { name = "Darklurker" culture = hobgoblin }
+448 = { name = "Rundem" culture = amnian }
+449 = { name = "Sandist" culture = amnian }
+450 = { name = "Linden" culture = tethyrian }
+451 = { name = "Sunblight" culture = duergar }
+452 = { name = "Grimforge" culture = duergar }
+453 = { name = "Darkgleam" culture = duergar }
+454 = { name = "Razorblade" culture = duergar }
+455 = { name = "Draknor" culture = tethyrian }
+456 = { name = "Jarduth" culture = tethyrian }
+457 = { name = "Boralail" culture = tethyrian }
+458 = { name = "Cander" culture = tethyrian }
+459 = { name = "Thione" culture = tethyrian }
+460 = { name = "Ersemm" culture = highcoaster }
+461 = { name = "el-Tarimar" culture = shoon }
+462 = { name = "Hannid" culture = calishite }
+463 = { name = "Nelom" culture = tethyrian }
+464 = { name = "Memnon" culture = planar used_for_random = no }
+465 = { name = "Salim" culture = calishite }
+466 = { name = "Djanir" culture = calishite }
+467 = { name = "Spidereater" culture = lizardfolk }
+468 = { name = "Haraad" culture = calishite }
+469 = { name = "Karslem" culture = calishite }
+470 = { name = "Falconrise" culture = tethyrian }
+471 = { name = "Westwatcher" culture = tethyrian }
+472 = { name = "Saltstorm" culture = calishite }
+473 = { name = "Calim" culture = planar used_for_random = no }
+474 = { name = "el-Arhapan" culture = calishite }
+475 = { name = "Navrem" culture = calishite }
+476 = { name = "el-Sadiir" culture = calishite }
+477 = { name = "el-Ziiram" culture = calishite }
+478 = { name = "el-Karamiran" culture = calishite }
+479 = { name = "Ysaad" culture = calishite }
+480 = { name = "Haeram" culture = calishite }
+481 = { name = "Bindo" culture = calishite }
+482 = { name = "Djoloonid" culture = calishite }
+483 = { name = "Navid" culture = calishite }
+484 = { name = "Kamel" culture = calishite }
+485 = { name = "Shazir" culture = calishite }
+486 = { name = "Parsiv" culture = calishite }
+487 = { name = "el-Arslam" culture = calishite }
+488 = { name = "Zafi" culture = calishite }
+489 = { name = "Ravoud" culture = calishite }
+490 = { name = "el-Sabbak" culture = calishite }
+491 = { name = "Taverid" culture = calishite }
+492 = { name = "Umar" culture = calishite }
+493 = { name = "Grumok" culture = fomorian }
+494 = { name = "C'thag" culture = illithid }
+495 = { name = "Jamisar" culture = jann }
+496 = { name = "Kelpthar" culture = sea_elf }
+497 = { name = "SeKase" culture = lantanna }
+498 = { name = "SeBirem" culture = lantanna }
+499 = { name = "SeNolende" culture = lantanna }
 500 = { name = "Obarskyr" culture = cormyrian used_for_random = no } # was 201000
 501 = { name = "Turcassan" culture = cormyrian used_for_random = no } # was 201001
 502 = {
@@ -425,7 +599,185 @@
 553 = { name = "Cimber" culture = cormyrian }
 554 = { name = "Rayburton" culture = cormyrian }
 555 = { name = "Greenwoods" culture = cormyrian }
-
+556 = { name = "Starry Glen" culture = highcoaster }
+557 = { name = "Saltclub" culture = merrow }
+558 = { name = "SeLiss" culture = lantanna }
+559 = { name = "Thurgrammos" culture = draconic used_for_random = no }
+560 = { name = "Ilzario" culture = sea_elf }
+561 = { name = "Vuendros" culture = sea_elf }
+562 = { name = "Brighttide" culture = storm_giant }
+563 = { name = "Fishguts" culture = merrow }
+564 = { name = "Bravewind" culture = aarakocra }
+565 = { name = "Sath" culture = pterafolk }
+566 = { name = "Stagbanner" culture = highcoaster }
+567 = { name = "Varen" culture = highcoaster }
+568 = { name = "Duskrun" culture = highcoaster }
+569 = { name = "Bassala" culture = chultan }
+570 = { name = "Sandal" culture = amnian }
+571 = { name = "Ateak" culture = chultan }
+572 = { name = "Talro'a" culture = chultan }
+573 = { name = "Makuto" culture = chultan }
+574 = { name = "Talieri" culture = tethyrian }
+575 = { name = "Umelo" culture = chultan }
+576 = { name = "Nweke" culture = chultan }
+577 = { name = "Kanem" culture = chultan }
+578 = { name = "Razhirar" culture = sahuagin }
+579 = { name = "Biting Ant" culture = batiri }
+580 = { name = "Massar" culture = chultan }
+581 = { name = "Palden" culture = tethyrian }
+582 = { name = "Breakbone" culture = chondathan }
+583 = { name = "el-Kaber" culture = calishite }
+584 = { name = "al-Saryak" culture = calishite }
+585 = { name = "Highwind" culture = aarakocra }
+586 = { name = "Vinecutter" culture = shield_dwarf }
+587 = { name = "Flamecaller" culture = firenewt }
+588 = { name = "Wyrmheart" culture = shield_dwarf }
+589 = { name = "Tzindelor" culture = chromatic used_for_random = no }
+590 = { name = "Mossamb" culture = chultan }
+591 = { name = "Turay" culture = chultan }
+592 = { name = "Daramy" culture = chultan }
+593 = { name = "Bengrina" culture = chultan }
+594 = { name = "Steelfeather" culture = aarakocra }
+595 = { name = "Mossmane" culture = wild_dwarf }
+596 = { name = "Eshowe" culture = chultan used_for_random = no }
+597 = { name = "Namazji" culture = naga }
+598 = { name = "Pathforger" culture = wild_dwarf }
+599 = { name = "Cissé" culture = chultan }
+600 = { name = "Wasiliti" culture = chultan }
+601 = { name = "Ghaskti" culture = batiri }
+602 = { name = "Jungleclaw" culture = kobold }
+603 = { name = "Nightcaller" culture = yuanti }
+604 = { name = "Rath" culture = firenewt }
+605 = { name = "Sharkskin" culture = sahuagin }
+606 = { name = "Igbinoghene" culture = chultan }
+607 = { name = "Flintfoot" culture = wild_dwarf }
+608 = { name = "Turtlerock" culture = mountain_giant }
+609 = { name = "Snoutfang" culture = kobold }
+610 = { name = "Alibrebi" culture = drow }
+611 = { name = "Ater" culture = chultan }
+612 = { name = "Se'Sehen" culture = yuanti }
+613 = { name = "Sauringar" culture = yuanti }
+614 = { name = "Set" culture = mulhorandi used_for_random = no }
+615 = { name = "Ganvel" culture = halruaan }
+616 = { name = "Sarim" culture = halruaan }
+617 = { name = "t'Lak" culture = halruaan }
+618 = { name = "Tronba" culture = halruaan }
+619 = { name = "Razzik" culture = sahuagin }
+620 = { name = "Zamur" culture = halruaan }
+621 = { name = "Samir" culture = tashalan }
+622 = { name = "Algrem" culture = tashalan }
+623 = { name = "Sulvim" culture = halruaan }
+624 = { name = "Sa'Ilsha" culture = yuanti }
+625 = { name = "Troblo" culture = halruaan }
+626 = { name = "Lavos" culture = firenewt }
+627 = { name = "Aybaz" culture = naga }
+628 = { name = "Grav" culture = sahuagin }
+629 = { name = "Direfin" culture = sahuagin }
+630 = { name = "Cragkin" culture = stone_giant }
+631 = { name = "Gemkin" culture = gold_dwarf }
+632 = { name = "Fleshrend" culture = sahuagin }
+633 = { name = "Stoneaxe" culture = wild_dwarf }
+634 = { name = "Greenheart" culture = wild_dwarf }
+635 = { name = "Wetholm" culture = wild_dwarf }
+636 = { name = "Goresurf" culture = sahuagin }
+637 = { name = "Kesselas" culture = yuanti }
+638 = { name = "Ishonormis" culture = gem }
+639 = { name = "Augaurath" culture = chromatic }
+640 = { name = "Icefist" culture = goliath }
+641 = { name = "Crystalwind" culture = snow_elf }
+642 = { name = "Karath" culture = lamia }
+643 = { name = "Gristlebrew" culture = netherese used_for_random = no }
+644 = { name = "Olean" used_for_random = no }
+645 = { name = "Kalil" culture = dtarig }
+646 = { name = "Malygris" culture = chromatic }
+647 = { name = "Valshendar" culture = drow }
+648 = { name = "Drybone" culture = ogre }
+649 = { name = "Cracked Tail" culture = asabi }
+650 = { name = "Craglorn" culture = asabi }
+651 = { name = "Dustwalker" culture = goliath }
+652 = { name = "Carten" culture = tharian }
+653 = { name = "Galdan" culture = bedine }
+654 = { name = "Olmerta" culture = bedine }
+655 = { name = "Coilfang" culture = naga }
+656 = { name = "Farghar" culture = lamia }
+657 = { name = "Saelhul" culture = shadovar }
+658 = { name = "Forktail" culture = asabi }
+659 = { name = "Sandfang" culture = asabi }
+660 = { name = "Ilshadaar" culture = bedine }
+661 = { name = "T'amar" culture = dtarig }
+662 = { name = "Mistcloak" culture = tharian }
+663 = { name = "Zorid" culture = bedine }
+664 = { name = "Draver" culture = marsh_drover }
+665 = { name = "Darktooth" culture = orog }
+666 = { name = "Belsalam" culture = dtarig }
+667 = { name = "Saldelan" culture = shadovar }
+668 = { name = "Dhedluk" culture = cormyrian }
+669 = { name = "Goldfeather" culture = cormyrian }
+670 = { name = "Copperhorn" culture = cormyrian }
+671 = { name = "Grandfield" culture = cormyrian }
+672 = { name = "Seasilver" culture = cormyrian }
+673 = { name = "Greenford" culture = cormyrian }
+674 = { name = "Glaulan" culture = shadovar }
+675 = { name = "Sarid" culture = calishite }
+676 = { name = "Zaldon" culture = cormyrian }
+677 = { name = "Iluti" culture = ice_hunter }
+678 = { name = "Nartuk" culture = ice_hunter }
+679 = { name = "Igumilt" culture = ice_hunter }
+680 = { name = "Ragestone" culture = goliath used_for_random = no }
+681 = { name = "Ceicoski" culture = northlander used_for_random = no }
+682 = { name = "Beastkin" culture = uthgardt }
+683 = { name = "Runesteel" culture = uthgardt }
+684 = { name = "Elfhelm" culture = uthgardt }
+685 = { name = "Auck" culture = illuskan }
+686 = { name = "Ganderlay" culture = illuskan }
+687 = { name = "Garland" culture = illuskan }
+688 = { name = "Kyass" culture = lizardfolk }
+689 = { name = "Tring" culture = tunlar }
+690 = { name = "Olvand" culture = tunlar }
+691 = { name = "Shadowmaw" culture = yugoloth }
+692 = { name = "Fallon" culture = cormyrian }
+693 = { name = "Sharptooth" culture = lizardfolk }
+694 = { name = "Kassan" culture = thayan }
+695 = { name = "Solgar" culture = draeven }
+696 = { name = "Olira" culture = draeven }
+697 = { name = "Carrum" culture = draeven }
+698 = { name = "Blue Dawn" culture = reacher }
+699 = { name = "Orndeir" culture = draeven }
+700 = { name = "Molven" culture = draeven }
+701 = { name = "Fin" culture = draeven }
+702 = { name = "Unov" culture = draeven }
+703 = { name = "Theran" culture = draeven }
+704 = { name = "Rate" culture = amnian used_for_random = no }
+705 = { name = "Vhammos" culture = draeven }
+706 = { name = "Hammerwand" culture = draeven }
+707 = { name = "Viran" culture = draeven }
+708 = { name = "Dhialael" culture = drow }
+709 = { name = "Kamos" culture = draeven }
+710 = { name = "Bleth" culture = draeven }
+711 = { name = "Jin Jian" culture = shou }
+712 = { name = "Resk" culture = draeven }
+713 = { name = "Mendi" culture = draeven }
+714 = { name = "Neng" culture = shou }
+715 = { name = "Scarwater" culture = merrow }
+716 = { name = "Tendal" culture = sembite }
+717 = { name = "Gavoe" culture = draeven }
+718 = { name = "Solaire" culture = draeven }
+719 = { name = "Brighthelm" culture = draeven }
+720 = { name = "Aureo" culture = turmic }
+721 = { name = "Salazar" culture = turmic }
+722 = { name = "Tanner" culture = draeven }
+723 = { name = "Nobanion" culture = wemic used_for_random = no }
+724 = { name = "Pridemane" culture = wemic }
+725 = { name = "Reachclaw" culture = bugbear }
+726 = { name = "Farentoi" culture = chondathan }
+727 = { name = "Fairleaf" culture = moon_elf }
+728 = { name = "Tunid" culture = calishite }
+729 = { name = "Ridley" culture = tethyrian }
+730 = { name = "Eaglestar" culture = tethyrian }
+731 = { name = "Raldan" culture = tethyrian }
+732 = { name = "Solman" culture = tethyrian }
+733 = { name = "Gloomgaze" culture = beholder }
+734 = { name = "el-Nadir" culture = arnadar }
 
 1000 = { name = "Axe Helm" culture=shield_dwarf }
 1001 = { name = "Battlehammer" culture=shield_dwarf }
@@ -568,6 +920,33 @@
 1124 = { name = "Boneforge" culture = wild_dwarf }
 1125 = { name = "Bonebeard" culture = wild_dwarf }
 1126 = { name = "Bonedrum" culture = wild_dwarf }
+1127 = { name = "Steelshadow" culture = duergar }
+1128 = { name = "Blackiron" culture = duergar  }
+1129 = { name = "Blackskull" culture = duergar }
+1130 = { name = "Bukbukken" culture = duergar }
+1131 = { name = "Coalhewer" culture = duergar }
+1132 = { name = "Duerna" culture = duergar }
+1133 = { name = "Firehammer" culture = duergar }
+1134 = { name = "Flagonfist" culture = duergar }
+1135 = { name = "Garshorn" culture = duergar }
+1136 = { name = "Bahrdlogh" culture = duergar }
+1137 = { name = "Gloomstorm" culture = duergar }
+1138 = { name = "Gravelthumb" culture = duergar }
+1139 = { name = "Henstak" culture = duergar }
+1140 = { name = "Hilldark" culture = duergar }
+1141 = { name = "Ironvice" culture = duergar }
+1142 = { name = "Muzgardt" culture = duergar }
+1143 = { name = "Redspur" culture = duergar }
+1144 = { name = "Ridauguar" culture = duergar }
+1145 = { name = "Saltbaron" culture = duergar }
+1146 = { name = "Skargettian" culture = duergar }
+1147 = { name = "Szolt" culture = duergar }
+1148 = { name = "Szort" culture = duergar }
+1149 = { name = "Mordin" culture = duergar }
+1150 = { name = "Xornbane" culture = duergar }
+1151 = { name = "Xundorn" culture = duergar }
+1152 = { name = "Inzibat" culture = duergar }
+1153 = { name = "Frostaxe" culture = shield_dwarf used_for_random = no }
 
 1500 = { name = "Bonny" culture = illuskan }
 1501 = { name = "Morgan" culture = illuskan }
@@ -608,7 +987,7 @@
 1536 = { name = "Farwander" culture = illuskan }
 1537 = { name = "Coldmorn" culture = illuskan }
 1538 = { name = "Goldhand" culture = illuskan }
-1539 = { name = "Fandal" culture = moonsea }
+1539 = { name = "Fandal" culture = tharian }
 1540 = { name = "Foundhome" culture = illuskan }
 1541 = { name = "Grolholme" culture = illuskan }
 1542 = { name = "Shepherde" culture = illuskan }
@@ -783,33 +1162,37 @@
 2094 = { name = "Greenmarch" culture = highcoaster }
 2095 = { name = "Hornsong" culture = highcoaster }
 2096 = { name = "Scarthann" culture = highcoaster }
+2097 = { name = "Lauthom" culture = highcoaster }
+2098 = { name = "Bloodmire" culture = highcoaster used_for_random = no }
+2099 = { name = "Brasshorn" culture = highcoaster used_for_random = no }
 
-2200 = { name = "Omailn" culture = heartlander }
-2201 = { name = "Kymon" culture = heartlander }
-2202 = { name = "Croam" culture = heartlander }
-2203 = { name = "Yvel" culture = heartlander }
-2204 = { name = "Rathim" culture = heartlander }
-2205 = { name = "Elan" culture = heartlander }
-2206 = { name = "Firt" culture = heartlander }
-2207 = { name = "Ilistar" culture = heartlander }
-2208 = { name = "Barim" culture = heartlander }
-2209 = { name = "Axeblade" culture = heartlander }
-2210 = { name = "Gostaraj" culture = heartlander }
-2211 = { name = "Campion" culture = heartlander }
-2212 = { name = "Eorn" culture = heartlander }
-2213 = { name = "Lorndessar" culture = heartlander }
-2214 = { name = "Durovree" culture = heartlander }
-2215 = { name = "Athagdal" culture = heartlander }
-2216 = { name = "Thalavar" culture = heartlander }
-2217 = { name = "Maernos" culture = heartlander }
-2218 = { name = "Ujil" culture = heartlander }
-2219 = { name = "Ama" culture = heartlander }
-2220 = { name = "Karsus" culture = heartlander }
-2221 = { name = "Yngol" culture = heartlander }
-2222 = { name = "Rolun" culture = heartlander }
-2223 = { name = "Jol" culture = heartlander }
+2200 = { name = "Omailn" culture = draeven }
+2201 = { name = "Kymon" culture = draeven }
+2202 = { name = "Croam" culture = draeven }
+2203 = { name = "Yvel" culture = draeven }
+2204 = { name = "Rathim" culture = draeven }
+2205 = { name = "Elan" culture = draeven }
+2206 = { name = "Firt" culture = draeven }
+2207 = { name = "Ilistar" culture = draeven }
+2208 = { name = "Barim" culture = draeven }
+2209 = { name = "Axeblade" culture = draeven }
+2210 = { name = "Gostaraj" culture = draeven }
+2211 = { name = "Campion" culture = draeven }
+2212 = { name = "Eorn" culture = draeven }
+2213 = { name = "Lorndessar" culture = draeven }
+2214 = { name = "Durovree" culture = draeven }
+2215 = { name = "Athagdal" culture = draeven }
+2216 = { name = "Thalavar" culture = draeven }
+2217 = { name = "Maernos" culture = draeven }
+2218 = { name = "Ujil" culture = draeven }
+2219 = { name = "Ama" culture = draeven }
+2220 = { name = "Karsus" culture = draeven }
+2221 = { name = "Yngol" culture = draeven }
+2222 = { name = "Rolun" culture = draeven }
+2223 = { name = "Jol" culture = draeven }
 2224 = { name = "Burntsoul" culture = highcoaster used_for_random = no }
 2225 = { name = "Gygar" culture = highcoaster used_for_random = no }
+2226 = { name = "Redbear" culture = draeven used_for_random = no }
 
 2300 = { name = "Myrmoran" culture = highcoaster used_for_random = no }
 2301 = { name = "Aulgaard" culture = northlander used_for_random = no }
@@ -826,7 +1209,7 @@
 2312 = { name = "Windhair" culture = highcoaster }
 2313 = { name = "of Pendurl" culture = highcoaster }
 2314 = { name = "Tshahvur" culture = tethyrian }
-2315 = { name = "Hornside" culture = heartlander }
+2315 = { name = "Hornside" culture = draeven }
 
 2400 = { name = "Silverhand" culture = highcoaster used_for_random = no}
 2401 = { name = "of Everlund" culture = highcoaster used_for_random = no}
@@ -840,17 +1223,17 @@
 2408 = { name = Daggerford culture = highcoaster }
 2409 = { name = Bloodhand culture = tethyrian }
 2410 = { name = "o' the North" culture = uthgardt used_for_random = no }
-2411 = { name = Elturgard culture = heartlander }
-2412 = { name = Ambermantle culture = heartlander }
-2413 = { name = Dragonbreast culture = heartlander }
-2414 = { name = Tor culture = heartlander }
+2411 = { name = Elturgard culture = draeven }
+2412 = { name = Ambermantle culture = draeven }
+2413 = { name = Dragonbreast culture = draeven }
+2414 = { name = Tor culture = draeven }
 2415 = { name = Ormbar culture = highcoaster }
 2416 = { name = Soubar culture = highcoaster }
 2417 = { name = Ormlyr culture = highcoaster }
 2418 = { name = "o' the Hedge" culture = highcoaster used_for_random = no  }
-2419 = { name = "Obarstal" culture = heartlander }
-2420 = { name = "Hurara" culture = heartlander }
-2421 = { name = "Elversult" culture = heartlander }
+2419 = { name = "Obarstal" culture = draeven }
+2420 = { name = "Hurara" culture = draeven }
+2421 = { name = "Elversult" culture = draeven }
 2422 = { name = "Nharimlur" culture = highcoaster }
 2423 = { name = "Reaver" culture = illuskan }
 2424 = { name = "Mytersaal" culture = highcoaster }
@@ -864,7 +1247,7 @@
 2432 = { name = "Tessarion" culture = highcoaster }
 2433 = { name = "t'Urshani" culture = hobgoblin }
 2434 = { name = "Arghaskweel" culture = goblin }
-2435 = { name = "Hawklyn" culture = heartlander }
+2435 = { name = "Hawklyn" culture = draeven }
 2471 = { name = "Seastride" culture = highcoaster }
 2472 = { name = "Ventos" culture = highcoaster }
 2473 = { name = "Dartwick" culture = highcoaster }
@@ -880,15 +1263,15 @@
 2483 = { name = "Corwin" culture = highcoaster }
 2484 = { name = "Albaier" culture = highcoaster }
 2485 = { name = "Flamesinger" culture = highcoaster }
-2486 = { name = "Aumar" culture = heartlander used_for_random = no }
-2487 = { name = "Hornweather" culture = heartlander }
-2488 = { name = "Goldsheaf" culture = heartlander }
-2489 = { name = "Stoneblade" culture = heartlander }
-2490 = { name = "Hastarl" culture = heartlander }
-2491 = { name = "Malaug" culture = heartlander used_for_random = no }
+2486 = { name = "Aumar" culture = draeven used_for_random = no }
+2487 = { name = "Hornweather" culture = draeven }
+2488 = { name = "Goldsheaf" culture = draeven }
+2489 = { name = "Stoneblade" culture = draeven }
+2490 = { name = "Hastarl" culture = draeven }
+2491 = { name = "Malaug" culture = draeven used_for_random = no }
 2492 = { name = "Talember" culture = talfir used_for_random = no }
-2493 = { name = "Inchtarwurn" culture = heartlander }
-2494 = { name = "Korvak" culture = heartlander }
+2493 = { name = "Inchtarwurn" culture = draeven }
+2494 = { name = "Korvak" culture = draeven }
 2495 = { name = "Cutter" culture = highcoaster }
 2496 = { name = "Argent" culture = highcoaster }
 2497 = { name = "Kron" culture = highcoaster }
@@ -900,7 +1283,7 @@
 2503 = { name = "of the Red Tiger" culture = uthgardt used_for_random = no }
 2504 = { name = "La'neral" culture = moon_elf used_for_random = no }
 2505 = { name = "Undergallows" culture = lightfoot used_for_random = no }
-2506 = { name = "Korothir" culture = moonsea used_for_random = no }
+2506 = { name = "Korothir" culture = tharian used_for_random = no }
 2507 = { name = "Droganson" culture = shield_dwarf used_for_random = no }
 2508 = { name = "Trapspringer" culture = shield_dwarf used_for_random = no }
 2509 = { name = "Waymeet" culture = highcoaster used_for_random = no }
@@ -937,20 +1320,20 @@
 2540 = { name = "Wrighttson" culture = highcoaster }
 2541 = { name = "Ripsnarl" culture = gnoll }
 2542 = { name = "of the Crescent Blade" culture = highcoaster used_for_random = no }
-2543 = { name = "Boareskyr" culture = heartlander used_for_random = no }
+2543 = { name = "Boareskyr" culture = draeven used_for_random = no }
 2544 = { name = "Vecto" culture = talfir }
 2545 = { name = "Lanpendia" culture = talfir }
 2546 = { name = "Falasal" culture = netherese }
 2547 = { name = "Andergos" culture = talfir }
-2548 = { name = "Hillsfield" culture = heartlander }
+2548 = { name = "Hillsfield" culture = draeven }
 2549 = { name = "Iantumalius" culture = talfir }
 2550 = { name = "Grekle" culture = highcoaster }
 2551 = { name = "Cinges" culture = netherese }
 2552 = { name = "Ounioon" culture = ogre }
 2553 = { name = "Bloodsun" culture = orc }
-2554 = { name = "Tisea" culture = heartlander }
-2555 = { name = "Kreeg" culture = heartlander }
-2556 = { name = "Tavion" culture = heartlander }
+2554 = { name = "Tisea" culture = draeven }
+2555 = { name = "Kreeg" culture = draeven }
+2556 = { name = "Tavion" culture = draeven }
 2557 = { name = "Advorix" culture = talfir }
 2558 = { name = "Ilateuta" culture = talfir }
 2559 = { name = "Dorman" culture = highcoaster }
@@ -983,24 +1366,24 @@
 2586 = { name = "Mirroreye" culture = highcoaster }
 2587 = { name = "Halacanter" culture = highcoaster }
 2588 = { name = "Segolatius" culture = talfir }
-2589 = { name = "Telendar" culture = heartlander }
-2590 = { name = "Calegros" culture = heartlander }
+2589 = { name = "Tellendar" culture = draeven }
+2590 = { name = "Calegros" culture = draeven }
 2591 = { name = "Vecto" culture = talfir }
-2592 = { name = "Heartburn" culture = heartlander }
-2593 = { name = "Orcslayer" culture = heartlander used_for_random = no }
-2594 = { name = "Hultel" culture = heartlander }
-2595 = { name = "Blackhelm" culture = heartlander }
-2596 = { name = "Surfyst" culture = heartlander }
-2597 = { name = "Lupus" culture = heartlander }
-2598 = { name = "Thoon" culture = heartlander }
-2599 = { name = "Polman" culture = heartlander }
+2592 = { name = "Heartburn" culture = draeven }
+2593 = { name = "Orcslayer" culture = draeven used_for_random = no }
+2594 = { name = "Hultel" culture = draeven }
+2595 = { name = "Blackhelm" culture = draeven }
+2596 = { name = "Surfyst" culture = draeven }
+2597 = { name = "Lupus" culture = draeven }
+2598 = { name = "Thoon" culture = draeven }
+2599 = { name = "Polman" culture = draeven }
 2600 = { name = "Tigetbane" culture = highcoaster }
 2601 = { name = "Tzaraak" culture = illithid }
-2602 = { name = "Sunburst" culture = heartlander }
+2602 = { name = "Sunburst" culture = draeven }
 2603 = { name = "Ulvendor" culture = highcoaster }
 2604 = { name = "Fendarl" culture = highcoaster used_for_random = no }
-2605 = { name = "Migron" culture = heartlander }
-2606 = { name = "Kala" culture = heartlander }
+2605 = { name = "Migron" culture = draeven }
+2606 = { name = "Kala" culture = draeven }
 2607 = { name = "Anchev" culture = highcoaster used_for_random = no }
 2608 = { name = "Merrithin" culture = drow used_for_random = no }
 2609 = { name = "Stone" culture = highcoaster }
@@ -1015,17 +1398,17 @@
 2618 = { name = "Gildeggh" culture = highcoaster }
 2619 = { name = "Teltorna" culture = highcoaster }
 2620 = { name = "Lorncloak" culture = highcoaster }
-2621 = { name = "Kemvol" culture = heartlander }
-2622 = { name = "Bavnan" culture = heartlander }
-2623 = { name = "Findol" culture = heartlander }
-2634 = { name = "Daith" culture = heartlander }
-2635 = { name = "Waglan" culture = heartlander }
-2636 = { name = "Uln" culture = heartlander }
-2637 = { name = "Neithan" culture = heartlander }
-2638 = { name = "Trujil" culture = heartlander }
-2639 = { name = "Vingot" culture = heartlander }
-2640 = { name = "of Westgate" culture = heartlander }
-2641 = { name = "Prakis" culture = heartlander }
+2621 = { name = "Kemvol" culture = draeven }
+2622 = { name = "Bavnan" culture = draeven }
+2623 = { name = "Findol" culture = draeven }
+2634 = { name = "Daith" culture = draeven }
+2635 = { name = "Waglan" culture = draeven }
+2636 = { name = "Uln" culture = draeven }
+2637 = { name = "Neithan" culture = draeven }
+2638 = { name = "Trujil" culture = draeven }
+2639 = { name = "Vingot" culture = draeven }
+2640 = { name = "of Westgate" culture = draeven }
+2641 = { name = "Prakis" culture = draeven }
 2642 = { name = "Conyberry" culture = highcoaster }
 2643 = { name = "Darktreader" culture = highcoaster }
 2644 = { name = "Farranger" culture = highcoaster }
@@ -1034,7 +1417,7 @@
 2647 = { name = "Deldreir" culture = highcoaster }
 2648 = { name = "Bruenghor" culture = shield_dwarf used_for_random = no }
 2649 = { name = "Goblinbreaker" culture = shield_dwarf used_for_random = no }
-
+2650 = { name = "Faithhammer" culture = highcoaster used_for_random = no }
 
 3301 = { name = "Maerdrym" culture = moon_elf }
 3302 = { name = "Boughstrong" culture = green_elf }
@@ -1131,6 +1514,10 @@
 3394 = { name = "Mrauthae" culture = moon_elf }
 3395 = { name = "Seamist" culture = sun_elf }
 3396 = { name = "Melruth" culture = sun_elf used_for_random = no }
+3397 = { name = "Farlong" culture = wood_elf used_for_random = no }
+
+3402 = { name = "Auondril" culture = moon_elf used_for_random = no }
+3403 = { name = "Uoswiir" culture = drow }
 
 3700 = { name = "Heartwood" culture = uthgardt }
 3701 = { name = "Tenfeather" culture = uthgardt }
@@ -1155,7 +1542,7 @@
 3720 = { name = "Garinen" culture = uthgardt }
 3721 = { name = "Seventoes" culture = uthgardt }
 3722 = { name = "Heartflow" culture = uthgardt }
-3723 = { name = "Orcbane" culture = uthgardt }
+3723 = { name = "Longtooth" culture = uthgardt }
 3724 = { name = "Ghostheart" culture = uthgardt }
 3725 = { name = "Long-Throw" culture = uthgardt }
 3726 = { name = "Tigris" culture = uthgardt }
@@ -1235,7 +1622,7 @@
 3940 = { name = "Velar" culture = dalesman used_for_random = no }
 3941 = { name = "Halvan" culture = dalesman used_for_random = no }
 3942 = { name = "Goodtiller" culture = dalesman }
-3943 = { name = "Aumersair" culture = heartlander used_for_random = no }
+3943 = { name = "Aumersair" culture = draeven used_for_random = no }
 3944 = { name = "Coldcrag" culture = dalesman }
 3945 = { name = "Snowpath" culture = dalesman }
 3946 = { name = "Grimblade" culture = dalesman }
@@ -1295,7 +1682,7 @@
 4140 = { name = "Arbustle" culture = tethyrian }
 4141 = { name = "Silvermane" culture = tethyrian }
 4142 = { name = "Bonaduce" culture = tethyrian used_for_random = no }
-4143 = { name = "Maupoissant" culture = heartlander }
+4143 = { name = "Maupoissant" culture = draeven }
 4144 = { name = "Gulderhorn" culture = tethyrian }
 4145 = { name = "Gallowglass" culture = tethyrian }
 4146 = { name = "Jhannivvar" culture = tethyrian }
@@ -1304,7 +1691,7 @@
 4149 = { name = "Raslemtar" culture = tethyrian }
 4150 = { name = "Myratman" culture = tethyrian }
 4151 = { name = "Gullifort" culture = tethyrian }
-4152 = { name = "Darkglove" culture = nelanthern }
+4152 = { name = "Cowlsar" culture = nelanthern }
 4153 = { name = "Sashenstar" culture = tethyrian }
 4154 = { name = "Fyrson" culture = nelanthern }
 4155 = { name = "Daerimathlor" culture = tethyrian }
@@ -1332,6 +1719,7 @@
 4177 = { name = "Sythillis" culture = ogre used_for_random = no }
 4178 = { name = "Nivthennis" culture = drow }
 4179 = { name = "Provanno'zzar" culture = drow }
+4180 = { name = "Firewind" culture = draconic used_for_random = no }
 
 
 4300 = { name = "Keeneyes" culture = lightfoot }
@@ -1363,25 +1751,25 @@
 
 4500 = { name = "Silendia" culture = calishite }
 4501 = { name = "yi Calimport" culture = calishite }
-4502 = { name = "el Pesarkhal" culture = calishite used_for_random = no }
-4503 = { name = "el Arpooristan" culture = calishite }
-4504 = { name = "el Synnabat" culture = calishite }
-4505 = { name = "el Djenispool" culture = calishite used_for_random = no }
+4502 = { name = "el-Pesarkhal" culture = calishite used_for_random = no }
+4503 = { name = "el-Arpooristan" culture = calishite }
+4504 = { name = "el-Synnabat" culture = calishite }
+4505 = { name = "el-Djenispool" culture = calishite used_for_random = no }
 4506 = { name = "Shoon" culture = shoon used_for_random = no }
 4507 = { name = "al Aktorral" culture = shoon used_for_random = no }
-4508 = { name = "el Tavarn" culture = calishite }
-4509 = { name = "el Jhotos" culture = calishite }
+4508 = { name = "el-Tavarn" culture = calishite }
+4509 = { name = "el-Jhotos" culture = calishite }
 4510 = { name = "Dorluu" culture = calishite }
 4511 = { name = "Malklyn" culture = calishite }
 4512 = { name = "Duum" culture = calishite }
-4513 = { name = "el Ashnarti" culture = calishite }
-4514 = { name = "el Sujil" culture = calishite }
+4513 = { name = "el-Ashnarti" culture = calishite }
+4514 = { name = "el-Sujil" culture = calishite }
 4515 = { name = "yi Schamedar" culture = calishite }
 4516 = { name = "Tharovin" culture = calishite used_for_random = no }
-4517 = { name = "el Moadyph" culture = calishite }
+4517 = { name = "el-Moadyph" culture = calishite }
 4518 = { name = "Wahrim" culture = wood_elf }
-4519 = { name = "el Vitendi" culture = calishite }
-4520 = { name = "el Galanar" culture = calishite }
+4519 = { name = "el-Vitendi" culture = calishite }
+4520 = { name = "el-Galanar" culture = calishite }
 4521 = { name = "Basha" culture = calishite }
 4522 = { name = "Dumein" culture = calishite }
 4523 = { name = "Jassan" culture = calishite }
@@ -1391,7 +1779,7 @@
 4527 = { name = "Rein" culture = calishite }
 4528 = { name = "Fanzir" culture = calishite }
 4529 = { name = "Speldarnshar" culture = calishite }
-4530 = { name = "el Daosiin" culture = calishite }
+4530 = { name = "el-Daosiin" culture = calishite }
 4531 = { name = "Morlin" culture = calishite }
 4532 = { name = "Myntharan" culture = calishite }
 4533 = { name = "yn Bashir" culture = calishite }
@@ -1399,16 +1787,16 @@
 4535 = { name = "Mersem" culture = calishite }
 4536 = { name = "Bashid" culture = calishite }
 4537 = { name = "Sahali" culture = calishite }
-4538 = { name = "el Risad" culture = calishite }
+4538 = { name = "el-Risad" culture = calishite }
 4539 = { name = "yn Mekali" culture = calishite }
 4540 = { name = "yi Ishmal" culture = calishite }
 4541 = { name = "Abd al-Rahman" culture = calishite } # Mameluk
 4542 = { name = "Yazeen" culture = calishite }
 4543 = { name = "Hashar" culture = calishite }
-4544 = { name = "Al-Hayy" culture = calishite } # Mameluk
+4544 = { name = "al-Hayy" culture = calishite } # Mameluk
 4545 = { name = "Yassin" culture = calishite } # Mameluk
-4546 = { name = "Al-Shakur" culture = calishite } # Mameluk
-4547 = { name = "Al-Imam" culture = calishite } # Mameluk
+4546 = { name = "al-Shakur" culture = calishite } # Mameluk
+4547 = { name = "al-Imam" culture = calishite } # Mameluk
 4548 = { name = "Younis" culture = calishite } # Mameluk
 4549 = { name = "Wahid" culture = calishite } # Mameluk
 4550 = { name = "Omer" culture = calishite } # Mameluk
@@ -1442,7 +1830,7 @@
 4801 = { name = "Alibakkar" culture = amnian used_for_random = no }
 4802 = { name = "Gheldieg" culture = amnian used_for_random = no }
 4803 = { name = "Colwyvv" culture = amnian used_for_random = no }
-4804 = { name = "Xornnag" culture = amnian used_for_random = no }
+4804 = { name = "Xwrnnag" culture = amnian used_for_random = no }
 4805 = { name = "Jysstev" culture = amnian used_for_random = no }
 4806 = { name = "Vemmil" culture = amnian used_for_random = no }
 4807 = { name = "Dannihyr" culture = amnian used_for_random = no }

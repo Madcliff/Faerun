@@ -1,0 +1,1345 @@
+namespace = CDR
+
+# start delving
+character_event = {
+	id = CDR.200
+	desc = EVTDESC_CDR_200
+	picture = GFX_evt_library
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_CDR_200
+
+		character_event = { id = CDR.201 days = 90 }
+  }
+}
+
+# random delving result
+character_event = {
+	id = CDR.201
+	desc = EVTDESC_CDR_201
+	picture = GFX_evt_library
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_CDR_201
+		add_character_modifier = {
+			name = forbidden_knowledge
+			years = 5
+		}
+		random_list = {
+			60 = { # nothing else
+			}
+			10 = {
+				add_trait = lunatic
+			}
+			10 = {
+				add_trait = erudite
+				if = {
+					limit = {
+						trait = detached_priest
+					}
+					hidden_tooltip = { remove_trait = detached_priest }
+					add_trait = martial_cleric
+					break = yes
+				}
+				if = {
+					limit = {
+						trait = martial_cleric
+					}
+					hidden_tooltip = { remove_trait = martial_cleric }
+					add_trait = scholarly_theologian
+					break = yes
+				}
+				if = {
+					limit = {
+						trait = scholarly_theologian
+					}
+					hidden_tooltip = { remove_trait = scholarly_theologian }
+					add_trait = mastermind_theologian
+				}
+			}
+			10 = {
+				#add diligent
+					if = {
+						limit = {
+							trait = slothful
+							NOR = {
+								trait = stressed
+								trait = depressed
+							}
+						}
+						random_list = {
+							90 = { add_trait = stressed }
+							10 = {
+								add_trait = stressed
+								add_trait = diligent
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							trait = slothful
+							trait = stressed
+							NOT = { trait = depressed }
+						}
+						random_list = {
+							66 = { add_trait = depressed }
+							33 = {
+								add_trait = depressed
+								add_trait = diligent
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							trait = slothful
+							trait = depressed
+							NOT = { trait = stressed }
+						}
+						random_list = {
+							66 = { add_trait = stressed }
+							33 = {
+								add_trait = stressed
+								add_trait = diligent
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							trait = slothful
+							AND = {
+								trait = stressed
+								trait = depressed
+							}
+						}
+						add_trait = diligent
+						random_list = {
+							33 = {}
+							33 = { remove_trait = stressed }
+							33 = { remove_trait = depressed }
+						}
+					}
+					else_if = {
+						limit = {
+							NOT = { trait = diligent }
+						}
+						add_trait = diligent
+					}
+				if = {
+					limit = {
+						trait = detached_priest
+					}
+					hidden_tooltip = { remove_trait = detached_priest }
+					add_trait = martial_cleric
+					break = yes
+				}
+				if = {
+					limit = {
+						trait = martial_cleric
+					}
+					hidden_tooltip = { remove_trait = martial_cleric }
+					add_trait = scholarly_theologian
+					break = yes
+				}
+				if = {
+					limit = {
+						trait = scholarly_theologian
+					}
+					hidden_tooltip = { remove_trait = scholarly_theologian }
+					add_trait = mastermind_theologian
+				}
+			}
+			10 = {
+				#add cruel
+					if = {
+						limit = {
+							trait = kind
+							NOR = {
+								trait = stressed
+								trait = depressed
+							}
+						}
+						random_list = {
+							90 = { add_trait = stressed }
+							10 = {
+								add_trait = stressed
+								add_trait = cruel
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							trait = kind
+							trait = stressed
+							NOT = { trait = depressed }
+						}
+						random_list = {
+							66 = { add_trait = depressed }
+							33 = {
+								add_trait = depressed
+								add_trait = cruel
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							trait = kind
+							trait = depressed
+							NOT = { trait = stressed }
+						}
+						random_list = {
+							66 = { add_trait = stressed }
+							33 = {
+								add_trait = stressed
+								add_trait = cruel
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							trait = kind
+							AND = {
+								trait = stressed
+								trait = depressed
+							}
+						}
+						add_trait = cruel
+						random_list = {
+							33 = {}
+							33 = { remove_trait = stressed }
+							33 = { remove_trait = depressed }
+						}
+					}
+					else_if = {
+						limit = {
+							NOT = { trait = cruel }
+						}
+						add_trait = cruel
+					}
+			}
+		}
+		ai_chance = {
+				factor = 100
+		}
+  }
+
+	option = {
+		name = EVTOPTB_CDR_201
+		random = {
+			chance = 30
+			add_trait = content
+		}
+		piety = 30
+  }
+}
+
+# minor gift
+character_event = {
+	id = CDR.300
+	desc = EVTDESC_CDR_300
+	picture = GFX_evt_treasure
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_CDR_300
+		random_list = {
+			4 = {
+				add_artifact = berserker_axe
+			}
+			2 = {
+				add_artifact = flame_tongue
+			}
+			2 = {
+				add_artifact = frost_brand
+			}
+			2 = {
+				add_artifact = life_drinker
+			}
+			2 = {
+				add_artifact = mace_of_terror
+			}
+			2 = {
+				add_artifact = oathbow
+			}
+			2 = {
+				add_artifact = sword_of_sharpness
+			}
+			4 = {
+				add_artifact = sword_of_life_stealing
+			}
+			4 = {
+				add_artifact = sword_of_wounding
+			}
+			4 = {
+				add_artifact = trident_of_warning
+			}
+			4 = {
+				add_artifact = lesser_rod_pact_keeper
+			}
+			2 = {
+				add_artifact = normal_rod_pact_keeper
+			}
+			2 = {
+				add_artifact = staff_of_swarming_insects
+			}
+			2 = {
+				add_artifact = staff_python
+			}
+			2 = {
+				add_artifact = dagger_of_lifekeeping
+			}
+			2 = {
+				add_artifact = sylvan_scimitar
+			}
+			2 = {
+				add_artifact = sword_of_subtlety
+			}
+			2 = {
+				add_artifact = arrowcatching_shield
+			}
+			2 = {
+				add_artifact = wand_of_binding
+			}
+			2 = {
+				add_artifact = wand_of_fear
+			}
+			2 = {
+				add_artifact = wand_of_fireballs
+			}
+			2 = {
+				add_artifact = wand_of_lightning
+			}
+			2 = {
+				add_artifact = greater_wand_war_mage
+			}
+			4 = {
+				add_artifact = dagger_of_venom
+			}
+			4 = {
+				add_artifact = javelin_of_lightning
+			}
+			4 = {
+				add_artifact = flensing_gauntlet
+			}
+			4 = {
+				add_artifact = sentinel_shield
+			}
+			4 = {
+				add_artifact = shield_missile_attraction
+			}
+			4 = {
+				add_artifact = wand_magic_missile
+			}
+			4 = {
+				add_artifact = wand_of_web
+			}
+			4 = {
+				add_artifact = normal_wand_war_mage
+			}
+			4 = {
+				add_artifact = glamoured_studded_leather
+			}
+			2 = {
+				add_artifact = demon_armor
+			}
+			2 = {
+				add_artifact = elven_chain
+			}
+			2 = {
+				add_artifact = dragon_scale_mail
+			}
+			2 = {
+				add_artifact = robe_of_eyes
+			}
+			2 = {
+				add_artifact = amulet_of_no_detection
+			}
+			2 = {
+				add_artifact = medallion_of_thoughts
+			}
+			2 = {
+				add_artifact = periapt_of_health
+			}
+			1 = {
+				add_artifact = amulet_of_health
+			}
+			1 = {
+				add_artifact = cape_of_the_mountebank
+			}
+			1 = {
+				add_artifact = cloak_of_elvenkind
+			}
+			1 = {
+				add_artifact = cloak_of_protection
+			}
+		}
+		new_artifact = {
+			set_creation_date = 1.1.1
+		}
+  }
+}
+
+# dracolich mission reward
+character_event = {
+	id = CDR.301
+	desc = EVTDESC_CDR_301
+	picture = GFX_evt_treasure
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_CDR_300
+		random_list = {
+			4 = {
+				add_artifact = berserker_axe
+			}
+			2 = {
+				add_artifact = flame_tongue
+			}
+			2 = {
+				add_artifact = frost_brand
+			}
+			2 = {
+				add_artifact = life_drinker
+			}
+			2 = {
+				add_artifact = mace_of_terror
+			}
+			2 = {
+				add_artifact = oathbow
+			}
+			2 = {
+				add_artifact = sword_of_sharpness
+			}
+			4 = {
+				add_artifact = sword_of_life_stealing
+			}
+			4 = {
+				add_artifact = sword_of_wounding
+			}
+			4 = {
+				add_artifact = trident_of_warning
+			}
+			4 = {
+				add_artifact = lesser_rod_pact_keeper
+			}
+			2 = {
+				add_artifact = normal_rod_pact_keeper
+			}
+			2 = {
+				add_artifact = staff_of_swarming_insects
+			}
+			2 = {
+				add_artifact = staff_python
+			}
+			2 = {
+				add_artifact = dagger_of_lifekeeping
+			}
+			2 = {
+				add_artifact = sylvan_scimitar
+			}
+			2 = {
+				add_artifact = sword_of_subtlety
+			}
+			2 = {
+				add_artifact = arrowcatching_shield
+			}
+			2 = {
+				add_artifact = wand_of_binding
+			}
+			2 = {
+				add_artifact = wand_of_fear
+			}
+			2 = {
+				add_artifact = wand_of_fireballs
+			}
+			2 = {
+				add_artifact = wand_of_lightning
+			}
+			2 = {
+				add_artifact = greater_wand_war_mage
+			}
+			4 = {
+				add_artifact = dagger_of_venom
+			}
+			4 = {
+				add_artifact = javelin_of_lightning
+			}
+			4 = {
+				add_artifact = flensing_gauntlet
+			}
+			4 = {
+				add_artifact = sentinel_shield
+			}
+			4 = {
+				add_artifact = shield_missile_attraction
+			}
+			4 = {
+				add_artifact = wand_magic_missile
+			}
+			4 = {
+				add_artifact = wand_of_web
+			}
+			4 = {
+				add_artifact = normal_wand_war_mage
+			}
+			4 = {
+				add_artifact = glamoured_studded_leather
+			}
+			2 = {
+				add_artifact = demon_armor
+			}
+			2 = {
+				add_artifact = elven_chain
+			}
+			2 = {
+				add_artifact = dragon_scale_mail
+			}
+			2 = {
+				add_artifact = robe_of_eyes
+			}
+			2 = {
+				add_artifact = amulet_of_no_detection
+			}
+			2 = {
+				add_artifact = medallion_of_thoughts
+			}
+			2 = {
+				add_artifact = periapt_of_health
+			}
+			1 = {
+				add_artifact = amulet_of_health
+			}
+			1 = {
+				add_artifact = cape_of_the_mountebank
+			}
+			1 = {
+				add_artifact = cloak_of_elvenkind
+			}
+			1 = {
+				add_artifact = cloak_of_protection
+			}
+		}
+		new_artifact = {
+			set_creation_date = 1.1.1
+		}
+  }
+}
+
+# established cell
+character_event = {
+	id = CDR.400
+	desc = EVTDESC_CDR_400
+	picture = GFX_evt_secret_ceremony
+	border = GFX_event_normal_frame_religion
+
+	is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_CDR_400
+		event_target:target_cult_province = {
+			add_province_modifier = {
+				modifier = secret_cult_cell
+				duration = -1
+			}
+		}
+	}
+}
+
+# Valuable Obtained
+character_event = {
+	id = CDR.401
+	desc = EVTDESC_CDR_401
+	picture = GFX_evt_treasure
+	only_playable = yes
+
+	trigger = {
+		society_member_of = cult_of_the_dragon
+		higher_tier_than = BARON
+		any_demesne_province = {
+	    has_province_modifier = secret_cult_cell
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = EVTOPTA_CDR_401
+
+		scaled_wealth = 0.2
+	}
+}
+
+# Cell in trouble
+character_event = {
+	id = CDR.402
+	desc = EVTDESC_CDR_402
+	picture = GFX_evt_bad_news
+	only_playable = yes
+
+	trigger = {
+		society_member_of = cult_of_the_dragon
+		higher_tier_than = BARON
+		any_demesne_province = {
+	    has_province_modifier = secret_cult_cell
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	option = { #save cell
+		name = EVTOPTA_CDR_402
+
+		scaled_wealth = -0.1
+		increase_visibility_minor_effect = yes
+		ai_chance = {
+				factor = 100
+		}
+	}
+
+	option = { #lose cell
+		name = EVTOPTB_CDR_402
+
+		detract_society_currency_minor_effect = yes
+		random_demesne_province = {
+			limit = {
+				has_province_modifier = secret_cult_cell
+			}
+			remove_province_modifier = secret_cult_cell
+		}
+	}
+}
+
+# Hostile Cell
+character_event = {
+	id = CDR.403
+	desc = EVTDESC_CDR_403
+	picture = GFX_evt_secret_ceremony
+	only_playable = yes
+
+	trigger = {
+		NOT = { society_member_of = cult_of_the_dragon }
+		higher_tier_than = BARON
+		any_demesne_province = {
+	    has_province_modifier = secret_cult_cell
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = { #lose money
+		name = EVTOPTA_CDR_403
+		ai_chance = {
+			factor = 30
+		}
+		scaled_wealth = -0.05
+	}
+
+	option = { #destroy cell
+		name = EVTOPTB_CDR_403
+		ai_chance = {
+			factor = 30
+		}
+		scaled_wealth = -0.2
+		random_list = {
+			80 = {
+				random_demesne_province = {
+					limit = {
+						has_province_modifier = secret_cult_cell
+					}
+					remove_province_modifier = secret_cult_cell
+				}
+			}
+			20 = {
+				prestige = -10
+			}
+		}
+	}
+
+	option = { #join
+		name = EVTOPTC_CDR_403
+		trigger = {
+			is_in_society = no
+			age = 16
+			NOT = {
+				trait = kind
+				trait = charitable
+				trait = cynical
+				culture = monster
+			}
+			OR = {
+				trait = lunatic
+				trait = cruel
+				trait = ambitious
+				trait = greedy
+				trait = half_dragon
+				religion = draconic_pantheon
+				religion = tiamat
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 3
+				trait = lunatic
+			}
+			modifier = {
+				factor = 3
+				trait = cruel
+			}
+			modifier = {
+				factor = 3
+				trait = ambitious
+			}
+			modifier = {
+				factor = 3
+				trait = greedy
+			}
+			modifier = {
+				factor = 3
+				trait = half_dragon
+			}
+			modifier = {
+				factor = 3
+				religion = draconic_pantheon
+			}
+		}
+		join_society = cult_of_the_dragon
+	}
+}
+
+# Good working cell
+character_event = {
+	id = CDR.404
+	desc = EVTDESC_CDR_404
+	picture = GFX_evt_secret_ceremony
+	only_playable = yes
+
+	trigger = {
+		society_member_of = cult_of_the_dragon
+		higher_tier_than = BARON
+		any_demesne_province = {
+	    has_province_modifier = secret_cult_cell
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = EVTOPTA_CDR_404
+
+		add_society_currency_minor_effect = yes
+	}
+}
+
+# Cell finds dragon's lair
+character_event = {
+	id = CDR.405
+	hide_window = yes
+	only_playable = yes
+
+	trigger = {
+		society_member_of = cult_of_the_dragon
+		any_demesne_province = {
+	    has_province_modifier = secret_cult_cell
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		character_event = { id = CDR.6200 }
+	}
+}
+
+# Become undead
+character_event = {
+  id = CDR.500
+  is_triggered_only = yes
+  desc = EVTDESC_CDR_500
+  picture = GFX_evt_death_knight
+
+  option = { #vampire
+    name = EVTOPTA_CDR_500
+		trigger = {
+			NAND = {
+				is_dragon = yes
+				society_member_of = cult_of_the_dragon
+			}
+		}
+
+    add_trait = vampire
+		hidden_tooltip = {
+			if = {
+				limit = {
+					OR = {
+						trait = creature_human
+						trait = creature_aasimar
+						trait = creature_tiefling
+						trait = creature_half_giant
+						trait = creature_genasi
+						trait = creature_gith
+						trait = creature_gnome
+						trait = creature_halfling
+						trait = creature_centaur
+						trait = creature_wemic
+					}
+				}
+				set_graphical_culture = vampire
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trait = creature_malison
+						trait = creature_pureblood
+					}
+				}
+				set_graphical_culture = cambion
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trait = creature_dwarf
+						trait = creature_half_dwarf
+					}
+				}
+				set_graphical_culture = dwarfvampire
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trait = creature_elf
+						trait = creature_sea_elf
+						trait = creature_eladrin
+						trait = creature_feyri
+						trait = creature_drow
+						trait = creature_half_elf
+					}
+				}
+				set_graphical_culture = undeadelf
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trait = creature_naga
+						trait = creature_abomination
+						trait = creature_sarrukh
+					}
+				}
+				set_graphical_culture = bone_naga
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trait = creature_ogre
+						trait = creature_half_ogre
+						trait = creature_ogrillon
+					}
+				}
+				set_graphical_culture = undeadogre
+			}
+		}
+  }
+
+	option = { #lich
+    name = EVTOPTB_CDR_500
+		trigger = {
+			OR = {
+				trait = expert_wizard
+				trait = master_wizard
+				trait = renowned_wizard
+				trait = legendary_wizard
+				trait = expert_sorcerer
+				trait = master_sorcerer
+				trait = renowned_sorcerer
+				trait = legendary_sorcerer
+				trait = expert_cleric
+				trait = master_cleric
+				trait = renowned_cleric
+				trait = legendary_cleric
+				trait = expert_warlock
+				trait = master_warlock
+				trait = renowned_warlock
+				trait = legendary_warlock
+				is_dragon = yes
+			}
+			NOT = { society_member_of = night_masks }
+		}
+    add_trait = lich
+		hidden_tooltip = {
+			if = {
+				limit = {
+					trait = creature_human
+					trait = creature_aasimar
+					trait = creature_tiefling
+					trait = creature_half_giant
+					trait = creature_genasi
+					trait = creature_gith
+					trait = creature_gnome
+					trait = creature_halfling
+					trait = creature_centaur
+					trait = creature_wemic
+				}
+				if = {
+					limit = {
+						NOR = {
+							culture = shou
+							culture = khatin
+							culture = gugari
+							culture = kozakuran
+							culture = mulhorandi
+							culture = murghomi
+						}
+					}
+					set_graphical_culture = lich
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = shou
+							culture = khatin
+							culture = gugari
+							culture = kozakuran
+						}
+					}
+					set_graphical_culture = undead_shou
+				}
+				else_if = {
+					limit = {
+						OR = {
+							culture = mulhorandi
+							culture = murghomi
+						}
+					}
+					set_graphical_culture = undead_mulhorandi
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trait = creature_malison
+						trait = creature_pureblood
+					}
+				}
+				set_graphical_culture = cambion
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trait = creature_elf
+						trait = creature_eladrin
+						trait = creature_feyri
+						trait = creature_drow
+						trait = creature_half_elf
+					}
+				}
+				set_graphical_culture = undeadelf
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trait = creature_dwarf
+						trait = creature_half_dwarf
+					}
+				}
+				set_graphical_culture = dwarfvampire
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trait = creature_naga
+						trait = creature_abomination
+						trait = creature_sarrukh
+					}
+				}
+				set_graphical_culture = bone_naga
+			}
+			else_if = {
+				limit = {
+					OR = {
+						trait = creature_ogre
+						trait = creature_half_ogre
+						trait = creature_ogrillon
+					}
+				}
+				set_graphical_culture = undeadogre
+			}
+			else_if = {
+				limit = {
+					trait = creature_dragon
+				}
+				set_graphical_culture = dracolich
+			}
+		}
+  }
+}
+
+#dracolich invited
+character_event = {
+    id = CDR.600
+    desc = EVTDESC_CDR_600
+		picture = GFX_evt_dragon_1
+    border = GFX_event_normal_frame_war
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_CDR_600
+        event_target:invited_lodge_soldier = {
+            show_scope_change = no
+            opinion = {
+                modifier = opinion_loyal_servant
+                who = ROOT
+                years = 10
+            }
+        }
+        ai_chance = {
+            factor = 100
+        }
+    }
+}
+
+###MISSIONS###
+
+#MISSION: Create a dracolich
+character_event = {
+	id = CDR.6200
+	picture = GFX_evt_dragon_1
+	desc = EVTDESC_CDR_6200
+
+	is_triggered_only = yes
+
+	trigger = {
+		any_character = {
+			is_within_diplo_range = ROOT
+			trait = creature_dragon
+			is_adult = yes
+			NOR = {
+				trait = lich
+				trait = lich_baelnorn
+				trait = vampire
+				trait = vampire_spawn
+				trait = undead
+			}
+		}
+	}
+
+	immediate = {
+		#Find a dragon
+		random_character = {
+			limit = {
+				is_within_diplo_range = ROOT
+				NOT = { character = ROOT }
+				trait = creature_dragon
+				NOR = {
+					trait = lich
+					trait = lich_baelnorn
+					trait = vampire
+					trait = vampire_spawn
+					trait = undead
+				}
+			}
+			save_event_target_as = dracolich_target
+		}
+	}
+	option = {
+		name = EVTOPTA_CDR_6200
+		if = {
+			limit = {
+				event_target:dracolich_target = { always = yes }
+				is_within_diplo_range = event_target:dracolich_target
+			}
+			random_society_member = {
+				limit = { society_rank = { rank = 4 society = cult_of_the_dragon } }
+				character_event = { id = CDR.6201 }
+			}
+		}
+	}
+}
+
+#Ping event for GM
+character_event = {
+	id = CDR.6201
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { event_target:dracolich_target = { always = yes } }
+			FROM = { society_quest_event = { id = CDR.6202 days = 14 } }
+		}
+	}
+}
+
+#You get your target
+society_quest_event = {
+	id = CDR.6202
+	title = quest_dracolich
+	quest_target = event_target:dracolich_target
+
+	trigger = {
+		is_in_society = yes
+		event_target:dracolich_target = {
+			is_alive = yes
+		}
+	}
+
+	is_triggered_only = yes
+	desc = EVTDESC_CDR_6202
+
+	option = {
+		name = ACCEPT
+
+		event_target:dracolich_target = {
+			set_quest_target = {
+				id = quest_dracolich
+				holder = ROOT
+			}
+		}
+
+		event_target:dracolich_target = {
+			set_character_flag = appear_in_option
+			clr_character_flag = appear_in_option
+		}
+
+		event_target:dracolich_target = {
+			character_event = { id = CDR.6203 }
+		}
+	}
+
+	option = {
+		name = DECLINE
+		custom_tooltip = { text = decline_quest_tooltip }
+
+		hidden_effect = {
+
+			add_character_modifier = {
+				name = quest_cooldown_timer
+				hidden = yes
+				days = 1000
+			}
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+
+#event for Dragon target
+character_event = {
+	id = CDR.6203
+  is_triggered_only = yes
+  desc = EVTDESC_CDR_6203
+  picture = GFX_evt_acererak_1
+
+	option = { #yes dracolic
+    name = EVTOPTA_CDR_6203
+		ai_chance = {
+			factor = 0.001
+			modifier = {
+				factor = 10
+				age = 400
+			}
+			modifier = {
+				factor = 5
+				trait = ambitious
+			}
+			modifier = {
+				factor = 10
+				trait = cruel
+			}
+			modifier = {
+				factor = 20
+				trait = lunatic
+			}
+			modifier = {
+				factor = 10
+				olrox_is_evil_religion_trigger = yes
+			}
+			modifier = {
+				factor = 0
+				olrox_is_good_religion_trigger = yes
+			}
+			modifier = {
+				factor = 2
+				FROM = { diplomacy = 15 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { FROM = { diplomacy = 8 } }
+			}
+		}
+    add_trait = lich
+		set_graphical_culture = dracolich
+		FROM = { character_event = { id = CDR.6204 days = 14 } }
+  }
+
+	option = { #nope
+    name = EVTOPTB_CDR_6203
+
+		FROM = { character_event = { id = CDR.6205 days = 14 } }
+  }
+}
+
+#Success
+character_event = {
+  id = CDR.6204
+  desc = EVTDESC_CDR_6204
+  picture = GFX_evt_dragon_1
+
+  is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_CDR_6204
+		clr_quest = quest_dracolich
+		add_society_currency_major_effect = yes
+		add_friend = FROM
+		character_event = { id = CDR.301 days = 14 }
+	}
+}
+
+#Fail
+character_event = {
+  id = CDR.6205
+  desc = EVTDESC_CDR_6205
+  picture = GFX_evt_dragon_1
+
+  is_triggered_only = yes
+
+	option = {
+		name = EVTOPTA_CDR_6205
+		clr_quest = quest_dracolich
+	}
+}
+
+########################AI JOIN AND AI RANK UP###########################
+
+character_event = { #force the AI to join a society
+  id = CDR.110
+  hide_window = yes
+  is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { #if he's already a member, will force a rank up 25% of the time
+				ai = yes
+				prisoner = no
+				NOT = { trait = incapable }
+				higher_tier_than = BARON
+				society_member_of = cult_of_the_dragon
+				society_rank <= 3
+				society_can_rank_up = yes
+			}
+			random_list = {
+				75 = {}
+				25 = {
+					society_rank_up = 1
+				}
+			}
+		}
+		if = { #force the joining event on AI
+			limit = {
+				ai = yes
+				prisoner = no
+				NOT = { trait = incapable }
+        is_adult = yes
+        is_in_society = no
+        controls_religion = no
+				block_general_event_trigger = no
+			}
+			character_event = { id = CDR.111 }
+		}
+	}
+}
+
+character_event = { #AI join event
+	id = CDR.111
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			60 = { # do nothing
+			}
+			40 = {
+				trigger = {
+					can_join_society = cult_of_the_dragon
+				}
+				modifier = {
+					factor = 2
+					OR = {
+						trait = impaler
+						trait = theologian
+						trait = scholar
+						trait = mystic
+					}
+				}
+				modifier = {
+          factor = 2
+          trait = lunatic
+        }
+        modifier = {
+          factor = 2
+          trait = greedy
+        }
+        modifier = {
+          factor = 2
+          trait = cruel
+        }
+        modifier = {
+          factor = 2
+          trait = erudite
+        }
+				modifier = {
+					factor = 0
+					OR = {
+						trait = kind
+						trait = charitable
+						trait = cynical
+					}
+				}
+				modifier = {
+					factor = 0.1
+					is_landed = no
+				}
+				join_society = cult_of_the_dragon #join the society
+				random_list = { # Artificially increase society influence for balance purposes, not really useful in my opinion.
+					75 = {
+						modifier = {
+							factor = 0
+							society_influence >= 30
+						}
+					}
+					25 = {
+					}
+				}
+				if = { # Make grandmaster is there is none
+					limit = {
+						NOT = {
+							society = {
+								any_society_member = {
+									is_society_grandmaster = yes
+								}
+							}
+						}
+					}
+					set_society_grandmaster = yes
+				}
+			}
+		}
+	}
+}

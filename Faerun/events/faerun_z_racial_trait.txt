@@ -63,6 +63,9 @@ character_event = {
 			trait = creature_hag
 			trait = creature_feyri
 			trait = creature_angel
+			trait = creature_goliath
+			trait = creature_aarakocra
+			trait = creature_sahuagin
 			has_character_flag = faerun_generated
 		}
 	}
@@ -126,6 +129,9 @@ character_event = {
 					trait = creature_hag
 					trait = creature_feyri
 					trait = creature_angel
+					trait = creature_goliath
+					trait = creature_aarakocra
+					trait = creature_sahuagin
 				}
 			}
 			break = yes
@@ -896,7 +902,7 @@ character_event = {
 					}
 					else_if = {
 						limit = {
-							culture = heartlander
+							culture = draeven
 						}
 						random_list = {
 							78 = {
@@ -1223,7 +1229,10 @@ character_event = {
 				saxongfx 		= { 
 					add_trait = creature_human 
 					#break = yes
-				} 
+				}
+				shadovargfx		=  {
+					add_trait = creature_human
+				}
 				norsegfx 		= {
 					if = {
 						limit = {
@@ -2409,6 +2418,12 @@ character_event = {
 						}
 						random_list = {
 							90 = {
+								modifier = {
+									factor = 0
+									location = {
+										de_jure_liege_or_above = k_nimbral
+									}
+								}
 								add_trait = creature_human
 							}
 							5 = {
@@ -3053,7 +3068,7 @@ character_event = {
 				normangfx		= {
 					if = {
 						limit = {
-							culture = moonsea
+							culture = tharian
 						}
 						random_list = {
 							69 = {
@@ -3403,8 +3418,13 @@ character_event = {
 					#break = yes
 				} 
 				caledoriangfx 	= { 
-					add_trait = creature_genasi 
-					#break = yes				
+					if = {
+						limit = {
+							culture = djinn
+						}
+						add_trait = creature_genie
+					}
+					else = { add_trait = creature_genasi }
 				} 
 				asraigfx 		= { 
 					add_trait = creature_elf 
@@ -3425,6 +3445,9 @@ character_event = {
 				seaelfgfx		= {
 					add_trait = creature_sea_elf
 					#break = yes
+				}
+				snowelfgfx		= {
+					add_trait = creature_elf
 				}
 				dwarfgfx 		= { 
 					add_trait = creature_dwarf 
@@ -3453,8 +3476,32 @@ character_event = {
 				forestgoblingfx 		= {
 					add_trait = creature_goblin 
 					#break = yes
-				} 				
-				humanoidgfx 	= { 
+				}
+				gnollgfx 		= {
+					if = {
+						limit = {
+							culture = gnoll
+							OR = {
+								AND = {
+									true_father_even_if_dead = { trait = creature_gnoll }
+									mother_even_if_dead = { NOT = { trait = creature_gnoll } }
+								}
+								AND = {
+									true_father_even_if_dead = { NOT = { trait = creature_gnoll } }
+									mother_even_if_dead = { trait = creature_gnoll }
+								}
+							}
+						}
+						add_trait = creature_half_gnoll
+					}
+					else_if = {
+						limit = {
+							culture = gnoll
+						}
+						add_trait = creature_gnoll
+					}			
+				}
+				humanoidgfx 	= {
 					if = {
 						limit = {
 							OR = {
@@ -3464,13 +3511,11 @@ character_event = {
 						}
 						add_trait = creature_hobgoblin
 					}
+
 					else_if = {
 						limit = {
-							culture = gnoll
+							culture = bugbear
 						}
-						add_trait = creature_gnoll
-					}				
-					else = {
 						add_trait = creature_bugbear
 					}
 					#break = yes
@@ -3519,6 +3564,10 @@ character_event = {
 					add_trait = creature_giant
 					#break = yes
 				}
+				goliathgfx		= {
+					add_trait = creature_goliath
+					#break = yes
+				}
 				treemangfx 		= { 
 					add_trait = creature_treant 
 					#break = yes					
@@ -3527,7 +3576,7 @@ character_event = {
 					add_trait = creature_ogre
 					random = {
 						chance = 2
-						set_graphical_culture = onigfx
+						set_graphical_culture = ogre_magi
 					}
 					#break = yes
 				}
@@ -3579,6 +3628,7 @@ character_event = {
 				lahmiangfx		= {
 					if = {
 						limit = {
+							is_female = yes
 							liege = {
 								trait = creature_hag
 							}
@@ -3632,7 +3682,15 @@ character_event = {
 					#break = yes					
 				}
 				hybridgfx 		= { 
-					add_trait = creature_malison 
+					if = {
+						limit = {
+							culture = lamia
+						}
+						add_trait = creature_naga
+					}
+					else = {
+						add_trait = creature_malison 
+					}
 					#break = yes					
 				}
 				abominationgfx	= { 
@@ -3687,8 +3745,22 @@ character_event = {
 					#break = yes
 				}
 				kenkugfx		= { 
-					add_trait = creature_tengu 
+					if = {
+						limit = {
+							NOT = { culture = aarakocra }
+						}
+						add_trait = creature_tengu
+					}
+					else_if = {
+						limit = {
+							culture = aarakocra
+						}
+						add_trait = creature_aarakocra
+					}
 					#break = yes
+				}
+				sahuagingfx		= {
+					add_trait = creature_sahuagin
 				}
 				aasimargfx = {
 					add_trait = creature_aasimar
@@ -3734,16 +3806,31 @@ character_event = {
 					#break = yes					
 				}
 				firegenasigfx 	= {
-					add_trait = creature_genasi 
-					#break = yes					
+					if = {
+						limit = {
+							culture = efreet
+						}
+						add_trait = creature_genie
+					}
+					else = { add_trait = creature_genasi }
 				}
 				watergenasigfx 	= { 
-					add_trait = creature_genasi 
-					#break = yes
+					if = {
+						limit = {
+							culture = marid
+						}
+						add_trait = creature_genie
+					}
+					else = { add_trait = creature_genasi }
 				}
 				earthgenasigfx 	= { 
-					add_trait = creature_genasi 
-					#break = yes					
+					if = {
+						limit = {
+							culture = dao
+						}
+						add_trait = creature_genie
+					}
+					else = { add_trait = creature_genasi }
 				}
 				nomadgfx 		= {
 					add_trait = creature_genie 
@@ -4153,7 +4240,7 @@ character_event = {
 									trait = creature_wemic
 								}
 							}
-							set_graphical_culture = vampire
+							set_graphical_culture = undead_shou
 						}
 						else_if = {
 							limit = {
@@ -4254,17 +4341,7 @@ character_event = {
 								trait = creature_wemic
 							}
 						}
-						random_list = {
-							18 = {
-								set_graphical_culture = lich
-							}
-							1 = {
-								set_graphical_culture = undead_mulhorandi
-							}
-							1 = {
-								set_graphical_culture = undead_shou
-							}
-						}
+						set_graphical_culture = lich
 					}
 					else_if = {
 						limit = {
@@ -4335,7 +4412,7 @@ character_event = {
 								trait = creature_wemic
 							}
 						}
-						set_graphical_culture = vampire
+						set_graphical_culture = undead_shou
 					}
 					else_if = {
 						limit = {
@@ -4528,52 +4605,6 @@ character_event = {
 				}
 			}
 			set_graphical_culture = cambion
-		}		
-		if = {
-			limit = {
-				OR = {
-					trait = creature_human
-					trait = creature_aasimar
-					trait = creature_tiefling
-					trait = creature_half_giant
-					trait = creature_genasi
-					trait = creature_gith
-					trait = creature_gnome
-					trait = creature_halfling
-					trait = creature_centaur
-					trait = creature_wemic
-				}
-				trait = lich
-				OR = {
-					culture = shou
-					culture = khatin
-					culture = gugari
-					culture = kozakuran
-				}
-			}
-			set_graphical_culture = undead_shou
-		}
-		if = {
-			limit = {
-				OR = {
-					trait = creature_human
-					trait = creature_aasimar
-					trait = creature_tiefling
-					trait = creature_half_giant
-					trait = creature_genasi
-					trait = creature_gith
-					trait = creature_gnome
-					trait = creature_halfling
-					trait = creature_centaur
-					trait = creature_wemic
-				}
-				trait = lich
-				OR = {
-					culture = mulhorandi
-					culture = murghomi
-				}
-			}
-			set_graphical_culture = undead_mulhorandi
 		}
 		if = {
 			limit = {
@@ -4590,7 +4621,6 @@ character_event = {
 					trait = creature_wemic
 				}
 				OR = {
-					trait = undead
 					trait = vampire
 					trait = vampire_spawn
 				}
@@ -4611,15 +4641,25 @@ character_event = {
 					trait = creature_centaur
 					trait = creature_wemic
 				}
-				trait = lich
-				NOR = {
-					culture = mulhorandi
-					culture = murghomi
-					culture = shou
-					culture = khatin
-					culture = gugari
-					culture = kozakuran
+				trait = undead
+			}
+			set_graphical_culture = undead_shou
+		}
+		if = {
+			limit = {
+				OR = {
+					trait = creature_human
+					trait = creature_aasimar
+					trait = creature_tiefling
+					trait = creature_half_giant
+					trait = creature_genasi
+					trait = creature_gith
+					trait = creature_gnome
+					trait = creature_halfling
+					trait = creature_centaur
+					trait = creature_wemic
 				}
+				trait = lich
 			}
 			set_graphical_culture = lich
 		}

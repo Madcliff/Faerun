@@ -64,6 +64,9 @@ character_event = {
 			trait = creature_troll
 			trait = creature_half_dwarf
 			trait = creature_angel
+			trait = creature_goliath
+			trait = creature_aarakocra
+			trait = creature_sahuagin
 			has_character_flag = faerun_generated
 		}
 	}
@@ -297,7 +300,26 @@ character_event = {
 					}
 				}
 			}
-		}	
+		}
+		else_if = {
+			limit = {
+				true_father_even_if_dead = { trait = creature_goliath }
+				mother_even_if_dead = { trait = creature_goliath }
+			}
+			add_trait = creature_goliath
+			random_list = {
+				1 = {
+					mother_even_if_dead = {
+						tb_graph_culture_racial = yes
+					}
+				}
+				1 = {
+					true_father_even_if_dead = {
+						tb_graph_culture_racial = yes
+					}
+				}
+			}
+		}
 		else_if = {
 			limit = {
 				true_father_even_if_dead = { trait = creature_goblin }
@@ -647,7 +669,7 @@ character_event = {
 				true_father_even_if_dead = { trait = creature_sarrukh }
 				mother_even_if_dead = { trait = creature_sarrukh }
 			}
-			add_trait = creature_naga
+			add_trait = creature_sarrukh
 			random_list = {
 				1 = {
 					mother_even_if_dead = {
@@ -702,13 +724,109 @@ character_event = {
 			}
 		}
 		
-		#tengu
+		#birbs
 		else_if = {
 			limit = {
 				true_father_even_if_dead = { trait = creature_tengu }
 				mother_even_if_dead = { trait = creature_tengu }
 			}
 			add_trait = creature_tengu
+			random_list = {
+				1 = {
+					mother_even_if_dead = {
+						tb_graph_culture_racial = yes
+					}
+				}
+				1 = {
+					true_father_even_if_dead = {
+						tb_graph_culture_racial = yes
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				true_father_even_if_dead = { trait = creature_aarakocra }
+				mother_even_if_dead = { trait = creature_aarakocra }
+			}
+			add_trait = creature_aarakocra
+			random_list = {
+				1 = {
+					mother_even_if_dead = {
+						tb_graph_culture_racial = yes
+					}
+				}
+				1 = {
+					true_father_even_if_dead = {
+						tb_graph_culture_racial = yes
+					}
+				}
+			}
+		}
+		#sahuagin
+		else_if = {
+			limit = {
+				true_father_even_if_dead = { trait = creature_sahuagin }
+				mother_even_if_dead = { trait = creature_sahuagin }
+			}
+			add_trait = creature_sahuagin
+			random_list = {
+				1 = {
+					mother_even_if_dead = {
+						tb_graph_culture_racial = yes
+					}
+				}
+				1 = {
+					true_father_even_if_dead = {
+						tb_graph_culture_racial = yes
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				true_father_even_if_dead = { trait = creature_malenti }
+				mother_even_if_dead = { trait = creature_sahuagin }
+			}
+			add_trait = creature_malenti
+			random_list = {
+				1 = {
+					mother_even_if_dead = {
+						tb_graph_culture_racial = yes
+					}
+				}
+				1 = {
+					true_father_even_if_dead = {
+						tb_graph_culture_racial = yes
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				true_father_even_if_dead = { trait = creature_sahuagin }
+				mother_even_if_dead = { trait = creature_malenti }
+			}
+			add_trait = creature_malenti
+			random_list = {
+				1 = {
+					mother_even_if_dead = {
+						tb_graph_culture_racial = yes
+					}
+				}
+				1 = {
+					true_father_even_if_dead = {
+						tb_graph_culture_racial = yes
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				true_father_even_if_dead = { trait = creature_malenti }
+				mother_even_if_dead = { trait = creature_malenti }
+			}
+			add_trait = creature_malenti
 			random_list = {
 				1 = {
 					mother_even_if_dead = {
@@ -1136,6 +1254,9 @@ character_event = {
 						asurgfx = {
 							set_graphical_culture = sun_elf
 						}
+						snowelfgfx = {
+							set_graphical_culture = snow_elf
+						}
 					}
 				}
 			}
@@ -1208,6 +1329,9 @@ character_event = {
 						}
 						asurgfx = {
 							set_graphical_culture = sun_elf
+						}
+						snowelfgfx = {
+							set_graphical_culture = snow_elf
 						}
 					}
 				}
@@ -1321,6 +1445,15 @@ character_event = {
 					OR = {
 						mother_even_if_dead = { graphical_culture = asurgfx }
 						true_father_even_if_dead = { graphical_culture = asurgfx }
+					}
+				}
+				set_graphical_culture = sun_elf
+			}
+			else_if = {
+				limit = {
+					OR = {
+						mother_even_if_dead = { graphical_culture = snowelfgfx }
+						true_father_even_if_dead = { graphical_culture = snowelfgfx }
 					}
 				}
 				set_graphical_culture = sun_elf
@@ -2126,6 +2259,143 @@ character_event = {
 				}
 			}
 		}
+		#goliaths 
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_goliath }
+						OR = {
+							mother_even_if_dead = { trait = creature_human }
+							mother_even_if_dead = { trait = creature_half_giant }
+							mother_even_if_dead = { trait = creature_half_ogre }
+							mother_even_if_dead = { trait = creature_ogrillon }
+							mother_even_if_dead = { trait = creature_ogre }
+							mother_even_if_dead = { trait = creature_giant }
+							mother_even_if_dead = { trait = creature_minotaur }
+							mother_even_if_dead = { trait = creature_yikarian }
+						}
+					}
+					AND = {
+						mother_even_if_dead = { trait = creature_goliath }
+						OR = {
+							true_father_even_if_dead = { trait = creature_human }
+							true_father_even_if_dead = { trait = creature_half_giant }
+							true_father_even_if_dead = { trait = creature_half_ogre }
+							true_father_even_if_dead = { trait = creature_ogrillon }
+							true_father_even_if_dead = { trait = creature_ogre }
+							true_father_even_if_dead = { trait = creature_giant }
+							true_father_even_if_dead = { trait = creature_minotaur }
+							true_father_even_if_dead = { trait = creature_yikarian }
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						true_father_even_if_dead = { trait = creature_human }
+						mother_even_if_dead = { trait = creature_human }
+					}
+				}
+				add_trait = creature_half_giant
+				if = {
+					limit = {
+						mother_even_if_dead = { trait = creature_human }
+					}
+					mother_even_if_dead = {
+						ROOT = {
+							tb_graph_culture_racial = yes
+						}
+					}
+				}
+				else = {
+					true_father_even_if_dead = {
+						ROOT = {
+							tb_graph_culture_racial = yes
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						true_father_even_if_dead = { trait = creature_half_giant }
+						mother_even_if_dead = { trait = creature_half_giant }
+					}
+				}
+				random_list = {
+					1 = {
+						add_trait = creature_goliath
+						set_graphical_culture = goliath
+					}
+					1 = {
+						add_trait = creature_human
+						if = {
+							limit = {
+								mother_even_if_dead = { trait = creature_half_giant }
+							}
+							mother_even_if_dead = {
+								ROOT = {
+									tb_graph_culture_racial = yes
+								}
+							}
+						}
+						else = {
+							true_father_even_if_dead = {
+								ROOT = {
+									tb_graph_culture_racial = yes
+								}
+							}
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						true_father_even_if_dead = { trait = creature_half_ogre }
+						true_father_even_if_dead = { trait = creature_ogre }
+						true_father_even_if_dead = { trait = creature_ogrillon }
+						true_father_even_if_dead = { trait = creature_minotaur }
+						true_father_even_if_dead = { trait = creature_yikarian }
+						mother_even_if_dead = { trait = creature_half_ogre }
+						mother_even_if_dead = { trait = creature_ogre }
+						mother_even_if_dead = { trait = creature_ogrillon }
+						mother_even_if_dead = { trait = creature_minotaur }
+						mother_even_if_dead = { trait = creature_yikarian }
+					}
+				}
+				random_list = {
+					1 = {
+						add_trait = creature_goliath
+						set_graphical_culture = goliath
+					}
+					1 = {
+						add_trait = creature_ogre
+						if = {
+							limit = {
+								graphical_culture = onigfx
+							}
+							set_graphical_culture = ogre_magi
+						}
+						else = {
+							set_graphical_culture = ogre
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						true_father_even_if_dead = { trait = creature_giant }
+						mother_even_if_dead = { trait = creature_giant }
+					}
+				}
+				add_trait = creature_goliath
+				set_graphical_culture = goliath
+			}
+		}
 		#minotaurs
 		else_if = {
 			limit = {
@@ -2471,7 +2741,7 @@ character_event = {
 					}
 				}
 			}
-			add_trait = creature_gnoll
+			add_trait = creature_half_gnoll
 			set_graphical_culture = gnoll
 			if = {
 				limit = {
@@ -2489,6 +2759,390 @@ character_event = {
 					}
 				}
 				add_trait = planetouched
+			}
+		}
+		#Half Gnolls
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_gnoll }
+						mother_even_if_dead = { trait = creature_human }
+					}
+					AND = {
+						true_father_even_if_dead = { trait = creature_human }
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+				}
+			}
+			random_list = {
+				75 = {
+					add_trait = creature_human
+				}
+				25 = {
+					add_trait = creature_half_gnoll
+					set_graphical_culture = gnoll
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_gnoll }
+						mother_even_if_dead = { trait = creature_half_orc }
+					}
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_orc }
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+				}
+			}
+			random_list = {
+				30 = {
+					add_trait = creature_gnoll
+					set_graphical_culture = gnoll
+				}
+				30 = {
+					add_trait = creature_orc
+					set_graphical_culture = orc
+				}
+				20 = {
+					add_trait = creature_half_gnoll
+					set_graphical_culture = gnoll
+				}
+				20 = {
+					add_trait = creature_half_orc
+					set_graphical_culture = orc
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_gnoll }
+						mother_even_if_dead = { trait = creature_half_elf }
+					}
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_elf }
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+				}
+			}
+			random_list = {
+				30 = {
+					add_trait = creature_gnoll
+					add_trait = pretty
+					set_graphical_culture = gnoll
+				}
+				30 = {
+					add_trait = creature_elf
+					add_trait = unsightly
+					set_graphical_culture = elf
+				}
+				20 = {
+					add_trait = creature_half_gnoll
+					set_graphical_culture = gnoll
+				}
+				20 = {
+					add_trait = creature_half_elf
+					set_graphical_culture = elf
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_gnoll }
+						mother_even_if_dead = { trait = creature_half_dwarf }
+					}
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_dwarf }
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+				}
+			}
+			random_list = {
+				30 = {
+					add_trait = creature_gnoll
+					add_trait = dwarf
+					set_graphical_culture = gnoll
+				}
+				30 = {
+					add_trait = creature_dwarf
+					add_trait = giant
+					set_graphical_culture = dwarf
+				}
+				20 = {
+					add_trait = creature_half_gnoll
+					set_graphical_culture = gnoll
+				}
+				20 = {
+					add_trait = creature_half_dwarf
+					set_graphical_culture = dwarf
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_gnoll }
+						mother_even_if_dead = { trait = creature_half_ogre }
+					}
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_ogre }
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+				}
+			}
+			random_list = {
+				30 = {
+					add_trait = creature_gnoll
+					add_trait = strong
+					set_graphical_culture = gnoll
+				}
+				30 = {
+					add_trait = creature_ogre
+					add_trait = weak
+					set_graphical_culture = ogre
+				}
+				20 = {
+					add_trait = creature_half_gnoll
+					set_graphical_culture = gnoll
+				}
+				20 = {
+					add_trait = creature_half_ogre
+					set_graphical_culture = ogre
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_gnoll }
+						mother_even_if_dead = { trait = creature_half_giant }
+					}
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_giant }
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+				}
+			}
+			random_list = {
+				30 = {
+					add_trait = creature_gnoll
+					add_trait = giant
+					set_graphical_culture = gnoll
+				}
+				30 = {
+					add_trait = creature_giant
+					add_trait = dwarf
+					set_graphical_culture = giant
+				}
+				20 = {
+					add_trait = creature_half_gnoll
+					set_graphical_culture = gnoll
+				}
+				20 = {
+					add_trait = creature_half_ogre
+					set_graphical_culture = giant
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_gnoll }
+						mother_even_if_dead = { trait = creature_orc }
+					}
+					AND = {
+						true_father_even_if_dead = { trait = creature_orc }
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+				}
+			}
+			random_list = {
+				75 = {
+					add_trait = creature_orc
+					set_graphical_culture = orc
+				}
+				25 = {
+					add_trait = creature_half_gnoll
+					set_graphical_culture = gnoll
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_gnoll }
+						mother_even_if_dead = { trait = creature_ogrillon }
+					}
+					AND = {
+						true_father_even_if_dead = { trait = creature_ogrillon }
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					add_trait = creature_orc
+					set_graphical_culture = orc
+				}
+				5 = {
+					add_trait = creature_half_gnoll
+					set_graphical_culture = gnoll
+				}
+				30 = {
+					add_trait = creature_ogre
+					set_graphical_culture = ogre
+				}
+				5 = {
+					add_trait = creature_ogrillon
+					set_graphical_culture = ogre
+				}
+				10 = {
+					add_trait = creature_tanarukk
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_gnoll }
+						mother_even_if_dead = { trait = creature_hobgoblin }
+					}
+					AND = {
+						true_father_even_if_dead = { trait = creature_hobgoblin }
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+				}
+			}
+			random_list = {
+				75 = {
+					add_trait = creature_hobgoblin
+					set_graphical_culture = hobgoblin
+				}
+				25 = {
+					add_trait = creature_half_gnoll
+					set_graphical_culture = gnoll
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_gnoll }
+						mother_even_if_dead = { trait = creature_bugbear }
+					}
+					AND = {
+						true_father_even_if_dead = { trait = creature_bugbear }
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+				}
+			}
+			random_list = {
+				75 = {
+					add_trait = creature_bugbear
+					set_graphical_culture = bugbear
+				}
+				25 = {
+					add_trait = creature_half_gnoll
+					set_graphical_culture = gnoll
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_gnoll }
+						OR = {
+							mother_even_if_dead = { trait = creature_aasimar }
+							mother_even_if_dead = { trait = creature_tiefling }
+							mother_even_if_dead = { trait = creature_genasi }
+							mother_even_if_dead = { trait = creature_gith }
+						}
+					}
+					AND = {
+						OR = {
+							true_father_even_if_dead = { trait = creature_aasimar }
+							true_father_even_if_dead = { trait = creature_tiefling }
+							true_father_even_if_dead = { trait = creature_genasi }
+							true_father_even_if_dead = { trait = creature_gith }
+							
+						}
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+				}
+			}
+			random_list = {
+				75 = {
+					add_trait = creature_human
+					add_trait = planetouched
+				}
+				25 = {
+					add_trait = creature_half_gnoll
+					set_graphical_culture = gnoll
+					add_trait = planetouched
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_gnoll }
+						mother_even_if_dead = { trait = creature_tanarukk }
+					}
+					AND = {
+						true_father_even_if_dead = { trait = creature_tanarukk }
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+				}
+			}
+			random_list = {
+				75 = {
+					add_trait = creature_orc
+					set_graphical_culture = orc
+					add_trait = planetouched
+				}
+				25 = {
+					add_trait = creature_half_gnoll
+					set_graphical_culture = gnoll
+					add_trait = planetouched
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_half_gnoll }
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+					AND = {
+						true_father_even_if_dead = { trait = creature_gnoll }
+						mother_even_if_dead = { trait = creature_half_gnoll }
+					}
+				}
+			}
+			random_list = {
+				60 = {
+					add_trait = creature_human
+				}
+				40 = {
+					add_trait = creature_gnoll
+					set_graphical_culture = gnoll
+				}
 			}
 		}
 		#sarrukh
@@ -2849,7 +3503,7 @@ character_event = {
 						true_father_even_if_dead = { trait = creature_lizardfolk }
 						OR = {
 							mother_even_if_dead = { trait = creature_pureblood }
-							mother_even_if_dead = { trait = creature_malison }		
+							mother_even_if_dead = { trait = creature_malison }	
 						}
 					}
 					AND = {
@@ -2924,6 +3578,31 @@ character_event = {
 				50 = {
 					add_trait = creature_lizardfolk
 					set_graphical_culture = lizardfolk
+				}
+			}
+		}
+		# birds
+		else_if = {
+			limit = {
+				OR = {
+					AND = {
+						true_father_even_if_dead = { trait = creature_aarakocra }
+						mother_even_if_dead = { trait = creature_tengu }
+					}
+					AND = {
+						true_father_even_if_dead = { trait = creature_tengu }
+						mother_even_if_dead = { trait = creature_aarakocra }
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					add_trait = creature_aarakocra
+					set_graphical_culture = aarakocra
+				}
+				50 = {
+					add_trait = creature_tengu
+					set_graphical_culture = tengu
 				}
 			}
 		}
@@ -4200,6 +4879,9 @@ character_event = {
 			remove_trait = creature_sarrukh
 			remove_trait = creature_troll
 			remove_trait = creature_angel
+			remove_trait = creature_goliath
+			remove_trait = creature_aarakocra
+			remove_trait = creature_sahuagin
 			add_trait = creature_dragon
 			set_graphical_culture = draconic
 		}
@@ -4882,6 +5564,22 @@ character_event = {
 			}
 			if = {
 				limit = {
+					mother_even_if_dead = { trait = creature_aarakocra }
+				}
+				add_trait = creature_aarakocra
+				add_trait = half_dragon
+				set_graphical_culture = aarakocra
+			}
+			if = {
+				limit = {
+					mother_even_if_dead = { trait = creature_sahuagin }
+				}
+				add_trait = creature_sahuagin
+				add_trait = half_dragon
+				set_graphical_culture = sahuagin
+			}
+			if = {
+				limit = {
 					mother_even_if_dead = { trait = creature_kobold }
 				}
 				add_trait = creature_kobold
@@ -4903,6 +5601,14 @@ character_event = {
 				add_trait = creature_troll
 				add_trait = half_dragon
 				set_graphical_culture = troll
+			}
+			if = {
+				limit = {
+					mother_even_if_dead = { trait = creature_goliath }
+				}
+				add_trait = creature_goliath
+				add_trait = half_dragon
+				set_graphical_culture = goliath
 			}
 			if = {
 				limit = {
@@ -5579,6 +6285,22 @@ character_event = {
 			}
 			if = {
 				limit = {
+					true_father_even_if_dead = { trait = creature_aarakocra }
+				}
+				add_trait = creature_aarakocra
+				add_trait = half_dragon
+				set_graphical_culture = aarakocra
+			}
+			if = {
+				limit = {
+					true_father_even_if_dead = { trait = creature_sahuagin }
+				}
+				add_trait = creature_sahuagin
+				add_trait = half_dragon
+				set_graphical_culture = sahuagin
+			}
+			if = {
+				limit = {
 					true_father_even_if_dead = { trait = creature_kobold }
 				}
 				add_trait = creature_kobold
@@ -5600,6 +6322,14 @@ character_event = {
 				add_trait = creature_troll
 				add_trait = half_dragon
 				set_graphical_culture = troll
+			}
+			if = {
+				limit = {
+					true_father_even_if_dead = { trait = creature_goliath }
+				}
+				add_trait = creature_goliath
+				add_trait = half_dragon
+				set_graphical_culture = goliath
 			}
 			if = {
 				limit = {
@@ -5844,6 +6574,22 @@ character_event = {
 			}
 			if = {
 				limit = {
+					mother_even_if_dead = { trait = creature_aarakocra }
+				}
+				add_trait = creature_aarakocra
+				add_trait = half_fiend
+				set_graphical_culture = aarakocra
+			}
+			if = {
+				limit = {
+					mother_even_if_dead = { trait = creature_sahuagin }
+				}
+				add_trait = creature_sahuagin
+				add_trait = half_fiend
+				set_graphical_culture = sahuagin
+			}
+			if = {
+				limit = {
 					mother_even_if_dead = { trait = creature_kobold }
 				}
 				add_trait = creature_kobold
@@ -5865,6 +6611,14 @@ character_event = {
 				add_trait = creature_troll
 				add_trait = half_fiend
 				set_graphical_culture = troll
+			}
+			if = {
+				limit = {
+					mother_even_if_dead = { trait = creature_goliath }
+				}
+				add_trait = creature_goliath
+				add_trait = half_fiend
+				set_graphical_culture = goliath
 			}
 		}
 		else_if = {
@@ -6072,6 +6826,22 @@ character_event = {
 			}
 			if = {
 				limit = {
+					true_father_even_if_dead = { trait = creature_aarakocra }
+				}
+				add_trait = creature_aarakocra
+				add_trait = half_fiend
+				set_graphical_culture = aarakocra
+			}
+			if = {
+				limit = {
+					true_father_even_if_dead = { trait = creature_sahuagin }
+				}
+				add_trait = creature_sahuagin
+				add_trait = half_fiend
+				set_graphical_culture = sahuagin
+			}
+			if = {
+				limit = {
 					true_father_even_if_dead = { trait = creature_kobold }
 				}
 				add_trait = creature_kobold
@@ -6093,6 +6863,14 @@ character_event = {
 				add_trait = creature_troll
 				add_trait = half_fiend
 				set_graphical_culture = troll
+			}
+			if = {
+				limit = {
+					true_father_even_if_dead = { trait = creature_goliath }
+				}
+				add_trait = creature_goliath
+				add_trait = half_fiend
+				set_graphical_culture = goliath
 			}
 		}
 		#half-trolls
@@ -6778,6 +7556,22 @@ character_event = {
 			}
 			if = {
 				limit = {
+					mother_even_if_dead = { trait = creature_aarakocra }
+				}
+				add_trait = creature_aarakocra
+				add_trait = half_troll
+				set_graphical_culture = aarakocra
+			}
+			if = {
+				limit = {
+					mother_even_if_dead = { trait = creature_sahuagin }
+				}
+				add_trait = creature_sahuagin
+				add_trait = half_troll
+				set_graphical_culture = sahuagin
+			}
+			if = {
+				limit = {
 					mother_even_if_dead = { trait = creature_kobold }
 				}
 				add_trait = creature_kobold
@@ -6799,6 +7593,14 @@ character_event = {
 				add_trait = creature_dragonborn
 				add_trait = half_troll
 				set_graphical_culture = dragonborn
+			}
+			if = {
+				limit = {
+					mother_even_if_dead = { trait = creature_goliath }
+				}
+				add_trait = creature_goliath
+				add_trait = half_troll
+				set_graphical_culture = goliath
 			}
 			if = {
 				limit = {
@@ -7469,6 +8271,22 @@ character_event = {
 			}
 			if = {
 				limit = {
+					true_father_even_if_dead = { trait = creature_aarakocra }
+				}
+				add_trait = creature_aarakocra
+				add_trait = half_troll
+				set_graphical_culture = aarakocra
+			}
+			if = {
+				limit = {
+					true_father_even_if_dead = { trait = creature_sahuagin }
+				}
+				add_trait = creature_sahuagin
+				add_trait = half_troll
+				set_graphical_culture = aarakocra
+			}
+			if = {
+				limit = {
 					true_father_even_if_dead = { trait = creature_kobold }
 				}
 				add_trait = creature_kobold
@@ -7490,6 +8308,14 @@ character_event = {
 				add_trait = creature_dragonborn
 				add_trait = half_troll
 				set_graphical_culture = dragonborn
+			}
+			if = {
+				limit = {
+					true_father_even_if_dead = { trait = creature_goliath }
+				}
+				add_trait = creature_goliath
+				add_trait = half_troll
+				set_graphical_culture = goliath
 			}
 			if = {
 				limit = {
@@ -7771,6 +8597,22 @@ character_event = {
 			}
 			if = {
 				limit = {
+					mother_even_if_dead = { trait = creature_aarakocra }
+				}
+				add_trait = creature_aarakocra
+				add_trait = half_celestial
+				set_graphical_culture = aarakocra
+			}
+			if = {
+				limit = {
+					mother_even_if_dead = { trait = creature_sahuagin }
+				}
+				add_trait = creature_sahuagin
+				add_trait = half_celestial
+				set_graphical_culture = sahuagin
+			}
+			if = {
+				limit = {
 					mother_even_if_dead = { trait = creature_kobold }
 				}
 				add_trait = creature_kobold
@@ -7792,6 +8634,14 @@ character_event = {
 				add_trait = creature_troll
 				add_trait = half_celestial
 				set_graphical_culture = troll
+			}
+			if = {
+				limit = {
+					mother_even_if_dead = { trait = creature_goliath }
+				}
+				add_trait = creature_goliath
+				add_trait = half_celestial
+				set_graphical_culture = goliath
 			}
 		}
 		else_if = {
@@ -8048,6 +8898,22 @@ character_event = {
 			}
 			if = {
 				limit = {
+					true_father_even_if_dead = { trait = creature_aarakocra }
+				}
+				add_trait = creature_aarakocra
+				add_trait = half_celestial
+				set_graphical_culture = aarakocra
+			}
+			if = {
+				limit = {
+					true_father_even_if_dead = { trait = creature_sahuagin }
+				}
+				add_trait = creature_sahuagin
+				add_trait = half_celestial
+				set_graphical_culture = sahuagin
+			}
+			if = {
+				limit = {
 					true_father_even_if_dead = { trait = creature_kobold }
 				}
 				add_trait = creature_kobold
@@ -8069,6 +8935,14 @@ character_event = {
 				add_trait = creature_troll
 				add_trait = half_celestial
 				set_graphical_culture = troll
+			}
+			if = {
+				limit = {
+					true_father_even_if_dead = { trait = creature_goliath }
+				}
+				add_trait = creature_goliath
+				add_trait = half_celestial
+				set_graphical_culture = goliath
 			}
 		}
 		# specials
@@ -8678,6 +9552,7 @@ character_event = {
 				mother_even_if_dead = { NOT = { trait = creature_wemic } }
 				mother_even_if_dead = { NOT = { trait = creature_centaur } }
 				mother_even_if_dead = { NOT = { trait = creature_hag } }
+				mother_even_if_dead = { NOT = { trait = creature_goliath } }
 			}
 			AND = {
 				OR = {
@@ -8729,6 +9604,7 @@ character_event = {
 				true_father_even_if_dead = { NOT = { is_dragon = yes } }
 				true_father_even_if_dead = { NOT = { trait = creature_centaur } }
 				true_father_even_if_dead = { NOT = { trait = creature_wemic } }
+				true_father_even_if_dead = { NOT = { trait = creature_goliath } }
 			}
 			#disallowed combinations with half-ogres:
 			AND = {
@@ -8747,6 +9623,31 @@ character_event = {
 					mother_even_if_dead = { trait = creature_dwarf }
 					mother_even_if_dead = { trait = creature_halfling }
 					mother_even_if_dead = { trait = creature_gnome }
+				}
+			}
+			#disallowed combinations with goliaths
+			AND = {
+				OR = {
+					true_father_even_if_dead = { trait = creature_half_elf }
+					true_father_even_if_dead = { trait = creature_half_dwarf }
+					true_father_even_if_dead = { trait = creature_half_orc }
+					true_father_even_if_dead = { trait = creature_gith }
+					true_father_even_if_dead = { trait = creature_tiefling }
+					true_father_even_if_dead = { trait = creature_genasi }
+					true_father_even_if_dead = { trait = creature_aasimar }
+				}
+				mother_even_if_dead = { trait = creature_goliath }
+			}
+			AND = {
+				true_father_even_if_dead = { trait = creature_goliath } 
+				OR = {
+					mother_even_if_dead = { trait = creature_half_elf }
+					mother_even_if_dead = { trait = creature_half_dwarf }
+					mother_even_if_dead = { trait = creature_half_orc }
+					mother_even_if_dead = { trait = creature_gith }
+					mother_even_if_dead = { trait = creature_tiefling }
+					mother_even_if_dead = { trait = creature_genasi }
+					mother_even_if_dead = { trait = creature_aasimar }
 				}
 			}
 			#regular sequence continues
@@ -9125,12 +10026,15 @@ character_event = {
 				mother_even_if_dead = { NOT = { trait = creature_pterafolk } }
 				mother_even_if_dead = { NOT = { trait = creature_kobold } }
 				mother_even_if_dead = { NOT = { trait = creature_tengu } }
+				mother_even_if_dead = { NOT = { trait = creature_aarakocra } }
+				mother_even_if_dead = { NOT = { trait = creature_sahuagin } }
 				mother_even_if_dead = { NOT = { trait = creature_troll } }
 				mother_even_if_dead = { NOT = { trait = creature_sarrukh } }
 				mother_even_if_dead = { NOT = { trait = creature_devil } }
 				mother_even_if_dead = { NOT = { trait = creature_daemon } }
 				mother_even_if_dead = { NOT = { trait = creature_demon } }
 				mother_even_if_dead = { NOT = { trait = creature_genie } }
+				mother_even_if_dead = { NOT = { trait = creature_goliath } }
 			}
 			AND = {
 				OR = {
@@ -9186,12 +10090,15 @@ character_event = {
 				true_father_even_if_dead = { NOT = { trait = creature_pterafolk } }
 				true_father_even_if_dead = { NOT = { trait = creature_kobold } }
 				true_father_even_if_dead = { NOT = { trait = creature_tengu } }
+				true_father_even_if_dead = { NOT = { trait = creature_aarakocra } }
+				true_father_even_if_dead = { NOT = { trait = creature_sahuagin } }
 				true_father_even_if_dead = { NOT = { trait = creature_troll } }
 				true_father_even_if_dead = { NOT = { trait = creature_sarrukh } }
 				true_father_even_if_dead = { NOT = { trait = creature_demon } }
 				true_father_even_if_dead = { NOT = { trait = creature_devil } }
 				true_father_even_if_dead = { NOT = { trait = creature_daemon } }
 				true_father_even_if_dead = { NOT = { trait = creature_genie } }
+				true_father_even_if_dead = { NOT = { trait = creature_goliath } }
 			}
 			AND = {
 				true_father_even_if_dead = { trait = creature_angel }
@@ -9243,12 +10150,15 @@ character_event = {
 				mother_even_if_dead = { NOT = { trait = creature_pterafolk } }
 				mother_even_if_dead = { NOT = { trait = creature_kobold } }
 				mother_even_if_dead = { NOT = { trait = creature_tengu } }
+				mother_even_if_dead = { NOT = { trait = creature_aarakocra } }
+				mother_even_if_dead = { NOT = { trait = creature_sahuagin } }
 				mother_even_if_dead = { NOT = { trait = creature_troll } }
 				mother_even_if_dead = { NOT = { trait = creature_sarrukh } }
 				mother_even_if_dead = { NOT = { trait = creature_devil } }
 				mother_even_if_dead = { NOT = { trait = creature_daemon } }
 				mother_even_if_dead = { NOT = { trait = creature_demon } }
 				mother_even_if_dead = { NOT = { trait = creature_genie } }
+				mother_even_if_dead = { NOT = { trait = creature_goliath } }
 			}
 			AND = {
 				mother_even_if_dead = { trait = creature_angel }
@@ -9300,12 +10210,15 @@ character_event = {
 				true_father_even_if_dead = { NOT = { trait = creature_pterafolk } }
 				true_father_even_if_dead = { NOT = { trait = creature_kobold } }
 				true_father_even_if_dead = { NOT = { trait = creature_tengu } }
+				true_father_even_if_dead = { NOT = { trait = creature_aarakocra } }
+				true_father_even_if_dead = { NOT = { trait = creature_sahuagin } }
 				true_father_even_if_dead = { NOT = { trait = creature_troll } }
 				true_father_even_if_dead = { NOT = { trait = creature_sarrukh } }
 				true_father_even_if_dead = { NOT = { trait = creature_demon } }
 				true_father_even_if_dead = { NOT = { trait = creature_devil } }
 				true_father_even_if_dead = { NOT = { trait = creature_daemon } }
 				true_father_even_if_dead = { NOT = { trait = creature_genie } }
+				true_father_even_if_dead = { NOT = { trait = creature_goliath } }
 			}
 			AND = {
 				true_father_even_if_dead = { trait = creature_genie }
@@ -9390,6 +10303,7 @@ character_event = {
 				mother_even_if_dead = { NOT = { trait = creature_devil } }
 				mother_even_if_dead = { NOT = { trait = creature_angel } }
 				mother_even_if_dead = { NOT = { trait = creature_troll } }
+				mother_even_if_dead = { NOT = { trait = creature_goliath } }
 				mother_even_if_dead = { NOT = { is_dragon = yes } }
 			}
 			AND = {
@@ -9409,8 +10323,46 @@ character_event = {
 				true_father_even_if_dead = { NOT = { trait = creature_devil } }
 				true_father_even_if_dead = { NOT = { trait = creature_angel } }
 				true_father_even_if_dead = { NOT = { trait = creature_troll } }
+				true_father_even_if_dead = { NOT = { trait = creature_goliath } }
 				true_father_even_if_dead = { NOT = { is_dragon = yes } }
 			}
+		#little goliath block for cases not covered above
+		AND = {
+			true_father_even_if_dead = { trait = creature_goliath }
+			mother_even_if_dead = { NOT = { trait = creature_goliath } }
+			mother_even_if_dead = { NOT = { trait = creature_ogre } }
+			mother_even_if_dead = { NOT = { trait = creature_ogrillon } }
+			mother_even_if_dead = { NOT = { is_dragon = yes } }
+			mother_even_if_dead = { NOT = { trait = creature_daemon } }
+			mother_even_if_dead = { NOT = { trait = creature_demon } }
+			mother_even_if_dead = { NOT = { trait = creature_devil } }
+			mother_even_if_dead = { NOT = { trait = creature_angel } }
+			mother_even_if_dead = { NOT = { trait = creature_troll } }
+			mother_even_if_dead = { NOT = { trait = creature_human } }
+			mother_even_if_dead = { NOT = { trait = creature_half_giant } }
+			mother_even_if_dead = { NOT = { trait = creature_half_ogre } }
+			mother_even_if_dead = { NOT = { trait = creature_giant } }
+			mother_even_if_dead = { NOT = { trait = creature_minotaur } }
+			mother_even_if_dead = { NOT = { trait = creature_yikarian } }
+		}
+		AND = {
+			mother_even_if_dead = { trait = creature_goliath }
+			true_father_even_if_dead = { NOT = { trait = creature_goliath } }
+			true_father_even_if_dead = { NOT = { trait = creature_ogre } }
+			true_father_even_if_dead = { NOT = { trait = creature_ogrillon } }
+			true_father_even_if_dead = { NOT = { is_dragon = yes } }
+			true_father_even_if_dead = { NOT = { trait = creature_daemon } }
+			true_father_even_if_dead = { NOT = { trait = creature_demon } }
+			true_father_even_if_dead = { NOT = { trait = creature_devil } }
+			true_father_even_if_dead = { NOT = { trait = creature_angel } }
+			true_father_even_if_dead = { NOT = { trait = creature_troll } }
+			true_father_even_if_dead = { NOT = { trait = creature_human } }
+			true_father_even_if_dead = { NOT = { trait = creature_half_giant } }
+			true_father_even_if_dead = { NOT = { trait = creature_half_ogre } }
+			true_father_even_if_dead = { NOT = { trait = creature_giant } }
+			true_father_even_if_dead = { NOT = { trait = creature_minotaur } }
+			true_father_even_if_dead = { NOT = { trait = creature_yikarian } }
+		}
 			AND = {
 				OR = {
 					true_father_even_if_dead = { trait = creature_yikarian }
@@ -9436,8 +10388,9 @@ character_event = {
 				mother_even_if_dead = { NOT = { trait = creature_devil } }
 				mother_even_if_dead = { NOT = { trait = creature_angel } }
 				mother_even_if_dead = { NOT = { trait = creature_troll } }
+				mother_even_if_dead = { NOT = { trait = creature_goliath } }
 				mother_even_if_dead = { NOT = { is_dragon = yes } }
-				
+
 			}
 			AND = {
 				OR = {
@@ -9464,6 +10417,7 @@ character_event = {
 				true_father_even_if_dead = { NOT = { trait = creature_devil } }
 				true_father_even_if_dead = { NOT = { trait = creature_angel } }
 				true_father_even_if_dead = { NOT = { trait = creature_troll } }
+				true_father_even_if_dead = { NOT = { trait = creature_goliath } }
 				true_father_even_if_dead = { NOT = { is_dragon = yes } }
 			}
 			AND = {
@@ -9697,8 +10651,12 @@ character_event = {
 				mother_even_if_dead = { NOT = { is_dragon = yes } }
 			}
 			AND = {
-				true_father_even_if_dead = { trait = creature_tengu }
+				OR = {
+					true_father_even_if_dead = { trait = creature_tengu }
+					true_father_even_if_dead = { trait = creature_aarakocra }
+				}
 				mother_even_if_dead = { NOT = { trait = creature_tengu } }
+				mother_even_if_dead = { NOT = { trait = creature_aarakocra } }
 				mother_even_if_dead = { NOT = { trait = creature_daemon } }
 				mother_even_if_dead = { NOT = { trait = creature_demon } }
 				mother_even_if_dead = { NOT = { trait = creature_devil } }
@@ -9707,8 +10665,31 @@ character_event = {
 				mother_even_if_dead = { NOT = { is_dragon = yes } }
 			}
 			AND = {
-				mother_even_if_dead = { trait = creature_tengu }
-				true_father_even_if_dead = { NOT = { trait = creature_tengu } }
+				OR = {
+					mother_even_if_dead = { trait = creature_tengu }
+					mother_even_if_dead = { trait = creature_aarakocra }
+				}
+				true_father_even_if_dead = { NOT = { trait = creature_aarakocra } }
+				true_father_even_if_dead = { NOT = { trait = creature_daemon } }
+				true_father_even_if_dead = { NOT = { trait = creature_demon } }
+				true_father_even_if_dead = { NOT = { trait = creature_devil } }
+				true_father_even_if_dead = { NOT = { trait = creature_angel } }
+				true_father_even_if_dead = { NOT = { trait = creature_troll } }
+				true_father_even_if_dead = { NOT = { is_dragon = yes } }
+			}
+			AND = {
+				true_father_even_if_dead = { trait = creature_sahuagin }
+				mother_even_if_dead = { NOT = { trait = creature_sahuagin } }
+				mother_even_if_dead = { NOT = { trait = creature_daemon } }
+				mother_even_if_dead = { NOT = { trait = creature_demon } }
+				mother_even_if_dead = { NOT = { trait = creature_devil } }
+				mother_even_if_dead = { NOT = { trait = creature_angel } }
+				mother_even_if_dead = { NOT = { trait = creature_troll } }
+				mother_even_if_dead = { NOT = { is_dragon = yes } }
+			}
+			AND = {
+				mother_even_if_dead = { trait = creature_sahuagin }
+				true_father_even_if_dead = { NOT = { trait = creature_sahuagin } }
 				true_father_even_if_dead = { NOT = { trait = creature_daemon } }
 				true_father_even_if_dead = { NOT = { trait = creature_demon } }
 				true_father_even_if_dead = { NOT = { trait = creature_devil } }
@@ -9840,9 +10821,8 @@ character_event = {
 			}
 		}
 	}
-	
+
 	immediate = {
-		death = { death_reason = death_childbirth }
 		if = {
 			limit = {
 				true_father_even_if_dead = {
@@ -9857,65 +10837,110 @@ character_event = {
 			if = {
 				limit = {
 					true_father_even_if_dead = {
-						mother_even_if_dead = {
-							any_spouse = {
-								character = PREV
-							}
-						}
-					}
-				}
-				true_father_even_if_dead = {
-					mother_even_if_dead = {
-						remove_spouse = PREV
-					}
-				}
-			}
-			if = {
-				limit = {
-					mother_even_if_dead = {
-						true_father_even_if_dead = {
-							any_consort = {
-								character = PREV
-							}
-						}
-					}
-				}
-				true_father_even_if_dead = {
-					mother_even_if_dead = {
-						remove_consort = PREV
-					}
-				}
-			}
-			if = {
-				limit = {
-					true_father_even_if_dead = {
-						mother_even_if_dead = {
-							any_consort = PREV
+						any_spouse = {
+							is_parent_of = ROOT
 						}
 					}
 				}
 				mother_even_if_dead = {
-					true_father_even_if_dead = {
-						remove_consort = PREV
+					save_event_target_as = target_wife
+					if = {
+						limit = {
+							NOT = { is_ruler = yes }
+							NOT = { is_married_matrilineally = yes }
+						}
+						banish = yes
+					}
+				}
+				true_father_even_if_dead = {
+					remove_spouse = target_wife
+					if = {
+						limit = {
+							NOT = { is_ruler = yes }
+							is_married_matrilineally = yes
+						}
+						banish = yes
 					}
 				}
 			}
 			if = {
 				limit = {
 					true_father_even_if_dead = {
-						mother_even_if_dead = {
-							any_lover = {
-								character = PREV
-							}
+						any_consort = {
+							is_parent_of = ROOT
+						}
+					}
+				}
+				mother_even_if_dead = {
+					save_event_target_as = target_female_consort
+					if = {
+						limit = {
+							NOT = { is_ruler = yes }
+							NOT = { is_senior_consort_party = yes }
+						}
+						banish = yes
+					}
+				}
+				true_father_even_if_dead = {
+					remove_consort = target_female_consort
+					if = {
+						limit = {
+							NOT = { is_ruler = yes }
+							NOT = { is_senior_consort_party = yes }
+						}
+						banish = yes
+					}
+				}
+
+			}
+			if = {
+				limit = {
+					mother_even_if_dead = {
+						any_consort = {
+							is_parent_of = ROOT
 						}
 					}
 				}
 				true_father_even_if_dead = {
-					mother_even_if_dead = {
-						remove_lover = PREV
+					save_event_target_as = target_male_consort
+					if = {
+						limit = {
+							NOT = { is_ruler = yes }
+							NOT = { is_senior_consort_party = yes }
+						}
+						banish = yes
 					}
+				}
+				mother_even_if_dead = {
+					remove_consort = target_male_consort
+					if = {
+						limit = {
+							NOT = { is_ruler = yes }
+							NOT = { is_senior_consort_party = yes }
+						}
+						banish = yes
+					}
+				}
+
+			}
+			if = {
+				limit = {
+					true_father_even_if_dead = {
+						any_lover = {
+							is_parent_of = ROOT
+						}
+					}
+				}
+				mother_even_if_dead = {
+					save_event_target_as = target_lover
+				}
+				true_father_even_if_dead = {
+					remove_lover = target_lover
 				}
 			}
 		}
+	}
+	after = {
+		death = { death_reason = death_childbirth }
 	}
 }

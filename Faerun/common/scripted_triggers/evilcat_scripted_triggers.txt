@@ -61,15 +61,16 @@ evilcat_is_human_cultured = {
 		culture_group = tethyrian_group
 		culture_group = taan_group
 		culture_group = turami_group
-		culture_group = uluik_group
+		#culture_group = uluik_group
 		culture_group = zakharan_group
 		culture_group = calishite_group
 	}
 }
 evilcat_is_sympathetic = {
-	OR = {	
+	OR = {
 		trait = sympathy_many
 		trait = sympathy_good_human_pantheon_group
+		trait = sympathy_wild_human_pantheon_group
 		trait = sympathy_evil_human_pantheon_group
 		trait = sympathy_drow_pantheon
 		trait = sympathy_elven_pantheon_group
@@ -84,11 +85,21 @@ evilcat_is_sympathetic = {
 evilcat_has_sorc_origin = {
 	OR = {
 		trait = creature_dragon #draconic
-		#trait = creature_genasi #storm
+		trait = creature_kobold #draconic
+		trait = creature_genasi #storm
 		trait = creature_genie #storm
-		#trait = creature_aasimar #divine soul
+		trait = creature_aasimar #divine soul
+		trait = creature_angel #divine soul
+		trait = creature_devil #shadow
+		trait = creature_daemon #shadow
+		trait = creature_demon #shadow
+		trait = creature_tiefling #shadow
+		trait = creature_feyri #shadow
+		trait = creature_tanarukk #shadow
 		trait = creature_hag #wild
-		#trait = creature_eladrin #wild
+		trait = creature_eladrin #wild
+		trait = creature_illithid #aberrant
+		trait = creature_beholder #aberrant
 		trait = origin_aberrant_mind
 		trait = origin_draconic
 		trait = origin_divine_soul
@@ -308,6 +319,11 @@ evilcat_is_chosen = {
 		trait = chosen_sune
 		trait = chosen_umberlee
 		trait = chosen_malar
+		trait = chosen_gruumsh
+		trait = chosen_bane
+		trait = chosen_eilistraee
+		trait = chosen_bhaal
+		trait = chosen_talona
 	}
 }
 evilcat_is_true_immortal = { #doesn't include immortal racial traits, add more as they come
@@ -323,6 +339,8 @@ evilcat_is_true_immortal = { #doesn't include immortal racial traits, add more a
 		trait = creature_angel
 		trait = creature_genie
 		trait = creature_beholder
+		trait = creature_hag
+		trait = creature_treant
 	}
 }
 evilcat_is_disease_immune = {
@@ -346,6 +364,10 @@ evilcat_is_disease_immune = {
 		trait = renowned_monk
 		trait = legendary_paladin
 		trait = legendary_monk
+		any_artifact = {
+			artifact_type = periapt_of_health
+			is_artifact_equipped = yes
+		}
 	}
 }
 evilcat_is_stress_immune = { #will change to mental health immune

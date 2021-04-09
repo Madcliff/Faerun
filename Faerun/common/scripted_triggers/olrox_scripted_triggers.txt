@@ -152,7 +152,7 @@ olrox_artifact_smallblades_requirement = {
 			trait = master_rogue
 			trait = renowned_rogue
 			trait = legendary_rogue
-			trait = monk
+			trait = class_monk
 			trait = trained_monk
 			trait = journeyman_monk
 			trait = expert_monk
@@ -166,6 +166,10 @@ olrox_artifact_smallblades_requirement = {
 			trait = master_shadow
 			trait = renowned_shadow
 			trait = legendary_shadow
+			trait = creature_elf
+			trait = creature_drow
+			trait = creature_eladrin
+			trait = creature_sea_elf
 		}
 	}
 }
@@ -296,7 +300,7 @@ olrox_artifact_sneak_requirement = {
 			trait = master_rogue
 			trait = renowned_rogue
 			trait = legendary_rogue
-			trait = monk
+			trait = class_monk
 			trait = trained_monk
 			trait = journeyman_monk
 			trait = expert_monk
@@ -560,13 +564,286 @@ olrox_artifact_robes_requirement = {
 			trait = master_wizard
 			trait = renowned_wizard
 			trait = legendary_wizard
-			trait = monk
+			trait = class_monk
 			trait = trained_monk
 			trait = journeyman_monk
 			trait = expert_monk
 			trait = master_monk
 			trait = renowned_monk
 			trait = legendary_monk
+		}
+	}
+}
+
+olrox_artifact_religious_requirement = {
+	custom_tooltip = {
+		text = olrox_artifact_religious_requirement_tooltip
+		OR = {
+			trait = cleric
+			trait = trained_cleric
+			trait =	expert_cleric
+			trait = journeyman_cleric
+			trait =	master_cleric
+			trait =	renowned_cleric
+			trait = legendary_cleric
+			trait = paladin
+			trait = trained_paladin
+			trait = expert_paladin
+			trait = journeyman_paladin
+			trait = master_paladin
+			trait = renowned_paladin
+			trait = legendary_paladin
+		}
+	}
+}
+
+male_patrician_trigger = {
+	trigger_if = {
+		limit = {
+			NOT = {
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
+		}
+		is_female = no
+		NOR = {
+			primary_title = {
+				OR = {
+					has_law = enatic_succession
+					has_law = enatic_cognatic_succession
+				}
+			}
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = enatic_succession
+						has_law = enatic_cognatic_succession
+					}
+				}
+			}
+		}
+	}
+}
+
+female_patrician_trigger = {
+	trigger_if = {
+		limit = {
+			NOT = {
+				has_game_rule = {
+					name = gender
+					value = all
+				}
+			}
+		}
+		is_female = yes
+		OR = {
+			primary_title = {
+				OR = {
+					has_law = enatic_succession
+					has_law = enatic_cognatic_succession
+					has_law = true_cognatic_succession
+				}
+			}
+			liege = {
+				primary_title = {
+					OR = {
+						has_law = enatic_succession
+						has_law = enatic_cognatic_succession
+						has_law = true_cognatic_succession
+					}
+				}
+			}
+		}
+	}
+}
+
+olrox_is_evil_religion_trigger = {
+	custom_tooltip = {
+		text = olrox_is_evil_religion_trigger_tooltip
+		OR = {
+			religion_group = evil_human_pantheon_group
+			trait = patron_velsharoon
+			trait = patron_talos
+			trait = patron_shar
+			trait = patron_myrkul
+			trait = patron_umberlee
+			trait = patron_gilgeam
+			religion_group = drow_pantheon
+			trait = patron_malar
+			trait = patron_beshaba
+			religion_group = goblin_pantheon_group
+			religion_group = orc_pantheon_group
+			religion_group = monster_group
+			religion_group = aberration_group
+			religion = deities_of_fury
+			religion = laduguer
+			religion = urdlen
+			religion = vaprak
+			trait = patron_garyx
+			trait = patron_task
+			trait = patron_tiamat
+			religion = tiamat
+			religion = entropy
+		}
+	}
+}
+
+olrox_is_good_religion_trigger = {
+	custom_tooltip = {
+		text = olrox_is_good_religion_trigger_tooltip
+		OR = {
+			religion = triadic
+			trait = patron_mystra
+			trait = patron_selune
+			trait = patron_lathander
+			trait = patron_sharess
+			trait = patron_anhur
+			trait = patron_lliira
+			trait = patron_sune
+			trait = patron_chauntea
+			trait = patron_ilmater
+			trait = patron_deneir
+			trait = patron_milil
+			religion = joyful
+			trait = patron_tyr
+			trait = patron_eldath
+			trait = patron_garl_glittergold
+			trait = patron_hathor
+			trait = patron_horus_re
+			trait = patron_isis
+			trait = patron_nephthys
+			trait = patron_osiris
+			religion = halfling_pantheon
+			trait = patron_amaunator
+			trait = patron_kelemvor
+			religion_group = elven_pantheon_group
+			trait = patron_mielikki
+			trait = patron_lurue
+			trait = patron_gwaeron_windstrom
+			trait = patron_shiallia
+			trait = patron_nobanion
+			religion = dwarven_pantheon
+			religion = gnome_pantheon
+			trait = patron_bahamut
+			trait = patron_tamara
+			religion = bahamut
+			religion = adama
+		}
+	}
+}
+
+olrox_is_environmental_religion_trigger = {
+	custom_tooltip = {
+		text = olrox_is_environmental_religion_trigger_tooltip
+		OR = {
+			religion_group = elven_pantheon_group
+			religion_group = pagan_group
+			religion = natural
+			religion = tuigan_shamanism
+			religion = uthgardt_faith
+			religion = rasallesian
+			religion = chauntean_faith
+			religion = halfling_pantheon
+			religion = gnome_pantheon
+			religion = giant_pantheon
+			trait = patron_silvanus
+			trait = patron_chauntea
+			trait = patron_mielikki
+			trait = patron_eldath
+			trait = patron_lurue
+			trait = patron_gwaeron_windstrom
+			trait = patron_shiallia
+			trait = patron_nobanion
+		}
+	}
+}
+
+olrox_has_specific_sorc_origin = {
+	OR = {
+		trait = origin_aberrant_mind
+		trait = origin_draconic
+		trait = origin_divine_soul
+		trait = origin_shadow
+		trait = origin_storm
+		trait = origin_wild_magic
+	}
+}
+
+not_a_mammal_trigger = {
+	OR = {
+		trait = creature_dragon
+		trait = creature_treant
+		trait = creature_sarrukh
+		trait = creature_malison
+		trait = creature_abomination
+		trait = creature_lizardfolk
+		trait = creature_naga
+		trait = creature_dragonborn
+		trait = creature_shadow_dragon
+		trait = creature_red_dragon
+		trait = creature_black_dragon
+		trait = creature_blue_dragon
+		trait = creature_green_dragon
+		trait = creature_white_dragon
+		trait = creature_amethyst_dragon
+		trait = creature_crystal_dragon
+		trait = creature_sapphire_dragon
+		trait = creature_emerald_dragon
+		trait = creature_topaz_dragon
+		trait = creature_brass_dragon
+		trait = creature_bronze_dragon
+		trait = creature_copper_dragon
+		trait = creature_gold_dragon
+		trait = creature_silver_dragon
+		trait = creature_saurial
+		trait = creature_pterafolk
+		trait = creature_kobold
+		trait = creature_tengu
+		trait = creature_aarakocra
+		trait = creature_sahuagin
+	}
+}
+
+has_society_currency_massive_trigger = {
+	society_currency >= 1000
+}
+
+is_member_of_any_knight_order_trigger = {
+	custom_tooltip = {
+		text = is_member_of_any_knight_order_tt
+		hidden_trigger = {
+			OR = {
+				society_member_of = knight_order_purple_dragons
+				society_member_of = knight_order_imphras
+				society_member_of = knight_order_silver_chalice
+				society_member_of = knight_order_samular
+			}
+		}
+	}
+}
+
+has_current_knight_order_leader_trait_trigger = {
+	custom_tooltip = {
+		text = has_warrior_training_with_current_society_tt
+		OR = {
+			AND = {
+				trait = knight_order_leader
+				society_member_of = knight_order_purple_dragons
+			}
+			AND = {
+				trait = knight_order_leader
+				society_member_of = knight_order_imphras
+			}
+			AND = {
+				trait = knight_order_leader
+				society_member_of = knight_order_silver_chalice
+			}
+			AND = {
+				trait = knight_order_leader
+				society_member_of = knight_order_samular
+			}
 		}
 	}
 }

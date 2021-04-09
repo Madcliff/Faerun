@@ -1,9 +1,74 @@
-pet_mimic;Mimic Friend;;;;;;;;;x
-pet_mimic_desc;This character keeps a mimic as a close friend and counselor. Wait, what?;;;;;;;;;x
+###ÄNSI;;;;;;;;;;;;x
+pet_mimic;Mimic Friend;;;;;;;;;;;x
+pet_mimic_desc;This character keeps a mimic as a close friend and counselor. Wait, what?;;;;;;;;;;;x
 #
-wonder_netherese_enclave;Netherese Enclave;;;;;;;;;x
-wonder_netherese_enclave_desc;The discovery and development of mythallars by Netherese arcanists allowed them to develop the spells necessary to create their floating enclaves, bastions of enlightenment, peace and ingenuity, giving the mages of Netheril sanctuaries from which they could continue their arcane research, safe from the distractions and dangers of the surface world.;;;;;;;;;x
-wonder_netherese_enclave_construction_desc;The discovery and development of mythallars by Netherese arcanists allowed them to develop the spells necessary to create their floating enclaves. Recreating such wonders would require massive amounts of magic, resources and knowledge.;;;;;;;;;x
+wonder_netherese_enclave;Netherese Enclave;;;;;;;;;;;x
+wonder_netherese_enclave_desc;The discovery and development of mythallars by Netherese arcanists allowed them to develop the spells necessary to create their floating enclaves, bastions of enlightenment, peace and ingenuity, giving the mages of Netheril sanctuaries from which they could continue their arcane research, safe from the distractions and dangers of the surface world.;;;;;;;;;;;x
+wonder_netherese_enclave_construction_desc;The discovery and development of mythallars by Netherese arcanists allowed them to develop the spells necessary to create their floating enclaves. Recreating such wonders would require massive amounts of magic, resources and knowledge.;;;;;;;;;;;x
 #
-wonder_shade;Shade;;;;;;;;;x
-wonder_shade_desc;Thultanthar, now known as Shade, was created 1471 years before the Dalereckoning calendar. High mage Telamont had been experimenting with the Plane of Shadow for some time and had successfully shifted the entire city into the Plane of Shadow mere days before Karsus cast Karsus's Avatar and temporarily destroyed the Weave in the Year of Sundered Webs. Eventually, they managed to return to Netheril, or at least what was left of it. Searching for survivors for days, the city floated over the ruins of the Netherese empire. Finding none, the high mage assumed it was he work of the phaerimm and began planning his revenge. He stopped, however, when he realized that one city was not a match for them and that his subjects were likely the last of the empire's people. He abandoned those plans and retreated back into the Plane of Shadow, vowing that one day, they would return and reestablish the empire.;;;;;;;;;x
+wonder_shade;Shade;;;;;;;;;;;x
+wonder_shade_desc;Thultanthar, now known as Shade, was created 1471 years before the Dalereckoning calendar. High mage Telamont had been experimenting with the Plane of Shadow for some time and had successfully shifted the entire city into the Plane of Shadow mere days before Karsus cast Karsus's Avatar and temporarily destroyed the Weave in the Year of Sundered Webs. Eventually, they managed to return to Netheril, or at least what was left of it. Searching for survivors for days, the city floated over the ruins of the Netherese empire. Finding none, the high mage assumed it was he work of the phaerimm and began planning his revenge. He stopped, however, when he realized that one city was not a match for them and that his subjects were likely the last of the empire's people. He abandoned those plans and retreated back into the Plane of Shadow, vowing that one day, they would return and reestablish the empire.;;;;;;;;;;;x
+#
+wonder_sembian_mint;Sembian Mint;;;;;;;;;;;x
+wonder_sembian_mint_desc;The Sembian mint is a fortress within the city of Ordulin, located next door to the Tower of the Guard, protected by powerful wards to prevent both unauthorized entry and scrying, as well as golems and patrols of particularly inventive abjurer craftsmen. It was said that no thief had ever penetrated the mint and lived to tell the tale.;;;;;;;;;;;x
+#
+harper_liberation_desc;The Harpers can't stand tyranny and oppression. As a High Harper, you can fight to free worshippers of the good-aligned deities from foreign despots.;;;;;;;;;;;x
+CB_NAME_HARPER_LIBERATION;Harper Liberation of [Title.GetBaseName];;;;;;;;;;;x
+CB_NAME_HARPER_LIBERATION_desc;The Harpers can't stand tyranny and oppression. As a High Harper, you can fight to free worshippers of the good-aligned deities from foreign despots.;;;;;;;;;;;x
+WAR_NAME_HARPER_LIBERATION;Harper Liberation of [Title.GetBaseName];;;;;;;;;;;x
+harper_liberation_cb_succ_tip;The §Y[This.GetFullBaseName]§! will be liberated under a new ruler of a local religion! This ruler will become your §YTributary§!.;;;;;;;;;;;x
+#
+rogue_classes_tooltip;Rogue, Shadow or Bard;;;;;;;;;;;x
+#
+olrox_is_evil_religion_trigger_tooltip;Belongs to an evil religion;;;;;;;;;;;x
+olrox_is_good_religion_trigger_tooltip;Belongs to a good religion;;;;;;;;;;;x
+olrox_is_environmental_religion_trigger_tooltip;Belongs to a religion that respects or worships nature;;;;;;;;;;;x
+#
+recreate_waterdeep;Reestablish the Masked Lords;;;;;;;;;;;x
+recreate_waterdeep_desc;The criminal Shadow Thieves have forced the Masked Lords of Waterdeep out of the City of Splendors. As the owner of most of Waterdeep, you can recreate the Masked Lords and take your place as the new Open Lord.;;;;;;;;;;;x
+#
+gareth_bloodline;Dragonsbane Mythic Blood;;;;;;;;;;;x
+gareth_bloodline_desc;Gareth Dragonsbane was the paladin–king of Damara. Prior to his reign he was a famed adventurer, thwarting the schemes of the demon lord Orcus.;;;;;;;;;;;x
+#
+bhaalspawn2desc;As another Bhaalspawn passes away, you realize that you're the last one standing. The entirety of Bhaal's divine power is now within your reach, will you grasp it?;;;;;;;;;;;x
+EVTOPTA_BHAALSPAWN2;There can be only one.;;;;;;;;;;;x
+EVTOPTB_BHAALSPAWN2;Bhaal's legacy must end.;;;;;;;;;;;x
+#
+EVTNAMEBHAALSPAWN3;The Avatar of Murder;;;;;;;;;;;x
+bhaalspawn3desc;The murderous god Bhaal foresaw his death and impregnated many mortal women, creating his heirs, the Bhaalspawn. If Bhaal's plans had gone as they were meant to, the Bhaalspawn would have destroyed each other until none remained, at which point his chosen followers would have performed rituals that would have brought him back. As a side effect unintended by Bhaal, the Bhaalspawn's share of the essence meant that each of them had the potential to become a god in their own right. That has come to pass today, as the last Bhaalspawn claims godhood.;;;;;;;;;;;x
+EVTOPTA_BHAALSPAWN3;Unbelievable!;;;;;;;;;;;x
+EVTOPTB_BHAALSPAWN3;My rule begins.;;;;;;;;;;;x
+#
+EVTNAMEBHAALSPAWN4;The Return of Bhaal;;;;;;;;;;;x
+bhaalspawn4descpowerful;For a time, it was believed that any possibility for Bhaal's resurrection had been stopped. The last known Bhaalspawn had fully absorbed the power of the deceased god, turning themselves into an independent, immortal divine being. Today, the last remaining bhaalspawn has fallen, and with all of his children dead, Bhaal's essence was freed, allowing for his resurrection. Bhaal was revived, and reclaimed the murder domain for himself.;;;;;;;;;;;x
+bhaalspawn4descweak;For a time, it was believed that any possibility for Bhaal's resurrection had been stopped. The last known Bhaalspawn had resisted the murderous impulses caused by their lineage, sealing away the power of the deceased god. Today, the last remaining bhaalspawn passed away, and with all of his children dead, Bhaal's essence was freed, allowing for his resurrection. However, having his essence stifled and sealed off by his last host has weakened the Lord of Murder. He is no longer a true deity, and is instead a being of quasi-divine status.;;;;;;;;;;;x
+EVTOPTA_BHAALSPAWN4;Gods are never truly dead, it seems.;;;;;;;;;;;x
+EVTOPTB_BHAALSPAWN4;Interesting!;;;;;;;;;;;x
+#
+BANERETURNTITLE.1;The Return of Bane;;;;;;;;;;;x
+BaneReturn.1;During the Time of Troubles, Bane and the young god Torm killed each other in battle. Subsequently, the majority of Bane's power fell from him to the mortal Cyric, who temporarily claimed the powers of all the Dead Three - all of whom perished in the Time of Troubles. A smaller portion fell to Bane's son, Iyachtu Xvim, an eventuality that Bane had anticipated should he himself perish. For Bane, death was but a temporary setback: today Xvim, who was in fact little more than a cocoon to contain the essence of Bane, burst forth into the black and armored figure of Bane, destroying the younger god entirely. All of Xvim's followers are quickly converting back to their old patron.;;;;;;;;;;;x
+EVTOPTA_BANERETURN1;Worrying...;;;;;;;;;;;x
+EVTOPTB_BANERETURN1;The Black Lord returns!;;;;;;;;;;;x
+EVTOPTC_BANERETURN1;Interesting.;;;;;;;;;;;x
+#
+breath_weapon;Dragon Breath;;;;;;;;;;;x
+breath_weapon_desc;The most infamous weapon in a dragon’s formidable arsenal is its devastating breath, which can produce blasts of elemental energy. The type of energy varies with the kind of dragon, and the older a dragon gets, the more powerful its breath becomes.;;;;;;;;;;;x
+#
+RULE_MINOR_STORY_DANGEROUS_DESC;Invasion events spawn armies with an efficient troop composition.;;;;;;;;;;;x
+RULE_MINOR_STORY_LETHAL_DESC;Invasion events spawn armies with an efficient troop composition. Also, their numbers are doubled and they constantly reinforce to replace losses.;;;;;;;;;;;x
+#
+KINGOFSHADOWS.1;The King of Shadows has returned. Once known as the Guardian, he's a powerful creature, created to protect the Illefarn empire. Corrupted by the Shadow Weave during the fall of ancient Netheril, he lingered in the Plane of Shadow for many centuries, but he's now leading an undead horde, likely in an effort to reclaim the bygone Illefarn homeland.;;;;;;;;;;;x
+EVTOPTA_KINGOFSHADOWS_1;His undead have died once, and they will die again.;;;;;;;;;;;x
+EVTOPTB_KINGOFSHADOWS_1;Interesting...;;;;;;;;;;;x
+#
+MEPHISTO.1;The archdevil Mephistopheles has emerged from the Underdark, intending to turn Toril into a new layer of Hell. He commands thousands of damned souls of drow, duergars, beholders and other subterranean races as a special form of spiritual army, and he's carving a path of conquest from Undermountain to Waterdeep.;;;;;;;;;;;x
+EVTOPTA_MEPHISTO_1;He must be banished back to Hell.;;;;;;;;;;;x
+EVTOPTB_MEPHISTO_1;Interesting...;;;;;;;;;;;x
+#
+SHADOVAR.1;The City of Shade has appeared over the skies of the Anauroch desert. Also known as Thultanthar, this netherese flying enclave survived the fall of Netheril by escaping into the Plane of Shadow. Its return can only mean one thing: the netherese shadovar aim to reclaim their ancient fallen empire.;;;;;;;;;;;x
+EVTOPTA_SHADOVAR_1;Netheril? It can't be.;;;;;;;;;;;x
+EVTOPTB_SHADOVAR_1;About time.;;;;;;;;;;;x
+#
+boulder_volley_tactic;Boulder Volley Tactic;;;;;;;x
+#
+is_evil_trigger_tooltip;Is an evil person;;;;;;;x

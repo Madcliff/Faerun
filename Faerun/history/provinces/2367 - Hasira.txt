@@ -1,0 +1,15 @@
+# County Title
+title = c_hasira
+
+# Settlements
+max_settlements = 3
+
+b_shasira = castle
+b_kashira = city
+b_loshina = temple
+
+# Misc
+culture = akotan
+religion = jaziri
+terrain = coastal
+#History

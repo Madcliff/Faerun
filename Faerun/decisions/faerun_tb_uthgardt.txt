@@ -1,0 +1,176 @@
+decisions = {
+	
+	pick_beast_totem = {
+		ai_check_interval = 12
+		is_high_prio = yes
+		
+		potential = {
+			religion = uthgardt_faith
+			NOT = { has_uthgardt_totem = yes }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					OR = {
+						independent = yes
+						NOT = {
+							any_liege = {
+								religion = uthgardt_faith
+							}
+						}
+						any_liege = {
+							religion = uthgardt_faith
+							has_uthgardt_totem = yes
+						}
+					}
+				}
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			character_event = { id = uthgar.1 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	uthgar_emulate_beast = {
+		ai_check_interval = 24
+		only_playable = yes
+		
+		potential = {
+			religion = uthgardt_faith
+			has_uthgardt_totem = yes
+		}
+		allow = {
+			custom_tooltip = {
+				text = EMUBEASTCD
+				hidden_tooltip = {
+					OR = {
+						NOT = { has_character_flag = emulated_beast }
+						had_character_flag = {
+							flag = emulated_beast
+							months = 18
+						}
+					}
+				}
+			}
+			piety = 30
+		}
+		effect = {
+			piety = -30
+			trigger_switch = {
+				on_trigger = trait
+				uthgar_black_lion = {
+					add_character_modifier = {
+						name = emulate_black_lion
+						months = 12
+					}
+				}
+				uthgar_black_raven = {
+					add_character_modifier = {
+						name = emulate_black_raven
+						months = 12
+					}
+				}
+				uthgar_blue_bear = {
+					add_character_modifier = {
+						name = emulate_blue_bear
+						months = 12
+					}
+				}
+				uthgar_elk = {
+					add_character_modifier = {
+						name = emulate_elk
+						months = 12
+					}
+				}
+				uthgar_gray_wolf = {
+					add_character_modifier = {
+						name = emulate_gray_wolf
+						months = 12
+					}
+				}
+				uthgar_great_worm = {
+					add_character_modifier = {
+						name = emulate_great_worm
+						months = 12
+					}
+				}
+				uthgar_griffon = {
+					add_character_modifier = {
+						name = emulate_griffon
+						months = 12
+					}
+				}
+				uthgar_red_tiger = {
+					add_character_modifier = {
+						name = emulate_red_tiger
+						months = 12
+					}
+				}
+				uthgar_sky_pony = {
+					add_character_modifier = {
+						name = emulate_sky_pony
+						months = 12
+					}
+				}
+				uthgar_thunderbeast = {
+					add_character_modifier = {
+						name = emulate_thunderbeast
+						months = 12
+					}
+				}
+				uthgar_tree_ghost = {
+					add_character_modifier = {
+						name = emulate_tree_ghost
+						months = 12
+					}
+				}
+			}
+		}
+	}
+	
+	uthgar_runemeet = {
+		ai_check_interval = 12
+		only_playable = yes # for optimization
+		potential = {
+			religion = uthgardt_faith
+			is_adult = yes
+		}
+		allow = {
+			custom_tooltip = {
+				text = UTHOBSRUNE
+				hidden_tooltip = {
+					NOT = { has_character_flag = attending_runemeet }
+				}
+			}
+			custom_tooltip = {
+				text = MUSTBEELEINT
+				hidden_tooltip = {
+					month = 8
+					NOT = { month = 9 }
+				}
+			}
+		}
+		effect = {
+			character_event = {
+				id = uthgar.11
+			}
+			character_event = { # to purge the flags after a little bit
+				id = uthgar.10 months = 2
+			}
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0.25
+				trait = cynical
+			}
+		}
+	}
+	
+}

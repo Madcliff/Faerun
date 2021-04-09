@@ -64,11 +64,13 @@
 }
 796.1.1 = {
 	liege = d_elestam	
-	holder = 0
 }
 1348.1.1 = {
 	liege = k_erlkazar
 }
 1366.1.1 = {
 	holder = 31005 # Purdun Firefist
+}
+1389.1.1 = {
+	holder = 40536 # Saestra Karanok
 }

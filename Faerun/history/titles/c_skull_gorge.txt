@@ -42,8 +42,22 @@
 	holder = 61128 # Jinzog t'Melial
 }
 1350.1.1 = {
+	law = true_cognatic_succession
+	law = succ_magic_wizard
+	holder = 61358 # Velsharoon
+}
+1368.1.1 = {
+	law = enatic_cognatic_succession
+	law = succ_gavelkind
+	liege = k_zhentarim
 	holder = 61005 # Urghal t'Melial
 }
-1357.1.1 = {
-	liege = k_zhentarim
+1383.1.1 = {
+	liege = 0
+}
+1420.1.1 = {
+	holder = 61279 # Lavriik t'Melial
+}
+1470.1.1 = {
+	holder = 61280 # Aagi t'Melial
 }

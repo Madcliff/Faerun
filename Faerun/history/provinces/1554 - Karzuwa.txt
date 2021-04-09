@@ -1,0 +1,15 @@
+# c_karzuwa
+
+# County Title
+title = c_karzuwa
+
+# Settlements
+max_settlements = 4
+
+b_karzuwa = tribal
+
+# Misc
+culture = fabada
+religion = kahin
+
+#History

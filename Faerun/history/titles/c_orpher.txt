@@ -2,6 +2,40 @@
 1.1.1={
 	law = true_cognatic_succession
 	law = succ_seniority
+	holder = 64595 # Satama
+	liege = k_durpar
+}
+140.1.1 = {
+	holder = 64596 # Waileen I
+}
+180.1.1 = {
+	liege = 0
+	holder = 0
+}
+480.1.1 = {
+	holder = 64594 # Rajaput
+	liege = k_durpar
+}
+530.1.1 = {
+	holder = 64593 # Jatin
+}
+600.1.1 = {
+	holder = 64592 # Anjishan
+}
+650.1.1 = {
+	holder = 64591 # Ravana
+}
+1010.1.1 = {
+	holder = 64583 # Asanar
+}
+1060.1.1 = {
+	holder = 64582 # Kinkan
+}
+1110.1.1 = {
+	holder = 64581 # Vishnu
+}
+1160.1.1 = {
+	holder = 64580 # Panchika
 }
 1210.1.1 = {
 	holder = 64579 # Avatman

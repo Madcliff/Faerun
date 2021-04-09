@@ -9,7 +9,7 @@ max_settlements = 4
 b_volothamp = castle
 b_dainar = city
 b_awagadust = temple
-#b_marratesh = castle
+b_marratesh = castle
 #b_unzam = city
 #b_haljaddan = temple
 #b_ipnir = castle
@@ -20,3 +20,9 @@ religion = calishite_faith
 terrain = farmlands
 
 #History
+1385.4.29 = {
+	religion = primordial
+}
+1489.1.1 = {
+	religion = calishite_faith
+}

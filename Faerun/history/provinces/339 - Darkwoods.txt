@@ -26,8 +26,7 @@ terrain = forest
 }
 1344.1.1 = {
 	culture = drow
-	religion = drow_polytheism
-	b_darkwoods = tribal
+	religion = vhaeraun
 }
 1376.1.20 = {
 	b_darkwoods = castle

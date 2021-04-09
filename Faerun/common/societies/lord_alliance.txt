@@ -26,11 +26,16 @@ lord_alliance = { #by Olrox17
 		OR = {
 			religion_group = good_human_pantheon_group
 			religion_group = elven_pantheon_group
-			religion_group = dwarven_pantheon_group
+			religion = dwarven_pantheon
+			religion = gnome_pantheon
+			religion = martial_faith
+			religion = bahamut
+			trait = patron_bahamut
 		}
 		NOR = {
 			is_nomadic = yes
 			is_tribal = yes
+			has_character_modifier = undead_realm_lord
 		}
 
 		OR = {
@@ -39,7 +44,10 @@ lord_alliance = { #by Olrox17
 					has_holder = no
 				}
 				capital_scope = {
-					region = northwest_faerun_region
+					OR = {
+						region = northwest_faerun_region
+						region = southern_heartlands_region
+					}
 				}
 			}
 			AND = {
@@ -49,13 +57,11 @@ lord_alliance = { #by Olrox17
 				capital_scope = {
 					OR = {
 						region = northwest_faerun_region
-						region = moonsea_region
+						region = trackless_sea_region
 						region = anauroch_region
 						region = western_heartlands_region
-						region = cormanthor_region
-						region = dalelands_region
 						region = cormyr_region
-						region = sembia_region
+						region = dragon_coast_region
 					}
 				}
 			}
@@ -75,13 +81,17 @@ lord_alliance = { #by Olrox17
 		OR = {
 			religion_group = good_human_pantheon_group
 			religion_group = elven_pantheon_group
-			religion_group = dwarven_pantheon_group
+			religion = dwarven_pantheon
+			religion = gnome_pantheon
+			religion = martial_faith
+			religion = bahamut
+			trait = patron_bahamut
 		}
 	}
 	society_rank = { #Redknife
 		level = 1
-		limit = 75
-		startup_limit = 25
+		limit = 40
+		startup_limit = 20
 		modifier = {
 			global_tax_modifier = 0.025
 		}
@@ -94,8 +104,8 @@ lord_alliance = { #by Olrox17
 
 	society_rank = { #Stingblade
 		level = 2
-		limit = 50
-		startup_limit = 12
+		limit = 20
+		startup_limit = 10
 		modifier = {
 			diplomacy = 1
 			global_tax_modifier = 0.05
@@ -108,8 +118,8 @@ lord_alliance = { #by Olrox17
 
 	society_rank = { #Warduke
 		level = 3
-		limit = 30
-		startup_limit = 6
+		limit = 10
+		startup_limit = 5
 		modifier = {
 			diplomacy = 2
 			global_tax_modifier = 0.075
@@ -122,11 +132,12 @@ lord_alliance = { #by Olrox17
 
 	society_rank = { #Lioncrown
 		level = 4
-		limit = 10
+		limit = 5
 		startup_limit = 3
 		modifier = {
 			diplomacy = 3
 			global_tax_modifier = 0.1
+			land_morale = 0.1
 		}
 		decisions = {
 			alliance_raise_troops
@@ -400,18 +411,18 @@ lord_alliance = { #by Olrox17
 			value = 3
 			trait = legendary_ranger
 		}
-		# has_trait = {
-			# value = 1
-			# trait = master_monk
-		# }
-		# has_trait = {
-			# value = 2
-			# trait = renowned_monk
-		# }
-		# has_trait = {
-			# value = 3
-			# trait = legendary_monk
-		# }
+		has_trait = {
+			value = 1
+			trait = master_monk
+		}
+		has_trait = {
+			value = 2
+			trait = renowned_monk
+		}
+		has_trait = {
+			value = 3
+			trait = legendary_monk
+		}
 	}
 
 	member_score_per_attribute = 2
@@ -422,6 +433,14 @@ lord_alliance = { #by Olrox17
 
 		modifier = {
 			trait = socializer
+			factor = 1.2
+		}
+		modifier = {
+			trait = strategist
+			factor = 1.1
+		}
+		modifier = {
+			trait = schemer
 			factor = 1.1
 		}
 		modifier = {
@@ -443,11 +462,19 @@ lord_alliance = { #by Olrox17
 			factor = 1.1
 		}
 		modifier = {
+			trait = charitable
+			factor = 1.1
+		}
+		modifier = {
 			trait = patient
 			factor = 1.1
 		}
 		modifier = {
 			trait = just
+			factor = 1.3
+		}
+		modifier = {
+			trait = honest
 			factor = 1.2
 		}
 		modifier = {
@@ -518,10 +545,10 @@ lord_alliance = { #by Olrox17
 			trait = renowned_ranger
 			factor = 1.1
 		}
-		# modifier = {
-			# trait = renowned_monk
-			# factor = 1.1
-		# }
+		modifier = {
+			trait = renowned_monk
+			factor = 1.1
+		}
 		# modifier = {
 			# trait = legendary_thief
 			# factor = 1.2
@@ -582,10 +609,10 @@ lord_alliance = { #by Olrox17
 			trait = legendary_ranger
 			factor = 1.2
 		}
-		# modifier = {
-			# trait = legendary_monk
-			# factor = 1.2
-		# }
+		modifier = {
+			trait = legendary_monk
+			factor = 1.2
+		}
 	}
 	startup_populate = {
 		trigger = {
@@ -596,17 +623,28 @@ lord_alliance = { #by Olrox17
 			NOR = {
 				is_nomadic = yes
 				is_tribal = yes
+				has_character_modifier = undead_realm_lord
 			}
 			primary_title = {
-				region = northwest_faerun_region
+				OR = {
+					region = northwest_faerun_region
+					region = southern_heartlands_region
+				}
 			}
 			capital_scope = {
-				region = northwest_faerun_region
+				OR = {
+					region = northwest_faerun_region
+					region = southern_heartlands_region
+				}
 			}
 			OR = {
 				religion_group = good_human_pantheon_group
 				religion_group = elven_pantheon_group
-				religion_group = dwarven_pantheon_group
+				religion = dwarven_pantheon
+				religion = gnome_pantheon
+				religion = martial_faith
+				religion = bahamut
+				trait = patron_bahamut
 			}
 			ai = yes
 			is_in_society = no
@@ -614,6 +652,7 @@ lord_alliance = { #by Olrox17
 				mercenary = yes
 				holy_order = yes
 				culture = monster
+				is_undead = yes
 			}
 		}
 	}

@@ -15,7 +15,7 @@ b_anarath = tribal
 #b_jercan = castle
 
 # Misc
-culture = monster
-religion = monster_pantheon
+culture = ice_hunter
+religion = ulutiuan
 terrain = glacier
 #History

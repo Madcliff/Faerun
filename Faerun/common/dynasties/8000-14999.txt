@@ -34,7 +34,6 @@
 8032 = { name = "of Laothkund" culture = aglarondan }
 8033 = { name = "Darkspark" culture = shield_dwarf }
 
-
 8101 = { name = "Sheirtalari" culture = tashalan used_for_random = no }
 8102 = { name = "Alanasker" culture = tashalan used_for_random = no }
 8103 = { name = "Redbeard" culture = ffolk }
@@ -292,7 +291,7 @@
 9107 = { name = "al-Afyid" culture = hadhar }
 9108 = { name = "Sumika" culture = hadhar }
 9109 = { name = "al-Nasri" culture = hadhar }
-9110 = { name = "al-Nimar" culture = hadhar }
+9110 = { name = "al-Nimar" culture = hadhar used_for_random = no }
 9111 = { name = "al-Rashad" culture = hadhar }
 9112 = { name = "al-Zahab" culture = hadhar }
 9113 = { name = "al-Raqi" culture = hadhar }
@@ -364,7 +363,7 @@
 9179 = { name = "al-Iffa" culture = hadhar }
 9180 = { name = "Jardi" culture = hadhar }
 9181 = { name = "Samina" culture = hadhar }
-9182 = { name = "al-Dhi'b" culture = hadhar }
+9182 = { name = "al-Dhi'b" culture = badia }
 9183 = { name = "Jalin" culture = hadhar }
 9184 = { name = "Hayal" culture = hadhar }
 9185 = { name = "al-Jawwaf" culture = hadhar }
@@ -382,10 +381,25 @@
 9197 = { name = "Abd al-Dawwar" culture = hadhar }
 9198 = { name = "Minial" culture = hadhar }
 9199 = { name = "al-Gammam" culture = hadhar }
-9200 = { name = "al-Assad" culture = hadhar }
+9200 = { name = "al-Assad" culture = hadhar used_for_random = no }
 9201 = { name = "al-Kushya" culture = hadhar }
-9202 = { name = "al-Zahir" culture = hadhar }
-
+9202 = { name = "al-Zahir" culture = hadhar used_for_random = no }
+9203 = { name = "al-Malfi" culture = hadhar }
+9204 = { name = "al-Wadi" culture = hadhar }
+9205 = { name = "al-Zalim" culture = hadhar }
+9206 = { name = "al-Azim" culture = hadhar }
+9207 = { name = "al-Gatil" culture = hadhar }
+9208 = { name = "al-Hiyali" culture = hadhar } # also exists in Badia
+9209 = { name = "al-Wahli" culture = hadhar }
+9210 = { name = "al-Raqqas" culture = hadhar } # also exists in Qarsan
+9211 = { name = "al-Yuhami" culture = hadhar }
+9212 = { name = "al-Farhan" culture = hadhar }
+9213 = { name = "al-Munsif" culture = hadhar }
+9214 = { name = "al-Sahnan" culture = hadhar }
+9215 = { name = "al-Mahabbi" culture = hadhar }
+9216 = { name = "al-Sadid" culture = hadhar }
+9217 = { name = "al-Fujegati" culture = hadhar }
+9218 = { name = "al-Banu" culture = hadhar }
 
 9220 = { name = "al-Hilmi" culture = qarsan }
 9221 = { name = "al-Wasat" culture = qarsan }
@@ -440,7 +454,7 @@
 9270 = { name = "al-Kamali" culture = qarsan }
 9271 = { name = "el-Shahin" culture = qarsan }
 9272 = { name = "al-Pasha" culture = qarsan }
-
+9273 = { name = "al-Hitani" culture = qarsan }
 
 9280 = { name = "Kaldur" culture = badia }
 9281 = { name = "al-Kalaas" culture = badia }
@@ -477,9 +491,9 @@
 9312 = { name = "al-Nassar" culture = badia }
 9313 = { name = "al-Jasmini" culture = badia }
 9314 = { name = "Minora" culture = badia }
-9315 = { name = "Nasr" culture = badia }
+9315 = { name = "al-Nasr" culture = badia } # Yes we have this one in Qarsan too
 9316 = { name = "al-Bazan" culture = badia }
-9317 = { name = "al-Yindannim" culture = badia }
+9317 = { name = "al-Yindannim" culture = hadhar }
 9318 = { name = "Sakir" culture = badia }
 9319 = { name = "al-Muqi" culture = badia }
 9320 = { name = "al-Arus" culture = badia }
@@ -539,7 +553,28 @@
 9375 = { name = "bin Sahad" culture = hadhar }
 9376 = { name = "Abd al-Wajid" culture = hadhar }
 9377 = { name = "Abd al-Himaya" culture = hadhar }
-
+9378 = { name = "al-Asad" culture = badia }
+9379 = { name = "al-Jamal" culture = badia }
+9380 = { name = "al-Bakr" culture = badia }
+9381 = { name = "al-Dubb" culture = badia }
+9382 = { name = "al-Sihr" culture = jann }
+9383 = { name = "ibn Sabur" culture = noga }
+9384 = { name = "al-Tayif" culture = badia }
+9385 = { name = "al-Thawr" culture = badia }
+9386 = { name = "al-Ta'ami" culture = badia }
+9387 = { name = "al-Uqab" culture = badia }
+9388 = { name = "al-Jinn" culture = jann }
+9389 = { name = "al-Shazzi" culture = fabada }
+9390 = { name = "al-Waughiwan" culture = fabada }
+9391 = { name = "al-Zab" culture = fabada }
+9392 = { name = "al-Fajirik" culture = badia }
+9393 = { name = "al-Ashurim" culture = badia }
+9394 = { name = "al-Qirs" culture = qarsan }
+9395 = { name = "al-Wahsi" culture = hadhar }
+9396 = { name = "bin Hanif" culture = badia used_for_random = no }
+9397 = { name = "al-Tahami" culture = badia }
+9398 = { name = "al-Aibi" culture = badia }
+9399 = { name = "al-Tair" culture = badia }
 
 9401 = { name = "t'Araugul" culture = goblin }
 9402 = { name = "Merrowdrinker" culture = hobgoblin }
@@ -930,7 +965,9 @@
 10020 = { name = "Rottar" culture = netherese }
 10021 = { name = "Mievarian" culture = netherese }
 10022 = { name = "Shadowsworn" culture = shadovar used_for_random = no }
-
+10023 = { name = "Tanthul" culture = shadovar used_for_random = no }
+10024 = { name = "Satami" culture = durpari }
+10025 = { name = "Waileen" culture = durpari }
 
 12001 = { name = "Rupta" culture = durpari }
 12002 = { name = "Mavaleen" culture = durpari }
@@ -969,6 +1006,27 @@
 12035 = { name = "Devayam" culture = durpari used_for_random = no }
 12036 = { name = "Bloodhorn" culture = minotaur }
 12037 = { name = "Blackcloak" culture = imaskari used_for_random = no }
+12038 = { name = "Mahanesh" culture = durpari }
+12039 = { name = "Braer" culture = sea_elf }
+12040 = { name = "Mandhana Ghatori" culture = durpari }
+12041 = { name = "Yardhambar Seltarir" culture = durpari }
+12042 = { name = "Jhajharia" culture = durpari }
+12043 = { name = "Marguerin" culture = dalesman }
+12044 = { name = "Wyndrey" culture = dalesman }
+12045 = { name = "Jalmaes" culture = dalesman }
+12046 = { name = "of Sessrendale" culture = dalesman used_for_random = no }
+12047 = { name = "Longstrider" culture = dalesman }
+12048 = { name = "Vantassian" culture = thayan }
+12049 = { name = "Pixieblood" culture = dalesman }
+12050 = { name = "Shadowthrone" culture = dalesman }
+12051 = { name = "Embrasus" culture = sembite }
+12052 = { name = "Fevoros" culture = sembite }
+12053 = { name = "Ulphor" culture = dalesman }
+12054 = { name = "Qo" culture = akotan }
+12055 = { name = "Kolamilope" culture = akotan }
+12056 = { name = "Adebowalan" culture = akotan }
+12057 = { name = "Mo'oshalew" culture = akotan }
+12058 = { name = "Olengode" culture = akotan }
 
 
 12501 = { name = "Issacortae" culture = amaese used_for_random = no }
@@ -1059,6 +1117,7 @@
 12848 = { name = "Vorganundan" culture = tanarri }
 12849 = { name = "Darklight" culture = tanarri }
 12850 = { name = "Smaragdan" culture = tanarri }
+12851 = { name = "of Cania" culture = baatezu used_for_random = no }
 
 
 13001 = { name = "of Ooltul" culture = beholder used_for_random = no }
@@ -1067,7 +1126,7 @@
 13004 = { name = "Xaxixx" culture = beholder }
 13005 = { name = "of Olomaa" culture = beholder }
 13006 = { name = "Alimir" culture = beholder }
-13007 = { name = "Deepspanwer" culture = beholder used_for_random = no }
+13007 = { name = "Deepspawner" culture = beholder used_for_random = no }
 13008 = { name = "of the Dying Gaze" culture = beholder used_for_random = no }
 13009 = { name = "of Thorns" culture = beholder }
 
@@ -1250,6 +1309,25 @@
 13376 = { name = "Lymleba" culture = planar }
 13377 = { name = "Homryathu" culture = planar }
 13378 = { name = "Survahum" culture = planar }
-13379 = { name = "Vusun" culture = planar }
+13379 = { name = "Vusu1n" culture = planar }
 13380 = { name = "Khamor" culture = planar }
 13381 = { name = "Alavara" culture = draconic }
+13382 = { name = "al-Abdi" culture = naga used_for_random = no }
+13383 = { name = "Ysawisi" culture = naga used_for_random = no }
+13384 = { name = "al-Maztiki" culture = nexalan used_for_random = no }
+13385 = { name = "al-Sabiyi" culture = jaziran }
+13386 = { name = "al-Regdasaidi" culture = jaziran }
+13387 = { name = "al-Gaib" culture = affa } # Also exists in Badia
+13388 = { name = "al-Afyali" culture = affa }
+13389 = { name = "al-Kasali" culture = affa }
+13390 = { name = "abd-al-Fil" culture = affa }
+13391 = { name = "al-Dihlizi" culture = noga }
+13392 = { name = "abu Nari" culture = noga }
+13393 = { name = "ibn Alon" culture = affa used_for_random = no }
+13394 = { name = "al-Sa'id" culture = noga }
+13395 = { name = "al-Meisal" culture = jann }
+13396 = { name = "al-Saqr" culture = centaur used_for_random = no }
+13397 = { name = "as-Sokkari" culture = noga used_for_random = no }
+13398 = { name = "al-Khawati" culture = centaur used_for_random = no }
+13399 = { name = "al-Imlaq" culture = desert_giant }
+13400 = { name = "al-Mugriq" culture = sahuagin }

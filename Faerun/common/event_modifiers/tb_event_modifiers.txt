@@ -6,57 +6,6 @@ feywild_modifier = {
 	max_attrition = 1.2
 }
 
-wiz_spellpoint_mod = {
-	icon = 79
-}
-
-#These wiz_school mods are hidden because it *shouldn't* matter as the class loc will change.
-wiz_abjuration = {
-	is_visible = {
-		always = no
-	}
-}
-wiz_transmutation = {
-	is_visible = {
-		always = no
-	}
-}
-wiz_conjuration = {
-	is_visible = {
-		always = no
-	}
-}
-wiz_divination = {
-	is_visible = {
-		always = no
-	}
-}
-wiz_enchantment = {
-	is_visible = {
-		always = no
-	}
-}
-wiz_evocation = {
-	is_visible = {
-		always = no
-	}
-}
-wiz_illusion = {
-	is_visible = {
-		always = no
-	}
-}
-wiz_necromancy = {
-	is_visible = {
-		always = no
-	}
-}
-wiz_wild = {
-	is_visible = {
-		always = no
-	}
-}
-
 undead_province = {
 	icon = 42
 	max_attrition = 0.1
@@ -64,6 +13,115 @@ undead_province = {
 
 undead_realm_lord = {
 	icon = 42
-	ai_ambition = 30
-	ai_honor = -30
+	#ai_ambition = 30
+	#ai_honor = -30
+	retinuesize = 100
+	retinuesize_perc = 1
+}
+
+fighter_combat5 = {
+	icon = 1
+	combat_rating = 5
+}
+
+fighter_combat10 = {
+	icon = 1
+	combat_rating = 10
+}
+
+fighter_martial1 = {
+	icon = 1
+	martial = 1
+}
+
+fighter_health1 = {
+	icon = 1
+	health = 1
+}
+
+fighter_combatdown5 = {
+	icon = 19
+	combat_rating = -5
+}
+
+fighter_health2 = {
+	icon = 1
+	health = 2
+}
+
+uthgardt_bad_tribe = {
+	icon = 26
+	uthgardt_faith_opinion = -70
+	monthly_character_piety = -1
+}
+
+emulate_black_lion = {
+	icon = 8
+	add_prestige_modifier = 0.05
+}
+
+emulate_black_raven = {
+	icon = 8
+	intrigue = 1
+}
+
+emulate_blue_bear = {
+	icon = 8
+	combat_rating = 5
+}
+
+emulate_elk = {
+	icon = 8
+	general_opinion = 10
+}
+
+emulate_gray_wolf = {
+	icon = 8
+	martial = 1
+}
+
+emulate_great_worm = {
+	icon = 8
+	stewardship = 1
+}
+
+emulate_griffon = {
+	icon = 8
+	attrition = -0.05
+}
+
+emulate_red_tiger = {
+	icon = 8
+	land_morale = 0.05
+}
+
+emulate_sky_pony = {
+	icon = 8
+	diplomacy = 1
+}
+
+emulate_thunderbeast = {
+	icon = 8
+	health = 1
+}
+
+emulate_tree_ghost = {
+	icon = 8
+	learning = 1
+}
+
+uthgardt_magician = {
+	icon = 26
+	uthgardt_faith_opinion = -30
+	monthly_character_piety = -0.5
+}
+
+runemeet_socialized = {
+	icon = 3
+	uthgardt_faith_opinion = 15
+}
+
+runemeet_socialized_failed = {
+	icon = 21
+	uthgardt_faith_opinion = -15
 }

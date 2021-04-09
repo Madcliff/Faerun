@@ -1,0 +1,194 @@
+namespace = asmodeusmaint
+
+character_event = {
+	id = asmodeusmaint.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = { 
+		is_save_game = no
+		is_alternate_start = no
+		society_member_of = the_satanists
+		NOT = { religion = infernal }
+	}
+
+	immediate = { 
+		set_secret_religion = infernal
+	}
+}
+
+character_event = {
+	id = asmodeusmaint.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = { 
+		is_save_game = no
+		is_alternate_start = no
+		is_ruler = yes
+		has_dlc = "Mystics"        
+        OR = {
+		religion = infernal
+		secret_religion = infernal        
+        }
+		NOT = {
+			has_game_rule = {
+				name = devil_worshipers
+				value = none
+			}
+		}
+		NOT = {
+			has_game_rule = {
+				name = secret_cults
+				value = none
+			}
+		}        
+	}
+
+	immediate = { 
+		join_society = the_satanists
+	}
+}
+
+character_event = {
+	id = asmodeusmaint.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			mother = { 
+				OR = { 
+					trait = infernal_beauty 
+					trait = infernal_wit 
+					trait = infernal_strength 
+					trait = infernal_contractee 
+				}
+				dynasty = ROOT
+			}
+			true_father = { 
+				OR = { 
+                    trait = infernal_beauty 
+                    trait = infernal_wit 
+					trait = infernal_strength 
+					trait = infernal_contractee 
+				}
+                dynasty = ROOT
+			}
+		}
+		NOT = { trait = bastard }
+	}
+
+	immediate = { 
+		if = {
+			limit = {
+				mother = { 
+                    trait = infernal_beauty
+                    dynasty = ROOT  
+                }
+			}
+			add_trait = infernal_beauty
+			add_trait = beautiful
+			break = yes
+		}
+		else_if = {
+			limit = {
+				mother = { 
+                    trait = infernal_wit
+                    dynasty = ROOT  
+                }
+			}
+			add_trait = infernal_wit
+			add_trait = genius
+			break = yes
+		}
+		else_if = {
+			limit = {
+				mother = { 
+                    trait = infernal_strength
+                    dynasty = ROOT  
+                }
+			}
+			add_trait = infernal_strength
+			add_trait = strong
+			break = yes
+		}		
+		else_if = {
+			limit = {
+				mother = { 
+                    trait = infernal_contractee
+                    dynasty = ROOT  
+                }
+			}
+			add_trait = infernal_contractee
+			break = yes
+		}
+		else_if = {
+			limit = {
+				true_father = { 
+                    trait = infernal_beauty
+                    dynasty = ROOT  
+                }
+			}
+			add_trait = infernal_beauty 
+			add_trait = beautiful
+			break = yes
+		}
+		else_if = {
+			limit = {
+				true_father = { 
+                    trait = infernal_wit
+                    dynasty = ROOT  
+                }
+			}
+			add_trait = infernal_wit
+			add_trait = genius
+			break = yes
+		}
+		else_if = {
+			limit = {
+				true_father = { 
+                    trait = infernal_strength
+                    dynasty = ROOT  
+                }
+			}
+			add_trait = infernal_strength
+			add_trait = strong
+			break = yes
+		}
+		else_if = {
+			limit = {
+				true_father = { 
+                    trait = infernal_contractee
+                    dynasty = ROOT  
+                }
+			}
+			add_trait = infernal_contractee
+			break = yes
+		}
+	}
+}
+
+character_event = {
+	id = asmodeusmaint.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+        ai = yes
+        primary_title = {
+        higher_tier_than = COUNT
+        }
+		OR = {
+		trait = infernal_beauty 
+		trait = infernal_wit 
+		trait = infernal_strength 
+		trait = infernal_contractee 
+		}
+		NOT = { society_member_of = the_satanists }
+	}
+
+	immediate = { 
+		character_event = { id = MNM.7000 days = 3 }
+	}
+}

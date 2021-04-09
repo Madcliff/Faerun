@@ -1,0 +1,13 @@
+# County Title
+title = c_netheril_river
+
+# Settlements
+max_settlements = 3
+
+b_aerithaes_rest = castle
+
+# Misc
+culture = drow
+religion = kiaransalee
+
+#History

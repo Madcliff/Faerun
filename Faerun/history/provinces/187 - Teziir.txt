@@ -15,8 +15,8 @@ b_teziir = city
 #b_algescas = castle
 
 # Misc
-culture = heartlander
-religion = good_human_pantheon
+culture = draeven
+religion = triadic
 
 #History
 530.1.1 = {
@@ -25,8 +25,8 @@ religion = good_human_pantheon
 	b_teziir = tribal
 }
 1312.1.1 = {
-	culture = heartlander
-	religion = good_human_pantheon
+	culture = draeven
+	religion = joyful
 	b_teziir = city
 	b_daragang = castle
 }

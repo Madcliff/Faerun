@@ -3,14 +3,14 @@
 #5 High Captains of Luskan, and their families
 
 13001 = {
-	name = Baram 
+	name = Baram
 	dynasty = 1505 # Baram
 	culture = nelanthern
 	religion = deities_of_fury
 	martial = 9
-	diplomacy = 5 
-	learning = 3 
-	intrigue = 7 
+	diplomacy = 5
+	learning = 3
+	intrigue = 7
 	stewardship = 6
 	trait = creature_human
 	trait = fortune_builder
@@ -29,7 +29,7 @@
 }
 
 13002 = {
-	name = Kurth 
+	name = Kurth
 	dynasty = 1506
 	culture = nelanthern
 	religion = deities_of_fury
@@ -44,24 +44,22 @@
 	trait = greedy
 	trait = expert_rogue
 	1280.1.1 = { birth = yes }
-	1281.1.1 = {
-		employer = 13001
-	}
 	1310.1.1= {
 		effect = { set_character_flag = local_court }
+		employer = 13001
 	}
 	1372.1.1 = { death = { death_reason = death_duel killer = 15105 } } # Possibly killed by the Hero of Neverwinter
 }
 
 #son of the republic ruler, just so he has at least 1
 13003 = {
-	name = Alan 
+	name = Alan
 	dynasty = 1505
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	martial = 6
 	diplomacy = 3
-	learning = 5 
+	learning = 5
 	intrigue = 5
 	stewardship = 4
 	father = 13001
@@ -71,14 +69,14 @@
 }
 
 13004 = {
-	name = Rethnor 
+	name = Rethnor
 	dynasty = 1507
 	culture = illuskan
 	religion = deities_of_fury
 	martial = 5
 	diplomacy = 5
-	learning = 3 
-	intrigue = 9 
+	learning = 3
+	intrigue = 9
 	stewardship = 8
 	trait = creature_human
 	trait = fortune_builder
@@ -86,23 +84,21 @@
 	trait = quick
 	trait = expert_rogue
 	1280.1.1 = { birth = yes }
-	1281.1.1 = {
-		employer = 13001
-	}
 	1310.1.1= {
 		effect = { set_character_flag = local_court }
+		employer = 13001
 	}
 	1377.5.1 = { death = yes }
 }
 
 13005 = {
-	name = Suljack 
+	name = Suljack
 	dynasty = 1508
 	culture = nelanthern
 	religion = deities_of_fury
 	martial = 5
 	diplomacy = 8
-	learning = 5 
+	learning = 5
 	intrigue = 8
 	stewardship = 9
 	trait = creature_human
@@ -112,24 +108,22 @@
 	trait = strong
 	trait = expert_rogue
 	1280.1.1 = { birth = yes }
-	1281.1.1 = {
-		employer = 13001
-	}
 	1310.1.1= {
 		effect = { set_character_flag = local_court }
+		employer = 13001
 	}
 	1376.1.1 = { death = yes }
 }
 
 13006 = {
-	name = Taerl 
+	name = Taerl
 	dynasty = 1509
 	culture = nelanthern
 	religion = deities_of_fury
 	martial = 5
 	diplomacy = 8
-	learning = 5 
-	intrigue = 9 
+	learning = 5
+	intrigue = 9
 	stewardship = 7
 	trait = creature_human
 	trait = fortune_builder
@@ -138,11 +132,9 @@
 	trait = just
 	trait = expert_rogue
 	1280.1.1 = { birth = yes }
-	1281.1.1 = {
-		employer = 13001
-	}
 	1310.1.1= {
 		effect = { set_character_flag = local_court }
+		employer = 13001
 	}
 	1376.1.1 = { death = yes }
 }
@@ -151,7 +143,8 @@
 	name = "Arklem"
 	dynasty = 276 # Greeth
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
+	martial = 10
 	intrigue = 8
 	learning = 9
 	trait = creature_human
@@ -161,14 +154,9 @@
 	trait = legendary_wizard
 	1205.7.4 = { birth = yes }
 	1221.7.4 = {
-		effect = {
-			add_character_modifier = {
-				name = wiz_necromancy
-				duration = -1
-			}
-		}
+		add_trait = wiz_necromancy
 	}
-	1275.12.13 = {
+	1311.12.13 = {
 		trait = lich
 		effect = {
 			join_society = arcane_brotherhood
@@ -176,16 +164,13 @@
 			set_graphical_culture = lich
 		}
 	}
-	1340.1.1 = {
-		employer = 13001 # Baram Baram / c_luskan
-	}
 	2205.1.1 = { death = yes }
 }
 13008 = {
 	name = "Olmonar"
 	dynasty = 1525 # Highstaff
 	culture = illuskan
-	religion = netherese_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	trait = expert_wizard
 	1.1.1 = { birth = yes }
@@ -195,7 +180,7 @@
 	name = "Knurus"
 	dynasty = 1526 # Spellhand
 	culture = illuskan
-	religion = netherese_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	trait = expert_wizard
 	20.1.1 = { birth = yes }
@@ -205,7 +190,7 @@
 	name = "Stefan"
 	dynasty = 1527 # Blackspear
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	60.1.1 = { birth = yes }
 	130.1.1 = { death = yes }
@@ -214,7 +199,7 @@
 	name = "Narandos"
 	dynasty = 1527 # Blackspear
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 13010
 	105.1.1 = { birth = yes }
@@ -226,7 +211,7 @@
 	name = "Taman"
 	dynasty = 1528 # Steeldrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	170.1.1 = { birth = yes }
 	250.1.1 = { death = yes }
@@ -236,7 +221,7 @@
 	female = yes
 	dynasty = 1528 # Steeldrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 13012
 	220.1.1 = { birth = yes }
@@ -246,7 +231,7 @@
 	name = "Vadum"
 	dynasty = 1528 # Steeldrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 13013
 	270.1.1 = { birth = yes }
@@ -256,7 +241,7 @@
 	name = "Tiozar"
 	dynasty = 1528 # Steeldrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 13014 # Vadum
 	320.1.1 = { birth = yes }
@@ -266,7 +251,7 @@
 	name = "Gretic"
 	dynasty = 1528 # Steeldrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 13015
 	370.1.1 = { birth = yes }
@@ -276,7 +261,7 @@
 	name = "Egazius"
 	dynasty = 1528 # Steeldrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 13016
 	420.1.1 = { birth = yes }
@@ -287,7 +272,7 @@
 	female = yes
 	dynasty = 1528 # Steeldrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 13017
 	480.1.1 = { birth = yes }
@@ -297,7 +282,7 @@
 	name = "Kilak"
 	dynasty = 1528 # Steeldrake
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 13018
 	540.1.1 = { birth = yes }
@@ -307,7 +292,7 @@
 	name = "Daragos"
 	dynasty = 1529 # Wolfstar
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	815.1.1 = { birth = yes }
 	900.1.1 = { death = yes }
@@ -316,7 +301,7 @@
 	name = "Pragan"
 	dynasty = 1529 # Wolfstar
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 13020
 	880.1.1 = { birth = yes }
@@ -326,7 +311,7 @@
 	name = "Bredum"
 	dynasty = 1529 # Wolfstar
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 13021
 	940.1.1 = { birth = yes }
@@ -336,7 +321,7 @@
 	name = "Galnorn"
 	dynasty = 1529 # Wolfstar
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 13022
 	980.1.1 = { birth = yes }
@@ -348,7 +333,7 @@
 	name = "Corigan"
 	dynasty = 1530 # Aveldon
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = longevity
 	820.1.1 = { birth = yes }
@@ -360,7 +345,7 @@
 	female = yes
 	dynasty = 1530 # Aveldon
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 13024
 	1080.1.1 = { birth = yes }
@@ -370,7 +355,7 @@
 	name = "Trebbe"
 	dynasty = 1530 # Aveldon
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	mother = 13025
 	1130.1.1 = { birth = yes }
@@ -380,7 +365,7 @@
 	name = "Kozius"
 	dynasty = 1530 # Aveldon
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 13026
 	1180.1.1 = { birth = yes }
@@ -392,7 +377,7 @@
 	name = "Geth"
 	dynasty = 1531 # Northwind
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	1275.1.1 = { birth = yes }
 	1310.1.1 = {
@@ -403,7 +388,7 @@
 	name = "Jon"
 	dynasty = 1532 # Snowface
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = joyful
 	trait = creature_human
 	1280.1.1 = { birth = yes }
 	1358.1.1 = { death = yes }
@@ -412,7 +397,7 @@
 	name = "Rynn"
 	dynasty = 1542 # Shepherde
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	trait = trained_fighter
 	1340.1.1 = { birth = yes }
@@ -427,9 +412,15 @@
 	religion = illithid_pantheon
 	trait = creature_illithid
 	trait = journeyman_sorcerer
+	trait = origin_aberrant_mind
 	trait = absent
 	580.1.1 = {
 		birth = yes
+	}
+	590.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
 	}
 	611.1.1 = {
 		remove_trait = absent
@@ -442,7 +433,7 @@
 	name = "Indarin"
 	dynasty = 163 # Entaron
 	culture = lich
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	trait = lich
 	trait = renowned_wizard
@@ -453,12 +444,7 @@
 		effect = { set_character_flag = undead_court }
 	}
 	46.1.1 = {
-		effect = {
-			add_character_modifier = {
-				name = wiz_necromancy
-				duration = -1
-			}
-		}
+		add_trait = wiz_necromancy
 	}
 	60.1.1 = {
 		immortal_age = 30
@@ -474,7 +460,7 @@
 	name = "Deudermont"
 	dynasty = 163 # Seafarer
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	trait = trained_fighter
 	trait = just
@@ -489,7 +475,7 @@
 	name = "Kensidan"
 	dynasty = 1507 # Rethnor
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	trait = deceitful
 	trait = trained_rogue
@@ -507,7 +493,7 @@
 	name = "Kalgor"
 	dynasty = 165 # Riveraxe
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	1350.1.1 = {
 		birth = yes
@@ -521,7 +507,7 @@
 	female = yes
 	dynasty = 166 # Nordrak
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	1370.1.1 = {
 		birth = yes
@@ -534,7 +520,7 @@
 	name = "Kalan"
 	dynasty = 167 # Farrag
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	1380.1.1 = {
 		birth = yes
@@ -564,7 +550,7 @@
 	female = yes
 	dynasty = 169 # Saltsight
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	1390.1.1 = {
 		birth = yes
@@ -577,7 +563,7 @@
 	name = "Pedlek"
 	dynasty = 170 # Drabforge
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	1400.1.1 = {
 		birth = yes
@@ -586,11 +572,11 @@
 		death = yes
 	}
 }
-13041 = { 
+13041 = {
 	name = "Draven"
 	dynasty = 171 # Ilgar
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	1410.1.1 = {
 		birth = yes
@@ -616,7 +602,7 @@
 	name = "Lorn"
 	dynasty = 173 # Grandan
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	1420.1.1 = {
 		birth = yes
@@ -629,7 +615,7 @@
 	name = "Kennic"
 	dynasty = 1506 # Kurth
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	father = 13002
 	1340.1.1 = {
@@ -644,7 +630,7 @@
 	female = yes
 	dynasty = 174 # Longroad
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	1430.1.1 = {
 		birth = yes
@@ -657,7 +643,7 @@
 	name = "Garr"
 	dynasty = 175 # Shieldcleft
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	1440.1.1 = {
 		birth = yes
@@ -670,7 +656,7 @@
 	name = "Beniago"
 	dynasty = 1506 # Kurth
 	culture = moon_elf # Drow in magical disguise
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_half_elf
 	trait = journeyman_shadow
 	trait = deceitful
@@ -694,7 +680,7 @@
 	female = yes
 	dynasty = 1505 # Baram
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	1450.1.1 = {
 		birth = yes
@@ -707,7 +693,7 @@
 	name = "Dagmaer"
 	dynasty = 1508 # Suljack
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	1448.1.1 = {
 		birth = yes
@@ -721,7 +707,7 @@
 	female = yes
 	dynasty = 1509 # Taerl
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	1451.1.1 = {
 		birth = yes
@@ -734,7 +720,7 @@
 	name = "Hartouchen"
 	dynasty = 1507 # Rethnor
 	culture = illuskan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	trait = creature_human
 	1450.1.1 = {
 		birth = yes
@@ -807,7 +793,7 @@
 	name = "Soronil"
 	dynasty = 177 # Moonshadow
 	culture = moon_elf # Drow in disguise
-	religion = good_human_pantheon
+	religion = inventive
 	learning = 9
 	trait = creature_elf
 	trait = journeyman_wizard
@@ -827,8 +813,7 @@
 		name = "Dalanir"
 		dynasty = 178 # Ch'fyr
 		culture = drow
-		religion = drow_polytheism
-		add_trait = patron_eilistraee
+		religion = eilistraee
 		effect = { set_graphical_culture = drow }
 	}
 	1500.1.1 = {
@@ -839,7 +824,7 @@
 	name = "Hommet"
 	dynasty = 179 # Shaw (Actually a Harpell, link to them later)
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = arcane
 	learning = 8
 	trait = creature_human
 	trait = trained_wizard
@@ -928,7 +913,7 @@
 	name = "Javen"
 	dynasty = 183 # Tamikos
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	martial = 8
 	learning = 7
 	trait = creature_human
@@ -952,7 +937,7 @@
 	female = yes
 	dynasty = 184 # Krog
 	culture = troll
-	religion = abyssal_cult
+	religion = vaprak
 	trait = creature_troll
 	180.1.1 = {
 		birth = yes
@@ -1076,7 +1061,7 @@
 	name = "Gunther"
 	dynasty = 185 # Langren
 	culture = illuskan
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	1290.1.1 = {
 		birth = yes
@@ -1089,12 +1074,12 @@
 	name = "Monric"
 	dynasty = 186 # Dell
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	1390.1.1 = {
 		birth = yes
 	}
-	1520.1.1 = {
+	1460.1.1 = {
 		death = yes
 	}
 }
@@ -1103,7 +1088,7 @@
 	female = yes
 	dynasty = 187 # Karishka
 	culture = strixiki
-	religion = good_human_pantheon # Probably swap this for a proper religion later
+	religion = arcane
 	trait = creature_dragonborn
 	trait = greedy
 	trait = fortune_builder
@@ -1137,7 +1122,7 @@
 	name = "Zalaron"
 	dynasty = 189 # Daska
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = trained_fighter
 	1438.1.1 = {
@@ -1148,6 +1133,371 @@
 		give_job_title = job_treasurer
 	}
 	1500.1.1 = {
+		death = yes
+	}
+}
+
+13075 = {
+	name = "Jaluth"
+	female = yes
+	dynasty = 6251 # Alaerth
+	culture = illuskan
+	religion = shadow_gods
+	intrigue = 7
+	learning = 7
+	trait = creature_human
+	trait = mastermind_theologian
+	trait = cruel
+	trait = wroth
+	trait = arbitrary
+	trait = master_wizard
+	1330.1.1 = { birth = yes }
+
+	1350.1.1 = {
+		effect = {
+			join_society = arcane_brotherhood
+		}
+	}
+	1357.1.1 = {
+		employer = 13007 # Arklem
+	}
+	1372.1.1 = {
+		employer = 41031 # Cassius of Luskan
+	}
+	1400.1.1 = { death = yes }
+}
+
+13076 = {
+	name = "Ornar"
+	dynasty = 6252 #of the claws
+	culture = illuskan
+	religion = shadow_gods
+	intrigue = 7
+	learning = 7
+	trait = creature_human
+	trait = mastermind_theologian
+	trait = cruel
+	trait = gregarious
+	trait = arbitrary
+	trait = renowned_wizard
+	1325.1.1 = { birth = yes }
+
+	1350.1.1 = {
+		effect = {
+			join_society = arcane_brotherhood
+		}
+	}
+	1357.1.1 = {
+		employer = 13007 # Arklem
+	}
+	1372.1.1 = {
+		employer = 41144 # Orel Skyshear
+	}
+	1400.1.1 = { death = yes }
+}
+
+13077 = {
+	name = "Deltagar"
+	dynasty = 6253 # Zelhund
+	culture = illuskan
+	religion = abyssal_cult
+	intrigue = 7
+	learning = 7
+	trait = creature_human
+	trait = mastermind_theologian
+	trait = cruel
+	trait = just
+	trait = renowned_wizard
+	1323.1.1 = { birth = yes }
+
+	1350.1.1 = {
+		effect = {
+			join_society = arcane_brotherhood
+		}
+	}
+	1357.1.1 = {
+		employer = 13007 # Arklem
+	}
+	1372.1.1 = {
+		employer = 49002 # Dediana Extaminos
+	}
+	1400.1.1 = { death = yes }
+}
+
+13078 = {
+	name = "Eltuth"
+	dynasty = 6254 # Oyim
+	culture = illuskan
+	religion = shadow_gods
+	trait = creature_human
+	trait = scholarly_theologian
+	trait = expert_wizard
+	1335.1.1 = { birth = yes }
+
+	1350.1.1 = {
+		effect = {
+			join_society = arcane_brotherhood
+		}
+	}
+	1357.1.1 = {
+		employer = 13007 # Arklem
+	}
+	1372.1.1 = { death = yes }
+}
+
+13079 = {
+	name = "Nyphithys"
+	female = yes
+	culture = baatezu
+	religion = infernal
+	diplomacy = 7
+	trait = charismatic_negotiator
+	trait = creature_devil
+	trait = trained_sorcerer
+	trait = origin_shadow
+	trait = beautiful
+	trait = gregarious
+	trait = cruel
+	1.1.1 = {
+		birth = yes
+		effect = {
+			set_graphical_culture = succubus
+		}
+	}
+	11.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
+	31.1.1 = { immortal_age = 30 }
+	1371.1.1 = {
+		employer = 13007 # Arklem
+	}
+	1372.1.1 = {
+		effect = {
+			add_lover = 13007 # Arklem
+			join_society = arcane_brotherhood
+		}
+	}
+	1376.1.1 = { death = yes }
+}
+
+13080 = {
+	name = "Rimardo"
+	dynasty = 6532 # Domine
+	culture = turmic
+	religion = shadow_gods
+	trait = creature_human
+	trait = scholarly_theologian
+	trait = expert_wizard
+	trait = gregarious
+	trait = gluttonous
+	trait = just
+	trait = cruel
+	1336.1.1 = { birth = yes }
+
+	1350.1.1 = {
+		effect = {
+			join_society = arcane_brotherhood
+		}
+	}
+	1357.1.1 = {
+		employer = 13007 # Arklem
+	}
+	1401.1.1 = { death = yes }
+}
+
+13081 = {
+	name = "Arabeth"
+	female = yes
+	father = 41034
+	dynasty = 6214 # Raurym
+	culture = illuskan
+	religion = shadow_gods
+	intrigue = 8
+	trait = creature_human
+	trait = intricate_webweaver
+	trait = cruel
+	trait = deceitful
+	trait = arbitrary
+	trait = journeyman_sorcerer
+	trait = origin_wild_magic
+	trait = rogue
+	1345.1.1 = { birth = yes }
+	1355.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
+	1363.1.1 = {
+		effect = {
+			join_society = arcane_brotherhood
+		}
+	}
+	1364.1.1 = {
+		employer = 13007 # Arklem
+	}
+	1414.1.1 = { death = yes }
+}
+
+13082 = {
+	name = "Blaskar"
+	dynasty = 2097 # Lauthom
+	culture = highcoaster
+	religion = shadow_gods
+	trait = creature_human
+	trait = scholarly_theologian
+	trait = expert_wizard
+	trait = cruel
+	trait = deceitful
+	trait = content
+	1327.1.1 = { birth = yes }
+
+	1359.1.1 = {
+		effect = {
+			join_society = arcane_brotherhood
+		}
+	}
+	1360.1.1 = {
+		employer = 13007 # Arklem
+	}
+	1400.1.1 = { death = yes }
+}
+13083 = {
+	name = "Cashaan"
+	dynasty = 356 # Danglor
+	culture = illuskan
+	religion = shadow_gods
+	intrigue = 8
+	learning = 10
+	trait = creature_human
+	trait = proud
+	trait = legendary_wizard
+	trait = longevity
+	trait = mastermind_theologian
+	trait = cruel
+	trait = ambitious
+	1360.1.1 = {
+		birth = yes
+	}
+	1390.1.1 = {
+		immortal_age = 30
+	}
+	1430.1.1 = {
+		give_nickname = nick_the_red
+	}
+	1480.1.1 = {
+		effect = {
+			join_society = arcane_brotherhood
+			set_society_grandmaster = yes
+		}
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+
+13084 = {
+	name = "Tristan"
+	dynasty = 685 # Auck
+	culture = illuskan
+	religion = mercantile
+	trait = creature_human
+	1320.1.1 = {
+		birth = yes
+	}
+	1368.1.1 = {
+		death = yes
+	}
+}
+13085 = {
+	name = "Feringal"
+	dynasty = 685 # Auck
+	culture = illuskan
+	religion = mercantile
+	trait = creature_human
+	trait = patron_helm
+	father = 13084
+	1354.1.1 = {
+		birth = yes
+	}
+	1369.1.1 = {
+		effect = { add_betrothal = 13087 }
+	}
+	1371.1.1 = {
+		add_spouse = 13087
+	}
+	1420.1.1 = {
+		death = yes
+	}
+}
+13086 = {
+	name = "Priscilla"
+	female = yes
+	dynasty = 685 # Auck
+	culture = illuskan
+	religion = mercantile
+	diplomacy = 6
+	trait = creature_human
+	trait = gardener
+	trait = ambitious
+	father = 13084
+	1350.1.1 = {
+		birth = yes
+	}
+	1368.1.1 = {
+		give_job_title = job_chancellor
+		effect = { add_lover = 13087 }
+	}
+	1420.1.1 = {
+		death = yes
+	}
+}
+13087 = {
+	name = "Meralda"
+	female = yes
+	dynasty = 686 # Ganderlay
+	culture = illuskan
+	religion = mercantile
+	trait = creature_human
+	1351.1.1 = {
+		birth = yes
+	}
+	1420.1.1 = {
+		death = yes
+	}
+}
+13088 = {
+	name = "Colson"
+	female = yes
+	dynasty = 6210
+	culture = illuskan
+	religion = martial_faith
+	trait = creature_human
+	trait = bastard
+	mother = 13087
+	father = 41027 # Not really, but he claimed paternity
+	1369.1.1 = {
+		birth = yes
+	}
+	1465.1.1 = {
+		death = yes
+	}
+}
+13089 = {
+	name = "Temigast"
+	dynasty = 687 # Garland
+	culture = highcoaster
+	religion = mercantile
+	stewardship = 7
+	trait = creature_human
+	1320.1.1 = {
+		birth = yes
+	}
+	1368.1.1 = {
+		give_job_title = job_treasurer
+	}
+	1400.1.1 = {
 		death = yes
 	}
 }

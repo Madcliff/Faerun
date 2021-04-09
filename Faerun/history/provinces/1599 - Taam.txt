@@ -1,0 +1,13 @@
+# County Title
+title = c_taam
+
+# Settlements
+max_settlements = 3
+
+b_taam = tribal
+
+# Misc
+culture = badia
+religion = kahin
+
+#History

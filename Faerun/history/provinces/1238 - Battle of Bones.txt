@@ -1,0 +1,25 @@
+# c_battle_of_bones
+
+# County Title
+title = c_battle_of_bones
+
+# Settlements
+max_settlements = 3
+
+b_keep_of_pale_night = tribal
+#b_skeltalish = temple
+#b_hillsfel = castle
+#b_bittenwind = city
+#b_xoukston = temple
+#b_zamte = castle
+
+# Misc
+culture = monster
+religion = monster_pantheon
+terrain = hills
+#History
+1320.1.1 = {
+	culture = draeven
+	religion = shadow_gods
+	b_keep_of_pale_night = castle
+}

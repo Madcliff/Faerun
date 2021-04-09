@@ -90,6 +90,7 @@
 #High Captains
 1310.1.1= {
 	holder=13001 # Baram Baram
+	liege=k_a_brotherhood
 }
 1361.1.1 = {
 	holder = 13006 # Taerl
@@ -97,6 +98,7 @@
 #Deudermont ousts the Captains
 1376.1.1 = {
 	holder = 13033 # Deudermont
+	liege = 0
 }
 #Deudermont is murdered and the city falls to gang war
 1378.1.1 = {
@@ -105,4 +107,5 @@
 #New High Captains, aided by the Arcane Brotherhood, retake Luskan
 1480.1.1 = {
 	holder = 13047 # Beniago Kurth
+	liege = k_a_brotherhood
 }

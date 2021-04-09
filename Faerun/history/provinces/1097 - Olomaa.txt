@@ -20,11 +20,12 @@ religion = monster_pantheon
 
 #History
 1342.1.1 = {
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	b_olomaa = castle
 }
 1383.1.1 = {
 	culture = bedine
-	religion = good_human_pantheon
+	religion = solar
+	b_olomaa = tribal
 }

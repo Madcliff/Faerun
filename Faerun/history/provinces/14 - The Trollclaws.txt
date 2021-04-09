@@ -10,7 +10,7 @@ b_trollclaw_ford = tribal
 
 # Misc
 culture = talfir
-religion = evil_human_pantheon
+religion = martial_faith
 terrain = hills
 #History
 54.1.1 = {
@@ -18,10 +18,10 @@ terrain = hills
 }
 227.1.1 = {
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 }
 256.1.1 = {
-	culture = monster
-	religion = monster_pantheon
+	culture = troll
+	religion = vaprak
 	b_trollclaw_ford = tribal
 }

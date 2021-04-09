@@ -19,7 +19,11 @@ TECH_GROUP_MILITARY = {
 			warpriests_morale = 0.4
 			mages_troops_defensive = 0.6
 			mages_troops_morale = 0.4
-		}	
+			animated_objects_defensive = 0.6
+			animated_objects_morale = 0.4
+			giant_troops_defensive = 0.6
+			giant_troops_morale = 0.4
+		}
 	}
 	TECH_CAVALRY = {
 		modifier = {
@@ -52,7 +56,7 @@ TECH_GROUP_MILITARY = {
 			mages_troops_offensive = 0.6
 			custom_modifier_text  = better_skirmisher_tactics_custom_modifier_tt
 		}
-			
+
 	}
 	TECH_MELEE = {
 		modifier = {
@@ -63,6 +67,8 @@ TECH_GROUP_MILITARY = {
 			war_elephants_offensive = 0.6
 			war_mammoths_offensive = 0.6
 			warpriests_offensive = 0.6
+			animated_objects_offensive = 0.6
+			giant_troops_offensive = 0.6
 			custom_modifier_text  = better_melee_tactics_custom_modifier_tt
 		}
 	}
@@ -318,7 +324,7 @@ TECH_GROUP_ECONOMY = {
 #		modifier = {
 #			TEMPLE_TAX_MODIFIER = 0.5
 #		}
-#		1 = { 
+#		1 = {
 #			add_building = tp_barracks_3
 #			add_building = tp_town_3
 #			add_building = no_shrine_2
@@ -486,7 +492,7 @@ TECH_GROUP_ECONOMY = {
 			add_building = translation_house_1
 			add_building = pilgrims_inn_1
 			add_building = library_1
-			
+
 		}
 		4 = {
 			add_building = hospital_building_3
@@ -587,10 +593,10 @@ TECH_GROUP_CULTURE = {
 		}
 		1 = {}
 		2 = {}
-		3 = { add_decision = status_of_women_1 }
-		4 = { add_decision = status_of_women_2 }
-		5 = { add_decision = status_of_women_3 }
-		6 = { add_decision = status_of_women_4 }
+		3 = {}
+		4 = {}
+		5 = {}
+		6 = {}
 		7 = {}
 		8 = {}
 	}

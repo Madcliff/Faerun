@@ -19,9 +19,20 @@
 	liege = k_tethyr
 }
 1338.1.1 = {
+	law = true_cognatic_succession
+	law = succ_primogeniture
 	holder = 28103 # Alaric Hembreon
 }
 1369.7.10 = {
 	liege = d_golden_marches
 	holder = 20333 # Holver Roaringhorn
+}
+1408.1.1 = {
+	holder = 28378 # Tatrina Hembreon
+}
+1440.1.1 = {
+	holder = 28379 # Nale Hembreon
+}
+1480.1.1 = {
+	holder = 28380 # Kavar Hembreon
 }

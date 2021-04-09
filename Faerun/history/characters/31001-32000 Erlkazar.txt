@@ -6,7 +6,7 @@
 	name = Valon
 	dynasty = 4126
 	father = 31022
-	religion = good_human_pantheon
+	religion = triadic
 	culture = tethyrian
 	trait = creature_human
 	trait = master_fighter
@@ -17,43 +17,45 @@
 	name = Korox
 	dynasty = 4126
 	father = 31001
-	religion = good_human_pantheon
+	religion = triadic
 	culture = tethyrian
 	trait = creature_human
 	trait = expert_paladin
 	1328.11.21 = { birth = yes }
-	1400.1.1 = { death = yes }
+	1389.1.1 = { death = yes }
 }
 31003 = {
 	name = Dijara
 	female = yes
 	dynasty = 4126
 	father = 31001
-	religion = good_human_pantheon
+	religion = triadic
 	culture = tethyrian
 	trait = creature_human
-	
+
 	1330.1.2 = { birth = yes }
 	1400.1.1 = { death = yes }
 }
 31004 = {
 	name = Jivam
 	dynasty = 4127
-
-	religion = good_human_pantheon
-	culture = tethyrian
+	religion = triadic
+	culture = moon_elf
 	trait = creature_half_elf
 	trait = half_dragon
 	trait = expert_ranger
-	1321.1.1 = { birth = yes }
+	1321.1.1 = {
+		birth = yes
+		culture = tethyrian
+	}
 	1351.1.1 = { immortal_age = 30 }
-	1400.1.1 = { death = yes }
+	1440.1.1 = { death = yes }
 }
 31005 = {
 	name = Purdun
 	dynasty = 4128
 
-	religion = good_human_pantheon
+	religion = triadic
 	culture = tethyrian
 	trait = creature_human
 	trait = expert_wizard
@@ -65,26 +67,26 @@
 		}
 		give_nickname = nick_the_firefist
 	}
-	1400.1.1 = { death = yes }
+	1389.1.1 = { death = yes }
 }
 31006 = {
 	name = Laxaella
 	female = yes
 	dynasty = 4129
 
-	religion = good_human_pantheon
+	religion = triadic
 	culture = tethyrian
 	trait = creature_half_elf
 	trait = expert_paladin
 	1308.11.21 = { birth = yes }
 	1338.11.22 = { immortal_age = 30 }
-	1400.1.1 = { death = yes }
+	1450.1.1 = { death = yes }
 }
 31007 = {
 	name = Rysodyl
 	dynasty = 3302
-	
-	religion = good_human_pantheon
+
+	religion = triadic
 	culture = green_elf
 	trait = creature_elf
 	trait = expert_ranger
@@ -109,7 +111,7 @@
 	trait = expert_cleric
 	1287.1.1 = { birth = yes }
 	1317.1.1 = { immortal_age = 30 }
-	1400.1.1 = { death = yes }
+	1500.1.1 = { death = yes }
 }
 31009 = {
 	name = Ulk
@@ -125,7 +127,7 @@
 31010 = {
 	name = Aballister
 	dynasty = 4142
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	culture = tethyrian
 	trait = creature_human
 	trait = master_wizard
@@ -139,7 +141,7 @@
 31011 = {
 	name = Cadderly
 	dynasty = 4142
-	religion = good_human_pantheon
+	religion = triadic
 	culture = tethyrian
 	trait = creature_human
 	trait = renowned_cleric
@@ -151,8 +153,8 @@
 	name = Danica
 	female = yes
 	dynasty = 4143
-	religion = good_human_pantheon
-	culture = heartlander
+	religion = triadic
+	culture = draeven
 	trait = creature_human
 	trait = master_monk
 	1336.1.1 = { birth = yes }
@@ -183,7 +185,7 @@
 	name = "Jaivan"
 	dynasty = 4126
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	710.1.1 = { birth = yes }
 	810.1.1 = { death = yes }
@@ -193,7 +195,7 @@
 	female = yes
 	dynasty = 4126
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 31015
 	790.1.1 = { birth = yes }
@@ -203,7 +205,7 @@
 	name = "Bennet"
 	dynasty = 4126
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	mother = 31016
 	870.1.1 = { birth = yes }
@@ -214,7 +216,7 @@
 	female = yes
 	dynasty = 4126
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 31017
 	950.1.1 = { birth = yes }
@@ -224,7 +226,7 @@
 	name = "Omren"
 	dynasty = 4126
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	mother = 31018
 	1030.1.1 = { birth = yes }
@@ -234,7 +236,7 @@
 	name = "Aldrin"
 	dynasty = 4126
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 31019
 	1110.1.1 = { birth = yes }
@@ -245,7 +247,7 @@
 	female = yes
 	dynasty = 4126
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	father = 31020
 	1190.1.1 = { birth = yes }
@@ -255,7 +257,7 @@
 	name = "Galen"
 	dynasty = 4126
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	mother = 31021
 	1270.1.1 = { birth = yes }
@@ -266,7 +268,7 @@
 	female = yes
 	dynasty = 279 # of Tathtar
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = triadic
 	intrigue = 9
 	learning = 9
 	trait = creature_human
@@ -280,20 +282,75 @@
 	572.1.1 = {
 		add_trait = vampire
 		immortal_age = 21
-		religion = evil_human_pantheon
+		religion = dead_three
 		effect = {
 			banish = yes
 			set_graphical_culture = vampire
-			add_character_modifier = {
-				name = wiz_evocation
-				duration = -1
-			}
+			join_society = twisted_rune
 		}
+		add_trait = wiz_evocation
 		add_trait = wizard
 	}
 	650.1.1 = { # Could probably do a better progression for her
 		remove_trait = wizard
 		add_trait = legendary_wizard
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+31024 = {
+	name = Jarred
+	dynasty = 4127
+	religion = triadic
+	culture = moon_elf
+	trait = creature_half_elf
+	trait = half_dragon
+	father = 31004
+	1370.1.1 = {
+		birth = yes
+		culture = tethyrian
+	}
+	1400.1.1 = { immortal_age = 30 }
+	1470.1.1 = { death = yes }
+}
+31025 = {
+	name = "Tolarran"
+	dynasty = 4127
+	culture = tethyrian
+	religion = triadic
+	trait = creature_human
+	trait = brave
+	father = 31024
+	1460.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+31026 = {
+	name = "Jules"
+	dynasty = 731 # Raldan
+	culture = tethyrian
+	religion = mercantile
+	trait = creature_human
+	1430.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+31027 = {
+	name = "Miala"
+	female = yes
+	dynasty = 732 # Solman
+	culture = tethyrian
+	religion = mercantile
+	trait = creature_human
+	1430.1.1 = {
+		birth = yes
 	}
 	1500.1.1 = {
 		death = yes

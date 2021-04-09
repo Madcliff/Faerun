@@ -1,0 +1,18 @@
+# County Title
+title = c_tajar
+
+# Settlements
+max_settlements = 5
+
+b_tajar = castle
+b_baharoud = city
+b_miladis = temple
+
+# Misc
+culture = hadhar
+religion = qisma
+
+#History
+1361.1.1 = {
+	culture = badia # on succession of Ali al-Hadd, the second Badia sheikh of Tajar
+}

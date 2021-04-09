@@ -1,0 +1,15 @@
+# County Title
+title = c_ardhi_kavu
+
+# Settlements
+max_settlements = 3
+
+b_kavu = city
+b_luvu = castle
+b_badala = temple
+
+# Misc
+culture = akotan
+religion = jaziri
+terrain = coastal
+#History

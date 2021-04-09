@@ -1,3 +1,4 @@
+#62001-62099 - Cities of the North
 62001 = {
 	name = "Jayani"
 	female = yes
@@ -36,7 +37,7 @@
 	name = "Turn"
 	dynasty = 9338 # bin Trevor
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = triadic
 	trait = creature_human
 	trait = pretty
 	1340.2.20 = { birth = yes }
@@ -54,7 +55,7 @@
 
 62003 = {
 	name = "Akura"
-	dynasty = 9308 # al-Hiyali
+	dynasty = 9308 # al-Hiyali (Badia)
 	culture = hadhar
 	religion = ten_thousand_gods
 	diplomacy = 6
@@ -91,6 +92,7 @@
 	intrigue = 4
 	learning = 7
 	trait = creature_giant
+	trait = patron_kor
 	disallow_random_traits = yes
 	1333.9.12 = {
 		birth = yes
@@ -401,18 +403,29 @@
 		birth = yes
 		give_nickname = nick_the_bonfire
 	}
-	1400.6.17 = {
-		death = { death_reason = death_natural }
+	1336.1.1 = {
+		effect = {
+			join_society = brotherhood_of_true_flame
+			set_society_grandmaster = yes
+		}
+	}
+	1385.1.1 = {
+		death = {
+			death_reason = death_combat_magic
+			killer = 62843 # Heidar Qan
+		}
 	}
 }
 
 62024 = {
 	name = "Habib"
 	dynasty = 9306 # Qan
+	father = 62843 # Heidar Qan
 	culture = jann
 	religion = ten_thousand_gods
 	trait = creature_genie
 	1298.6.19 = { birth = yes }
+	1330.1.1 = { immortal_age = 30 }
 	1400.10.2 = {
 		death = { death_reason = death_natural }
 	}
@@ -433,6 +446,7 @@
 	trait = ambitious
 	1295.9.11 = { birth = yes }
 	1357.5.10 = {
+		religion = kahin
 		effect = {
 			add_lover = 62061
 		}
@@ -553,6 +567,7 @@
 	trait = creature_gnome
 	trait = scholarly_theologian
 	trait = expert_cleric
+	trait = patron_najm
 	1265.4.13 = {
 		birth = yes
 		culture = hadhar
@@ -625,7 +640,7 @@
 		culture = hadhar
 	}
 	1185.10.3 = { immortal_age = 30 }
-	1278.5.11 = {
+	1310.1.1 = {
 		employer = 62034
 	}
 	1765.2.10 = {
@@ -1053,7 +1068,7 @@
 	name = "Amene"
 	female = yes
 	culture = badia
-	religion = qisma
+	religion = kahin
 	diplomacy = 7
 	learning = 7
 	trait = creature_human
@@ -1080,6 +1095,7 @@
 	trait = master_fighter
 	father = 62025
 	1315.7.29 = { birth = yes }
+	1357.5.10 = { religion = kahin }
 	1400.1.1 = {
 		death = { death_reason = death_natural }
 	}
@@ -1095,6 +1111,7 @@
 	trait = expert_fighter
 	father = 62062
 	1340.8.20 = { birth = yes }
+	1357.5.10 = { religion = kahin }
 	1400.1.1 = {
 		death = { death_reason = death_natural }
 	}
@@ -1203,5 +1220,2383 @@
 	1336.11.23 = { birth = yes }
 	1364.5.8 = {
 		death = { death_reason = death_murder }
+	}
+}
+62070 = {
+	name = Jamal
+	dynasty = 9317 # al-Yindannim
+	culture = hadhar
+	religion = kossuth
+	trait = creature_human
+	trait = skilled_tactician
+	trait = lustful
+	trait = expert_wizard
+	trait = cruel
+	trait = ambitious
+	1322.1.1 = { birth = yes }
+	1386.1.1 = { trait = longevity }
+	1500.1.1 = { death = yes }
+}
+
+# Down to 62099 can be more Cities of the North and Mamluk characters
+#62100-62199 - League of the Pantheon
+62100 = {
+	name = Rimaq
+	dynasty = 9110 # Al-Nimar
+	father = 62101
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = master_cleric
+	trait = zealous
+	trait = mastermind_theologian
+	1319.1.1 = { birth = yes }
+	1400.1.1 = { death = yes }
+}
+62101 = {
+	name = Ali
+	dynasty = 9110 # Al-Nimar
+	father = 62102
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = master_cleric
+	trait = zealous
+	1277.1.1 = { birth = yes }
+	1350.1.1 = { death = yes }
+}
+62102 = {
+	name = Kura
+	dynasty = 9110 # Al-Nimar
+	father = 62103
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = master_cleric
+	trait = zealous
+	1241.1.1 = { birth = yes }
+	1303.1.1 = { death = yes }
+}
+62103 = {
+	name = Exanaroth
+	dynasty = 9110 # Al-Nimar
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = renowned_cleric
+	trait = zealous
+	trait = mastermind_theologian
+	1199.1.1 = { birth = yes }
+	1231.1.1 = { give_nickname = nick_the_unifier }
+	1262.1.1 = { death = yes }
+}
+62104 = {
+	name = Amel
+	dynasty = 9211 # al-Yuhami
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = journeyman_cleric
+	trait = strong
+	trait = robust
+	trait = martial_cleric
+	trait = zealous
+	trait = cruel
+	1321.1.1 = { birth = yes }
+	1362.1.1 = {
+		add_trait = paranoid
+		add_trait = depressed
+	}
+	1402.1.1 = { death = yes }
+}
+62105 = {
+	name = Abir
+	dynasty = 9212 # al-Farhan
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = journeyman_cleric
+	trait = is_fat
+	trait = zealous
+	trait = kind
+	1315.1.1 = { birth = yes }
+	1390.1.1 = { death = yes }
+}
+62106 = {
+	name = Ola
+	female = yes
+	dynasty = 9212 # al-Farhan
+	father = 62015
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = cleric
+	trait = quick
+	trait = humble
+	trait = shy
+	trait = scholar
+	1346.1.1 = { birth = yes }
+	1430.1.1 = { death = yes }
+}
+62107 = {
+	name = Sajah
+	female = yes
+	dynasty = 9213 # al-Munsif
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = journeyman_cleric
+	trait = charismatic_negotiator
+	trait = shrewd
+	trait = theologian
+	trait = chaste
+	trait = patient
+	trait = content
+	1320.1.1 = { birth = yes }
+	1357.1.1 = { give_nickname = nick_the_quiet }
+	1385.1.1 = { death = yes }
+}
+62108 = {
+	name = Inara
+	female = yes
+	dynasty = 9213 # al-Munsif
+	mother = 62107
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = trained_cleric
+	trait = erudite
+	trait = charismatic_negotiator
+	trait = twin
+	1343.1.1 = { birth = yes }
+	1427.1.1 = { death = yes }
+}
+62109 = {
+	name = Jinara
+	female = yes
+	dynasty = 9213 # al-Munsif
+	mother = 62107
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = deceitful
+	trait = fortune_builder
+	trait = ambitious
+	trait = twin
+	1343.1.1 = { birth = yes }
+	1361.1.1 = {
+		name = Jina
+		religion = ten_thousand_gods
+		trait = expert_rogue
+		employer = 62804
+	}
+	1427.1.1 = { death = yes }
+}
+62110 = {
+	name = "Ma'mum"
+	dynasty = 9214 # al-Sahnan
+	culture = sun_elf
+	religion = pantheist_league
+	trait = creature_half_elf
+	trait = journeyman_fighter
+	trait = skilled_tactician
+	trait = diligent
+	trait = brave
+	1268.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1300.1.1 = { immortal_age = 30 }
+	1341.1.1 = {
+		trait = expert_cleric
+		trait = zealous
+		trait = paranoid
+		trait = jungle_terrain_leader
+	}
+	1419.1.1 = { death = yes }
+}
+62111 = {
+	name = Tanatha
+	female = yes
+	dynasty = 9215 # al-Mahabbi
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = expert_fighter
+	trait = desert_terrain_leader
+	1315.1.1 = { birth = yes }
+	1338.1.1 = {
+		add_spouse = 62110
+		give_nickname = nick_otgb
+	}
+	1399.1.1 = { death = yes}
+}
+62112 = {
+	name = Ari
+	dynasty = 9214
+	father = 62110
+	mother = 62111
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = trained_fighter
+	1340.1.1 = { birth = yes }
+	1362.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+62113 = {
+	name = Hafiz
+	dynasty = 9214
+	father = 62110
+	mother = 62111
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = trained_fighter
+	1342.1.1 = { birth = yes }
+	1364.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+62114 = {
+	name = Inaam
+	dynasty = 9214
+	father = 62110
+	mother = 62111
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = trained_fighter
+	1344.1.1 = { birth = yes }
+	1425.1.1 = { death = yes }
+}
+62115 = {
+	name = Kia
+	dynasty = 9216 # al-Sadid
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = expert_cleric
+	trait = zealous
+	1312.1.1 = { birth = yes }
+	1356.1.1 = { trait = wererat }
+	1392.1.1 = { death = yes }
+}
+
+#62200-62399 - Huzuz and the Heart
+62200 = {
+	name = Khalil
+	dynasty = 9200 # Al-Assad
+	father = 62201 # Achmed al-Assad
+	mother = 62202 # Nur al-Zahir
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = skilled_tactician
+	trait = master_fighter
+	1327.8.27 = { birth = yes }
+	1400.1.1 = { death = yes }
+}
+62201 = {
+	name = Achmed
+	dynasty = 9200 # Al-Assad
+	father = 62203 # Bahamal al-Assad
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	1285.1.1 = { birth = yes }
+	1316.1.1 = { add_spouse = 62200 }
+	1345.1.1 = { death = yes }
+}
+62202 = {
+	name = Nur
+	female = yes
+	dynasty = 9202 # Al-Zahir
+	father = 62204 # Kamal al-Zahir
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	1300.1.1 = { birth = yes }
+	1362.1.1 = { death = yes }
+}
+62203 = {
+	name = Bahamal
+	dynasty = 9200 # Al-Assad
+	father = 62205 # Akbar al-Assad
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	1246.1.1 = { birth = yes }
+	1329.1.1 = { death = yes }
+}
+62204 = {
+	name = Kamal # invented name
+	dynasty = 9202 # Al-Zahir
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	1270.1.1 = { birth = yes }
+	1341.1.1 = { death = yes }
+}
+62205 = {
+	name = Akbar
+	dynasty = 9200 # Al-Assad
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	1201.1.1 = { birth = yes }
+	1287.1.1 = { death = yes }
+}
+62206 = {
+	name = Tannous
+	dynasty = 9200 # Al-Assad
+	father = 62203 # Bahamal al-Assad
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = patron_haku
+	trait = journeyman_fighter
+	trait = scholarly_theologian
+	1289.1.1 = { birth = yes }
+	1385.1.1 = { death = yes }
+}
+62207 = {
+	name = Cheddah
+	dynasty = 9200 # Al-Assad
+	father = 62203 # Bahamal al-Assad
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_fighter
+	trait = misguided_warrior
+	trait = is_fat
+	trait = robust
+	1300.1.1 = { birth = yes }
+	1385.1.1 = { death = yes }
+}
+62208 = {
+	name = Rahmah
+	female = yes
+	dynasty = 9202 # Al-Zahir
+	father = 62204 # Kamal al-Zahir
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = elusive_shadow
+	trait = trained_sorcerer
+	trait = journeyman_shadow
+	trait = origin_storm
+	1309.1.1 = { birth = yes }
+	1319.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
+	1390.1.1 = { death = yes }
+}
+62209 = {
+	name = "Makin al-Mutrattab"
+	dynasty = 9200 # al-Assad
+	father = 62206 # Tannous
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = expert_fighter
+	1336.1.1 = { birth = yes }
+	1400.1.1 = { death = yes }
+}
+62210 = {
+	name = Dalilah
+	female = yes
+	dynasty = 9117 # al-Nakar
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = expert_cleric
+	1324.1.1 = { birth = yes }
+	1342.1.1 = { add_spouse = 62200 }
+	1400.1.1 = { death = yes }
+}
+62211 = {
+	name = "Tanya bint Perijan"
+	female = yes
+	dynasty = 9192 # al-Danaf
+	father = 62212
+	mother = 62213
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = expert_rogue
+	1342.1.1 = { birth = yes }
+	1360.1.1 = { add_spouse = 62200 }
+	1420.1.1 = { death = yes }
+}
+62212 = {
+	name = Khwaja
+	dynasty = 9192 # al-Danaf
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_rogue
+	trait = fortune_builder
+	1312.1.1 = { birth = yes }
+	1400.1.1 = { death = yes }
+}
+62213 = {
+	name = Perijan
+	female = yes
+	dynasty = 9166 # al-Gani
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_rogue
+	trait = midas_touched
+	1313.1.1 = { birth = yes }
+	1337.1.1 = { add_spouse = 62212 }
+	1400.1.1 = { death = yes }
+}
+62214 = {
+	name = Yasmi
+	female = yes
+	dynasty = 9190 # al-Datma
+	culture = sun_elf
+	religion = qisma
+	trait = creature_elf
+	trait = expert_sorcerer
+	trait = origin_wild_magic
+	1300.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1310.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
+	1330.1.1 = { immortal_age = 30 }
+	1362.1.1 = {
+		add_spouse = 62200
+		effect = {
+			add_friend = 62211
+		}
+	}
+	1600.1.1 = { death = yes }
+}
+62215 = {
+	name = Zaynal
+	female = yes
+	dynasty = 9383 # ibn Sabur
+	culture = noga
+	religion = qisma
+	trait = creature_human
+	trait = trained_shadow
+	1329.1.1 = { birth = yes }
+	1345.1.1 = {
+		culture = hadhar
+		add_spouse = 62200
+	}
+	1410.1.1 = { death = yes }
+}
+62216 = {
+	name = Thuriya
+	female = yes
+	dynasty = 9297
+	culture = gray_orc
+	religion = qisma
+	trait = creature_orc
+	trait = trained_fighter
+	1330.1.1 = {
+		birth = yes
+		culture = badia
+	}
+	1363.1.1 = {
+		effect = { add_lover = 62200 }
+	}
+	1410.1.1 = { death = yes }
+}
+62217 = {
+	name = Taxatl
+	female = yes
+	dynasty = 13384 # al-Maztiki
+	culture = nexalan
+	religion = toteteohuan
+	trait = creature_human
+	trait = trained_wizard
+	1335.1.1 = { birth = yes }
+	1362.1.1 = {
+		employer = 62200
+		religion = qisma
+	}
+	1363.1.1 = {
+		effect = { add_lover = 62200 }
+	}
+	1420.1.1 = { death = yes }
+}
+62218 = {
+	name = Ngo
+	female = yes
+	dynasty = 9013 # Ma
+	culture = shou
+	religion = the_path
+	trait = creature_human
+	1340.1.1 = { birth = yes }
+	1361.1.1 = {
+		employer = 62200
+		religion = qisma
+	}
+	1362.6.1 = {
+		effect = { add_lover = 62200 }
+	}
+	1420.1.1 = { death = yes }
+}
+62219 = {
+	name = Janya
+	female = yes
+	dynasty = 9200 # al-Assad
+	father = 62200
+	mother = 62211
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	1361.1.1 = { birth = yes }
+	1450.1.1 = { death = yes }
+}
+62220 = {
+	name = Dalia
+	female = yes
+	dynasty = 9200 # al-Assad
+	father = 62200
+	mother = 62211
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	1363.1.1 = { birth = yes }
+	1455.1.1 = { death = yes }
+}
+62221 = {
+	name = "Almari bint Kafira"
+	female = yes
+	dynasty = 9394 # al-Qirs
+	culture = qarsan
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_fighter
+	trait = elusive_shadow
+	1333.1.1 = { birth = yes }
+	1411.1.1 = { death = yes }
+}
+62222 = {
+	name = Anwar
+	dynasty = 9226 # Tulam
+	culture = qarsan
+	religion = qisma
+	trait = creature_elf
+	trait = journeyman_fighter
+	1194.1.1 = { birth = yes }
+	1225.1.1 = { immortal_age = 30 }
+	1500.1.1 = { death = yes }
+}
+62223 = {
+	name = Hava
+	dynasty = 9207 # al-Gatil
+	father = 62224
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_warlock
+	trait = naive_appeaser
+	1310.1.1 = { birth = yes }
+	1396.1.1 = { death = yes }
+}
+62224 = {
+	name = Adnan
+	dynasty = 9207 # al-Gatil
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = trained_wizard
+	1273.1.1 = { birth = yes }
+	1351.1.1 = { death = yes }
+}
+62225 = {
+	name = Sikayah
+	female = yes
+	dynasty = 9207 # al-Gatil
+	father = 62223
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = twin
+	1352.1.1 = { birth = yes }
+	1430.1.1 = { death = yes }
+}
+62226 = {
+	name = Rajiyah
+	female = yes
+	dynasty = 9207 # al-Gatil
+	father = 62223
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = twin
+	1352.1.1 = { birth = yes }
+	1428.1.1 = { death = yes }
+}
+62227 = {
+	name = Mahabbiyah
+	female = yes
+	dynasty = 9207 # al-Gatil
+	father = 62223
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = twin
+	1352.1.1 = { birth = yes }
+	1431.1.1 = { death = yes }
+}
+62228 = {
+	name = Fawaz
+	dynasty = 9273 # al-Hitani
+	culture = qarsan
+	religion = qisma
+	trait = creature_human
+	trait = master_fighter
+	1319.1.1 = { birth = yes }
+	1355.1.1 = { give_nickname = nick_the_woqd }
+	1366.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 62200
+		}
+	}
+}
+62229 = {
+	name = Maitham
+	dynasty = 9208 # al-Hiyali (Hadhar)
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = shadow
+	trait = paranoid
+	trait = flamboyant_schemer
+	1307.1.1 = { birth = yes }
+	1326.1.1 = { add_spouse = 62230 }
+	1362.1.1 = {
+		death = {
+			death_reason = death_execution_poison
+			killer = 62230
+		}
+	}
+}
+62230 = {
+	name = "Alurah bint Asrah"
+	female = yes
+	dynasty = 9209 # al-Wahli
+	mother = 62231
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_fighter
+	trait = trained_shadow
+	trait = cruel
+	trait = elusive_shadow
+	trait = shrewd
+	trait = groomed
+	trait = administrator
+	trait = ambitious
+	1307.1.1 = { birth = yes }
+	1358.1.1 = {
+		effect = {
+			add_friend = 62206 # Prince Tannous
+		}
+	}
+	1367.1.1 = { add_trait = cancer }
+	1372.1.1 = {
+		death = {
+			death_reason = death_trait
+		}
+	}
+}
+62231 = {
+	name = Asrah
+	female = yes
+	dynasty = 9209 # al-Wahli
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = expert_shadow
+	1280.1.1 = { birth = yes }
+	1361.1.1 = { death = yes }
+}
+62232 = {
+	name = Anjar
+	dynasty = 9208 # al-Hiyali
+	father = 62229
+	mother = 62230
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_fighter
+	trait = flamboyant_schemer
+	trait = cruel
+	trait = deceitful
+	trait = wroth
+	1329.1.1 = { birth = yes }
+	1362.1.1 = {
+		name = "Anjar bin Alurah"
+		dynasty = 9209 # al-Wahli
+	}
+	1404.1.1 = { death = yes }
+}
+62233 = {
+	name = Omar
+	dynasty = 9208 # al-Hiyali
+	father = 62229
+	mother = 62230
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_warlock
+	trait = cynical
+	trait = arbitrary
+	1332.1.1 = { birth = yes }
+	1362.1.1 = {
+		name = "Omar bin Alurah"
+		dynasty = 9209 # al-Wahli
+	}
+	1410.1.1 = { death = yes }
+}
+62234 = {
+	name = Raman
+	dynasty = 9208 # al-Hiyali
+	father = 62229
+	mother = 62230
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = journeyman_cleric
+	trait = elusive_shadow
+	trait = zealous
+	trait = patient
+	trait = erudite
+	1335.1.1 = { birth = yes }
+	1356.1.1 = { give_nickname = nick_min_najm }
+	1362.1.1 = {
+		name = "Raman bin Alurah"
+		dynasty = 9209 # al-Wahli
+	}
+	1412.1.1 = { death = yes }
+}
+62235 = {
+	name = Hannah
+	female = yes
+	dynasty = 9208 # al-Hiyali
+	father = 62229
+	mother = 62230
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_paladin
+	trait = charismatic_negotiator
+	trait = paranoid
+	trait = kind
+	trait = just
+	1337.1.1 = { birth = yes }
+	1362.1.1 = {
+		name = "Hannah bint Alurah"
+		dynasty = 9209 # al-Wahli
+	}
+	1415.1.1 = { death = yes }
+}
+62236 = {
+	name = "Alurah bint Alurah"
+	dynasty = 9208 # al-Hiyali
+	father = 62229
+	mother = 62230
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = trained_warlock
+	trait = flamboyant_schemer
+	trait = cruel
+	trait = greedy
+	trait = deceitful
+	trait = ambitious
+	1329.1.1 = { birth = yes }
+	1362.1.1 = {
+		name = "Anjar bin Alurah"
+		dynasty = 9209 # al-Wahli
+	}
+	1404.1.1 = { death = yes }
+}
+62237 = {
+	name = Haroun
+	dynasty = 9210 # al-Raqqas (Hadhar)
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_rogue
+	trait = humble
+	trait = temperate
+	trait = honest
+	1327.1.1 = { birth = yes }
+	1404.1.1 = { death = yes }
+}
+
+#62400-62499 - Cities of the Pearl
+
+62400 = {
+	name = Halima
+	female = yes
+	dynasty = 9395 # al-Wahsi
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = beautiful
+	trait = journeyman_fighter
+	trait = skilled_tactician
+	1329.1.1 = { birth = yes }
+	1410.1.1 = { death = yes }
+}
+62411 = {
+	name = Ramiz
+	dynasty = 9203 # al-Malfi
+	culture = hadhar
+	religion = qisma
+	trait = creature_half_elf
+	trait = expert_fighter
+	1300.1.1 = { birth = yes }
+	1330.1.1 = { immortal_age = 30 }
+	1358.1.1 = {
+		death = {
+			death_reason = death_battle
+			killer = 62835 # Ziyaad al-Regdasaidi
+		}
+	}
+}
+62412 = {
+	name = "Yusef bin Ahmad"
+	dynasty = 9204 # al-Wadi
+	father = 62413
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_fighter
+	trait = just
+	1298.1.1 = { birth = yes }
+	1325.1.1 = { give_nickname = nick_the_just }
+	1385.1.1 = { death = yes }
+}
+62413 = {
+	name = Ahmad
+	dynasty = 9204 # al-Wadi
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = trained_fighter
+	1250.1.1 = { birth = yes }
+	1324.1.1 = { death = yes }
+}
+62414 = {
+	name = Aziz
+	dynasty = 9205 # al-Zalim
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = trained_shadow
+	1260.1.1 = { birth = yes }
+	1329.1.1 = { death = yes }
+}
+62415 = {
+	name = Azim
+	dynasty = 9205 # al-Zalim
+	father = 62414
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = trained_shadow
+	1291.1.1 = { birth = yes }
+	1355.1.1 = { death = yes }
+}
+62416 = {
+	name = Bakir
+	dynasty = 9205 # al-Zalim
+	father = 62414
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = trained_shadow
+	1292.1.1 = { birth = yes }
+	1351.1.1 = { death = yes }
+}
+62417 = {
+	name = Asif
+	dynasty = 9205 # al-Zalim
+	father = 62415
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = trained_fighter
+	1319.1.1 = { birth = yes }
+	1400.1.1 = { death = yes }
+}
+62418 = {
+	name = Akram
+	dynasty = 9205 # al-Zalim
+	father = 62415
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = trained_cleric
+	1322.1.1 = { birth = yes }
+	1405.1.1 = { death = yes }
+}
+62419 = {
+	name = Kara
+	dynasty = 9205 # al-Zalim
+	father = 62416
+	culture = hadhar
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_fighter
+	1325.1.1 = { birth = yes }
+	1355.1.1 = { give_nickname = nick_the_fsots }
+	1410.1.1 = { death = yes }
+}
+62420 = {
+	name = Boutros
+	dynasty = 9206 # al-Azim
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	800.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	925.1.1 = { death = yes }
+}
+62421 = {
+	name = Faruq
+	dynasty = 9206 # al-Azim
+	father = 62420
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	830.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	955.1.1 = { death = yes }
+}
+62422 = {
+	name = Dastgir
+	dynasty = 9206 # al-Azim
+	father = 62421
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	860.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	985.1.1 = { death = yes }
+}
+62423 = {
+	name = Fazel
+	dynasty = 9206 # al-Azim
+	father = 62422
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	890.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1015.1.1 = { death = yes }
+}
+62424 = {
+	name = Haitham
+	dynasty = 9206 # al-Azim
+	father = 62423
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	920.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1045.1.1 = { death = yes }
+}
+62425 = {
+	name = Jubair
+	dynasty = 9206 # al-Azim
+	father = 62424
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	950.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1075.1.1 = { death = yes }
+}
+62426 = {
+	name = Nasir
+	dynasty = 9206 # al-Azim
+	father = 62425
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	980.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1105.1.1 = { death = yes }
+}
+62427 = {
+	name = Rabih
+	dynasty = 9206 # al-Azim
+	father = 62426
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	1010.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1135.1.1 = { death = yes }
+}
+62428 = {
+	name = Sadiq
+	dynasty = 9206 # al-Azim
+	father = 62427
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	1040.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1165.1.1 = { death = yes }
+}
+62429 = {
+	name = Tahsin
+	dynasty = 9206 # al-Azim
+	father = 62428
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	1070.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1195.1.1 = { death = yes }
+}
+62430 = {
+	name = Uthman
+	dynasty = 9206 # al-Azim
+	father = 62429
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	1100.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1225.1.1 = { death = yes }
+}
+62431 = {
+	name = Naji
+	dynasty = 9206 # al-Azim
+	father = 62430
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	1130.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1255.1.1 = { death = yes }
+}
+62432 = {
+	name = Mehdi
+	dynasty = 9206 # al-Azim
+	father = 62431
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	1175.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1285.1.1 = { death = yes }
+}
+62433 = {
+	name = Midhat
+	dynasty = 9206 # al-Azim
+	father = 62432
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	1220.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1341.1.1 = { death = yes }
+}
+62434 = {
+	name = Magar
+	dynasty = 9206 # al-Azim
+	father = 62433
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	1265.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1386.1.1 = { death = yes }
+}
+62435 = {
+	name = Jeygar
+	dynasty = 9206 # al-Azim
+	father = 62434
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	1340.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1465.1.1 = { death = yes }
+}
+62436 = {
+	name = Asghar
+	dynasty = 9206 # al-Azim
+	father = 62435
+	culture = gnome
+	religion = qisma
+	trait = creature_gnome
+	trait = trained_rogue
+	1381.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1500.1.1 = { death = yes }
+}
+62437 = {
+	name = Tufala
+	female = yes
+	dynasty = 9217 # al-Fujegati
+	culture = sun_elf
+	religion = qisma
+	trait = creature_half_elf
+	trait = trained_cleric
+	1277.1.1 = {
+		birth = yes
+		culture = hadhar
+	}
+	1300.1.1 = { give_nickname = nick_min_jarmik }
+	1450.1.1 = { death = yes }
+}
+
+#62500-62599 - Cities of the Ancients
+
+62500 = {
+	name = Hassana
+	female = yes
+	dynasty = 13387 # al-Gaib
+	culture = affa
+	religion = ten_thousand_gods
+	trait = creature_human
+	trait = journeyman_rogue
+	1327.1.1 = { birth = yes }
+	1408.1.1 = { death = yes }
+}
+62501 = {
+	name = Imad
+	dynasty = 13391 # al-Dihlizi
+	father = 62511
+	culture = noga
+	religion = ten_thousand_gods
+	trait = creature_human
+	trait = trained_shadow
+	1300.1.1 = { birth = yes }
+	1363.1.1 = {
+		death = {
+			death_reason = death_murder_poison
+		}
+	}
+}
+62502 = {
+	name = "Aman al-Qasi"
+	dynasty = 13392 # abu Nari
+	culture = noga
+	religion = ten_thousand_gods
+	trait = creature_human
+	trait = journeyman_fighter
+	trait = cynical
+	trait = cruel
+	trait = arbitrary
+	trait = greedy
+	1322.1.1 = { birth = yes }
+	1387.1.1 = { death = yes }
+}
+62503 = {
+	name = "Nari ibn Aman"
+	dynasty = 13392
+	father = 62502
+	culture = noga
+	religion = ten_thousand_gods
+	trait = creature_human
+	trait = trained_fighter
+	trait = brave
+	trait = wroth
+	trait = aggressive_leader
+	trait = robust
+	trait = diligent
+	trait = gregarious
+	1344.1.1 = { birth = yes }
+	1423.1.1 = { death = yes }
+}
+62504 = {
+	name = "Alad bin Alaq"
+	dynasty = 13393 # ibn Alon
+	father = 62505
+	culture = affa
+	religion = ten_thousand_gods
+	trait = creature_human
+	trait = expert_fighter
+	trait = indulgent_wastrel
+	trait = lunatic
+	trait = gregarious
+	trait = kind
+	trait = lustful
+	trait = charitable
+	1319.1.1 = { birth = yes }
+	1386.1.1 = { death = yes }
+}
+62505 = {
+	name = "Alaq bin Alonka"
+	dynasty = 13393 # ibn Alon
+	father = 62506
+	culture = affa
+	religion = ten_thousand_gods
+	trait = creature_human
+	trait = journeyman_fighter
+	1278.1.1 = { birth = yes }
+	1348.1.1 = { death = yes }
+}
+62506 = {
+	name = Alonka
+	dynasty = 13393 # ibn Alon
+	culture = affa
+	religion = ten_thousand_gods
+	trait = creature_human
+	trait = journeyman_fighter
+	1234.1.1 = { birth = yes }
+	1302.1.1 = { death = yes }
+}
+62507 = {
+	name = Alia
+	female = yes
+	dynasty = 13393 # ibn Alon
+	father = 62506
+	culture = affa
+	religion = ten_thousand_gods
+	trait = creature_human
+	trait = expert_cleric
+	trait = intricate_webweaver
+	trait = zealous
+	trait = ambitious
+	trait = cruel
+	1287.1.1 = { birth = yes }
+	1323.1.1 = { name = "Alia umm Jamal" }
+	1375.1.1 = { death = yes }
+}
+62508 = {
+	name = "Jamal bin Alia"
+	dynasty = 13393 # ibn Alon
+	mother = 62507
+	culture = affa
+	religion = ten_thousand_gods
+	trait = creature_human
+	trait = rogue
+	trait = underhanded_rogue
+	trait = craven
+	trait = weak
+	1323.1.1 = { birth = yes }
+	1392.1.1 = { death = yes }
+}
+62509 = {
+	name = "Alakbar bin Alad"
+	dynasty = 13393 # ibn Alon
+	father = 62504
+	culture = affa
+	religion = ten_thousand_gods
+	trait = creature_human
+	trait = expert_ranger
+	trait = brave
+	trait = skilled_tactician
+	1345.1.1 = { birth = yes }
+	1363.1.1 = { trait = absent }
+	1392.1.1 = { effect = { remove_trait = absent } }
+	1431.1.1 = { death = yes }
+}
+62510 = {
+	name = "Alina bint Alad"
+	female = yes
+	dynasty = 13393 # ibn Alon
+	father = 62504
+	culture = affa
+	religion = ten_thousand_gods
+	trait = creature_human
+	trait = trained_sorcerer
+	trait = origin_storm
+	trait = erudite
+	trait = charismatic_negotiator
+	1348.1.1 = { birth = yes }
+	1358.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
+	1420.1.1 = { trait = longevity }
+	1500.1.1 = { death = yes }
+}
+
+62511 = {
+	name = Amal
+	dynasty = 13391 # al-Dihlizi
+	culture = noga
+	religion = ten_thousand_gods
+	trait = creature_human
+	trait = trained_shadow
+	1268.1.1 = { birth = yes }
+	1337.1.1 = { death = yes }
+}
+62512 = {
+	name = Samia
+	female = yes
+	dynasty = 13394 # al-Sa'id
+	culture = green_elf
+	religion = ten_thousand_gods
+	trait = creature_elf
+	trait = journeyman_warlock
+	trait = patient
+	trait = just
+	trait = kind
+	1199.1.1 = {
+		birth = yes
+		culture = noga
+	}
+	1225.1.1 = { immortal_age = 25 }
+	1600.1.1 = { death = yes }
+}
+
+
+#62800 onward - desert tribes
+
+62800 = {
+	name = Najib
+	dynasty = 9378 # al-Asad
+	father = 62801
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = master_fighter
+	1321.1.1 = { birth = yes }
+	1392.1.1 = { death = yes }
+}
+62801 = {
+	name = Kamal
+	dynasty = 9378 # al-Asad
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = master_fighter
+	1289.1.1 = { birth = yes }
+	1356.1.1 = { death = yes }
+}
+62802 = {
+	name = Nabil
+	dynasty = 9378 # al-Asad
+	father = 62800
+	mother = 62803
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = fighter
+	1350.1.1 = { birth = yes }
+	1430.1.1 = { death = yes }
+}
+62803 = {
+	name = Alia
+	female = yes
+	dynasty = 9379 # al-Jamal
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_wizard
+	1323.1.1 = { birth = yes }
+	1348.1.1 = { add_spouse = 62800 }
+	1400.1.1 = { death = yes }
+}
+62804 = {
+	name = "Ali al-Hadd"
+	dynasty = 9380 # Bakr
+	father = 62805
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_fighter
+	1322.1.1 = { birth = yes }
+	1404.1.1 = { death = yes }
+}
+62805 = {
+	name = "Kori al-Zafiri"
+	dynasty = 9380 # Bakr
+	father = 62806
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = master_fighter
+	1299.1.1 = { birth = yes }
+	1361.1.1 = { death = yes }
+}
+62806 = {
+	name = Manzur # invented name
+	dynasty = 9380 # Bakr
+	father = 62807
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	1265.1.1 = { birth = yes }
+	1328.1.1 = { death = yes }
+}
+62807 = {
+	name = Haitham # invented name
+	dynasty = 9380 # Bakr
+	father = 62808
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	1229.1.1 = { birth = yes }
+	1286.1.1 = { death = yes }
+}
+62808 = {
+	name = Kazem # invented name
+	dynasty = 9380 # Bakr
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	1201.1.1 = { birth = yes }
+	1257.1.1 = { death = yes }
+}
+62809 = {
+	name = Luay # invented name
+	dynasty = 9380 # Bakr
+	father = 62808
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	1232.1.1 = { birth = yes }
+	1290.1.1 = { death = yes }
+}
+62810 = {
+	name = Haitham # invented name; nephew of Haitham the elder
+	dynasty = 9380 # Bakr
+	father = 62809
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	1267.1.1 = { birth = yes }
+	1404.1.1 = { death = yes }
+}
+62811 = {
+	name = Moeen # invented name
+	dynasty = 9380 # Bakr
+	father = 62810
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	1301.1.1 = { birth = yes }
+	1359.1.1 = { death = yes }
+}
+62812 = {
+	name = Najon
+	dynasty = 9380 # Bakr
+	father = 62811
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_ranger
+	1324.1.1 = { birth = yes }
+	1363.1.1 = { death = yes }
+}
+62813 = {
+	name = "Ajan al-Yaqud"
+	dynasty = 9380 # Bakr
+	father = 62812
+	mother = 62814
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_fighter
+	1345.1.1 = { birth = yes }
+	1412.1.1 = { death = yes }
+}
+62814 = {
+	name = Jamila # invented name
+	female = yes
+	dynasty = 9380 # Bakr
+	father = 62805
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_fighter
+	1325.1.1 = { birth = yes }
+	1343.1.1 = { add_spouse = 62812 }
+	1407.1.1 = { death = yes }
+}
+62815 = {
+	name = "Anwat al-Makkar"
+	dynasty = 9182 # Dhi'b
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_rogue
+	trait = elusive_shadow
+	1294.1.1 = { birth = yes }
+	# nickname 'the skeleton'
+	1386.1.1 = { death = yes }
+}
+62816 = {
+	name = "Yaqub al-Quwwat"
+	dynasty = 9381 # Dubb
+	culture = badia
+	religion = kahin
+	trait = creature_human
+	trait = expert_fighter
+	trait = tough_soldier
+	trait = proud
+	1343.1.1 = { birth = yes }
+	1422.1.1 = { death = yes }
+}
+62817 = {
+	name = Nadia
+	female = yes
+	dynasty = 9315 # Nasr
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_fighter
+	trait = brilliant_strategist
+	1308.1.1 = { birth = yes }
+	1341.1.1 = { name = "Nadia umm Fadela" }
+	1389.1.1 = { death = yes }
+}
+62818 = {
+	name = "Fadela bint Nadia"
+	female = yes
+	dynasty = 9315 # Nasr
+	mother = 62817
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = trained_fighter
+	1341.1.1 = { birth = yes }
+	# nickname Bloodmane
+	1409.1.1 = { death = yes }
+}
+62819 = {
+	name = "Bouladin al-Mutajalli"
+	dynasty = 9382 # Sihr
+	culture = jann
+	religion = qisma
+	trait = creature_genie
+	trait = journeyman_fighter
+	trait = journeyman_cleric
+	trait = honest
+	trait = proud
+	trait = just
+	1250.1.1 = { birth = yes }
+	1280.1.1 = { immortal_age = 30 }
+	1500.1.1 = { death = yes }
+}
+62820 = {
+	name = Jamala
+	female = yes
+	dynasty = 9382 # Sihr
+	father = 62819
+	culture = jann
+	religion = qisma
+	trait = creature_genie
+	trait = trained_fighter
+	trait = trained_cleric
+	trait = arbitrary
+	1340.1.1 = { birth = yes }
+	1360.1.1 = { immortal_age = 20 }
+	1500.1.1 = { death = yes }
+}
+62821 = {
+	name = "Mouli al-Ajami"
+	dynasty = 9384 # al-Tayif
+	culture = northlander
+	religion = deities_of_fury
+	trait = creature_human
+	trait = expert_paladin
+	1332.1.1 = { birth = yes }
+	1358.1.1 = {
+		culture = badia
+		religion = primordial
+		trait = cruel
+		trait = scarred
+	}
+	1400.1.1 = { death = yes }
+}
+62822 = {
+	name = "Ali al-Sadid"
+	dynasty = 9385 # al-Thawr
+	culture = sun_elf
+	religion = kahin
+	trait = creature_elf
+	trait = journeyman_fighter
+	887.1.1 = {
+		birth = yes
+		culture = badia
+	}
+	910.1.1 = { immortal_age = 30 }
+	# 1287 - succeeds
+	1365.1.1 = { trait = lunatic }
+	1375.1.1 = { death = yes }
+}
+62823 = {
+	name = Afreen # invented name
+	female = yes
+	dynasty = 9386 # al-Ta'ami
+	culture = badia
+	religion = kahin
+	trait = creature_human
+	trait = bard
+	1315.1.1 = { birth = yes }
+	1334.1.1 = { add_spouse = 62822 }
+	1362.1.1 = { death = yes }
+}
+62824 = {
+	name = Eliana # invented name
+	female = yes
+	dynasty = 9385 # al-Thawr
+	father = 62822
+	mother = 62823
+	culture = badia
+	religion = kahin
+	trait = creature_half_elf
+	trait = bard
+	1335.1.1 = { birth = yes }
+	1360.1.1 = { immortal_age = 30 }
+	1363.1.1 = {
+		death = {
+			death_reason = death_murder_poison
+		}
+	}
+}
+62825 = {
+	name = Wasim # invented name
+	dynasty = 9385 # al-Thawr
+	father = 62822
+	mother = 62823
+	culture = badia
+	religion = kahin
+	trait = creature_half_elf
+	trait = trained_fighter
+	1336.1.1 = { birth = yes }
+	1360.1.1 = { immortal_age = 30 }
+	1364.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+62826 = {
+	name = Uthman # invented name
+	dynasty = 9385 # al-Thawr
+	father = 62822
+	mother = 62823
+	culture = badia
+	religion = kahin
+	trait = creature_half_elf
+	trait = trained_ranger
+	1337.1.1 = { birth = yes }
+	1360.1.1 = { immortal_age = 30 }
+	1364.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+62827 = {
+	name = Samir # invented name
+	dynasty = 9385 # al-Thawr
+	father = 62822
+	mother = 62823
+	culture = badia
+	religion = kahin
+	trait = creature_half_elf
+	trait = trained_fighter
+	1338.1.1 = { birth = yes }
+	1360.1.1 = { immortal_age = 30 }
+	1364.1.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+62828 = {
+	name = "Alia bint Ali"
+	female = yes
+	dynasty = 9385 # al-Thawr
+	father = 62822
+	mother = 62823
+	culture = badia
+	religion = kahin
+	trait = creature_half_elf
+	trait = trained_cleric
+	1339.1.1 = { birth = yes }
+	1360.1.1 = { immortal_age = 30 }
+	1500.1.1 = { death = yes }
+}
+62829 = {
+	name = "Hanjar al-Haqara"
+	dynasty = 9386 # al-Uqab
+	culture = badia
+	religion = kahin
+	trait = creature_human
+	trait = journeyman_rogue
+	1322.1.1 = { birth = yes }
+	1395.1.1 = { death = yes }
+}
+62830 = {
+	name = "Baran al-Amin"
+	dynasty = 9387 # al-Jinn
+	culture = jann
+	religion = qisma
+	trait = creature_genie
+	trait = expert_cleric
+	trait = patron_kor
+	900.1.1 = { birth = yes }
+	930.1.1 = { immortal_age = 30 }
+	1300.1.1 = { give_nickname = nick_min_kor }
+	1500.1.1 = { death = yes }
+}
+62831 = {
+	name = Rifat
+	dynasty = 9389 # al-Shazzi
+	father = 62859
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = trained_fighter
+	1321.1.1 = { birth = yes }
+	1397.1.1 = { death = yes }
+}
+62832 = {
+	name = "Ramad al-Kahn"
+	dynasty = 9392 # al-Fajirik
+	father = 62833
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = trained_fighter
+	1329.1.1 = { birth = yes }
+	1405.1.1 = { death = yes }
+}
+62833 = {
+	name = "Yusuf al-Kahn"
+	dynasty = 9392 # al-Fajirik
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_fighter
+	1286.1.1 = { birth = yes }
+	1355.1.1 = { death = yes }
+}
+62834 = {
+	name = "Takaz al-Harounah"
+	dynasty = 9393 # al-Ashurim
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = trained_fighter
+	1326.1.1 = { birth = yes }
+	1357.1.1 = {
+		effect = { add_rival = 62832 }
+	}
+	1400.1.1 = { death = yes }
+}
+62835 = {
+	name = Ziyaad
+	dynasty = 13386 # al-Regdasaidi
+	culture = jaziran
+	religion = jaziri
+	trait = creature_human
+	trait = expert_druid
+	1331.1.1 = { birth = yes }
+	1392.1.1 = { death = yes }
+}
+62836 = {
+	name = Kaldhun
+	dynasty = 9396 # bin Hanif
+	father = 62848
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = journeyman_fighter
+	trait = strong
+	trait = just
+	trait = temperate
+	1301.1.1 = { birth = yes }
+	1378.1.1 = { death = yes }
+}
+62837 = {
+	name = Sajida
+	female = yes
+	dynasty = 9397
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	1311.1.1 = { birth = yes }
+	1332.1.1 = { add_spouse = 62836 }
+	1382.1.1 = { death = yes }
+}
+62838 = {
+	name = Nezha
+	female = yes
+	dynasty = 9398
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	1311.8.1 = { birth = yes }
+	1335.1.1 = { add_spouse = 62836 }
+	1386.1.1 = { death = yes }
+}
+62839 = {
+	name = "Mu'awiya"
+	dynasty = 9396
+	father = 62836
+	mother = 62837
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = trained_fighter
+	trait = proud
+	trait = patient
+	1337.7.1 = { birth = yes }
+	1411.1.1 = { death = yes }
+}
+62840 = {
+	name = Yazid
+	dynasty = 9396
+	father = 62836
+	mother = 62838
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = trained_fighter
+	trait = proud
+	trait = robust
+	trait = mystic
+	1337.7.1 = { birth = yes }
+	1411.1.1 = { death = yes }
+}
+62841 = {
+	name = Zafar
+	dynasty = 9399 # al-Tair
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	trait = expert_ranger
+	1322.1.1 = { birth = yes }
+	1398.1.1 = { death = yes }
+}
+62842 = {
+	name = Farad
+	dynasty = 13395 # al-Meisal
+	culture = jann
+	religion = qisma
+	trait = creature_genie
+	1100.1.1 = { birth = yes }
+	1130.1.1 = { immortal_age = 30 }
+	1500.1.1 = { death = yes }
+}
+62843 = {
+	name = Heidar
+	dynasty = 9306 # Qan
+	father = 62851 # Qadim Qan
+	culture = jann
+	religion = qisma
+	trait = creature_genie
+	trait = just
+	trait = strong
+	1000.1.1 = { birth = yes }
+	1030.1.1 = { immortal_age = 30 }
+	1317.4.29 = { trait = absent }
+	1385.1.1 = { effect = { remove_trait = absent } }
+	1500.1.1 = { death = yes }
+}
+62844 = {
+	name = "Fasim Kaldur"
+	dynasty = 9396 # ibn Hanif
+	father = 62845
+	culture = badia
+	religion = kahin
+	trait = creature_human
+	trait = expert_fighter
+	trait = skilled_tactician
+	trait = cruel
+	trait = stubborn
+	trait = desert_terrain_leader
+	trait = wroth
+	1336.1.1 = { birth = yes }
+	1400.1.1 = { death = yes }
+}
+62845 = {
+	name = Ubay
+	dynasty = 9396
+	father = 62846
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	1300.1.1 = { birth = yes }
+	1358.1.1 = { death = yes }
+}
+62846 = {
+	name = Saif
+	dynasty = 9396
+	father = 62847
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	1268.1.1 = { birth = yes }
+	1319.1.1 = { death = yes }
+}
+62847 = {
+	name = Hani
+	dynasty = 9396
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	1231.1.1 = { birth = yes }
+	1298.1.1 = { death = yes }
+}
+62848 = {
+	name = Halim
+	dynasty = 9396
+	father = 62847
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	1259.1.1 = { birth = yes }
+	1308.1.1 = { death = yes }
+}
+62849 = {
+	name = Khalil
+	dynasty = 9396
+	father = 62848
+	culture = badia
+	religion = qisma
+	trait = creature_human
+	1281.1.1 = { birth = yes }
+	1327.1.1 = { death = yes }
+}
+62850 = {
+	name = "Sa'ib"
+	dynasty = 9218 # al-Banu
+	culture = hadhar
+	religion = pantheist_league
+	trait = creature_human
+	trait = expert_cleric
+	1320.1.1 = { birth = yes }
+	1355.1.1 = {
+		trait = lunatic
+		trait = wererat
+		religion = abyssal_cult
+	}
+	1367.1.1 = {
+		death = {
+			death_reason = death_duel
+		}
+	}
+}
+62851 = {
+	name = Qadim
+	dynasty = 9306 # Qan
+	culture = jann
+	religion = qisma
+	trait = creature_genie
+	850.1.1 = { birth = yes }
+	1100.1.1 = { death = yes }
+}
+62852 = {
+	name = Zaki
+	dynasty = 9306 # Qan
+	father = 62851 # Qadim
+	culture = jann
+	religion = qisma
+	trait = creature_genie
+	1030.1.1 = { birth = yes }
+	1340.1.1 = { death = yes }
+}
+62853 = {
+	name = "Ardasir al-Darah"
+	dynasty = 9306 # Qan
+	father = 62852 # Zaki
+	culture = jann
+	religion = qisma
+	trait = creature_genie
+	trait = expert_fighter
+	trait = ambitious
+	trait = proud
+	trait = brave
+	trait = gregarious
+	1140.1.1 = { birth = yes }
+	1340.1.1 = { give_nickname = nick_the_incomparable }
+	1500.1.1 = { death = yes }
+}
+62854 = {
+	name = "Arhalba"
+	dynasty = 9390 # al-Waughiwan
+	father = 62855
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = trained_ranger
+	1334.1.1 = { birth = yes }
+	1405.1.1 = { death = yes }
+}
+62855 = {
+	name = "Ibiranu"
+	dynasty = 9390 # al-Waughiwan
+	father = 62856
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = journeyman_barbarian
+	1301.1.1 = { birth = yes }
+	1358.7.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+62856 = {
+	name = "Niqmepa"
+	dynasty = 9390 # al-Waughiwan
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = journeyman_ranger
+	1266.1.1 = { birth = yes }
+	1342.1.1 = { death = yes }
+}
+62857 = {
+	name = "Aziru"
+	dynasty = 9390 # al-Waughiwan
+	father = 62858
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = trained_fighter
+	1336.1.1 = { birth = yes }
+	1411.1.1 = { death = yes }
+}
+62858 = {
+	name = "Niqmaddu"
+	dynasty = 9390 # al-Waughiwan
+	father = 62856
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = trained_ranger
+	1305.1.1 = { birth = yes }
+	1359.11.2 = { death = yes }
+}
+62859 = {
+	name = Yaqarum
+	dynasty = 9389 # al-Shazzi
+	father = 62860
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = trained_barbarian
+	1289.1.1 = { birth = yes }
+	1352.1.1 = { death = yes }
+}
+62860 = {
+	name = Shuwardata
+	dynasty = 9389 # al-Shazzi
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = master_ranger
+	1254.1.1 = { birth = yes }
+	1333.1.1 = { death = yes }
+}
+62861 = {
+	name = Aqhat
+	dynasty = 9389 # al-Shazzi
+	father = 62860
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = trained_paladin
+	1292.1.1 = { birth = yes }
+	1347.1.1 = { death = yes }
+}
+62862 = {
+	name = Yassub
+	dynasty = 9389 # al-Shazzi
+	father = 62861
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = expert_rogue
+	1325.1.1 = { birth = yes }
+	1408.1.1 = { death = yes }
+}
+62863 = {
+	name = "Abdikheba"
+	dynasty = 9391 # al-Zab
+	father = 62864
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = trained_paladin
+	1336.1.1 = { birth = yes }
+	1406.1.1 = { death = yes }
+}
+62864 = {
+	name = "Labaya"
+	dynasty = 9391 # al-Zab
+	father = 62865
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = barbarian
+	1301.1.1 = { birth = yes }
+	1359.10.1 = { death = yes }
+}
+62865 = {
+	name = "Ammurapi"
+	dynasty = 9391 # al-Zab
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = journeyman_rogue
+	1270.1.1 = { birth = yes }
+	1346.1.1 = { death = yes }
+}
+62866 = {
+	name = "Ammitamru"
+	dynasty = 9391 # al-Zab
+	father = 62865
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = trained_fighter
+	1303.1.1 = { birth = yes }
+	1378.1.1 = { death = yes }
+}
+62867 = {
+	name = "Danel"
+	dynasty = 9391 # al-Zab
+	father = 62866
+	culture = fabada
+	religion = kahin
+	trait = creature_human
+	trait = trained_ranger
+	1347.1.1 = { birth = yes }
+	1428.1.1 = { death = yes }
+}
+
+#62900 onward - playable monsters from the fringes
+
+62900 = {
+	name = Sharaman
+	dynasty = 13382 # al-Abdi
+	culture = naga
+	religion = ten_thousand_gods
+	trait = creature_naga
+	trait = expert_cleric
+	trait = kind
+	1010.1.1 = { birth = yes }
+	1367.6.1 = { death = yes }
+}
+62901 = {
+	name = Maazara
+	female = yes
+	dynasty = 13383 # Ysawisi
+	culture = naga
+	religion = ten_thousand_gods
+	trait = creature_naga
+	trait = expert_cleric
+	1013.1.1 = { birth = yes }
+	1077.1.1 = { add_spouse = 62900 }
+	1360.7.7 = { death = yes }
+}
+62902 = {
+	name = Sharamaaz
+	female = yes
+	dynasty = 13382 # al-Abdi
+	father = 62900
+	mother = 62901
+	culture = naga
+	religion = ten_thousand_gods
+	trait = creature_naga
+	trait = expert_cleric
+	1123.1.1 = { birth = yes }
+	1500.6.1 = { death = yes }
+}
+62903 = {
+	name = Kamalla
+	female = yes
+	dynasty = 13385 # al-Sabiyi
+	culture = gnoll
+	religion = abyssal_cult
+	trait = creature_gnoll
+	trait = trained_ranger
+	1338.1.1 = { birth = yes }
+	1389.1.1 = { death = yes }
+}
+62904 = {
+	name = Kalys
+	female = yes
+	dynasty = 610 # Alibrebi
+	culture = drow
+	religion = lolth_cult
+	trait = creature_drow
+	trait = expert_cleric
+	1200.1.1 = { birth = yes }
+	1500.1.1 = { death = yes }
+}
+62905 = {
+	name = Broggh
+	dynasty = 1152 # Inzibat
+	culture = duergar
+	religion = primordial
+	trait = creature_dwarf
+	trait = trained_sorcerer
+	trait = origin_aberrant_mind
+	1250.1.1 = { birth = yes }
+	1260.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
+	1500.1.1 = { death = yes }
+}
+62906 = {
+	name = Karif
+	dynasty = 13396 # al-Saqr
+	culture = badia
+	religion = qisma
+	trait = creature_centaur
+	trait = expert_ranger
+	1325.1.1 = {
+		culture = centaur
+		birth = yes
+	}
+	1385.1.1 = { death = yes }
+}
+62907 = {
+	name = Ophidia
+	female = yes
+	dynasty = 13397 # as-Sokkari
+	culture = noga
+	religion = nogari
+	trait = creature_human
+	trait = trained_sorcerer
+	trait = origin_shadow
+	trait = arbitrary
+	100.1.1 = { birth = yes }
+	110.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
+	140.1.1 = {
+		effect = {
+			set_graphical_culture = lamia
+			set_character_flag = undead_court
+			remove_trait = creature_human
+			add_trait = creature_naga
+		}
+		immortal_age = 35
+	}
+	1600.1.1 = { death = yes }
+}
+62908 = {
+	name = Tebessa
+	female = yes
+	dynasty = 13398 # al-Khawati
+	culture = badia
+	religion = qisma
+	trait = creature_centaur
+	trait = expert_ranger
+	trait = trusting
+	trait = honest
+	1335.1.1 = {
+		culture = centaur
+		birth = yes
+	}
+	1400.1.1 = { death = yes }
+}
+62909 = {
+	name = Qaid
+	dynasty = 13399 # al-Imlaq
+	culture = desert_giant
+	religion = primordial
+	trait = creature_giant
+	trait = trained_fighter
+	trait = wroth
+	1322.1.1 = { birth = yes }
+	1345.1.1 = { give_nickname = nick_the_restorer }
+	1400.1.1 = { death = yes }
+}
+62910 = { 
+	name = "Dejan"
+	dynasty = 13400
+	culture = sahuagin
+	religion = infernal
+	trait = creature_sahuagin
+	1220.1.1 = {
+		birth = yes
+	}
+	1250.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
 	}
 }

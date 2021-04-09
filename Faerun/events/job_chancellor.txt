@@ -284,7 +284,7 @@ character_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 360
 
@@ -298,8 +298,16 @@ character_event = {
 			factor = 0.75
 			any_owned_bloodline = { has_bloodline_flag = bloodline_faster_claims } #If chancellor is also your relative.
 		}
+		modifier = {
+			factor = 0.75
+			liege = { society_rank = { rank = 4 society = heralds } }
+		}
+		modifier = {
+			factor = 0.75
+			society_rank = { rank = 4 society = heralds }
+		}
 	}
-	
+
 	option = {
 		name = "EVTOPTA913"
 		hidden_tooltip = {
@@ -1148,7 +1156,12 @@ character_event = {
 	option = {
 		name = "EVTOPTA20140" #Make him disappear...
 		ai_chance = { factor = 40 }
-		piety = -10
+		if = {
+			limit = {
+				NOT = { olrox_is_evil_religion_trigger = yes }
+			}
+			piety = -10
+		}
 		random_list = {
 			50 = {
 				FROM = {

@@ -41,7 +41,7 @@
 }
 611.6.1 = {
 	holder = 15137 # Jungar Suneater
-	liege = d_suneater
+	liege = 0
 }
 660.1.1 = {
 	holder = 15138 # Wavr Suneater
@@ -95,7 +95,6 @@
 	law = agnatic_succession
 	law = succ_turkish_succession
 	holder = 30528 # Logram Eyegouger
-	liege = d_eyegouger
 }
 1374.3.1 = {
 	law = true_cognatic_succession

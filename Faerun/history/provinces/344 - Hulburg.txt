@@ -20,8 +20,8 @@ religion = monster_pantheon
 terrain = hills
 #History
 940.1.1 = {
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	b_griffonwatch_keep = castle
 	b_hulburg = city
 }

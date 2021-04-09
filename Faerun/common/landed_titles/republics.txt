@@ -21,6 +21,10 @@ b_teltorna = { culture = highcoaster }
 b_turnpiker = { culture = highcoaster } # Filler
 b_melcador = { culture = highcoaster } # Filler
 b_reddan = { culture = highcoaster } # Filler
+b_silverhand = { culture = highcoaster }
+b_neverember = { culture = highcoaster }
+b_cassalanter = { culture = highcoaster }
+b_vantur = { culture = highcoaster }
 
 #Thesk (Telflamm)
 
@@ -38,29 +42,13 @@ b_skyhigh_r = { culture = nar }
 b_taizzah_r = { culture = nar }
 b_malre = { culture = nar }
 
-#Thindol (Lundeth)
-
-b_buaba = { culture = thinguth }
-b_vestla = { culture = thinguth }
-b_lundng = { culture = thinguth }
-b_mofd = { culture = thinguth }
-b_binmba = { culture = thinguth }
-
-#Thindol (Delselar/Guthland)
-
-b_chanda = { culture = thinguth }
-b_manda_r = { culture = thinguth }
-b_bonekate = { culture = thinguth }
-b_chiya = { culture = thinguth }
-b_monfront = { culture = thinguth }
-
-#Thindol (Thindar)
+#Thindol
 
 b_gurdsa = { culture = thinguth }
-b_gweith = { culture = thinguth }
 b_chapa = { culture = thinguth }
-b_chimba = { culture = thinguth }
-b_bonda = { culture = thinguth }
+b_gweith = { culture = thinguth }
+b_buaba = { culture = thinguth }
+b_manda_r = { culture = thinguth }
 
 #Amn
 
@@ -69,6 +57,11 @@ b_alibakkar = { culture = amnian }
 b_dannihyr = {culture = amnian }
 b_nashivaar = { culture = amnian }
 b_ophal = { culture = amnian }
+b_colwyvv = { culture = amnian }
+b_gheldieg = { culture = amnian }
+b_jysstev = { culture = amnian }
+b_qhelvor = { culture = amnian }
+b_xwrnnag = { culture = amnian }
 
 #Sembia
 
@@ -96,26 +89,18 @@ b_brewmaster = { culture = dalesman }
 
 #Mulmaster
 
-b_uomdolphin = { culture = moonsea }
-b_ironfang = { culture = moonsea }
-b_blackbuckler = { culture = moonsea }
-b_telsnaer = { culture = moonsea }
-b_tallwand = { culture = moonsea }
+b_uomdolphin = { culture = tharian }
+b_ironfang = { culture = tharian }
+b_blackbuckler = { culture = tharian }
+b_telsnaer = { culture = tharian }
+b_tallwand = { culture = tharian }
 
 #Melvaunt
 
-b_nanther = { culture = moonsea }
-b_bruil = { culture = moonsea }
-b_leiyraghon = { culture = moonsea }
-b_nurian = { culture = moonsea }
-
-#Mhairhetel
-
-b_nsaran = { culture = yuanti }
-b_hastalhorn = { culture = halruaan }
-b_zalhar = { culture = wild_dwarf }
-b_ssatssar = { culture = yuanti }
-b_nthalthass = { culture = yuanti }
+b_nanther = { culture = tharian }
+b_bruil = { culture = tharian }
+b_leiyraghon = { culture = tharian }
+b_nurian = { culture = tharian }
 
 #Tashalar
 
@@ -129,7 +114,7 @@ b_jarande = { culture = tashalan }
 
 b_thomor = {
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 }
 
 #Reth
@@ -139,6 +124,12 @@ b_silvershield = { culture = highcoaster }
 b_jannath = { culture = highcoaster }
 b_eltan = { culture = highcoaster }
 b_belt = { culture = highcoaster }
+b_adrian = { culture = highcoaster }
+b_vanthampur = { culture = highcoaster }
+b_ravengard = { culture = highcoaster }
+b_portyr = { culture = highcoaster }
+b_valarken = { culture = highcoaster }
+b_stelmantle = { culture = highcoaster }
 
 #Hawa
 b_al_jasir = { culture = qarsan }
@@ -174,3 +165,34 @@ b_seltarir = { culture = durpari }
 b_gemstone = { culture = shield_dwarf }
 b_firmstand = { culture = durpari }
 b_turamir = { culture = durpari }
+
+#Nyanzaru
+b_ateak = { culture = chultan }
+b_talroa = { culture = chultan }
+b_makuto = { culture = chultan }
+b_umelo = { culture = chultan }
+b_nweke = { culture = chultan }
+
+#Magharibi
+b_qo = { culture = akotan }
+b_kolamilope = { culture = akotan }
+b_adebowalan = { culture = akotan }
+b_mooshalew = { culture = akotan }
+b_olengode = { culture = akotan }
+
+#Westgate
+##Pre-Orbakh
+b_theran = { culture = draeven }
+b_vhammos = { culture = draeven }
+b_hammerwand = { culture = draeven }
+b_thalavar = { culture = draeven }
+b_viran = { culture = draeven }
+##Night Masks
+b_shoon_rep = { culture = draeven }
+b_dhialael = { culture = draeven }
+b_kamos = { culture = draeven }
+##Post-Orbakh
+b_bleth = { culture = draeven }
+b_jin_jian = { culture = shou }
+b_resk = { culture = draeven }
+b_mendi = { culture = draeven }

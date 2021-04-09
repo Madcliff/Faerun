@@ -16,7 +16,7 @@ b_dragonspear_castle = tribal
 
 # Misc
 culture = talfir
-religion = evil_human_pantheon
+religion = shadow_gods
 terrain = plains
 #History
 46.1.1 = {
@@ -57,35 +57,44 @@ terrain = plains
 }
 1315.1.1 = {
 	culture = highcoaster
-	religion = good_human_pantheon
-	b_dragonspear_castle = castle
+	religion = martial_faith
+	b_dragonspear_castle = temple
 }
 1354.1.1 = {
 	culture = baatezu
 	religion = infernal
+	b_dragonspear_castle = castle
 }
 1356.8.1 = {
-	culture = monster
-	religion = monster_pantheon
-	b_dragonspear_castle = tribal
+	culture = highcoaster
+	religion = martial_faith
+	b_dragonspear_castle = temple
 }
 1363.1.1 = {
-	b_dragonspear_castle = castle
 	culture = baatezu
 	religion = infernal
+	b_dragonspear_castle = castle
 }
 1364.1.1 = {
-	b_dragonspear_castle = tribal
-	culture = monster
-	religion = monster_pantheon
+	culture = highcoaster
+	religion = martial_faith
+	b_dragonspear_castle = temple
 }
 1369.1.1 = {
+	religion = triadic
 	b_dragonspear_castle = castle
-	culture = highcoaster
-	religion = good_human_pantheon
 }
 1369.2.1 = {
-	b_dragonspear_castle = tribal
-	culture = monster
-	religion = monster_pantheon
+	religion = martial_faith
+	b_dragonspear_castle = temple
+}
+1465.1.1 = {
+	religion = shadow_gods
+	culture = tethyrian
+	b_dragonspear_castle = castle
+}
+1481.1.1 = {
+	religion = martial_faith
+	culture = highcoaster
+	b_dragonspear_castle = temple
 }

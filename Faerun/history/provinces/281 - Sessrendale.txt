@@ -21,14 +21,13 @@ terrain = hills
 #History
 880.1.1 = {
 	culture = dalesman
-	religion = good_human_pantheon
+	religion = solar
 	b_sessrenglade = castle
 	b_oversember_vale = city
 }
 1232.1.1 = {
 	remove_settlement = b_oversember_vale
 	b_sessrenglade = tribal
-	culture = monster
-	religion = monster_pantheon
+	religion = shadow_gods
 	# the Sessrendale War - obliterated by Archendale and not resettled
 }

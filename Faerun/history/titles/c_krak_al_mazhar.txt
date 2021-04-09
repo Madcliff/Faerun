@@ -1,0 +1,13 @@
+# e_north_zakhara
+500.1.1={
+	law = true_cognatic_succession
+	law = succ_magic_elective
+}
+1330.1.1 = {
+	holder = 62023 # Zaid the Bonfire
+	liege = d_brotherhood_of_true_flame
+}
+1385.1.1 = {
+	holder = 62843 # Heidar Qan
+	liege = d_great_anvil
+}

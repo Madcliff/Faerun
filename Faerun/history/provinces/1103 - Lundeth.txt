@@ -24,7 +24,12 @@ religion = goblin_pantheon
 	religion = monster_pantheon
 }
 1348.1.1 = {
-	culture = moonsea
-	religion = evil_human_pantheon
+	culture = tharian
+	religion = dead_three
 	b_lundeth = castle
+}
+1362.1.1 = {
+	culture = bedine
+	religion = shadow_gods
+	b_lundeth = tribal
 }

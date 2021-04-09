@@ -15,7 +15,10 @@ b_st_caham = temple
 #b_heham = castle
 
 # Misc
-culture = heartlander
-religion = calishite_faith
+culture = draeven
+religion = solar
 
 #History
+1450.1.1 = {
+	religion = infernal
+}

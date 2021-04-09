@@ -30,8 +30,8 @@ religion = monster_pantheon
 	b_proskur = tribal
 }
 1090.1.1 = {
-	culture = heartlander
-	religion = evil_human_pantheon
+	culture = draeven
+	religion = shadow_gods
 	b_proskur = city
 }
 1310.1.1 = {

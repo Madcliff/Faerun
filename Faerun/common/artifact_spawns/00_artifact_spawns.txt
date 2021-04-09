@@ -1,5 +1,5 @@
-holy_avenger = { #piergerion
-  max_amount = 1
+holy_avenger = { #piergerion and gareth
+  max_amount = 2
   spawn_date = 1314.1.1
 
   spawn_chance = {
@@ -10,36 +10,16 @@ holy_avenger = { #piergerion
     value = 0
     additive_modifier = {
       value = 100
-      character = 7001
+      OR = {
+        character = 7001
+        character = 63703
+      }
     }
   }
 
   artifacts = {
     holy_avenger = {
-      value = 1
-    }
-  }
-}
-
-sword_of_chaos = { #sarevok
-  max_amount = 1
-  spawn_date = 1360.1.1
-
-  spawn_chance = {
-    value = 100
-  }
-
-  weight = {
-    value = 0
-    additive_modifier = {
-      value = 100
-      character = 5
-    }
-  }
-
-  artifacts = {
-    sword_of_chaos = {
-      value = 1
+      value = 2
     }
   }
 }
@@ -305,9 +285,9 @@ charon_claw = { #entreri
   }
 }
 
-scepter_tyrant_eye = { #fzoul
-  max_amount = 1
-  spawn_date = 1370.1.1
+flame_tongue = { #obould d_daggerford and k_tethyr
+  max_amount = 3
+  spawn_date = 900.1.1
 
   spawn_chance = {
     value = 100
@@ -317,35 +297,43 @@ scepter_tyrant_eye = { #fzoul
     value = 0
     additive_modifier = {
       value = 100
-      character = 56006
-    }
-  }
-
-  artifacts = {
-    scepter_tyrant_eye = {
-      value = 1
-    }
-  }
-}
-
-flame_tongue = { #obould
-  max_amount = 1
-  spawn_date = 1345.1.1
-
-  spawn_chance = {
-    value = 100
-  }
-
-  weight = {
-    value = 0
-    additive_modifier = {
-      value = 100
-      character = 30550
+      OR = {
+        character = 30550
+        primary_title = {
+          title = d_daggerford
+        }
+        primary_title = {
+          title = k_tethyr
+        }
+      }
     }
   }
 
   artifacts = {
     flame_tongue = {
+      value = 3
+    }
+  }
+}
+
+frost_brand = { #eltan
+  max_amount = 1
+  spawn_date = 1300.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      character = 2010
+    }
+  }
+
+  artifacts = {
+    frost_brand = {
       value = 1
     }
   }
@@ -374,7 +362,7 @@ wand_of_lightning = { #simbul
   }
 }
 
-jarlaxle_item_collection = { #Jarlaxle
+jarlaxle_item_collection = { #jarlaxle
   max_amount = 1
   spawn_date = 1256.1.1
 
@@ -397,6 +385,109 @@ jarlaxle_item_collection = { #Jarlaxle
   }
 }
 
+staff_of_the_magi = { #larloch and ulraunt
+  max_amount = 2
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      OR = {
+        character = 61044
+        character = 2002
+      }
+    }
+  }
+
+  artifacts = {
+    staff_of_the_magi = {
+      value = 2
+    }
+  }
+}
+
+moonblade = { #emperor of evermeet arilyn moonblade and Xan
+  max_amount = 3
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      OR = {
+        character = 45013
+        character = 2059
+        primary_title = {
+          title = e_evermeet
+        }
+      }
+    }
+  }
+
+  artifacts = {
+    moonblade = {
+      value = 3
+    }
+  }
+}
+
+alustriels_amulet = { #alustriel
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      character = 5001
+    }
+  }
+
+  artifacts = {
+    alustriels_amulet = {
+      value = 1
+    }
+  }
+}
+
+regalia_of_impiltur = { #king of impiltur
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      primary_title = {
+        title = k_impiltur
+      }
+    }
+  }
+
+  artifacts = {
+    regalia_of_impiltur = {
+      value = 1
+    }
+  }
+}
+
 #####RANDOM#####
 
 hammer_of_thunderbolts = {
@@ -407,6 +498,14 @@ hammer_of_thunderbolts = {
     value = 100
   }
 
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
   artifacts = {
     hammer_of_thunderbolts = {
       value = 1
@@ -414,7 +513,7 @@ hammer_of_thunderbolts = {
   }
 }
 
-staff_of_the_magi = {
+defender_sword = {
   max_amount = 1
   spawn_date = 1.1.1
 
@@ -422,8 +521,502 @@ staff_of_the_magi = {
     value = 100
   }
 
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
   artifacts = {
-    staff_of_the_magi = {
+    defender_sword = {
+      value = 1
+    }
+  }
+}
+
+dwarven_thrower = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+      trait = creature_dwarf
+    }
+  }
+
+  artifacts = {
+    dwarven_thrower = {
+      value = 1
+    }
+  }
+}
+
+sun_blade = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    sun_blade = {
+      value = 1
+    }
+  }
+}
+
+nine_lives_stealer = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    nine_lives_stealer = {
+      value = 1
+    }
+  }
+}
+
+scimitar_of_speed = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    scimitar_of_speed = {
+      value = 1
+    }
+  }
+}
+
+staff_thunder_lightning = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    staff_thunder_lightning = {
+      value = 1
+    }
+  }
+}
+
+staff_of_fire = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    staff_of_fire = {
+      value = 1
+    }
+  }
+}
+
+staff_of_frost = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    staff_of_frost = {
+      value = 1
+    }
+  }
+}
+
+staff_of_healing = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    staff_of_healing = {
+      value = 1
+    }
+  }
+}
+
+staff_of_swarming_insects = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    staff_of_swarming_insects = {
+      value = 1
+    }
+  }
+}
+
+staff_of_woodlands = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+      z_druid = yes
+    }
+  }
+
+  artifacts = {
+    staff_of_woodlands = {
+      value = 1
+    }
+  }
+}
+
+dancing_sword = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    dancing_sword = {
+      value = 1
+    }
+  }
+}
+
+defending_dagger = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    defending_dagger = {
+      value = 1
+    }
+  }
+}
+
+spellguard_shield = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    spellguard_shield = {
+      value = 1
+    }
+  }
+}
+
+dwarven_plate = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+      trait = creature_dwarf
+    }
+  }
+
+  artifacts = {
+    dwarven_plate = {
+      value = 1
+    }
+  }
+}
+
+efreeti_chain = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    efreeti_chain = {
+      value = 1
+    }
+  }
+}
+
+robe_of_colors = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    robe_of_colors = {
+      value = 1
+    }
+  }
+}
+
+robe_of_stars = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    robe_of_stars = {
+      value = 1
+    }
+  }
+}
+
+cloak_of_arachnida = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    cloak_of_arachnida = {
+      value = 1
+    }
+  }
+}
+
+cloak_of_displacement = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    cloak_of_displacement = {
+      value = 1
+    }
+  }
+}
+
+cloak_of_the_bat = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    cloak_of_the_bat = {
+      value = 1
+    }
+  }
+}
+
+mantle_of_spell_resistance = {
+  max_amount = 1
+  spawn_date = 1.1.1
+
+  spawn_chance = {
+    value = 100
+  }
+
+  weight = {
+    value = 0
+    additive_modifier = {
+      value = 100
+      is_landed = yes
+    }
+  }
+
+  artifacts = {
+    mantle_of_spell_resistance = {
       value = 1
     }
   }

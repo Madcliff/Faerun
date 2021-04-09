@@ -12,7 +12,7 @@ b_redstone = castle
 
 # Misc
 culture = chondathan
-religion = good_human_pantheon
+religion = natural
 terrain = farmlands
 
 #History
@@ -24,4 +24,7 @@ terrain = farmlands
 }
 900.1.1 = {
 	b_immersea = city
+}
+1471.1.1 = {
+	religion = shadow_gods
 }

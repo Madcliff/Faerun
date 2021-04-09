@@ -1,11 +1,11 @@
-patron_azuth = { # 
+patron_azuth = { #
 	potential = {
 		age = 16
 		year = 264
 		OR = {
-			religion = good_human_pantheon
+			religion = chessic
 			religion = calishite_faith
-			religion = evil_human_pantheon
+			religion = arcane
 		}
 		NOR = {
 			trait = imbecile
@@ -26,7 +26,7 @@ patron_azuth = { #
 patron_bane = { #
 	potential = {
 		age = 16
-		religion = evil_human_pantheon
+		religion = dead_three
 		NOT = { trait = kind }
 	}
 	customizer = no
@@ -41,15 +41,15 @@ patron_bane = { #
 	ai_honor = -20
 	same_opinion = 20
 }
- 
+
 patron_chauntea = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = netherese_pantheon
-			religion = ulutiuan
-			religion = ulutiuan_reformed
+			religion = rasallesian
+			religion = mercantile
+			religion = lapal
+			religion = natural
 		}
 	}
 	customizer = no
@@ -61,34 +61,13 @@ patron_chauntea = { #
 	same_opinion = 20
 }
 
-patron_eilistraee = { #
-	potential = {
-		age = 16
-		OR = {
-			religion = drow_polytheism
-			AND = {
-				religion = good_human_pantheon
-				culture = drow
-			}
-		}
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	diplomacy = 1
-	culture_flex = -0.05
-	religion_flex = -0.05
-	ai_greed = -10
-	ai_ambition = -10
-	same_opinion = 20
-}
-
 patron_gond = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
+			religion = inventive
+			religion = lapal
+			religion = adama
 			religion = gnome_pantheon
 		}
 		NOR = {
@@ -108,9 +87,14 @@ patron_gond = { #
 }
 
 patron_helm = { #
-	potential = { 
+	potential = {
 		age = 16
-		religion = good_human_pantheon
+		OR = {
+			religion = mercantile
+			religion = triadic
+			religion = ten_thousand_gods
+			religion = muhjari
+		}
 		NOR = {
 			trait = deceitful
 			z_rogue = yes
@@ -132,9 +116,10 @@ patron_ilmater = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = ulutiuan
-			religion = ulutiuan_reformed
+			religion = triadic
+			religion = mercantile
+			religion = lapal
+			religion = muhjari
 			religion = calishite_faith
 		}
 		NOR = {
@@ -157,17 +142,20 @@ patron_kelemvor = { #
 		year = 1368
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
+			religion = mercantile
+			religion = lapal
+			religion = solar
 		}
 		NOR = {
 			trait = undead
 			trait = immortal
 			trait = longevity
 			trait = vampire
-			trait = vampire_spawn
+#			trait = vampire_spawn
 #			trait = dhampyr
 			trait = lich
+			trait = archlich
+			trait = lich_baelnorn
 		}
 	}
 	customizer = no
@@ -184,10 +172,7 @@ patron_kelemvor = { #
 patron_kossuth = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
-		}
+		religion = primordial
 		NOT = { graphical_culture = watergenasigfx }
 	}
 	customizer = no
@@ -207,14 +192,16 @@ patron_lathander = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = calishite_faith
+			religion = chessic
+			religion = solar
 		}
 		NOR = {
 			trait = undead
 			trait = vampire
-			trait = vampire_spawn
+#			trait = vampire_spawn
 			trait = lich
+			trait = archlich
+			trait = lich_baelnorn
 		}
 	}
 	customizer = no
@@ -233,9 +220,8 @@ patron_malar = { #
 		age = 16
 		OR = {
 			religion = deities_of_fury
-			religion = calishite_faith
-			religion = ulutiuan
-			religion = ulutiuan_reformed
+			religion = ten_thousand_gods
+			religion = qisma
 			religion = tuigan_shamanism
 		}
 	}
@@ -254,7 +240,7 @@ patron_malar = { #
 patron_mask = { #
 	potential = {
 		age = 16
-		religion = evil_human_pantheon
+		religion = shadow_gods
 	}
 	customizer = no
 	random = yes
@@ -272,7 +258,8 @@ patron_mielikki = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
+			religion = rasallesian
+			religion = natural
 			religion = elven_pantheon
 		}
 	}
@@ -289,10 +276,9 @@ patron_mystra = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
+			religion = rasallesian
 			religion = calishite_faith
-			religion = evil_human_pantheon
-			religion = netherese_pantheon
+			religion = arcane
 		}
 		NOR = {
 			trait = imbecile
@@ -314,8 +300,10 @@ patron_oghma = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
+			religion = chessic
+			religion = inventive
+			religion = adama
+			religion = muhjari
 		}
 		NOR = {
 			trait = imbecile
@@ -338,9 +326,11 @@ patron_selune = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = calishite_faith
-			religion = netherese_pantheon
+			religion = rasallesian
+			religion = arcane
+			religion = lapal
+			religion = adama
+			religion = joyful
 			religion = ten_thousand_gods
 			religion = qisma
 			religion = pantheist_league
@@ -364,9 +354,8 @@ patron_shar = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = evil_human_pantheon
 			religion = calishite_faith
-			religion = netherese_pantheon
+			religion = shadow_gods
 		}
 	}
 	customizer = no
@@ -385,8 +374,8 @@ patron_shaundakul = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
+			religion = mercantile
+			religion = muhjari
 		}
 	}
 	customizer = no
@@ -403,8 +392,8 @@ patron_silvanus = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
+			religion = natural
+			religion = lapal
 		}
 	}
 	customizer = no
@@ -420,8 +409,8 @@ patron_sune = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
+			religion = joyful
+			religion = mercantile
 		}
 	}
 	customizer = no
@@ -438,7 +427,7 @@ patron_talos = { #
 		age = 16
 		OR = {
 			religion = deities_of_fury
-			religion = netherese_pantheon
+			religion = lapal
 			religion = calishite_faith
 		}
 	}
@@ -458,9 +447,9 @@ patron_tempus = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
-			religion = deities_of_fury
+			religion = chessic
+			religion = lapal
+			religion = martial_faith
 		}
 	}
 	customizer = no
@@ -479,8 +468,8 @@ patron_torm = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = calishite_faith
+			religion = triadic
+			religion = adama
 		}
 		NOR = {
 			trait = deceitful
@@ -507,7 +496,8 @@ patron_tymora = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
+			religion = joyful
+			religion = muhjari
 			religion = calishite_faith
 			religion = halfling_pantheon
 		}
@@ -526,7 +516,7 @@ patron_tyr = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
+			religion = triadic
 			religion = calishite_faith
 		}
 		NOR = {
@@ -552,7 +542,7 @@ patron_umberlee = { #
 		age = 16
 		OR = {
 			religion = deities_of_fury
-			religion = evil_human_pantheon
+			religion = lapal
 		}
 	}
 	customizer = no
@@ -569,13 +559,17 @@ patron_umberlee = { #
 }
 
 patron_waukeen = { #
-	potential = { 
+	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
+			religion = chessic
+			religion = lapal
+			religion = solar
+			religion = mercantile
 			religion = calishite_faith
 			religion = pantheist_league
+			religion = muhjari
+			religion = adama
 		}
 	}
 	customizer = no
@@ -591,9 +585,7 @@ patron_akadi = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
-			religion = calishite_faith
+			religion = primordial
 			religion = tuigan_shamanism
 		}
 		NOT = { graphical_culture = earthgenasigfx }
@@ -610,18 +602,7 @@ patron_akadi = { #
 patron_auril = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = deities_of_fury
-			religion = ulutiuan
-			religion = ulutiuan_reformed
-			AND = {
-				religion = good_human_pantheon
-				OR = {
-					culture = highcoaster
-					culture = illuskan
-				}
-			}
-		}
+		religion = deities_of_fury
 	}
 	customizer = no
 	random = yes
@@ -637,7 +618,10 @@ patron_auril = { #
 patron_beshaba = { #
 	potential = {
 		age = 16
-		religion = evil_human_pantheon
+		OR = {
+			religion = shadow_gods
+			religion = muhjari
+		}
 	}
 	customizer = no
 	random = yes
@@ -653,7 +637,10 @@ patron_beshaba = { #
 patron_deneir = { #
 	potential = {
 		age = 16
-		religion = good_human_pantheon
+		OR = {
+			religion = inventive
+			religion = lapal
+		}
 		NOR = {
 			trait = imbecile
 			trait = inbred
@@ -675,7 +662,8 @@ patron_eldath = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
+			religion = lapal
+			religion = natural
 			religion = tuigan_shamanism
 		}
 	}
@@ -690,9 +678,12 @@ patron_eldath = { #
 
 patron_finder_wyvernspur = { #
 	potential = {
-		year = 1360
+		OR = {
+			year = 1359
+			has_global_flag = finder_ascended
+		}
 		age = 16
-		religion = good_human_pantheon
+		religion = inventive
 	}
 	customizer = no
 	random = yes
@@ -706,9 +697,7 @@ patron_garagos = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = evil_human_pantheon
-			religion = calishite_faith
-			religion = netherese_pantheon
+			religion = shadow_gods
 			religion = deities_of_fury
 		}
 	}
@@ -726,9 +715,8 @@ patron_garagos = { #
 
 patron_gargauth = {
 	potential = {
-		year = 1182
 		age = 16
-		religion = evil_human_pantheon
+		religion = shadow_gods
 	}
 	customizer = no
 	random = yes
@@ -744,9 +732,8 @@ patron_grumbar = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
 			religion = tuigan_shamanism
-			religion = evil_human_pantheon
+			religion = primordial
 		}
 		NOT = { graphical_culture = airgenasigfx }
 	}
@@ -762,7 +749,7 @@ patron_grumbar = { #
 patron_gwaeron_windstrom = { #
 	potential = {
 		age = 16
-		religion = good_human_pantheon
+		religion = natural
 	}
 	customizer = no
 	random = yes
@@ -780,9 +767,10 @@ patron_hoar = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
+			religion = shadow_gods
+			religion = chessic
 			religion = untheric_faith
+			religion = muhjari
 		}
 	}
 	customizer = no
@@ -797,12 +785,9 @@ patron_hoar = { #
 }
 
 patron_istishia = { #
-	potential = { 
+	potential = {
 		age = 16
-		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
-		}
+		religion = primordial
 		NOT = { graphical_culture = firegenasigfx }
 	}
 	random = yes
@@ -817,9 +802,9 @@ patron_istishia = { #
 patron_iyachtu_xvim = { #
 	potential = {
 		age = 16
-		religion = evil_human_pantheon
+		religion = dead_three
 		NOT = { trait = kind }
-		NOT = { year = 1372 }
+		NOT = { has_global_flag = bane_returned }
 	}
 	customizer = no
 	random = yes
@@ -838,9 +823,10 @@ patron_jergal = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
-			religion = netherese_pantheon
+			religion = mercantile
+			religion = dead_three
+			religion = solar
+			religion = shadow_gods
 		}
 	}
 	customizer = no
@@ -857,8 +843,9 @@ patron_lliira = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
+			religion = mercantile
 			religion = calishite_faith
+			religion = joyful
 		}
 	}
 	customizer = no
@@ -873,7 +860,7 @@ patron_lliira = { #
 patron_loviatar = { #
 	potential = {
 		age = 16
-		religion = evil_human_pantheon
+		religion = dead_three
 	}
 	customizer = no
 	random = yes
@@ -891,8 +878,8 @@ patron_lurue = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = elven_pantheon
+			religion = sylvan
+			religion = natural
 		}
 	}
 	customizer = no
@@ -908,7 +895,7 @@ patron_lurue = { #
 patron_milil = { #
 	potential = {
 		age = 16
-		religion = good_human_pantheon
+		religion = inventive
 	}
 	customizer = no
 	random = yes
@@ -924,7 +911,7 @@ patron_nobanion = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
+			religion = natural
 			religion = calishite_faith
 		}
 	}
@@ -940,8 +927,9 @@ patron_red_knight = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
+			religion = chessic
+			religion = mercantile
+			religion = martial_faith
 		}
 	}
 	customizer = no
@@ -959,10 +947,7 @@ patron_red_knight = { #
 patron_savras = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
-		}
+		religion = arcane
 		year = 1358 # Was freed from imprisonment after the Godswar
 	}
 	customizer = no
@@ -977,7 +962,8 @@ patron_sharess = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
+			religion = chessic
+			religion = joyful
 			religion = calishite_faith
 			religion = mulhorandi_faith
 			religion = yuir
@@ -997,7 +983,7 @@ patron_sharess = { #
 patron_shiallia = { #
 	potential = {
 		age = 16
-		religion = good_human_pantheon
+		religion = natural
 	}
 	customizer = no
 	random = yes
@@ -1014,8 +1000,9 @@ patron_siamorphe = {  #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
+			religion = triadic
+			religion = mercantile
+			religion = solar
 		}
 	}
 	customizer = no
@@ -1032,7 +1019,7 @@ patron_siamorphe = {  #
 patron_talona = { #
 	potential = {
 		age = 16
-		religion = evil_human_pantheon
+		religion = shadow_gods
 	}
 	customizer = no
 	random = yes
@@ -1048,14 +1035,9 @@ patron_tiamat = { #
 	potential = {
 		age = 16
 		OR = {
-			culture = chessentan
-			AND = {
-				religion = good_human_pantheon
-				year = 1018
-			}
-			religion = evil_human_pantheon
+			religion = lapal
+			religion = chessic
 			religion = draconic_pantheon
-			religion = untheric_faith
 		}
 	}
 	customizer = no
@@ -1071,29 +1053,11 @@ patron_tiamat = { #
 	same_opinion = 20
 }
 
-patron_ulutiu = { #
-	potential = {
-		age = 16
-		OR = {
-			religion = ulutiuan
-			religion = ulutiuan_reformed
-		}
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	stewardship = 1
-	attrition = -0.1
-	ai_greed = -20
-	ai_ambition = -20
-	same_opinion = 20
-}
-
 patron_valkur = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
+			religion = martial_faith
 			religion = deities_of_fury
 		}
 	}
@@ -1111,10 +1075,13 @@ patron_velsharoon = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = evil_human_pantheon
-			religion = deities_of_fury
+			religion = arcane
+			religion = shadow_gods
 		}
-		year = 1368
+		OR = {
+			year = 1368
+			has_global_flag = velsharoon_ascended
+		}
 	}
 	customizer = no
 	random = yes
@@ -1130,11 +1097,7 @@ patron_velsharoon = { #
 patron_ghaunadaur = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = evil_human_pantheon
-			religion = drow_polytheism
-			religion = abyssal_cult
-		}
+		religion = abyssal_cult
 	}
 	customizer = no
 	random = yes
@@ -1142,51 +1105,6 @@ patron_ghaunadaur = { #
 	intrigue = 1
 	plot_power_modifier = 0.05
 	combat_rating = 5
-	same_opinion = 20
-}
-
-patron_kiaransalee = { #
-	potential = {
-		age = 16
-		religion = drow_polytheism
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	learning = 1
-	intrigue = 1
-	plot_power_modifier = 0.05
-	ai_ambition = 20
-	ai_honor = -20
-	same_opinion = 20
-}
-
-patron_selvetarm = { #
-	potential = {
-		age = 16
-		religion = drow_polytheism
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	martial = 1
-	combat_rating = 2
-	ai_ambition = -20
-	same_opinion = 20
-}
-
-patron_vhaeraun = { #
-	potential = {
-		age = 16
-		religion = drow_polytheism
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	intrigue = 2
-	plot_power_modifier = 0.05
-	ai_honor = -20
-	ai_greed = 30
 	same_opinion = 20
 }
 
@@ -1226,7 +1144,11 @@ patron_berronar_truesilver = { #
 patron_clangeddin_silverbeard = { #
 	potential = {
 		age = 16
-		religion = dwarven_pantheon
+		OR = {
+			religion = dwarven_pantheon
+			religion = ten_thousand_gods
+			religion = muhjari
+		}
 	}
 	customizer = no
 	random = yes
@@ -1364,7 +1286,7 @@ patron_vergadain = { #
 	same_opinion = 20
 }
 
-patron_aerdrie_faenya = { # 
+patron_aerdrie_faenya = { #
 	potential = {
 		age = 16
 		religion = elven_pantheon
@@ -1472,7 +1394,7 @@ patron_rillifane_rallathil = { #
 }
 
 patron_sehanine_moonbow = { #
-	potential = { 
+	potential = {
 		age = 16
 		religion = elven_pantheon
 	}
@@ -1594,7 +1516,10 @@ patron_gaerdal_ironhand = { #
 patron_garl_glittergold = { #
 	potential = {
 		age = 16
-		religion = gnome_pantheon
+		OR = {
+			religion = gnome_pantheon
+			religion = lapal
+		}
 	}
 	customizer = no
 	random = yes
@@ -1614,31 +1539,6 @@ patron_segojan_earthcaller = { #
 	religious = yes
 	health = 1
 	stewardship = 2
-	same_opinion = 20
-}
-
-patron_urdlen = { #
-	potential = {
-		age = 16
-		religion = gnome_pantheon
-		OR = {
-			trait = greedy
-			trait = cruel
-			trait = impaler
-			trait = envious
-			trait = wroth
-		}
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	martial = 1
-	combat_rating = 10
-	ai_ambition = 20
-	ai_greed = 40
-	ai_honor = -30
-	ai_rationality = -30
-	ai_zeal = 20
 	same_opinion = 20
 }
 
@@ -1731,13 +1631,7 @@ patron_anhur = { #
 		age = 16
 		OR = {
 			religion = mulhorandi_faith
-			AND = {
-				religion = good_human_pantheon
-				OR = {
-					culture = thayan
-					culture = chessentan
-				}
-			}
+			religion = chessic
 			religion = untheric_faith
 		}
 	}
@@ -1753,16 +1647,7 @@ patron_anhur = { #
 patron_geb = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = mulhorandi_faith
-			AND = {
-				OR = {
-					religion = good_human_pantheon
-					religion = evil_human_pantheon
-				}
-				culture = thayan
-			}
-		}
+		religion = mulhorandi_faith
 	}
 	customizer = no
 	random = yes
@@ -1776,13 +1661,7 @@ patron_geb = { #
 patron_hathor = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = mulhorandi_faith
-			AND = {
-				religion = good_human_pantheon
-				culture = thayan
-			}
-		}
+		religion = mulhorandi_faith
 	}
 	customizer = no
 	random = yes
@@ -1795,13 +1674,7 @@ patron_hathor = { #
 patron_horus_re = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = mulhorandi_faith
-			AND = {
-				religion = good_human_pantheon
-				culture = thayan
-			}
-		}
+		religion = mulhorandi_faith
 	}
 	customizer = no
 	random = yes
@@ -1821,10 +1694,7 @@ patron_isis = { #
 		OR = {
 			religion = mulhorandi_faith
 			religion = untheric_faith
-			AND = {
-				religion = good_human_pantheon
-				culture = thayan
-			}
+			religion = muhjari
 		}
 	}
 	customizer = no
@@ -1840,13 +1710,7 @@ patron_isis = { #
 patron_nephthys = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = mulhorandi_faith
-			AND = {
-				religion = good_human_pantheon
-				culture = thayan
-			}
-		}
+		religion = mulhorandi_faith
 	}
 	customizer = no
 	random = yes
@@ -1864,10 +1728,7 @@ patron_osiris = { #
 		age = 16
 		OR = {
 			religion = mulhorandi_faith
-			AND = {
-				religion = good_human_pantheon
-				culture = thayan
-			}
+			religion = muhjari
 		}
 	}
 	customizer = no
@@ -1884,16 +1745,7 @@ patron_osiris = { #
 patron_sebek = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = mulhorandi_faith
-			AND = {
-				religion = evil_human_pantheon
-				OR = {
-					culture = thayan
-					culture = chessentan
-				}
-			}
-		}
+		religion = scale_cult
 	}
 	customizer = no
 	random = yes
@@ -1909,26 +1761,7 @@ patron_sebek = { #
 patron_set = { #
 	potential = {
 		age = 16
-		OR = {
-			AND = {
-				OR = {
-					religion = mulhorandi_faith
-					religion = ubtao_worship
-					religion = ubtao_reformed
-					religion = abyssal_cult
-				}
-				OR = {
-					trait = cruel
-					trait = envious
-					trait = impaler
-					trait = wroth
-				}
-			}
-			AND = {
-				religion = evil_human_pantheon
-				culture = thayan
-			}
-		}
+		religion = scale_cult
 	}
 	customizer = no
 	random = yes
@@ -1945,16 +1778,7 @@ patron_set = { #
 patron_thoth = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = mulhorandi_faith
-			AND = {
-				OR = {
-					religion = good_human_pantheon
-					religion = evil_human_pantheon
-				}
-				culture = thayan
-			}
-		}
+		religion = mulhorandi_faith
 	}
 	customizer = no
 	random = yes
@@ -1968,11 +1792,7 @@ patron_thoth = { #
 patron_ibrandul = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = good_human_pantheon
-			religion = calishite_faith
-			religion = evil_human_pantheon
-		}
+		religion = calishite_faith
 	}
 	customizer = no
 	random = yes
@@ -1986,10 +1806,7 @@ patron_ibrandul = { #
 patron_leira = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = good_human_pantheon
-			religion = evil_human_pantheon
-		}
+		religion = arcane
 	}
 	customizer = no
 	random = yes
@@ -2001,10 +1818,10 @@ patron_leira = { #
 	same_opinion = 20
 }
 
-patron_bhaal = { # 
+patron_bhaal = { #
 	potential = {
 		age = 16
-		religion = evil_human_pantheon
+		religion = dead_three
 	}
 	customizer = no
 	random = yes
@@ -2021,11 +1838,11 @@ patron_bhaal = { #
 patron_myrkul = { #
 	potential = {
 		age = 16
-		religion = evil_human_pantheon
+		religion = dead_three
 	}
 	customizer = no
 	random = yes
-	religious = yes	
+	religious = yes
 	learning = 2
 	intrigue = 1
 	ai_ambition = 20
@@ -2048,21 +1865,6 @@ patron_gilgeam = {  #
 	ai_ambition = 20
 	ai_greed = 20
 	ai_zeal = 20
-	same_opinion = 20
-}
-
-patron_tyche = { #
-	potential = {
-		age = 16
-		religion = netherese_pantheon
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	stewardship = 1
-	plot_power_modifier = 0.05
-	defensive_plot_power_modifier = 0.05
-	ai_rationality = -20
 	same_opinion = 20
 }
 
@@ -2163,7 +1965,6 @@ patron_hajama = { #
 	potential = {
 		age = 16
 		OR = {
-			# religion = hajama (dont have this religion yet)
 			religion = muhjari
 			religion = qisma
 			religion = pantheist_league
@@ -2184,7 +1985,6 @@ patron_hakiyah = { #
 		OR = {
 			religion = ten_thousand_gods
 			religion = qisma
-			religion = muhjari
 		}
 	}
 	customizer = no
@@ -2201,7 +2001,6 @@ patron_haku = { #
 		age = 16
 		OR = {
 			religion = ten_thousand_gods
-			religion = muhjari
 			religion = qisma
 		}
 	}
@@ -2219,7 +2018,6 @@ patron_jisan = { #
 		age = 16
 		OR = {
 			religion = ten_thousand_gods
-			religion = muhjari
 			religion = qisma
 		}
 	}
@@ -2237,7 +2035,6 @@ patron_kor = { #
 		age = 16
 		OR = {
 			religion = ten_thousand_gods
-			religion = muhjari
 			religion = qisma
 			religion = pantheist_league
 		}
@@ -2256,7 +2053,6 @@ patron_najm = { #
 		age = 16
 		OR = {
 			religion = ten_thousand_gods
-			religion = muhjari
 			religion = qisma
 			religion = pantheist_league
 		}
@@ -2276,7 +2072,6 @@ patron_zann = { #
 		age = 16
 		OR = {
 			religion = ten_thousand_gods
-			religion = muhjari
 			religion = qisma
 		}
 	}
@@ -2320,7 +2115,7 @@ patron_bahamut = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = good_human_pantheon
+			religion = triadic
 			religion = draconic_pantheon
 			religion = untheric_faith
 		}
@@ -2416,7 +2211,7 @@ patron_sardior = { #
 }
 
 patron_tamara = { #
-	potential = { 
+	potential = {
 		age = 16
 		religion = draconic_pantheon
 	}
@@ -2465,21 +2260,11 @@ patron_amaunator = { #
 	potential = {
 		age = 16
 		OR = {
-			religion = netherese_pantheon
-			AND = {
-				religion = good_human_pantheon
-				OR = {
-					NOT = { year = 661 }
-					year = 1371
-				}
-			}
-			AND = {
-				religion = evil_human_pantheon
-				OR = {
-					NOT = { year = 661 }
-					year = 1371
-				}
-			}
+			NOT = { year = 661 }
+			year = 1371
+		}
+		OR = {
+			religion = solar
 		}
 	}
 	customizer = no
@@ -2490,58 +2275,10 @@ patron_amaunator = { #
 	same_opinion = 20
 }
 
-patron_zinzerena = { #
-	potential = {
-		age = 16
-		religion = drow_polytheism
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	intrigue = 2
-	plot_power_modifier = 0.05
-	ai_honor = -20
-	same_opinion = 20
-}
-
-patron_ilsensine = { #
-	potential = {
-		age = 16
-		religion = evil_human_pantheon
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	learning = 2
-	intrigue = 1
-	ai_ambition = 20
-	ai_rationality = 20
-	same_opinion = 20
-}
-
-patron_maanzecorian = { #
-	potential = {
-		age = 16
-		religion = evil_human_pantheon
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	learning = 2
-	tech_growth_modifier = 0.05
-	ai_rationality = 20
-	ai_ambition = -20
-	same_opinion = 20
-}
-
 patron_moander = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = evil_human_pantheon
-			religion = netherese_pantheon
-		}
-		NOT = { year = 1360 }
+		religion = shadow_gods
 	}
 	customizer = no
 	random = yes
@@ -2573,7 +2310,7 @@ patron_vandria_gilmadrith = { #
 patron_auppenser = { #
 	potential = {
 		age = 16
-		religion = netherese_pantheon
+		religion = arcane
 	}
 	customizer = no
 	random = yes
@@ -2584,66 +2321,10 @@ patron_auppenser = { #
 	same_opinion = 20
 }
 
-patron_great_mother = { #
-	potential = {
-		age = 16
-		religion = evil_human_pantheon
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	learning = 1
-	intrigue = 1
-	combat_rating = 5
-	same_opinion = 20
-}
-
-patron_eshowdow = { #
-	potential = {
-		age = 16
-		OR = {
-			religion = ubtao_worship
-			religion = ubtao_reformed
-		}
-		OR = {
-			trait = cruel
-			trait = envious
-			trait = impaler
-			trait = wroth
-		}
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	intrigue = 2
-	plot_power_modifier = 0.05
-	ai_honor = -20
-	ai_ambition = 20
-	ai_zeal = 20
-	same_opinion = 20
-}
-
 patron_sseth = { #
 	potential = {
 		age = 16
-		OR = {
-			religion = ubtao_worship
-			religion = ubtao_reformed
-			religion = abyssal_cult
-		}
-		OR = {
-			trait = cruel
-			trait = envious
-			trait = impaler
-			trait = wroth
-			AND = {
-				NOT = { religion = abyssal_cult }
-				OR = {
-					trait = creature_naga
-					evilcat_is_yuanti = yes
-				}
-			}
-		}
+		religion = scale_cult
 	}
 	customizer = no
 	random = yes
@@ -2654,43 +2335,6 @@ patron_sseth = { #
 	ai_greed = 20
 	ai_honor = -20
 	ai_zeal = 20
-	same_opinion = 20
-}
-
-patron_ubtao = { #
-	potential = {
-		age = 16
-		OR = {
-			religion = ubtao_worship
-			religion = ubtao_reformed
-		}
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	stewardship = 1
-	attrition = -0.05
-	health = 1
-	ai_honor = 20
-	same_opinion = 20
-}
-
-patron_thard_harr = { #
-	potential = {
-		age = 16
-		OR = {
-			religion = ubtao_worship
-			religion = ubtao_reformed
-		}
-		trait = creature_dwarf
-	}
-	customizer = no
-	random = yes
-	religious = yes
-	stewardship = 1
-	attrition = -0.05
-	combat_rating = 5
-	ai_honor = 20
 	same_opinion = 20
 }
 
@@ -3027,4 +2671,507 @@ patron_zuggtmoy = {
 	ai_ambition = 20
 	ai_honor = -20
 	same_opinion = 20
+}
+
+patron_enlil = {
+	potential = {
+		age = 16
+		religion = untheric_faith
+		year = 1486
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	combat_rating = 5
+	martial = 1
+	speed = 0.05
+	ai_ambition = 20
+	same_opinion = 20
+}
+
+patron_telos = {
+	potential = {
+		age = 16
+		religion = primordial
+		year = 1385
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	combat_rating = 5
+	stewardship = 1
+	damage = 0.05
+	speed = 0.05
+	ai_honor = 20
+	same_opinion = 20
+}
+
+patron_elemental_evil = {
+	potential = {
+		age = 16
+		religion = primordial
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	global_supply_limit = 0.05
+	intrigue = 1
+	siege = 0.05
+	ai_ambition = 20
+	ai_greed = 20
+	ai_rationality = -20
+	ai_honor = -20
+	same_opinion = 20
+}
+
+patron_trickster_gods = {
+	potential = {
+		age = 16
+		religion = primordial
+		OR = {
+			culture_group = katashakan_group
+			c_omu = {
+				same_realm_as = PREV
+			}
+		}
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	intrigue = 2
+	culture_flex = -0.05
+	ai_rationality = -20
+	same_opinion = 20
+}
+
+patron_bazim_gorag = {
+	potential = {
+		age = 16
+		religion = primordial
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	combat_rating = 5
+	random = 0.05
+	global_tax_modifier = 0.05
+	ai_ambition = 20
+	ai_greed = 20
+	ai_rationality = -20
+	same_opinion = 20
+}
+
+patron_achazar = {
+	potential = {
+		age = 16
+		religion = primordial
+		always = no # Laerakond is not yet in play
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	siege_defence = 0.05
+	supply_limit = 0.05
+	global_revolt_risk = -0.05
+	ai_zeal = 20
+	same_opinion = 20
+}
+
+patron_rorn = {
+	potential = {
+		age = 16
+		religion = primordial
+		always = no # as above
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	combat_rating = 10
+	diplomacy = 1
+	ai_rationality = -20
+	same_opinion = 20
+}
+
+patron_cirotralech = {
+	potential = {
+		age = 16
+		religion = primordial
+		always = no # as above
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	martial = 1
+	intrigue = 1
+	army_reinforce_rate = 0.05
+	ai_ambition = 20
+	ai_rationality = -20
+	same_opinion = 20
+}
+
+patron_semuanya = {
+	potential = {
+		age = 16
+		religion = scale_cult
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	health = 1
+	fertility = 0.05
+	sex_appeal_opinion = 5
+	same_opinion = 20
+}
+
+patron_essylliss = {
+	potential = {
+		age = 16
+		religion = scale_cult
+		trait = creature_lizardfolk
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	attrition = -0.1
+	health = 1
+	same_opinion = 20
+}
+
+patron_shekinester = {
+	potential = {
+		age = 16
+		religion = scale_cult
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	intrigue = 1
+	learning = 1
+	stewardship = 1
+	same_opinion = 20
+}
+
+patron_vataqatal = {
+	potential = {
+		age = 16
+		OR = {
+			religion = ten_thousand_gods
+			religion = qisma
+		}
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	martial = 2
+	combat_rating = 5
+	ai_honor = 20
+	same_opinion = 20
+}
+
+patron_bala = {
+	potential = {
+		age = 16
+		OR = {
+			religion = ten_thousand_gods
+			religion = qisma
+		}
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	diplomacy = 2
+	health = 1
+	same_opinion = 20
+}
+
+patron_jarmik = {
+	potential = {
+		age = 16
+		OR = {
+			religion = ten_thousand_gods
+			religion = qisma
+		}
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	attrition = -0.1
+	stewardship = 1
+	ai_greed = -20
+	same_opinion = 20
+}
+
+patron_titania = {
+	potential = {
+		age = 16
+		religion = sylvan
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	diplomacy = 2
+	learning = 1
+	ai_rationality = -20
+	same_opinion = 20
+}
+
+patron_oberon = {
+	potential = {
+		age = 16
+		religion = sylvan
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	stewardship = 1
+	martial = 1
+	attrition = -0.05
+	ai_rationality = -20
+	same_opinion = 20
+}
+
+patron_emmantiensien = {
+	potential = {
+		age = 16
+		religion = sylvan
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	stewardship = 1
+	attrition = -0.05
+	health = 1
+	ai_ambition = -20
+	same_opinion = 20
+}
+
+patron_skerrit = {
+	potential = {
+		age = 16
+		religion = sylvan
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	attrition = -0.1
+	stewardship = 1
+	same_opinion = 20
+}
+
+patron_shajar = {
+	potential = {
+		age = 16
+		OR = {
+			religion = nogari
+			religion = nogari_reformed
+		}
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	stewardship = 1
+	martial = 1
+	fertility = 0.05
+	same_opinion = 20
+}
+
+patron_ragarra = {
+	potential = {
+		age = 16
+		OR = {
+			religion = nogari
+			religion = nogari_reformed
+		}
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	combat_rating = 10
+	attrition = -0.05
+	ai_rationality = -20
+	ai_zeal = 20
+	same_opinion = 20
+}
+
+patron_kiga = {
+	potential = {
+		age = 16
+		OR = {
+			religion = nogari
+			religion = nogari_reformed
+		}
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	combat_rating = 5
+	martial = 1
+	siege_speed = 0.05
+	ai_ambition = 20
+	ai_honor = -20
+	same_opinion = 20
+}
+
+patron_lost_one = {
+	potential = {
+		age = 16
+		OR = {
+			religion = nogari
+			religion = nogari_reformed
+			religion = jaziri
+			religion = jaziri_reformed
+		}
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	learning = 1
+	health = 1
+	tech_growth_modifier = 0.05
+	ai_ambition = -10
+	same_opinion = 20
+}
+
+patron_the_drummer = {
+	potential = {
+		age = 16
+		OR = {
+			religion = jaziri
+			religion = jaziri_reformed
+		}
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	land_morale = 0.05
+	land_organisation = 0.05
+	siege_defence = 0.05
+	same_opinion = 20
+}
+
+patron_karrrga = {
+	potential = {
+		age = 16
+		OR = {
+			religion = jaziri
+			religion = jaziri_reformed
+		}
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	attrition = -0.1
+	global_revolt_risk = -0.05
+	same_opinion = 20
+}
+
+patron_pag = {
+	potential = {
+		age = 16
+		OR = {
+			religion = jaziri
+			religion = jaziri_reformed
+		}
+	}
+	customizer = no
+	random = yes
+	religious = yes
+	fertility = 0.05
+	health = 2
+	same_opinion = 20
+}
+
+uthgar_black_lion = {
+	customizer = no
+	random = no
+	religious = yes
+	ai_honor = 20
+	same_opinion = 10
+}
+
+uthgar_black_raven = {
+	customizer = no
+	random = no
+	religious = yes
+	ai_greed = 10
+	ai_honor = -20
+	same_opinion = 10
+}
+
+uthgar_blue_bear = {
+	customizer = no
+	random = no
+	religious = yes
+	ai_ambition = 20
+	ai_honor = -20
+	same_opinion = 10
+}
+
+uthgar_elk = {
+	customizer = no
+	random = no
+	religious = yes
+	ai_rationality = 10
+	same_opinion = 10
+}
+
+uthgar_gray_wolf = {
+	customizer = no
+	random = no
+	religious = yes
+	ai_rationality = -10
+	ai_zeal = 10
+	same_opinion = 10
+}
+
+uthgar_great_worm = {
+	customizer = no
+	random = no
+	religious = yes
+	ai_greed = 20
+	same_opinion = 10
+}
+
+uthgar_griffon = {
+	customizer = no
+	random = no
+	religious = yes
+	ai_ambition = 20
+	same_opinion = 10
+}
+
+uthgar_red_tiger = {
+	customizer = no
+	random = no
+	religious = yes
+	ai_zeal = 20
+	ai_rationality = -20
+	same_opinion = 10
+}
+
+uthgar_sky_pony = {
+	customizer = no
+	random = no
+	religious = yes
+	ai_honor = 10
+	ai_zeal = 10
+	same_opinion = 10
+}
+
+uthgar_tree_ghost = {
+	customizer = no
+	random = no
+	religious = yes
+	ai_zeal = 20
+	ai_ambition = -10
+	same_opinion = 10
+}
+
+uthgar_thunderbeast = {
+	customizer = no
+	random = no
+	religious = yes
+	ai_ambition = -10
+	ai_honor = -10
+	same_opinion = 10
 }

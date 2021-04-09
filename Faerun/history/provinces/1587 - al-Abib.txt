@@ -1,0 +1,13 @@
+# County Title
+title = c_al_abib
+
+# Settlements
+max_settlements = 3
+
+b_al_suweb = tribal
+
+# Misc
+culture = badia
+religion = qisma
+
+#History

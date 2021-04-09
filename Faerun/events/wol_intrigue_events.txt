@@ -47,14 +47,15 @@ character_event = {
 			remove_trait = honest
 			character_event = { id = 38311 } # Honest loss notification
 		}
-		
+
 		# Chance of various Intrigue boosters
-		character_event = { id = WoL.2001 days = 7 } 
-		
+		character_event = { id = WoL.2001 days = 7 }
+
 		# Chance of leveling up Schemer skills
 		if = {
 			limit = {
 				has_character_modifier = wol_schemer_2
+				has_focus = focus_intrigue
 			}
 			random = {
 				chance = 10
@@ -65,6 +66,7 @@ character_event = {
 		if = {
 			limit = {
 				has_character_modifier = wol_schemer_1
+				has_focus = focus_intrigue
 			}
 			random = {
 				chance = 20
@@ -76,13 +78,14 @@ character_event = {
 			}
 			break = yes
 		}
-		
+
 		if = {
 			limit = {
 				NOR = {
 					trait = schemer
 					trait = impaler
 				}
+				has_focus = focus_intrigue
 			}
 			random = {
 				chance = 50
@@ -98,7 +101,7 @@ character_event = {
 # Chance of Intrigue boosts
 character_event = {
 	id = WoL.2001
-	
+
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -313,20 +316,23 @@ character_event = {
 	hide_window = yes
 	
 	is_triggered_only = yes
-	
+
 	immediate = {
 		if = {
 			limit = {
 				OR = {
 					prisoner = yes # I have become imprisoned
 					trait = incapable # I have become incapable
-					NOT = { has_focus = focus_intrigue } # I have changed my focus
+					AND = {
+						NOT = { has_focus = focus_intrigue } # I have changed my focus
+						NOT = { society_member_of = twisted_rune }
+					}
 				}
 			}
 			character_event = { id = WoL.2069 } # Clear out any flags, etc
 			break = yes # Stop execution here
 		}
-		
+
 		if = {
 			limit = {
 				FROMFROM = {
@@ -1030,19 +1036,19 @@ character_event = {
 					FROMFROMFROM = {
 						OR = {
 							trait = cynical
-							AND = {
-								trait = mutazilite
-								liege = { trait = ashari }
-							}
-							AND = {
-								trait = ashari
-								liege = { trait = mutazilite }
-							}
+							# AND = {
+								# trait = mutazilite
+								# liege = { trait = ashari }
+							# }
+							# AND = {
+								# trait = ashari
+								# liege = { trait = mutazilite }
+							# }
 							AND = {
 								liege = { religion_group = PREV }
 								NOT = { liege = { religion = PREV } }
 								NOT = { religion_group = pagan_group }
-								NOT = { religion_group = indian_group }
+								NOT = { religion_group = karaturan_group }
 							}
 						}
 					}

@@ -1,0 +1,17 @@
+# County Title
+title = c_tauros
+
+# Settlements
+max_settlements = 4
+
+b_tauros = tribal
+
+# Misc
+culture = kobold
+religion = draconic_pantheon
+
+#History
+1383.1.1 = {
+	culture = shadovar
+	b_tauros = castle
+}

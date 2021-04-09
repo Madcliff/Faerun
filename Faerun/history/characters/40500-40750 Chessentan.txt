@@ -1,8 +1,8 @@
 ###ÄNSI
-#Chessentan Characters 
+#Chessentan Characters
 #Canon
 #Ruler of Airspur
-40500 = { 
+40500 = {
 	name = Khrulis
 	dynasty = 8308
 	dna = lmpgmdkmkoe
@@ -20,7 +20,7 @@
 	1400.5.22 = { death = yes }
 }
 #Cimbar Sceptanar
-40501 = { 
+40501 = {
 	name = Neldryn
 	dynasty = 8309
 	dna = ocfimihjaod
@@ -37,12 +37,12 @@
 }
 
 #Akanax
-40502 = { 
+40502 = {
 	name = Hippartes
 	dynasty = 8310
 	dna = glbokpbopom
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	martial = 5
 	intrigue = 5
 	trait = creature_human
@@ -53,23 +53,23 @@
 	1377.3.28 = { death = yes }
 }
 
-40503 = { 
+40503 = {
 	name = Ariadne
 	female = yes
 	dna = mpdpmlaflek
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	1309.10.7 = { birth = yes }
 	1330.1.29 = { add_spouse = 40502 }
 	1361.6.1 = { death = yes }
 }
 
-40504 = { 
+40504 = {
 	name = Phillipus
 	dynasty = 8310
 	dna = gleokpmflom
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	martial = 7
 	trait = creature_human
 	trait = tough_soldier
@@ -86,7 +86,7 @@
 	dynasty = 8310
 	dna = klbpkbaopeg
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	martial = 5
 	intrigue = 3
 	trait = creature_human
@@ -99,12 +99,12 @@
 	1406.11.11 = { death = yes }
 }
 
-40506 = { 
+40506 = {
 	name = Themothys
 	dynasty = 8310
 	dna = mpbpmlbolem
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	martial = 7
 	trait = creature_human
 	trait = trained_fighter #7
@@ -114,18 +114,18 @@
 	1405.6.5 = { death = yes }
 }
 #Akanul
-40507 = { 
+40507 = {
 	name = Adetas
 	dynasty = 8311
 	dna = pgaedgbapjf
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	trait = creature_human
 	1317.1.1 = { birth = yes }
 	1400.11.2 = { death = yes }
 }
 #Elghal
-40508 = { 
+40508 = {
 	name = Rueldarr
 	dynasty = 8312
 	dna = efkmcafopnm
@@ -166,7 +166,7 @@
 	dynasty = 8314
 	dna = kieojocpgjh
 	culture = chessentan
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = thrifty_clerk
 	trait = expert_cleric
@@ -180,7 +180,7 @@
 	female = yes
 	dna = bjmojhflbfg
 	culture = chessentan
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = elusive_shadow
 	1275.5.26 = { birth = yes }
@@ -193,7 +193,7 @@
 	dynasty = 8314
 	dna = bjeojhflgfg
 	culture = chessentan
-	religion = evil_human_pantheon
+	religion = dead_three
 	martial = 4
 	diplomacy = 6
 	stewardship = 1
@@ -205,11 +205,11 @@
 	trait = cruel
 	father = 40510
 	mother = 40511
-	1315.6.23 = { birth = yes }
+	1300.6.23 = { birth = yes }
 	1346.1.1 = {
 		religion = entropy
 	}
-	1400.12.9 = { death = yes }
+	1455.12.9 = { death = yes }
 }
 
 40513 = { #Noncanon
@@ -217,10 +217,10 @@
 	female = yes
 	dynasty = 8314
 	father = 40510
-	mother = 40511	
+	mother = 40511
 	dna = bieojocpgfh
 	culture = chessentan
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = detached_priest
 	trait = charitable
@@ -234,7 +234,7 @@
 }
 
 #Soorenar
-40514 = { 
+40514 = {
 	name = Thurik
 	dynasty = 8315
 	dna = phmahhoccic
@@ -271,7 +271,7 @@
 	dynasty = 8314
 	dna = kjeojhfpgfg
 	culture = chessentan
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = creature_human
 	trait = skilled_tactician
 	trait = trained_paladin
@@ -292,7 +292,7 @@
 	dynasty = 8316
 	dna = mkpecjhfmib
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	martial = 6
 	diplomacy = 5
 	stewardship = 6
@@ -313,19 +313,19 @@
 	dynasty = 8316
 	dna = fpjpoagnonc
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	trait = creature_human
 	1278.3.10 = { birth = yes }
 	1313.5.10 = { add_spouse = 40519 }
 	1340.12.16 = { death = yes }
 }
 
-40519 = { 
+40519 = {
 	name = Hyleia
 	female = yes
 	dna = biaflpeallc
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	trait = creature_human
 	1294.7.20 = { birth = yes }
 	1313.5.10 = { add_spouse = 40518 }
@@ -337,7 +337,7 @@
 	dynasty = 8316
 	dna = fpopopenlnc
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	trait = creature_human
 	trait = midas_touched
 	father = 40518
@@ -351,7 +351,7 @@
 	dynasty = 8316
 	dna = bpjfoagnodc
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	trait = creature_human
 	trait = flamboyant_schemer
 	trait = humble
@@ -362,10 +362,10 @@
 	1400.2.18 = { death = yes }
 }
 ##Canon Unlanded
-40522 = { 
+40522 = {
 	name = Heptios
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	trait = creature_human
 	martial = 4
 	intrigue = 6
@@ -382,7 +382,7 @@
 	dynasty = 8316
 	dna = bpjfoagnodc
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	trait = creature_human
 	trait = bastard
 	father = 40521
@@ -390,7 +390,7 @@
 	1379.2.18 = { death = yes }
 }
 #Leader of the Wraith of Inner Sea
-40524 = { 
+40524 = {
 	name = Kreodo
 	dynasty = 8317
 	female = yes
@@ -412,7 +412,7 @@
 	name = Hyurkes
 	dynasty = 8318
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	trait = creature_human
 	trait = trained_fighter # 8
 	1331.1.1 = { birth = yes }
@@ -423,7 +423,7 @@
 	name = Leppidon
 	dynasty = 8319
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	trait = creature_human
 	trait = fighter # 3
 	1335.1.1 = { birth = yes }
@@ -434,7 +434,7 @@
 	name = Lysander # invented forename
 	dynasty = 8320
 	culture = chessentan
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = ambitious
 	trait = creature_human
 	trait = trained_fighter
@@ -449,7 +449,7 @@
 	dynasty = 8320
 	father = 40527
 	culture = chessentan
-	religion = evil_human_pantheon
+	religion = dead_three
 	trait = cruel
 	trait = creature_human
 	trait = fighter
@@ -464,7 +464,7 @@
 	name = Fingeghal
 	dynasty = 8322
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	trait = kind
 	trait = creature_human
 	trait = longevity
@@ -477,7 +477,7 @@
 	name = Aeron
 	dynasty = 8321 # Morieth
 	culture = chessentan
-	religion = good_human_pantheon
+	religion = chessic
 	trait = creature_half_elf
 	trait = ambitious
 	learning = 8
@@ -515,7 +515,7 @@
 	female = yes
 	dynasty = 6537
 	culture = chondathan
-	religion = good_human_pantheon
+	religion = chessic
 	trait = journeyman_wizard
 	1339.1.1 = { birth = yes }
 	1373.12.1 = {
@@ -527,12 +527,72 @@
 40533 = { ###THIEFFFFF
 	name = Therescales
 	culture = chessentan
-	religion = evil_human_pantheon
+	religion = entropy
 	trait = creature_human
 	trait = deceitful
 	trait = arbitrary
-	trait = journeyman_wizard #12 
+	trait = journeyman_wizard #12
 	1316.11.1 = { birth = yes }
 	1350.11.1 = { employer = 40512 }
 	1365.6.15 = { death = yes }
+}
+40534 = {
+	name = "Jaerios"
+	dynasty = 8314
+	culture = chessentan
+	religion = entropy
+	trait = creature_human
+	trait = cleric
+	trait = expert_shadow
+	trait = cruel
+	trait = ambitious
+	father = 40512
+	1320.1.1 = {
+		birth = yes
+	}
+	1390.1.1 = {
+		death = yes
+	}
+}
+40535 = {
+	name = "Naeros"
+	dynasty = 8314
+	culture = chessentan
+	religion = entropy
+	trait = creature_human
+	trait = cleric
+	trait = journeyman_fighter
+	trait = cruel
+	trait = impaler
+	father = 40534
+	1340.1.1 = {
+		birth = yes
+	}
+	1420.1.1 = {
+		death = yes
+	}
+}
+40536 = {
+	name = "Saestra"
+	female = yes
+	culture = chessentan
+	religion = entropy
+	intrigue = 9
+	trait = creature_human
+	trait = elusive_shadow
+	trait = deceitful
+	trait = trained_shadow
+	father = 40534
+	1341.1.1 = {
+		birth = yes
+	}
+	1360.1.1 = {
+		add_trait = vampire
+		effect = {
+			set_graphical_culture = vampire
+		}
+	}
+	1600.1.1 = {
+		death = yes
+	}
 }

@@ -1,0 +1,14 @@
+# County Title
+title = c_kasal
+
+# Settlements
+max_settlements = 3
+
+b_kasal = castle
+b_lyareka = temple
+
+# Misc
+culture = affa
+religion = ten_thousand_gods
+terrain = jungle
+#History

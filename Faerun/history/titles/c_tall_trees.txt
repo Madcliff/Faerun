@@ -13,10 +13,9 @@
 	liege = 0
 }
 1345.1.1 = {
-	law = succ_divine_elective
+	law = succ_divine_druid
 	holder = 46006 # Uthgang Jyarl
 }
-1372.1.1 = {
-	holder = 46001 # Morgwen
-	law = succ_primogeniture
+1390.1.1 = {
+	holder = 46012 # Aerosclughpalar
 }

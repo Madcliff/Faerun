@@ -15,7 +15,7 @@ b_moba = temple
 #b_borohon = castle
 
 # Misc
-culture = thinguth
-religion = good_human_pantheon
+culture = gold_dwarf
+religion = dwarven_pantheon
 
 #History

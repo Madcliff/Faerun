@@ -21,12 +21,16 @@ terrain = hills
 #History
 1032.1.1 = {
 	culture = highcoaster
-	religion = good_human_pantheon
+	religion = inventive
+}
+1484.1.1 = {
+	culture = orc
+	religion = orc_pantheon
+	remove_settlement = b_newfort
+	remove_settlement = b_osstkar
+	remove_settlement = b_undercity
 }
 1485.1.1 = {
 	culture = shield_dwarf
 	religion = dwarven_pantheon
-	remove_settlement = b_newfort
-	remove_settlement = b_osstkar
-	remove_settlement = b_undercity
 }

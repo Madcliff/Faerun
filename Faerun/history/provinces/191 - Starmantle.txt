@@ -15,8 +15,8 @@ b_starmantle = city
 #b_benasa = castle
 
 # Misc
-culture = heartlander
-religion = evil_human_pantheon
+culture = draeven
+religion = shadow_gods
 
 #History
 300.1.1 = {
@@ -25,10 +25,15 @@ religion = evil_human_pantheon
 500.1.1 = {
 	b_inske = temple
 }
-1385.4.1 = {
+1385.4.29 = {
 	b_starmantle = tribal
 	remove_settlement = b_vamars_tower
 	remove_settlement = b_inske
-	culture = monster
-	religion = monster_pantheon
+	culture = merrow
+	religion = blue_flame
+}
+1487.1.1 = {
+	b_starmantle = city
+	culture = sembite
+	religion = mercantile
 }

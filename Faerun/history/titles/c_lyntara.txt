@@ -9,12 +9,11 @@
 	law = agnatic_succession
 	law = succ_turkish_succession
 	holder = 30524 # Thoin
-	liege = d_severed_hand
+	liege = 0
 }
 177.1.1 = {
 	law = enatic_succession
 	law = succ_gavelkind
-	liege = 0
 	holder = 41327 # Krugg Krugg
 }
 272.1.1 = {
@@ -30,7 +29,6 @@
 	holder = 5228 # Hengard Cragfast
 }
 306.1.1 = {
-	liege = k_thousand_fangs
 	law = agnatic_succession
 	law = succ_turkish_succession
 	holder = 30527 # Krug
@@ -57,7 +55,7 @@
 	liege = k_everhorde
 }
 612.1.1 = {
-	liege = d_broken_fang
+	liege = 0
 }
 690.1.1 = {
 	holder = 41333 # Dresk Broken Fang
@@ -95,4 +93,10 @@
 }
 1358.1.1 = {
 	holder = 41046 # Niklaus Alpra
+}
+1420.1.1 = {
+	holder = 41428 # Nesara Zarem
+}
+1460.1.1 = {
+	holder = 41429 # Kara Zarem
 }

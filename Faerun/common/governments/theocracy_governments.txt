@@ -1,10 +1,10 @@
 theocracy_governments = {
 
-	theocracy_government = {
+	baron_theocracy_government = {
 		preferred_holdings = { TEMPLE }
 		allowed_holdings = {
 			TEMPLE
-			CASTLE
+			#CASTLE
 			FORT
 			HOSPITAL
 		}
@@ -14,21 +14,26 @@ theocracy_governments = {
 		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
 			tribal_government
 		}
-		accepts_liege_governments = {
-			feudal_government
+		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			muslim_government
-			republic_government
-			merchant_republic_government
-			theocratic_feudal_government
+			theocracy_government
+			feudal_government
 			chinese_imperial_government
+			theocratic_feudal_government
+			divine_feudal_government
 		}
 		frame_suffix = "_theocracy"
 		title_prefix = "temple_"
 		potential = {
-			#NOT = { higher_tier_than = BARON }
+			capital_holding = {
+				holding_type = temple
+			}
+			NOT = { higher_tier_than = BARON }
 			#NOT = {	religion_group = muslim	}	
-			NOT = { is_government_potential = fiendish_government }
+			#NOT = { is_government_potential = fiendish_government }
 			NOT = { is_government_potential = yikaria_government }
+			NOT = { is_government_potential = muslim_government }
+			NOT = { is_government_potential = divine_feudal_government }
 			holy_order = no
 			is_patrician = no
 			OR = {
@@ -42,61 +47,6 @@ theocracy_governments = {
 		}
 		
 		color = { 220 220 220 }
-		
-		can_create_kingdoms = no
-		have_gender_laws = no
-		can_be_granted_kingdoms_and_empires_by_other_government = no
-
-		can_build_tribal = no
-		
-		capital_move_delay = 600
-	}
-	
-	fiendish_government = {
-		preferred_holdings = { TEMPLE CASTLE CITY TRIBAL }
-		allowed_holdings = {
-			TEMPLE
-			CASTLE
-			CITY
-			TRIBAL
-			FORT
-			HOSPITAL
-		}
-		free_revoke_on_governments_religion = { # Tribal vassals of other religions can have their titles revoked for free
-			tribal_government
-			feudal_government
-			celestial_government
-			celestial_bureaucracy
-			merchant_republic_government
-			republic_government
-			confucian_bureaucracy
-			nomadic_government
-			magocratic_feudal_government
-			democratic_feudal_government
-			divine_feudal_government
-			muslim_government
-			theocratic_feudal_government
-			chinese_imperial_government
-			order_government
-			roman_imperial_government
-			theocracy_government
-			yikaria_government
-		}
-		accepts_liege_governments = {
-		}
-		frame_suffix = "_fiend"
-		title_prefix = "temple_"
-		potential = {
-			culture_group = fiendish_group
-			holy_order = no
-			is_patrician = no
-		}
-		
-		color = { 40 40 40 }
-		
-		can_create_kingdoms = no
-		have_gender_laws = no
-		can_be_granted_kingdoms_and_empires_by_other_government = no
 
 		can_build_tribal = no
 		

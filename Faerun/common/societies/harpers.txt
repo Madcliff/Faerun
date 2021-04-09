@@ -1,4 +1,4 @@
-harpers = { #by EvilCatInTheHat
+harpers = { #by EvilCatInTheHat #revamped by Olrox17
 	primary_attribute = intrigue
 	is_secret = yes
 	devil_worshipper = no
@@ -7,7 +7,7 @@ harpers = { #by EvilCatInTheHat
 	opinion_per_rank_above = +10
 	society_rank_up_decision = request_to_rank_up_within_society
 	sound = assassins_interface
-	society_ranks_gfx = generic_ranks
+	society_ranks_gfx = monk_ranks
 
 	can_join_society = {
 		hidden_trigger = {
@@ -24,10 +24,15 @@ harpers = { #by EvilCatInTheHat
 		OR = {
 			religion_group = good_human_pantheon_group
 			religion_group = elven_pantheon_group
-			religion_group = dwarven_pantheon_group
+			religion = dwarven_pantheon
+			religion = gnome_pantheon
+			religion = natural
+			religion = bahamut
+			trait = patron_bahamut
 		}
 		NOT = {
 			trait = cruel
+			has_character_modifier = undead_realm_lord
 		}
 		hidden_trigger = {
 			NOT = {
@@ -43,61 +48,71 @@ harpers = { #by EvilCatInTheHat
 		OR = {
 			religion_group = good_human_pantheon_group
 			religion_group = elven_pantheon_group
-			religion_group = dwarven_pantheon_group
+			religion = dwarven_pantheon
+			religion = gnome_pantheon
+			religion = natural
+			religion = bahamut
+			trait = patron_bahamut
 		}
 	}
 	society_rank = { #Harper (anyone have a better idea?)
 		level = 1
-		limit = 75
-		startup_limit = 50
+		limit = 40
+		startup_limit = 20
 		modifier = {
-			diplomacy = 1
-			intrigue = 1
+			plot_power_modifier = 0.05
+			plot_discovery_chance = 0.025
 		}
 		decisions = {
+			support_people
 		}
 		custom_tooltip = harpers_tt_rank1
 	}
 
 	society_rank = { #Agent
 		level = 2
-		limit = 50
-		startup_limit = 25
+		limit = 20
+		startup_limit = 10
 		modifier = {
-			diplomacy = 1
 			intrigue = 1
-			plot_power_modifier = 0.1 # further increased plotpower
+			plot_power_modifier = 0.1
+			plot_discovery_chance = 0.05
 		}
 		decisions = {
+			call_for_heroes_harpers
 		}
 		custom_tooltip = harpers_tt_rank2
 	}
 
 	society_rank = { #Master Harper
 		level = 3
-		limit = 30
-		startup_limit = 15
+		limit = 10
+		startup_limit = 5
 		modifier = {
-			intrigue = 2
+			intrigue = 1
 			diplomacy = 1
 			plot_power_modifier = 0.2
+			plot_discovery_chance = 0.075
 		}
 		decisions = {
+			sponsor_arts
 		}
 		custom_tooltip = harpers_tt_rank3
 	}
 
 	society_rank = { #High Harper
 		level = 4
-		limit = 10
-		startup_limit = 7
+		limit = 5
+		startup_limit = 3
 		modifier = {
 			intrigue = 2
 			diplomacy = 1
 			plot_power_modifier = 0.3
-			plot_discovery_chance = 0.1
+			plot_discovery_chance = 0.2
 		}
 		decisions = {
+			harper_training
+			harper_liberation
 		}
 		custom_tooltip = harpers_tt_rank4
 	}
@@ -150,7 +165,7 @@ harpers = { #by EvilCatInTheHat
 		}
 		has_trait = {
 			value = 1
-			trait = strategist
+			trait = scholar
 		}
 		has_trait = {
 			value = 1
@@ -368,18 +383,18 @@ harpers = { #by EvilCatInTheHat
 			value = 3
 			trait = legendary_ranger
 		}
-		# has_trait = {
-			# value = 1
-			# trait = master_monk
-		# }
-		# has_trait = {
-			# value = 2
-			# trait = renowned_monk
-		# }
-		# has_trait = {
-			# value = 3
-			# trait = legendary_monk
-		# }
+		has_trait = {
+			value = 1
+			trait = master_monk
+		}
+		has_trait = {
+			value = 2
+			trait = renowned_monk
+		}
+		has_trait = {
+			value = 3
+			trait = legendary_monk
+		}
 	}
 
 	member_score_per_attribute = 2
@@ -482,10 +497,10 @@ harpers = { #by EvilCatInTheHat
 			trait = renowned_ranger
 			factor = 1.1
 		}
-		# modifier = {
-			# trait = renowned_monk
-			# factor = 1.1
-		# }
+		modifier = {
+			trait = renowned_monk
+			factor = 1.1
+		}
 		# modifier = {
 			# trait = legendary_thief
 			# factor = 1.2
@@ -546,28 +561,35 @@ harpers = { #by EvilCatInTheHat
 			trait = legendary_ranger
 			factor = 1.2
 		}
-		# modifier = {
-			# trait = legendary_monk
-			# factor = 1.2
-		# }
+		modifier = {
+			trait = legendary_monk
+			factor = 1.2
+		}
 	}
 	startup_populate = {
 		trigger = {
 			age = 16
 			intrigue = 10
+			is_evil_trigger = no
 			NOT = {
 				trait = cruel
+				has_character_modifier = undead_realm_lord
 			}
 			OR = {
 				religion_group = good_human_pantheon_group
 				religion_group = elven_pantheon_group
-				religion_group = dwarven_pantheon_group
+				religion = dwarven_pantheon
+				religion = gnome_pantheon
+				religion = natural
+				religion = bahamut
+				trait = patron_bahamut
 			}
 			ai = yes
 			is_in_society = no
 			NOR = {
 				mercenary = yes
 				holy_order = yes
+				is_undead = yes
 			}
 		}
 	}

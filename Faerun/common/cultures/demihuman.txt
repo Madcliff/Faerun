@@ -60,6 +60,8 @@ gnome_group = {
 			Xanoa Xapine Xarhana Xatra Xayore Xyrogani Xyrophina Yloceli Ylomiphi Yloxis Yloyaris 
 			Yloyore Yogyra Yophina Yoxis Zanidysa Zanilys Zanipine Zanitina Zaniwyn Zanizyre Zanna 
 			Zelazadda Zinceli Zinci Zintra 
+			
+			Ortimay
 		}
 		
 		from_dynasty_prefix = ""
@@ -193,7 +195,7 @@ dwarf_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 		
-		modifier = dwarven_culture_modifier
+		modifier = default_culture_modifier
 	}
 
 	derro = {
@@ -263,7 +265,7 @@ dwarf_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 		
-		modifier = dwarven_culture_modifier
+		modifier = default_culture_modifier
 	}
 
 	duergar = {
@@ -298,7 +300,7 @@ dwarf_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 		
-		modifier = dwarven_culture_modifier
+		modifier = default_culture_modifier
 	}
 	
 	gold_dwarf = {
@@ -368,7 +370,7 @@ dwarf_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 		
-		modifier = dwarven_culture_modifier
+		modifier = default_culture_modifier
 	}
 	
 	shield_dwarf = {
@@ -438,7 +440,7 @@ dwarf_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 		
-		modifier = dwarven_culture_modifier
+		modifier = default_culture_modifier
 	}
 	
 	wild_dwarf = {
@@ -508,7 +510,7 @@ dwarf_group = {
 		mat_grm_name_chance = 40
 		mother_name_chance = 5
 		
-		modifier = dwarven_culture_modifier
+		modifier = default_culture_modifier
 	}
 }
 
@@ -854,6 +856,44 @@ elf_group = {
 		dynasty_title_names = no
 		founder_named_dynasties = no
 
+		seafarer = yes
+
+		male_patronym = ""
+		female_patronym = ""
+		prefix = no
+		
+		baron_titles_hidden = no
+		count_titles_hidden = no
+		dukes_called_kings = no
+		
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 10
+		father_name_chance = 5
+		
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 40
+		mother_name_chance = 5
+		
+		modifier = default_culture_modifier
+	}
+	
+	snow_elf = {
+		graphical_cultures = { snowelfgfx }
+
+		color = { 0.65 0.8 0.95 }
+
+		male_names = {
+			Adran Aelar Ajaar Alinar Allafel Anarallath Anfalen Aolis Aramil Arannis Aravilar Armindil Asbeel Aubric Aumrauth Aust Beiro Berrian Bhyrindar Carric Chozzaster Cornaith Cralamin Curesta Dalthoeneir Deniak Edraele Elaith Elelior Elvath Enialis Eomioron Eonwegor Erdan Erevan Erlan Evindal Fflar Finufaranell Galaeron Galinndan Galungal Gelmalgald Gennal Gimlathil Giullio Hadarai Heian Himo Horaldin Ianzeiros Ilbopher Illitran Immeral Isilfarrel Ithraides Ivellios Jarwain Kai Keldith Kelloren Keryth Kestin Khyssoun Kiinyon Kiyuigh Lamruil Lathili Laucian Le'lorinel Llombaerth Lucan Lysander Lysanthir Malphys Mellyth Miirphys Mindartis Morxalim Myrin Noohar Nualion Nym Olopeiros Omaric Omatumal Orist Paelias Peren Perwraek Pharos Philaerin Phondelarrus Puorlass Qinkian Qinnelis Quarion Rhazzad Rhovann Rhyem Riardon Rolen Saeval Shael Sharian Sharlario Shelvek Soveliss Sudryl Taleisin Tanithil Tarathiel Tarthas Teirflin Thalanil Thamior Tharivol Theren Turgonor Tyran Umepetor Umeric Uriran Varis Venali Voorhi Vorodor Waespetor Xan Xharlion Yelberos Yldar Ynloeth Ysuran Zabbas Zandro Zaor Zhorin Zhoron Zinris Zumbalar Zumran 
+		}
+		
+		female_names = {
+			Adrianna Adrie Aerisi Althaea Amlaruil Amnestria Anaharae Anastrianna Andraste Anendel Antinua Ararie Ariana Arilyn Arwerdan Ava Ayla Azariah Bethrynna Birel Braerindra Bryjyre Caelynn Celaena Chaedi Chaemoira Chaerie Chalia Cythara Daewenys Dara Dathlue Delina Deriel Doum'wielle Drusilia Ecaeris Edherli Ellifain Embrae Ena Enna Enrona Erwedhen Faexisys Faral Feliane Felosial Gemstarzah Haalaari Halaema Halani Helezorwyn Hhora Hora Huquethae Ialantha Ielenia Ildilyntra Ilira Illydia Ilmadia Ilyrana Imen Innovindil Irann Iriador Ithosra Itylra Jastra Jehastra Jelenneth Jhaer Jomys Keishara Kethryllia Keyleth Lazzier Lazzuar Leshanna Lia Liluth Linu Magnala Maredhien Meraera Meriele Mialee Myantha Myriil Nacacia Naivara Nerwenye Nimlothien Nimlye Nuovis Olavaris Olisara Oluevaera Oribella Phaerl Phyrra Prescyne Quelenna Quessahn Questele Quillathe Quiynore Ravaharice Remallia Saelihn Sandesyl Sariel Seldanna Shanairra Shandalar Shanyrria Sharaera Shava Shemmithil Shyael Silaqui Silmarien Siluele Sinnafain Sorenna Tamaer Tarathiel Teresiel Thasitalia Theirastra Thia Tiatha Tira'allara Tira'allera Torlee Tsarra Tyllaetha Vadania Valanthe Valindra Valna Wynsatra Xanaphia Xyrsatra Yesvelde Ysmyrl'da Z'beryl Zhuirentel Zylmys 
+		}
+
+		from_dynasty_prefix = ""
+		dynasty_title_names = no
+		founder_named_dynasties = no
+
 		male_patronym = ""
 		female_patronym = ""
 		prefix = no
@@ -1161,7 +1201,7 @@ orc_group = {
 		}
 
 		from_dynasty_prefix = ""
-		dynasty_title_names = no
+		dynasty_title_names = yes
 		founder_named_dynasties = no
 
 		male_patronym = ""
@@ -1197,7 +1237,7 @@ orc_group = {
 		}
 
 		from_dynasty_prefix = ""
-		dynasty_title_names = no
+		dynasty_title_names = yes
 		founder_named_dynasties = no
 
 		male_patronym = ""
@@ -1269,7 +1309,7 @@ orc_group = {
 		}
 
 		from_dynasty_prefix = ""
-		dynasty_title_names = no
+		dynasty_title_names = yes
 		founder_named_dynasties = no
 
 		male_patronym = ""
@@ -1289,5 +1329,43 @@ orc_group = {
 		mother_name_chance = 5	
 		
 		modifier = orc_culture_modifier
+	}
+	
+	tanarukk = {
+		graphical_cultures = { tanarukkgfx }
+
+		color = { 0.5 0.4 0.3 }
+
+		male_names = {
+			Agadurk Aganur Agar Agorimm Agrat Akaros Alarim Aradur Araug Arganth Arghain Argrum Arlagh Arnorimm Arobar Arrakk Asadurk Ashkabbar Atorak Atrun Augh Baerzel Baga Balug Baluk Bandagh Baraskur Barazar Barghest Bask Besk Bichan Blugdub Blurg Bog Bolduf Brakemar Breex Brigul Brog Bruegar Brunos Bruzur Brymoel Buga Buhrell Bumur Burak Chork Cramarsh Crarimm Crigar Cugak Cumar Daazlag Daelan Dahk Dakarot Dakathug Dench Derkk Devdas Dgul Donk Dorn Dragul Dral Drood Drudark Druuk Durfang Durth Eagol Edals Ehnk Ekk Fang Feng Frouth Gar Garemak Garlak Garsh Geeraugh Gell Geruk Ghorn Glorlarkh Glorming Gnarsh Gobar Gogar Goolgog Goraglar Gorbold Gorga Gork Gorkil Gotez Gothog Gotumak Graal Graul Gremog Greneire Grguch Grimmerfang Grimnosh Grimogark Grimslade Grinkel Grishnak Grit Gromnir Gronz Gruel Grum Grum'shar Grumbar Grumgor Grund Guerik Gugal Gulagash Gulebar Gurak Gurrash Guzud Haffa Hagamar Hagaruk Hakan Hakuun Hanoz Haravak Hargul Harl Harll Hartusk Hatir Heel Henk Hespal Hogar Hogizall Holg Homar Honzu Hoog Hool Horadall Hordar Horrach Hovark Hoygh Hrabbaz Huagh Hudar Hulgen Hurosk Imsh Innanig Jhanzur Jorok Jorykul Jub Jurth Jutor Jzets Kalip Kamom Karash Karr Kelirim Kesk Keth Khrulis Kobas Kodd Kol Korgul Korock Koront Korutur Krell Kroll Krond Kruadim Krusk Kuledur Kuradar Kurid Lagazi Laral Logram Lorgru Lorzak Lubash Lugh Lumam Lunk Mace Magagul Mahlusk Makred Malathon Malenar Malurth Maredak Marrakt Mekog Mhurren Mimerk Mokatar Mokork Mord Morfug Morgog Morok Mugebak Mukamur Murook Muzga Naazlog Nargog Narle Narm Nauronin Nazur Nizam Nobbad Nogu Nonur Nub Nyarl Obal Obould Oggrim Oguunar Ohr Ohtar Oleg Olgerkhan Olladar Ologh Omotar Oradim Orauth Ordich Orgolg Oritar Orngart Orrusk Oth Radbal Ragnor Ragrath Raorr Rauragh Razfallow Rekarth Rendar Rheen Rhupp Rihen Ronauz Ront Rool Rotarg Rûlgar Sadak Sark Scrag Scrauth Serash Sezibul Shakil Shakkop Shump Sirak Skargrim Skargut Skarsog Snaga Snagagor Snakhur Soglar Soram Sorgh Sorigark Strog Strunge Sumar Taing Tanglar Tanidar Tarak Targ Tawar Terresk Thadurk Thar Tharag Thog Thoin Thokk Thraka Throg Thrull Thunk Thurghom Thurugar Toemor Tomph Toop Toren Trakuzall Trood Trukatar Tudash Tulmak Turg Tzens Ubada Udhgar Ufarskaddun Ufthak Ugad Ugarth Ugdurtz Uglug Ugra Ugreth Ugsog Ugurth Uhur Ukizall Ukrumir Ulbror Ullomash Ulmrin Ungar Ungvar Uramir Urlgren Urodark Urotir Urphaer Urthimar Urtrubak Uruth Uryuga Urzad Uzgag Uzgrim Uzog Vaath Vagdru Vanchu Vaug Veron Vhazror Vosh Vrakk Vtam Waagor Wartsnak Whudu Wogar Wogg Wrnach Wund Wung Wykks Xanos Xar Xtec Yaisog Yark Yazar Yetto Yorn Yurk Zaagur Zagul Zarx Zern Zevadak Ziraj Zodarg Zork Zorudak Zotl Zuboko Zurabur Zurth 
+		}
+		
+		female_names = {
+			Adbush Agakh Aglatha Aligur Arktash Arrayan Arzastra Baggi Baluk Betharra Bolga Booga Bree Creske Duvaega Edarreske Elizira Emen Engong Falaz Falazura Falonur Faloz Faylin Felogur Folezi Franch Fukel Fuluti Gaaki Garani Garashi Garuzara Gijizira Gorari Gorga Grai Grat Gribbla Grigri Gryerel Gryudur Gynk Gynozur Gynushi Huru Jurrg Kansif Kanur Katazara Katiki Katomira Kerazi Kizara Kotazira Kreodo Kutiz Kutusha Larga Lorog Luga Lukil Magri Mara Mauhur Maz Meg Menk Merad Meresha Mirimira Mirudur Modur Muhrella Mutruuch Muzga Myev Nagda Nani Neega Neske Nonk Olamira Oluni Oota Ootah Ootinur Ootizira Orbal Orgaega Orkil Ovak Ownka Parih Puyadar Puyet Puyetto Quarrel Quetti Rahari Rahkezira Rahkud Rarook Rashada Rashigri Rashizar Rathene Rawidur Rohari Rohosha Rohozira Roz Samaki Sanazara Sanugri Sari Sashi Semagar Shakil Shautha Shay Shayazura Shurod Sinezar Sinozara Sumine Sumunar Sunuzara Sutha Tamamur Tawar Temezur Temimi Temumur Thuriya Tuada Tuati Tulug Tumonur Tuoni Tupacu Ubenir Ugdush Uhuf Umimar Umugar Undril Uzgat Vansi Varra Venk Vola Volen Yagra Yeskarra Yevelda Zanimar Zanushi Zanuzara Zomith Zonagh Zunotah 
+		}
+
+		from_dynasty_prefix = ""
+		dynasty_title_names = yes
+		founder_named_dynasties = no
+
+		male_patronym = ""
+		female_patronym = ""
+		prefix = no
+		
+		baron_titles_hidden = no
+		count_titles_hidden = no
+		dukes_called_kings = yes
+		
+		pat_grf_name_chance = 40
+		mat_grf_name_chance = 10
+		father_name_chance = 5
+		
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 40
+		mother_name_chance = 5	
+		
+		modifier = orc_culture_modifier
+		
+		allow_in_ruler_designer = yes
 	}
 }

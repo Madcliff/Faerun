@@ -1,12 +1,11 @@
-###ÄNI
+###ÄNSI
 
 # k_amn characters
 
 33001 = {
 	name = Thayze
 	dynasty = 4800
-	
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = elusive_shadow
@@ -17,13 +16,12 @@
 	diplomacy = 5
 	stewardship = 6
 	1290.12.1 = { birth = yes }
-	1362.10.2 = { death = yes }
+	1362.10.2 = { death = { death_reason = death_murder killer = 33008 } }
 }
 33002 = {
 	name = Erlranther
 	dynasty = 4801
-	
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = intricate_webweaver
@@ -45,8 +43,7 @@
 33003 = {
 	name = Curkon
 	dynasty = 4802
-	
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = expert_fighter
@@ -63,14 +60,14 @@
 	1345.1.1 = {
 		give_job_title = job_treasurer
 	}
-	1362.10.2 = { death = yes }
+	1362.10.2 = { death = { death_reason = death_murder killer = 33001 } }
 }
 33004 = {
 	name = Vyma
 	female = yes
 	dynasty = 4802
 	father = 33003
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = expert_cleric
@@ -86,22 +83,22 @@
 	name = Pehllus
 	dynasty = 4809
 	father = 33006
-	religion = good_human_pantheon
+	religion = joyful
 	culture = amnian
 	trait = creature_human
 	trait = expert_cleric
+	trait = patron_lliira
 	1335.1.1 = { birth = yes }
 	1362.10.2 = {
 		employer = 33002
 		give_job_title = job_marshal
-	}	
+	}
 	1400.1.1 = { death = yes }
 }
 33006 = {
 	name = Pulth
 	dynasty = 4809
-	
-	religion = good_human_pantheon
+	religion = joyful
 	culture = amnian
 	trait = creature_human
 	1294.1.1 = { birth = yes }
@@ -110,11 +107,9 @@
 33007 = {
 	name = Phaan
 	dynasty = 4803
-	
-	religion = evil_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
-	#trait = trained_thief
 	trait = trained_shadow
 	trait = longevity
 	learning = 4
@@ -124,7 +119,7 @@
 		give_nickname = nick_sharamour
 		effect = {
 			join_society = shadow_thieves
-		}		
+		}
 	}
 	1297.1.1 = { immortal_age = 30 }
 	1333.1.1 = {
@@ -137,16 +132,16 @@
 	1362.10.2 = {
 		employer = 33002
 		give_job_title = job_chancellor
-	}	
-	1385.1.1 = { death = yes }
+	}
+	1380.1.1 = { death = yes }
 }
 33008 = {
 	name = Wulver
 	dynasty = 4804
-	
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
+	trait = fighter
 	martial = 4
 	learning = 5
 	1300.1.1 = { birth = yes }
@@ -156,18 +151,19 @@
 	}
 	1345.1.1 = {
 		give_job_title = job_spiritual
-	}	
-	1362.1.1 = { death = yes }
+	}
+	1362.1.1 = { death = { death_reason = death_murder killer = 33001 } }
 }
 33009 = {
 	name = Qar
 	dynasty = 4805
-	
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = deceitful
 	trait = patient
+	trait = fighter
+	trait = is_malnourished
 	martial = 5
 	1315.1.1 = { birth = yes }
 	1345.1.1 = {
@@ -177,17 +173,20 @@
 	1362.10.2 = {
 		employer = 33002
 		give_job_title = job_treasurer
-	}	
+	}
 	1400.1.1 = { death = yes }
 }
 33010 = {
 	name = Rhinnom
 	dynasty = 4807
-	
-	religion = good_human_pantheon
+	religion = mercantile
+	secret_religion = shadow_gods
 	culture = amnian
 	trait = creature_human
+	trait = elusive_shadow
 	trait = deceitful
+	trait = greedy
+	trait = cruel
 	trait = longevity
 	trait = trained_wizard
 	#trait = renowned_thief
@@ -204,15 +203,14 @@
 	1362.10.2 = {
 		employer = 33002
 		give_job_title = job_spymaster
-	}	
+	}
 	1382.1.1 = { death = yes }
 }
 33011 = {
 	name = Tyrda
 	female = yes
 	dynasty = 4808
-	
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = deceitful
@@ -224,13 +222,13 @@
 		employer = 33002
 		give_job_title = job_spiritual
 	}
-	1400.1.1 = { death = yes }
+	1410.1.1 = { death = yes }
 }
 33012 = {
 	name = Ketlaar
 	dynasty = 4811
-	
-	religion = good_human_pantheon
+
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = ambitious
@@ -243,8 +241,8 @@
 	name = Ximora
 	female = yes
 	dynasty = 4812
-	
-	religion = good_human_pantheon
+
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = midas_touched
@@ -255,8 +253,8 @@
 33014 = {
 	name = Crynos
 	dynasty = 4813
-	
-	religion = good_human_pantheon
+
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = elusive_shadow
@@ -266,20 +264,19 @@
 33015 = {
 	name = Aernos
 	dynasty = 4818
-	
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = just
-	trait = trained_fighter
+	trait = trained_ranger
 	1310.1.1 = { birth = yes }
-	1400.1.1 = { death = yes }
+	1385.1.1 = { death = yes }
 }
 33016 = {
 	name = Rhor
 	dynasty = 4817
-	
-	religion = good_human_pantheon
+
+	religion = martial_faith
 	culture = orc
 	trait = creature_half_orc
 	trait = ambitious
@@ -294,30 +291,27 @@
 	name = Zharn
 	female = yes
 	dynasty = 4814
-	
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = expert_shadow
-	1315.1.1 = { birth = yes }
-	1400.1.1 = { death = yes }
+	1340.1.1 = { birth = yes }
+	1450.1.1 = { death = yes }
 }
 33018 = {
 	name = Orgost
 	dynasty = 4815
-	
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = cruel
 	1312.1.1 = { birth = yes }
-	1400.1.1 = { death = yes }
+	1390.1.1 = { death = yes }
 }
 33019 = {
 	name = Tannyr
 	dynasty = 4816
-	
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = ambitious
@@ -328,8 +322,7 @@
 	name = Lamia
 	female = yes
 	dynasty = 4819
-	
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = expert_ranger
@@ -341,20 +334,21 @@
 	name = Aura
 	female = yes
 	dynasty = 4820
-	
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = master_cleric
 	trait = mastermind_theologian
+	trait = patron_waukeen
+	father = 33189
 	stewardship = 5
-	1308.1.1 = { birth = yes }
-	1382.1.1 = { death = yes }
+	1310.1.1 = { birth = yes }
+	1400.1.1 = { death = yes }
 }
 
 # Historial figures
 
-33022 = { 
+33022 = {
 	name = Esmel
 	dynasty = 4826 # Torlath
 	religion = calishite_faith
@@ -366,7 +360,7 @@
 	460.1.1 = {
 		give_nickname = nick_serrus_the_great
 		culture = amnian
-		religion = good_human_pantheon
+		religion = mercantile
 	}
 	511.1.1 = { death = yes }
 }
@@ -379,12 +373,12 @@
 	trait = creature_human
 	trait = renowned_fighter
 	trait = skilled_tactician
-	436.8.1 = { 
+	436.8.1 = {
 		birth = yes
 	}
 	460.1.1 = {
 		culture = amnian
-		religion = good_human_pantheon
+		religion = mercantile
 	}
 	507.1.1 = { death = yes }
 }
@@ -392,7 +386,7 @@
 	name = Imnel # I
 	dynasty = 4826 # Torlath
 	father = 33023
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	457.1.1 = { birth = yes }
@@ -407,7 +401,7 @@
 	name = Jhurik # Invented name - this was his father's birth name
 	dynasty = 4826 # Torlath
 	father = 33024 # Imnel I
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	485.1.1 = { birth = yes }
@@ -417,7 +411,7 @@
 	name = Rhadik
 	dynasty = 4826 # Torlath
 	father = 33024 # Imnel I
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	489.1.1 = { birth = yes }
@@ -433,7 +427,7 @@
 	dynasty = 4826 # Torlath
 	father = 33026 # Rhadik the Bold
 	mother = 33134 # Maelina Shaesarl
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	512.1.1 = { birth = yes }
@@ -444,8 +438,8 @@
 	female = yes
 	dynasty = 4826 # Torlath
 	father = 33026 # Rhadik the Bold
-	mother = 33134 # Maelina Shaesarl	
-	religion = good_human_pantheon
+	mother = 33134 # Maelina Shaesarl
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	515.1.1 = { birth = yes }
@@ -457,7 +451,7 @@
 	dynasty = 4826 # Torlath
 	father = 33091 # Torlus Arklen
 	mother = 33028 # Princess Amissa
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	535.1.1 = { birth = yes }
@@ -467,7 +461,7 @@
 	name = Esmel # II
 	dynasty = 4826 # Torlath
 	father = 33029 # Corl I
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	561.1.1 = { birth = yes }
@@ -478,7 +472,7 @@
 	female = yes
 	dynasty = 4815 # Vymmar
 	father = 33032 # Marcos
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	562.1.1 = { birth = yes }
@@ -494,7 +488,7 @@
 33032 = {
 	name = Marcos
 	dynasty = 4815 # Vymmar
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	539.1.1 = { birth = yes }
@@ -505,7 +499,7 @@
 	dynasty = 4826 # Torlath
 	father = 33030 # Esmel II Torlath
 	mother = 33031 # Luthia Vymmar
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	582.1.1 = { birth = yes }
@@ -520,7 +514,7 @@
 	dynasty = 4826 # Torlath
 	father = 33030 # Esmel II Torlath
 	mother = 33031 # Luthia Vymmar
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = imbecile # http://forum.candlekeep.com/topic.asp?whichpage=1&TOPIC_ID=22911&
@@ -531,7 +525,7 @@
 	name = Corl # II
 	dynasty = 4826 # Torlath
 	father = 33034 # Esmel III Torlath
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	607.1.1 = { birth = yes }
@@ -541,7 +535,7 @@
 	name = Rashturl
 	dynasty = 4826 # Torlath
 	father = 33035 # Corl II Torlath
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	628.1.1 = { birth = yes }
@@ -554,7 +548,7 @@
 	name = Brinnaq # I
 	dynasty = 4826 # Torlath
 	father = 33036 # Corl II Torlath
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	651.1.1 = { birth = yes }
@@ -567,12 +561,12 @@
 	name = Esmel # IV - 1st son
 	dynasty = 4826 # Torlath
 	father = 33037 # Brinnaq I Torlath
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	672.1.1 = { birth = yes }
 	696.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_murder_poison_fr
 			killer = 33040
 		}
@@ -583,7 +577,7 @@
 	female = yes
 	dynasty = 4826 # Torlath
 	father = 33037 # Brinnaq I Torlath
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	675.1.1 = { birth = yes }
@@ -592,7 +586,7 @@
 33040 = {
 	name = Arbas
 	dynasty = 4827 # Arbas
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	666.1.1 = { birth = yes }
@@ -603,7 +597,7 @@
 		give_nickname = nick_the_black_usurper
 	}
 	697.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_battle
 			killer = 33041 # Jhanos Torlath
 		}
@@ -613,7 +607,7 @@
 	name = Jhanos # 6th son
 	dynasty = 4826 # Torlath
 	father = 33037 # Brinnaq I Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	trait = master_wizard
@@ -630,7 +624,7 @@
 	name = Brinnaq # II
 	dynasty = 4826 # Torlath
 	father = 33041 # Jhanos Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	trait = master_wizard
@@ -641,7 +635,7 @@
 	name = Imnel # III
 	dynasty = 4826 # Torlath
 	father = 33042 # Brinnaq II Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	trait = master_wizard
@@ -657,7 +651,7 @@
 	name = Jhanos # II
 	dynasty = 4826 # Torlath
 	father = 33043 # Imnel Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	trait = master_wizard
@@ -673,7 +667,7 @@
 	name = Rhadik # II
 	dynasty = 4826 # Torlath
 	father = 33044 # Jhanos Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	trait = master_wizard
@@ -689,7 +683,7 @@
 	name = Imnel # IV
 	dynasty = 4826 # Torlath
 	father = 33045 # Jhanos Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	trait = master_wizard
@@ -704,7 +698,7 @@
 	name = Dharik # Invented name
 	dynasty = 4826 # Torlath
 	father = 33046 # Imnel Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	1000.1.1 = { birth = yes }
@@ -714,7 +708,7 @@
 	name = Jhurik # Invented name
 	dynasty = 4826 # Torlath
 	father = 33047 # Dharik Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	1030.1.1 = { birth = yes }
@@ -726,7 +720,7 @@
 	name = Niskam
 	dynasty = 4826 # Torlath
 	father = 33048 # Jhurik Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	1061.1.1 = { birth = yes }
@@ -741,7 +735,7 @@
 	name = Rhor
 	dynasty = 4826 # Torlath
 	father = 33046 # Imnel Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	trait = legit_bastard
@@ -757,7 +751,7 @@
 	name = Rhorik # Invented name
 	dynasty = 4826 # Torlath
 	father = 33045 # Rhadik II Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	963.1.1 = { birth = yes }
@@ -767,7 +761,7 @@
 	name = Dharik # Invented name
 	dynasty = 4826 # Torlath
 	father = 33051 # Rhorik Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	995.1.1 = { birth = yes }
@@ -777,7 +771,7 @@
 	name = Jhurik # Invented name
 	dynasty = 4826 # Torlath
 	father = 33052 # Dharik Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	1020.1.1 = { birth = yes }
@@ -787,7 +781,7 @@
 	name = Imnel # Invented name
 	dynasty = 4826 # Torlath
 	father = 33053 # Jhurik Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	1042.1.1 = { birth = yes }
@@ -797,7 +791,7 @@
 	name = Dornak # Invented name
 	dynasty = 4826 # Torlath
 	father = 33054 # Imnel Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	1065.1.1 = { birth = yes }
@@ -813,7 +807,7 @@
 	female = yes
 	dynasty = 4826 # Torlath
 	father = 33023
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	459.1.1 = { birth = yes }
@@ -822,7 +816,7 @@
 33057 = {
 	name = Erdhinn # I
 	dynasty = 4828 # Wavegold - Erdhinn was a descendant of Jamyll Torlath, but I'm not plotting 600 years of invented unlanded merchants.
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1057.1.1 = { birth = yes }
@@ -832,17 +826,17 @@
 	name = Belhinn
 	dynasty = 4828 # Wavegold
 	father = 33057
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1085.1.1 = { birth = yes }
 	1115.1.1 = { death = yes }
 }
 33059 = {
-	name = Belhinn # I 
+	name = Belhinn # I
 	dynasty = 4828 # Wavegold
 	father = 33058
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1111.1.1 = { birth = yes }
@@ -856,11 +850,11 @@
 	1160.1.1 = { death = yes }
 }
 33060 = {
-	name = Rhinn 
+	name = Rhinn
 	dynasty = 4828 # Wavegold
 	father = 33059 # Belhinn I
 	mother = 20446 # Elaine Truesilver
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1133.1.1 = { birth = yes }
@@ -872,11 +866,11 @@
 	}
 }
 33061 = {
-	name = Erdhinn # II 
+	name = Erdhinn # II
 	dynasty = 4828 # Wavegold
 	father = 33059 # Belhinn I
 	mother = 20446 # Elaine Truesilver
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1137.1.1 = { birth = yes }
@@ -893,7 +887,7 @@
 	dynasty = 4828 # Wavegold
 	father = 33059 # Belhinn I
 	mother = 20446 # Elaine Truesilver
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1140.1.1 = { birth = yes }
@@ -903,7 +897,7 @@
 	name = Gelhinn
 	dynasty = 4828 # Wavegold
 	father = 33062
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1165.1.1 = { birth = yes }
@@ -913,7 +907,7 @@
 	name = Belhinn # II
 	dynasty = 4828 # Wavegold
 	father = 33062
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1168.1.1 = { birth = yes }
@@ -924,7 +918,7 @@
 33065 = {
 	name = Malek
 	dynasty = 4830 # Parhek
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1198.1.1 = { birth = yes }
@@ -938,7 +932,7 @@
 	female = yes
 	dynasty = 4828 # Wavegold
 	father = 33064
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1199.1.1 = { birth = yes }
@@ -949,7 +943,7 @@
 	dynasty = 4830 # Parhek
 	father = 33065 # Malek Parhek
 	mother = 33066 # Peldara Wavegold
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1223.1.1 = { birth = yes }
@@ -960,7 +954,7 @@
 	dynasty = 4830 # Parhek
 	father = 33065 # Malek Parhek
 	mother = 33066 # Peldara Wavegold
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1225.1.1 = { birth = yes }
@@ -974,7 +968,7 @@
 	dynasty = 4830 # Parhek
 	father = 33065 # Malek Parhek
 	mother = 33066 # Peldara Wavegold
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1227.1.1 = { birth = yes }
@@ -984,7 +978,7 @@
 	name = Dhanar
 	dynasty = 4830 # Parhek
 	father = 33069 # Rhothar Parhek
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1255.1.1 = { birth = yes }
@@ -994,7 +988,7 @@
 	name = Dhanar
 	dynasty = 4830 # Parhek
 	father = 33070 # Dhanar Parhek
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = twin
@@ -1013,7 +1007,7 @@
 	female = yes
 	dynasty = 4830 # Parhek
 	father = 33070 # Dhanar Parhek
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = twin
@@ -1022,23 +1016,23 @@
 		employer = 5001 # Alustriel Silverhand
 	}
 	1297.1.1 = {
-		employer = 7012 # Baeron of Waterdeep
+		employer = 7013 # Baeron of Waterdeep is unlanded, so chose who rules waterdeep this year
 	}
 	1302.1.1 = { death = yes }
 }
 33073 = {
 	name = Dornar
 	dynasty = 6208 # Steelsar
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = illuskan
 	trait = creature_human
 	1268.1.1 = { birth = yes }
 	1287.1.1 = {
 		add_spouse = 33072 # Rasa Parhek
-		employer = 5001 # Alustriel Silverhand		
+		employer = 5001 # Alustriel Silverhand
 	}
 	1297.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_murder
 		}
 	}
@@ -1048,12 +1042,12 @@
 	dynasty = 6208 # Steelsar
 	father = 33073 # Dornar Steelsar
 	mother = 33072 # Rasa Parhek
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = illuskan
 	trait = creature_human
 	1287.10.1 = { birth = yes }
 	1297.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_murder
 		}
 	}
@@ -1064,12 +1058,12 @@
 	dynasty = 6208 # Steelsar
 	father = 33073 # Dornar Steelsar
 	mother = 33072 # Rasa Parhek
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = illuskan
 	trait = creature_human
 	1288.8.1 = { birth = yes }
 	1297.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_murder
 		}
 	}
@@ -1079,7 +1073,7 @@
 	dynasty = 6208 # Steelsar
 	father = 33073 # Dornar Steelsar
 	mother = 33072 # Rasa Parhek
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1289.6.1 = { birth = yes }
@@ -1087,7 +1081,7 @@
 		give_nickname = nick_the_exile # Once Baldur's Gate has a holder in this year, we should send him there
 	}
 	1306.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_murder
 		}
 	}
@@ -1097,7 +1091,7 @@
 	dynasty = 6208 # Steelsar
 	father = 33073 # Dornar Steelsar
 	mother = 33072 # Rasa Parhek
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = illuskan
 	trait = creature_human
 	1290.4.1 = { birth = yes }
@@ -1107,19 +1101,19 @@
 	name = Malek
 	dynasty = 4830 # Parhek
 	father = 33070 # Dhanar Parhek
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1271.12.10 = { birth = yes }
 	1273.1.1 = {
-		employer = 7012 # Baeron of Waterdeep
+		employer = 7013 # Shilarn of Waterdeep (Baeron not landed)
 	}
 	1291.1.1 = {
 		give_nickname = nick_the_coinmage
 		trait = trained_wizard
 	}
 	1305.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_murder
 		}
 	}
@@ -1128,13 +1122,13 @@
 	name = Rhinn
 	dynasty = 4830 # Parhek
 	father = 33078 # Malek Parhek the Coinmage
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = twin
 	1290.1.1 = { birth = yes }
 	1305.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_murder
 		}
 	}
@@ -1144,13 +1138,13 @@
 	female = yes
 	dynasty = 4830 # Parhek
 	father = 33078 # Malek Parhek the Coinmage
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = twin
 	1290.1.1 = { birth = yes }
 	1305.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_murder
 		}
 	}
@@ -1159,12 +1153,12 @@
 	name = Parav
 	dynasty = 4830 # Parhek
 	father = 33078 # Malek Parhek the Coinmage
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	1295.1.1 = { birth = yes }
 	1305.1.1 = {
-		death = { 
+		death = {
 			death_reason = death_murder
 		}
 	}
@@ -1173,10 +1167,11 @@
 33082 = {
 	name = Quorl
 	dynasty = 4806
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	culture = amnian
 	trait = creature_human
 	trait = expert_cleric
+	trait = patron_talona
 	trait = elusive_shadow
 	1275.1.1 = { birth = yes }
 	1333.1.1 = {
@@ -1194,7 +1189,7 @@
 33083 = {
 	name = Kirsoph
 	dynasty = 4810
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	culture = amnian
 	trait = creature_human
 	trait = expert_fighter
@@ -1216,7 +1211,7 @@
 33084 = {
 	name = Liam
 	dynasty = 4831
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = trained_bard
@@ -1227,19 +1222,19 @@
 33085 = {
 	name = Berrun
 	dynasty = 4832
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = expert_ranger
 	1341.1.1 = { birth = yes }
-	1400.1.1 = { death = yes }
+	1430.1.1 = { death = yes }
 }
 # Invented characters for Minsorran
 33086 = {
 	name = Agatha
 	female = yes
 	dynasty = 4833 # Minsor
-	religion = good_human_pantheon
+	religion = joyful
 	culture = amnian
 	trait = creature_human
 	trait = expert_cleric
@@ -1251,13 +1246,13 @@
 33087 = {
 	name = Malchor
 	dynasty = 4834 # Sollarite
-	religion = good_human_pantheon
+	religion = joyful
 	culture = amnian
 	trait = creature_human
 	trait = trained_cleric
 	trait = journeyman_paladin
 	367.1.1 = { birth = yes }
-	425.1.1 = { 
+	425.1.1 = {
 		death = {
 			death_reason = death_battle
 		}
@@ -1267,7 +1262,7 @@
 	name = Gabor
 	dynasty = 4834 # Sollarite
 	father = 33087 # Malchor
-	religion = good_human_pantheon
+	religion = joyful
 	culture = amnian
 	trait = creature_human
 	trait = master_cleric
@@ -1281,7 +1276,7 @@
 	name = Alanna
 	female = yes
 	dynasty = 4835 # Nash
-	religion = good_human_pantheon
+	religion = joyful
 	culture = amnian
 	trait = creature_human
 	trait = renowned_cleric
@@ -1293,12 +1288,12 @@
 	female = yes
 	dynasty = 4835 # Nash
 	mother = 33089
-	religion = good_human_pantheon
+	religion = joyful
 	culture = amnian
 	trait = creature_human
 	trait = master_cleric
 	521.1.1 = { birth = yes }
-	600.1.1 = { 
+	600.1.1 = {
 		death = {
 			death_reason = death_combat_dragon # This is the only canon detail here - everyone gets eaten by a dragon
 		}
@@ -1307,7 +1302,7 @@
 33091 = {
 	name = Torlus
 	dynasty = 4854 # Arklen
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	515.1.1 = { birth = yes }
@@ -1318,7 +1313,7 @@
 	name = Marcos
 	dynasty = 4826 # Torlath
 	father = 33029 # Corl I
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	562.1.1 = { birth = yes }
@@ -1328,7 +1323,7 @@
 	name = Corl
 	dynasty = 4826 # Torlath
 	father = 33035 # Corl II Torlath
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	625.1.1 = { birth = yes }
@@ -1338,7 +1333,7 @@
 	name = Marcos
 	dynasty = 4826 # Torlath
 	father = 33035 # Corl II Torlath
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	626.1.1 = { birth = yes }
@@ -1348,12 +1343,12 @@
 	name = Imnel # 2nd son
 	dynasty = 4826 # Torlath
 	father = 33037 # Brinnaq I Torlath
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	673.1.1 = { birth = yes }
 	695.8.1 = {
-		death = { 
+		death = {
 			death_reason = death_murder_poison_fr
 			killer = 33040
 		}
@@ -1363,12 +1358,12 @@
 	name = Rhadik # 3rd son
 	dynasty = 4826 # Torlath
 	father = 33037 # Brinnaq I Torlath
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	674.1.1 = { birth = yes }
 	695.3.1 = {
-		death = { 
+		death = {
 			death_reason = death_murder_poison_fr
 			killer = 33040
 		}
@@ -1378,12 +1373,12 @@
 	name = Corl # 4th son
 	dynasty = 4826 # Torlath
 	father = 33037 # Brinnaq I Torlath
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	676.1.1 = { birth = yes }
 	695.11.1 = {
-		death = { 
+		death = {
 			death_reason = death_murder_poison_fr
 			killer = 33040
 		}
@@ -1393,12 +1388,12 @@
 	name = Rashturl # 5th son
 	dynasty = 4826 # Torlath
 	father = 33037 # Brinnaq I Torlath
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	672.1.1 = { birth = yes }
 	695.4.1 = {
-		death = { 
+		death = {
 			death_reason = death_murder_poison_fr
 			killer = 33040
 		}
@@ -1409,7 +1404,7 @@
 	female = yes
 	dynasty = 4826 # Torlath
 	father = 33041 # Jhanos Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	trait = master_wizard
@@ -1420,7 +1415,7 @@
 	name = Marcos
 	dynasty = 4826 # Torlath
 	father = 33041 # Jhanos Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	trait = master_wizard
@@ -1431,7 +1426,7 @@
 	name = Corl
 	dynasty = 4826 # Torlath
 	father = 33042 # Brinnaq II Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	724.1.1 = { birth = yes }
@@ -1441,7 +1436,7 @@
 	name = Rhadik
 	dynasty = 4826 # Torlath
 	father = 33043 # Imnel Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	757.1.1 = { birth = yes }
@@ -1451,7 +1446,7 @@
 	name = Imnel
 	dynasty = 4826 # Torlath
 	father = 33044 # Jhanos Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	815.1.1 = { birth = yes }
@@ -1461,7 +1456,7 @@
 	name = Corl
 	dynasty = 4826 # Torlath
 	father = 33044 # Jhanos Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	818.1.1 = { birth = yes }
@@ -1471,7 +1466,7 @@
 	name = Esmel
 	dynasty = 4826 # Torlath
 	father = 33044 # Jhanos Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	820.1.1 = { birth = yes }
@@ -1481,7 +1476,7 @@
 	name = Marcos
 	dynasty = 4826 # Torlath
 	father = 33045 # Jhanos Torlath
-	religion = good_human_pantheon
+	religion = arcane
 	culture = amnian
 	trait = creature_human
 	trait = master_wizard
@@ -1495,7 +1490,7 @@
 33107 = {
 	name = Thultar
 	dynasty = 4829 # Mornhelm
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	trait = journeyman_bard
@@ -1507,38 +1502,46 @@
 33108 = {
 	name = Markel #Rhinnom's madeup son to connect him to Mikaal
 	dynasty = 4807
-	religion = good_human_pantheon
+	religion = mercantile
+	secret_religion = shadow_gods
 	culture = amnian
 	trait = creature_human
 	father = 33010
-	1267.1.1 = { birth = yes }	
+	1267.1.1 = { birth = yes }
 	1367.1.1 = { death = yes }
 }
 33109 = {
 	name = Mikaal
 	dynasty = 4807
-	religion = good_human_pantheon
+	religion = mercantile
+	secret_religion = shadow_gods
 	culture = amnian
 	trait = creature_human
 	trait = fighter
 	father = 33108
-	1297.1.1 = { birth = yes }	
+	1297.1.1 = { birth = yes }
+	1382.1.1 = {
+		effect = {
+			join_society = shadow_thieves
+			set_society_grandmaster = yes
+		}
+	}
 	1400.1.1 = { death = yes }
 }
 33110 = {
 	name = Ghazrim # patrician of Nashivaar
 	dynasty = 4843
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
-	1327.1.1 = { birth = yes }
-	1400.1.1 = { death = yes }
+	1380.1.1 = { birth = yes }
+	1480.1.1 = { death = yes }
 }
 33111 = {
 	name = "Miekos"
 	dynasty = 4844 # Gilmax
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	1.1.1 = { birth = yes }
 	100.1.1 = { death = yes }
@@ -1547,7 +1550,7 @@
 	name = "Nepos"
 	dynasty = 4844 # Gilmax
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	father = 33111
 	80.1.1 = { birth = yes }
@@ -1557,7 +1560,7 @@
 	name = "Eritys"
 	dynasty = 4844 # Gilmax
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	father = 33112
 	160.1.1 = { birth = yes }
@@ -1567,7 +1570,7 @@
 	name = "Valentos"
 	dynasty = 4845 # Undrin
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	1.1.1 = { birth = yes }
 	100.1.1 = { death = yes }
@@ -1576,7 +1579,7 @@
 	name = "Pentos"
 	dynasty = 4845 # Undrin
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	father = 33114
 	80.1.1 = { birth = yes }
@@ -1586,7 +1589,7 @@
 	name = "Falin"
 	dynasty = 4845 # Undrin
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	father = 33115
 	160.1.1 = { birth = yes }
@@ -1596,7 +1599,7 @@
 	name = "Ajan"
 	dynasty = 4846 # Tartesso
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	410.1.1 = { birth = yes }
 	510.1.1 = { death = yes }
@@ -1605,7 +1608,7 @@
 	name = "Morvarth"
 	dynasty = 4846 # Tartesso
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 33117
 	490.1.1 = { birth = yes }
@@ -1615,7 +1618,7 @@
 	name = "Riedran"
 	dynasty = 4846 # Tartesso
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 33118
 	570.1.1 = { birth = yes }
@@ -1625,7 +1628,7 @@
 	name = "Karrn"
 	dynasty = 4846 # Tartesso
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 33119
 	650.1.1 = { birth = yes }
@@ -1635,7 +1638,7 @@
 	name = "Jerich"
 	dynasty = 4846 # Tartesso
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	father = 33120
 	730.1.1 = { birth = yes }
@@ -1645,7 +1648,7 @@
 	name = "Amos"
 	dynasty = 4847 # Loman
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	1.1.1 = { birth = yes }
 	100.1.1 = { death = yes }
@@ -1654,7 +1657,7 @@
 	name = "Dormer"
 	dynasty = 4847 # Loman
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	father = 33122
 	80.1.1 = { birth = yes }
@@ -1664,7 +1667,7 @@
 	name = "Patrik"
 	dynasty = 4847 # Loman
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	father = 33123
 	160.1.1 = { birth = yes }
@@ -1674,7 +1677,7 @@
 	name = "Caleb"
 	dynasty = 4848 # Tenba
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	1.1.1 = { birth = yes }
 	100.1.1 = { death = yes }
@@ -1683,7 +1686,7 @@
 	name = "Dume"
 	dynasty = 4848 # Tenba
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	father = 33125
 	80.1.1 = { birth = yes }
@@ -1693,7 +1696,7 @@
 	name = "Jarrus"
 	dynasty = 4848 # Tenba
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	father = 33126
 	160.1.1 = { birth = yes }
@@ -1703,7 +1706,7 @@
 	name = "Zeno"
 	dynasty = 4849 # Mithridas
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	1.1.1 = { birth = yes }
 	100.1.1 = { death = yes }
@@ -1712,7 +1715,7 @@
 	name = "Genner"
 	dynasty = 4849 # Mithridas
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	father = 33128
 	80.1.1 = { birth = yes }
@@ -1722,7 +1725,7 @@
 	name = "Borvan"
 	dynasty = 4849 # Mithridas
 	culture = amnian
-	religion = good_human_pantheon
+	religion = calishite_faith
 	trait = creature_human
 	father = 33129
 	160.1.1 = { birth = yes }
@@ -1748,7 +1751,7 @@
 	female = yes
 	dynasty = 4851 # Lorridar
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = midas_touched
 	1301.1.1 = { birth = yes }
@@ -1767,7 +1770,7 @@
 	father = 66419 # Darnath Floshin
 	mother = 33132 # Tanthla
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = wroth
 	1342.1.1 = { birth = yes }
@@ -1782,7 +1785,7 @@
 	female = yes
 	dynasty = 4852 # Shaesarl
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = feeble
 	490.1.1 = { birth = yes } # Estimate
@@ -1797,7 +1800,7 @@
 	female = yes
 	dynasty = 4853 # Tarnis
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = gregarious
 	529.1.1 = { birth = yes }
@@ -1808,7 +1811,7 @@
 	dynasty = 4826 # Torlath
 	father = 33026 # Rhadik the Bold
 	mother = 33134 # Maelina Shaesarl
-	religion = good_human_pantheon
+	religion = mercantile
 	culture = amnian
 	trait = creature_human
 	521.1.1 = { birth = yes }
@@ -1817,8 +1820,9 @@
 33137 = {
 	name = "Carzakh"
 	dynasty = 40 # Spellseer
+	father = 33198
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	775.1.1 = {
 		birth = yes
@@ -1831,8 +1835,8 @@
 	name = "Kartak"
 	dynasty = 40 # Spellseer
 	culture = amnian
-	religion = good_human_pantheon
-	secret_religion = evil_human_pantheon
+	religion = arcane
+	secret_religion = dead_three
 	learning = 9
 	trait = creature_human
 	trait = legendary_wizard
@@ -1843,34 +1847,37 @@
 		birth = yes
 	}
 	818.1.1 = {
-		effect = {
-			add_character_modifier = {
-				name = wiz_necromancy
-				duration = -1
-			}
-		}
+		add_trait = wiz_necromancy
 	}
 	835.1.1 = {
 		give_nickname = nick_the_all_seeing
 	}
 	856.1.1 = {
 		add_trait = lich
-		religion = evil_human_pantheon
-		add_trait = absent
+		religion = dead_three
 		effect = {
 			set_graphical_culture = lich
 			banish = yes
+			join_society = twisted_rune
+		}
+	}
+	1188.1.1 = {
+		add_trait = absent
+	}
+	1348.1.1 = {
+		effect = {
+			remove_trait = absent
 		}
 	}
 	1367.1.1 = {
-		death = { death_reason = death_planes }
+		death = { death_reason = death_ravenloft }
 	}
 }
 33139 = {
 	name = "Andos"
 	dynasty = 41 # Spulzeer
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	father = 33151
 	840.1.1 = {
@@ -1884,7 +1891,7 @@
 	name = "Fortor"
 	dynasty = 41 # Spulzeer
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	father = 33139
 	920.1.1 = {
@@ -1899,7 +1906,7 @@
 	female = yes
 	dynasty = 41 # Spulzeer
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	father = 33140
 	1000.1.1 = {
@@ -1913,7 +1920,7 @@
 	name = "Vimal"
 	dynasty = 41 # Spulzeer
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	mother = 33141
 	1080.1.1 = {
@@ -1927,7 +1934,7 @@
 	name = "Ressic"
 	dynasty = 41 # Spulzeer
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	father = 33142
 	1160.1.1 = {
@@ -1941,7 +1948,7 @@
 	name = "Zino"
 	dynasty = 41 # Spulzeer
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	father = 33143
 	1240.1.1 = {
@@ -1955,7 +1962,7 @@
 	name = "Kelamar"
 	dynasty = 41 # Spulzeer
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	trait = arbitrary
 	trait = impaler
@@ -1975,7 +1982,7 @@
 	female = yes
 	dynasty = 41 # Spulzeer
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	father = 33144
 	1262.1.1 = {
@@ -1993,7 +2000,7 @@
 	female = yes
 	dynasty = 41 # Spulzeer
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	trait = legit_bastard
 	mother = 33146
@@ -2008,7 +2015,7 @@
 	name = "Chardath"
 	dynasty = 41 # Spulzeer
 	culture = amnian
-	religion = good_human_pantheon
+	religion = mercantile
 	trait = creature_human
 	trait = dull
 	mother = 33147
@@ -2026,7 +2033,7 @@
 		add_trait = drunkard
 	}
 	1367.1.1 = {
-		death = { death_reason = death_planes }
+		death = { death_reason = death_ravenloft }
 	}
 }
 33149 = {
@@ -2034,7 +2041,7 @@
 	female = yes
 	dynasty = 41 # Spulzeer
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	trait = fair
 	mother = 33147
@@ -2042,15 +2049,19 @@
 		birth = yes
 	}
 	1351.1.1 = {
-		death = { death_reason = death_murder }
+		death = {
+			death_reason = death_murder
+			killer = 33148 # Chardath, but Kartak made him do it
+		}
 	}
 }
 
 33150 = {
 	name = "Tregas"
 	dynasty = 40 # Spellseer
+	father = 33201
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	740.1.1 = {
 		birth = yes
@@ -2063,7 +2074,7 @@
 	name = "Tregas"
 	dynasty = 40 # Spellseer
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	trait = creature_human
 	father = 33150
 	770.1.1 = {
@@ -2080,7 +2091,7 @@
 	name = "Bhagenn"
 	dynasty = 285 # Deresto
 	culture = amnian
-	religion = good_human_pantheon
+	religion = arcane
 	learning = 9
 	trait = creature_human
 	trait = legendary_wizard
@@ -2091,12 +2102,7 @@
 		birth = yes
 	}
 	916.1.1 = {
-		effect = {
-			add_character_modifier = {
-				name = wiz_necromancy
-				duration = -1
-			}
-		}
+		add_trait = wiz_necromancy
 	}
 	950.1.1 = {
 		add_trait = lich
@@ -2107,5 +2113,744 @@
 	}
 	1270.1.1 = {
 		death = { death_reason = death_murder killer = 7223 }
+	}
+}
+
+33153 = {
+	name = "Ezra"
+	female = yes
+	dynasty = 4840 # de'Arnise
+	dna = decbhybabes
+	properties= rd0dck
+	religion = arcane
+	culture = amnian
+	trait = creature_human
+	trait = martial_cleric
+	trait = journeyman_cleric
+	trait = kind
+	trait = drunkard
+	trait = cynical
+	trait = ambitious
+	trait = duelist
+	trait = proud
+	trait = charitable
+	trait = groomed
+	1463.5.1 = { birth = yes }
+	1537.3.9 = { death = yes }
+}
+33154 = {
+	name = "Narm"
+	dynasty = 4832
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	father = 33085
+	1410.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33155 = {
+	name = "Angev"
+	dynasty = 4807
+	religion = mercantile
+	secret_religion = shadow_gods
+	culture = amnian
+	trait = creature_human
+	father = 33109
+	1370.1.1 = { birth = yes }
+	1400.1.1 = {
+		effect = {
+			join_society = shadow_thieves
+			set_society_grandmaster = yes
+		}
+	}
+	1470.1.1 = { death = yes }
+}
+33156 = {
+	name = "Dinah"
+	female = yes
+	dynasty = 4807
+	religion = mercantile
+	secret_religion = shadow_gods
+	culture = amnian
+	trait = creature_human
+	father = 33155
+	1440.1.1 = {
+		birth = yes
+	}
+	1470.1.1 = {
+		effect = {
+			join_society = shadow_thieves
+			set_society_grandmaster = yes
+		}
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33157 = {
+	name = "Olean"
+	dynasty = 4800
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	father = 33001
+	1330.1.1 = {
+		birth = yes
+	}
+	1420.1.1 = {
+		death = yes
+	}
+}
+33158 = {
+	name = "Laren"
+	dynasty = 4800
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	father = 33157
+	1390.1.1 = {
+		birth = yes
+	}
+	1480.1.1 = {
+		death = yes
+	}
+}
+33159 = {
+	name = "Janus"
+	dynasty = 4800
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	father = 33158
+	1450.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33160 = {
+	name = "Ulara"
+	female = yes
+	dynasty = 4814
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	mother = 33017
+	1400.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33161 = {
+	name = "Aren"
+	dynasty = 4843
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	father = 33110
+	1450.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33162 = {
+	name = "Fals"
+	dynasty = 4831
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	father = 33084
+	1370.1.1 = {
+		birth = yes
+	}
+	1460.1.1 = {
+		death = yes
+	}
+}
+33163 = {
+	name = "Renault"
+	dynasty = 4831
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	father = 33162
+	1430.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33164 = {
+	name = "Rhinnom"
+	dynasty = 439 # Thonok
+	culture = amnian
+	religion = loviatar
+	trait = creature_human
+	trait = hunchback
+	trait = cleric
+	1360.1.1 = {
+		birth = yes
+	}
+	1440.1.1 = {
+		death = yes
+	}
+}
+33165 = {
+	name = "Carl"
+	dynasty = 4815
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	father = 33018
+	1360.1.1 = {
+		birth = yes
+	}
+	1460.1.1 = {
+		death = yes
+	}
+}
+33166 = {
+	name = "Sandro"
+	dynasty = 4815
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	father = 33165
+	1430.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33167 = {
+	name = "Jin"
+	female = yes
+	dynasty = 440 # Craumerdaun
+	culture = amnian
+	religion = martial_faith
+	trait = creature_human
+	father = 33197
+	1440.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33168 = {
+	name = "Tarkas"
+	dynasty = 441 # Thallavv
+	culture = amnian
+	religion = mercantile
+	secret_religion = arcane
+	learning = 7
+	trait = creature_human
+	trait = martial_cleric
+	trait = journeyman_wizard
+	trait = gregarious
+	1320.1.1 = {
+		birth = yes
+	}
+	1400.1.1 = {
+		death = yes
+	}
+}
+33169 = {
+	name = "Yaren"
+	dynasty = 441 # Thallavv
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	father = 33168
+	1370.1.1 = {
+		birth = yes
+	}
+	1470.1.1 = {
+		death = yes
+	}
+}
+33170 = {
+	name = "Walden"
+	dynasty = 441 # Thallavv
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	father = 33169
+	1440.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33171 = {
+	name = "Iitriv"
+	dynasty = 442 # Gaall
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	trait = greedy
+	trait = slothful
+	trait = gluttonous
+	trait = is_fat
+	trait = proud
+	trait = envious
+	1320.1.1 = {
+		birth = yes
+	}
+	1373.1.1 = {
+		death = yes
+	}
+}
+33172 = {
+	name = "Fargur"
+	dynasty = 443 # Jamok
+	culture = ogre
+	religion = church_of_cyric
+	trait = creature_half_ogre
+	1340.1.1 = {
+		birth = yes
+		culture = amnian
+	}
+	1420.1.1 = {
+		death = yes
+	}
+}
+33173 = {
+	name = "Bagrum"
+	dynasty = 443 # Jamok
+	culture = ogre
+	religion = church_of_cyric
+	trait = creature_half_ogre
+	father = 33172
+	1400.1.1 = {
+		birth = yes
+		culture = amnian
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33174 = {
+	name = "Petros"
+	dynasty = 4820
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	mother = 33021
+	1370.1.1 = {
+		birth = yes
+	}
+	1470.1.1 = {
+		death = yes
+	}
+}
+33175 = {
+	name = "Niessa"
+	female = yes
+	dynasty = 4820
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	father = 33174
+	1450.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33176 = {
+	name = "Jordy"
+	dynasty = 444 # Droverson
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	1330.1.1 = {
+		birth = yes
+	}
+	1410.1.1 = {
+		death = yes
+	}
+}
+33177 = {
+	name = "Todd"
+	dynasty = 444 # Droverson
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	father = 33176
+	1390.1.1 = {
+		birth = yes
+	}
+	1470.1.1 = {
+		death = yes
+	}
+}
+33178 = {
+	name = "Vicky"
+	female = yes
+	dynasty = 444 # Droverson
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	father = 33177
+	1430.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33179 = {
+	name = "Sarif"
+	dynasty = 4801
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	father = 33002
+	1350.1.1 = {
+		birth = yes
+	}
+	1440.1.1 = {
+		death = yes
+	}
+}
+33180 = {
+	name = "Mavos"
+	dynasty = 4801
+	religion = mercantile
+	culture = amnian
+	trait = creature_human
+	father = 33179
+	1410.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33181 = {
+	name = "Tannis"
+	dynasty = 445 # Rosznar
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	1270.1.1 = {
+		birth = yes
+	}
+	1350.1.1 = {
+		death = yes
+	}
+}
+33182 = {
+	name = "Miilal"
+	female = yes
+	dynasty = 445 # Rosznar
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	trait = fighter
+	trait = deceitful
+	trait = wroth
+	trait = cruel
+	father = 33181
+	1322.1.1 = {
+		birth = yes
+	}
+	1380.1.1 = {
+		death = yes
+	}
+}
+33183 = {
+	name = "Tobem"
+	dynasty = 445 # Rosznar
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	trait = trained_fighter
+	trait = proud
+	trait = slothful
+	trait = former_adventurer
+	trait = tough_soldier
+	father = 33181
+	1325.1.1 = {
+		birth = yes
+	}
+	1380.1.1 = {
+		death = yes
+	}
+}
+33184 = {
+	name = "Kath"
+	female = yes
+	dynasty = 446 # Traver
+	culture = amnian
+	religion = church_of_cyric
+	trait = creature_human
+	1350.1.1 = {
+		birth = yes
+	}
+	1430.1.1 = {
+		death = yes
+	}
+}
+33185 = {
+	name = "Garen"
+	dynasty = 446 # Traver
+	culture = amnian
+	religion = church_of_cyric
+	trait = creature_human
+	mother = 33184
+	1400.1.1 = {
+		birth = yes
+	}
+	1480.1.1 = {
+		death = yes
+	}
+}
+33186 = {
+	name = "Maven"
+	female = yes
+	dynasty = 446 # Traver
+	culture = amnian
+	religion = church_of_cyric
+	trait = creature_human
+	father = 33185
+	1460.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33187 = {
+	name = "Jogrenn"
+	dynasty = 4177 # Sythillis
+	culture = ogre_magi
+	religion = dead_three
+	trait = creature_ogre
+	father = 28129
+	mother = 28171
+	1355.1.1 = {
+		birth = yes
+	}
+	1425.1.1 = {
+		death = yes
+	}
+}
+33188 = {
+	name = "Forzen"
+	dynasty = 4177 # Sythillis
+	culture = ogre_magi
+	religion = dead_three
+	trait = creature_ogre
+	father = 33187
+	1410.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33189 = {
+	name = "Kannec"
+	dynasty = 4820
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	1270.1.1 = {
+		birth = yes
+	}
+	1335.1.1 = {
+		death = yes
+	}
+}
+33190 = {
+	name = "Logan"
+	dynasty = 4820
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	trait = trained_paladin
+	trait = shy
+	father = 33189
+	1318.1.1 = {
+		birth = yes
+	}
+	1389.1.1 = {
+		death = yes
+	}
+}
+33191 = {
+	name = "Prik"
+	female = yes
+	dynasty = 447 # Darklurker
+	culture = hobgoblin
+	religion = church_of_cyric
+	trait = creature_hobgoblin
+	1345.1.1 = {
+		birth = yes
+	}
+	1430.1.1 = {
+		death = yes
+	}
+}
+33192 = {
+	name = "Gnisa"
+	female = yes
+	dynasty = 447 # Darklurker
+	culture = hobgoblin
+	religion = church_of_cyric
+	trait = creature_hobgoblin
+	mother = 33191
+	1410.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33193 = {
+	name = "Arbas"
+	dynasty = 445 # Rosznar (a cousin I guess)
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	trait = journeyman_fighter
+	trait = tough_soldier
+	trait = diligent
+	trait = wroth
+	trait = cruel
+	1320.1.1 = {
+		birth = yes
+	}
+	1400.1.1 = {
+		death = yes
+	}
+}
+33194 = {
+	name = "Fenrel"
+	dynasty = 448 # Rundem
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	1380.1.1 = {
+		birth = yes
+	}
+	1460.1.1 = {
+		death = yes
+	}
+}
+33195 = {
+	name = "Lianna"
+	female = yes
+	dynasty = 449 # Sandist
+	culture = amnian
+	religion = mercantile
+	trait = creature_human
+	1440.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+33196 = {
+	name = "Labak"
+	dynasty = 440 # Craumerdaun
+	culture = amnian
+	religion = martial_faith
+	martial = 9
+	trait = creature_human
+	trait = brilliant_strategist
+	trait = legendary_fighter
+	trait = brave
+	trait = wroth
+	1330.1.1 = {
+		birth = yes
+	}
+	1410.1.1 = {
+		death = yes
+	}
+}
+33197 = {
+	name = "Naglen"
+	dynasty = 440 # Craumerdaun
+	culture = amnian
+	religion = martial_faith
+	trait = creature_human
+	father = 33196
+	1380.1.1 = {
+		birth = yes
+	}
+	1470.1.1 = {
+		death = yes
+	}
+}
+33198 = {
+	name = "Vartakh"
+	dynasty = 40 # Spellseer
+	father = 33199
+	culture = amnian
+	religion = arcane
+	trait = creature_human
+	742.1.1 = {
+		birth = yes
+	}
+	797.1.1 = {
+		death = yes
+	}
+}
+33199 = {
+	name = "Tregas"
+	dynasty = 40 # Spellseer
+	father = 33200
+	culture = amnian
+	religion = arcane
+	trait = creature_human
+	709.1.1 = {
+		birth = yes
+	}
+	775.1.1 = {
+		death = yes
+	}
+}
+33200 = {
+	name = "Vargas"
+	dynasty = 40 # Spellseer
+	culture = amnian
+	religion = arcane
+	trait = creature_human
+	682.1.1 = {
+		birth = yes
+	}
+	750.1.1 = {
+		death = yes
+	}
+}
+33201 = {
+	name = "Vargas"
+	dynasty = 40 # Spellseer
+	father = 33200
+	culture = amnian
+	religion = arcane
+	trait = creature_human
+	707.1.1 = {
+		birth = yes
+	}
+	771.1.1 = {
+		death = yes
 	}
 }

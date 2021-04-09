@@ -84,7 +84,7 @@ moonflower_bloodline = { #Sad Queen Amlaruil
 heltharn_bloodline = { #King Imphras I
 	combat_rating = 4
 	impilturan_opinion = 5
-	vassal_opinion = 1
+	vassal_opinion = 3
 	monthly_character_prestige = 0.05
 	bloodline_effect_great_heroes_appear = 1
 	inheritance = patrilineal
@@ -139,7 +139,7 @@ terpenzi_bloodline = { #Terpenzi
 battlehammer_bloodline = { #King Gandalug
 	combat_rating = 4
 	shield_dwarf_opinion = 5
-	vassal_opinion = 10
+	vassal_opinion = 5
 	active = {
 		culture = shield_dwarf
 	}
@@ -159,7 +159,7 @@ ironstar_bloodline = { #Daurvos Frostbeard
 	}
 	monthly_character_piety = 0.05
 	command_modifier = {
-		religious_enemy = 0.1
+		religious_enemy = 0.05
 	}
 	inheritance = patrilineal
 	allow_bastards = yes
@@ -181,14 +181,14 @@ many_arrows_bloodline = { #King Obould 0th
 }
 darskul_bloodline = { #Caruth I Darskul
 	combat_rating = 4
-	good_human_pantheon_opinion = 5
+	triadic_opinion = 5
 	church_opinion = 5
 	monthly_character_piety = 0.05
 	active = {
-		religion = good_human_pantheon
+		religion_group = good_human_pantheon_group
 	}
 	command_modifier = {
-		religious_enemy = 0.1
+		religious_enemy = 0.05
 	}
 	inheritance = patrilineal
 	allow_bastards = yes
@@ -207,4 +207,39 @@ nasher_bloodline = {
 	highcoaster_opinion = 5
     allow_bastards = yes
     flags = { historical_bloodline bloodline_heroes }
+}
+gareth_bloodline = { #Gareth Dragonsbane
+    picture = GFX_bloodlines_symbol_generic_hero
+    inheritance = patrilineal
+	active = {
+		religion_group = good_human_pantheon_group
+	}
+	bloodline_effect_great_heroes_appear = 1
+	monthly_character_piety = 0.05
+	combat_rating = 5
+	vassal_opinion = 4
+	church_opinion = 4
+	allow_bastards = yes
+	flags = { historical_bloodline bloodline_heroes }
+}
+infernal_fame_bloodline = { #Bloodline from Asmodean Deal
+	monthly_character_prestige = 0.1
+        scholar_opinion = 5
+        poet_opinion = 5
+	inheritance = all_descendants
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_murder
+	# flags = { }
+}
+shoon_restorer = {
+	monthly_character_prestige = 0.1
+	vassal_opinion = 5
+	shoon_opinion = 5
+	calishite_opinion = 5
+	amnian_opinion = 5
+	tethyrian_opinion = 5
+	arnadar_opinion = 5
+	inheritance = all_descendants
+	allow_bastards = no
+	picture = GFX_bloodlines_symbol_munificent
 }

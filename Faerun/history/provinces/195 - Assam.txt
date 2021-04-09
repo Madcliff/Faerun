@@ -16,11 +16,11 @@ b_khearan = city
 
 # Misc
 culture = chondathan
-religion = calishite_faith
+religion = martial_faith
 terrain = plains
 #History
 291.1.1 = {
 	b_assam = city
 	b_khearan = castle
-	culture = heartlander
+	culture = draeven
 }

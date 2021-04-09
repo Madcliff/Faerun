@@ -6,16 +6,10 @@ title = c_helm_rift
 # Settlements
 max_settlements = 3
 
-b_kell = tribal
-#b_bloodgood = city
-#b_clazyxi = temple
-#b_ushale = castle
-#b_yewjest = city
-#b_aousdja = temple
-#b_parla = castle
+b_iouloum = tribal
 
 # Misc
-culture = monster
-religion = monster_pantheon
+culture = ogre
+religion = vaprak
 
 #History

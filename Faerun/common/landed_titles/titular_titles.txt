@@ -89,6 +89,111 @@ d_muhjari = {
 
 }
 
+d_myriadic = {
+	color = { 20 140 20 }
+	color2 = { 220 220 0 }
+
+	capital = 954 # c_utaqa
+
+	creation_requires_capital = no
+
+	dignity = 100 # Counted as having this many more counties than it does
+
+	title = CALIPH
+	title_female = CALIPHA
+	foa = CALIPH_FOA
+	short_name = yes
+
+	religion = ten_thousand_gods
+
+	# Controls a religion
+	controls_religion = ten_thousand_gods
+
+	allow = {
+		religion = ten_thousand_gods
+		OR = {
+			culture = semphari
+			culture = durpari
+			culture = badia
+			culture = qarsan
+			culture = hadhar
+		}
+	}
+
+	caliphate = yes
+
+}
+
+d_qisma = {
+	color = { 20 140 120 }
+	color2 = { 220 220 0 }
+
+	capital = 1467 # c_huzuz
+
+	creation_requires_capital = no
+
+	dignity = 100 # Counted as having this many more counties than it does
+
+	title = CALIPH
+	title_female = CALIPHA
+	foa = CALIPH_FOA
+	short_name = yes
+
+	religion = qisma
+
+	# Controls a religion
+	controls_religion = qisma
+
+	allow = {
+		religion = qisma
+		OR = {
+			culture = semphari
+			culture = durpari
+			culture = badia
+			culture = qarsan
+			culture = hadhar
+		}
+	}
+
+	caliphate = yes
+
+}
+
+d_pantheist = {
+	color = { 120 40 20 }
+	color2 = { 220 220 0 }
+
+	capital = 1477 # c_itiraf
+
+	creation_requires_capital = no
+
+	dignity = 100 # Counted as having this many more counties than it does
+
+	title = EMIR
+	title_female = EMIRA
+	foa = CALIPH_FOA
+	short_name = yes
+
+	religion = pantheist_league
+
+	# Controls a religion
+	controls_religion = pantheist_league
+
+	allow = {
+		religion = pantheist_league
+		OR = {
+			culture = semphari
+			culture = durpari
+			culture = badia
+			culture = qarsan
+			culture = hadhar
+		}
+	}
+
+	caliphate = yes
+
+}
+
 d_padhran = {
 	color = { 80 160 0 }
 	color2 = { 0 220 220 }
@@ -344,8 +449,7 @@ d_black_lion = {
 	color = { 200 200 200 }
 	tribe = yes
 	allow = {
-		culture = uthgardt
-		religion = uthgardt_faith
+		always = no
 	}
 	capital = 47 # Beorunna's Well
 	# Andar Heartwood
@@ -354,8 +458,7 @@ d_black_raven = {
 	color = { 0 0 40 }
 	tribe = yes
 	allow = {
-		culture = uthgardt
-		religion = uthgardt_faith
+		always = no
 	}
 	capital = 234 # Raven Rock - Fell Wood
 	# Ostagar Tenfeather
@@ -364,8 +467,7 @@ d_blue_bear = {
 	color = { 20 20 200 }
 	tribe = yes
 	allow = {
-		culture = uthgardt
-		religion = uthgardt_faith
+		always = no
 	}
 	capital = 479 # The Fork
 	# Tanta Hagara
@@ -374,8 +476,7 @@ d_elk = {
 	color = { 150 150 150 }
 	tribe = yes
 	allow = {
-		culture = uthgardt
-		religion = uthgardt_faith
+		always = no
 	}
 	capital = 26 # Flint Rock - se Surbrin Hills, near the mouth of the Laughingflow
 	# Zokan Thunderer
@@ -384,8 +485,7 @@ d_gray_wolf = {
 	color = { 150 150 200 }
 	tribe = yes
 	allow = {
-		culture = uthgardt
-		religion = uthgardt_faith
+		always = no
 	}
 	capital = 39 # Also Raven Rock! (See Black Raven) - Use Frost Hills
 	# Alrik Tenstone
@@ -394,8 +494,7 @@ d_great_worm = {
 	color = { 150 150 255 }
 	tribe = yes
 	allow = {
-		culture = uthgardt
-		religion = uthgardt_faith
+		always = no
 	}
 	capital = 41 # Great Worm Cavern (nw of Mithral Hall, N of Lurkwood) - Khedrun Valley!
 	# Gweshen Talistars
@@ -404,8 +503,7 @@ d_griffon = {
 	color = { 230 230 230 }
 	tribe = yes
 	allow = {
-		culture = uthgardt
-		religion = uthgardt_faith
+		always = no
 	}
 	capital = 21 # Shining White (cavern s of Lurkwood - see Black Raven) - Lurkwood itself?
 	# Kralgar Bonesnapper
@@ -414,8 +512,7 @@ d_red_tiger = {
 	color = { 255 127 0 }
 	tribe = yes
 	allow = {
-		culture = uthgardt
-		religion = uthgardt_faith
+		always = no
 	}
 	capital = 35 # Cold Wood
 	# Adalwulf Longfang
@@ -424,8 +521,7 @@ d_sky_pony = {
 	color = { 200 200 255 }
 	tribe = yes
 	allow = {
-		culture = uthgardt
-		religion = uthgardt_faith
+		always = no
 	}
 	capital = 34 # One Stone (eastern Moonwood)
 	# Jerek Wolf-Slayer
@@ -434,8 +530,7 @@ d_tree_ghost = {
 	color = { 50 200 50 }
 	tribe = yes
 	allow = {
-		culture = uthgardt
-		religion = uthgardt_faith
+		always = no
 	}
 	capital = 55 # Grandfather Tree (central High Forest)
 	# ??
@@ -446,8 +541,7 @@ d_thunderbeast = {
 	name_tier = king
 	dignity = 1
 	allow = {
-		culture = uthgardt
-		religion = uthgardt_faith
+		always = no
 	}
 	capital = 169 # Morgur's Mound (nw of Longsaddle)
 	# Gundar Brontoskin
@@ -456,8 +550,7 @@ d_red_pony = {
 	color = { 255 100 100 }
 	tribe = yes
 	allow = {
-		culture = uthgardt
-		religion = uthgardt_faith
+		always = no
 	}
 	creation_requires_capital = no
 	capital = 34 # One Stone
@@ -467,8 +560,7 @@ d_golden_eagle = {
 	color = { 255 255 75 }
 	tribe = yes
 	allow = {
-		culture = uthgardt
-		religion = uthgardt_faith
+		always = no
 	}
 	creation_requires_capital = no
 	capital = 34 # One Stone
@@ -482,10 +574,7 @@ e_shoon = {
 	color2 = { 255 255 255 }
 	capital = 1412 # Shoonach
 	allow = {
-		OR = {
-			culture = calishite
-			culture = shoon
-		}
+		always = no # created via event
 	}
 	dignity = 2000
 	primary = yes
@@ -500,7 +589,7 @@ k_zhentarim = {
 	color2 = { 220 0 0 }
 	capital = 266 # Zhentil Keep
 	allow = {
-		culture = moonsea
+		society_member_of = black_network
 		religion_group = evil_human_pantheon_group
 	}
 	dignity = 300 # Increased dignity so AI will favor this title over any others
@@ -581,7 +670,7 @@ k_hlontar = {
 	capital = 274 # Daggerdale / Merrydale
 	allow = {
 		OR = {
-			culture = moonsea
+			culture = tharian
 			culture = netherese
 		}
 	}
@@ -629,6 +718,8 @@ k_united_moonshae = {
 
 	title = HIGHKING
 	title_female = HIGHQUEEN
+
+	culture = ffolk
 
 	capital = 308 # c_callidyrr
 	allow = {
@@ -687,11 +778,7 @@ e_phalorm = {
 	color2 = { 255 255 255 }
 	capital = 3 # Daggerford / Delimbiyran
 	allow = {
-		OR = {
-			culture = highcoaster
-			culture = moon_elf
-			culture = shield_dwarf
-		}
+		always = no # created via event
 	}
 	dignity = 1000
 	primary = yes
@@ -1065,7 +1152,7 @@ d_abjuration = {
 	}
 	dignity = 100
 	culture = thayan
-	religion = evil_human_pantheon
+	religion = kossuth
 	title = ZULKIR
 	title_female = ZULKIR
 	title_prefix = ZULKIRATEOF
@@ -1081,7 +1168,7 @@ d_conjuration = {
 	}
 	dignity = 100
 	culture = thayan
-	religion = evil_human_pantheon
+	religion = kossuth
 	title = ZULKIR
 	title_female = ZULKIR
 	title_prefix = ZULKIRATEOF
@@ -1097,7 +1184,7 @@ d_divination = {
 	}
 	dignity = 100
 	culture = thayan
-	religion = evil_human_pantheon
+	religion = kossuth
 	title = ZULKIR
 	title_female = ZULKIR
 	title_prefix = ZULKIRATEOF
@@ -1113,7 +1200,7 @@ d_enchantment = {
 	}
 	dignity = 100
 	culture = thayan
-	religion = evil_human_pantheon
+	religion = kossuth
 	title = ZULKIR
 	title_female = ZULKIR
 	title_prefix = ZULKIRATEOF
@@ -1129,7 +1216,7 @@ d_evocation = {
 	}
 	dignity = 100
 	culture = thayan
-	religion = evil_human_pantheon
+	religion = kossuth
 	title = ZULKIR
 	title_female = ZULKIR
 	title_prefix = ZULKIRATEOF
@@ -1145,7 +1232,7 @@ d_illusion = {
 	}
 	dignity = 100
 	culture = thayan
-	religion = evil_human_pantheon
+	religion = kossuth
 	title = ZULKIR
 	title_female = ZULKIR
 	title_prefix = ZULKIRATEOF
@@ -1161,7 +1248,7 @@ d_necromancy = {
 	}
 	dignity = 100
 	culture = thayan
-	religion = evil_human_pantheon
+	religion = kossuth
 	title = ZULKIR
 	title_female = ZULKIR
 	title_prefix = ZULKIRATEOF
@@ -1177,7 +1264,7 @@ d_transmutation = {
 	}
 	dignity = 100
 	culture = thayan
-	religion = evil_human_pantheon
+	religion = kossuth
 	title = ZULKIR
 	title_female = ZULKIR
 	title_prefix = ZULKIRATEOF
@@ -1228,14 +1315,6 @@ d_reth = { #Republic
 	}
 }
 
-d_shaarmid = {
-	color = { 10 82 40 }
-	color2 = { 255 160 160 }
-	capital = 530
-	culture = tashalan
-	religion = evil_human_pantheon
-}
-
 d_alaoreum = {
 	color = { 190 40 30 }
 	capital = 239 # Alaoreum
@@ -1249,217 +1328,20 @@ d_alaoreum = {
 
 k_many_arrows = {
 	color = { 230 75 75 }
+	dynasty_title_names = no
 	allow = {
-		culture = orc
-		religion = orc_pantheon
-		dynasty = 5118
+		always = no # created via event
 	}
 	capital = 1216 # c_dark_arrow
 }
 
 d_broken_arrow = {
 	color = { 230 75 75 }
+	dynasty_title_names = no
 	allow = {
-		culture = orc
-		religion = orc_pantheon
-		dynasty = 5118
+		always = no # must be existant at game start
 	}
 	capital = 106 # Felbarr
-}
-
-d_icemond = {
-	color = { 191 62 223 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 389 #Gaethluntar
-}
-
-d_thastone = {
-	color = { 100 75 46 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 388 #Sunrise
-}
-
-d_estam = {
-	color = { 122 149 126 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 390 #Wintersburn
-}
-
-d_beliny = {
-	color = { 119 42 163 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 387 #Frozen Forest
-}
-
-d_wolford = {
-	color = { 86 86 203 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 356 #Chillplains
-}
-
-d_white_hand = {
-	color = { 250 250 250 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 602 # North Winterwood
-}
-
-d_onusclan = {
-	color = { 250 25 25 }
-	tribe = yes
-	allow = {		culture = orc		religion = orc_pantheon	}
-	capital = 245 # Starfall Hills
-}
-d_kalassymyr = {
-	color = { 234 70 93 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 300 # Karscragg
-}
-d_oldens = {
-	color = { 42 186 90 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 1089 # End-of-Light
-}
-d_kosova = {
-	color = { 61 226 181 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 347 # Veshal
-}
-d_ealldun = {
-	color = { 82 174 133 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 348 # Hawksroost
-}
-
-d_greatmaw = {
-	color = { 171 35 101 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 202 # Long Arm
-}
-d_severed_hand = {
-	color = { 170 230 170 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 44 # Hundlestone
-}
-d_bloody_tusk = {
-	color = { 150 45 89 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 17 # Luskan
-}
-k_thousand_fangs = {
-	color = { 150 100 200 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 169 # The Crags
-}
-d_eyegouger = {
-	color = { 150 0 150 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 471 # Cony Gap
-}
-d_deephammer = {
-	color = { 30 30 50 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 300 # Eastwood
-}
-d_bloodsun = {
-	color = { 255 149 126 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 15 #Elturel
-}
-d_tarkh = {
-	color = { 250 250 25 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 1226 # Tarkhaldale
-}
-d_candlekairn = {
-	color = { 230 190 20 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 239 # Alaoreum
-}
-k_candlekairn = {
-	color = { 230 190 20 }
-	tribe = yes
-	allow = {
-		culture = orc		religion = orc_pantheon	}
-	capital = 239 # Alaoreum
-}
-d_bloodsea = {
-	color = { 100 30 50 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 216 # Korinn
-}
-d_coldgrave = {
-	color = { 180 180 200 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 46 # Ten Towns
 }
 k_everhorde = {
 	color = { 222 209 126 }
@@ -1470,63 +1352,13 @@ k_everhorde = {
 	}
 	capital = 44 # Hundelstone
 }
-d_northreaver = {
-	color = { 200 200 180 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 23 # Fireshear
-}
-d_iceaxe = {
-	color = { 100 100 230 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 41 # Khedrun Valley
-}
-d_spinecrusher = {
-	color = { 80 170 110 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 40 # Mirabar
-}
-d_broken_fang = {
-	color = { 20 100 200 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 472 # Lyntara
-}
-d_torn_banner = {
-	color = { 140 100 140 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 1439 # Starmetal Hills
-}
+
 k_howltusk = {
 	color = { 200 100 100 }
 	color2 = { 255 255 255 }
 	tribe = yes
 	allow = {
-		culture = orc
-		religion = orc_pantheon
+		always = no
 	}
 	capital = 156 # Yartar
 }
@@ -1535,39 +1367,16 @@ e_black_horde = {
 	color2 = { 255 255 255 }
 	tribe = yes
 	allow = {
-		culture = orc
-		religion = orc_pantheon
-		prestige = 500
+		always = no # created via event
 	}
-	capital = 582 # Nesmé
-}
-d_suneater = {
-	color = { 181 154 54 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 471 # Cony Gap
+	capital = 582 # Nesm?
 }
 k_hunting_horn = {
 	color = { 56 199 91 }
 	color2 = { 255 255 255 }
 	tribe = yes
 	allow = {
-		culture = orc
-		religion = orc_pantheon
-	}
-	capital = 156 # Yartar
-}
-d_red_fist = {
-	color = { 250 22 30 }
-	color2 = { 255 255 255 }
-	tribe = yes
-	allow = {
-		culture = orc
-		religion = orc_pantheon
+		always = no
 	}
 	capital = 156 # Yartar
 }
@@ -1644,17 +1453,7 @@ k_hlundadim = {
 	color = { 100 150 10 }
 	tribe = yes
 	allow = {
-		OR = {
-			AND = {
-				OR = {
-					culture = hobgoblin
-					culture = goblin
-					culture = bugbear
-				}
-				religion = goblin_pantheon
-			}
-			character = 61092
-		}
+		always = no # created via event
 	}
 	capital = 374 # Goblin Marches
 }
@@ -1699,7 +1498,7 @@ k_the_lions = {
  capital = 1131 # c_minta_vale
  allow = {
 		AND = {
-				culture = arnadar
+				culture = aslanlar
 				is_tribal = yes
 				OR = {
 					AND = {
@@ -1732,7 +1531,7 @@ d_alamin = {
  color2 = { 255 255 255 }
  capital = 1131 # c_minta_vale
  allow = {
-		culture = arnadar
+		culture = aslanlar
 		is_tribal = yes
 	}
 	tribe = yes
@@ -1742,7 +1541,7 @@ d_bradamin = {
  color2 = { 255 255 255 }
  capital = 568 # c_thornwash_vale
  allow = {
-		culture = arnadar
+		culture = aslanlar
 		is_tribal = yes
 	}
 	tribe = yes
@@ -1752,7 +1551,7 @@ d_talumin = {
  color2 = { 255 255 255 }
  capital = 1129 # c_nagaflow
  allow = {
-		culture = arnadar
+		culture = aslanlar
 		is_tribal = yes
 	}
 	tribe = yes
@@ -1762,7 +1561,7 @@ d_salamin = {
  color2 = { 255 255 255 }
  capital = 1132 # c_vale_of_the_reaver
  allow = {
-		culture = arnadar
+		culture = aslanlar
 		is_tribal = yes
 	}
 	tribe = yes
@@ -1774,8 +1573,12 @@ d_tenpaw = {
 	allow = {
 		culture = wemic
 		OR = {
-			religion = good_human_pantheon
-			religion = calishite_faith
+			religion_group = good_human_pantheon_group
+			religion = natural
+			religion = martial_faith
+			religion = primordial
+			religion = tuigan_shamanism
+			religion = uthgardt_faith
 		}
 	}
 	capital = 204 # Broadfields
@@ -1803,7 +1606,7 @@ d_plainstrider = {
 	tribe = yes
 	dynasty_title_names = yes
 	culture = wemic
-	religion = evil_human_pantheon
+	religion = deities_of_fury
 }
 
 d_longfang = {
@@ -1816,7 +1619,7 @@ d_longfang = {
 	tribe = yes
 	dynasty_title_names = yes
 	culture = wemic
-	religion = evil_human_pantheon
+	religion = deities_of_fury
 }
 
 #Vaasa
@@ -1825,7 +1628,14 @@ d_white_worm = {
 	tribe = yes
 	allow = {
 		culture = vaasan
-		religion = good_human_pantheon
+		OR = {
+			religion_group = good_human_pantheon_group
+			religion = natural
+			religion = martial_faith
+			religion = primordial
+			religion = tuigan_shamanism
+			religion = uthgardt_faith
+		}
 	}
 	capital = 360 # Beumar's Gap
 }
@@ -1847,7 +1657,7 @@ k_grey_ghosts = {
 d_ankheg_tribe = {
 	color = { 12 46 198 }
 	allow = {
-		culture = gnoll
+		culture = shaaran
 		NOT = {
 			has_landed_title = d_cheetah_tribe
 			has_landed_title = d_lion_tribe
@@ -1860,7 +1670,7 @@ d_ankheg_tribe = {
 	tribe = yes
 	short_name = yes
 	culture = shaaran
-	religion = evil_human_pantheon
+	religion = deities_of_fury
 }
 
 d_cheetah_tribe = {
@@ -1879,7 +1689,7 @@ d_cheetah_tribe = {
 	tribe = yes
 	short_name = yes
 	culture = shaaran
-	religion = evil_human_pantheon
+	religion = deities_of_fury
 }
 
 d_eagle_tribe = {
@@ -1898,13 +1708,13 @@ d_eagle_tribe = {
 	tribe = yes
 	short_name = yes
 	culture = shaaran
-	religion = evil_human_pantheon
+	religion = deities_of_fury
 }
 
 d_hyena_tribe = {
 	color = { 230 66 66 }
 	allow = {
-		culture = gnoll
+		culture = shaaran
 		NOT = {
 			has_landed_title = d_cheetah_tribe
 			has_landed_title = d_lion_tribe
@@ -1917,19 +1727,26 @@ d_hyena_tribe = {
 	tribe = yes
 	short_name = yes
 	culture = shaaran
-	religion = evil_human_pantheon
+	religion = deities_of_fury
 }
 
 d_lion_tribe = {
 	color = { 187 166 12 }
 	allow = {
-		always = no
+		culture = shaaran
+		NOT = {
+			has_landed_title = d_cheetah_tribe
+			has_landed_title = d_rhinoceros_tribe
+			has_landed_title = d_hyena_tribe
+			has_landed_title = d_eagle_tribe
+			has_landed_title = d_ankheg_tribe
+		}
 	}
 	# primary = yes
 	tribe = yes
 	short_name = yes
 	culture = shaaran
-	religion = evil_human_pantheon
+	religion = deities_of_fury
 }
 
 d_rhinoceros_tribe = {
@@ -1948,7 +1765,7 @@ d_rhinoceros_tribe = {
 	tribe = yes
 	short_name = yes
 	culture = shaaran
-	religion = evil_human_pantheon
+	religion = deities_of_fury
 }
 
 # Tengu and kenku
@@ -2002,7 +1819,14 @@ k_circle_of_leth = {
 	color = { 100 255 100 }
 	allow = {
 		culture = nar
-		religion = good_human_pantheon
+		OR = {
+			religion_group = good_human_pantheon_group
+			religion = natural
+			religion = martial_faith
+			religion = primordial
+			religion = tuigan_shamanism
+			religion = uthgardt_faith
+		}
 	}
 	# primary = yes
 	short_name = yes
@@ -2015,7 +1839,7 @@ k_blightlords = {
 	color = { 25 100 100 }
 	allow = {
 		culture = nar
-		religion = evil_human_pantheon
+		religion_group = evil_human_pantheon_group
 	}
 	# primary = yes
 	short_name = yes
@@ -2029,7 +1853,7 @@ k_blightlords = {
 d_vaegoul = {
 	color = { 250 70 250 }
 	allow = {
-		culture = ulutiun
+		culture = eraka
 		religion = ulutiuan
 	}
 	# primary = yes
@@ -2039,7 +1863,7 @@ d_vaegoul = {
 d_varm = {
 	color = { 67 138 123 }
 	allow = {
-		culture = ulutiun
+		culture = eraka
 		religion = ulutiuan
 	}
 	# primary = yes
@@ -2094,6 +1918,15 @@ e_tan_shou_lung = {
 	short_name = yes
 	capital = 978 # Skarou
 }
+k_solon = {
+	color = { 100 168 50 }
+	color2 = { 255 255 255 }
+	primary = yes
+	short_name = yes
+	title = RAJAH
+	title_female = RAJAH
+	capital = 1077 # Solon
+}
 #Fiend Hordes
 k_hordes_of_dragonspear = {
 	color = { 255 100 100 }
@@ -2108,7 +1941,7 @@ k_hordes_of_dragonspear = {
 	religion = infernal
 	culture = baatezu
 	allow = {
-		culture = baatezu
+		always = no
 	}
 }
 d_scoured_legion = {
@@ -2135,7 +1968,7 @@ d_shining_crusade = {
 	foa = GENERAL_FOA
 	dignity = 200 # Increased dignity so AI will favor this title over any others
 	landless = yes
-	religion = good_human_pantheon
+	religion = triadic
 }
 k_thultanthar = {
 	color = { 40 0 40 }
@@ -2144,14 +1977,17 @@ k_thultanthar = {
 	title = HIGH_PRINCE
 	title_female = HIGH_PRINCESS
 	allow = {
-		culture = shadovar
+		always = no
 	}
 }
 k_army_of_shadows = {
 	color = { 100 100 100 }
-	# primary = yes
+	primary = yes
 	short_name = yes
 	capital = 9 # Mere of Dead Men
+	landless = yes
+	religion = shadow_gods
+	culture = highcoaster
 	title = MASTER
 	allow = {
 		character = 15047 # King of Shadows
@@ -2197,7 +2033,7 @@ d_dusk_circle = {
 	short_name = yes
 	capital = 307 # Westwood
 	allow = {
-		religion = good_human_pantheon
+		religion = natural
 	}
 }
 d_shadow_druids = {
@@ -2260,33 +2096,64 @@ k_horthgars_horde = {
 	short_name = yes
 	capital = 19 # Longsaddle
 }
-#Cormyrian Silver Titular duchies
 
-d_truesilver ={
-	color={ 150 50 190 }
-	color2={ 255 155 255 }
-	capital = 252 #marsember
+k_a_brotherhood = {
+	color = { 75 0 130 }
+	color2 = { 255 255 255 }
+	capital = 17 # c_luskan
 	allow = {
-	dynasty = 509 #only creatable by the Truesilver family
+		society_member_of = arcane_brotherhood
 	}
+	dignity = 300 # Increased dignity so AI will favor this title over any others
+	# primary = yes
+	independent = yes
+	short_name = yes
+	title = Archmage
+	title_female = Archmage
 }
 
-d_crownsilver ={
-	color={ 50 190 150 }
-	color2={ 155 255 255 }
-	capital = 332 #thunderstone
+d_brotherhood_of_true_flame = {
+	color = { 214 0 0 }
+	color2 = { 255 255 255 }
+	capital = 1347 # c_krak_al_niraan
 	allow = {
-	dynasty = 504 #only creatable by the Crownsilver family
+		society_member_of = brotherhood_of_true_flame
 	}
-
+	dignity = 100 # Increased dignity so AI will favor this title over any others
+	# primary = yes
+	independent = yes
+	short_name = yes
+	title = Bonfire
+	title_female = Bonfire
 }
 
-d_huntsilver ={
-	color={ 190 150 50 }
-	color2={ 255 255 155 }
-	capital = 301 #kings forest
+d_shadow_thieves = {
+	color = { 20 20 20 }
+	color2 = { 255 255 255 }
+	capital = 1 # waterdeep
 	allow = {
-	dynasty = 506 #only creatable by the Huntsilver family
+		always = no
 	}
-
+	dignity = 100 # Increased dignity so AI will favor this title over any others
+	independent = yes
+	short_name = yes
+}
+d_nyanzaru = {
+	color = { 180 50 200 }
+	color2 = { 255 255 255 }
+	capital = 452 # Nyanzaru
+	allow = {
+		always = no
+	}
+	dignity = 100
+}
+d_order_of_the_gauntlet = {
+	color = { 110 80 200 }
+	color2 = { 255 255 255 }
+	capital = 453 # Mbala
+	short_name = yes
+	allow = {
+		always = no
+	}
+	dignity = 100
 }

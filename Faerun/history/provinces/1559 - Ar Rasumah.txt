@@ -1,0 +1,13 @@
+# County Title
+title = c_ar_rasumah
+
+# Settlements
+max_settlements = 3
+
+b_ar_rasumah = castle
+
+# Misc
+culture = hadhar
+religion = qisma
+
+#History

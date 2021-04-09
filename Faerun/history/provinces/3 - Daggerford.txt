@@ -6,9 +6,9 @@ title = c_daggerford
 # Settlements
 max_settlements = 5
 
-b_daggerford = castle
-b_delimbiyran = city
-b_fiveleagues = temple
+b_daggerford = tribal
+#b_delimbiyran = city
+#b_fiveleagues = temple
 #b_black_brook = castle
 #b_black_helm = city
 #b_blackwood = temple
@@ -28,7 +28,7 @@ terrain = farmlands
 	b_delimbiyran = city
 	b_fiveleagues = temple
 	culture = tethyrian
-	religion = good_human_pantheon
+	religion = solar
 }
 511.1.1 = {
 	culture = highcoaster

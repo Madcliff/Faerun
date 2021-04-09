@@ -1,20 +1,21 @@
 decisions = {
-	
+
 	shun_the_living = {
 		is_high_prio = yes
+		only_rulers = yes
 		ai_check_interval = 100
-		
+
 		potential = {
 			is_landed = yes
 			not_casting = yes
 			is_undead = yes
 			NOT = { has_character_modifier = undead_realm_lord }
 		}
-		
+
 		allow = {
 			NOT = { trait = kind }
 		}
-		
+
 		effect = {
 			set_character_flag = undead_court
 			add_character_modifier = {
@@ -29,7 +30,7 @@ decisions = {
 				set_defacto_liege = THIS
 				if = {
 					limit = {
-						higer_tier_than = COUNT
+						higher_tier_than = COUNT
 					}
 					any_vassal = {
 						if = {
@@ -66,7 +67,7 @@ decisions = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 0.1
 			modifier = {
@@ -91,7 +92,7 @@ decisions = {
 			}
 		}
 	}
-	
+
 }
 
 settlement_decisions = {
@@ -100,9 +101,12 @@ settlement_decisions = {
 		ai_check_interval = 10
 		filter = realm_owned
 		ai_target_filter = realm_owned
-		
+
 		from_potential = {
 			is_undead = yes
+			NOT = {
+				has_dlc = "Legacy of Rome"
+			}
 			NOR = {
 				has_character_modifier = wiz_necromancy
 				has_character_flag = knows_spell_animate_dead
@@ -159,7 +163,7 @@ settlement_decisions = {
 				}
 				if = {
 					limit = {
-						NOT = { 
+						NOT = {
 							has_province_modifier = undead_province
 						}
 					}

@@ -1,4 +1,4 @@
-arcane_brotherhood = {
+arcane_brotherhood = { #revamped by Olrox17
 	primary_attribute = intrigue
 	is_secret = yes
 	criminal = yes
@@ -7,15 +7,15 @@ arcane_brotherhood = {
 	opinion_to_pretenders = -40			#Pretenders is the opinion you have of people perceived/discovered to be in your society.
 	opinion_to_perceived_members = -40	#Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
 	opinion_per_rank_above = +10
-	sound = devil_worshippers_interface
-	society_ranks_gfx = generic_ranks
+	sound = hermetic_society_interface
+	society_ranks_gfx = monk_ranks
 	society_influence = no
-	
+
 	active = {
-		has_dlc = "Mystics"
+		#has_dlc = "Mystics"
 	}
 	indestructible = yes
-	
+
 	can_join_society = {
 		hidden_trigger = {
 			NAND = {
@@ -27,10 +27,58 @@ arcane_brotherhood = {
 			}
 		}
 		age = 16
-		religion_group = evil_human_pantheon_group
+		OR = {
+			religion_group = evil_human_pantheon_group
+			religion_group = atheist_group
+			religion = deities_of_fury
+			religion = kossuth
+			religion = laduguer
+			religion = urdlen
+			religion = tiamat
+			trait = patron_tiamat
+			AND = {
+				religion = arcane
+				trait = cruel
+			}
+			AND = {
+				trait = cynical
+				trait = cruel
+			}
+			has_landed_title = k_a_brotherhood
+			any_liege = {
+				has_landed_title = k_a_brotherhood
+			}
+		}
+		olrox_artifact_purearcane_requirement = yes
+		OR = {
+			has_landed_title = k_a_brotherhood
+			any_liege = {
+				has_landed_title = k_a_brotherhood
+			}
+			capital_scope = {
+				OR = {
+					region = northwest_faerun_region
+					region = trackless_sea_region
+					region = anauroch_region
+					region = western_heartlands_region
+					region = cormyr_region
+					region = sembia_region
+					region = amn_region
+				}
+			}
+			AND = {
+				ai = no
+				capital_scope = {
+					NOR = {
+						region = kara_tur_region
+						region = zakhara_region
+					}
+				}
+			}
+		}
 		hidden_trigger = {
-			NOT = { 
-				has_character_flag = society_join_block 
+			NOT = {
+				has_character_flag = society_join_block
 				culture = monster
 				}
 		}
@@ -40,79 +88,323 @@ arcane_brotherhood = {
 		}
 	}
 
-	show_society = {
-		age = 16
-		OR = {
-			religion_group = evil_human_pantheon_group
-			society_member_of = arcane_brotherhood
-		}
-	}
-
 	potential = { } #no rules
 
 	society_rank = {
 		level = 1
-		limit = 100 
+		limit = 40
+		startup_limit = 20
+		modifier = {
+			plot_power_modifier = 0.05
+			levy_reinforce_rate = 0.025
+		}
+		decisions = {
+			long_live_the_brotherhood
+		}
+	}
+
+	society_rank = {
+		level = 2
+		limit = 20
 		startup_limit = 10
 		modifier = {
 			intrigue = 1
+			plot_power_modifier = 0.1
+			levy_reinforce_rate = 0.05
+		}
+		decisions = {
+			brew_mood_drug
 		}
 	}
-	
-	society_rank = {
-		level = 2
-		limit = 50
-		startup_limit = 6
-		modifier = {
-			intrigue = 2
-		}
-	}
-	
+
 	society_rank = {
 		level = 3
-		limit = 25 
-		startup_limit = 3
+		limit = 10
+		startup_limit = 5
 		modifier = {
-			intrigue = 3
+			intrigue = 1
+			learning = 1
+			plot_power_modifier = 0.2
+			levy_reinforce_rate = 0.1
+		}
+		decisions = {
+			arcane_experiment
 		}
 	}
 
 	society_rank = {
 		level = 4
-		limit = 1 
-		startup_limit = 1
-		modifier = { 
-			intrigue = 4
+		limit = 5
+		startup_limit = 3
+		modifier = {
+			intrigue = 2
+			learning = 1
+			plot_power_modifier = 0.3
+			levy_reinforce_rate = 0.15
+			global_levy_size = 0.1
+		}
+		decisions = {
+			overthrow_archmage
+			great_ritual
 		}
 	}
 
 	plots = {
-		plot1_tag
-		plot2_tag
 	}
-	
+
 	ambitions = {
-		ambition1_tag
-		ambition2_tag
 	}
 
 	monthly_currency_gain = {
 		name = currency_name_arcane_brotherhood
-	
+
 		per_attribute = {
 			name = intrigue
-			value = 0.5
+			value = 0.25
+		}
+		per_attribute = {
+			name = learning
+			value = 0.25
+		}
+		has_trait = {
+			value = 3
+			trait = ambitious
+		}
+		has_trait = {
+			value = 1
+			trait = scholar
+		}
+		has_trait = {
+			value = 1
+			trait = schemer
+		}
+		has_trait = {
+			value = 1
+			trait = impaler
+		}
+		has_trait = {
+			value = 1
+			trait = mystic
+		}
+		has_trait = {
+			value = 1
+			trait = erudite
+		}
+		has_trait = {
+			value = 1
+			trait = cynical
+		}
+		has_trait = {
+			value = 2
+			trait = diligent
+		}
+		has_trait = {
+			value = 2
+			trait = deceitful
+		}
+		has_trait = {
+			value = 2
+			trait = cruel
+		}
+		has_trait = {
+			value = 1
+			trait = proud
+		}
+		has_trait = {
+			value = 2
+			trait = genius
+		}
+		has_trait = {
+			value = 2
+			trait = brilliant
+		}
+		has_trait = {
+			value = 1
+			trait = quick
+		}
+		has_trait = {
+			value = 1
+			trait = shrewd
+		}
+		has_trait = {
+			value = 1
+			trait = envious
+		}
+		has_trait = {
+			value = 1
+			trait = expert_wizard
+		}
+		has_trait = {
+			value = 1.5
+			trait = master_wizard
+		}
+		has_trait = {
+			value = 3
+			trait = renowned_wizard
+		}
+		has_trait = {
+			value = 4.5
+			trait = legendary_wizard
+		}
+		has_trait = {
+			value = 1
+			trait = master_warlock
+		}
+		has_trait = {
+			value = 2
+			trait = renowned_warlock
+		}
+		has_trait = {
+			value = 3
+			trait = legendary_warlock
+		}
+		has_trait = {
+			value = 1
+			trait = master_sorcerer
+		}
+		has_trait = {
+			value = 2
+			trait = renowned_sorcerer
+		}
+		has_trait = {
+			value = 3
+			trait = legendary_sorcerer
+		}
+		society_rank = {
+			rank = 4
+			value = 5
 		}
 	}
 
-	member_score_per_attribute = 3
+	member_score_per_attribute = 2
 	member_score_per_rank = 100
-	
+
+	member_score = {
+		value = 10
+
+		modifier = {
+			factor = 1.3
+			trait = ambitious
+		}
+		modifier = {
+			factor = 1.1
+			trait = scholar
+		}
+		modifier = {
+			factor = 1.1
+			trait = mystic
+		}
+		modifier = {
+			factor = 1.1
+			trait = erudite
+		}
+		modifier = {
+			factor = 1.1
+			trait = cynical
+		}
+		modifier = {
+			factor = 1.2
+			trait = diligent
+		}
+		modifier = {
+			factor = 1.2
+			trait = deceitful
+		}
+		modifier = {
+			factor = 1.2
+			trait = cruel
+		}
+		modifier = {
+			factor = 1.1
+			trait = proud
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				trait = genius
+				trait = brilliant
+				trait = quick
+				trait = shrewd
+			}
+		}
+		modifier = {
+			factor = 1.1
+			trait = envious
+		}
+		modifier = {
+			trait = renowned_sorcerer
+			factor = 1.1
+		}
+		modifier = {
+			trait = legendary_sorcerer
+			factor = 1.2
+		}
+		modifier = {
+			trait = renowned_warlock
+			factor = 1.1
+		}
+		modifier = {
+			trait = legendary_warlock
+			factor = 1.2
+		}
+		modifier = {
+			trait = master_wizard
+			factor = 1.1
+		}
+		modifier = {
+			trait = renowned_wizard
+			factor = 1.2
+		}
+		modifier = {
+			trait = legendary_wizard
+			factor = 1.3
+		}
+	}
+
 	startup_populate = {
 		trigger = {
 			ai = yes
 			controls_religion = no
-			religion_group = evil_human_pantheon_group
+			is_benevolent_trigger = no
+			OR = {
+				culture = illuskan
+				has_landed_title = k_a_brotherhood
+				any_liege = {
+					has_landed_title = k_a_brotherhood
+				}
+			}
+			OR = {
+				religion_group = evil_human_pantheon_group
+				religion_group = atheist_group
+				religion = deities_of_fury
+				religion = kossuth
+				religion = laduguer
+				religion = urdlen
+				AND = {
+					religion = arcane
+					trait = cruel
+				}
+				AND = {
+					trait = cynical
+					trait = cruel
+				}
+				has_landed_title = k_a_brotherhood
+				any_liege = {
+					has_landed_title = k_a_brotherhood
+				}
+			}
+			olrox_artifact_purearcane_requirement = yes
+			capital_scope = {
+				OR = {
+					region = northwest_faerun_region
+					region = trackless_sea_region
+					region = anauroch_region
+					region = western_heartlands_region
+					region = cormyr_region
+					region = sembia_region
+					region = amn_region
+				}
+			}
 			age = 16
 			is_in_society = no
 			NOT = { higher_tier_than = DUKE }
@@ -120,6 +412,8 @@ arcane_brotherhood = {
 			NOR = {
 				mercenary = yes
 				holy_order = yes
+				has_landed_title = k_zhentarim
+				has_landed_title = d_victorious_blade
 			}
 		}
 	}

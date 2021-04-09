@@ -742,11 +742,14 @@ z_fighter_classes = {
 	}
 }
 
-z_rogue_classes = { 
-	OR = {
-		z_bard = yes
-		z_rogue = yes
-		z_shadow = yes
+z_rogue_classes = {
+	custom_tooltip = {
+		text = rogue_classes_tooltip
+		OR = {
+			z_bard = yes
+			z_rogue = yes
+			z_shadow = yes
+		}
 	}
 }
 
@@ -810,6 +813,19 @@ is_zulkirate = {
 		title = d_illusion
 		title = d_necromancy
 		title = d_transmutation
+	}
+}
+
+is_zulkir = {
+	OR = {
+		has_title = d_abjuration
+		has_title = d_conjuration
+		has_title = d_divination
+		has_title = d_enchantment
+		has_title = d_evocation
+		has_title = d_illusion
+		has_title = d_necromancy
+		has_title = d_transmutation
 	}
 }
 

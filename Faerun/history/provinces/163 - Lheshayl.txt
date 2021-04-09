@@ -16,7 +16,7 @@ b_lothia = city
 
 # Misc
 culture = chondathan
-religion = calishite_faith
+religion = martial_faith
 terrain = plains
 #History
 293.1.1 = {
@@ -26,8 +26,8 @@ terrain = plains
 	remove_settlement = b_lothia
 }
 310.1.1 = {
-	culture = heartlander
-	religion = calishite_faith
+	culture = draeven
+	religion = martial_faith
 	b_lheshayl = castle
 	b_lothia = city
 }

@@ -3,26 +3,32 @@
 ##Lapal characters
 
 58201 = {
-	name = Shaliim 
+	name = Shaliim
 	dynasty = 8101 # Sheirtalari
-	father = 58202 
+	father = 58202
 	culture = tashalan
-	religion = calishite_faith
+	religion = lapal
 	trait = creature_human
 	trait = skilled_tactician
 	trait = trained_fighter
 	trait = expert_sorcerer
+	trait = origin_storm
 	1335.1.1 = { birth = yes } #educated guess
+	1345.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1357.1.1 = {
 		give_nickname = nick_wyrmslayer
 	}
 	1420.1.1 = { death = yes }
 }
 58202 = {
-	name = Mahliish # Invented name 
-	dynasty = 8101 # Sheirtalari 
+	name = Mahliish # Invented name
+	dynasty = 8101 # Sheirtalari
 	culture = tashalan
-	religion = calishite_faith
+	religion = lapal
 	trait = creature_human
 	trait = intricate_webweaver
 	trait = master_shadow
@@ -30,7 +36,7 @@
 	1371.5.3 = { death = yes }
 }
 58203 = {
-	name = Helbareim 
+	name = Helbareim
 	dynasty = 8102 # Alanakser
 	father = 58206
 	culture = tashalan
@@ -46,9 +52,9 @@
 	name = Alabhansree
 	female = yes
 	father = 58203
-	dynasty = 8102 # Alanakser 
+	dynasty = 8102 # Alanakser
 	culture = tashalan
-	religion = calishite_faith
+	religion = lapal
 	trait = creature_human
 	trait = elusive_shadow
 	trait = master_rogue
@@ -74,13 +80,13 @@
 }
 58206 = {
 	name = Valinon # invented name
-	dynasty = 8102 # Alanakser 
+	dynasty = 8102 # Alanakser
 	father = 58207
 	culture = tashalan
 	religion = draconic_pantheon
 	trait = creature_human
 	1262.1.1 = { birth = yes } #educated guess
-	1306.1.1 = { 
+	1306.1.1 = {
 		death = {
 			death_reason = death_murder
 			killer = 58211
@@ -99,7 +105,7 @@
 }
 58208 = {
 	name = Valinon # invented name
-	dynasty = 8102 # Alanakser 
+	dynasty = 8102 # Alanakser
 	culture = tashalan
 	religion = draconic_pantheon
 	trait = creature_human
@@ -118,13 +124,13 @@
 }
 58210 = {
 	name = Askulder
-	dynasty = 8102 # Alanakser 
+	dynasty = 8102 # Alanakser
 	father = 58208
 	culture = tashalan
 	religion = draconic_pantheon
 	trait = creature_human
 	1239.1.1 = { birth = yes } #educated guess
-	1306.1.1 = { 
+	1306.1.1 = {
 		death = {
 			death_reason = death_murder
 			killer = 58211
@@ -136,10 +142,10 @@
 	dynasty = 8102 # Alanakser
 	father = 58210
 	culture = tashalan
-	religion = calishite_faith
+	religion = lapal
 	trait = creature_human
 	1262.1.1 = { birth = yes } #educated guess
-	1308.1.1 = { 
+	1308.1.1 = {
 		death = {
 			death_reason = death_murder
 			killer = 58203
@@ -150,7 +156,7 @@
 	name = Dumai
 	dynasty = 8112
 	culture = tashalan
-	religion = evil_human_pantheon
+	religion = lapal
 	trait = creature_human
 	trait = fortune_builder
 	1305.1.1 = { birth = yes }
@@ -160,7 +166,7 @@
 	name = Indo
 	dynasty = 8113
 	culture = tashalan
-	religion = evil_human_pantheon
+	religion = lapal
 	trait = creature_human
 	1317.1.1 = { birth = yes }
 	1400.1.1 = { death = yes }
@@ -169,7 +175,7 @@
 	name = Gharbei
 	dynasty = 8114
 	culture = tashalan
-	religion = evil_human_pantheon
+	religion = lapal
 	trait = creature_human
 	1309.12.1 = { birth = yes }
 	1400.1.1 = { death = yes }
@@ -178,7 +184,7 @@
 	name = Ngongwe
 	dynasty = 8115
 	culture = tashalan
-	religion = evil_human_pantheon
+	religion = lapal
 	trait = creature_human
 	1314.1.1 = { birth = yes }
 	1400.1.1 = { death = yes }
@@ -186,17 +192,20 @@
 58216 = {
 	name = Masambe
 	dynasty = 8116
-	culture = tashalan
-	religion = evil_human_pantheon
+	culture = orc
+	religion = lapal
 	trait = creature_half_orc
-	1322.1.1 = { birth = yes }
+	1322.1.1 = {
+		birth = yes
+		culture = tashalan
+	}
 	1400.1.1 = { death = yes }
 }
 58217 = {
 	name = Masane
 	dynasty = 8117
 	culture = tashalan
-	religion = evil_human_pantheon
+	religion = lapal
 	1322.1.1 = { birth = yes }
 	1400.1.1 = { death = yes }
 }
@@ -204,7 +213,7 @@
 	name = Darhost
 	dynasty = 8118
 	culture = tashalan
-	religion = calishite_faith
+	religion = lapal
 	trait = creature_human
 	trait = journeyman_fighter
 	1333.1.1 = { birth = yes }
@@ -215,17 +224,17 @@
 	name = Kadar
 	dynasty = 8119
 	culture = calishite
-	religion = calishite_faith
+	religion = lapal
 	trait = creature_human
-	trait = journeyman_cleric 
+	trait = journeyman_cleric
 	1316.1.1 = { birth = yes }
 	1400.1.1 = { death = yes }
 }
-58220 = { 
-	name = Tormar 
+58220 = {
+	name = Tormar
 	dynasty = 8120
 	culture = tashalan
-	religion = calishite_faith
+	religion = lapal
 	trait = creature_human
 	trait = trained_ranger
 	1326.1.1 = { birth = yes }
@@ -235,71 +244,267 @@
 	name = Daster
 	dynasty = 8121
 	culture = tashalan
-	religion = calishite_faith
-	trait = creature_human 
+	religion = lapal
+	trait = creature_human
 	trait = warlock
 	1110.1.1 = { birth = yes }
 	1207.1.1 = { death = yes }
 }
-58222 = { 
+58222 = {
 	name = Tsion # invented
 	father = 58221
 	dynasty = 8121
 	culture = tashalan
-	religion = calishite_faith
-	trait = creature_human 
+	religion = lapal
+	trait = creature_human
 	trait = warlock
 	1187.1.1 = { birth = yes }
 	1241.1.1 = { death = yes }
 }
-58223 = { 
-	name = Debaleko # invented 
+58223 = {
+	name = Debaleko # invented
 	father = 58222
 	dynasty = 8121
 	culture = tashalan
-	religion = calishite_faith
-	trait = creature_human 
+	religion = lapal
+	trait = creature_human
 	trait = warlock
 	1226.1.1 = { birth = yes }
 	1314.1.1 = { death = yes }
 }
 58224 = {
-	name = Okot # invented 
+	name = Okot # invented
 	female = yes
 	father = 58222
 	dynasty = 8121
 	culture = tashalan
-	religion = calishite_faith
-	trait = creature_human 
+	religion = lapal
+	trait = creature_human
 	trait = sorcerer
+	trait = origin_divine_soul
 	1232.1.1 = { birth = yes }
+	1242.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1320.12.31 = {
 		give_nickname = nick_the_seven_years_lady
 	}
 	1321.1.1 = { death = yes }
 }
 58225 = {
-	name = Jember # invented 
+	name = Jember # invented
 	mother = 58224
 	dynasty = 8121
 	culture = tashalan
-	religion = calishite_faith
-	trait = creature_human 
+	religion = lapal
+	trait = creature_human
 	trait = warlock
 	1296.1.1 = { birth = yes }
 	1368.1.1 = { death = yes }
 }
-58226 = { 
-	name = Ilnara 
+58226 = {
+	name = Ilnara
 	female = yes
 	father = 58225
 	dynasty = 8121
 	culture = tashalan
-	religion = calishite_faith
-	trait = creature_human 
+	religion = lapal
+	trait = creature_human
 	trait = journeyman_sorcerer
+	trait = origin_draconic
 	1348.1.1 = { birth = yes }
+	1358.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1420.1.1 = { death = yes }
 }
-
-
+58227 = {
+	name = "Dren"
+	dynasty = 8116
+	culture = orc
+	religion = lapal
+	trait = creature_half_orc
+	father = 58216
+	1380.1.1 = {
+		birth = yes
+		culture = tashalan
+	}
+	1480.1.1 = {
+		death = yes
+	}
+}
+58228 = {
+	name = "Jenassa"
+	dynasty = 8116
+	culture = orc
+	religion = lapal
+	trait = creature_half_orc
+	father = 58227
+	1460.1.1 = {
+		birth = yes
+		culture = tashalan
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+58229 = {
+	name = "Hissho"
+	dynasty = 628 # Grav
+	culture = sahuagin
+	religion = infernal
+	trait = creature_sahuagin
+	1360.1.1 = {
+		birth = yes
+	}
+	1460.1.1 = {
+		death = yes
+	}
+}
+58230 = {
+	name = "Krisho"
+	dynasty = 628 # Grav
+	culture = sahuagin
+	religion = infernal
+	trait = creature_sahuagin
+	father = 58229
+	1440.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+58231 = {
+	name = "Belwos"
+	dynasty = 8114 # Sathanhe
+	culture = tashalan
+	religion = lapal
+	trait = creature_human
+	father = 58214
+	1375.1.1 = { birth = yes }
+	1470.1.1 = { death = yes }
+}
+58232 = {
+	name = "Nathiri"
+	female = yes
+	dynasty = 8114 # Sathanhe
+	culture = tashalan
+	religion = lapal
+	trait = creature_human
+	father = 58231
+	1450.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+58233 = {
+	name = "Ieman"
+	female = yes
+	dynasty = 8115
+	culture = tashalan
+	religion = lapal
+	trait = creature_human
+	father = 58215
+	1380.1.1 = { birth = yes }
+	1480.1.1 = { death = yes }
+}
+58234 = {
+	name = "Ashar"
+	dynasty = 8115
+	culture = tashalan
+	religion = lapal
+	trait = creature_human
+	mother = 58233
+	1460.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+58235 = {
+	name = "Dumac"
+	dynasty = 8112
+	culture = tashalan
+	religion = lapal
+	trait = creature_human
+	father = 58212
+	1370.1.1 = { birth = yes }
+	1470.1.1 = { death = yes }
+}
+58236 = {
+	name = "Sanej"
+	dynasty = 8112
+	culture = tashalan
+	religion = lapal
+	trait = creature_human
+	father = 58213
+	1445.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+58237 = {
+	name = "Ajira"
+	female = yes
+	dynasty = 8113
+	culture = tashalan
+	religion = lapal
+	trait = creature_human
+	father = 58213
+	1380.1.1 = { birth = yes }
+	1480.1.1 = { death = yes }
+}
+58238 = {
+	name = "Ranis"
+	female = yes
+	dynasty = 8113
+	culture = tashalan
+	religion = lapal
+	trait = creature_human
+	mother = 58237
+	1460.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+58239 = {
+	name = "Karok"
+	dynasty = 629 # Direfin
+	culture = sahuagin
+	religion = infernal
+	trait = creature_sahuagin
+	1350.1.1 = {
+		birth = yes
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}
+58240 = {
+	name = "Nolgrim"
+	dynasty = 630 # Cragkin
+	culture = stone_giant
+	religion = giant_pantheon
+	trait = creature_giant
+	1250.1.1 = {
+		birth = yes
+	}
+	1280.1.1 = {
+		immortal_age = 30
+	}
+	1500.1.1 = {
+		death = yes
+	}
+}

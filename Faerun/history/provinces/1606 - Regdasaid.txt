@@ -1,0 +1,13 @@
+# County Title
+title = c_regdasaid
+
+# Settlements
+max_settlements = 2
+
+b_regdasaid = tribal
+
+# Misc
+culture = jaziran
+religion = jaziri
+
+#History

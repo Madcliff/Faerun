@@ -1,8 +1,14 @@
 # k_samarach
-500.1.1={
-	law = agnatic_succession
-	law = succ_gavelkind
+1350.1.1 = {
+	law = true_cognatic_succession
+	law = succ_primogeniture
+	liege = k_samarach
+	holder = 52964 # Velus Sulvim
 }
-800.1.1={
-	liege=k_samarach
+1390.1.1 = {
+	liege = 0
+	holder = 52965 # Tris Sa'Ilsha
+}
+1470.1.1 = {
+	holder = 52966 # Rissa Sa'Ilsha
 }

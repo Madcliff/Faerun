@@ -37,16 +37,28 @@ silver_marches_region = {
 		d_silverymoon d_the_evermoors d_adbar d_sundabar
 	}
 }
-western_heartlands_region = {
-	duchies = {
-		d_marching_lands d_evereska d_greyvale d_backlands d_high_moor d_najara d_sunset_vale d_green_fields d_giants_plain d_elturgard d_sheeland d_tunlands d_ammarindar d_reaching_wood d_boareskyr
-	}
-}
+#western heartlands region
 evereska_region = {
 	duchies = {
-		d_evereska
+		d_evereska d_marching_lands
 	}
 }
+northern_heartlands_region = {
+	duchies = {
+		d_najara d_naurogloth d_backlands d_high_moor d_greyvale d_ammarindar
+	}
+}
+southern_heartlands_region = {
+	duchies = {
+		d_sunset_vale d_green_fields d_reaching_wood d_sheeland d_elturgard d_boareskyr d_tunlands
+	}
+}
+western_heartlands_region = {
+	duchies = {
+		d_marching_lands d_evereska d_greyvale d_backlands d_naurogloth d_high_moor d_najara d_sunset_vale d_green_fields d_elturgard d_sheeland d_tunlands d_ammarindar d_reaching_wood d_boareskyr
+	}
+}
+
 northwest_faerun_region = {
 	regions = {
 		evereska_region silver_marches_region icewind_dale_region
@@ -60,6 +72,11 @@ amn_region = {
 		d_esmel d_swordbelt d_eshpurta d_shilmista d_zehoarastria d_meiritin d_cloud_peaks d_tethir_march
 	}
 }
+troll_mountains_region = {
+	duchies = {
+		d_upper_chionthar d_karlyns_vale d_giants_plain
+	}
+}
 tethyr_region = {
 	duchies = {
 		d_cape_velen d_kamlann d_purple_marches d_crown_lands d_ankaram d_suretmarch d_golden_marches d_forest_of_mir
@@ -67,7 +84,7 @@ tethyr_region = {
 }
 erlkazar_region = {
 	duchies = {
-		d_elestam
+		d_elestam d_lower_tathtar
 	}
 }
 calimshan_region = {
@@ -82,7 +99,7 @@ wealdath_region = {
 }
 lands_of_intrigue_region = {
 	regions = {
-		amn_region tethyr_region erlkazar_region calimshan_region wealdath_region
+		amn_region tethyr_region erlkazar_region calimshan_region wealdath_region troll_mountains_region
 	}
 	duchies = {
 		d_nelanther_isles d_shining_isles d_asavirs_channel
@@ -236,7 +253,7 @@ pelvuria_region = {
 }
 anauroch_region = {
 	duchies = {
-		d_the_black_road d_the_sword d_scimitar_spires d_frozen_sea d_plain_of_standing_stone d_spiteful_sands d_anauria d_goblin_marches d_high_ice
+		d_the_black_road d_eastern_sword d_shinantra d_frozen_sea d_eastern_turlaghh d_western_turlaghh d_anauria d_goblin_marches d_high_ice
 	}
 }
 cold_lands_region = {
@@ -334,7 +351,7 @@ kara_tur_region = {
 ##South Faerun
 lake_of_steam_region = {
 	duchies = {
-		d_mukshar d_scelptarvale d_adaerglast d_shandolphyns_reach d_arnaden d_the_thorns d_mistymarch d_alamir d_eastings
+		d_mukshar d_scelptarvale d_adaerglast d_shandolphyns_reach d_arnaden d_treshla d_the_thorns d_mistymarch d_alamir d_eastings
 	}
 }
 great_rift_region = {
@@ -349,7 +366,7 @@ western_shaar_region = {
 }
 eastern_shaar_region = {
 	duchies = {
-		d_burning_plains d_dustlands d_kinfields d_northshaar d_omgrush d_shaarstep
+		d_burning_plains d_dustlands d_kinfields d_northshaar d_omgrush d_shaarstep d_delzimmer
 	}
 }
 the_shaar_region = {
@@ -359,7 +376,7 @@ the_shaar_region = {
 }
 halruaa_region = {
 	duchies = {
-		d_halruaa d_maeru d_northmarch d_southcharts d_taertal d_strikes d_the_nath
+		d_halruaa d_maeru d_northmarch d_southcharts d_taertal d_strikes d_the_nath d_halar
 	}
 }
 lapaliiya_region = {
@@ -369,7 +386,7 @@ lapaliiya_region = {
 }
 mhair_region = {
 	duchies = {
-		d_mhair_reach d_blackwilds d_lapalsea d_yuuati
+		d_mhair_reach d_blackwilds d_lapalsea d_yuuati d_westwall
 	}
 }
 south_faerun_region = {
@@ -383,7 +400,7 @@ south_faerun_region = {
 #chultan peninsula region
 chult_region = {
 	duchies = {
-		d_chult d_luo d_mezro d_mistvales d_tabaxiland d_the_chultengar d_the_deepgreen
+		d_chult d_luo d_mezro d_mistvales d_tabaxiland d_the_chultengar d_kobold_mountains d_omu d_wild_coast
 	}
 }
 samarach_region = {
@@ -419,7 +436,7 @@ luiren_region = {
 }
 the_shining_lands_region = {
 	duchies = {
-		d_estagund d_bay_of_kings d_grandlesh d_old_durpar d_panka d_veldorn d_the_upland d_the_golden_water d_the_golden_lands d_var d_copper_cities d_xontish d_horseheights d_galuil 
+		d_estagund d_bay_of_kings d_grandlesh d_old_durpar d_dustwall d_panka d_veldorn d_the_upland d_the_golden_water d_the_golden_lands d_var d_copper_cities d_xontish d_horseheights d_galuil
 	}
 }
 
@@ -437,27 +454,92 @@ utter_east_region = {
 		d_doegan d_edenvale d_highreach d_konigheim d_parsanic d_venasca
 	}
 }
+#Zakhara
 #northern zakhara
-cities_of_the_north_region = {
-	duchies = {
-		d_al_zalim d_weeping_desert d_jibal_al_hutut d_the_gateway d_qadib d_umara d_qudra
+	cities_of_the_north_region = {
+		duchies = {
+			d_qudra d_al_zalim d_bahr_al_dahlil d_mina d_the_gateway d_qadib d_umara
+		}
 	}
-}
-corsair_domains_region = {
-	duchies = {
-		d_island_of_firethorns d_island_of_gardens d_out_domains d_west_isles d_nemoree
+	the_anvil_region = {
+		duchies = {
+			d_medina_akota d_wailing_coast d_eastern_high_desert d_western_high_desert
+		}
 	}
-}
-yikarian_empire_region = {
-	duchies = {
-		d_lower_yikaria d_upper_yikaria d_suns_eye d_sunrise_wall d_sempadan d_segara d_barbarian_marches
+	haunted_lands_region = {
+		duchies = {
+			d_weeping_desert d_great_anvil d_burning_lands d_jibal_al_hutut
+		}
 	}
-}
-northern_zakhara_region = {
+	corsair_domains_region = {
+		duchies = {
+			d_island_of_firethorns d_island_of_gardens d_nemoree d_out_domains d_deserts_virtues
+		}
+	}
+	yikarian_empire_region = {
+		duchies = {
+			d_lower_yikaria d_upper_yikaria d_suns_eye d_sunrise_wall d_sempadan d_segara d_barbarian_marches
+		}
+	}
+	northern_zakhara_region = {
+		regions = {
+			cities_of_the_north_region the_anvil_region corsair_domains_region haunted_lands_region yikarian_empire_region
+		}
+	}
+
+#southern_zakhara
+	the_heart_region = {
+		duchies = {
+			d_huzuz d_halwa d_wasat d_hiyal
+		}
+	}
+	the_league_region = {
+		duchies = {
+			d_itiraf d_golden_gulf d_mahabba d_hilm
+		}
+	}
+	the_pearls_region = {
+		duchies = {
+			d_gana d_tajar d_sikak d_jumlat d_ajayib d_the_bleeding_trees d_coffee_coast d_badu_al_kabir
+		}
+	}
+	cities_ancients_region = {
+		duchies = {
+			d_rogosto d_upper_nogaro d_kadan d_kadarasto d_dihliz d_grey_jungle
+		}
+	}
+	salt_jungle_region = {
+		duchies = {
+			d_lost_coast d_zilla d_iltifat d_upper_iltifat
+		}
+	}
+	the_old_kingdoms_region = {
+		duchies = {
+			d_medina d_al_asirr d_sahu
+		}
+	}
+	akotan_sea_region = {
+		duchies = {
+			d_akota
+		}
+	}
+	crowded_sea_region = {
+		regions = {
+			the_old_kingdoms_region akotan_sea_region
+		}
+	}
+	southern_zakhara_region = {
+		regions = {
+			the_heart_region the_league_region the_pearls_region cities_ancients_region salt_jungle_region crowded_sea_region
+		}
+	}
+
+zakhara_region = {
 	regions = {
-		cities_of_the_north_region yikarian_empire_region corsair_domains_region
+		northern_zakhara_region southern_zakhara_region
 	}
 }
+
 #islands
 #trackless sea
 moonshae_region = {
@@ -531,18 +613,18 @@ custom_eastern_access = {
 		shou_lung_region
 	}
 }
-custom_zakhara_invasion_target_region = {
-	regions = {
-		northern_zakhara_region
-	}
-}
+#custom_zakhara_invasion_target_region = {
+	#regions = {
+		#zakhara_region
+	#}
+#}
 custom_southern_edge_of_map = {
 	regions = {
-		northern_zakhara_region
+		zakhara_region
 	}
 }
 custom_southern_access = {
 	regions = {
-		northern_zakhara_region
+		zakhara_region
 	}
 }

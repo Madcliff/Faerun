@@ -1,0 +1,15 @@
+# c_jabal_sarahin
+
+# County Title
+title = c_jabal_sarahin
+
+# Settlements
+max_settlements = 3
+
+b_jabal_sarahin = castle
+
+# Misc
+culture = hadhar
+religion = qisma
+
+#History

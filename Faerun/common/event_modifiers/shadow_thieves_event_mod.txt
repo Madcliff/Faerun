@@ -1,0 +1,48 @@
+street_smarts = {
+  intrigue = 2
+	icon = 5
+}
+
+sadistic_torturer = {
+	icon = 119
+	martial = 1
+	intrigue = 1
+}
+
+high_society = {
+	icon = 7
+	diplomacy = 1
+	intrigue = 1
+}
+
+brothel_patron = {
+	icon = 5
+	intrigue = 2
+}
+
+shadow_sabotage_cooldown = { icon = 1 }
+
+shadow_thieves_guild = {
+	icon = 18
+	is_visible = {
+		society_member_of = shadow_thieves
+	}
+}
+
+night_masks_guild = {
+	icon = 18
+	is_visible = {
+		society_member_of = night_masks
+	}
+}
+
+beat_masked_lords = {
+  good_human_pantheon_group_opinion = -5
+  elven_pantheon_group_opinion = -5
+  dwarven_pantheon_opinion = -5
+  gnome_pantheon_opinion = -5
+  evil_human_pantheon_group_opinion = 5
+  drow_pantheon_opinion = 5
+  aberration_group_opinion = 5
+  icon = 82
+}

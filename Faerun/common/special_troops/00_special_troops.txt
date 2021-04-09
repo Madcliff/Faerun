@@ -20,7 +20,7 @@ war_elephants = {
 	phase_skirmish_defense = 5
 	phase_melee_defense = 15
 	phase_pursue_defense = 2
-	base_type = heavy_cavalry
+	base_type = knights
 }
 
 camel_cavalry = {
@@ -36,20 +36,20 @@ camel_cavalry = {
 }
 
 war_mammoths = {
-	morale = 15
-	maintenance = 20
+	morale = 10
+	maintenance = 8
 	phase_skirmish_attack = 0.25
-	phase_melee_attack = 25
+	phase_melee_attack = 11
 	phase_pursue_attack = 0.25
-	phase_skirmish_defense = 5
-	phase_melee_defense = 15
-	phase_pursue_defense = 2
-	base_type = heavy_cavalry
+	phase_skirmish_defense = 6
+	phase_melee_defense = 8
+	phase_pursue_defense = 5
+	base_type = knights
 }
 
 elemental_troops = {
 	morale = 10
-	maintenance = 4
+	maintenance = 6
 	phase_skirmish_attack = 0.5
 	phase_melee_attack = 6
 	phase_pursue_attack = 0.5
@@ -61,7 +61,7 @@ elemental_troops = {
 
 undead_troops = {
 	morale = 30
-	maintenance = 0.2
+	maintenance = 0.5
 	phase_skirmish_attack = 1
 	phase_melee_attack = 1
 	phase_pursue_attack = 1
@@ -117,4 +117,28 @@ illusory_troops = {
 	phase_melee_defense = 1
 	phase_pursue_defense = 2.5
 	base_type = light_infantry
+}
+
+animated_objects = {
+	morale = 30
+	maintenance = 0.2
+	phase_skirmish_attack = 0.3
+	phase_melee_attack = 5
+	phase_pursue_attack = 0.3
+	phase_skirmish_defense = 5
+	phase_melee_defense = 10
+	phase_pursue_defense = 0.5
+	base_type = heavy_infantry
+}
+
+giant_troops = {
+	morale = 15
+	maintenance = 20
+	phase_skirmish_attack = 1
+	phase_melee_attack = 15
+	phase_pursue_attack = 0.5
+	phase_skirmish_defense = 10
+	phase_melee_defense = 20
+	phase_pursue_defense = 4
+	base_type = heavy_infantry
 }

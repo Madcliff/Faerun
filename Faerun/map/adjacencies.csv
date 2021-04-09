@@ -1,8 +1,23 @@
 From;To;Type;Through;-1;-1;-1;-1;Comment
 1007;1015;sea;1936;-1;-1;-1;-1;stillshore to mulsantir
+1453;1554;sea;2061;-1;-1;-1;-1;Hiyal-Karzuwa
+1453;1553;sea;2061;-1;-1;-1;-1;Hiyal-Malualti
+1451;1553;sea;2061;-1;-1;-1;-1;Rago-Malualti
+1595;1596;sea;2067;-1;-1;-1;-1;Safaq-Pearl Banks
+1461;1556;sea;2062;-1;-1;-1;-1;Wasat-Al-Nuziyyah
+1468;1557;sea;2063;-1;-1;-1;-1;Saraq-Magrib
+1507;1510;sea;2078;-1;-1;-1;-1;Giniracha-Samphos
+1507;1505;sea;2078;-1;-1;-1;-1;Giniracha-Kajiaruti
+1523;1522;sea;2077;-1;-1;-1;-1;The Calves-Bab-al-Gaba
+1523;1524;sea;2077;-1;-1;-1;-1;The Calves-Nahr al-Fil
+1533;1532;sea;2087;-1;-1;-1;-1;Rubbans Tears-Misbahd
+1533;1531;sea;2087;-1;-1;-1;-1;Rubbans Tears-Uruk
+1489;1488;sea;2072;-1;-1;-1;-1;Sidi-Dihliz
+1592;1593;sea;2064;-1;-1;-1;-1;Sikak-Maribar
 937;938;sea;1852;-1;-1;-1;-1;the chador to the camels hump
 937;936;sea;1852;-1;-1;-1;-1;the chador to beni marqa
 936;940;sea;1852;-1;-1;-1;-1;beni marqa to hawa
+942;940;sea;1852;-1;-1;-1;-1;al-azra to hawa
 936;942;sea;1852;-1;-1;-1;-1;beni marqa to al-azra
 939;941;sea;1852;-1;-1;-1;-1;ghajar to the eyes
 943;941;sea;1852;-1;-1;-1;-1;al-harir to the eyes
@@ -203,18 +218,48 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 454;464;major_river;1864;-1;-1;-1;-1;tiryki to nsi
 454;443;major_river;1864;-1;-1;-1;-1;tiryki to talacoast
 441;443;major_river;1864;-1;-1;-1;-1;mezro to talacoast
-861;860;major_river;1995;-1;-1;-1;-1;burich to gukh
-861;862;major_river;1995;-1;-1;-1;-1;burich to mata
-861;865;major_river;1995;-1;-1;-1;-1;burich to bisoturi
-864;865;major_river;1995;-1;-1;-1;-1;quantun to bisoturi
-864;863;major_river;1996;-1;-1;-1;-1;quantun to khol
-864;873;major_river;1996;-1;-1;-1;-1;quantun to bunshin
+903;1787;major_river;2364;-1;-1;-1;-1;winterkeep to seshano
+861;860;major_river;2362;-1;-1;-1;-1;burich to gukh
+861;862;major_river;2362;-1;-1;-1;-1;burich to mata
+861;865;major_river;2362;-1;-1;-1;-1;burich to bisoturi
+864;865;major_river;2362;-1;-1;-1;-1;quantun to bisoturi
+864;863;major_river;2363;-1;-1;-1;-1;quantun to khol
+864;873;major_river;2363;-1;-1;-1;-1;quantun to bunshin
 792;805;major_river;1892;-1;-1;-1;-1;tharkar to zendar
 792;804;major_river;1892;-1;-1;-1;-1;tharkar to zendum
 788;804;major_river;1892;-1;-1;-1;-1;kellesar to zendum
 1402;1278;sea;1966;-1;-1;-1;-1;kumandang to salju
-1166;1170;major_river;1990;-1;-1;-1;-1;segaran swamp to
-1166;1761;major_river;1990;-1;-1;-1;-1;segaran swamp to
-1166;1169;major_river;1990;-1;-1;-1;-1;segaran swamp to
-1166;1190;major_river;1989;-1;-1;-1;-1;segaran swamp to
-1166;1168;major_river;1989;-1;-1;-1;-1;segaran swamp to
+1166;1170;major_river;1990;-1;-1;-1;-1;segaran swamp to tshalkha
+1166;1761;major_river;1990;-1;-1;-1;-1;segaran swamp to upper sempadan
+1166;1169;major_river;1990;-1;-1;-1;-1;segaran swamp to odesh
+1166;1190;major_river;1989;-1;-1;-1;-1;segaran swamp to anktarina
+1166;1168;major_river;1989;-1;-1;-1;-1;segaran swamp to jhalolokati
+1487;1488;major_river;2091;-1;-1;-1;-1;bisatare to dihliz
+1486;1491;major_river;2091;-1;-1;-1;-1;ysawis to qudalla
+1494;1491;major_river;2091;-1;-1;-1;-1;kadarasto to qudalla
+1494;2172;major_river;2092;-1;-1;-1;-1;kadarasto to sendalam
+1493;2172;major_river;2092;-1;-1;-1;-1;krak al-sajjaan to sendalam
+1497;2172;major_river;2092;-1;-1;-1;-1;mafrad to sendalam
+1506;1505;major_river;2094;-1;-1;-1;-1;hudariyah to kajiaruti
+1504;1505;major_river;2094;-1;-1;-1;-1;al-hanieh to kajiaruti
+1504;1509;major_river;2095;-1;-1;-1;-1;al-hanieh to sariban
+1516;1509;major_river;2095;-1;-1;-1;-1;al-hanieh to sariban
+1516;1513;major_river;2095;-1;-1;-1;-1;al-hanieh to tadabbur
+1502;1503;major_river;2093;-1;-1;-1;-1;kapuli to tayaraan
+783;785;major_river;2047;-1;-1;-1;-1;suormpar to flyndagol
+2370;2371;sea;1902;-1;-1;-1;-1;damu to mnyama
+2121;2366;sea;2113;-1;-1;-1;-1;zeibiley to ardhi kavu
+1619;1618;sea;2076;-1;-1;-1;-1;Jezarh Shemshar-Jezarh Jadew
+1619;1621;sea;2076;-1;-1;-1;-1;Jezarh Shemshar-Bender Adewah
+1620;1621;sea;2076;-1;-1;-1;-1;Bender Berdh-Bender Adewah
+2162;2163;sea;2088;-1;-1;-1;-1;Jezarh Mah Alewd-Mergu Saah
+2162;2164;sea;2088;-1;-1;-1;-1;Jezarh Mah Alewd-Jezarh Restakhaz
+2164;2163;sea;2088;-1;-1;-1;-1;Jezarh Restakhaz-Mergu Saah
+1535;1534;sea;2088;-1;-1;-1;-1;Serzeman Bamar-Jezarh Mar
+2375;1483;sea;2068;-1;-1;-1;-1;Risha-al-Faraq
+1614;1615;sea;2071;-1;-1;-1;-1;Thueban-Eayan Aljunun
+1612;1611;sea;2085;-1;-1;-1;-1;Manhus-Anklis
+1612;2166;sea;2085;-1;-1;-1;-1;Manhus-Zabdiyat
+1607;2374;sea;2107;-1;-1;-1;-1;Tarik-Sayf
+1608;1607;sea;2107;-1;-1;-1;-1;Tarikat-Tarik
+1608;2374;sea;2107;-1;-1;-1;-1;Tarikat-Sayf

@@ -3,7 +3,7 @@
 	dynasty = 7331 # Bloodfeathers
 	father = 63737
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = expert_fighter
 	trait = tough_soldier
@@ -17,7 +17,7 @@
 	name = "Gareth"
 	dynasty = 7332 # Dragonsbane
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	martial = 10
 	learning = 8
 	trait = creature_human
@@ -38,6 +38,9 @@
 			c_bloodstone={ROOT={capital = PREV}}
 			add_claim = k_vaasa}}
 	1359.6.17 = {
+		create_bloodline = {
+			type = gareth_bloodline
+		}
 		effect = {
 			add_claim = c_tokards_cross
 			add_claim = c_east_soravia
@@ -51,7 +54,7 @@
 	name = "Tranth"
 	dynasty = 7333 # Tranth
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = kind
 	father = 63710 # Grant
@@ -64,7 +67,7 @@
 	female = yes
 	dynasty = 7333 # Tranth
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	learning = 7
 	trait = creature_human
 	trait = scholarly_theologian
@@ -80,7 +83,7 @@
 	name = "Olwen"
 	dynasty = 7334 # Forest-Friend
 	culture = damaran
-	religion = good_human_pantheon
+	religion = natural
 	martial = 9
 	stewardship = 6
 	intrigue = 6
@@ -91,7 +94,7 @@
 	trait = kind
 	trait = strong
 	1293.8.20 = { birth = yes }
-	1358.3.2 = {	
+	1358.3.2 = {
 		employer = 63703 # Gareth
 	}
 	1400.1.1 = { death = yes }
@@ -101,7 +104,7 @@
 	name = "Ulman"
 	dynasty = 7335 # Rimebeard
 	culture = vaasan
-	religion = evil_human_pantheon
+	religion = deities_of_fury
 	trait = creature_human
 	1315.12.4 = { birth = yes }
 	1400.1.1 = { death = yes }
@@ -112,7 +115,7 @@
 	female = yes
 	dynasty = 7336 # Bloodhearth
 	culture = vaasan
-	religion = evil_human_pantheon
+	religion = deities_of_fury
 	trait = creature_human
 	1320.4.19 = { birth = yes }
 	1400.1.1 = { death = yes }
@@ -122,7 +125,7 @@
 	name = "Mariabronne"
 	dynasty = 7337 # Jesk
 	culture = damaran
-	religion = good_human_pantheon
+	religion = natural
 	martial = 9
 	stewardship = 7
 	trait = creature_human
@@ -139,7 +142,7 @@
 			add_friend = 63706 # Olwen
 		}
 	}
-	1358.3.2 = {		
+	1358.3.2 = {
 		employer = 63703 # Gareth
 	}
 	1368.7.15 = {
@@ -151,7 +154,7 @@
 	name = "Grant"
 	dynasty = 7333 # Tranth
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1283.2.2 = { birth = yes }
 	1323.9.10 = { death = yes }
@@ -161,7 +164,7 @@
 	name = "Ulfrir"
 	dynasty = 7333 # Tranth
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 63710 # Grant
 	1301.8.16 = { birth = yes }
@@ -173,7 +176,7 @@
 	female = yes
 	dynasty = 7333 # Tranth
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	martial = 7
 	trait = skilled_tactician
 	trait = creature_human
@@ -181,7 +184,7 @@
 	trait = robust
 	trait = master_fighter
 	trait = brave
-	secret_religion = evil_human_pantheon
+	secret_religion = shadow_gods
 	father = 63711
 	1331.7.28 = { birth = yes } #Only age given was "nearly 30 winters".
 	1359.6.17 = {
@@ -197,7 +200,7 @@
 	dynasty = 7338 # Nilar
 	father = 52124 #Made up, but convenient
 	culture = vaasan
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	martial = 10
 	intrigue = 9
 	trait = creature_human
@@ -215,7 +218,7 @@
 	name = "Knellict"
 	dynasty = 7339 # Ytar
 	culture = damaran
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	intrigue = 8
 	learning = 10
 	trait = creature_human
@@ -252,7 +255,7 @@
 		employer = 63713 # Timoshenko
 	}
 	1359.6.17 = {
-		religion = evil_human_pantheon
+		religion = shadow_gods
 	}
 	1400.1.1 = { death = yes }
 }
@@ -261,7 +264,7 @@
 	name = "Canthan"
 	dynasty = 7341 # Doolitle
 	culture = damaran
-	religion = evil_human_pantheon
+	religion = shadow_gods
 	learning = 8
 	trait = creature_human
 	trait = scholarly_theologian
@@ -283,7 +286,7 @@
 	name = "Dugald"
 	dynasty = 0
 	culture = damaran
-	religion = good_human_pantheon
+	religion = triadic
 	martial = 6
 	learning = 10
 	trait = creature_human
@@ -296,7 +299,7 @@
 	trait = content
 	trait = stubborn
 	1323.8.1 = { birth = yes }
-	1358.3.2 = {		
+	1358.3.2 = {
 		employer = 63703 # Gareth
 		give_job_title = job_spiritual
 	}
@@ -307,7 +310,7 @@
 	name = "Johl"
 	dynasty = 7342 # Parnell
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1300.1.6 = { birth = yes }
 	1349.7.11 = { death = yes }
@@ -318,7 +321,7 @@
 	female = yes
 	dynasty = 7342 # Parnell
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1299.1.2 = { birth = yes }
 	1349.7.11 = { death = yes }
@@ -328,7 +331,7 @@
 	name = "Riordan"
 	dynasty = 7342 # Parnell
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	diplomacy = 8
 	intrigue = 8
 	trait = creature_human
@@ -340,7 +343,7 @@
 	trait = kind
 	father = 63718 # Johl
 	1333.10.2 = { birth = yes }
-	1358.3.2 = {		
+	1358.3.2 = {
 		employer = 63703 # Gareth
 	}
 	1400.1.1 = { death = yes }
@@ -350,7 +353,7 @@
 	name = "Celedon"
 	dynasty = 7343 # Kierney
 	culture = damaran
-	religion = good_human_pantheon
+	religion = joyful
 	intrigue = 9
 	trait = creature_half_elf
 	trait = legendary_shadow
@@ -361,7 +364,7 @@
 	trait = diligent
 	mother = 63719 # Irilla
 	1330.7.19 = { birth = yes }
-	1358.3.2 = {	
+	1358.3.2 = {
 		employer = 63703 # Gareth
 		give_job_title = job_spymaster
 	}
@@ -373,7 +376,7 @@
 	name = "Emelyn"
 	dynasty = 7344 # Gravnar
 	culture = damaran
-	religion = good_human_pantheon
+	religion = triadic
 	learning = 9
 	trait = creature_human
 	trait = mastermind_theologian
@@ -382,7 +385,7 @@
 	trait = diligent
 	trait = chaste
 	1285.12.30 = { birth = yes }
-	1358.3.2 = {		
+	1358.3.2 = {
 		employer = 63703 # Gareth
 		give_nickname = nick_the_gray
 	}
@@ -393,14 +396,13 @@
 	name = "Kane"
 	dynasty = 0
 	culture = damaran
-	religion = good_human_pantheon
+	religion = triadic
 	martial = 10
 	stewardship = 5
 	learning = 8
 	trait = creature_human
 	trait = scholarly_theologian
-	#trait = renowned_monk
-	trait = renowned_cleric
+	trait = renowned_monk
 	trait = diligent
 	trait = sturdy
 	trait = humble
@@ -410,7 +412,7 @@
 	trait = content
 	trait = patient
 	1330.5.11 = { birth = yes }
-	1358.3.2 = {	
+	1358.3.2 = {
 		employer = 63703 # Gareth
 	}
 	1400.1.1 = {
@@ -424,7 +426,7 @@
 	name = "William"
 	dynasty = 7345 # Horgath
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = ambitious
 	trait = deceitful
@@ -441,7 +443,7 @@
 	name = "Helmont"
 	dynasty = 7346 # Devlin
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1300.1.1 = { birth = yes }
 	1357.3.17 = {
@@ -453,7 +455,7 @@
 	name = "Helmont"
 	dynasty = 7346 # Devlin
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	intrigue = 7
 	trait = creature_human
 	trait = intricate_webweaver
@@ -462,7 +464,7 @@
 	trait = envious
 	1319.2.11 = { birth = yes }
 	1359.6.17 = {
-		death = { death_reason = death_battle killer = 63719 } # Emelyn 
+		death = { death_reason = death_battle killer = 63719 } # Emelyn
 	}
 }
 
@@ -470,7 +472,7 @@
 	name = "Helmont"
 	dynasty = 7346 # Devlin
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	intrigue = 8
 	trait = creature_human
 	trait = elusive_shadow
@@ -486,7 +488,7 @@
 	name = "Ebelard"
 	dynasty = 7347 # Brandebury
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	1312.6.18 = { birth = yes }
 	1357.3.17 = { death = yes }
@@ -496,7 +498,7 @@
 	name = "Dormythyrr"
 	dynasty = 7348 # Vense
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	stewardship = 7
 	trait = creature_human
 	trait = content
@@ -510,7 +512,7 @@
 	name = "Dimian Ree"
 	dynasty = 7349 # Banacath
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	intrigue = 7
 	trait = creature_human
 	trait = ambitious
@@ -521,7 +523,7 @@
 	trait = cruel
 	trait = trained_shadow
 	trait = greedy
-	secret_religion = evil_human_pantheon
+	secret_religion = shadow_gods
 	1319.7.20 = {
 		birth = yes
 		effect = {
@@ -542,13 +544,14 @@
 	female = yes
 	dynasty = 7350 # Braka
 	culture = damaran
-	religion = good_human_pantheon
+	religion = triadic
 	diplomacy = 7
 	intrigue = 7
 	learning = 9
-	secret_religion = evil_human_pantheon
+	secret_religion = dead_three
 	trait = creature_human
 	trait = master_sorcerer
+	trait = origin_shadow
 	trait = scholarly_theologian
 	trait = groomed
 	trait = gregarious
@@ -557,6 +560,11 @@
 	trait = envious
 	trait = ambitious
 	1330.8.1 = { birth = yes }
+	1340.1.1 = {
+		effect = {
+			set_character_flag = sorc_originrevealed
+		}
+	}
 	1357.3.17 = {
 		effect = {
 			add_rival = 63703 # Gareth
@@ -569,7 +577,7 @@
 	name = "Donlevy"
 	dynasty = 7351 # BelMaris
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = just
 	1299.1.13 = { birth = yes }
@@ -585,13 +593,13 @@
 	name = "Zorth"
 	dynasty = 7351 # BelMaris
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = deceitful
 	trait = cruel
 	trait = envious
 	trait = greedy
-	1314.9.8 = {	
+	1314.9.8 = {
 		birth = yes
 	}
 	1357.3.17 = {
@@ -606,7 +614,7 @@
 	name = "Donlevy"
 	dynasty = 7351 # BelMaris
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	father = 63732
 	1345.1.23 = {
@@ -620,7 +628,7 @@
 	name = "Guth"
 	dynasty = 7352 # Harkar
 	culture = vaasan
-	religion = evil_human_pantheon
+	religion = deities_of_fury
 	trait = creature_human
 	trait = expert_fighter
 	1322.7.9 = { birth = yes }
@@ -648,7 +656,7 @@
 	father = 63738 # Aeldrin
 	mother = 24100 # Sambral Ilmara of Impiltur
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = expert_fighter
 	trait = tough_soldier
@@ -660,7 +668,7 @@
 	name = Aeldrin
 	dynasty = 7331 # Bloodfeathers
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = expert_fighter
 	trait = tough_soldier
@@ -674,7 +682,7 @@
 	dynasty = 7333 #there were 4 prior barons before Baron Tranth.
 	father = 63710
 	culture = damaran
-	religion = good_human_pantheon
+	religion = solar
 	trait = creature_human
 	trait = trained_fighter
 	trait = tough_soldier

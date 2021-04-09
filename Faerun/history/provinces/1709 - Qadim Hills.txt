@@ -17,7 +17,7 @@ terrain = hills
 #History
 233.1.1 = {
 	b_magars_hill = castle
-	culture = heartlander
+	culture = draeven
 	religion = calishite_faith
 }
 267.1.1 = {
@@ -38,11 +38,11 @@ terrain = hills
 523.1.1 = {
 	b_magars_hill = castle
 	culture = amnian
-	religion = good_human_pantheon
+	religion = joyful
 }
 731.1.1 = {
 	culture = beholder
-	religion = evil_human_pantheon
+	religion = beholder_pantheon
 }
 760.1.1 = {
 	b_magars_hill = tribal

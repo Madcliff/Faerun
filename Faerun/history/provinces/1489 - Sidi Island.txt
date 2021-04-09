@@ -1,0 +1,19 @@
+# c_sidi_island
+
+# County Title
+title = c_sidi_island
+
+# Settlements
+max_settlements = 3
+
+b_sidi = tribal
+
+# Misc
+culture = noga
+religion = jaziri
+
+#History
+
+1267.1.1 = {
+	b_sidi = castle
+}

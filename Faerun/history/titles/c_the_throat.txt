@@ -2,7 +2,7 @@
 1.1.1={
 	law = true_cognatic_succession
 	law = succ_magic_elective
-	liege = d_scimitar_spires
+	liege = d_shinantra
 	holder = 61059 # Hidita Vierga
 }
 192.1.1 = {
@@ -16,4 +16,9 @@
 	liege = d_the_black_road
 	law = succ_primogeniture
 	holder = 61014 # Ruatheene Snowblood
+}
+1383.1.1 = {
+	liege = 0
+	law = succ_gavelkind
+	holder = 61322 # Seratus Coilfang
 }

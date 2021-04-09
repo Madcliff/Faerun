@@ -15,7 +15,7 @@ b_strestead = city
 #b_vaultou = castle
 
 # Misc
-culture = heartlander
-religion = calishite_faith
+culture = draeven
+religion = mercantile
 
 #History

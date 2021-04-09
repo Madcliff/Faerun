@@ -1,0 +1,18 @@
+# c_al_sarif
+
+# County Title
+title = c_al_sarif
+
+# Settlements
+max_settlements = 3
+
+b_wadurah = tribal
+
+# Misc
+culture = badia
+religion = qisma
+
+#History
+1358.1.1 = {
+	religion = kahin
+}
